@@ -1,0 +1,616 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Scan, Pay, Repeat: The UPI Story</title>
+<meta property="og:title" content="Scan, Pay, Repeat: The UPI Story">
+<meta property="og:description" content="How did India start paying for chai with a QR code? The story behind UPI.">
+<meta property="og:image" content="https://sriniurs.github.io/archive/2026-11-02-scan-pay-repeat.png">
+<meta property="og:url" content="https://sriniurs.github.io/archive/2026-11-02-scan-pay-repeat.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+</style>
+
+<main class="wrap">
+
+<header class="cover">
+  <div>
+    <p class="byline">Srini presents</p>
+    <h1>Scan, Pay, Repeat: The UPI Story</h1>
+    <p class="sub">A comic about how India went from cash, cheques and queues to scanning a QR code for a ₹10 chai, and why the free ride is now ending. A curious young learner asks, and a wise mentor who saw it all answers: how UPI was born, how big it is now, and where it goes next.</p>
+    <div class="fs"><span>Past</span><span>Present</span><span>Future</span><span>₹ in your pocket</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, hasn't touched cash in a month</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, remembers cheque books</span></figure>
+  </div>
+</header>
+
+<p class="era">THE PAST<small>Before the QR code</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>Cash, cheques and queues</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>How did you even pay people before UPI?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Cash in the shirt pocket. Rent by cheque, which took 2–3 days to clear. Sending money home meant a money order or standing in a bank queue.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Cards existed, but…</b></p>
+      <ul class="clean">
+        <li>Shops paid around 1–2% per swipe, so small shops refused.</li>
+        <li>Card machines cost money and were mostly in cities.</li>
+        <li>Mobile wallets worked only inside their own app.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <span class="sfx r">"CHANGE ILLA!"</span>
+      <p class="take">Paying was costly for shops and slow for people. A ₹10 payment had no good digital option at all.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>2016: one pipe for every bank</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>April 2016</b> NPCI, the banks' payments body, launches UPI with 21 banks.</p>
+      <p>The big idea: one shared pipe. Any app, any bank, one address like <b>name@bank</b>, money moves in seconds, 24×7.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>November 2016</b> Demonetisation. ₹500 and ₹1,000 notes are cancelled overnight.</p>
+      <span class="sfx">KABOOM!</span>
+      <p>Cash vanished from ATMs, and people who had never paid digitally were forced to try. The government's BHIM app followed in December.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Most countries let card companies or one big app own payments. India built a public road and let every app drive on it. That was the real genius.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>Free, then everywhere</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>2020</b> The government makes UPI payments free for merchants. Zero fee.</p>
+      <p>Suddenly the vegetable seller, the auto driver and the temple donation box all put up a QR sticker. It cost them nothing.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The pandemic</b> Nobody wanted to touch notes.</p>
+      <div class="chain"><span>Printed QR sticker</span><i>→</i><span>Talking soundbox</span><i>→</i><span class="hit">"₹10 received"</span></div>
+    </div>
+    <div class="panel">
+      <p class="take">Free + simple + every bank = the fastest money habit change in history.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">THE PRESENT<small>The biggest real-time payment system on earth</small></p>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>UPI by the numbers</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Yearly payments</b></p>
+      <div class="big"><b>1.8 crore</b><span class="arrow">→</span><b class="hot">24,162 crore</b></div>
+      <p>FY 2016-17 vs FY 2025-26, about 13,000 times more. Value in FY26: ₹314 lakh crore.</p>
+    </div>
+    <div class="panel">
+      <ul class="clean">
+        <li>Record month: <b>2,451 crore</b> payments in August 2026.</li>
+        <li>About <b>80 crore</b> payments every single day.</li>
+        <li><b>55 crore</b> users, <b>740+</b> banks.</li>
+        <li>About <b>84%</b> of India's retail digital payments.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="big"><b>~49%</b></div>
+      <p>India's share of all the world's real-time payments, per the IMF. One country, half the planet's instant payments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>A public road with two big buses</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Share of UPI payments</b> (mid-2026, rough)</p>
+      <div class="ladder">
+        <div class="bar">PhonePe<div style="width:100%">~46%</div></div>
+        <div class="bar">Google Pay<div style="width:70%">~32%</div></div>
+        <div class="bar">Paytm<div style="width:18%">~8%</div></div>
+        <div class="bar">All others<div class="hot" style="width:30%">~14%</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Wait, both leaders are backed by US giants? And India's biggest bank?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>SBI's own app did about 0.1% in July. The banks built the road and then missed the bus.</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">NPCI wants no app above 30% share. That deadline has been pushed back again and again, now to December 2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>The free lunch ends</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>From 15 October 2026</b> Merchants pay a fee of 0.4% on UPI payments above ₹2,000.</p>
+      <span class="sfx r">KA-CHUNK!</span>
+      <ul class="clean">
+        <li>Fee capped at ₹300 on payments above ₹75,000.</li>
+        <li>Lower rates for railways, telecom, mutual funds and shares.</li>
+        <li>Your ₹10 chai and ₹500 groceries: still free.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Who pays?</b> The shop, not you. At least on paper.</p>
+      <div class="chain"><span>₹10,000 TV</span><i>→</i><span>Shop pays ₹40</span><i>→</i><span class="hit">Maybe "add 1% for UPI"?</span></div>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Running 80 crore payments a day costs real money: servers, security, fraud checks. Somebody had to pay. 0.4% is still among the cheapest anywhere.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>Where there's money, there are thieves</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>UPI fraud amount</b> (₹ crore a year)</p>
+      <div class="ladder">
+        <div class="bar">FY22<div style="width:22%">242</div></div>
+        <div class="bar">FY23<div style="width:53%">573</div></div>
+        <div class="bar">FY24<div class="hot" style="width:100%">1,087</div></div>
+        <div class="bar">FY25<div style="width:90%">981</div></div>
+        <div class="bar">FY26*<div style="width:74%">805</div></div>
+      </div>
+      <p class="small">*Till November 2025 only. About 10–13 lakh fraud cases a year.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The classic trick</b></p>
+      <div class="chain"><span>"I sent you ₹5,000 by mistake"</span><i>→</i><span>"Approve this request to return it"</span><i>→</i><span class="hit">You enter PIN, money leaves</span></div>
+    </div>
+    <div class="panel">
+      <p class="warn">You never need your PIN to <b>receive</b> money. PIN means money is going out. Always.</p>
+      <p class="take">Fraud is small compared to the total, but it lands on real people, often the elderly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>UPI goes abroad</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Live in about a dozen countries</b> (shops and/or money transfers)</p>
+      <div class="chain"><span>Bhutan (first, 2021)</span><span>Singapore</span><span>UAE</span><span>France</span><span>Nepal</span><span>Sri Lanka</span><span>Mauritius</span><span>Qatar</span><span>Maldives</span><span>Greece</span><span class="hit">Cambodia (2026)</span></div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So I can scan a QR near the Eiffel Tower?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>At some places, yes. Switch on "international" in your app first, and carry a card as backup. It's still patchy.</p></div>
+    </div>
+    <div class="panel">
+      <p class="take">RBI's goal: UPI in 20 countries by 2028-29. Brazil, the EU and others are studying it as a model.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">THE FUTURE<small>What's coming, and Prof. Bolt's guesses</small></p>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>From paying to borrowing</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Already here, growing fast</b></p>
+      <ul class="clean">
+        <li><b>Credit on UPI:</b> pay with a RuPay credit card or a bank credit line by scanning the same QR.</li>
+        <li><b>UPI Lite:</b> tiny payments without a PIN, even when the bank server is slow.</li>
+        <li><b>UPI 123PAY:</b> for basic feature phones, no smartphone needed.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Payments make little money. Loans, insurance and investments make a lot. Every payment app now wants to become your bank, your broker and your insurer.</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">Credit on a QR is easy to tap and easy to forget. "Scan now, pay later" can become the new credit card trap.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>Who gets the new money?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="big"><b>$1.1 bn</b><span class="arrow">a year</span></div>
+      <p>Possible fee income for payment apps by March 2028, by one brokerage estimate.</p>
+    </div>
+    <div class="panel">
+      <p>With 80% of the value, the two leaders get most of it. That gives them more money to push into villages and small towns.</p>
+      <p class="small">Smaller apps like Navi and super.money did win some share by 2026, so the duopoly is not frozen.</p>
+    </div>
+    <div class="panel">
+      <p class="take">Big gets bigger, unless the 30% cap is actually enforced. Watch December 2026.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era" style="background:#6b4fbb">THE DEEP DIVE<small>The research behind the headlines</small></p>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>What does one "free" payment really cost?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The cost per payment</b> (industry estimates differ)</p>
+      <div class="big"><b>40 paise</b><span class="arrow">to</span><b class="hot">~₹2</b></div>
+      <p>Servers, fraud checks, bank links and customer complaints for every single tap.</p>
+      <p class="small">One industry estimate puts the total yearly cost of UPI and RuPay at about ₹20,700 crore.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>What the government paid banks</b> (₹ crore a year)</p>
+      <div class="ladder">
+        <div class="bar">FY24<div style="width:100%">3,631</div></div>
+        <div class="bar">FY25<div style="width:40%">1,441</div></div>
+        <div class="bar">FY26 (revised)<div style="width:60%">2,196</div></div>
+        <div class="bar">FY27 (budget)<div class="hot" style="width:55%">2,000</div></div>
+      </div>
+      <p class="small">About ₹8,730 crore in total from FY22 to FY25. It pays 0.15% on small-shop payments up to ₹2,000.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>A worked example</b> (our arithmetic)</p>
+      <div class="chain"><span>Average UPI payment ~₹1,289 (May 2026)</span><i>→</i><span>0.15% subsidy</span><i>→</i><span class="hit">~₹1.90 per payment</span></div>
+      <p class="small">At 80 crore payments a day, even small subsidies add up to thousands of crores.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Follow the numbers: cost rising with volume, government support shrinking from ₹3,600 crore to about ₹2,000 crore. That gap is exactly why the 0.4% fee on big payments arrived in October. "Free" was always paid for by someone, mostly banks and taxpayers.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>UPI vs Brazil's Pix vs cards</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Measure</th><th>UPI (India)</th><th>Pix (Brazil)</th><th>Cards (worldwide)</th></tr></thead>
+        <tbody>
+          <tr><td>Launched</td><td>2016</td><td>2020</td><td>Decades ago</td></tr>
+          <tr><td>Run by</td><td>NPCI, owned by banks, under RBI</td><td>Brazil's central bank</td><td>Private networks (Visa, Mastercard…)</td></tr>
+          <tr><td>Payments a year</td><td><b>~24,000 crore</b> (FY26)</td><td>~6,350 crore (2024)</td><td>—</td></tr>
+          <tr><td>Share of the country's payments</td><td>~84% of retail digital payments</td><td>55% of all payments (H1 2026)</td><td>Cards: ~31% of Brazil's payments (H1 2026)</td></tr>
+          <tr><td>Fee for shops</td><td><b>Zero</b> (0.4% above ₹2,000 from Oct 2026)</td><td>~0.33% average</td><td>Debit ~1.1%, credit ~2.3% (Brazil, IMF paper)</td></tr>
+          <tr><td>Who controls the apps</td><td class="bad">Two US-owned apps &gt;80%</td><td>Banks' own apps</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Payment systems are now geopolitics</b></p>
+      <p>In July 2026 the US put 25% tariffs on most Brazilian goods, naming Pix among practices that hurt US card companies. Washington has also flagged UPI for favouring domestic systems.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Wait, America is annoyed that our payments are cheap?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Every rupee a shop doesn't pay in card fees is a fee a card company doesn't earn. Public payment roads are a direct threat to a very profitable private toll business.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>The cash paradox</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Cash in circulation</b> (₹ lakh crore, RBI)</p>
+      <div class="ladder">
+        <div class="bar">Nov 2016<div style="width:45%">~18</div></div>
+        <div class="bar">Jan 2026<div class="hot" style="width:100%">~40</div></div>
+      </div>
+      <p class="small">More than double since demonetisation, and growing 11.1% a year, the fastest in years.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>But relative to the economy…</b></p>
+      <div class="big"><b>14.4%</b><span class="arrow">→</span><b>11%</b></div>
+      <p>Cash as a share of GDP, FY21 to FY26 (SBI Research). The economy grows faster than cash does.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The RBI's own yardstick</b></p>
+      <div class="big"><b>27%</b><span class="arrow">→</span><b class="hot">~70%</b></div>
+      <p>One month's UPI payments as a share of all cash outstanding, early 2022 to July 2026.</p>
+    </div>
+    <div class="panel wide">
+      <p class="take">Both are true: Indians use far more UPI <i>and</i> hold more cash. Cash has moved from "how we pay" to "what we keep": savings at home, rural trade, emergencies. That's also why it's smart to keep a little.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>One switch, a country's payments</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Outages on record</b></p>
+      <ul class="clean">
+        <li><b>26 Mar 2025:</b> about 3.5 hours of evening disruption; payments that day fell 7%.</li>
+        <li><b>12 Apr 2025:</b> success rate dropped to ~50% for two hours, ~80% for three more. NPCI blamed a flood of status-check requests from banks.</li>
+        <li>Outlook Business counted four major outages in a year.</li>
+        <li><b>1 Apr 2026:</b> an SBI maintenance overrun hit users across cities.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Why one hour matters</b> (our arithmetic)</p>
+      <div class="chain"><span>~80 crore payments a day</span><i>÷ 24 =</i><span class="hit">~3.3 crore an hour</span></div>
+      <p class="small">More in peak evening hours.</p>
+    </div>
+    <div class="panel">
+      <p class="warn">Every UPI payment, even PIN-free UPI Lite, passes through NPCI's switch. Experts at ORF and elsewhere call this a single point of failure and want a proper backup.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Railways have two tracks; hospitals have generators. A system carrying 85% of a nation's digital payments needs a spare too. Until then, your backup is a card and some cash.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>Credit on UPI, by the numbers</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Shops that accept…</b></p>
+      <div class="ladder">
+        <div class="bar">UPI QR<div style="width:100%">50 m+</div></div>
+        <div class="bar">Credit cards<div class="hot" style="width:32%">2–4 m</div></div>
+      </div>
+      <p class="small">Linking credit to UPI opened credit to every QR sticker.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>RuPay credit cards take off</b></p>
+      <div class="big"><b>3%</b><span class="arrow">→</span><b>10%</b></div>
+      <p>RuPay's share of credit cards, FY23 to FY24 (Kiwi). RuPay-on-UPI now makes up about 38% of India's credit card transactions by count.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>How people use it</b></p>
+      <ul class="clean">
+        <li>Average spend ~₹1,125 vs ~₹4,000 on a normal card.</li>
+        <li>About 40 uses a month, ~8× a normal cardholder.</li>
+        <li>Over ₹10,000 crore a month spent on credit via UPI (Juspay).</li>
+      </ul>
+    </div>
+    <div class="panel wide">
+      <p class="warn">Small, frequent, easy credit is exactly how debt builds without anyone noticing. A pre-approved credit line on UPI is a loan, not a card: check its interest-free period, rewards and dispute route before you use it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 16 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 16</span><h2>UPI 2030: three endings</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">BOOM!</span>
+      <p><b>The good ending.</b> 100 crore users, UPI in 20+ countries, cheap credit reaching small shops and farmers. The fee keeps the system safe without hurting small payments.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">HMM…</span>
+      <p><b>The likely ending.</b> UPI keeps growing, but two apps still rule. Small fees creep into more payments, and most new money is made on loans, not on payments.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">CRASH!</span>
+      <p><b>The bad ending.</b> Easy QR credit piles up bad debt, a big outage or cyber attack hits a system the whole country depends on, and frauds grow faster than safeguards.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>These are my guesses, not forecasts. But remember: when one system carries 80 crore payments a day, its failure is everyone's failure. Keep a little cash and a backup card. Old habits have their uses.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 17 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 17</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>As a user</b></p>
+      <ul class="clean">
+        <li>Never enter your PIN to receive money.</li>
+        <li>Never share screen or install "support" apps for strangers.</li>
+        <li>Set a daily limit. Keep a separate bank account for UPI with only spending money.</li>
+        <li>Report fraud fast: 1930 helpline or cybercrime.gov.in.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>If you run a shop or clinic</b></p>
+      <p>Big bills above ₹2,000 now cost you up to 0.4%. Small ones are still free. Check your app's statement and compare providers.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Any career angle in this?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Fintech is hiring: fraud detection, credit scoring, payments abroad. A good field to learn, whatever your degree.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>Past</b></p><ul class="clean">
+      <li>2016: UPI launched, one pipe for all banks.</li>
+      <li>Demonetisation pushed people to try it.</li>
+      <li>2020: zero fee → QR codes everywhere.</li>
+    </ul></div>
+    <div class="panel"><p><b>Present</b></p><ul class="clean">
+      <li>24,162 crore payments, ₹314 lakh crore in FY26.</li>
+      <li>~80 crore payments a day; ~49% of world's real-time payments.</li>
+      <li>PhonePe + Google Pay ≈ 80%.</li>
+      <li>0.4% merchant fee above ₹2,000 from 15 Oct 2026.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>"Free" UPI costs 40 paise–₹2 a payment; subsidy fell from ₹3,631 cr to ~₹2,000 cr.</li>
+      <li>Pix charges shops ~0.33%; cards 1–2.3%; UPI zero below ₹2,000.</li>
+      <li>Cash hit ₹40 lakh cr, but fell from 14.4% to 11% of GDP.</li>
+      <li>One NPCI switch carries all; outages hit ~3 crore payments an hour.</li>
+      <li>Credit on UPI: 50 m QR shops vs 2–4 m card shops.</li>
+    </ul></div>
+    <div class="panel"><p><b>Future</b></p><ul class="clean">
+      <li>Credit on UPI is the next big thing, and the next big risk.</li>
+      <li>20 countries by 2028-29 is the goal.</li>
+      <li>Watch the 30% market cap in December 2026.</li>
+      <li>PIN = money out. Always.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; UPI, the companies and the figures are real. Numbers are rounded from public sources (NPCI, PIB, Parliament replies, RBI, IMF, Reuters) and change every month. The "three endings" are opinion, not forecasts. For learning, not financial advice. Deep dive: Inc42 and Outlook Business (UPI incentive scheme), The Painted Stork and BivashVlog (cost estimates, ranges vary), Morung Express/PIB (₹8,730 cr total incentives), Brazil central bank data via The Rio Times, IMF paper via card-industry reporting, SBI Research and Moneylife (currency in circulation), Multibagg (RBI UPI-to-cash ratio), Business Standard, Outlook Money, Outlook Business and Fintech Chronicler (outages), ORF and Vajiram &amp; Ravi (single point of failure), Kiwi via Kashmir Reader, Outlook Money, Juspay and Business Standard (credit on UPI). Per-payment and per-hour figures are our own arithmetic.</p>
+
+<p class="foot"><a href="/archive/">📚 Past stories</a> · <a href="/">Latest story</a></p>
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
