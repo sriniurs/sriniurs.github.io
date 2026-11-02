@@ -1,0 +1,40 @@
+name: Daily visitor stats
+on:
+  schedule:
+    - cron: "30 0 * * *"   # 6:00 am IST, before the 6:15 comic task
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch yesterday's GoatCounter stats
+        env:
+          GC_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: |
+          D=$(TZ=Asia/Kolkata date -d yesterday +%F)
+          START="${D}T00:00:00+05:30"; END="${D}T23:59:59+05:30"
+          A="https://sriniurs.goatcounter.com/api/v0"
+          H="Authorization: Bearer $GC_TOKEN"
+          mkdir -p stats
+          curl -sfG -H "$H" "$A/stats/total" --data-urlencode "start=$START" --data-urlencode "end=$END" > /tmp/day_total.json
+          curl -sfG -H "$H" "$A/stats/hits" --data-urlencode "start=$START" --data-urlencode "end=$END" --data-urlencode "limit=50" > /tmp/day_hits.json
+          curl -sfG -H "$H" "$A/stats/hits" --data-urlencode "start=2026-11-01T00:00:00+05:30" --data-urlencode "end=${END}" --data-urlencode "limit=100" > /tmp/all_hits.json
+          curl -sfG -H "$H" "$A/stats/toprefs" --data-urlencode "start=$START" --data-urlencode "end=$END" > /tmp/refs.json || echo '{}' > /tmp/refs.json
+          python3 - "$D" <<'PY'
+          import json,sys
+          d=sys.argv[1]
+          out={"date":d,"total":json.load(open('/tmp/day_total.json')),
+               "day_hits":json.load(open('/tmp/day_hits.json')),
+               "all_time_hits":json.load(open('/tmp/all_hits.json')),
+               "referrers":json.load(open('/tmp/refs.json'))}
+          json.dump(out,open(f'stats/{d}.json','w'),indent=1)
+          json.dump(out,open('stats/latest.json','w'),indent=1)
+          PY
+      - name: Commit
+        run: |
+          git config user.name "Srini Presents bot"; git config user.email "sriniurs@users.noreply.github.com"
+          git add stats; git commit -m "Visitor stats $(TZ=Asia/Kolkata date -d yesterday +%F)" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main
