@@ -1,0 +1,534 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>The Smog Machine: Why Delhi Chokes Every November</title>
+<meta property="og:title" content="The Smog Machine: Why Delhi Chokes Every November">
+<meta property="og:description" content="Delhi's air = ~10 cigarettes a day. Why does it happen every November?">
+<meta property="og:image" content="https://sriniurs.github.io/archive/2026-11-02-smog-machine.png">
+<meta property="og:url" content="https://sriniurs.github.io/archive/2026-11-02-smog-machine.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:var(--yellow);-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:var(--line);color:var(--yellow);font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.smog{background:#d9d4c7}
+</style>
+
+<main class="wrap">
+
+<header class="cover">
+  <div>
+    <p class="byline">Srini presents</p>
+    <h1>The Smog Machine: Why Delhi Chokes Every November</h1>
+    <p class="sub">On 2 November, Delhi's air slipped into "very poor" for the first time this winter, and Diwali is six days away. Every year the same grey blanket comes back. A curious young learner asks how the machine works, and a wise mentor who has watched it switch on for twenty winters explains.</p>
+    <div class="fs"><span>Air pollution</span><span>How it works</span><span>Delhi + Karnataka</span><span>Your lungs</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, flying to Delhi for Diwali</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, has seen twenty smoggy winters</span></figure>
+  </div>
+</header>
+
+<p class="era">THE SMOG MACHINE<small>How it switches on, part by part</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>This week's alarm bell</h2></div>
+  <div class="grid">
+    <div class="panel smog">
+      <p class="cap"><b>Delhi, 2 Nov 2026, 9 am</b></p>
+      <div class="big"><b class="hot">AQI 312</b></div>
+      <p>"Very poor", the first such reading this winter. The city had a short break after rain the week before.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The fine dust in the air</b> (late morning)</p>
+      <div class="big"><b>214</b><span class="arrow">µg/m³</span></div>
+      <p>PM2.5 reading in Delhi. The WHO's safe limit for a year is <b>5</b>.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I fly to Delhi for Diwali on Friday. Is it really that bad?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>It's a machine with four parts, Zappy. Once you see the parts, you'll see why it starts on time every year.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>Part 1: the invisible dust (PM2.5)</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>What it is</b></p>
+      <p>PM2.5 means particles smaller than 2.5 thousandths of a millimetre, about 30 times thinner than a hair. They slip past your nose, deep into your lungs and even into your blood.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>What "AQI" means</b></p>
+      <p>The Air Quality Index turns several pollutants into one score. India's bands: 0–50 good, 201–300 poor, 301–400 very poor, 401+ severe.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The cigarette yardstick</b> (Berkeley Earth)</p>
+      <p>Breathing 22 µg/m³ of PM2.5 for a day harms your health about as much as smoking <b>one cigarette</b>.</p>
+      <div class="chain"><span>214 µg/m³</span><i>÷</i><span>22</span><i>=</i><span class="hit">~10 cigarettes</span></div>
+      <p class="small">Our arithmetic, for one day at the 2 Nov reading. Rough rule of thumb.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>Part 2: the lid on the pot</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <div class="chain"><span>Nights get cold</span><i>→</i><span>Cool air sits under a warmer layer (an "inversion")</span><i>→</i><span>Wind drops below 1 m/s</span><i>→</i><span class="hit">Smoke can't rise or blow away</span></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Why summer is different</b></p>
+      <p>In summer, hot ground air rises and mixes high up, diluting the dust. In winter the "mixing height" shrinks, so the same smoke is packed into a much smaller box of air.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Delhi's geography</b></p>
+      <p>Delhi sits in the flat Indo-Gangetic plain, with the Himalayas to the north. Winter winds are weak and the plain acts like a bowl.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Delhi doesn't make far more smoke in November. It just loses its chimney. Same fire, closed lid.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Part 3: who is adding the smoke?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Daily source split</b> (Govt Decision Support System, forecast for 26 Oct 2026)</p>
+      <div class="ladder">
+        <div class="bar">NCR towns around Delhi<div style="width:100%">37%</div></div>
+        <div class="bar">Delhi's vehicles<div style="width:56%">20.8%</div></div>
+        <div class="bar">Farm fires<div class="hot" style="width:30%">10.9%</div></div>
+      </div>
+      <p class="small">The rest comes from Delhi's other local sources and from farther away. Shares change every day with the wind.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Inside Delhi alone</b> (CSE analysis of the same system)</p>
+      <div class="big"><b>51–53%</b></div>
+      <p>The share of Delhi's <i>own</i> local PM2.5 that comes from vehicles, year after year. That makes vehicles the city's biggest home-grown source.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>But TV always blames Punjab's farmers!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Farm fires are a real spike, but they come and go. Cars, trucks, factories and dust are there every single day.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>The farm fire puzzle</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Why farmers burn</b></p>
+      <p>After the rice harvest, farmers have only a couple of weeks to clear the field for wheat. Burning the leftover straw is fast and almost free. Machines that mix straw into the soil cost money and time.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>How big is it?</b> (DSS research paper, 2024)</p>
+      <p>Across the post-monsoon season, fires averaged about <b>7%</b> of Delhi's PM2.5. On peak days, a single main source (fires or local emissions) can reach <b>65–69%</b>.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The December surprise</b> (CSE)</p>
+      <p>In December 2025, farm fires had almost stopped. Yet across the region, average PM2.5 was <b>28% higher</b> than during the burning period.</p>
+      <p class="take">If the fires stop and the air gets worse, the fires were never the whole story.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>Part 4: the Diwali spike</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Diwali 2025, Delhi PM2.5</b> (Climate Trends, CPCB data, µg/m³)</p>
+      <div class="ladder">
+        <div class="bar">Before Diwali<div style="width:32%">156.6</div></div>
+        <div class="bar">Diwali day<div style="width:48%">233.5</div></div>
+        <div class="bar">24 hrs after<div class="hot" style="width:100%">488</div></div>
+      </div>
+      <p class="small">The worst post-Diwali reading in five years. Wind stayed below 1 m/s.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">BOOM!</span>
+      <p>Firecrackers are a short burst, but they go off on the worst possible night: cold, still and already smoky. The lid traps all of it.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So my Diwali visit lands right on the peak?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Likely the worst 48 hours of your trip, yes. Plan for it; we'll get to how.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>The emergency ladder (GRAP)</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Stage</th><th>AQI</th><th>What kicks in (examples)</th></tr></thead>
+        <tbody>
+          <tr><td>Stage 1</td><td>201–300 (poor)</td><td>Dust control at building sites, no waste burning, old-bus and generator curbs (moved here in the Sept 2026 revision)</td></tr>
+          <tr><td>Stage 2</td><td>301–400 (very poor)</td><td>Extra traffic and dust measures</td></tr>
+          <tr><td>Stage 3</td><td>401–450 (severe)</td><td class="bad">Curbs on older petrol and diesel cars, more construction stops</td></tr>
+          <tr><td>Stage 4</td><td>450+ (severe plus)</td><td class="bad">Older diesel trucks kept out (except essentials), the toughest emergency curbs</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Graded Response Action Plan run by the Commission for Air Quality Management. Each stage keeps the earlier stages' rules. Stage 1 was invoked on 21 Oct 2026.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>GRAP is a fire extinguisher, not a fire alarm repair. It reacts after the air is already bad. The real fix happens the other 300 days of the year. <span class="small">(Opinion)</span></p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p4">THE DEEP DIVE<small>The research behind the headlines</small></p>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>What it does to a life</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Years of life lost</b> (Air Quality Life Index 2025, University of Chicago, 2023 data)</p>
+      <div class="ladder">
+        <div class="bar">Average person, world<div style="width:38%">1.9 yrs</div></div>
+        <div class="bar">Average Indian<div style="width:50%">3.5 yrs</div></div>
+        <div class="bar">Delhi resident<div class="hot" style="width:100%">8.2 yrs</div></div>
+      </div>
+      <p class="small">Compared with breathing air that meets the WHO limit.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Delhi's yearly average</b></p>
+      <div class="big"><b>88.4</b><span class="arrow">µg/m³</span></div>
+      <p>The 2023 annual PM2.5 level used by the AQLI. That's about <b>4 cigarettes a day, every day of the year</b> (our arithmetic: 88.4 ÷ 22).</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Even India's own bar</b></p>
+      <p>Meeting just India's national standard (40 µg/m³) would give Delhi residents back about <b>3.5 years</b>, since the loss falls from 8.2 to 4.7 years.</p>
+      <p class="take">Nobody in India, all 1.4 billion of us, lives in air that meets the WHO guideline.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>Beijing did it. Can Delhi?</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>City</th><th>Then</th><th>Now</th><th>Change</th></tr></thead>
+        <tbody>
+          <tr><td>Beijing</td><td>89.5 µg/m³ (2013)</td><td>27.0 µg/m³ (2025)</td><td class="ok">−70%</td></tr>
+          <tr><td>Delhi</td><td>88.4 µg/m³ (2023, AQLI)</td><td>~96 µg/m³ (2025, CREA)</td><td class="bad">Not falling</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Beijing: Beijing Municipal Ecology and Environment Bureau. Delhi 2025: CREA ranks it India's 2nd most polluted city. Different monitors, so compare the direction, not the decimals.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Same starting line</b></p>
+      <p>In 2013, Beijing's air was about as dirty as Delhi's is today. Twelve years later it is less than a third.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>What it took</b></p>
+      <p>China ran a national clean air plan from 2013: cutting coal burning, shifting heating to gas and electricity, and tight targets for whole regions, not one city.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The lesson: the air doesn't stop at a city border. Beijing cleaned up with its neighbours. Delhi's smoke comes from five states. <span class="small">(Opinion)</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>The quick fix that wasn't: cloud seeding</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The 2025 experiment</b></p>
+      <p>Delhi approved <b>₹3.21 crore</b> for five cloud-seeding trials with IIT Kanpur. A plane released salt and silver iodide flares over the city to try to make rain wash the smog out.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The result</b></p>
+      <div class="chain"><span>3 trials, ~₹1 crore</span><i>→</i><span>Cloud moisture only 15–20%</span><i>→</i><span class="hit">No significant rain</span></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The full bill</b></p>
+      <p>IIT Kanpur estimated a whole winter of seeding at <b>₹25–30 crore</b>, for perhaps a day or two of relief each time. Delhi's winter is usually too dry for it to work.</p>
+      <p class="warn">Even when rain comes, scientists say pollution returns almost as soon as it stops.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>The bill for the whole country</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Cost to Indian business</b> (Dalberg, Clean Air Fund and CII, 2019 data)</p>
+      <div class="big"><b>$95 bn</b></div>
+      <p>About 3% of India's GDP every year, roughly ₹7 lakh crore.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Where the money goes</b></p>
+      <div class="ladder">
+        <div class="bar">Early deaths<div style="width:100%">$44 bn</div></div>
+        <div class="bar">Shoppers stay home<div style="width:50%">$22 bn</div></div>
+        <div class="bar">Sick days<div class="hot" style="width:28%">$6 bn</div></div>
+      </div>
+      <p class="small">Sick days: about 1.4 billion working days lost a year. Other costs make up the rest.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So clean air isn't just a health thing. It's a money thing.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Exactly. Dirty air is a tax nobody voted for, and we all pay it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>And here in Karnataka?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Bengaluru, November 2025</b> (CREA monthly snapshot)</p>
+      <div class="ladder">
+        <div class="bar">WHO daily limit<div style="width:32%">15</div></div>
+        <div class="bar">Bengaluru avg<div style="width:63%">38</div></div>
+        <div class="bar">India's daily limit<div style="width:100%">60</div></div>
+      </div>
+      <p class="small">PM2.5, µg/m³. Within India's limit, but more than twice the WHO's.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The south isn't clean either</b> (Greenpeace India)</p>
+      <p>In Bengaluru, PM2.5 was <b>5–6 times</b> the WHO guideline in every month studied. Bengaluru, Mysuru and Puducherry also showed coarser dust (PM10) at 4–5 times the WHO level.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The national picture</b> (CREA, satellite data)</p>
+      <p><b>1,787</b> of 4,041 Indian towns broke India's yearly PM2.5 standard in every year studied. The national clean air programme covers only <b>130</b> cities.</p>
+      <p class="take">Better winds on the plateau buy us time, not immunity.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">WHAT HAPPENS NEXT<small>Prof. Bolt's three endings, and Zappy's plan</small></p>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>Three endings for this winter (opinion)</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx b">PHEW!</span>
+      <p><b>Good ending:</b> a western disturbance brings real rain and wind around Diwali, and green-cracker rules are followed. AQI stays mostly "poor".</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">MEH.</span>
+      <p><b>Usual ending (most likely):</b> a post-Diwali spike to "severe", GRAP 3 or 4 for some days, then on-and-off "very poor" air into January.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">COUGH!</span>
+      <p><b>Bad ending:</b> still, foggy weather sits over the plain for weeks. Repeated "severe plus" days, school closures and flight delays.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>My bet is the usual ending. The real story is the next ten years: either India treats air like Beijing did, as a whole-region job, or we keep buying air purifiers and calling it a solution.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Before and during the trip</b></p>
+      <ul class="clean">
+        <li>Check the AQI each morning (CPCB's Sameer app or any AQI app).</li>
+        <li>Pack well-fitting N95 masks; cloth masks don't stop PM2.5.</li>
+        <li>Skip early-morning walks and outdoor exercise on bad days; smog is worst at night and dawn.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>For family at home</b></p>
+      <ul class="clean">
+        <li>Keep windows shut on "very poor" days; an air purifier in one bedroom helps most.</li>
+        <li>Children, older people and anyone with asthma or heart disease need extra care; see a doctor for breathlessness.</li>
+        <li>Celebrate with diyas and lights; go easy on crackers.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>N95 for the trip, purifier for Grandma's room, and fewer crackers this year.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>And next time someone blames only the farmers, show them EP 4.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>The machine</b></p><ul class="clean">
+      <li>Dust: PM2.5, 30× thinner than a hair.</li>
+      <li>Lid: cold nights + no wind trap it.</li>
+      <li>Smoke: vehicles, NCR towns, industry, dust; farm fires and crackers add spikes.</li>
+      <li>22 µg/m³ for a day ≈ 1 cigarette.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>Delhi: 8.2 years of life lost (AQLI).</li>
+      <li>Beijing cut PM2.5 by 70% since 2013.</li>
+      <li>Cloud seeding: ~₹1 crore, no real rain.</li>
+      <li>Cost to India: $95 bn a year.</li>
+      <li>Bengaluru: more than twice the WHO limit.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>Check AQI daily in winter.</li>
+      <li>N95, not cloth.</li>
+      <li>No dawn walks on smog days.</li>
+      <li>Purifier in the bedroom.</li>
+      <li>Fewer crackers.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the data and events are real. Sources: Bombay Samachar and Whalesbook (Delhi AQI 312, 2 Nov 2026), AQI.in (PM2.5 214 µg/m³), MitKat Advisory (CPCB bulletin), Berkeley Earth (cigarette equivalence), NewsBytes/Decision Support System (26 Oct 2026 source split), Centre for Science and Environment and Down To Earth (vehicles' local share, December surge), Govardhan et al. 2024, Geoscientific Model Development (DSS seasonal shares), Climate Trends via PTI/The Statesman (Diwali 2025 PM2.5), Business Today and ThePrint (GRAP stages and 2026 revision), EPIC/AQLI 2025 (life expectancy), Beijing Municipal Ecology and Environment Bureau and CAE (Beijing PM2.5), CREA (Delhi 2025 ranking, Bengaluru Nov 2025, 1,787 towns), Business Standard, Tribune and Outlook (cloud seeding costs), Dalberg/Clean Air Fund/CII (economic cost), Greenpeace India (south Indian cities). Cigarette and percentage conversions are our own arithmetic. Figures rounded. Health tips are general; see a doctor for symptoms. The three endings are opinion.</p>
+
+<p class="foot"><a href="/archive/">📚 Past stories</a></p>
+</main>
+
+</body></html>
