@@ -6,7 +6,7 @@ a{color:#c0262d;font-weight:700;text-decoration:none;font-size:18px}span{display
 @media (max-width:640px){
  .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
  .cap{font-size:17.5px!important}
- .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.chain>*,.foot,.ladder,.bar{font-size:15px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
  .take,.warn{font-size:17.5px!important}
 
 }
@@ -28,6 +28,15 @@ a{color:#c0262d;font-weight:700;text-decoration:none;font-size:18px}span{display
 <script id="stack-tables-js">
 document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<4)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
 </script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+
 
 </head>
 <body><h1>📰 Srini Presents</h1><p class="s">Every story so far. <a href="/">Latest →</a></p>
