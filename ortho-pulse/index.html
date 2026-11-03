@@ -20,16 +20,15 @@
  table.vs.stk{table-layout:auto!important;border:0}
  table.vs.stk thead{display:none}
  table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
- table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:flex;justify-content:space-between;gap:12px;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important}
- table.vs.stk td::before{content:attr(data-label);font-weight:700;color:var(--muted);flex:1 1 55%;text-align:left}
- table.vs.stk td>*,table.vs.stk td{text-align:right}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
  table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
  table.vs.stk td:first-child::before{content:none}
  .panel:has(table.vs.stk){overflow:visible}
 }
 </style>
 <script id="stack-tables-js">
-document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<4)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
 </script>
 <style id="chain-arrows">
 .chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
