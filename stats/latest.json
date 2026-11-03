@@ -1,12 +1,12 @@
 {
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "total": {
-  "total": 0,
+  "total": 20,
   "total_events": 0,
-  "total_utc": 0,
+  "total_utc": 32,
   "stats": [
    {
-    "day": "2026-11-01",
+    "day": "2026-11-02",
     "hourly": [
      0,
      0,
@@ -28,27 +28,553 @@
      0,
      0,
      0,
-     0,
-     0,
-     0,
-     0
+     5,
+     2,
+     1,
+     12
     ],
-    "daily": 0
+    "daily": 20,
+    "weekly": 20,
+    "monthly": 20
    }
   ]
  },
  "day_hits": {
-  "hits": [],
-  "total": 0,
+  "hits": [
+   {
+    "count": 8,
+    "path_id": 117804126,
+    "path": "/archive/2026-11-02-trin-trin.html",
+    "event": false,
+    "title": "Trin Trin Goes Silent: Why Mysuru Lost Its Green Bicycles",
+    "max": 4,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       2,
+       1,
+       1
+      ],
+      "daily": 8,
+      "weekly": 8,
+      "monthly": 8
+     }
+    ]
+   },
+   {
+    "count": 7,
+    "path_id": 117838328,
+    "path": "/ortho-pulse/2026-11-02.html",
+    "event": false,
+    "title": "The Ortho Pulse \u2014 Late Oct\u20132 Nov 2026",
+    "max": 7,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       7
+      ],
+      "daily": 7,
+      "weekly": 7,
+      "monthly": 7
+     }
+    ]
+   },
+   {
+    "count": 2,
+    "path_id": 117806312,
+    "path": "/",
+    "event": false,
+    "title": "Trin Trin Goes Silent: Why Mysuru Lost Its Green Bicycles",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1
+      ],
+      "daily": 2,
+      "weekly": 2,
+      "monthly": 2
+     }
+    ]
+   },
+   {
+    "count": 1,
+    "path_id": 117845201,
+    "path": "/archive/2026-11-02-scan-pay-repeat.html",
+    "event": false,
+    "title": "Scan, Pay, Repeat: The UPI Story",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ],
+      "daily": 1,
+      "weekly": 1,
+      "monthly": 1
+     }
+    ]
+   },
+   {
+    "count": 1,
+    "path_id": 117844460,
+    "path": "/archive/2026-11-02-smog-machine.html",
+    "event": false,
+    "title": "The Smog Machine: Why Delhi Chokes Every November",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ],
+      "daily": 1,
+      "weekly": 1,
+      "monthly": 1
+     }
+    ]
+   },
+   {
+    "count": 1,
+    "path_id": 117844397,
+    "path": "/archive",
+    "event": false,
+    "title": "Srini Presents: Past stories",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ],
+      "daily": 1,
+      "weekly": 1,
+      "monthly": 1
+     }
+    ]
+   }
+  ],
+  "total": 20,
   "more": false
  },
  "all_time_hits": {
-  "hits": [],
-  "total": 0,
+  "hits": [
+   {
+    "count": 8,
+    "path_id": 117804126,
+    "path": "/archive/2026-11-02-trin-trin.html",
+    "event": false,
+    "title": "Trin Trin Goes Silent: Why Mysuru Lost Its Green Bicycles",
+    "max": 4,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       4,
+       2,
+       1,
+       1
+      ],
+      "daily": 8,
+      "weekly": 8,
+      "monthly": 8
+     }
+    ]
+   },
+   {
+    "count": 7,
+    "path_id": 117838328,
+    "path": "/ortho-pulse/2026-11-02.html",
+    "event": false,
+    "title": "The Ortho Pulse \u2014 Late Oct\u20132 Nov 2026",
+    "max": 7,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       7
+      ],
+      "daily": 7,
+      "weekly": 7,
+      "monthly": 7
+     }
+    ]
+   },
+   {
+    "count": 2,
+    "path_id": 117806312,
+    "path": "/",
+    "event": false,
+    "title": "Trin Trin Goes Silent: Why Mysuru Lost Its Green Bicycles",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1
+      ],
+      "daily": 2,
+      "weekly": 2,
+      "monthly": 2
+     }
+    ]
+   },
+   {
+    "count": 1,
+    "path_id": 117845201,
+    "path": "/archive/2026-11-02-scan-pay-repeat.html",
+    "event": false,
+    "title": "Scan, Pay, Repeat: The UPI Story",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ],
+      "daily": 1,
+      "weekly": 1,
+      "monthly": 1
+     }
+    ]
+   },
+   {
+    "count": 1,
+    "path_id": 117844460,
+    "path": "/archive/2026-11-02-smog-machine.html",
+    "event": false,
+    "title": "The Smog Machine: Why Delhi Chokes Every November",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ],
+      "daily": 1,
+      "weekly": 1,
+      "monthly": 1
+     }
+    ]
+   },
+   {
+    "count": 1,
+    "path_id": 117844397,
+    "path": "/archive",
+    "event": false,
+    "title": "Srini Presents: Past stories",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ],
+      "daily": 1,
+      "weekly": 1,
+      "monthly": 1
+     }
+    ]
+   }
+  ],
+  "total": 20,
   "more": false
  },
  "referrers": {
-  "stats": [],
+  "stats": [
+   {
+    "name": "",
+    "count": 16,
+    "ref_scheme": "o"
+   },
+   {
+    "id": "sriniurs.github.io/archive",
+    "name": "sriniurs.github.io/archive",
+    "count": 3,
+    "ref_scheme": "h"
+   },
+   {
+    "id": "sriniurs.github.io/archive/2026-11-02-trin-trin.html",
+    "name": "sriniurs.github.io/archive/2026-11-02-trin-trin.html",
+    "count": 1,
+    "ref_scheme": "h"
+   }
+  ],
   "more": false
  }
 }
