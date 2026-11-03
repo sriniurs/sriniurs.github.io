@@ -1,0 +1,655 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style><style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style><script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script><style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style><style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style></head><body>
+<title>Namma Bengaluru, Namma AI</title>
+<meta property="og:title" content="Namma Bengaluru, Namma AI">
+<meta property="og:description" content="Bengaluru built India's tech capital. Will AI keep it on top?">
+<meta property="og:image" content="https://sriniurs.github.io/archive/2026-11-02-namma-ai.png">
+<meta property="og:url" content="https://sriniurs.github.io/archive/2026-11-02-namma-ai.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.foot a{color:inherit}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+</style>
+
+<main class="wrap">
+
+<header class="cover">
+  <div>
+    <p style="font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px">Srini presents</p>
+    <h1>Namma Bengaluru, Namma AI</h1>
+    <p class="sub">A comic about how Karnataka went from a city of science labs and pensioners to the world's back office, and now into the AI age. A curious young learner asks, and a wise mentor who has watched it since the 1980s answers: where the money came from, where it is now, and where it may go.</p>
+    <div class="fs"><span>Past</span><span>Present</span><span>Future</span><span>₹ Economy</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, 2 years into an IT job, worried about AI</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, in Bengaluru since 1985</span></figure>
+  </div>
+</header>
+
+<p class="era">THE PAST<small>How Bengaluru got its brain</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>Science city before software</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Bengaluru was just a sleepy garden city before Infosys, no?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Sleepy, yes. Empty-headed, no. The Mysuru kings and Sir M. Visvesvaraya planted the seeds a century ago: dams, power, engineering colleges. IISc came in 1909.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The PSU era</b> After Independence, the government parked its high-tech bets here.</p>
+      <div class="chain"><span>IISc</span><i>+</i><span>HAL</span><i>+</i><span>BEL</span><i>+</i><span>ISRO</span><i>+</i><span>ITI, BHEL</span></div>
+      <p class="small">Thousands of engineers, a cool climate and cheap land. "Pensioners' paradise" was also a quiet talent pool.</p>
+    </div>
+    <div class="panel">
+      <p class="take">Talent came first, the money followed. Every boom since then has been built on that same pile of engineers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>1985: a dish on the roof</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M20 30 Q30 70 74 62 Z" fill="#e3e8ec" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M47 46 L66 30" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="68" cy="28" r="4" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M44 62 L40 84 M58 64 L62 84 M32 86 H70" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M76 18 q8 4 8 12 M82 10 q14 6 14 22" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>1983</b> Infosys shifts base from Pune to Bengaluru. Wipro is already moving from vegetable oil to computers.</p>
+      <p class="cap"><b>1985</b> Texas Instruments opens a design centre and beams code to the US by satellite dish. Phone lines were too slow.</p>
+      <span class="sfx b">BEEP-BEEP!</span>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>People laughed. Who sends software through the sky? But the logic was simple: an American engineer cost ten times an Indian one, and the work didn't need a passport.</p></div>
+      <div class="big"><b>1 dish</b><span class="arrow">→</span><b class="hot">1 industry</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>The outsourcing gold rush</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="28" width="34" height="62" fill="#cdeffd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="52" y="12" width="34" height="78" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="20" y="36" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="20" y="50" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="20" y="64" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="36" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="50" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="64" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="58" y="20" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="34" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="48" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="62" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="20" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="34" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="48" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="62" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><path d="M6 90 H94" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>1990s</b> India opens up in 1991. Software parks, Electronic City and the ITPL tech park in Whitefield fill up.</p>
+      <p class="cap"><b>1997</b> Karnataka writes India's first state IT policy.</p>
+      <p class="cap"><b>Y2K</b> The world panics about the year 2000 bug. Bengaluru fixes the code and gets the trust.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So that's how my uncle went from a scooter to a villa in 15 years.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>That's the model: sell hours of engineers. More clients, more hires, more salaries, more flats in Whitefield. It worked for 30 years.</p></div>
+    </div>
+    <div class="panel">
+      <div class="chain"><span>US client</span><i>→</i><span>Hire 1,000 freshers</span><i>→</i><span>PGs, cabs, darshinis</span><i>→</i><span class="hit">Real-estate boom</span></div>
+      <p class="warn">Remember this chain. "Sell engineer hours" is exactly what AI now does cheaper.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">THE PRESENT<small>Richest big state, biggest bet on tech</small></p>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Karnataka by the numbers</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>2025-26 report card</b></p>
+      <ul class="clean">
+        <li>State economy (GSDP): about <b>₹33 lakh crore</b>, 5th largest in India.</li>
+        <li>Real growth: <b>8%</b>, ahead of India's 7.4%.</li>
+        <li>Services make up <b>70%</b>. Industry 19%, farming 11%.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Income per person</b> (₹ lakh a year, current prices)</p>
+      <div class="ladder">
+        <div class="bar">Karnataka<div style="width:100%">4.77</div></div>
+        <div class="bar">India<div class="hot" style="width:53%">2.51</div></div>
+      </div>
+      <p class="small">A Karnataka resident earns, on average, nearly double the national figure. One of the highest among major states.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Good marks. But 70% from services means one subject is carrying the whole report card. If that subject fails, the average falls fast.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>The export machine</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="big"><b>₹19.7</b><span class="arrow">lakh crore</span></div>
+      <p>Karnataka's total exports in 2025-26, up 9.5%. The state is India's No.1 exporter of software and services, and 4th in goods.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Karnataka's slice of India</b> (rough)</p>
+      <div class="ladder">
+        <div class="bar">Aerospace<div style="width:100%">60–65%</div></div>
+        <div class="bar">IT exports<div style="width:65%">~40%</div></div>
+        <div class="bar">Goods<div class="hot" style="width:20%">7%</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <p class="take">Brains export brilliantly. Factories, not so much. Gujarat, Maharashtra and Tamil Nadu all ship more goods.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>Back office → brain office</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 20 Q36 12 26 22 Q12 26 16 42 Q8 54 18 64 Q20 80 36 78 Q44 88 50 80 Q56 88 64 78 Q80 80 82 64 Q92 54 84 42 Q88 26 74 22 Q64 12 50 20 Z" fill="#f7c6d9" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 22 V80 M30 36 q8 4 6 12 M24 56 q10 0 12 8 M70 36 q-8 4 -6 12 M76 56 q-10 0 -12 8" fill="none" stroke="#c2185b" stroke-width="2.5" stroke-linecap="round"/><circle cx="50" cy="50" r="5" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>GCC = Global Capability Centre.</b> A foreign company's own in-house tech and research arm in India. Not a vendor. The company itself.</p>
+      <div class="big"><b>900+</b><span class="arrow">GCCs</span></div>
+      <p class="small">Counts vary by report (875 to 1,100+), but every list puts Bengaluru first in the world. About 35% of India's GCC workforce sits in Karnataka.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Why does this matter? A job is a job.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>In my time, Bengaluru did the work Americans designed. Now banks, chipmakers and retailers build their AI models here. Owner's work, not tenant's work.</p></div>
+    </div>
+    <div class="panel">
+      <p class="take">State GCC policy target: 500 more centres, past 1,000 by 2029, with 3.5 lakh new jobs. Some incentives only for centres outside Bengaluru.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>Then AI walked into the office</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="26" y="24" width="48" height="36" rx="8" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="40" cy="42" r="6" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="60" cy="42" r="6" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 24 V14" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="12" r="4" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="32" y="62" width="36" height="26" rx="4" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M32 70 L18 80 M68 70 L82 60" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M42 52 H58" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="75" r="4" fill="#e8590c"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx r">CUT!</span>
+      <p>India's biggest IT firm cut about 12,000 jobs in FY26, mostly middle and senior managers. Its chairman says AI agents may one day equal its human headcount.</p>
+      <p class="small">IT stocks fell sharply through 2025–26. Fresher offers shrank, and most of what's left asks for AI skills.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>But the same news says AI hiring is booming in Bengaluru!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Both are true. Companies are still hiring. They just need fewer people per project. The old pyramid had 100 freshers under 10 managers. The new one has 20 sharp people and a lot of AI.</p></div>
+    </div>
+    <div class="panel wide">
+      <p class="cap"><b>The domino, again</b> Remember the EP 3 chain? Run it backwards.</p>
+      <div class="chain">
+        <span class="hit">Fewer fresher hires</span><i>→</i><span>Empty PGs in Marathahalli</span><i>→</i><span>Darshini sells fewer idlis</span><i>→</i><span>Cab driver loses rides</span><i>→</i><span>Flat sales slow</span>
+      </div>
+      <p class="warn">Bengaluru's economy is not just techies. It is everyone who feeds, drives and houses techies.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>One Karnataka, two Karnatakas</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Income per person</b> (₹ lakh, recent Economic Survey figures)</p>
+      <div class="ladder">
+        <div class="bar">Bengaluru Urban<div style="width:100%">7.38</div></div>
+        <div class="bar">State avg<div style="width:65%">4.77</div></div>
+        <div class="bar">Yadgir<div class="hot" style="width:20%">1.46</div></div>
+      </div>
+    </div>
+    <div class="panel">
+      <p>Ten of the 31 districts send out 94% of the state's exports. Kalyana Karnataka and much of the north are still farm towns waiting for the boom.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>And here's the irony: because Bengaluru is so rich, the state's share of central tax money got cut. The rich city's success is billed to the poor districts.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">THE FUTURE<small>The state's plan, and Prof. Bolt's guesses</small></p>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>The government's big bets</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>IT Policy 2025–30</b></p>
+      <div class="big"><b>₹4.09L cr</b><span class="arrow">→</span><b class="hot">₹11.5L cr</b></div>
+      <p>Software export target by 2030, nearly triple. IT's share of the state economy to rise from 26% to 36%.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The AI kit</b> (announced 2026)</p>
+      <ul class="clean">
+        <li><b>AI University:</b> India's first government-led one, 100 acres in Bengaluru, regional campuses in Mysuru, Mangaluru, Hubballi-Dharwad, Belagavi, Kalaburagi.</li>
+        <li><b>Two green data centres:</b> one coastal, one near Bengaluru.</li>
+        <li><b>Responsible AI policy:</b> drafted by a committee led by Kris Gopalakrishnan.</li>
+        <li><b>Bengaluru Tech Summit 2026:</b> 17–19 Nov, theme "AI &amp; Beyond".</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Startups beyond Bengaluru</b></p>
+      <p>Startup Policy 2025–30 targets 25,000 new startups, with at least 10,000 outside Bengaluru. Deep-tech grants of up to ₹1 crore for AI, chips, quantum and robotics.</p>
+      <p class="take">The direction is right: push the work to tier-2 cities, and from services to products.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>AI is thirsty</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 Q76 44 76 62 Q76 88 50 88 Q24 88 24 62 Q24 44 50 10 Z" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M38 60 Q38 74 50 76" fill="none" stroke="#cdeffd" stroke-width="4" stroke-linecap="round"/><path d="M82 30 l8 0 M80 20 l6 -6" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/><text x="14" y="30" font-family="Arial Black,Arial" font-size="16" fill="#e8590c">!</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx b">GLUG GLUG</span>
+      <p>Data centres eat electricity and drink water for cooling. Bengaluru ran dry in the summer of 2024 and still gets its water pumped uphill from the Kaveri.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the coastal data centre isn't random.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>No. Sea air, sea water and space. Mangaluru and Udupi could gain. The traffic jam on Outer Ring Road is also an AI problem: talent wastes 2 hours a day in it.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Picks and shovels</b> Whoever wins the AI race, someone must supply:</p>
+      <div class="chain"><span>Power</span><i>+</i><span>Water</span><i>+</i><span>Land</span><i>+</i><span>Cables</span><i>+</i><span>Chips</span></div>
+      <p class="take">Karnataka's real AI test is infrastructure, not talent.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era" style="background:#6b4fbb">THE DEEP DIVE<small>The research behind the headlines</small></p>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>Revenue up, jobs flat: AI in the numbers</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Nasscom's FY26 report card for Indian tech</b></p>
+      <div class="ladder">
+        <div class="bar">Revenue growth<div style="width:100%">+6.1%</div></div>
+        <div class="bar">Headcount growth<div class="hot" style="width:38%">+2.3%</div></div>
+      </div>
+      <p class="small">Revenue: $315 bn. Workforce: 59.5 lakh. Net new jobs: 1.35 lakh, only 2,000 more than the year before.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Revenue per worker</b> (our arithmetic from Nasscom data)</p>
+      <div class="big"><b>~$51,000</b><span class="arrow">→</span><b class="hot">~$53,000</b></div>
+      <p>FY25 to FY26. Each worker now brings in about 4% more. That's what "AI productivity" looks like on a balance sheet.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>AI's own slice</b></p>
+      <div class="big"><b>$10–12 bn</b></div>
+      <p>Nasscom's estimate of AI-led revenue in FY26, about 3–4% of the industry. Over 20 lakh people were trained in AI skills during the year.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>For 30 years, Bengaluru's rule was simple: 10% more business meant roughly 10% more people. That link is breaking. Revenue now grows nearly three times faster than jobs. Every PG owner, cab driver and flat builder in the city should notice that number.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>Bengaluru vs the challengers</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Measure (2026)</th><th>Bengaluru</th><th>Hyderabad</th><th>Pune</th></tr></thead>
+        <tbody>
+          <tr><td>Office space leased, Jan–Jun (million sq ft, Savills)</td><td><b>13.1</b></td><td>5.9</td><td>6.4</td></tr>
+          <tr><td>Share of that leasing by GCCs</td><td>~65%</td><td><b>~73%</b></td><td>—</td></tr>
+          <tr><td>Office leasing, Jan–Sep (million sq ft)</td><td><b>18.0</b> (+25%)</td><td>—</td><td>8.5 (record)</td></tr>
+          <tr><td>Prime office rent growth (Q3, Knight Frank)</td><td><b>+11.5%</b>, joint-highest in Asia-Pacific</td><td>—</td><td>—</td></tr>
+          <tr><td>Hours lost in rush-hour traffic per year (TomTom 2025)</td><td class="bad">168 (world #2)</td><td>—</td><td>152 (world #5)</td></tr>
+        </tbody>
+      </table>
+      <p class="small">"—" means no comparable figure in the same report.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So Bengaluru is still winning?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Still leading by a mile. But rents rising 11% a year and the world's second-worst traffic are exactly the costs that push the next office to Hyderabad or Pune.</p></div>
+    </div>
+    <div class="panel">
+      <p class="take">Bengaluru isn't losing companies. It's at risk of losing the <i>next</i> expansion. That's how decline starts: slowly, at the margin.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>The traffic tax</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g transform="translate(2 8)"><path d="M8 40 L16 26 H44 L52 40 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="4" y="40" width="52" height="14" rx="4" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="16" cy="56" r="5" fill="#151515"/><circle cx="44" cy="56" r="5" fill="#151515"/></g><g transform="translate(42 28)"><path d="M8 40 L16 26 H44 L52 40 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="4" y="40" width="52" height="14" rx="4" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="16" cy="56" r="5" fill="#151515"/><circle cx="44" cy="56" r="5" fill="#151515"/></g><text x="20" y="96" font-family="Arial Black,Arial" font-size="12" fill="#e8590c">HONK!</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>TomTom Traffic Index 2025</b></p>
+      <div class="big"><b class="hot">36 min</b><span class="arrow">per 10 km</span></div>
+      <p>Two minutes worse than 2024. Rush-hour average speed: about 14 km/h, slower than a bicycle.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>What 168 hours means</b> (our arithmetic)</p>
+      <div class="chain"><span>168 hours lost</span><i>=</i><span>7 full days</span><i>=</i><span class="hit">~21 eight-hour workdays</span></div>
+      <p class="small">A month of working time, every year, for every rush-hour commuter.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">HONK!</span>
+      <p>Only Mexico City ranked worse in the world. In 15 minutes of evening rush, a Bengaluru driver covers just 2.5 km.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Economists call this a hidden tax. Nobody pays it at a counter, but every company pays it in tired staff, late meetings and people quitting for remote jobs. It's Bengaluru's biggest competitive weakness, and AI can't fix it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>The money Bengaluru earns, and what comes back</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M30 40 Q20 54 22 70 Q26 88 50 88 Q74 88 78 70 Q80 54 70 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 40 L30 26 Q50 20 70 26 L64 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M34 40 H66" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" font-family="Arial Black,Arial" font-weight="900" font-size="26" text-anchor="middle" fill="#fff">₹</text><path d="M82 30 L88 22 M86 40 L94 38 M78 22 L80 14" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Karnataka's share of central taxes</b> (Finance Commissions)</p>
+      <div class="ladder">
+        <div class="bar">14th FC (2015–20)<div style="width:100%">4.71%</div></div>
+        <div class="bar">15th FC (2020–26)<div class="hot" style="width:77%">3.64%</div></div>
+        <div class="bar">16th FC (2026–31)<div style="width:88%">4.13%</div></div>
+      </div>
+      <p class="small">Each Finance Commission sets how the Centre's tax pool is shared among states for five years.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Why it fell</b></p>
+      <p>The formula gives more to poorer states. Because Bengaluru makes Karnataka rich per head, the state's share was cut by about 23% in 2020. The state estimates it lost over ₹80,000 crore in that period.</p>
+      <p class="small">The 16th Commission raised it to 4.13% from April 2026; the state says it still loses ₹10,000–15,000 crore a year compared with the old share.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The infrastructure ask</b></p>
+      <div class="big"><b>₹1.15 lakh cr</b></div>
+      <p>What Karnataka asked the 16th Finance Commission for, for Bengaluru's infrastructure alone.</p>
+    </div>
+    <div class="panel wide">
+      <p class="take">This is the core tension: the city that earns the money needs huge investment in roads, metro and water, but the national formula is built to send money to poorer states. Both goals are fair; they pull against each other.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>Can the 2030 targets actually be hit?</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M14 30 L36 20 L64 30 L86 20 V72 L64 82 L36 72 L14 82 Z" fill="#fff3c4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 20 V72 M64 30 V82" stroke="#151515" stroke-width="2"/><path d="M50 64 Q34 46 38 36 Q42 26 50 26 Q58 26 62 36 Q66 46 50 64 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="38" r="5" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 60 Q30 50 42 58" fill="none" stroke="#2a9df4" stroke-width="2.5" stroke-dasharray="2 4" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The IT Policy target</b></p>
+      <div class="big"><b>₹4.09L cr</b><span class="arrow">→</span><b class="hot">₹11.5L cr</b></div>
+      <p>Software exports by 2030.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The growth that requires</b> (our arithmetic)</p>
+      <div class="ladder">
+        <div class="bar">Needed per year<div class="hot" style="width:100%">~23%</div></div>
+        <div class="bar">India tech, FY26<div style="width:27%">6.1%</div></div>
+      </div>
+      <p class="small">Tripling in about five years needs ~23% growth every year, almost four times the industry's current pace.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Where the extra could come from</b></p>
+      <ul class="clean">
+        <li>GCCs: state target of 1,000+ by 2029.</li>
+        <li>Data centres: India's capacity 2.2 → 12 GW by 2030 (Wood Mackenzie).</li>
+        <li>AI products, not just services.</li>
+      </ul>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Targets are meant to stretch. But when the target needs four times today's speed, read it as a direction, not a forecast. Judge the government by GCC openings and new jobs outside Bengaluru each year, not by the 2030 headline.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 16 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 16</span><h2>Bengaluru 2035: three endings</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">BOOM!</span>
+      <p><b>The good ending.</b> GCCs move from support to building AI products. AI University and tier-2 cities fill with startups. Mysuru and Hubballi become the new Whitefield. Karnataka exports AI tools, not engineer hours.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">HMM…</span>
+      <p><b>The likely ending.</b> Bengaluru stays the AI capital, richer but smaller per head. Top earners do brilliantly, mid-level coders get squeezed, and the north still lags. GDP up, jobs flat.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">CRASH!</span>
+      <p><b>The bad ending.</b> AI swallows services jobs faster than products appear. Water and traffic push GCCs to Hyderabad and Chennai. PGs empty, IT-belt property drops, state taxes shrink.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>These are my guesses, not forecasts. But I've seen this city reinvent itself three times: PSUs, outsourcing, GCCs. Every time, the people who learned the new thing early were fine. The ones who said "my company will look after me" were not.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 17 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 17</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>AI + something</b> beats AI alone.</p>
+      <ul class="clean">
+        <li>AI + banking</li><li>AI + farming (Karnataka is a coffee, ragi and silk state)</li><li>AI + medicine and hospitals</li><li>AI + aerospace and chips</li>
+      </ul>
+      <p class="small">Pure coders compete with the machine. Domain people use the machine.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Should I leave Bengaluru?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Not yet. The best AI jobs in India are still here. But don't stretch for a ₹1.5 crore flat in the IT belt on one tech salary. Keep your EMIs light so a layoff is a setback, not a disaster.</p></div>
+    </div>
+    <div class="panel">
+      <p class="take">Watch the jobs, not the headlines. If GCCs keep hiring in tier-2 cities and AI University graduates get placed, the good ending is coming.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>Past</b></p><ul class="clean">
+      <li>IISc 1909, then HAL, BEL, ISRO: talent came first.</li>
+      <li>1985 satellite dish → outsourcing.</li>
+      <li>1997: India's first state IT policy.</li>
+    </ul></div>
+    <div class="panel"><p><b>Present</b></p><ul class="clean">
+      <li>₹33 lakh crore economy, 8% growth.</li>
+      <li>Income per head ~2x India's.</li>
+      <li>No.1 software exporter, world's GCC capital.</li>
+      <li>AI = fewer people per project. Freshers hit first.</li>
+      <li>Bengaluru rich, the north still poor.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>Tech revenue +6.1%, jobs +2.3%: growth no longer means hiring.</li>
+      <li>Bengaluru leads leasing (13.1 m sq ft in H1) but rents +11.5%.</li>
+      <li>168 hours a year lost in traffic ≈ 21 workdays.</li>
+      <li>Tax share: 4.71% → 3.64% → 4.13%.</li>
+      <li>2030 export target needs ~23% growth a year vs 6% today.</li>
+    </ul></div>
+    <div class="panel"><p><b>Future</b></p><ul class="clean">
+      <li>Target: triple software exports by 2030.</li>
+      <li>AI University, green data centres, 10,000 startups outside Bengaluru.</li>
+      <li>Biggest risks: water, power, traffic.</li>
+      <li>Your move: AI + a domain, and light EMIs.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the city, companies and policies are real. Figures are rounded from public reports (PRS Legislative Research, Economic Survey of Karnataka, FIEO, Nasscom-Zinnov, JLL, Reuters) and different reports count differently. The "three endings" are opinion, not forecasts. For learning, not investment advice. Deep dive: Nasscom Annual Strategic Review 2026 (via Outlook Business, The Core, Angel One), Savills and Knight Frank office reports (via The Realty Today, Madhyamam, Construction World), TomTom Traffic Index 2025, Takshashila, Deccan Herald, The Week/PTI and Outlook Business (Finance Commission shares), Wood Mackenzie (data centres). Revenue-per-worker and growth-rate figures are our own arithmetic from these sources.</p>
+
+<p class="foot"><a href="/archive/">📚 Past stories</a> · <a href="/">Latest story</a></p>
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
