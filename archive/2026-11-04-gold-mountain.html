@@ -47,7 +47,14 @@ document.addEventListener('DOMContentLoaded',function(){document.querySelectorAl
 
 
 
-</head><body>
+<style id="topnav">
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;margin:0 auto -12px;font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
 <title>India's Gold Mountain: 7 Numbers Behind Dhanteras</title>
 <meta property="og:title" content="India&#x27;s Gold Mountain: 7 Numbers Behind Dhanteras">
 <meta property="og:description" content="Indian homes hold about 28 times more gold than the RBI. 7 numbers explain why.">
@@ -228,6 +235,7 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 </style>
 <main class="wrap">
 
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
 <header class="cover t-wed">
   <div>
     <span class="daytag">WEDNESDAY</span>
@@ -649,8 +657,11 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; prices, data and events are real. Sources: Upstox (gold rates, 3 Nov 2026; Dhanteras and Diwali dates), Business Today/Jefferies "India's Hidden Stimulus" (household gold, wealth effect, monetised share; Sept 2026), Outlook Money/UBS (household gold incl. temples, vs GDP; Jan 2026), Free Press Journal/Assocham (household gold vs central banks; Apr 2026), DT Next/PTI and RBI annual report data (RBI gold, share of reserves; Mar–Jun 2026), Hutti Gold Mines FY26 results (May 2026), World Gold Council via GJEPC Solitaire and JewelBuzz (India Q3 2026 demand, imports, unofficial inflows), World Gold Council "India gold market update: import tightening" (May 2026; duty and smuggling history), Kitco/Reuters (smuggling margins and history, June 2026), Kotak Neo and Motilal Oswal (gold loans, LTVs, RBI Governor's remarks; Sept 2026), LoansJagat (southern states' share, May 2026), WION/GJC (Dhanteras 2025 sales), Business Standard (9K hallmarking, July 2025), Business Today (lighter jewellery trend, Oct 2026; Gold Monetisation Scheme, Apr 2025), 5paisa/AMFI (gold ETF inflows, Sept 2026), Anantam IAS and SuperKalam/GSI (Kolar Gold Fields history, tailings, new ore shoots). Value, ratio, carat, duty and loan figures marked "our arithmetic" are our own calculations. Prices change daily. Figures rounded. Prof. Bolt's verdict is opinion, not investment advice.</p>
 
-<p class="foot"><a href="/archive/">📚 Past stories</a> · <a href="/">Latest story</a></p>
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
 </main>
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body></html>
+<script id="topnav-js">(function(){var p=location.pathname;
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'||p==='/index.html'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(m[1]===p);}).catch(function(){});})();</script></body></html>

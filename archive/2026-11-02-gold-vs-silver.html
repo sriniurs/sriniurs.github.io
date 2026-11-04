@@ -47,7 +47,14 @@ document.addEventListener('DOMContentLoaded',function(){document.querySelectorAl
 
 
 
-</head><body>
+<style id="topnav">
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;margin:0 auto -12px;font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
 <title>Gold vs Silver: The Dhanteras Showdown</title>
 <meta property="og:title" content="Gold vs Silver: The Dhanteras Showdown">
 <meta property="og:description" content="Silver crashed 50%. Bargain or trap? Srini presents today's big story.">
@@ -202,6 +209,7 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 
 <main class="wrap">
 
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
 <header class="cover">
   <div>
     <p class="byline">Srini presents</p>
@@ -573,8 +581,11 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; prices, data and events are real. Sources: Upstox and Zoutons (Dhanteras date), StartupTalky/bullions.co.in and Ascendants (gold and silver prices, Oct 2026), ThePrint, The Hans India, LapaasVoice/Economic Times and GoodReturns (silver crash), ISA Bullion and Kitco (gold record, central banks), Sahi and Business Standard/PTI (Dhanteras prices), Tickertape (fund returns), Central Banking and Watcher.Guru/WGC (Q2 2026 buying), USAGOLD/WGC survey, Greater Kashmir/PTI and Motilal Oswal (Jan 2026 crash, CME margins), Skillings and PV Magazine (Silver Institute outlook), MetalCharts, Mudrex and SD Bullion (gold-silver ratio), Angel One/Commerce Ministry (imports), Choice India (ETF inflows, FoF pause), The Hitavada (2025 post-Dhanteras silver fall). Ratio, CAGR and weight figures are our own arithmetic. Prices change daily. Figures rounded. The verdict is opinion, not a recommendation.</p>
 
-<p class="foot"><a href="/archive/">📚 Past stories</a></p>
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
 </main>
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body></html>
+<script id="topnav-js">(function(){var p=location.pathname;
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'||p==='/index.html'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(m[1]===p);}).catch(function(){});})();</script></body></html>
