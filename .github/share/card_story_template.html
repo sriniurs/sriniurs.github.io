@@ -4,7 +4,7 @@
 @font-face{font-family:'Kalam';font-weight:400;src:url(fonts/Kalam-Regular.ttf)}
 html,body{margin:0;padding:0}
 body{width:720px;height:1280px;overflow:hidden;font-family:'Kalam',cursive}
-.card{position:relative;width:720px;height:1280px;background:{{PAPER}};overflow:hidden;display:flex;flex-direction:column;align-items:center;box-sizing:border-box;padding:90px 40px 300px}
+.card{position:relative;width:720px;height:1280px;background:{{PAPER}};overflow:hidden;display:flex;flex-direction:column;align-items:center;box-sizing:border-box;padding:90px 40px 290px}
 .card::before{content:"";position:absolute;inset:0;background:
  radial-gradient(ellipse at 50% 40%,rgba(255,248,230,.75) 0%,rgba(255,248,230,0) 60%),
  radial-gradient(ellipse at 85% 92%,rgba(150,100,40,.22) 0%,rgba(150,100,40,0) 35%),
@@ -21,9 +21,10 @@ h1{margin:26px 0 0;width:632px;text-align:center;font:400 70px/1.04 'Alfa Slab O
 .note{margin-top:26px;width:500px;padding:20px 18px 16px;background:#fbf3df;border:2px solid #4a3a28;box-shadow:6px 8px 0 rgba(60,40,20,.25);transform:rotate(-2deg);text-align:center;font:700 36px/1.1 'Kalam';color:#1c2b4a;flex:none}
 .note u{text-decoration:none;background:linear-gradient(transparent 70%,#f0b429 70%,#f0b429 88%,transparent 88%)}
 .pin{position:absolute;left:50%;top:-22px;transform:translateX(-50%)}
-.art{flex:1 1 auto;width:640px;min-height:220px;margin-top:14px}
+.art{flex:1 1 0;width:640px;min-height:120px;margin-top:14px}
 .band{position:absolute!important;left:0;right:0;bottom:0;height:280px;background:linear-gradient(180deg,{{BAND0}} 0,{{BAND}} 90px,{{BAND}} 100%)}
 .band span{position:absolute;left:0;right:0;top:44px;text-align:center;font:700 38px 'Kalam';color:#fff6dc;opacity:1;text-shadow:0 2px 6px rgba(0,0,0,.35)}
+.hint{flex:none;margin-top:8px;font:700 38px 'Kalam';color:#151515;text-align:center;white-space:nowrap}
 .stamp{flex:none;margin-top:22px;transform:rotate(-2deg);border:3px double #9d0208;color:#9d0208;font:400 17px 'Alfa Slab One';letter-spacing:.14em;padding:6px 14px;opacity:.85;text-align:center;white-space:nowrap}
 </style></head><body>
 <div class="card">
@@ -43,7 +44,8 @@ h1{margin:26px 0 0;width:632px;text-align:center;font:400 70px/1.04 'Alfa Slab O
 <svg class="uline" width="420" height="30" viewBox="0 0 420 30"><path filter="url(#rough)" d="M4 18 Q140 4 300 10 T416 12 L414 20 Q280 22 150 24 T6 26 Z" fill="#c0392b"/></svg>
 <div class="note"><svg class="pin" width="44" height="54" viewBox="0 0 44 54"><ellipse cx="22" cy="18" rx="16" ry="14" fill="#c0392b" stroke="#5a1a12" stroke-width="2"/><ellipse cx="17" cy="13" rx="5" ry="3.5" fill="#f2a093"/><path d="M22 32 L22 52" stroke="#555" stroke-width="3" stroke-linecap="round"/></svg>{{NOTE}}</div>
 <svg class="art" viewBox="0 0 430 400" preserveAspectRatio="xMidYMid meet">{{ART}}</svg>
-<div class="band"><span>👇 tap the link below to read 👇</span></div>
+<div class="hint">👇 tap the link below to read 👇</div>
+<div class="band"></div>
 </div>
 <script>window.cardReady=document.fonts.ready.then(function(){var h=document.getElementById("t"),f=70;while(h.scrollHeight>300&&f>48){f-=2;h.style.fontSize=f+"px";}return true;});</script>
 </body></html>
