@@ -33,11 +33,13 @@ tmp = here / "_card_render.html"
 tmp.write_text(page, encoding="utf-8")
 with sync_playwright() as p:
     b = p.chromium.launch()
-    pg = b.new_page(viewport={"width": 1200, "height": 800}, device_scale_factor=2)
+    jpg = out.suffix.lower() in (".jpg", ".jpeg")
+    # JPEG for WhatsApp: 1620x1080, quality 80 (~150 KB) so it loads fast on phones
+    pg = b.new_page(viewport={"width": 1200, "height": 800}, device_scale_factor=1.35 if jpg else 2)
     pg.goto(tmp.as_uri())
     pg.evaluate("window.cardReady")
     pg.wait_for_timeout(600)
-    pg.screenshot(path=str(out))
+    pg.screenshot(path=str(out), type="jpeg", quality=80) if jpg else pg.screenshot(path=str(out))
     b.close()
 tmp.unlink()
 print("wrote", out)
