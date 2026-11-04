@@ -4,7 +4,7 @@ Usage: python3 make_card.py spec.json out.png
 spec.json keys:
   title   - comic title (plain text)
   note    - 3-6 words for the pinned note (sits on the right, above the art); wrap ONE key phrase in *stars* to highlight it
-  weekday - e.g. "THURSDAY"
+  weekday - e.g. "THURSDAY" (also picks the day's pastel paper colour; optional "paper" overrides it)
   theme   - day theme, e.g. "FUTURE IS HERE"
   art     - inner SVG markup for ONE big topic illustration (bottom-right) drawn in viewBox 0 0 430 400;
             keep the top ~80 units fairly empty or light, the pinned note sits just above it
@@ -23,7 +23,13 @@ def esc(t):
 
 note = esc(spec["note"])
 note = re.sub(r"\*(.+?)\*", r'<u style="white-space:nowrap">\1</u>', note)
-page = (here / "card_template.html").read_text(encoding="utf-8")
+# Vintage paper tinted to the day's theme colour (Srini, 4 Nov 2026) so each day's
+# status looks new: pastel version of the comic's cover colour for that weekday.
+PAPER = {"MONDAY": "#f4d3b8", "TUESDAY": "#f3e1a6", "WEDNESDAY": "#d3e3c2",
+         "THURSDAY": "#cfdcee", "FRIDAY": "#f3cfd4", "SATURDAY": "#ddd3f0",
+         "SUNDAY": "#c6e1dc"}
+paper = spec.get("paper") or PAPER.get(spec["weekday"].strip().upper(), "#f1dfba")
+page = (here / "card_template.html").read_text(encoding="utf-8").replace("{{PAPER}}", paper)
 page = (page.replace("{{TITLE}}", esc(spec["title"]))
             .replace("{{NOTE}}", note)
             .replace("{{WEEKDAY}}", esc(spec["weekday"].upper()))
