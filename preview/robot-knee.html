@@ -227,7 +227,9 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 .factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
 .score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
 @media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
-.dayspecial{display:block;margin:14px auto 4px;max-width:720px;padding:9px 13px;border:2.5px dashed var(--line);background:var(--panel);color:var(--ink);font-size:15px;line-height:1.4;border-radius:10px}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
 </style>
 <main class="wrap">
 
@@ -245,7 +247,7 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
   </div>
 </header>
 
-<aside class="dayspecial"><b>🪔 Today is special:</b> Friday, 6 November is <b>Dhanteras</b>, also <b>Dhanvantari Jayanti</b>, the birthday of the god of medicine and Ayurveda. A fitting day to talk about how surgery is changing.</aside>
+<aside class="dayspecial"><svg class="dsav"><use href="#guru"/></svg><div><span class="dstag">TODAY IS SPECIAL!</span>It's <b>Dhanteras</b>, and <b>Dhanvantari Jayanti</b>: happy birthday to the god of medicine! 🪔 Perfect day to sneak a peek inside a modern operation theatre.</div></aside>
 
 <p class="era">PART 1: THE BIG WORRY<small>Who is really holding the knife?</small></p>
 
