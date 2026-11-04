@@ -11,6 +11,7 @@ MARK = "<!-- NEWEST ENTRY GOES DIRECTLY BELOW THIS LINE -->"
 ALLOWED = re.compile(r"^(index\.html|og\.png|(archive|markets|funds|nifty|ortho-pulse)/[A-Za-z0-9._-]+\.(html|png|jpg|json))$")
 # short story links (from 5 Nov 2026): /<slug>/index.html + /<slug>/og.png
 STORY = re.compile(r"^(?!archive/|assets/|preview/|stats/|comics/)[a-z0-9][a-z0-9-]{1,40}/(index\.html|og\.png|card\.jpg)$")
+STATUS = re.compile(r"^s/[a-z0-9][a-z0-9-]{1,40}/index\.html$")
 
 def merge_archive(new_html):
     path = "archive/index.html"
@@ -34,7 +35,7 @@ for z in zips:
             name = info.filename.lstrip("./")
             if info.is_dir():
                 continue
-            if not (ALLOWED.match(name) or STORY.match(name)):
+            if not (ALLOWED.match(name) or STORY.match(name) or STATUS.match(name)):
                 print("  skipped (not an allowed site path):", name); continue
             data = zf.read(info)
             if name == "archive/index.html":
