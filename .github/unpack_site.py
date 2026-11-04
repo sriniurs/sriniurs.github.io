@@ -10,7 +10,7 @@ import glob, os, re, sys, zipfile
 MARK = "<!-- NEWEST ENTRY GOES DIRECTLY BELOW THIS LINE -->"
 ALLOWED = re.compile(r"^(index\.html|og\.png|(archive|markets|funds|nifty|ortho-pulse)/[A-Za-z0-9._-]+\.(html|png|jpg|json))$")
 # short story links (from 5 Nov 2026): /<slug>/index.html + /<slug>/og.png
-STORY = re.compile(r"^(?!archive/|assets/|preview/|stats/|comics/)[a-z0-9][a-z0-9-]{1,40}/(index\.html|og\.png)$")
+STORY = re.compile(r"^(?!archive/|assets/|preview/|stats/|comics/)[a-z0-9][a-z0-9-]{1,40}/(index\.html|og\.png|card\.jpg)$")
 
 def merge_archive(new_html):
     path = "archive/index.html"
