@@ -1,6 +1,7 @@
 """Make the vintage WhatsApp share card (2400x1600 PNG) for a Srini Presents comic.
 
-Usage: python3 make_card.py spec.json out.png
+Usage: python3 make_card.py spec.json out.jpg [--story]
+  --story  tall 1080x1920 version for WhatsApp status / Instagram story
 spec.json keys:
   title   - comic title (plain text)
   note    - 3-6 words for the pinned note (sits on the right, above the art); wrap ONE key phrase in *stars* to highlight it
@@ -29,7 +30,8 @@ PAPER = {"MONDAY": "#f4d3b8", "TUESDAY": "#f3e1a6", "WEDNESDAY": "#d3e3c2",
          "THURSDAY": "#cfdcee", "FRIDAY": "#f3cfd4", "SATURDAY": "#ddd3f0",
          "SUNDAY": "#c6e1dc"}
 paper = spec.get("paper") or PAPER.get(spec["weekday"].strip().upper(), "#f1dfba")
-page = (here / "card_template.html").read_text(encoding="utf-8").replace("{{PAPER}}", paper)
+story = "--story" in sys.argv  # tall 9:16 version for WhatsApp status / Instagram story
+page = (here / ("card_story_template.html" if story else "card_template.html")).read_text(encoding="utf-8").replace("{{PAPER}}", paper)
 page = (page.replace("{{TITLE}}", esc(spec["title"]))
             .replace("{{NOTE}}", note)
             .replace("{{WEEKDAY}}", esc(spec["weekday"].upper()))
@@ -41,7 +43,8 @@ with sync_playwright() as p:
     b = p.chromium.launch()
     jpg = out.suffix.lower() in (".jpg", ".jpeg")
     # JPEG for WhatsApp: 1620x1080, quality 80 (~150 KB) so it loads fast on phones
-    pg = b.new_page(viewport={"width": 1200, "height": 800}, device_scale_factor=1.35 if jpg else 2)
+    vw, vh = (720, 1280) if story else (1200, 800)
+    pg = b.new_page(viewport={"width": vw, "height": vh}, device_scale_factor=(1.5 if story else 1.35) if jpg else 2)
     pg.goto(tmp.as_uri())
     pg.evaluate("window.cardReady")
     pg.wait_for_timeout(600)
