@@ -1,34 +1,73 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:'Alfa Slab One';src:url(fonts/AlfaSlabOne-Regular.ttf)}
 *{margin:0;padding:0;box-sizing:border-box}
+:root{--skin:#e3a877;--hair:#1a1a1a;--grey:#b9bec4;--red:#e63946;--blue:#1f7ad1;--yellow:#ffd23f;--line:#151515;--ink:#151515;--panel:#fff}
 body{width:1080px;height:1920px;background:{{PAPER}};color:#151515;font-family:system-ui,'DejaVu Sans',sans-serif;position:relative;overflow:hidden}
-.top{position:absolute;left:90px;top:170px;font-weight:800;font-size:34px;letter-spacing:.14em;text-transform:uppercase}
+.top{position:absolute;left:90px;top:150px;font-weight:800;font-size:34px;letter-spacing:.14em;text-transform:uppercase}
 .top b{color:#7a1020}
-.n{position:absolute;right:90px;top:170px;font-weight:800;font-size:34px;letter-spacing:.1em;opacity:.45}
-.mid{position:absolute;left:90px;right:90px;top:50%;transform:translateY(-55%)}
-h1{font-family:'Alfa Slab One';font-weight:400;font-size:150px;line-height:1.02;letter-spacing:-.01em}
+.n{position:absolute;right:90px;top:150px;font-weight:800;font-size:34px;letter-spacing:.1em;opacity:.45}
+.mid{position:absolute;left:90px;right:90px;top:300px}
+h1{font-family:'Alfa Slab One';font-weight:400;font-size:140px;line-height:1.02}
 h1 em{font-style:normal;color:#c0262d}
-.sub{margin-top:50px;font-size:56px;font-weight:700;line-height:1.25}
-.coin{width:150px;height:150px;border-radius:50%;background:#f2c230;border:8px solid #151515;margin-bottom:60px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:80px;color:#151515}
-.q{border-top:5px solid #151515;padding:44px 0}
+.sub{margin-top:40px;font-size:54px;font-weight:700;line-height:1.25}
+.art{width:330px;height:330px;background:#fff;border:7px solid #151515;border-radius:44px;box-shadow:12px 12px 0 #151515;padding:26px;transform:rotate(-4deg);margin:0 0 70px}
+.art.r{transform:rotate(4deg)}
+body.s3 .art{width:230px;height:230px;margin-bottom:50px;border-radius:36px}
+body.s3 h1{font-size:118px}
+body.s3 .url{margin-top:44px}
+body.s3 .cast{bottom:110px;gap:26px}
+.art svg{width:100%;height:100%}
+.q{border-top:5px solid #151515;padding:38px 0;display:flex;gap:30px;align-items:center}
 .q:last-child{border-bottom:5px solid #151515}
-.q p{font-size:54px;font-weight:700;line-height:1.2}
-.q .a{display:flex;align-items:baseline;gap:24px;margin-top:18px}
-.q .a span{font-family:'Alfa Slab One';font-size:84px;color:#c0262d}
-.q .a small{font-size:44px;font-weight:600;opacity:.75}
-.url{margin-top:70px;display:inline-block;background:#151515;color:#fff;font-weight:800;font-size:54px;padding:32px 44px;border-radius:999px}
-.tap{margin-top:40px;font-size:46px;font-weight:700;opacity:.75}
+.q .ic{flex:0 0 130px;height:130px;background:#fff;border:5px solid #151515;border-radius:28px;padding:12px}
+.q .ic svg{width:100%;height:100%}
+.q p{font-size:50px;font-weight:700;line-height:1.18}
+.q .a{display:flex;align-items:baseline;gap:22px;margin-top:12px}
+.q .a span{font-family:'Alfa Slab One';font-size:78px;color:#c0262d}
+.q .a small{font-size:42px;font-weight:600;opacity:.75}
+.url{margin-top:60px;display:inline-block;background:#151515;color:#fff;font-weight:800;font-size:54px;padding:32px 44px;border-radius:999px}
+.tap{margin-top:34px;font-size:46px;font-weight:700;opacity:.75}
+.cast{position:absolute;left:90px;right:90px;bottom:200px;display:flex;flex-direction:column;gap:34px}
+.who{display:flex;align-items:center;gap:26px}
+.who.rt{flex-direction:row-reverse}
+.av{flex:0 0 200px;height:200px;border-radius:50%;background:#fff;border:7px solid #151515;overflow:hidden;box-shadow:8px 8px 0 #151515}
+.av svg{width:100%;height:100%}
+.bub{position:relative;background:#fff;border:6px solid #151515;border-radius:36px;padding:26px 34px;font-size:50px;font-weight:800;line-height:1.2;box-shadow:8px 8px 0 #151515}
+.bub.g{background:#fff3c4}
+.bub small{display:block;font-size:26px;letter-spacing:.12em;font-weight:900;opacity:.55;margin-bottom:4px;text-transform:uppercase}
 </style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+<symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></defs></svg>
 <div class="top">Srini <b>presents</b></div><div class="n" id="n"></div>
-<div class="mid" id="m"></div>
+<div class="mid" id="m"></div><div class="cast" id="c"></div>
 <script>
 const D={{SPEC}};
 const s=+new URLSearchParams(location.search).get('s');
 document.getElementById('n').textContent=s+' / 3';
-const m=document.getElementById('m');
+const m=document.getElementById('m'),c=document.getElementById('c');
 const e=x=>String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;');
-const em=x=>e(x).replace(/\*(.+?)\*/g,'<em>$1</em>');
-if(s===1) m.innerHTML=`<div class="coin">${e(D.icon||'?')}</div><h1>${em(D.title).replace(/\n/g,'<br>')}</h1><div class="sub">${em(D.sub||'').replace(/\n/g,'<br>')}</div>`;
-if(s===2) m.innerHTML=D.questions.map(q=>`<div class="q"><p>${e(q.q)}</p><div class="a"><span>${e(q.a)}</span>${q.note?`<small>${e(q.note)}</small>`:''}</div></div>`).join('');
-if(s===3) m.innerHTML=`<h1>${em(D.more).replace(/\n/g,'<br>')}</h1><div class="url">${e(D.url)}</div><div class="tap">${e(D.tap||'Tap the link to read ↓')}</div>`;
+const em=x=>e(x).replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/\n/g,'<br>');
+const art=(a,cls)=>a?`<div class="art ${cls||''}"><svg viewBox="0 0 100 100">${a}</svg></div>`:'';
+const who=(id,name,txt,g,rt)=>txt?`<div class="who ${rt?'rt':''}"><div class="av"><svg viewBox="0 0 64 64"><use href="#${id}"/></svg></div><div class="bub ${g?'g':''}"><small>${name}</small>${e(txt)}</div></div>`:'';
+if(s===1){m.innerHTML=art(D.art1)+`<h1>${em(D.title)}</h1><div class="sub">${em(D.sub||'')}</div>`;
+ c.innerHTML=who('kiran','Zappy',D.zappy1,false,false);}
+if(s===2){m.innerHTML=D.questions.map(q=>`<div class="q">${q.art?`<div class="ic"><svg viewBox="0 0 100 100">${q.art}</svg></div>`:''}<div><p>${e(q.q)}</p><div class="a"><span>${e(q.a)}</span>${q.note?`<small>${e(q.note)}</small>`:''}</div></div></div>`).join('');
+ c.innerHTML=who('guru','Prof. Bolt',D.bolt2,true,true);}
+if(s===3){document.body.classList.add('s3');m.innerHTML=art(D.art3,'r')+`<h1>${em(D.more)}</h1><div class="url">${e(D.url)}</div><div class="tap">${e(D.tap||'Tap the link to read ↓')}</div>`;
+ c.innerHTML=who('kiran','Zappy',D.zappy3,false,false)+who('guru','Prof. Bolt',D.bolt3,true,true);}
 </script></body></html>

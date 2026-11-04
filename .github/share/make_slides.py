@@ -14,6 +14,12 @@ spec.json keys:
   more       slide-3 headline, e.g. "4 more\n*traps*\ninside."
   url        e.g. "sriniurs.github.io/caller-id"
   tap        optional, default "Tap the link to read ↓"
+  art1, art3 inner SVG (viewBox 0 0 100 100, flat cartoon, 3px #151515 outlines) for slides 1 and 3
+  questions[].art  optional small icon per question (same format; reuse assets/ill/library.json)
+  zappy1     Zappy's bubble on slide 1 (3-6 words, e.g. "Think you know gold?")
+  bolt2      Prof. Bolt's bubble on slide 2 (2-5 words, e.g. "Surprised? Most are.")
+  zappy3, bolt3  bubbles on slide 3 (e.g. "Wait, there's more?!" / "Tap. The rest is inside.")
+Characters (#kiran = Zappy, #guru = Prof. Bolt) are built into slides_template.html.
 """
 import json, sys, os, pathlib
 from playwright.sync_api import sync_playwright
