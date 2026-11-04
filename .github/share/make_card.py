@@ -31,7 +31,16 @@ PAPER = {"MONDAY": "#f4d3b8", "TUESDAY": "#f3e1a6", "WEDNESDAY": "#d3e3c2",
          "SUNDAY": "#c6e1dc"}
 paper = spec.get("paper") or PAPER.get(spec["weekday"].strip().upper(), "#f1dfba")
 story = "--story" in sys.argv  # tall 9:16 version for WhatsApp status / Instagram story
-page = (here / ("card_story_template.html" if story else "card_template.html")).read_text(encoding="utf-8").replace("{{PAPER}}", paper)
+import colorsys
+def _band(hexc):
+    # same hue as the day's paper, made dark so WhatsApp's white caption reads well (Srini, 4 Nov 2026)
+    r, g, b = (int(hexc[i:i+2], 16) / 255 for i in (1, 3, 5))
+    h, l, s = colorsys.rgb_to_hls(r, g, b)
+    r, g, b = colorsys.hls_to_rgb(h, 0.24, min(1.0, s * 0.75 + 0.15))
+    return "#%02x%02x%02x" % (round(r * 255), round(g * 255), round(b * 255))
+band = _band(paper)
+page = (here / ("card_story_template.html" if story else "card_template.html")).read_text(encoding="utf-8")
+page = page.replace("{{PAPER}}", paper).replace("{{BAND0}}", band + "00").replace("{{BAND}}", band)
 page = (page.replace("{{TITLE}}", esc(spec["title"]))
             .replace("{{NOTE}}", note)
             .replace("{{WEEKDAY}}", esc(spec["weekday"].upper()))
