@@ -26,9 +26,7 @@ note = esc(spec["note"])
 note = re.sub(r"\*(.+?)\*", r'<b>\1</b>', note)
 # Vintage paper tinted to the day's theme colour (Srini, 4 Nov 2026) so each day's
 # status looks new: pastel version of the comic's cover colour for that weekday.
-PAPER = {"MONDAY": "#ffc49b", "TUESDAY": "#ffe066", "WEDNESDAY": "#b5e48c",
-         "THURSDAY": "#9fd3ff", "FRIDAY": "#ffb3c6", "SATURDAY": "#cdb4ff",
-         "SUNDAY": "#7ee0cf"}  # BRIGHT day colours (Srini, 5 Nov 2026)
+PAPER = {"MONDAY": "#c2410c", "TUESDAY": "#b45309", "WEDNESDAY": "#15803d", "THURSDAY": "#1d4ed8", "FRIDAY": "#be185d", "SATURDAY": "#6d28d9", "SUNDAY": "#0f766e"}  # rich day colours on warm off-white (Srini, 5 Nov 2026: bright lime looked cheap)
 paper = spec.get("paper") or PAPER.get(spec["weekday"].strip().upper(), "#f1dfba")
 story = "--story" in sys.argv  # tall 9:16 version for WhatsApp status / Instagram story
 import colorsys
@@ -40,7 +38,7 @@ def _band(hexc):
     return "#%02x%02x%02x" % (round(r * 255), round(g * 255), round(b * 255))
 band = _band(paper)
 page = (here / "card_template.html").read_text(encoding="utf-8")
-page = page.replace("{{PAPER}}", paper).replace("{{BAND0}}", band + "00").replace("{{BAND}}", band)
+page = page.replace("{{C}}", paper).replace("{{BAND0}}", band + "00").replace("{{BAND}}", band)
 page = (page.replace("{{TITLE}}", esc(spec["title"]))
             .replace("{{NOTE}}", note)
             .replace("{{WEEKDAY}}", esc(spec["weekday"].upper()))

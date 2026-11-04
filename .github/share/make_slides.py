@@ -23,12 +23,11 @@ Characters (#kiran = Zappy, #guru = Prof. Bolt) are built into slides_template.h
 """
 import json, sys, os, pathlib
 from playwright.sync_api import sync_playwright
-PAPER = {"MONDAY": "#ffc49b", "TUESDAY": "#ffe066", "WEDNESDAY": "#b5e48c", "THURSDAY": "#9fd3ff",
-         "FRIDAY": "#ffb3c6", "SATURDAY": "#cdb4ff", "SUNDAY": "#7ee0cf"}  # BRIGHT day colours (Srini, 5 Nov 2026)
+PAPER = {"MONDAY": "#c2410c", "TUESDAY": "#b45309", "WEDNESDAY": "#15803d", "THURSDAY": "#1d4ed8", "FRIDAY": "#be185d", "SATURDAY": "#6d28d9", "SUNDAY": "#0f766e"}  # rich day colours on warm off-white (Srini, 5 Nov 2026: bright lime looked cheap)
 spec = json.load(open(sys.argv[1])); out = sys.argv[2]
 here = pathlib.Path(__file__).resolve().parent
 paper = spec.get("paper") or PAPER.get(spec["weekday"].strip().upper(), "#d3e3c2")
-page = (here / "slides_template.html").read_text().replace("{{PAPER}}", paper)\
+page = (here / "slides_template.html").read_text().replace("{{C}}", paper)\
     .replace("{{SPEC}}", json.dumps(spec, ensure_ascii=False).replace("</", "<\\/"))
 tmp = here / "_slides_tmp.html"; tmp.write_text(page)
 with sync_playwright() as p:

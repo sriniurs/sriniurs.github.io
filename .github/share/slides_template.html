@@ -1,40 +1,41 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
-@font-face{font-family:'Alfa Slab One';src:url(fonts/AlfaSlabOne-Regular.ttf)}
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--skin:#e3a877;--hair:#1a1a1a;--grey:#b9bec4;--red:#e63946;--blue:#1f7ad1;--yellow:#ffd23f;--line:#151515;--ink:#151515;--panel:#fff}
-body{width:1080px;height:1920px;background:{{PAPER}};color:#151515;font-family:system-ui,'DejaVu Sans',sans-serif;position:relative;overflow:hidden}
-.top{position:absolute;left:90px;top:130px;font-family:'Alfa Slab One';font-size:62px;background:#7a1020;color:#fff;padding:14px 34px 18px;border:6px solid #151515;box-shadow:9px 9px 0 #151515;transform:rotate(-2deg)}
-.top b{font-weight:400;color:#ffd23f}
-.n{position:absolute;right:90px;top:160px;font-weight:800;font-size:34px;letter-spacing:.1em;opacity:.45}
-.mid{position:absolute;left:90px;right:90px;top:330px}
-h1{font-family:'Alfa Slab One';font-weight:400;font-size:140px;line-height:1.02}
-h1 em{font-style:normal;color:#c0262d}
-.sub{margin-top:40px;font-size:54px;font-weight:700;line-height:1.25}
-.art{width:330px;height:330px;background:#fff;border:7px solid #151515;border-radius:44px;box-shadow:12px 12px 0 #151515;padding:26px;transform:rotate(-4deg);margin:0 0 70px}
-.art.r{transform:rotate(4deg)}
-body.s3 .art{width:230px;height:230px;margin-bottom:50px;border-radius:36px}
-body.s3 h1{font-size:118px}
-body.s3 .url{margin-top:44px}
-body.s3 .cast{bottom:110px;gap:26px}
-.art svg{width:100%;height:100%}
-.q{border-top:5px solid #151515;padding:38px 0;display:flex;gap:30px;align-items:center}
-.q:last-child{border-bottom:5px solid #151515}
-.q .ic{flex:0 0 130px;height:130px;background:#fff;border:5px solid #151515;border-radius:28px;padding:12px}
-.q .ic svg{width:100%;height:100%}
-.q p{font-size:50px;font-weight:700;line-height:1.18}
-.q .a{display:flex;align-items:baseline;gap:22px;margin-top:12px}
-.q .a span{font-family:'Alfa Slab One';font-size:78px;color:#c0262d}
-.q .a small{font-size:42px;font-weight:600;opacity:.75}
-.url{margin-top:60px;display:inline-block;background:#151515;color:#fff;font-weight:800;font-size:54px;padding:32px 44px;border-radius:999px}
-.tap{margin-top:34px;font-size:46px;font-weight:700;opacity:.75}
-.cast{position:absolute;left:90px;right:90px;bottom:200px;display:flex;flex-direction:column;gap:34px}
-.who{display:flex;align-items:center;gap:26px}
+:root{--skin:#e3a877;--hair:#1a1a1a;--grey:#b9bec4;--red:#e63946;--blue:#1f7ad1;--yellow:#ffd23f;--line:#151515;--ink:#151515;--panel:#fff;--c:{{C}}}
+body{background:#fbf7ef;color:#17181a;font-family:system-ui,'DejaVu Sans',sans-serif;position:relative;overflow:hidden;-webkit-font-smoothing:antialiased}
+.wm{font-weight:900;letter-spacing:.22em;text-transform:uppercase;color:#fff;display:flex;align-items:center;gap:14px}
+.wm:before{content:"";width:20px;height:20px;border-radius:50%;background:#ffd23f}
+.wm b{color:#ffd23f;font-weight:900}
+.circ{background:#fff;border-radius:50%;box-shadow:0 30px 60px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center}
+.circ svg{width:72%;height:72%}
+
+html,body{width:1080px;height:1920px}
+.wm{position:absolute;left:80px;top:112px;font-size:44px;z-index:2}
+.n{position:absolute;right:80px;top:118px;font-weight:800;font-size:30px;letter-spacing:.1em;color:#fff;opacity:.8;z-index:2}
+.band{position:absolute;left:0;right:0;top:0;background:var(--c);border-radius:0 0 80px 80px}
+h1{font-weight:900;font-size:150px;line-height:.98;letter-spacing:-.035em}
+h1 em{font-style:normal;color:var(--c)}
+.sub{margin-top:36px;font-size:52px;font-weight:600;color:#55595f;line-height:1.25}
+.who{display:flex;align-items:center;gap:24px}
 .who.rt{flex-direction:row-reverse}
-.av{flex:0 0 200px;height:200px;border-radius:50%;background:#fff;border:7px solid #151515;overflow:hidden;box-shadow:8px 8px 0 #151515}
+.av{flex:0 0 170px;height:170px;border-radius:50%;background:#fff;border:6px solid var(--c);overflow:hidden;box-shadow:0 14px 30px rgba(0,0,0,.12)}
 .av svg{width:100%;height:100%}
-.bub{position:relative;background:#fff;border:6px solid #151515;border-radius:36px;padding:26px 34px;font-size:50px;font-weight:800;line-height:1.2;box-shadow:8px 8px 0 #151515}
-.bub.g{background:#fff3c4}
-.bub small{display:block;font-size:26px;letter-spacing:.12em;font-weight:900;opacity:.55;margin-bottom:4px;text-transform:uppercase}
+.bub{background:#fff;border-radius:34px;padding:24px 32px;font-size:44px;font-weight:800;line-height:1.2;box-shadow:0 14px 34px rgba(0,0,0,.10)}
+.bub small{display:block;font-size:22px;letter-spacing:.16em;font-weight:900;color:var(--c);margin-bottom:6px;text-transform:uppercase}
+.cast{position:absolute;left:80px;right:80px;bottom:170px;display:flex;flex-direction:column;gap:30px}
+.q{background:#fff;border-radius:40px;padding:50px 40px;margin:0 0 40px;display:flex;gap:28px;align-items:center;box-shadow:0 14px 34px rgba(0,0,0,.08)}
+.q .ic{flex:0 0 140px;height:140px;border-radius:50%;background:#f3efe6;display:flex;align-items:center;justify-content:center}
+.q .ic svg{width:74%;height:74%}
+.q p{font-size:50px;font-weight:700;line-height:1.18;flex:1}
+.q .a{flex:0 0 auto;text-align:center}
+.q .a span{display:block;background:var(--c);color:#fff;font-weight:900;font-size:46px;letter-spacing:.04em;padding:14px 26px;border-radius:22px}
+.q .a small{display:block;margin-top:10px;font-size:28px;font-weight:700;color:#55595f}
+body.s3{background:var(--c)}
+body.s3 h1{color:#fff}
+body.s3 h1 em{color:#ffd23f}
+.url{margin-top:56px;display:inline-block;background:#fff;color:#17181a;font-weight:900;font-size:50px;padding:30px 42px;border-radius:999px;box-shadow:0 16px 36px rgba(0,0,0,.2)}
+.tap{margin-top:30px;font-size:42px;font-weight:700;color:#fff;opacity:.9}
+body.s3 .bub{box-shadow:0 14px 34px rgba(0,0,0,.18)}
+body.s3 .av{border-color:#fff}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute"><defs><symbol id="kiran" viewBox="0 0 64 64">
     <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
@@ -53,21 +54,25 @@ body.s3 .cast{bottom:110px;gap:26px}
     <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
     <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
   </symbol></defs></svg>
-<div class="top">Srini <b>presents</b></div><div class="n" id="n"></div>
-<div class="mid" id="m"></div><div class="cast" id="c"></div>
+<div class="band" id="band"></div>
+<div class="wm">Srini <b>presents</b></div><div class="n" id="n"></div>
+<div id="m"></div><div class="cast" id="c"></div>
 <script>
 const D={{SPEC}};
 const s=+new URLSearchParams(location.search).get('s');
 document.getElementById('n').textContent=s+' / 3';
-const m=document.getElementById('m'),c=document.getElementById('c');
+const m=document.getElementById('m'),c=document.getElementById('c'),band=document.getElementById('band');
 const e=x=>String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const em=x=>e(x).replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/\n/g,'<br>');
-const art=(a,cls)=>a?`<div class="art ${cls||''}"><svg viewBox="0 0 100 100">${a}</svg></div>`:'';
-const who=(id,name,txt,g,rt)=>txt?`<div class="who ${rt?'rt':''}"><div class="av"><svg viewBox="0 0 64 64"><use href="#${id}"/></svg></div><div class="bub ${g?'g':''}"><small>${name}</small>${e(txt)}</div></div>`:'';
-if(s===1){m.innerHTML=art(D.art1)+`<h1>${em(D.title)}</h1><div class="sub">${em(D.sub||'')}</div>`;
- c.innerHTML=who('kiran','Zappy',D.zappy1,false,false);}
-if(s===2){m.innerHTML=D.questions.map(q=>`<div class="q">${q.art?`<div class="ic"><svg viewBox="0 0 100 100">${q.art}</svg></div>`:''}<div><p>${e(q.q)}</p><div class="a"><span>${e(q.a)}</span>${q.note?`<small>${e(q.note)}</small>`:''}</div></div></div>`).join('');
- c.innerHTML=who('guru','Prof. Bolt',D.bolt2,true,true);}
-if(s===3){document.body.classList.add('s3');m.innerHTML=art(D.art3,'r')+`<h1>${em(D.more)}</h1><div class="url">${e(D.url)}</div><div class="tap">${e(D.tap||'Tap the link to read ↓')}</div>`;
- c.innerHTML=who('kiran','Zappy',D.zappy3,false,false)+who('guru','Prof. Bolt',D.bolt3,true,true);}
+const who=(id,name,txt,rt)=>txt?`<div class="who ${rt?'rt':''}"><div class="av"><svg viewBox="0 0 64 64"><use href="#${id}"/></svg></div><div class="bub"><small>${name}</small>${e(txt)}</div></div>`:'';
+const circ=(a,sz,top)=>a?`<div class="circ" style="position:absolute;left:50%;top:${top}px;width:${sz}px;height:${sz}px;margin-left:-${sz/2}px"><svg viewBox="0 0 100 100">${a}</svg></div>`:'';
+if(s===1){band.style.height='860px';
+ m.innerHTML=circ(D.art1,520,260)+`<div style="position:absolute;left:80px;right:80px;top:940px"><h1>${em(D.title)}</h1><div class="sub">${em(D.sub||'')}</div></div>`;
+ c.innerHTML=who('kiran','Zappy',D.zappy1,false);}
+if(s===2){band.style.height='250px';
+ m.innerHTML=`<div style="position:absolute;left:70px;right:70px;top:340px"><div style="font-weight:900;font-size:40px;letter-spacing:.18em;color:var(--c);margin:0 0 30px 10px">3 QUESTIONS · 3 TRAPS</div>`+D.questions.map(q=>`<div class="q">${q.art?`<div class="ic"><svg viewBox="0 0 100 100">${q.art}</svg></div>`:''}<p>${e(q.q)}</p><div class="a"><span>${e(q.a)}</span>${q.note?`<small>${e(q.note)}</small>`:''}</div></div>`).join('')+`</div>`;
+ c.innerHTML=who('guru','Prof. Bolt',D.bolt2,true);}
+if(s===3){document.body.classList.add('s3');band.style.height='0';
+ m.innerHTML=circ(D.art3,300,250)+`<div style="position:absolute;left:80px;right:80px;top:640px"><h1 style="font-size:132px">${em(D.more)}</h1><div class="url">${e(D.url)}</div><div class="tap">${e(D.tap||'Tap the link to read ↓')}</div></div>`;
+ c.innerHTML=who('kiran','Zappy',D.zappy3,false)+who('guru','Prof. Bolt',D.bolt3,true);}
 </script></body></html>
