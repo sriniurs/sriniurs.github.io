@@ -1,0 +1,620 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="topnav">
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;margin:0 auto -12px;font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
+<title>Is the AI Bubble Bursting?</title><meta property="og:title" content="Is the AI Bubble Bursting?"><meta property="og:description" content="🫧 Tech stocks crashed. Is the AI boom a bubble, or just a wobble?"><meta property="og:image" content="https://sriniurs.github.io/ai-bubble/og.png"><meta property="og:url" content="https://sriniurs.github.io/ai-bubble/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700}table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+</style>
+
+<main class="wrap">
+
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<header class="cover">
+  <div>
+    <p class="byline">Srini presents</p>
+    <h1>Is the AI Bubble Bursting?</h1>
+    <p class="sub">Big tech lost over $2 trillion in October, and on Friday Intel had its worst day ever. WhatsApp is full of "it's 2000 all over again" forwards. A curious young learner brings the rumours, and a wise mentor who lived through the dot-com crash sorts myth from fact.</p>
+    <div class="fs"><span>Myth vs Fact</span><span>AI</span><span>Markets</span><span>Your SIP</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, has a US tech fund in his SIPs</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, saw the 2000 crash up close</span></figure>
+  </div>
+</header>
+
+<p class="era">THE HYPE<small>What actually happened</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>Black Friday for tech</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M8 90 V40 H52 L56 50 L50 60 L56 72 L52 90 Z" fill="#d9b38c" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M10 34 L24 22 L38 28 L50 18" fill="none" stroke="#2bb673" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 18 Q64 30 74 70" fill="none" stroke="#e63946" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 7"/><circle cx="76" cy="78" r="9" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M86 62 l6 -4 M88 72 h8" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Friday 30 October</b> Amazon says it will spend even more on AI next year. Intel warns it will burn cash.</p>
+      <span class="sfx r">CRASH!</span>
+      <p>The Nasdaq hit its lowest level in nearly three months.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>One day's damage</b></p>
+      <div class="ladder">
+        <div class="bar">Intel<div class="hot" style="width:100%">−29%</div></div>
+        <div class="bar">AMD<div class="hot" style="width:35%">−10%</div></div>
+        <div class="bar">Chips index<div class="hot" style="width:24%">−7%</div></div>
+        <div class="bar">Nvidia<div class="hot" style="width:22%">−3.7%</div></div>
+      </div>
+      <p class="small">Intel's fall was its steepest one-day drop on record.</p>
+    </div>
+    <div class="panel">
+      <div class="big"><b class="hot">$2 trillion+</b></div>
+      <p>Wiped off the Nasdaq 100 in October alone, down more than 5.8% for the month.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>The world's biggest shopping spree</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M30 40 Q20 54 22 70 Q26 88 50 88 Q74 88 78 70 Q80 54 70 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 40 L30 26 Q50 20 70 26 L64 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M34 40 H66" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" font-family="Arial Black,Arial" font-weight="900" font-size="26" text-anchor="middle" fill="#fff">₹</text><path d="M82 30 L88 22 M86 40 L94 38 M78 22 L80 14" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>2026 spending on AI data centres</b> ($ billion)</p>
+      <div class="ladder">
+        <div class="bar">Amazon<div style="width:100%">~220</div></div>
+        <div class="bar">Alphabet<div style="width:91%">195–205</div></div>
+        <div class="bar">Meta<div style="width:64%">135–145</div></div>
+      </div>
+      <p class="small">Both Amazon and Alphabet say 2027 will be even bigger.</p>
+    </div>
+    <div class="panel">
+      <div class="big"><b>$900 bn</b></div>
+      <p>J.P. Morgan's estimate of global AI spending in 2026 alone. It sees <b>$5.5 trillion</b> by 2030.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the market is scared because they're spending too much?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Scared of how long it takes to earn it back. Spending is certain. Profits are a promise.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">THE FACTS<small>Five forwards, checked</small></p>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>"AI makes no money"</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="myth">AI is just hype. Nobody is actually earning from it.</p>
+    </div>
+    <div class="panel">
+      <p class="factx">Microsoft's cloud business, Azure, grew <b>48%</b> in the July–September quarter, and it expects 49–50% next quarter. Azure crossed <b>$100 billion</b> a year for the first time. Its Copilot AI assistant has 30 million+ paid seats.</p>
+    </div>
+    <div class="panel">
+      <span class="score">VERDICT: MOSTLY MYTH</span>
+      <p style="margin-top:8px">Some companies are clearly earning. The worry is that revenue is growing slower than the spending bill.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>"It's 2000 all over again"</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="22" y="18" width="56" height="64" fill="#fff3c4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 18 Q16 10 22 10 H82 Q88 10 88 18 Q88 24 82 24 H78" fill="#e0c068" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 82 Q16 90 22 90 H78 Q84 90 84 84" fill="#e0c068" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M30 36 H70 M30 46 H70 M30 56 H58" stroke="#9aa4ad" stroke-width="3" stroke-linecap="round"/><circle cx="64" cy="70" r="9" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M60 78 L58 88 M68 78 L70 88" stroke="#e63946" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="myth">This is exactly the dot-com bubble. Everything will crash 80%.</p>
+    </div>
+    <div class="panel">
+      <p class="factx">In 2000–02 the Nasdaq fell about 78%, because many dot-com companies had no profits at all. Today's big spenders are some of the most profitable companies on earth. <b>But</b> they're now borrowing to spend: Meta plans to raise $97.5 billion.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>In 2000, the companies were weak and the idea was strong. Today the companies are strong and the price is the question. Different disease, similar fever.</p></div>
+      <span class="score">VERDICT: HALF TRUE</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>"AI is over"</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="26" y="24" width="48" height="36" rx="8" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="40" cy="42" r="6" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="60" cy="42" r="6" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 24 V14" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="12" r="4" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="32" y="62" width="36" height="26" rx="4" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M32 70 L18 80 M68 70 L82 60" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M42 52 H58" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="75" r="4" fill="#e8590c"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="myth">The selloff means companies are giving up on AI.</p>
+    </div>
+    <div class="panel">
+      <p class="factx">The opposite. Amazon's CEO told shareholders to expect it to "spend meaningfully more in 2027". Alphabet said the same. Morgan Stanley expects AI infrastructure spending to pass <b>$1 trillion</b> next year.</p>
+    </div>
+    <div class="panel">
+      <span class="score">VERDICT: MYTH</span>
+      <p style="margin-top:8px">Investors aren't selling because AI is dying. They're selling because it's getting more expensive.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>"This is America's problem"</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="myth">A US tech crash doesn't touch Indian investors.</p>
+    </div>
+    <div class="panel">
+      <p class="factx">Indians hold US tech through mutual funds. The Mirae Asset NYSE FANG+ fund was up about <b>21% in 3 months</b>, India's top performer. Friday's fall will show up in its NAV this week.</p>
+    </div>
+    <div class="panel">
+      <p class="warn">If one of your SIPs is a US tech fund, last quarter's star may be this quarter's biggest drop.</p>
+      <span class="score">VERDICT: MYTH</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>"Bad for Indian IT"</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="28" width="34" height="62" fill="#cdeffd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="52" y="12" width="34" height="78" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="20" y="36" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="20" y="50" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="20" y="64" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="36" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="50" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="64" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="58" y="20" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="34" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="48" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="62" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="20" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="34" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="48" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="62" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><path d="M6 90 H94" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="myth">An AI selloff is always bad news for TCS, Infosys and Wipro.</p>
+    </div>
+    <div class="panel">
+      <p class="factx">It's more twisted. Indian IT is hurt by AI <i>succeeding</i>, since it shrinks their outsourcing work. In late July, a global AI selloff actually sent Nifty IT up nearly 3% in a day, because Indian IT has little AI hardware exposure.</p>
+    </div>
+    <div class="panel">
+      <div class="big"><b class="hot">&lt;7.6%</b></div>
+      <p>Weight of the five big IT firms in the Nifty 50: the lowest since at least 2002.</p>
+      <span class="score">VERDICT: MYTH</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>The rate twist nobody forwards</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The US Fed</b> raised rates in September for the first time since 2023, then held at 3.75–4.00% on 28 October.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>What do interest rates have to do with AI?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>AI profits are mostly in the future. When a safe bank deposit pays more, a promise of profit in 2030 is worth less today. Higher rates hurt "jam tomorrow" stocks the most.</p></div>
+    </div>
+    <div class="panel">
+      <p class="take">Watch rates as closely as earnings. They decide how much the market pays for the future.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era" style="background:#6b4fbb">THE DEEP DIVE<small>The research behind the headlines</small></p>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>The $3 trillion hole</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M22 30 H78 L70 82 H30 Z" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><ellipse cx="50" cy="30" rx="28" ry="6" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="62" font-family="Arial Black,Arial" font-size="20" text-anchor="middle" fill="#151515">₹</text><path d="M36 82 q-2 6 0 8 q2 -2 0 -8 M58 76 q8 2 12 10 M64 82 q2 6 0 8 q-2 -2 0 -8" fill="#2a9df4" stroke="#2a9df4" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The basic maths</b> A data centre is like a new hospital. You borrow to build it, the machines wear out, and you need enough patients every year to pay for it all, plus a profit.</p>
+      <div class="chain"><span>$1 spent on AI kit</span><i>→</i><span>needs ~$2 of AI sales</span><i>→</i><span class="hit">every year, for years</span></div>
+      <p class="small">Rule of thumb from Sequoia's David Cahn, who has tracked this gap since 2023.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The gap keeps growing</b></p>
+      <div class="ladder">
+        <div class="bar">2023 gap<div style="width:22%">$0.2T</div></div>
+        <div class="bar">2026 spend<div style="width:50%">$1.5T</div></div>
+        <div class="bar">Sales needed<div class="hot" style="width:100%">~$3T</div></div>
+      </div>
+      <p class="small">Cahn's estimate: the hole grew about 15 times in three years.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>One real example</b></p>
+      <div class="big"><b class="hot">~19¢</b><span class="arrow">per $1</span></div>
+      <p>Microsoft's AI revenue (about $37 bn) against its 2026 spending plan (about $190 bn), as of April 2026. The best-placed company is earning back roughly a fifth so far.</p>
+    </div>
+    <div class="panel wide">
+      <p class="cap"><b>A fund manager's check</b> (Janus Henderson, 26 Oct 2026)</p>
+      <p>They reverse-engineered how much AI revenue is needed for a "normal" return (15% on capital, 30% profit margin). Their bottom-up revenue forecast falls short <b>in all 12 years</b> they modelled. But if companies accept a 10% return, or squeeze margins to 40%, the numbers work.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>So it's not "AI can never pay". It's "AI pays only if profits are fatter or investors are more patient than usual." That's a thin rope to walk on.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>2000 vs today, side by side</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Measure</th><th>Dot-com peak (2000)</th><th>AI boom (2026)</th><th>Worse now?</th></tr></thead>
+        <tbody>
+          <tr><td>S&amp;P 500 price vs next year's profit (forward P/E)</td><td>~24.4x</td><td>~22x (Jan 2026)</td><td class="ok">Slightly better</td></tr>
+          <tr><td>Tech sector price vs profit</td><td>~60x</td><td>Far lower</td><td class="ok">Better</td></tr>
+          <tr><td>Star stock: Cisco then, Nvidia now (forward P/E)</td><td>~107x</td><td>~19x (May 2026)</td><td class="ok">Much better</td></tr>
+          <tr><td>Share of the index in the top 7 companies</td><td>~15–17.5%</td><td>35%+</td><td class="bad">Much worse</td></tr>
+          <tr><td>Profits of the leaders</td><td>Many had none</td><td>Mag 7 earnings +30% (2025, first 9 months) vs +6% for the other 493</td><td class="ok">Better</td></tr>
+          <tr><td>Funded by</td><td>Stock sales and telecom debt</td><td>Cash flow, now plus record bonds</td><td class="bad">Getting worse</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So prices are calmer than 2000, but the market is way more lopsided?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Exactly. In 2000 the price tags were crazy. Today the eggs are all in one basket. If seven companies sneeze, an S&amp;P 500 index fund catches a cold.</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">If you own a US index fund or a "global" fund, about a third of your money may sit in just seven companies. Check the fund factsheet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>Running on borrowed money</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="26" width="72" height="46" rx="6" fill="#7b4fd6" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="10" y="36" width="72" height="9" fill="#151515"/><rect x="18" y="52" width="14" height="10" rx="2" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M38 60 H70" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="78" cy="72" r="15" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="78" y="78" font-family="Arial Black,Arial" font-size="17" text-anchor="middle" fill="#fff">₹</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Spending is now faster than cash coming in</b>, so Big Tech is borrowing like never before.</p>
+      <ul class="clean">
+        <li><b>Oct 2025:</b> Meta sells $30 bn of bonds, the biggest such sale ever.</li>
+        <li><b>Jun 2026:</b> Nvidia borrows $25 bn, its first bond in five years.</li>
+        <li><b>Jul 2026:</b> Amazon's $25 bn sale has to offer extra interest to attract buyers.</li>
+        <li>Alphabet even sold a <b>100-year</b> bond.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="big"><b>$540 bn</b></div>
+      <p>J.P. Morgan's forecast for tech-sector bond sales in 2026, with about <b>$317 bn</b> from the cloud giants alone.</p>
+      <span class="sfx r">IOU!</span>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The circle problem</b></p>
+      <div class="chain"><span>Nvidia invests $30 bn in OpenAI</span><i>→</i><span>OpenAI buys chips and cloud</span><i>→</i><span class="hit">Nvidia's sales rise</span></div>
+      <p class="small">Ratings agency Moody's has warned that a handful of AI labs make up a large share of the cloud giants' order books, and that these "circular" deals add concentration risk.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Borrowing isn't wrong. But when your customer is also your investee, and the chips you borrow against are old in four or five years, lenders start asking harder questions. That's exactly what the bond market began doing this summer.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>History's rule: builders vs users</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Railway mania, Britain, 1846</b></p>
+      <p>Parliament approved <b>263</b> new railway companies in one year, for about <b>9,500 miles</b> of track. Many investors were ruined. Later, about a fifth of US railway mileage went into receivership. The railways still built the modern world.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The fibre bubble, 1996–2001</b></p>
+      <p>US telecom firms spent over <b>$500 bn</b>, mostly on bandwidth. In 2001, only about <b>2.6%</b> of the fibre laid was actually in use. By 2002, 23 telecom companies had gone bankrupt.</p>
+      <div class="big"><b class="hot">2.6%</b><span class="arrow">fibre in use, 2001</span></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The twist</b></p>
+      <p>The "dark fibre" was later bought cheap by companies like Google, and became the backbone of search, streaming and the cloud.</p>
+      <p class="take">The technology usually wins. The people who paid to build it often don't.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So which part of AI is today's "dark fibre"?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Not the chips. They go out of date in a few years, so leftover chips are worth little. The lasting leftovers will be power plants, grid lines and buildings. Whoever buys those cheap after a crash may be the real winner.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>The electricity bill, and India's chance</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>World data-centre power use</b> (IEA)</p>
+      <div class="ladder">
+        <div class="bar">2024<div style="width:44%">415 TWh</div></div>
+        <div class="bar">2030<div class="hot" style="width:100%">~945 TWh</div></div>
+      </div>
+      <p class="small">By 2030, more than all of Japan uses today. AI's own share is expected to triple.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>India's gap</b></p>
+      <div class="big"><b>20%</b><span class="arrow">vs</span><b class="hot">3%</b></div>
+      <p>India creates about a fifth of the world's data but has only about 3% of its data-centre capacity.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>India's build-out</b> (Wood Mackenzie)</p>
+      <div class="ladder">
+        <div class="bar">2025<div style="width:26%">2.2 GW</div></div>
+        <div class="bar">2030<div style="width:100%">12 GW</div></div>
+      </div>
+      <p class="small">AI-dedicated capacity: 275 MW to about 6,500 MW. The government says AI data centres could add 26.3 GW to power demand by FY32.</p>
+    </div>
+    <div class="panel wide">
+      <p class="take">Even if AI stocks fall, India's data-centre, power and grid build-out has years of demand behind it. That's where the "picks and shovels" are, including Karnataka's planned green data centres.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">THE VERDICT<small>Prof. Bolt's opinion, and what to do</small></p>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>Bubble or not? (Prof. Bolt's opinion)</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 18 V82 M34 86 H66" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 30 H84" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="16" r="4" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 30 L6 56 H26 Z M84 30 L74 56 H94 Z" fill="none" stroke="#151515" stroke-width="2"/><path d="M4 56 Q16 68 28 56 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M72 56 Q84 68 96 56 Z" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="12" cy="50" r="4" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="80" cy="48" r="4" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="88" cy="48" r="4" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="84" cy="42" r="4" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">BOOM!</span>
+      <p><b>The good ending.</b> AI revenue catches up with spending over 2–3 years, like Microsoft's cloud is showing. This dip becomes a buying chance people later wish they'd taken.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">WOBBLE…</span>
+      <p><b>The likely ending.</b> Real technology, overheated prices. Stocks swing hard for a year or two as each earnings season tests the spending, then the winners separate from the losers.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">POP!</span>
+      <p><b>The bad ending.</b> Borrowed money keeps funding data centres that don't pay off, rates stay high, and a 2000-style 40–60% fall hits the most expensive names.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>My view: AI is like the railways and the internet. The technology changes the world, and plenty of investors still lose money on the way. Both can be true at once.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>With money</b></p>
+      <ul class="clean">
+        <li>Check how much of your money is in US tech or AI-themed funds. Keep it a slice, not the meal.</li>
+        <li>Don't stop SIPs because of one scary week.</li>
+        <li>Don't pile into "AI funds" or NFOs because of the hype either.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>With forwards</b></p>
+      <ul class="clean">
+        <li>"It's crashing 80%!" and "It's going to the moon!" are both forwards, not facts.</li>
+        <li>Ask: is the company earning, or only spending?</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>With your career</b></p>
+      <p>Whatever happens to AI stocks, AI tools are already in every office. Learning to use them well is the safest bet on the board.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>What happened</b></p><ul class="clean">
+      <li>Nasdaq 100: −5.8% in October, $2 trillion+ gone.</li>
+      <li>Intel −29% in a day, its worst ever.</li>
+      <li>Trigger: AI spending rising faster than AI profits.</li>
+    </ul></div>
+    <div class="panel"><p><b>Myth vs fact</b></p><ul class="clean">
+      <li>"No money in AI": mostly myth (Azure +48%).</li>
+      <li>"It's 2000 again": half true.</li>
+      <li>"AI is over": myth, spending is rising.</li>
+      <li>"Not India's problem": myth, check your US funds.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>$1.5T AI spend in 2026 needs ~$3T of sales (Sequoia).</li>
+      <li>Prices calmer than 2000; concentration far worse (35%+ in 7 stocks).</li>
+      <li>Big Tech now borrowing heavily; "circular" deals flagged by Moody's.</li>
+      <li>History: the tech wins, the builders often lose.</li>
+      <li>India: 12 GW of data centres by 2030 = real long-term demand.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>Keep AI/US tech a slice, not the meal.</li>
+      <li>Keep SIPs running; skip hype NFOs.</li>
+      <li>Watch earnings and interest rates.</li>
+      <li>Learn the tools, whatever the stocks do.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the companies, events and figures are real. Sources: Reuters via Business Standard, The Star and Political.org (30 Oct 2026 selloff), Tech-Insider (Amazon capex), ToolNavs/Reuters (J.P. Morgan, Morgan Stanley, Meta), KuCoin and FourWeekMBA/CNBC (Microsoft results, 28 Oct 2026), Sentisense (Azure $100 bn, Copilot), Tickertape (FANG+ fund return), AI Weekly/Bloomberg (IT weight in Nifty), Kotak Neo (Nifty IT, 28 Jul 2026). Deep dive: AI Weekly/TechCrunch (Sequoia's David Cahn), Janus Henderson (26 Oct 2026), AI Investing Pulse (Microsoft AI revenue vs capex), MarketMinute and Range/Yahoo Finance (forward P/E), CaixaBank Research and BusinessDay (Mag 7 concentration, earnings), Alaric Securities (Nvidia P/E), Hargreaves Lansdown (Cisco P/E), Reuters via Yahoo, IFR, Fortune and The Star (bond issuance, Moody's), DEV/Chitchat Stocks/WSJ and The Edge (railway and fibre history), IEA via ORF and Outlook Business, Wood Mackenzie via Energetica India, Deloitte India, Angel One (India data centres). Dot-com fall figure is the widely cited Nasdaq peak-to-trough decline. Figures rounded. The "three endings" are opinion, not forecasts. For learning, not investment advice.</p>
+
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+</main>
+
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>

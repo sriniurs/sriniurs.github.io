@@ -24,7 +24,7 @@ CSS = '''<style id="topnav">
 .topnav .here,.botnav .here{box-shadow:none;opacity:.75}
 </style>'''
 
-JS = '''<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+JS = '''<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\\.html$/,'').replace(/\\/$/,'')||'/';};var p=n(location.pathname);
 function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\\u{1F534} New story today \\u2192';a.setAttribute('href','/');}});}
 if(p==='/'){set(true);return;}
 fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script>'''

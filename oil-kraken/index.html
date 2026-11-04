@@ -1,0 +1,513 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="topnav">
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;margin:0 auto -12px;font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
+<title>The Oil Kraken: Hormuz and Your Wallet</title><meta property="og:title" content="The Oil Kraken: Hormuz and Your Wallet"><meta property="og:description" content="🛢️ A narrow sea gate decides what you pay for petrol. Here&#x27;s how."><meta property="og:image" content="https://sriniurs.github.io/oil-kraken/og.png"><meta property="og:url" content="https://sriniurs.github.io/oil-kraken/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+</style>
+
+<main class="wrap">
+
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<header class="cover">
+  <div>
+    <p class="byline">Srini presents</p>
+    <h1>The Oil Kraken: Hormuz and Your Wallet</h1>
+    <p class="sub">A comic about a 33-km strip of sea that decides what you pay for petrol, vegetables and your EMI. Oil just hit its highest level since April, as tanker attacks in the Strait of Hormuz had their worst month yet. A curious young learner asks, and a wise mentor who has lived through four oil shocks answers.</p>
+    <div class="fs"><span>Past</span><span>Present</span><span>Future</span><span>₹ at the pump</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, rides a petrol scooter</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, has seen four oil shocks</span></figure>
+  </div>
+</header>
+
+<p class="era">THE PAST<small>India has been here before</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>The world's most dangerous gate</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M8 66 H92 L82 84 H18 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="20" y="50" width="16" height="16" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="38" y="50" width="16" height="16" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="56" y="50" width="16" height="16" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="38" y="34" width="16" height="16" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="74" y="40" width="10" height="26" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M4 92 Q14 86 24 92 T44 92 T64 92 T84 92 T100 92" fill="none" stroke="#2a9df4" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Why does a strait near Iran decide my petrol price in Bengaluru?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Because about a fifth of the world's oil sails through one narrow gap between Iran and Oman. Close the gate, and the whole world fights over what's left.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>India's weak spot</b></p>
+      <div class="ladder">
+        <div class="bar">Crude oil<div class="hot" style="width:88%">88% imported</div></div>
+        <div class="bar">LPG<div style="width:60%">60%</div></div>
+        <div class="bar">Natural gas<div style="width:51%">51%</div></div>
+      </div>
+      <p class="small">Share of each fuel India buys from abroad, 2026.</p>
+    </div>
+    <div class="panel">
+      <p class="take">India uses about 5.5 million barrels of oil a day and grows very little of it. So any trouble in the Gulf lands straight on our kitchen table.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>Shocks that shaped India</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="22" y="18" width="56" height="64" fill="#fff3c4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 18 Q16 10 22 10 H82 Q88 10 88 18 Q88 24 82 24 H78" fill="#e0c068" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 82 Q16 90 22 90 H78 Q84 90 84 84" fill="#e0c068" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M30 36 H70 M30 46 H70 M30 56 H58" stroke="#9aa4ad" stroke-width="3" stroke-linecap="round"/><circle cx="64" cy="70" r="9" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M60 78 L58 88 M68 78 L70 88" stroke="#e63946" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>1973</b> Arab oil embargo. Oil prices roughly quadruple in months.</p>
+      <p class="cap"><b>1990–91</b> Gulf War. Oil spikes, India's foreign reserves nearly run out, and gold is shipped abroad to borrow money. That crisis forces the 1991 reforms.</p>
+      <p class="cap"><b>2008</b> Oil touches about $147 a barrel, then crashes with the global meltdown.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">DÉJÀ VU!</span>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>In 1991 I saw India almost go bankrupt because of an oil bill. Every time, the lesson was the same: don't depend on one road for your fuel. Every time, we half-forgot it.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>2022</b> Russia–Ukraine war. Europe stops buying Russian oil; India buys it at a discount.</p>
+      <div class="big"><b>&lt;1%</b><span class="arrow">→</span><b class="hot">~38%</b></div>
+      <p class="small">Russian oil's share of India's imports, 2022 vs early 2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>The price freeze</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>From April 2022</b> Government oil companies stop changing petrol and diesel prices daily.</p>
+      <p>Oil went up and down; your pump price stayed almost the same for four years. The oil companies quietly absorbed the losses and gains.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So petrol never got costlier? Nice!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Nothing is free. When the companies lose money, you pay later through taxes, dividends the government doesn't get, or a sudden big hike. That bill arrived in 2026.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">THE PRESENT<small>2026: the biggest oil shock in history</small></p>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>28 February 2026: the gate slams shut</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="54" r="28" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="54" r="20" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 54 V40 M50 54 L60 60" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="26" cy="26" r="9" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="74" cy="26" r="9" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M32 82 L28 90 M68 82 L72 90" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M10 44 l-6 -2 M12 56 h-8 M90 44 l6 -2 M88 56 h8" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The trigger</b> US–Israeli strikes on Iran bring tanker traffic through Hormuz to a near halt.</p>
+      <div class="big"><b>$72</b><span class="arrow">→</span><b class="hot">~$100</b></div>
+      <p>Brent crude, within days. It went well above $120 at the peak in February–March.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>A roller-coaster year</b></p>
+      <div class="chain"><span>Feb–Mar: $120+</span><i>→</i><span>June ceasefire: below $100</span><i>→</i><span>Late Aug: fighting resumes</span><i>→</i><span class="hit">Oct: worst month for ship attacks</span></div>
+    </div>
+    <div class="panel">
+      <span class="sfx r">BOOM!</span>
+      <div class="big"><b class="hot">$116.54</b></div>
+      <p>Brent on 30 October, after another tanker was hit with explosives. Oil was heading for a fourth straight monthly gain.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>The bill comes home</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M30 40 Q20 54 22 70 Q26 88 50 88 Q74 88 78 70 Q80 54 70 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 40 L30 26 Q50 20 70 26 L64 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M34 40 H66" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" font-family="Arial Black,Arial" font-weight="900" font-size="26" text-anchor="middle" fill="#fff">₹</text><path d="M82 30 L88 22 M86 40 L94 38 M78 22 L80 14" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Pump prices</b></p>
+      <p>From 15 May 2026, petrol and diesel went up four times in 10 days, about <b>₹7.5 a litre</b> in total. Prices hit their highest since 2022.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Oil company losses, at the peak</b></p>
+      <div class="big"><b class="hot">₹1,300–1,400 cr</b><span class="arrow">a day</span></div>
+      <p class="small">On petrol, diesel and LPG combined, before the hikes. Down to about ₹600 crore a day after them.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The extra cost to India</b></p>
+      <div class="big"><b>$22 bn</b></div>
+      <p>Additional fuel import bill between March and August 2026 alone.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>The domino in your wallet</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g transform="rotate(-12 50 52)"><rect x="16" y="36" width="68" height="34" rx="3" fill="#b8e0c8" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="53" r="9" fill="none" stroke="#151515" stroke-width="2.5"/><text x="50" y="58" font-family="Arial Black,Arial" font-size="12" text-anchor="middle" fill="#151515">₹</text></g><g transform="rotate(6 50 52)"><rect x="16" y="36" width="68" height="34" rx="3" fill="#f7c6d9" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="53" r="9" fill="none" stroke="#151515" stroke-width="2.5"/><text x="50" y="58" font-family="Arial Black,Arial" font-size="12" text-anchor="middle" fill="#151515">₹</text></g><g transform="rotate(-2 50 52)"><rect x="16" y="36" width="68" height="34" rx="3" fill="#cdeffd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="53" r="9" fill="none" stroke="#151515" stroke-width="2.5"/><text x="50" y="58" font-family="Arial Black,Arial" font-size="12" text-anchor="middle" fill="#151515">₹</text></g></svg>
+  <div class="grid">
+    <div class="panel wide">
+      <div class="chain">
+        <span class="hit">Oil up</span><i>→</i><span>More dollars needed</span><i>→</i><span>Rupee falls (record ~₹95.6/$)</span><i>→</i><span>Imports costlier</span><i>→</i><span>Trucks, flights, fertiliser, plastics costlier</span><i>→</i><span>Prices up</span><i>→</i><span class="hit">RBI raises rates → EMIs up</span>
+      </div>
+      <p>Wholesale inflation hit 9.68% in May, with fuel and power up about 30%. On 8 October the RBI raised its repo rate by 0.25% to 5.5%.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Rule of thumb</b> (MUFG estimate)</p>
+      <p>Every <b>$10</b> rise in oil cuts India's GDP growth by about <b>0.1–0.2%</b> and adds about <b>0.2%</b> to inflation.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>My home loan EMI went up because of a strait I can't find on a map?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Now you know geography is economics.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>How many days can India last?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Days of oil imports held in reserve</b></p>
+      <div class="ladder">
+        <div class="bar">Japan / Korea<div style="width:100%">180–254</div></div>
+        <div class="bar">IEA advice<div style="width:36%">90</div></div>
+        <div class="bar">India (all stocks)<div style="width:29%">~74</div></div>
+        <div class="bar">India's SPR<div class="hot" style="width:18%">~9.5</div></div>
+      </div>
+      <p class="small">SPR = Strategic Petroleum Reserve, the emergency underground tanks. "All stocks" adds oil companies' own storage.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Karnataka's role</b></p>
+      <p>Two of India's three emergency oil caverns are on the Karnataka coast: <b>Mangaluru</b> (1.5 MMT) and <b>Padur</b> near Udupi (2.5 MMT). The third is Visakhapatnam.</p>
+      <p>In July, ONGC said it will build another 1.75 MMT reserve at Mangaluru.</p>
+    </div>
+    <div class="panel">
+      <p class="warn">India's emergency cushion is barely one-ninth of the global benchmark. Economists, including Montek Singh Ahluwalia, call this the biggest lesson of 2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>How India survived (so far)</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 L84 22 Q84 62 50 90 Q16 62 16 22 Z" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="36" y="44" width="28" height="22" rx="3" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M41 44 V36 Q41 28 50 28 Q59 28 59 36 V44" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="54" r="3" fill="#151515"/><path d="M50 56 V61" stroke="#151515" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Buy from everywhere</b></p>
+      <div class="big"><b>27</b><span class="arrow">→</span><b>40+</b></div>
+      <p>Countries India buys crude from, a decade ago vs 2026. Oil not passing through Hormuz rose from 55% to about 70% of supply.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The world chipped in</b></p>
+      <ul class="clean">
+        <li>The IEA released a record ~400 million barrels from reserves.</li>
+        <li>Saudi Arabia and the UAE piped oil around Hormuz.</li>
+        <li>The US exported record amounts.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>India bent, but it didn't break. The RBI spent about $46 billion of reserves smoothing the rupee. That's a cushion we can't use twice.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">THE FUTURE<small>What changes, and Prof. Bolt's guesses</small></p>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>Lessons India is (finally) learning</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>1. Bigger tanks</b></p>
+      <p>More strategic reserves under Indian control, like the new Mangaluru cavern. The gap to 90 days is huge and will take years.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>2. More roads</b></p>
+      <p>Keep spreading purchases across the US, Africa, Latin America and Russia, so no single strait can choke us.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>3. Less oil, full stop</b></p>
+      <p>Every electric scooter, solar rooftop, metro line and ethanol blend is one less barrel to import. Energy independence starts at home. <span class="small">(Prof. Bolt's view)</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>Who wins, who loses</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 18 V82 M34 86 H66" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 30 H84" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="16" r="4" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 30 L6 56 H26 Z M84 30 L74 56 H94 Z" fill="none" stroke="#151515" stroke-width="2"/><path d="M4 56 Q16 68 28 56 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M72 56 Q84 68 96 56 Z" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="12" cy="50" r="4" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="80" cy="48" r="4" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="88" cy="48" r="4" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="84" cy="42" r="4" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">KA-CHING!</span>
+      <p><b>Winners when oil stays high:</b> oil producers like ONGC, EV and solar makers, railways and metros, anyone selling energy-saving tech.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">OUCH!</span>
+      <p><b>Losers:</b> airlines, paint and tyre makers (oil is their raw material), fuel retailers stuck with frozen prices, and every household on a tight budget.</p>
+    </div>
+    <div class="panel">
+      <p class="take">This isn't a tip sheet. It just shows why some stocks rise and others fall every time a tanker is hit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>2027: three endings</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="34" fill="#cdeffd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M30 30 Q40 26 44 34 Q40 42 46 48 Q42 58 32 54 Q26 44 30 30 Z M58 22 Q70 24 76 36 Q68 40 62 36 Q56 30 58 22 Z M56 56 Q66 52 72 60 Q70 74 60 78 Q54 68 56 56 Z" fill="#2bb673" stroke="#151515" stroke-width="2" stroke-linejoin="round"/><path d="M8 66 Q50 92 92 40" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 6"/><path d="M86 34 l8 4 -6 6" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">PHEW!</span>
+      <p><b>The good ending.</b> A lasting US–Iran deal, ships return, Brent drops toward $80–90. Inflation eases, the RBI cuts rates, and India keeps building reserves anyway.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">HMM…</span>
+      <p><b>The likely ending.</b> On-and-off attacks, oil stuck around $100–120. Fuel prices creep up in small steps, EMIs stay high, and growth slows a little but holds.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">CRASH!</span>
+      <p><b>The bad ending.</b> Full closure for months, oil far above $130, real fuel shortages, the rupee much weaker, and India's growth sharply hit.</p>
+    </div>
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>These are my guesses, not forecasts. Nobody, not even oil traders, knows how a war ends. Plan for the middle, prepare for the worst.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>At home</b></p>
+      <ul class="clean">
+        <li>Budget for higher fuel and grocery bills for at least a year.</li>
+        <li>Next vehicle: seriously price an EV.</li>
+        <li>Floating-rate loan? Expect EMIs to stay high; prepay if you can.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>With money</b></p>
+      <ul class="clean">
+        <li>Keep a bigger emergency fund. Shocks travel fast.</li>
+        <li>Some gold and some overseas exposure help when the rupee falls.</li>
+        <li>Don't trade on tanker headlines. They flip overnight.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Any career angle in this?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Energy is hiring: EV charging, solar, smart grids, shipping and logistics. Every crisis creates a new industry.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>Past</b></p><ul class="clean">
+      <li>1973, 1991, 2008: oil shocks hit India hard.</li>
+      <li>1991's oil bill pushed India into reforms.</li>
+      <li>Pump prices frozen from April 2022.</li>
+    </ul></div>
+    <div class="panel"><p><b>Present</b></p><ul class="clean">
+      <li>India imports 88% of its crude.</li>
+      <li>Hormuz shut from 28 Feb 2026; Brent $116.54 on 30 Oct.</li>
+      <li>Fuel up ~₹7.5/litre in May; rupee record low; repo 5.5%.</li>
+      <li>Emergency reserve: ~9.5 days. Japan: 180+.</li>
+    </ul></div>
+    <div class="panel"><p><b>Future</b></p><ul class="clean">
+      <li>Bigger reserves (new Mangaluru cavern).</li>
+      <li>Buy from 40+ countries, not one route.</li>
+      <li>Less oil: EVs, solar, metros.</li>
+      <li>Your move: bigger emergency fund, lighter EMIs.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the events and figures are real. Sources: Reuters/ARY and Engine Online (Brent, 30 Oct 2026), Washington Institute data via Khaleej Times, IMA Research, IMPRI, ORF, S&amp;P Global, Business Today, Moneylife, Ease My Prep/UNI (fuel prices and OMC losses), Asia News Network/CREA ($22 bn), MUFG Research, The Logical Indian, Equentis (RBI rate). Figures rounded; oil prices change daily. The "three endings" are opinion, not forecasts. For learning, not investment advice.</p>
+
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+</main>
+
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
