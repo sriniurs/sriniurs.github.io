@@ -11,14 +11,14 @@ body{width:1200px;height:800px;overflow:hidden;font-family:'Kalam',cursive}
  radial-gradient(ellipse at 10% 15%,rgba(150,100,40,.18) 0%,rgba(150,100,40,0) 30%),
  radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 60%,rgba(90,55,20,.35) 100%)}
 .grain{position:absolute;inset:0;opacity:.35;mix-blend-mode:multiply}
-.brush{position:absolute;left:46px;top:40px;transform:rotate(-3deg)}
-.brush span{position:absolute;left:0;top:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font:700 54px 'Kalam';color:#fbefd5;letter-spacing:.5px}
-.tag{position:absolute;left:60px;top:150px;font:400 22px 'Alfa Slab One';letter-spacing:.22em;color:#7a1f2b;display:flex;align-items:center;gap:14px}
-.tag i{display:block;width:46px;height:3px;background:#7a1f2b}
-h1{position:absolute;left:58px;top:200px;margin:0;width:680px;max-height:290px;font:400 80px/1.04 'Alfa Slab One';color:#1c2b4a;filter:url(#ink)}
+.brush{position:absolute;left:44px;top:40px;transform:rotate(-3deg)}
+.brush span{position:absolute;left:0;top:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font:700 70px 'Kalam';color:#fbefd5;white-space:nowrap;letter-spacing:.5px}
+.tag{position:absolute;left:58px;top:182px;font:400 23px 'Alfa Slab One';letter-spacing:.15em;color:#7a1f2b;display:flex;align-items:center;gap:16px;white-space:nowrap}
+.tag i{display:block;width:40px;height:3px;background:#7a1f2b}
+h1{position:absolute;left:58px;top:330px;margin:0;width:640px;font:400 84px/1.04 'Alfa Slab One';color:#1c2b4a;filter:url(#ink)}
 .uline{position:absolute;left:70px;top:478px}
-.art{position:absolute;right:40px;bottom:30px;width:430px;height:400px}
-.note{position:absolute;right:58px;top:46px;width:330px;padding:26px 22px 22px;background:#fbf3df;border:2px solid #4a3a28;box-shadow:6px 8px 0 rgba(60,40,20,.25);transform:rotate(3deg);text-align:center;font:700 38px/1.08 'Kalam';color:#1c2b4a}
+.art{position:absolute;right:36px;bottom:26px;width:450px;height:419px}
+.note{position:absolute;right:66px;top:250px;width:370px;padding:20px 18px 16px;background:#fbf3df;border:2px solid #4a3a28;box-shadow:6px 8px 0 rgba(60,40,20,.25);transform:rotate(2.5deg);text-align:center;font:700 32px/1.1 'Kalam';color:#1c2b4a}
 .note u{text-decoration:none;background:linear-gradient(transparent 70%,#f0b429 70%,#f0b429 88%,transparent 88%)}
 .pin{position:absolute;left:50%;top:-22px;transform:translateX(-50%)}
 .cast{position:absolute;left:62px;bottom:46px;display:flex;gap:22px;align-items:flex-end}
@@ -28,7 +28,7 @@ h1{position:absolute;left:58px;top:200px;margin:0;width:680px;max-height:290px;f
 .bubble{position:absolute;left:420px;bottom:120px;background:#fbf3df;border:3px solid #3a2c1d;border-radius:24px;padding:12px 20px;font:700 28px/1.15 'Kalam';color:#1c2b4a;max-width:280px;transform:rotate(-2deg)}
 .bubble::after{content:"";position:absolute;left:-22px;bottom:18px;border:12px solid transparent;border-right:20px solid #3a2c1d}
 .phone{position:absolute;right:40px;bottom:30px}
-.stamp{position:absolute;right:60px;top:300px;transform:rotate(-10deg);border:4px double #9d0208;color:#9d0208;font:400 18px 'Alfa Slab One';letter-spacing:.14em;padding:8px 14px;opacity:.82;text-align:center;line-height:1.25}
+.stamp{position:absolute;right:46px;top:44px;transform:rotate(4deg);border:4px double #9d0208;color:#9d0208;font:400 21px 'Alfa Slab One';letter-spacing:.14em;padding:10px 16px;opacity:.85;text-align:center;line-height:1.3}
 </style></head><body>
 <div class="card">
 <svg width="0" height="0" style="position:absolute">
@@ -41,7 +41,7 @@ h1{position:absolute;left:58px;top:200px;margin:0;width:680px;max-height:290px;f
 </svg>
 <svg class="grain" width="1200" height="800"><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.12  0 0 0 0.55 0"/></filter><rect width="1200" height="800" filter="url(#g)"/></svg>
 
-<div class="brush"><svg width="430" height="96" viewBox="0 0 430 96"><path filter="url(#rough)" d="M12 22 Q120 6 260 14 T420 18 L414 80 Q300 92 160 84 T8 78 Z" fill="#7a1f2b"/></svg><span>Srini presents</span></div>
+<div class="brush"><svg width="560" height="116" viewBox="0 0 430 96" preserveAspectRatio="none"><path filter="url(#rough)" d="M12 22 Q120 6 260 14 T420 18 L414 80 Q300 92 160 84 T8 78 Z" fill="#7a1f2b"/></svg><span>Srini presents</span></div>
 <div class="tag"><i></i>THE WHOLE STORY, SIMPLY TOLD<i></i></div>
 
 <h1 id="t">{{TITLE}}</h1>
@@ -51,16 +51,12 @@ h1{position:absolute;left:58px;top:200px;margin:0;width:680px;max-height:290px;f
 
 <div class="stamp">{{WEEKDAY}}<br>{{THEME}}</div>
 
-<div class="cast">
- <div><div class="cameo"><svg viewBox="0 0 64 64"><use href="#kiran"/></svg></div><div class="cname">Zappy</div></div>
- <div><div class="cameo"><svg viewBox="0 0 64 64"><use href="#guru"/></svg></div><div class="cname">Prof. Bolt</div></div>
-</div>
-<div class="bubble">{{BUBBLE}}</div>
 
 <svg class="art" viewBox="0 0 430 400">{{ART}}</svg>
 </div>
 <script>
 // shrink title until it fits its box
-(function(){var h=document.getElementById('t'),f=80;while(h.scrollHeight>290&&f>44){f-=2;h.style.fontSize=f+'px';}
-document.querySelector('.uline').style.top=(200+h.scrollHeight+10)+'px';})();
+window.cardReady=document.fonts.ready.then(function(){var h=document.getElementById('t'),f=84;h.style.maxHeight='none';
+while(h.scrollHeight>360&&f>44){f-=2;h.style.fontSize=f+'px';}
+document.querySelector('.uline').style.top=(330+h.scrollHeight+8)+'px';return true;});
 </script></body></html>
