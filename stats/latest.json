@@ -1,8 +1,43 @@
 {
  "date": "2026-11-03",
  "total": {
-  "error": 404,
-  "body": "{\"error\":\"not found\"}"
+  "total": 116,
+  "total_events": 0,
+  "total_utc": 112,
+  "stats": [
+   {
+    "day": "2026-11-03",
+    "hourly": [
+     3,
+     3,
+     5,
+     1,
+     0,
+     6,
+     8,
+     5,
+     12,
+     16,
+     10,
+     7,
+     6,
+     6,
+     6,
+     4,
+     1,
+     9,
+     2,
+     2,
+     2,
+     1,
+     0,
+     1
+    ],
+    "daily": 116,
+    "weekly": 116,
+    "monthly": 116
+   }
+  ]
  },
  "day_hits": {
   "hits": [
