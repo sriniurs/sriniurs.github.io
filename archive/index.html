@@ -45,8 +45,13 @@ document.addEventListener('DOMContentLoaded',function(){document.querySelectorAl
 
 
 
-</head>
-<body><h1>📰 Srini Presents</h1><p class="s">Every story so far. <a href="/">Latest →</a></p>
+<style id="listnav">
+.listnav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:10px;margin:-24px -24px 16px;padding:calc(10px + env(safe-area-inset-top,0px)) 16px 10px;background:#fffbe6;border-bottom:2px solid #111}
+.listnav a,.listnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid #111;border-radius:999px;background:#fff;color:#111;font-weight:800;font-size:14.5px;line-height:1;text-decoration:none;box-shadow:2px 2px 0 #111;white-space:nowrap}
+.listnav span{box-shadow:none;opacity:.7}
+.listnav a.new{background:#d62828;color:#fff}
+</style></head>
+<body><nav class="listnav"><span>📚 Past stories</span><a class="new" href="/">🔴 Latest story →</a></nav><h1>📰 Srini Presents</h1><p class="s">Every story so far. <a href="/">Latest →</a></p>
 <ul>
 <!-- NEWEST ENTRY GOES DIRECTLY BELOW THIS LINE -->
 <li><a href="2026-11-04-dhanteras-decoded.html">Dhanteras Decoded: A Broom, a Lamp and 7 Gold Myths</a><span>4 Nov 2026 · Myth vs Fact</span></li>
