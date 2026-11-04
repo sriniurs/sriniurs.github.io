@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'Alfa Slab One';src:url(fonts/AlfaSlabOne-Regular.ttf)}
+@font-face{font-family:'Kalam';font-weight:700;src:url(fonts/Kalam-Bold.ttf)}
+@font-face{font-family:'Kalam';font-weight:400;src:url(fonts/Kalam-Regular.ttf)}
+html,body{margin:0;padding:0}
+body{width:1200px;height:800px;overflow:hidden;font-family:'Kalam',cursive}
+.card{position:relative;width:1200px;height:800px;background:#f1dfba;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;background:
+ radial-gradient(ellipse at 50% 45%,rgba(255,248,230,.75) 0%,rgba(255,248,230,0) 60%),
+ radial-gradient(ellipse at 85% 90%,rgba(150,100,40,.22) 0%,rgba(150,100,40,0) 35%),
+ radial-gradient(ellipse at 10% 15%,rgba(150,100,40,.18) 0%,rgba(150,100,40,0) 30%),
+ radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 60%,rgba(90,55,20,.35) 100%)}
+.grain{position:absolute;inset:0;opacity:.35;mix-blend-mode:multiply}
+.brush{position:absolute;left:46px;top:40px;transform:rotate(-3deg)}
+.brush span{position:absolute;left:0;top:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font:700 54px 'Kalam';color:#fbefd5;letter-spacing:.5px}
+.tag{position:absolute;left:60px;top:150px;font:400 22px 'Alfa Slab One';letter-spacing:.22em;color:#7a1f2b;display:flex;align-items:center;gap:14px}
+.tag i{display:block;width:46px;height:3px;background:#7a1f2b}
+h1{position:absolute;left:58px;top:200px;margin:0;width:680px;max-height:290px;font:400 80px/1.04 'Alfa Slab One';color:#1c2b4a;filter:url(#ink)}
+.uline{position:absolute;left:70px;top:478px}
+.art{position:absolute;right:40px;bottom:30px;width:430px;height:400px}
+.note{position:absolute;right:58px;top:46px;width:330px;padding:26px 22px 22px;background:#fbf3df;border:2px solid #4a3a28;box-shadow:6px 8px 0 rgba(60,40,20,.25);transform:rotate(3deg);text-align:center;font:700 38px/1.08 'Kalam';color:#1c2b4a}
+.note u{text-decoration:none;background:linear-gradient(transparent 70%,#f0b429 70%,#f0b429 88%,transparent 88%)}
+.pin{position:absolute;left:50%;top:-22px;transform:translateX(-50%)}
+.cast{position:absolute;left:62px;bottom:46px;display:flex;gap:22px;align-items:flex-end}
+.cameo{width:150px;height:150px;border-radius:50%;background:#fbf3df;border:4px solid #3a2c1d;box-shadow:5px 6px 0 rgba(60,40,20,.25);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.cameo svg{width:140px;height:140px;filter:sepia(.25) saturate(.85)}
+.cname{text-align:center;font:700 26px 'Kalam';color:#3a2c1d;margin-top:4px}
+.bubble{position:absolute;left:420px;bottom:120px;background:#fbf3df;border:3px solid #3a2c1d;border-radius:24px;padding:12px 20px;font:700 28px/1.15 'Kalam';color:#1c2b4a;max-width:280px;transform:rotate(-2deg)}
+.bubble::after{content:"";position:absolute;left:-22px;bottom:18px;border:12px solid transparent;border-right:20px solid #3a2c1d}
+.phone{position:absolute;right:40px;bottom:30px}
+.stamp{position:absolute;right:60px;top:300px;transform:rotate(-10deg);border:4px double #9d0208;color:#9d0208;font:400 18px 'Alfa Slab One';letter-spacing:.14em;padding:8px 14px;opacity:.82;text-align:center;line-height:1.25}
+</style></head><body>
+<div class="card">
+<svg width="0" height="0" style="position:absolute">
+ <defs>
+  <filter id="ink"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2"/></filter>
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="14"/></filter>
+  <symbol id="kiran" viewBox="0 0 64 64"><rect x="12" y="46" width="40" height="22" rx="10" fill="#3b6ea5" stroke="#151515" stroke-width="2"/><circle cx="32" cy="30" r="15" fill="#e9b98a" stroke="#151515" stroke-width="2"/><path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#2b1d14" stroke="#151515" stroke-width="1.5"/><circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/><path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="guru" viewBox="0 0 64 64"><rect x="12" y="46" width="40" height="22" rx="10" fill="#b5462f" stroke="#151515" stroke-width="2"/><circle cx="32" cy="30" r="15" fill="#e9b98a" stroke="#151515" stroke-width="2"/><path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d4d4d4" stroke="#151515" stroke-width="1.5"/><circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/><circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/><path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="#d4d4d4" stroke="#151515" stroke-width="1.5"/><path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/></symbol>
+ </defs>
+</svg>
+<svg class="grain" width="1200" height="800"><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.12  0 0 0 0.55 0"/></filter><rect width="1200" height="800" filter="url(#g)"/></svg>
+
+<div class="brush"><svg width="430" height="96" viewBox="0 0 430 96"><path filter="url(#rough)" d="M12 22 Q120 6 260 14 T420 18 L414 80 Q300 92 160 84 T8 78 Z" fill="#7a1f2b"/></svg><span>Srini presents</span></div>
+<div class="tag"><i></i>THE WHOLE STORY, SIMPLY TOLD<i></i></div>
+
+<h1 id="t">{{TITLE}}</h1>
+<svg class="uline" width="420" height="30" viewBox="0 0 420 30"><path filter="url(#rough)" d="M4 18 Q140 4 300 10 T416 12 L414 20 Q280 22 150 24 T6 26 Z" fill="#c0392b"/></svg>
+
+<div class="note"><svg class="pin" width="44" height="54" viewBox="0 0 44 54"><ellipse cx="22" cy="18" rx="16" ry="14" fill="#c0392b" stroke="#5a1a12" stroke-width="2"/><ellipse cx="17" cy="13" rx="5" ry="3.5" fill="#f2a093"/><path d="M22 32 L22 52" stroke="#555" stroke-width="3" stroke-linecap="round"/></svg>{{NOTE}}</div>
+
+<div class="stamp">{{WEEKDAY}}<br>{{THEME}}</div>
+
+<div class="cast">
+ <div><div class="cameo"><svg viewBox="0 0 64 64"><use href="#kiran"/></svg></div><div class="cname">Zappy</div></div>
+ <div><div class="cameo"><svg viewBox="0 0 64 64"><use href="#guru"/></svg></div><div class="cname">Prof. Bolt</div></div>
+</div>
+<div class="bubble">{{BUBBLE}}</div>
+
+<svg class="art" viewBox="0 0 430 400">{{ART}}</svg>
+</div>
+<script>
+// shrink title until it fits its box
+(function(){var h=document.getElementById('t'),f=80;while(h.scrollHeight>290&&f>44){f-=2;h.style.fontSize=f+'px';}
+document.querySelector('.uline').style.top=(200+h.scrollHeight+10)+'px';})();
+</script></body></html>
