@@ -1,7 +1,7 @@
 name: Daily visitor stats
 on:
   schedule:
-    - cron: "30 0 * * *"   # 6:00 am IST, before the 6:15 comic task
+    - cron: "47 23 * * *"   # 5:17 am IST; GitHub often starts scheduled jobs up to ~1 h late, so this still lands before the 6:15 comic task
   workflow_dispatch: {}
 permissions:
   contents: write

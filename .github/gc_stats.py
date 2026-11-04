@@ -27,6 +27,9 @@ out = {"date": str(d),
        "day_hits": get("/stats/hits", start=s, end=e, limit=50),
        "all_time_hits": get("/stats/hits", start=utc(first), end=e, limit=100),
        "referrers": get("/stats/toprefs", start=s, end=e)}
+# /stats/total sometimes returns 404 on goatcounter.com; fall back to summing the day's page hits
+if isinstance(out["total"], dict) and "error" in out["total"] and isinstance(out["day_hits"], dict) and "hits" in out["day_hits"]:
+    out["total"] = {"total": sum(h.get("count", 0) for h in out["day_hits"]["hits"]), "derived_from": "day_hits"}
 os.makedirs("stats", exist_ok=True)
 for f in (f"stats/{d}.json", "stats/latest.json"):
     json.dump(out, open(f, "w"), indent=1)
