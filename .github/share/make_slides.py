@@ -1,4 +1,4 @@
-"""Make the 3 minimalist video slides (1080x1920 JPEG) for Srini's daily ~18 s video.
+"""Make the 3 minimalist video slides (landscape 1920x1080 JPEG, 16:9) for Srini's daily ~18 s video.
 
 Approved by Srini, 5 Nov 2026: minimalist, day pastel colour (same as the share card), no vintage
 paper; big slab headline with one red accent word, "Srini presents" top-left, "n / 3" top-right.
@@ -32,7 +32,7 @@ page = (here / "slides_template.html").read_text().replace("{{PAPER}}", paper)\
     .replace("{{SPEC}}", json.dumps(spec, ensure_ascii=False).replace("</", "<\\/"))
 tmp = here / "_slides_tmp.html"; tmp.write_text(page)
 with sync_playwright() as p:
-    b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1920})
+    b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1920, "height": 1080})
     for n in (1, 2, 3):
         pg.goto(tmp.as_uri() + f"?s={n}"); pg.wait_for_timeout(300)
         pg.screenshot(path=f"{out}-{n}.jpg", type="jpeg", quality=90)
