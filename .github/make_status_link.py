@@ -14,7 +14,7 @@ page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{t}</title>
 <meta property="og:title" content="{t}"><meta property="og:description" content="{d}">
-<meta property="og:image" content="https://sriniurs.github.io/{slug}/og.png">
+<meta property="og:image" content="https://sriniurs.github.io/{slug}/card.jpg">
 <meta property="og:url" content="https://sriniurs.github.io/s/{slug}/"><meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="noindex"><meta http-equiv="refresh" content="1; url={target}">
 <style>body{{font-family:system-ui,sans-serif;background:#fffbe6;display:flex;align-items:center;justify-content:center;height:90vh;margin:0}}a{{color:#c0262d;font-weight:700;font-size:20px}}</style>
