@@ -14,11 +14,11 @@ html,body{width:720px;height:1280px}
 .day{position:absolute;left:48px;top:118px;color:#fff;font-weight:800;font-size:16px;letter-spacing:.14em;border:2px solid rgba(255,255,255,.55);border-radius:999px;padding:9px 16px}
 .circ{position:absolute;left:50%;top:200px;width:420px;height:420px;margin-left:-210px}
 .title{position:absolute;left:48px;right:48px;top:770px;font-weight:900;font-size:52px;line-height:1.05;letter-spacing:-.02em}
-.note{position:absolute;left:48px;right:48px;font-size:27px;font-weight:600;line-height:1.3;color:#3a3d42}
+.note{position:absolute;left:48px;right:48px;font-size:32px;font-weight:600;line-height:1.3;color:#3a3d42}
 .note b{color:var(--c);font-weight:900}
-.tap{position:absolute;left:48px;bottom:150px;font-size:24px;font-weight:800;background:#17181a;color:#fff;border-radius:999px;padding:16px 30px;display:flex;gap:12px;align-items:center}
+.tap{position:absolute;left:48px;bottom:150px;font-size:31px;font-weight:900;background:#17181a;color:#fff;border-radius:999px;padding:20px 34px;display:flex;gap:12px;align-items:center}
 .tap i{font-style:normal;color:#ffd23f}
-.tag{position:absolute;right:48px;bottom:166px;font-size:15px;font-weight:800;letter-spacing:.2em;color:#9a9da3;text-align:right;line-height:1.5}
+.tag{position:absolute;left:52px;bottom:250px;text-align:left!important;font-size:19px;font-weight:900;letter-spacing:.16em;color:#6b6f75;text-align:right;line-height:1.5}
 </style></head><body>
 <div class="top"></div>
 <div class="wm">Srini <b>presents</b></div>
@@ -27,9 +27,9 @@ html,body{width:720px;height:1280px}
 <div class="title" id="t">{{TITLE}}</div>
 <div class="note" id="n">{{NOTE}}</div>
 <div class="tap">Tap the link below <i>↓</i></div>
-<div class="tag">THE WHOLE STORY<br>SIMPLY TOLD</div>
+<div class="tag">THE WHOLE STORY, SIMPLY TOLD</div>
 <script>
 const t=document.getElementById('t'),n=document.getElementById('n');let f=52;
 const lay=()=>{n.style.top=(t.getBoundingClientRect().bottom+22)+'px'};
-window.cardReady=document.fonts.ready.then(()=>{lay();while(n.getBoundingClientRect().bottom>1280-150-90&&f>32){f-=2;t.style.fontSize=f+'px';lay();}});
+window.cardReady=document.fonts.ready.then(()=>{lay();while(n.getBoundingClientRect().bottom>1280-250-40&&f>32){f-=2;t.style.fontSize=f+'px';lay();}});
 </script></body></html>
