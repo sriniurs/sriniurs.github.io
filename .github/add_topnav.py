@@ -4,7 +4,7 @@ Usage:
   python3 .github/add_topnav.py slug/index.html            # a story page
   python3 .github/add_topnav.py index.html --latest /slug/
 
-- Slim strip above the cover: "📚 Past stories" + a red-dot pill.
+- Slim strip above the cover that STAYS PINNED to the top while scrolling (Srini, 4 Nov 2026): "📚 Past stories" + a red-dot pill.
 - Same two buttons (bigger) at the end of the page, replacing the old
   '<p class="foot"><a href="/archive/">…' line if present.
 - A tiny script reads <meta name="latest-story"> from the live front page:
@@ -16,7 +16,7 @@ Safe to run twice (it replaces its own earlier blocks).
 import re, sys
 
 CSS = '''<style id="topnav">
-.topnav{display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;margin:0 auto -12px;font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;width:100%;box-sizing:border-box;margin:0 auto -12px;padding:calc(8px + env(safe-area-inset-top,0px)) 4px 8px;background:var(--paper);font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
 .topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
 .botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
 .botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
