@@ -1,6 +1,6 @@
-"""Make the 3 minimalist video slides (landscape 1920x1080 JPEG, 16:9) for Srini's daily ~18 s video.
+"""Make the 3 minimalist video slides (VERTICAL 1080x1920 JPEG, 9:16) for Srini's daily ~18 s video.
 
-Approved by Srini, 5 Nov 2026: minimalist, day pastel colour (same as the share card), no vintage
+Approved by Srini, 5 Nov 2026: minimalist, BRIGHT day colour (same as the share card), vertical, no vintage
 paper; big slab headline with one red accent word, "Srini presents" top-left, "n / 3" top-right.
   Slide 1 = quiz title, Slide 2 = 3 questions with one-word answers, Slide 3 = "N more ... inside" + link.
 
@@ -23,8 +23,8 @@ Characters (#kiran = Zappy, #guru = Prof. Bolt) are built into slides_template.h
 """
 import json, sys, os, pathlib
 from playwright.sync_api import sync_playwright
-PAPER = {"MONDAY": "#f4d3b8", "TUESDAY": "#f3e1a6", "WEDNESDAY": "#d3e3c2", "THURSDAY": "#cfdcee",
-         "FRIDAY": "#f3cfd4", "SATURDAY": "#ddd3f0", "SUNDAY": "#c6e1dc"}
+PAPER = {"MONDAY": "#ffc49b", "TUESDAY": "#ffe066", "WEDNESDAY": "#b5e48c", "THURSDAY": "#9fd3ff",
+         "FRIDAY": "#ffb3c6", "SATURDAY": "#cdb4ff", "SUNDAY": "#7ee0cf"}  # BRIGHT day colours (Srini, 5 Nov 2026)
 spec = json.load(open(sys.argv[1])); out = sys.argv[2]
 here = pathlib.Path(__file__).resolve().parent
 paper = spec.get("paper") or PAPER.get(spec["weekday"].strip().upper(), "#d3e3c2")
@@ -32,7 +32,7 @@ page = (here / "slides_template.html").read_text().replace("{{PAPER}}", paper)\
     .replace("{{SPEC}}", json.dumps(spec, ensure_ascii=False).replace("</", "<\\/"))
 tmp = here / "_slides_tmp.html"; tmp.write_text(page)
 with sync_playwright() as p:
-    b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1920, "height": 1080})
+    b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1920})
     for n in (1, 2, 3):
         pg.goto(tmp.as_uri() + f"?s={n}"); pg.wait_for_timeout(300)
         pg.screenshot(path=f"{out}-{n}.jpg", type="jpeg", quality=90)
