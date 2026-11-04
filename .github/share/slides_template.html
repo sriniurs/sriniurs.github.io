@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'Alfa Slab One';src:url(fonts/AlfaSlabOne-Regular.ttf)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:{{PAPER}};color:#151515;font-family:system-ui,'DejaVu Sans',sans-serif;position:relative;overflow:hidden}
+.top{position:absolute;left:90px;top:170px;font-weight:800;font-size:34px;letter-spacing:.14em;text-transform:uppercase}
+.top b{color:#7a1020}
+.n{position:absolute;right:90px;top:170px;font-weight:800;font-size:34px;letter-spacing:.1em;opacity:.45}
+.mid{position:absolute;left:90px;right:90px;top:50%;transform:translateY(-55%)}
+h1{font-family:'Alfa Slab One';font-weight:400;font-size:150px;line-height:1.02;letter-spacing:-.01em}
+h1 em{font-style:normal;color:#c0262d}
+.sub{margin-top:50px;font-size:56px;font-weight:700;line-height:1.25}
+.coin{width:150px;height:150px;border-radius:50%;background:#f2c230;border:8px solid #151515;margin-bottom:60px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:80px;color:#151515}
+.q{border-top:5px solid #151515;padding:44px 0}
+.q:last-child{border-bottom:5px solid #151515}
+.q p{font-size:54px;font-weight:700;line-height:1.2}
+.q .a{display:flex;align-items:baseline;gap:24px;margin-top:18px}
+.q .a span{font-family:'Alfa Slab One';font-size:84px;color:#c0262d}
+.q .a small{font-size:44px;font-weight:600;opacity:.75}
+.url{margin-top:70px;display:inline-block;background:#151515;color:#fff;font-weight:800;font-size:54px;padding:32px 44px;border-radius:999px}
+.tap{margin-top:40px;font-size:46px;font-weight:700;opacity:.75}
+</style></head><body>
+<div class="top">Srini <b>presents</b></div><div class="n" id="n"></div>
+<div class="mid" id="m"></div>
+<script>
+const D={{SPEC}};
+const s=+new URLSearchParams(location.search).get('s');
+document.getElementById('n').textContent=s+' / 3';
+const m=document.getElementById('m');
+const e=x=>String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const em=x=>e(x).replace(/\*(.+?)\*/g,'<em>$1</em>');
+if(s===1) m.innerHTML=`<div class="coin">${e(D.icon||'?')}</div><h1>${em(D.title).replace(/\n/g,'<br>')}</h1><div class="sub">${em(D.sub||'').replace(/\n/g,'<br>')}</div>`;
+if(s===2) m.innerHTML=D.questions.map(q=>`<div class="q"><p>${e(q.q)}</p><div class="a"><span>${e(q.a)}</span>${q.note?`<small>${e(q.note)}</small>`:''}</div></div>`).join('');
+if(s===3) m.innerHTML=`<h1>${em(D.more).replace(/\n/g,'<br>')}</h1><div class="url">${e(D.url)}</div><div class="tap">${e(D.tap||'Tap the link to read ↓')}</div>`;
+</script></body></html>
