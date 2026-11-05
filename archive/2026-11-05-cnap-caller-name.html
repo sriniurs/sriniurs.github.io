@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Who’s Calling? The Name Behind the Number | Srini presents</title>
+<meta name="description" content="India’s CNAP caller-name rule: what appears, how the network works, privacy safeguards, wrong-name complaints and why a displayed name is not proof of trust.">
+<meta property="og:title" content="Who’s Calling? The Name Behind the Number | Srini presents">
+<meta property="og:description" content="A name on screen is a clue about the SIM record—not a guarantee about the person or the call.">
+<meta property="og:url" content="https://sriniurs.github.io/archive/2026-11-05-cnap-caller-name.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#eef3f8;--dot:#cfdbe8;--panel:#fff;--line:#151515;--ink:#151515;--muted:#4a5560;--yellow:#ffd23f;--red:#e63946;--blue:#1f7ad1;--green:#2a9d5c;--take:#e3f5ea;--warn:#fde8ea;--skin:#e3a877;--hair:#1a1a1a;--grey:#b9bec4;--display:"Bangers","Impact","Arial Black",sans-serif;--body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#eef1f4;--muted:#a8b3bf;--take:#173326;--warn:#3a1d22;--skin:#d39a6a;--hair:#0d0d0d;--grey:#8d949b;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#eef1f4;--muted:#a8b3bf;--take:#173326;--warn:#3a1d22;--skin:#d39a6a;--hair:#0d0d0d;--grey:#8d949b;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font:17px/1.5 var(--body);padding:22px 16px 48px}.wrap{max-width:900px;margin:auto;display:flex;flex-direction:column;gap:22px}
+h1,h2,h3,.sfx,.big,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}p{margin:0 0 9px}
+.cover{position:relative;border:4px solid #151515;box-shadow:8px 8px 0 #151515;padding:26px 23px 22px;display:block}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.daytag{position:absolute;top:12px;right:12px;display:inline-block;font:700 11px var(--body);letter-spacing:.12em;padding:2px 8px;border:2px solid #151515;background:#fff;color:#151515}
+.byline{font:28px/1.1 var(--display);letter-spacing:.05em;color:#fff;margin:0 0 18px;white-space:nowrap}
+.cover h1{font-size:clamp(48px,10vw,88px);line-height:.88;margin:0 0 14px;text-wrap:balance}
+.sub{font-size:19px;font-weight:700;max-width:65ch;margin:0 0 15px}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.fs span{font:20px var(--display);background:#fff;color:#151515;border:3px solid #151515;padding:3px 11px;transform:rotate(-1deg)}
+.cast{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.cast figure{margin:0;background:#fff;color:#151515;border:3px solid #151515;border-radius:13px;padding:10px;display:flex;gap:10px;align-items:center;font-size:15px}.cast svg{width:58px;height:58px;flex:0 0 58px}.cast b{font:22px var(--display);display:block}
+.intro{font-size:18px;padding:0 4px}
+.era{font:26px var(--display);letter-spacing:.05em;text-align:center;color:#fff;background:#1f7ad1;border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:7px 12px;transform:rotate(-1deg);margin:8px 0 2px}.era small{display:block;font:700 14px var(--body);letter-spacing:0}.era.p2{background:#2a9d5c}.era.p3{background:#e63946}.era.p4{background:#7030a0}
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:5px 5px 0 var(--line);padding:15px 16px;margin:0}
+.ephead{display:flex;align-items:center;gap:10px;margin-bottom:8px}.tag{background:#e63946;color:#fff;font:20px var(--display);letter-spacing:.05em;padding:2px 9px;border:2px solid #151515;white-space:nowrap}.ep h2{font-size:28px;line-height:1.05;margin:0;color:var(--ink)}
+.bubble{position:relative;background:#fff;color:#151515;border:2px solid #aeb5bd;border-radius:17px;padding:10px 13px;margin:10px 0;max-width:94%;font-size:17.5px;line-height:1.45}.bubble .who{display:block;color:#65717d;font:900 11px var(--body);letter-spacing:.1em;margin-bottom:3px}.bubble.z{margin-right:auto}.bubble.p{margin-left:auto;background:#edf3ff;border-color:#9cb5dc}.bubble p{margin:0}
+.cap{background:#ffd23f;color:#151515;border:2px solid #151515;padding:8px 11px;margin-top:10px;font-weight:700}
+.ill{display:block;width:118px;height:118px;margin:8px auto;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px}.ill.r{transform:rotate(2deg)}.ill svg{width:100%;height:100%}
+.sfx{text-align:center;color:#e8590c;font-size:29px;letter-spacing:.08em;margin:5px}
+.take{background:#d8f0dc;color:#151515;border:3px solid #277a43;padding:11px 13px;margin:10px 0;font-weight:700}.warn{background:#fde8ea;color:#151515;border:3px solid #c62828;padding:11px 13px;margin:10px 0}
+.chain{display:flex;align-items:center;justify-content:center;gap:7px;margin:12px 0}.chain span{background:#fff;color:#151515;border:3px solid #151515;padding:9px 10px;font-weight:700;text-align:center;flex:1}.chain i{font:900 28px var(--body);color:#e8590c}
+table.vs{width:100%;border-collapse:collapse;font-size:15.5px;margin:10px 0;color:var(--ink)}table.vs th,table.vs td{border:2px solid var(--line);padding:8px 9px;text-align:left;vertical-align:top}table.vs th{background:#151515;color:#ffd23f;font:20px var(--display);letter-spacing:.04em}
+.deepbox{background:#eee5ff;color:#151515;border:3px solid #7041b8;padding:12px;margin:9px 0}.myth{background:#fde8ea;color:#151515;border:3px solid #c62828;padding:10px;margin:8px 0}.fact{background:#dff4e5;color:#151515;border:3px solid #25834c;padding:10px;margin:8px 0}.stamp{display:inline-block;background:#ffd23f;color:#151515;border:3px solid #151515;box-shadow:3px 3px 0 #151515;padding:5px 13px;font:24px var(--display);transform:rotate(-2deg)}
+.verdict{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.verdict div{background:#fff;color:#151515;border:3px solid #151515;padding:12px}.verdict b{font:22px var(--display);display:block;margin-bottom:4px}.verdict .op{background:#fff1bf}
+.cheat{background:#ffd23f;color:#151515;border:4px solid #151515;box-shadow:6px 6px 0 #151515;padding:14px}.cheat h2{font:32px var(--display);margin:0 0 10px}.cheatgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.cheatgrid div{background:#fff;color:#151515;border:2px solid #151515;padding:10px;font-size:15px}.cheatgrid b{font:21px var(--display);display:block;margin-bottom:5px}
+.sources{background:var(--panel);border:3px solid var(--line);padding:14px;font-size:14.5px}.sources h2{font:26px var(--display);margin:0 0 7px}.sources a{color:#1455a0;overflow-wrap:anywhere}.footer{text-align:center;color:var(--muted);font-size:13px;padding:10px}.foot{text-align:center;font-size:14px;margin:0}.foot a{color:#1455a0;font-weight:700}.foot a:visited{color:#7041b8}
+@media(max-width:640px){body{padding:12px 10px 34px;font-size:17.5px}.wrap{gap:17px}.cover{padding:22px 15px}.cover h1{font-size:clamp(46px,13vw,66px)}.sub{font-size:18px}.cast{grid-template-columns:1fr 1fr;gap:7px}.cast figure{font-size:13px;padding:7px;gap:6px}.cast svg{width:44px;height:44px;flex-basis:44px}.cast b{font-size:19px}.ep{padding:12px}.ep h2{font-size:25px}.bubble{font-size:17.5px;max-width:100%}.ill{width:112px;height:112px}.era{font-size:24px}.chain{flex-direction:column}.chain i{transform:rotate(90deg);line-height:.8}.verdict{grid-template-columns:1fr}.cheatgrid{grid-template-columns:1fr}.vs.stk,.vs.stk tbody,.vs.stk tr,.vs.stk td{display:block;width:100%}.vs.stk thead{display:none}.vs.stk tr{border:3px solid var(--line);margin:8px 0}.vs.stk td{border:0;border-top:1px dashed #777;display:block;padding:7px 10px}.vs.stk td:first-child{background:#151515;color:#ffd23f;font:20px var(--display)}.vs.stk td:before{content:attr(data-label);display:block;font:700 12px var(--body);color:#667;margin-bottom:2px}.vs.stk td:first-child:before{content:none}}
+@media(prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}.sources a{color:#8bbcff}.vs td{color:var(--ink)}}
+</style>
+</head>
+<body>
+<svg aria-hidden="true" width="0" height="0" style="position:absolute">
+<symbol id="zappy" viewBox="0 0 64 64"><rect x="12" y="46" width="40" height="22" rx="10" fill="#1f7ad1" stroke="#151515" stroke-width="2"/><circle cx="32" cy="30" r="15" fill="#e3a877" stroke="#151515" stroke-width="2"/><path d="M17 26L20 14 25 21 29 11 33 20 38 11 41 21 46 15 47 27Q32 19 17 26" fill="#1a1a1a" stroke="#151515" stroke-width="1.5"/><circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/><path d="M26 37Q32 42 38 37" fill="none" stroke="#151515" stroke-width="2"/></symbol>
+<symbol id="bolt" viewBox="0 0 64 64"><rect x="12" y="46" width="40" height="22" rx="10" fill="#e63946" stroke="#151515" stroke-width="2"/><circle cx="32" cy="30" r="15" fill="#e3a877" stroke="#151515" stroke-width="2"/><path d="M17 30Q16 16 32 15Q48 16 47 30Q44 21 32 21Q20 21 17 30" fill="#b9bec4" stroke="#151515" stroke-width="1.5"/><circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/><path d="M25 37Q32 34 39 37" fill="none" stroke="#151515" stroke-width="2"/></symbol>
+</svg>
+<main class="wrap">
+<header class="cover t-thu">
+<span class="daytag">THURSDAY</span>
+<p class="byline">Srini presents</p>
+<h1>WHO’S<br>CALLING?</h1>
+<p class="sub">India’s CNAP rule took effect on 1 November for 4G-and-newer mobile networks. But the name on your screen is a clue about the SIM record—not a guarantee about the person, the call or its safety.</p>
+<div class="fs"><span>Future Is Here</span><span>CNAP</span><span>4G &amp; 5G</span><span>Caller Safety</span></div>
+<div class="cast">
+<figure><svg viewBox="0 0 64 64"><use href="#zappy"/></svg><div><b>Zappy</b>“Will unknown calls finally have a name?”</div></figure>
+<figure><svg viewBox="0 0 64 64"><use href="#bolt"/></svg><div><b>Prof. Bolt</b>“Yes—but let’s read the fine print.”</div></figure>
+</div></header>
+<p class="intro">The phone rings. The number isn’t saved. A name may now appear too. That is <b>CNAP — Calling Name Presentation</b>, a network-level caller-name service. The Department of Telecommunications ordered operators to introduce it from 1 November 2026 on 4G-and-newer wireless networks. Important distinction: an order’s start date is not proof that every operator, handset and cross-network call is already displaying names perfectly.</p>
+
+<div class="era">PART 1 · THE NAME ON THE SCREEN<small>From an unknown number to a name you can inspect</small></div>
+<section class="ep"><div class="ephead"><span class="tag">EP 01</span><h2>“Unknown number” gets a makeover</h2></div>
+<svg class="ill" viewBox="0 0 110 110"><rect x="31" y="5" width="48" height="98" rx="9" fill="#252a34" stroke="#151515" stroke-width="3"/><rect x="36" y="13" width="38" height="80" rx="5" fill="#e8f1ff"/><circle cx="55" cy="34" r="10" fill="#6b91d2"/><path d="M40 65Q55 45 70 65" fill="#6b91d2"/><text x="55" y="77" text-anchor="middle" font-size="6" font-weight="bold" fill="#151515">RAVI KUMAR</text><path d="M15 38q-8 12 0 24M95 38q8 12 0 24" fill="none" stroke="#e8590c" stroke-width="4" stroke-linecap="round"/></svg>
+<div class="bubble z"><span class="who">ZAPPY</span>“So an unsaved number calls me… and my phone may show the caller’s name too?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“Exactly. It’s called <b>CNAP — Calling Name Presentation</b>. For an unsaved domestic call on a supported network, it can show the name in the originating operator’s subscriber data record, beside the number. That is the registered subscriber name—not necessarily the person holding the phone.”</div>
+<div class="cap">The important bit: it is the operator’s subscriber record—not a crowd-sourced nickname, and not a live face-check of the person speaking.</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 02</span><h2>It’s a network service, not another app</h2></div>
+<svg class="ill r" viewBox="0 0 110 110"><rect x="3" y="34" width="29" height="40" rx="5" fill="#dbeafe" stroke="#151515" stroke-width="2"/><text x="17" y="51" text-anchor="middle" font-size="7" fill="#151515" font-weight="bold">CALL</text><text x="17" y="61" text-anchor="middle" font-size="6" fill="#151515">A</text><path d="M33 54h10m-4-4 4 4-4 4" stroke="#e8590c" stroke-width="2" fill="none"/><rect x="44" y="24" width="31" height="60" rx="5" fill="#fff0bf" stroke="#151515" stroke-width="2"/><text x="59" y="45" text-anchor="middle" font-size="6" fill="#151515" font-weight="bold">NAME</text><text x="59" y="54" text-anchor="middle" font-size="6" fill="#151515" font-weight="bold">RECORD</text><path d="M76 54h8m-4-4 4 4-4 4" stroke="#e8590c" stroke-width="2" fill="none"/><rect x="86" y="34" width="21" height="40" rx="4" fill="#dff4e5" stroke="#151515" stroke-width="2"/><text x="96" y="52" text-anchor="middle" font-size="6" fill="#151515" font-weight="bold">YOU</text></svg>
+<div class="bubble z"><span class="who">ZAPPY</span>“Does it rummage through my contacts or need a special download?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“No separate caller-ID app is required for the network service. The originating operator maintains a number-to-name record. The receiving network gets the caller-name information and presents it during the incoming call.”</div>
+<div class="chain"><span>Caller’s network<br><b>has the record</b></span><i>➜</i><span>Receiving network<br><b>requests the name</b></span><i>➜</i><span>Your phone<br><b>shows the ID</b></span></div>
+<div class="cap">Your own saved contact label still gets priority. CNAP fills the gap when the number is not saved.</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 03</span><h2>What will actually appear?</h2></div>
+<div class="bubble z"><span class="who">ZAPPY</span>“Will every call suddenly show a full name, even from abroad?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“The DoT’s instructions set out a display order. It is not one-size-fits-all.”</div>
+<table class="vs stk"><thead><tr><th>Incoming call</th><th>What appears under the DoT rule</th></tr></thead><tbody>
+<tr><td data-label="Incoming call">Number saved in your contacts</td><td data-label="Display">The name you saved takes priority</td></tr>
+<tr><td data-label="Incoming call">Unsaved domestic call on supported network</td><td data-label="Display">The originating operator’s subscriber-record name, with the number</td></tr>
+<tr><td data-label="Incoming call">Unsaved international call</td><td data-label="Display">“International Call”</td></tr>
+<tr><td data-label="Incoming call">Caller has CLIR active</td><td data-label="Display">The calling name is not presented</td></tr>
+<tr><td data-label="Incoming call">2G, 3G or landline</td><td data-label="Display">Not included in the 1 November rollout; considered separately</td></tr>
+</tbody></table>
+<div class="cap">Saved contacts first. Operator record next. International calls get a label—not a guessed identity.</div></section>
+
+<div class="era p2">PART 2 · THE PROMISE & THE CATCH<small>Helpful caller identification is not the same as fraud-proof calling</small></div>
+<section class="ep"><div class="ephead"><span class="tag">EP 04</span><h2>Why did India want this?</h2></div>
+<svg class="ill" viewBox="0 0 110 110"><path d="M55 10l33 12v25q0 31-33 49Q22 78 22 47V22z" fill="#dff4e5" stroke="#151515" stroke-width="3"/><path d="M38 54l11 11 24-27" fill="none" stroke="#25834c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><text x="55" y="92" text-anchor="middle" font-size="7" fill="#151515" font-weight="bold">IDENTITY</text></svg>
+<div class="bubble z"><span class="who">ZAPPY</span>“Is this mainly to stop those fake bank and parcel calls?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“The aim is to give people a better clue before answering an unknown call. TRAI’s recommendation was intended to help subscribers make an informed decision and reduce harassment from unknown or spam callers. But CNAP is caller identification—not a proven cure for fraud. The latest reporting has not produced evidence that it eliminates scams.”</div>
+<div class="warn"><b>Remember:</b> A displayed name tells you what is recorded against a connection. It does not prove the caller’s authority, honesty or reason for calling.</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 05</span><h2>CNAP versus Truecaller: different sources</h2></div>
+<div class="bubble z"><span class="who">ZAPPY</span>“Then is Truecaller finished?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“Not necessarily. They solve related problems using different information sources. One is based on telecom subscriber records; the other is an app-based caller identification service with features such as community labels and spam reporting.”</div>
+<table class="vs stk"><thead><tr><th>Feature</th><th>CNAP</th><th>Caller-ID app</th></tr></thead><tbody>
+<tr><td data-label="Feature">Main identity source</td><td data-label="CNAP">Operator subscriber record</td><td data-label="App">App’s own data and user-contributed signals</td></tr>
+<tr><td data-label="Feature">Separate app needed?</td><td data-label="CNAP">No</td><td data-label="App">Yes</td></tr>
+<tr><td data-label="Feature">Spam/community features</td><td data-label="CNAP">Not its core purpose</td><td data-label="App">May provide these</td></tr>
+<tr><td data-label="Feature">What it proves</td><td data-label="CNAP">Registered name association</td><td data-label="App">A label or risk signal, not proof</td></tr>
+</tbody></table>
+<div class="cap">CNAP adds a network-record name. It does not automatically add a spam score, community warning or call-blocking feature.</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 06</span><h2>A genuine name can still be a scam</h2></div>
+<svg class="ill r" viewBox="0 0 110 110"><rect x="16" y="18" width="78" height="72" rx="10" fill="#fff0f0" stroke="#151515" stroke-width="3"/><circle cx="55" cy="42" r="13" fill="#e3a877" stroke="#151515" stroke-width="2"/><path d="M37 75q18-25 36 0" fill="#e63946" stroke="#151515" stroke-width="2"/><path d="M24 24l62 60M86 24L24 84" stroke="#e8590c" stroke-width="5"/><text x="55" y="103" font-size="8" text-anchor="middle" fill="#151515" font-weight="bold">DON'T TRUST BLINDLY</text></svg>
+<div class="bubble z"><span class="who">ZAPPY</span>“If the registered name looks genuine, can the caller still lie?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“Of course. Imagine a person calling from their own properly registered SIM and claiming to be from your bank. CNAP can show the SIM’s recorded name; it cannot verify the caller’s job, authority or story. The rules require caller-ID protection against tampering, but that still isn’t a trust certificate.”</div>
+<div class="warn"><b>Red flag:</b> “Your account will be blocked in 10 minutes—tell me the OTP now.” Hang up. Contact the bank using the number on its official app, card or website.</div></section>
+
+<div class="era p3">PART 3 · THE DETAILS THAT MATTER<small>What the official directions say — and what they leave open</small></div>
+<section class="ep"><div class="ephead"><span class="tag">EP 07</span><h2>Who gets CNAP first—and is it live everywhere?</h2></div>
+<div class="bubble z"><span class="who">ZAPPY</span>“The date was 1 November. So every 4G phone in India must show a name now?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“The DoT instructed all access-service providers to introduce CNAP across service areas from <b>1 November 2026</b> on wireless networks using <b>4G and newer technologies</b>. It says 2G, 3G and landline networks will be considered separately.”</div>
+<div class="take"><b>Reality check · 5 November:</b> The start date is official. But reporting published on 2 November found no public confirmation of a uniform nationwide switch-on; cross-operator display had not been independently verified. So the name may not appear on every call yet. A missing name alone does not prove your handset is faulty.</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 08</span><h2>Privacy: what the rule does—and doesn’t—say</h2></div>
+<svg class="ill" viewBox="0 0 110 110"><rect x="22" y="46" width="66" height="48" rx="8" fill="#dbeafe" stroke="#151515" stroke-width="3"/><path d="M34 47V34a21 21 0 0 1 42 0v13" fill="none" stroke="#151515" stroke-width="6"/><circle cx="55" cy="66" r="6" fill="#151515"/><path d="M55 72v10" stroke="#151515" stroke-width="4"/><text x="55" y="105" text-anchor="middle" font-size="7" fill="#151515" font-weight="bold">PRIVACY</text></svg>
+<div class="bubble z"><span class="who">ZAPPY</span>“Does the receiving network keep a permanent copy of every caller name it looks up?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“The DoT requires a <b>security-by-design</b> approach: the query-response mechanism itself must prevent the calling-name identity from being retained after the incoming call is completed. That is a specific safeguard—not a promise that every ordinary telecom record or subscriber database disappears.”</div>
+<div class="deepbox"><b>And what about opting out?</b> The 13 October 2026 circular says operators must provide CNAP to each user without a separate request. It expressly says names of subscribers using <b>CLIR</b> will not be presented. It does not spell out a separate routine opt-out process for ordinary subscribers.</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 09</span><h2>What if the name is wrong?</h2></div>
+<div class="bubble z"><span class="who">ZAPPY</span>“My father bought the SIM, but I use it. Will his name appear?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“It can. CNAP reads the subscriber record, not a live identity check. A family or employer connection may therefore show the registered subscriber’s name rather than the person holding the handset.”</div>
+<div class="take"><b>How to complain:</b> The DoT requires every operator to receive, record, maintain and redress CNAP grievances through its grievance mechanism in a <b>time-bound manner</b>. Start with the operator that holds the number’s subscriber record. Keep the number, date, time and a screenshot if useful.</div>
+<div class="warn"><b>Important fine print:</b> The circular does not specify a fixed number of days or a separate CNAP helpline. Use your operator’s official complaint route and ask for a complaint/reference number.</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 10</span><h2>Can a business show its brand name?</h2></div>
+<svg class="ill r" viewBox="0 0 110 110"><rect x="13" y="25" width="84" height="58" rx="7" fill="#fff0bf" stroke="#151515" stroke-width="3"/><path d="M13 42h84M55 25v58" stroke="#151515" stroke-width="2"/><path d="M27 56h18m20 0h18M27 67h18m20 0h18" stroke="#1f7ad1" stroke-width="4" stroke-linecap="round"/><text x="55" y="96" text-anchor="middle" font-size="8" fill="#151515" font-weight="bold">VERIFIED BRAND</text></svg>
+<div class="bubble z"><span class="who">ZAPPY</span>“Will a delivery company’s call show a random director’s name?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“The DoT allows business or bulk-connection holders to seek a preferred name instead of the subscriber-record name. It must be either a trademark registered in the user’s name or the user’s trade name registered on the GST portal—and the operator must verify the documents first. It is not a free-for-all nickname field.”</div>
+<div class="cap">A verified business name can help customers recognise legitimate organisations — but it still does not authenticate the individual caller.</div></section>
+
+<div class="era p4">THE DEEP DIVE · FOUR THINGS TO KNOW<small>The mechanics, the exceptions and the limits</small></div>
+<section class="ep"><div class="ephead"><span class="tag">EP 11</span><h2>The two-network handshake</h2></div>
+<div class="deepbox"><b>1 · Originating operator:</b> keeps the subscriber-name record mapped to the caller’s number.<br><br><b>2 · Receiving operator:</b> retrieves the calling-name identity for presentation to the person receiving the call.<br><br><b>3 · Privacy safeguard:</b> the query-response mechanism must not retain that calling-name identity after the incoming call is completed.</div>
+<div class="bubble z"><span class="who">ZAPPY</span>“So my operator asks the caller’s operator for the name?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“That is the basic architecture. The originating network owns the subscriber record; the terminating network retrieves it for the incoming call. Both sides must have the network plumbing working properly.”</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 12</span><h2>Why saved contacts still win</h2></div>
+<div class="deepbox"><b>Display priority:</b> your phone’s own saved contact name comes first. If the number is not saved, the operator’s recorded name is used for domestic calls. For an unsaved international call, the display is “International Call”.</div>
+<div class="bubble z"><span class="who">ZAPPY</span>“So if I saved the plumber as ‘Super Plumber’, that name stays?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“Yes. CNAP does not replace the name you assigned in your own contacts.”</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 13</span><h2>Why might no name appear?</h2></div>
+<svg class="ill" viewBox="0 0 110 110"><rect x="28" y="10" width="54" height="90" rx="9" fill="#252a34" stroke="#151515" stroke-width="3"/><rect x="34" y="19" width="42" height="72" rx="5" fill="#fff0f0"/><circle cx="55" cy="42" r="11" fill="#d6d9de" stroke="#151515" stroke-width="2"/><path d="M39 75q16-25 32 0" fill="#d6d9de" stroke="#151515" stroke-width="2"/><path d="M24 23l62 62" stroke="#e8590c" stroke-width="5"/><text x="55" y="85" text-anchor="middle" font-size="6" fill="#151515" font-weight="bold">NO NAME?</text></svg>
+<div class="deepbox"><b>Possible reasons:</b><br>• The number is saved, so your own contact name takes priority.<br>• It is an unsaved international call, shown as “International Call”.<br>• The caller uses CLIR, so the calling name is not presented.<br>• The call uses 2G/3G or a landline, which is outside the initial 1 November scope.<br>• Operator rollout, cross-network delivery or handset support may not yet be uniform.</div>
+<div class="bubble z"><span class="who">ZAPPY</span>“So a blank name doesn’t automatically mean a scam—or a broken phone?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“Correct. First check the type of call and network. The rollout instruction is clear; universal real-world display is a separate question.”</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 14</span><h2>What CNAP cannot promise</h2></div>
+<div class="myth"><b>MYTH:</b> “A name on the screen means the caller is genuine.”</div>
+<div class="fact"><b>FACT:</b> It shows the name in the operator’s subscriber record under the DoT rules. It does not verify the person speaking, their job, their bank authority or their intention.</div>
+<div class="myth"><b>MYTH:</b> “CNAP will block spam and identify every internet call.”</div>
+<div class="fact"><b>FACT:</b> CNAP is a caller-name presentation feature. The circular does not promise spam scoring, automatic blocking or identification of every WhatsApp/internet call.</div>
+<div class="stamp">NAME ≠ TRUST</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 15</span><h2>Prof. Bolt’s verdict</h2></div>
+<div class="verdict">
+<div><b>THE GOOD NEWS</b>A network-supplied subscriber name can make some unfamiliar domestic calls easier to assess—without a separate caller-ID app or sign-up.</div>
+<div><b>WATCH OUT</b>The record may name a parent or employer, the rollout may not be uniform yet, and the complaint rule gives no published fixed deadline. A name is not a fraud shield.</div>
+<div class="op"><b>MY TAKE · OPINION</b>CNAP is a useful upgrade to India’s caller-identification system. But its real value will depend on accurate records, dependable inter-operator delivery and a grievance process that actually corrects mistakes. Treat the name as one extra clue—not permission to trust.</div>
+</div></section>
+
+<section class="ep"><div class="ephead"><span class="tag">EP 16</span><h2>So what should Zappy do?</h2></div>
+<div class="bubble z"><span class="who">ZAPPY</span>“I’ll look at the name—but what should I do if it looks wrong?”</div>
+<div class="bubble p"><span class="who">PROF. BOLT</span>“Use it as a clue. Then verify the story independently.”</div>
+<div class="take">✓ If your own number shows the wrong subscriber name, contact your operator through its official customer-care/grievance channel and ask how to correct the subscriber record.<br>✓ If the SIM is registered to a parent or employer, remember that their name may appear; ask the operator about the proper ownership/KYC update process.<br>✓ If a business wants a preferred display name, check the trademark/GST eligibility rules with the operator.<br>✓ Never share OTPs, UPI PINs, passwords or card details with an incoming caller—even if a familiar name appears.<br>✓ For banks, hospitals, couriers or government offices, end the call and contact the organisation using a number you independently trust.</div>
+<div class="sfx">RING ≠ OBEY!</div></section>
+
+<section class="cheat"><h2>THE FRIDGE-DOOR CHEAT SHEET</h2><div class="cheatgrid">
+<div><b>📞 THE STORY</b>CNAP adds the operator-recorded subscriber name to an unsaved domestic call on supported 4G-and-newer networks.</div>
+<div><b>🔍 THE DEEP DIVE</b>Saved contacts win. International calls show a label. CLIR names stay hidden. 2G/3G/landlines are separate. Rollout may vary.</div>
+<div><b>🛡️ YOUR MOVE</b>Wrong name? Complain to your operator. Familiar name? Still verify. Never share OTPs, PINs or passwords.</div>
+</div></section>
+
+<section class="sources"><h2>SOURCES &amp; FURTHER READING</h2>
+<ol>
+<li><a href="https://www.dot.gov.in/static/uploads/2026/10/d86da4092d50f052becd6113de83d37e.pdf" target="_blank" rel="noopener">Department of Telecommunications — Circular No. 01/Licensing Policy/2026</a>, 13 October 2026. Primary source for the 1 November start, 4G-and-newer scope, display priority, operator databases, privacy safeguards, business preferred names, complaints and CLIR.</li>
+<li><a href="https://trai.gov.in/sites/default/files/2024-11/Recommendation_23022024_0.pdf" target="_blank" rel="noopener">TRAI — Recommendations on Introduction of CNAP Service in Indian Telecommunication Network</a>, 23 February 2024. Background and original policy rationale. The DoT circular is the current implementation direction.</li>
+<li><a href="https://transclew.com/tech/cnap-caller-name-display-rules/" target="_blank" rel="noopener">Transclew — “4G, 5G calls from unsaved numbers must now show the SIM owner’s name”</a>, 2 November 2026. Useful implementation-status check: no public confirmation of uniform nationwide switch-on was found; cross-operator display had not been independently tested.</li>
+<li><a href="https://indianexpress.com/article/business/callers-names-must-show-on-phones-from-nov-1-telecom-department-orders-operators-10922846/" target="_blank" rel="noopener">The Indian Express — “Callers’ names must show on phones from Nov 1”</a>, 15 October 2026. Summary of the DoT direction, exceptions and business-name verification.</li>
+<li><a href="https://www.moneycontrol.com/news/india/dot-mandates-caller-name-display-across-india-from-november-1-14052529.html" target="_blank" rel="noopener">Moneycontrol — “Telecom dept mandates caller ID across India from November 1”</a>, 15 October 2026. Rollout scope and operator-record explanation.</li>
+</ol>
+<p><b>Editorial note:</b> Checked 5 November 2026. The DoT circular sets the implementation date; it does not prove that every operator, handset and inter-operator call is already displaying CNAP uniformly. The latest implementation-status reporting cited here is dated 2 November. The earlier DoT KYC-trial guidance is not used as the final rule. Figures rounded; rollout can evolve.</p>
+</section>
+<div class="footer">Srini presents · The Whole Story, Simply Told<br>Thursday · Future Is Here</div>
+<p class="foot"><a href="/archive/">📚 Past stories</a> · <a href="/">Latest story</a></p>
+</main>
+<script>
+document.querySelectorAll('table.vs').forEach(t=>{const hs=[...t.querySelectorAll('thead th')].map(x=>x.textContent.trim());t.querySelectorAll('tbody tr').forEach(r=>[...r.querySelectorAll('td')].forEach((c,i)=>c.setAttribute('data-label',hs[i]||'')))});
+</script>
+</body></html>
