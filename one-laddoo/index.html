@@ -1,0 +1,666 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style><style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+
+<title>What One Laddoo Does to Your Body in 2 Hours</title>
+<meta property="og:title" content="What One Laddoo Does to Your Body in 2 Hours">
+<meta property="og:description" content="One big laddoo can use up most of your day&#x27;s sugar limit. Here&#x27;s what it does inside you, minute by minute.">
+<meta property="og:image" content="https://sriniurs.github.io/one-laddoo/og.png">
+<meta property="og:url" content="https://sriniurs.github.io/one-laddoo/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+
+
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="dayspecial">
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+@media (max-width:640px){.dayspecial{font-size:16.5px}}
+</style>
+<style id="topnav">
+.topnav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;width:100%;box-sizing:border-box;margin:0 auto -12px;padding:calc(8px + env(safe-area-inset-top,0px)) 4px 8px;background:var(--paper);font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
+<main class="wrap">
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<header class="cover t-fri">
+  <div>
+    <span class="daytag">FRIDAY</span>
+    <p class="byline">Srini presents</p>
+    <h1>What One Laddoo Does to Your Body in 2 Hours</h1>
+    <p class="sub">Zappy has a full box of Dhanteras sweets and one question: what actually happens inside me after the first bite? Prof. Bolt starts a stopwatch.</p>
+    <div class="fs"><span>The Human Machine</span><span>Diwali Sweets</span><span>Blood Sugar</span><span>How It Works</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, already on laddoo number two</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, eats exactly one sweet and then goes for a walk</span></figure>
+  </div>
+</header>
+
+<aside class="dayspecial"><svg class="dsav"><use href="#guru"/></svg><div><span class="dstag">TODAY IS SPECIAL!</span>It's <b>Dhanteras</b> and <b>Dhanvantari Jayanti</b>: happy birthday to the god of medicine, who rose from the ocean carrying a pot of amrit 🪔 Today we look at what's in <i>your</i> pot of sweets.</div></aside>
+
+<p class="era">PART 1: THE LADDOO CLOCK<small>Minute by minute, inside your body</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>Meet the laddoo</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="82" rx="38" ry="8" fill="#cfd6dd" stroke="#151515" stroke-width="3"/><circle cx="50" cy="52" r="28" fill="#f4a836" stroke="#151515" stroke-width="3"/><circle cx="40" cy="44" r="3" fill="#c46a12"/><circle cx="58" cy="40" r="2.5" fill="#c46a12"/><circle cx="62" cy="58" r="3" fill="#c46a12"/><circle cx="44" cy="62" r="2.5" fill="#c46a12"/><circle cx="52" cy="52" r="2" fill="#c46a12"/><path d="M36 30 q6 -6 12 -2" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M50 24 l3 -10 M58 26 l7 -8" stroke="#2a9d5c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>It's just one small laddoo. How much damage can a ball of besan do?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>No damage, if you know the rules. First, let's see what you're holding.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Inside one besan laddoo</b></p>
+      <div class="chain"><span>🫘 Besan (gram flour)</span><i>+</i><span>🧈 Ghee</span><i>+</i><span class="hit">🍚 Sugar</span></div>
+      <p>A shop laddoo weighs about <b>40–50 g</b> and carries roughly <b>170–210 calories</b>, about a small meal.</p>
+      <p>Depending on size and recipe, that's about <b>10–20 g of sugar</b>.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">WAIT, REALLY?</span>
+      <p>India's nutrition institute (ICMR-NIN) says an adult should have only about <b>20–25 g</b> of added sugar a <b>whole day</b>.</p>
+      <p><b>One big laddoo can use up most of it.</b></p>
+      <p class="small">Calories: nutritionist estimates in Business Standard (Oct 2025). Sugar range: our estimate from published recipe data.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>Minute 0: your brain says "yes!" before you swallow</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 20 Q36 12 26 22 Q12 26 16 42 Q8 54 18 64 Q20 80 36 78 Q44 88 50 80 Q56 88 64 78 Q80 80 82 64 Q92 54 84 42 Q88 26 74 22 Q64 12 50 20 Z" fill="#f7c6d9" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M50 22 V80 M30 36 q8 4 6 12 M24 56 q10 0 12 8 M70 36 q-8 4 -6 12 M76 56 q-10 0 -12 8" fill="none" stroke="#c2185b" stroke-width="2.5" stroke-linecap="round"/><path d="M50 40 l4 8 l9 1 l-7 6 l2 9 l-8 -5 l-8 5 l2 -9 l-7 -6 l9 -1 z" fill="#ffd23f" stroke="#151515" stroke-width="2.5" stroke-linejoin="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The reward rush</b></p>
+      <p>The moment sugar touches your tongue, your brain releases <b>dopamine</b>, the chemical of reward and "do that again".</p>
+      <p>Scientists at Germany's Max Planck Institute found this happens in <b>two waves</b>: one as you taste, before the food even reaches your stomach, and another once it gets there.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">PLOT TWIST</span>
+      <p>Ever said "I'm full, but there's always room for a sweet"? Another Max Planck study, in the journal <i>Science</i>, found the brain cells that make you feel <b>full</b> also release a feel-good chemical when they sense sugar.</p>
+      <p>So the "dessert stomach" is real. It's in your head, not your belly.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So my brain is a laddoo fan before my stomach has a say?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>For millions of years, sugar was rare and gave quick energy. Your brain learned to grab it. It hasn't heard about sweet shops.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>Minutes 15–90: the sugar rises</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 12 Q30 40 30 58 A20 20 0 0 0 70 58 Q70 40 50 12 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M42 64 L50 46 L58 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 46 V74" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="80" cy="24" r="6" fill="#ffd23f" stroke="#151515" stroke-width="3"/><circle cx="18" cy="30" r="4" fill="#ffd23f" stroke="#151515" stroke-width="3"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>How it works</b></p>
+      <p>Your gut splits table sugar into two smaller sugars: <b>glucose</b> (the body's fuel) and <b>fructose</b> (which mostly goes to the liver).</p>
+      <p>Glucose slips into your blood. Your <b>blood sugar</b> starts rising within about <b>15–30 minutes</b> and usually peaks around <b>60–90 minutes</b>.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The laddoo clock</b></p>
+      <div class="chain"><span>0 min: taste, dopamine</span><i>→</i><span>15–30 min: sugar enters blood</span><i>→</i><span class="hit">60–90 min: the peak</span><i>→</i><span>2–3 hrs: back to normal*</span></div>
+      <p class="small">*In a healthy person. Timings vary with the food, the person and what else is in the stomach.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">GOOD NEWS</span>
+      <p>The <b>ghee</b> and <b>besan</b> help a little. Fat and protein slow down how fast your stomach empties, so a laddoo usually hits the blood more gently than sugar in a cold drink.</p>
+      <p class="small">More gently, not harmlessly. The sugar still arrives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Insulin: the key that unlocks your cells</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><circle cx="32" cy="50" r="18" fill="#ffd23f" stroke="#151515" stroke-width="3"/><circle cx="32" cy="50" r="7" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M50 50 H88 M74 50 V62 M84 50 V58" stroke="#151515" stroke-width="7" stroke-linecap="round"/><path d="M50 50 H88 M74 50 V62 M84 50 V58" stroke="#ffd23f" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The pancreas sends in the key</b></p>
+      <p>Your <b>pancreas</b>, a small organ behind the stomach, senses the rising sugar and releases <b>insulin</b>.</p>
+      <p>Think of insulin as a <b>key</b>. It unlocks your muscle and liver cells so glucose can move out of the blood and into them.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Where the sugar goes</b></p>
+      <div class="chain"><span>⚡ Used now, for energy</span><i>→</i><span>📦 Stored in liver and muscles</span><i>→</i><span class="hit">🍩 Extra turned into fat</span></div>
+      <p>Liver and muscle stores are like a cupboard: they fill up. Whatever doesn't fit, the liver turns into <b>fat</b>.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So one laddoo becomes energy, and five laddoos become... me, but rounder?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Roughly, yes. The body is a good accountant. Nothing goes to waste.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>Hours 2–4: the crash and the craving</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="14" y="34" width="64" height="34" rx="6" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="78" y="44" width="8" height="14" rx="2" fill="#151515"/><rect x="20" y="40" width="12" height="22" fill="#e63946"/><path d="M44 18 L36 34 H48 L40 50" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 84 q6 -6 12 0 q6 6 12 0 q6 -6 12 0" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>When the key works too well</b></p>
+      <p>A big, fast sugar rush can bring a big flood of insulin. Sometimes it clears the sugar so well that your blood sugar dips <b>below</b> where it started.</p>
+      <p>Doctors call this <b>reactive hypoglycaemia</b>: a sugar dip that usually comes <b>2 to 4 hours</b> after a carb-heavy snack.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">YAWN...</span>
+      <p>You may feel tired, shaky, foggy or grumpy. And very hungry for... another sweet.</p>
+      <div class="chain"><span>Sweet</span><i>→</i><span>Spike</span><i>→</i><span>Crash</span><i>→</i><span class="hit">Craving</span><i>→</i><span>Sweet</span></div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>That's why I'm asleep on the sofa by 4 pm every Diwali!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Partly. Not everyone crashes, and the big lunch helps too. But the sweet-crash-sweet loop is how one laddoo becomes six.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>When the key gets stuck</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Two ways it goes wrong</b></p>
+      <p>In <b>type 2 diabetes</b>, the cells stop answering insulin's knock properly, and the pancreas can't keep up. So the sugar from that laddoo stays in the blood <b>longer and higher</b>.</p>
+      <p><b>Prediabetes</b> is the warning stage: sugar is above normal, but not yet diabetes.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>India's numbers (ICMR-INDIAB, 2023)</b></p>
+      <div class="big"><b class="hot">101 M</b><span class="arrow">Indians with diabetes</span></div>
+      <div class="big"><b>136 M</b><span class="arrow">with prediabetes</span></div>
+      <p>That's about <b>1 in 9</b> adults with diabetes and <b>1 in 7</b> with prediabetes. <b>Karnataka</b> is one of the southern states above <b>10%</b>.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">HOPE</span>
+      <p>ICMR's chief said prediabetes is completely reversible, and about <b>60%</b> of type 2 diabetes can be reversed with diet and activity.</p>
+      <p class="small">Most people with prediabetes don't know they have it. A simple blood test tells you.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">PART 2: WHAT ELSE IS IN THE BOX?<small>Sugar isn't the only thing to check</small></p>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>The khoya trap</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><rect x="58" y="10" width="22" height="34" rx="4" fill="#8a4b1f" stroke="#151515" stroke-width="3"/><rect x="62" y="4" width="14" height="8" fill="#151515"/><path d="M69 44 V56" stroke="#151515" stroke-width="3"/><circle cx="69" cy="60" r="3" fill="#7a3d12"/><ellipse cx="40" cy="78" rx="30" ry="10" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M22 74 q18 -18 36 0" fill="#f6ead2" stroke="#151515" stroke-width="3"/><circle cx="44" cy="70" r="5" fill="#1d4ed8"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Why festive sweets get faked</b></p>
+      <p>Diwali demand shoots up, and so does cheating. Food-safety guides warn that <b>khoya</b> (and chhena) can be bulked up with <b>starch</b>, <b>fine flour</b>, <b>refined oil</b> or <b>skimmed milk powder</b>.</p>
+      <p>On <b>29 Sept 2026</b>, the food regulator FSSAI ordered a special festive drive across India, marking it "most important".</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Karnataka's drive this October</b></p>
+      <div class="big"><b>286</b><span class="arrow">sweet units checked</span></div>
+      <div class="big"><b>383</b><span class="arrow">samples to labs</span></div>
+      <p><b>40</b> notices issued and <b>30 kg</b> of wrongly labelled khova seized, in just three days (15–17 Oct 2026).</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">TRY THIS AT HOME</span>
+      <p>FSSAI's home test: boil a little khoya with water, let it cool, add <b>2–3 drops of tincture of iodine</b>.</p>
+      <p><b>Turns blue? Starch has been added.</b></p>
+      <p class="small">From FSSAI's DART booklet of home tests.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>Colours, silver and the date on the tray</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="40" width="76" height="44" rx="4" fill="#be185d" stroke="#151515" stroke-width="3"/><rect x="20" y="30" width="22" height="18" fill="#e5e7eb" stroke="#151515" stroke-width="3"/><rect x="46" y="26" width="22" height="22" fill="#e5e7eb" stroke="#151515" stroke-width="3" transform="rotate(8 57 37)"/><path d="M22 34 l6 4 M50 30 l8 6" stroke="#fff" stroke-width="2"/><path d="M12 58 H88" stroke="#ffd23f" stroke-width="4"/><path d="M50 40 V84" stroke="#ffd23f" stroke-width="4"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Bright colours</b></p>
+      <p>In 2024 Karnataka tested <b>171</b> gobi manchurian samples. <b>107</b> had unsafe artificial colours. Of 25 cotton candy samples, <b>15</b> failed, some with <b>Rhodamine B</b>, an industrial dye.</p>
+      <p>Karnataka banned these colours, with up to <b>7 years</b> in jail and a <b>₹10 lakh</b> fine. Very bright sweets deserve a second look.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The silver leaf (varq)</b></p>
+      <p>Since 2016, FSSAI rules say edible silver leaf must be <b>99.9% pure</b> silver, very thin, and made <b>without any animal parts</b>. It was once hammered between sheets of animal gut.</p>
+      <p>A 2005 Lucknow study found only <b>46%</b> of 178 samples were pure enough.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The tray rule</b></p>
+      <p>FSSAI says loose sweets must show a <b>"best before"</b> date on the tray. No date? Ask for one.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I never once looked at the tray!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Start this Dhanteras. It takes 3 seconds.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p4">THE DEEP DIVE<small>The research behind the headlines</small></p>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>The sweet-box maths</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Sweet (one serving)</th><th>Weight</th><th>Calories</th><th>Brisk walk to burn it*</th></tr></thead>
+        <tbody>
+          <tr><td>Kaju katli (1 piece)</td><td>20–30 g</td><td>80–120</td><td>~30 min</td></tr>
+          <tr><td>Besan laddoo (1)</td><td>40–45 g</td><td>170–200</td><td>~55 min</td></tr>
+          <tr><td>Mysore Pak (1 piece)</td><td>30–40 g</td><td>150–200</td><td>~55 min</td></tr>
+          <tr><td>Jalebi (2 pieces)</td><td>~50 g</td><td>210–225</td><td>~65 min</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Weights and calories: nutritionist estimates in Business Standard (Oct 2025). *Our estimate, using Tarla Dalal's figure of about 52 minutes of walking at 6 km/h to burn 173 calories.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">OUCH</span>
+      <p>Mysore Pak has about <b>500–520 calories per 100 g</b>, more than most sweets, because of the ghee. Our own Mysuru sweet is a heavyweight.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>One jalebi = one hour of walking?!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Two jalebis. But don't eat by calorie maths alone. The point is: <b>small pieces, few of them</b>.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>India invented the sweet tooth</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 92 L46 10 M50 92 L58 14 M70 92 L66 18" stroke="#151515" stroke-width="9" stroke-linecap="round"/><path d="M30 92 L46 10 M50 92 L58 14 M70 92 L66 18" stroke="#9ccc65" stroke-width="5" stroke-linecap="round"/><path d="M36 64 h6 M40 42 h6 M52 70 h6 M54 44 h6 M66 66 h6 M66 40 h6" stroke="#151515" stroke-width="3"/><path d="M46 12 q-16 -4 -24 8 M58 16 q14 -10 26 -2" fill="none" stroke="#2a9d5c" stroke-width="4" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Sugar's Indian passport</b></p>
+      <p>Around <b>350 CE</b>, in the Gupta era, Indians learned to boil cane juice into <b>dry crystals</b> that could be stored and traded. Earlier texts suggest refined sugar existed even before that.</p>
+      <p>The crystals were called <b>khanda</b>, which gave English the word <b>candy</b>. The Sanskrit <b>sharkara</b> became <b>sugar</b>.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">WAIT, REALLY?</span>
+      <p>In <b>647 CE</b>, China sent missions to India to learn how to refine sugar. A Greek doctor in the 1st century described it as a kind of hardened honey from Indian reeds.</p>
+      <p>Ancient Ayurveda even named diabetes <b>madhumeha</b>, "honey urine".</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Then and now</b></p>
+      <p>Then: a luxury, traded like a spice. Now: India is the world's <b>largest sugar consumer</b>, about <b>28 million tonnes</b> a year, and Karnataka is the <b>3rd-biggest producer</b> after Maharashtra and UP.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>Same laddoo, smaller spike: what studies found</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 62 Q20 40 38 40 L52 44 Q60 46 66 54 L84 60 Q92 64 88 72 L20 74 Q16 70 18 62 Z" fill="#be185d" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M20 74 H88 V80 H20 Z" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M40 48 l6 4 M46 46 l6 4" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M8 50 h8 M4 60 h10 M8 70 h8" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Habit</th><th>What the study found</th><th>How strong</th></tr></thead>
+        <tbody>
+          <tr><td>A short walk after eating</td><td>Even <b>2–5 minutes</b> of light walking after meals lowered blood sugar and insulin compared with sitting. Best done within <b>60–90 min</b>.</td><td class="ok">Good: review of 7 studies (Sports Medicine, 2022)</td></tr>
+          <tr><td>Vegetables and protein first, sweets and carbs last</td><td>Blood sugar was <b>29%, 37% and 17%</b> lower at 30, 60 and 120 minutes.</td><td>Small: 11 people with diabetes (Diabetes Care, 2015)</td></tr>
+          <tr><td>Sweet after a meal, not on an empty stomach</td><td>Other food in the stomach slows how fast sugar reaches the blood.</td><td>Standard nutrition advice</td></tr>
+          <tr><td>Smaller pieces</td><td>Less sugar in = smaller spike. Simple.</td><td class="ok">Common sense, fully backed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <span class="sfx b">EAT THIS, THEN THAT</span>
+      <p>The 2015 study's lead doctor put it neatly: instead of telling people "don't eat that", say "<b>eat this before that</b>".</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Why walking works</b></p>
+      <p>Working muscles pull glucose out of the blood for fuel. Walking doesn't erase the laddoo, but it <b>flattens the spike</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>What the experts say: how much is too much?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The official limits</b></p>
+      <ul class="clean">
+        <li><b>ICMR-NIN (India, 2024):</b> added sugar under <b>5%</b> of daily calories, about <b>20–25 g</b> a day.</li>
+        <li><b>WHO:</b> under <b>10%</b>, ideally under 5%.</li>
+        <li>NIN and FSSAI posters now say <b>25 g ≈ 5 teaspoons</b>. The old limit was 50 g; it was halved because of rising lifestyle diseases.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>India's sugar per person, per day</b></p>
+      <div class="ladder">
+        <div class="bar">India's sugar<div class="hot" style="width:100%">~55 g</div></div>
+        <div class="bar">ICMR limit<div style="width:45%">25 g</div></div>
+      </div>
+      <p class="small">India uses about <b>20 kg</b> of sugar per person per year (ISMA). 20 kg ÷ 365 ≈ 55 g a day: our arithmetic. Not all of it is eaten (some goes into industry, some is wasted), but it's more than double the limit on paper.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">TURNING POINT?</span>
+      <p>India's sugar use has <b>stopped growing</b> as fast. ISMA expected consumption to rise only about <b>1.4%</b> in 2025-26, against about 4% a year before Covid, partly because people are more health-aware.</p>
+      <p class="small">About <b>60–65%</b> of India's sugar now goes into biscuits, drinks, sweets and other packaged foods, not the home sugar tin.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>The Karnataka angle</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>We grow it</b></p>
+      <p>Karnataka is India's <b>3rd-largest</b> sugar producer, about <b>4.8 million tonnes</b> in 2025-26 (ISMA estimate), from Belagavi, Bagalkot, Mandya and other cane belts.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>We feel it</b></p>
+      <p>Diabetes is above <b>10%</b> of adults in Karnataka (ICMR-INDIAB). Southern states have some of India's highest rates.</p>
+      <p>And our own <b>Mysore Pak</b> and <b>Dharwad peda</b> are on every Deepavali plate.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>We're checking it</b></p>
+      <p>Karnataka's food-safety teams have run repeated sweet-shop drives this year. In one drive on <b>31 Aug 2026</b>, <b>six</b> sweet units were shut temporarily for expired stock, poor labels, flies and unauthorised colours.</p>
+      <p class="small">The October drive is in EP 7.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>OPINION: Prof. Bolt's verdict</h2></div>
+  <div class="grid">
+    <div class="panel green">
+      <span class="sfx">EAT IT</span>
+      <p><b>One laddoo on Dhanteras won't hurt a healthy person.</b> Your body handles it in about 2–3 hours. Enjoy it without guilt. Festivals are for sweets.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">THE REAL DANGER</span>
+      <p><b>It's not the first laddoo. It's the fifth, and the box that lasts two weeks.</b> The spike-crash-craving loop does the damage, plus fake khoya and dodgy colours.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">MY TAKE</span>
+      <p><b>Mind the clock, not just the calories.</b> Eat after a meal, eat it slowly, then walk. Same sweet, gentler spike.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Before the bite</b></p>
+      <ul class="clean">
+        <li>Eat sweets <b>after a meal</b>, not on an empty stomach.</li>
+        <li>Veggies and dal first, sweet last.</li>
+        <li>Cut it in half. Share the other half.</li>
+        <li>Jaggery and honey sweets are still sugar.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>After the bite</b></p>
+      <ul class="clean">
+        <li>Walk for <b>10 minutes</b>, even just around the house.</li>
+        <li>Wait 20 minutes before reaching for the next one. The craving often passes.</li>
+        <li>Have diabetes? Ask your doctor about festive sweets. Don't skip your medicines.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>At the shop</b></p>
+      <ul class="clean">
+        <li>Look for the <b>FSSAI licence number</b>.</li>
+        <li>Check the <b>best-before date</b> on the tray.</li>
+        <li>Be wary of very bright colours.</li>
+        <li>Iodine test on khoya: blue means starch.</li>
+      </ul>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So I'm allowed the laddoo, I just have to walk it home?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Exactly. Happy Dhanteras.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>The laddoo clock</b></p><ul class="clean">
+      <li>👅 0 min: dopamine, before you swallow.</li>
+      <li>🩸 15–30 min: sugar enters the blood.</li>
+      <li>📈 60–90 min: the peak; insulin floods in.</li>
+      <li>😴 2–4 hrs: possible dip, and cravings.</li>
+      <li>🍬 1 big laddoo ≈ most of a day's 25 g.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>🇮🇳 101 M diabetes, 136 M prediabetes.</li>
+      <li>🥄 India: ~55 g sugar per person a day on paper.</li>
+      <li>🚶 2–5 min walk after eating lowers the spike.</li>
+      <li>🥗 Veg first, sweet last: up to 37% lower.</li>
+      <li>🏛️ India invented crystal sugar; "candy" is from khanda.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>✅ Sweet after a meal, never first.</li>
+      <li>✅ Walk 10 minutes after.</li>
+      <li>✅ Check FSSAI number and tray date.</li>
+      <li>❌ Graze from the box all day.</li>
+      <li>❌ Trust very bright colours.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the numbers and events are real. Sources: Business Standard (calories in Diwali sweets, nutritionist estimates; Oct 2025), Govindam and Clearcals recipe nutrition data (sugar per laddoo), ICMR-NIN Dietary Guidelines for Indians (May 2024) and ChiniMandi on NIN-FSSAI sugar posters, WHO sugars guideline (2015), Max Planck Institute for Metabolism Research (Thanarajah et al., Cell Metabolism 2019, dopamine; Fenselau group in Science, "dessert stomach"), CNN/Sports Medicine meta-analysis on walking after meals (Buffey et al., 2022), Shukla et al., Diabetes Care (2015) on food order, Kent Community Health NHS Trust and NIH (reactive hypoglycaemia), ICMR-INDIAB study in The Lancet Diabetes &amp; Endocrinology (June 2023) and The Tribune (ICMR DG on reversibility), FSSAI festive-drive letter (29 Sept 2026), FSSAI DART booklet (iodine test), FSSAI silver leaf standards (notified July 2016) and ITRC Lucknow study (2005), Food Safety Helpline (best-before on loose sweets), Karnataka Health Department via Deccan Herald, IANS and The Week (colour ban, March 2024), NewsKarnataka (sweet-unit drive, 15–17 Oct 2026), The News Minute (drive of 31 Aug 2026), ISMA via ChiniMandi, Outlook Business, Mint and India Business Trade (sugar consumption, per capita, Karnataka output; 2025–26), Tarla Dalal (calories burnt walking), Wikipedia "History of sugar" and Scroll (khanda, sharkara, Gupta era, Chinese missions). Figures marked "our estimate" or "our arithmetic" are our own calculations. Figures rounded. Prof. Bolt's verdict is opinion. This is general information, not medical advice; people with diabetes should follow their doctor.</p>
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
