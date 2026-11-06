@@ -1,0 +1,685 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style><style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+
+<title>Where Does Your ₹54 Go?</title>
+<meta property="og:title" content="Where Does Your ₹54 Go?">
+<meta property="og:description" content="Nandini milk is now ₹54. We followed your rupee from the booth back to the cow.">
+<meta property="og:image" content="https://sriniurs.github.io/milk-rupee/og.png">
+<meta property="og:url" content="https://sriniurs.github.io/milk-rupee/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+
+
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="dayspecial">
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+@media (max-width:640px){.dayspecial{font-size:16.5px}}
+</style>
+<style id="brand">
+.cover.t-mon{background:#c2410c;color:#fff}
+.byline .tagline{display:block;font-family:var(--body);font-weight:700;font-size:15px;letter-spacing:.03em;margin-top:4px;line-height:1.2;opacity:.95}
+</style>
+<style id="mythfact">
+.mf{display:flex;flex-direction:column;gap:10px}
+.myth,.fact{border:3px solid #151515;padding:10px 12px;color:#151515;border-radius:4px}
+.myth{background:#ffe0e3}.fact{background:#dff3e4}
+.myth .lbl,.fact .lbl{display:block;font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.07em;line-height:1.1;margin-bottom:2px}
+.myth .lbl{color:#b3121f}.fact .lbl{color:#17703f}
+.stamp{display:inline-block;align-self:center;font-family:var(--display);font-size:32px;letter-spacing:.08em;line-height:1;padding:6px 16px;border:4px solid currentColor;border-radius:10px;transform:rotate(-7deg);color:#c1121f;margin:6px 0 4px;text-align:center}
+.stamp.half{color:#b45309}.stamp.twist{color:#1d4ed8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .stamp{color:#ff6b6b}:root:not([data-theme="light"]) .stamp.half{color:#fbbf24}:root:not([data-theme="light"]) .stamp.twist{color:#7cc0ff}}
+:root[data-theme="dark"] .stamp{color:#ff6b6b}:root[data-theme="dark"] .stamp.half{color:#fbbf24}:root[data-theme="dark"] .stamp.twist{color:#7cc0ff}
+.era.p3{background:#c2410c}
+.wa{background:#dcf8c6;color:#151515;border:3px solid #151515;border-radius:14px 14px 14px 4px;padding:8px 12px 6px;margin:4px 0 10px;box-shadow:3px 3px 0 #151515;font-size:16px;line-height:1.35}
+.wa .fwd{display:block;font-size:13px;font-style:italic;color:#5b6470;margin-bottom:2px}
+.wa .tm{display:block;text-align:right;font-size:12.5px;color:#5b6470;margin-top:4px}
+</style>
+<style id="topnav">
+.topnav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;width:100%;box-sizing:border-box;margin:0 auto -12px;padding:calc(8px + env(safe-area-inset-top,0px)) 4px 8px;background:var(--paper);font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
+<main class="wrap">
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<header class="cover t-wed">
+  <div>
+    <span class="daytag">WEDNESDAY</span>
+    <p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p>
+    <h1>Where Does Your ₹54 Go?</h1>
+    <p class="sub">On 1 November, Zappy's blue Nandini packet went from ₹46 to ₹54. He wants to know who got his ₹8. Prof. Bolt starts up his old TVS XL and offers him a "reverse milk run": from the milk booth in Mysuru, all the way back to the cow.</p>
+    <div class="fs"><span>Money Talks</span><span>Milk Maths</span><span>Booth to Cow</span><span>Your Wallet</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">drinks four coffees a day, just noticed the price</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">has been buying Nandini since the 1980s</span></figure>
+  </div>
+</header>
+
+<aside class="dayspecial"><svg class="dsav"><use href="#guru"/></svg><div><span class="dstag">TODAY IS SPECIAL!</span>It's <b>National Education Day</b>, the birthday of Maulana Abul Kalam Azad, independent India's first Education Minister 📚 So today we have a short class in milk maths. No exam, and you can bring your coffee.</div></aside>
+
+<p class="era">PART 1: THE HIKE<small>What changed on 1 November</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>The packet that asked for a raise</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M26 20 L74 20 L80 86 L20 86 Z" fill="#2f6fd6" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M26 20 L50 10 L74 20" fill="#7fb0ff" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><ellipse cx="50" cy="50" rx="18" ry="12" fill="#fff" stroke="#151515" stroke-width="2.5"/><text x="50" y="55" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="13" fill="#2f6fd6">MILK</text><rect x="54" y="62" width="40" height="22" rx="4" fill="#ffd23f" stroke="#151515" stroke-width="3" transform="rotate(-10 74 73)"/><text x="74" y="79" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="16" fill="#151515" transform="rotate(-10 74 73)">₹54</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Fifty-four?! Yesterday this packet was forty-six. Did the cow get a promotion?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Partly, yes. Get on the scooter. We'll follow your money backwards till we find out who got it.</p></div>
+      <span class="sfx">BRRR-PUT-PUT!</span>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The new price, from 1 Nov 2026</b></p>
+      <div class="big"><b>₹46 → ₹54</b><span class="arrow">a litre of Nandini toned milk (the blue packet): up ₹8, about 17%</span></div>
+      <p>The state Cabinet approved it on <b>29 October</b>. Milk unions had asked for <b>₹8 to ₹10</b> more a litre, pointing to costlier cattle feed, fodder and vet care in a drought year.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Where the ₹8 goes</b></p>
+      <ul class="clean">
+        <li>🐄 <b>₹7</b> to dairy farmers. The average price paid to them goes from about <b>₹35</b> to <b>₹42</b> a litre.</li>
+        <li>🏭 <b>₹1</b> to the milk unions that collect, process and pack it.</li>
+      </ul>
+      <p class="small">This is the fifth Nandini price rise since November 2022.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>What it costs Zappy's kitchen</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The household maths</b></p>
+      <div class="big"><b>+₹480</b><span class="arrow">a month for a home that buys 2 litres a day (₹8 × 2 × 30 days)</span></div>
+      <p>Curd, buttermilk and ghee may follow, because they are made from the same milk.</p>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="myth"><span class="lbl">MYTH</span>"Nandini kept the whole hike for itself."</p>
+        <p class="fact"><span class="lbl">FACT</span>Under the government's decision, <b>₹7 of the ₹8</b> is meant to go straight on to farmers. The unions keep ₹1 for their costs.</p>
+      </div>
+      <span class="stamp">BUSTED</span>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So my morning coffee at the darshini will cost more?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The darshini owner is doing the same maths right now, on the back of a bill book. Be kind to him.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">PART 2: FOLLOW THE RUPEE<small>Five stops, from the booth back to the cow</small></p>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>Stop 1: The milk booth, 5:30 am</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><rect x="14" y="38" width="72" height="50" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M8 38 L20 18 H80 L92 38 Z" fill="#2f6fd6" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M20 18 L26 38 M36 18 L38 38 M50 18 V38 M64 18 L62 38 M80 18 L74 38" stroke="#fff" stroke-width="3"/><rect x="24" y="48" width="52" height="16" fill="#ffd23f" stroke="#151515" stroke-width="2.5"/><text x="50" y="61" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="10" fill="#151515">NANDINI</text><rect x="30" y="70" width="14" height="18" fill="#7fb0ff" stroke="#151515" stroke-width="2"/><rect x="56" y="70" width="14" height="18" fill="#7fb0ff" stroke="#151515" stroke-width="2"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>First stop: the booth. Your ₹54 lands here. The shop keeps a small cut for selling and for keeping the milk cold.</p></div>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>And the rest?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Goes back up the same road the milk came down. Hold tight.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>One price, everywhere</b></p>
+      <p>The blue packet costs the <b>same across Karnataka</b>, from Mysuru to Bidar. But each district milk union pays its farmers a <b>different</b> price, depending on its own costs and how much milk it has.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Stop 2: The dairy, where milk gets a bath</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="8" y="46" width="60" height="30" rx="15" fill="#e9eef3" stroke="#151515" stroke-width="3"/><text x="38" y="66" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="12" fill="#2f6fd6">MILK</text><path d="M68 50 H84 L92 62 V76 H68 Z" fill="#2f6fd6" stroke="#151515" stroke-width="3"/><circle cx="24" cy="82" r="7" fill="#151515"/><circle cx="52" cy="82" r="7" fill="#151515"/><circle cx="82" cy="82" r="7" fill="#151515"/><path d="M40 40 q-6 -10 0 -18 M50 40 q-6 -10 0 -18 M30 40 q-6 -10 0 -18" fill="none" stroke="#9aa6b2" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>What the dairy does with your money</b></p>
+      <ul class="clean">
+        <li>🚚 Tankers from village chilling centres</li>
+        <li>🔥 Heating to kill germs (pasteurising)</li>
+        <li>⚖️ Setting the fat to the "toned" level</li>
+        <li>🛍️ Packets, ink and machines</li>
+        <li>🌙 Trucks to the booths before sunrise</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The Mysuru twist</b></p>
+      <div class="big"><b>9.3 lakh</b><span class="arrow">litres a day collected by Mysuru's milk union (MyMUL) in April 2026</span></div>
+      <p>The city and district buy only about <b>3 lakh litres</b> a day as packets (2024 figure). The rest goes to other cities, or is turned into milk powder and other products.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">TOO MUCH MILK!</span>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Mysuru makes three times the milk it drinks?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Like Mysuru Pak. We make far more than we can eat ourselves, and share the rest.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>Stop 3: The village society, 6 am sharp</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 28 H70 L74 86 H26 Z" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><ellipse cx="50" cy="28" rx="20" ry="6" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M40 18 h20 v10 h-20 z" fill="#9aa6b2" stroke="#151515" stroke-width="2.5"/><path d="M28 50 H72" stroke="#151515" stroke-width="2.5"/><path d="M12 30 q6 -8 12 0" fill="none" stroke="#151515" stroke-width="3"/><text x="50" y="72" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="12" fill="#151515">DCS</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <p>Every village has a <b>dairy cooperative society</b>. Farmers queue up with steel cans, morning and evening. The secretary tests each can for <b>fat</b> and <b>SNF</b> (the solids other than fat), then writes down the price.</p>
+      <p class="small">Better milk earns more per litre. Watery milk earns a frown.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>How farmers get paid</b></p>
+      <ul class="clean">
+        <li>🏦 Straight into the bank, roughly every two weeks</li>
+        <li>🏠 The union also pays the society about ₹1–2 a litre to run itself (2024 report)</li>
+        <li>👩‍🌾 About 4,700 of Karnataka's societies are run by women</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>6 am, every single day? Even Sundays?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Cows don't know what a Sunday is. Nor a Deepavali.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>Stop 4: The farmer's notebook</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>What a farmer now gets</b></p>
+      <div class="big"><b>~₹42</b><span class="arrow">a litre from the union, on average (was about ₹35)</span></div>
+      <div class="big"><b>+₹5</b><span class="arrow">a litre more from the state government, paid separately (see Ep 9)</span></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>What it costs to make a litre</b></p>
+      <p>Farmers told South First in 2025 that a litre costs them about <b>₹30 to ₹34</b> to produce. Feeding one cow well costs <b>₹300–350</b> a day.</p>
+      <p class="small">These are farmers' own estimates. Most small farmers don't keep detailed accounts.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Who are these farmers?</b></p>
+      <p>KMF says about <b>90%</b> of its farmers are small and marginal, selling <b>under 20 litres</b> a day. Most own <b>one to three</b> cows.</p>
+      <span class="sfx r">NOT A BIG FARM</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>Stop 5: Meet Gowri the cow</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="56" rx="26" ry="24" fill="#fff" stroke="#151515" stroke-width="3"/><ellipse cx="50" cy="72" rx="16" ry="10" fill="#f6b8c7" stroke="#151515" stroke-width="3"/><circle cx="44" cy="72" r="2.5" fill="#151515"/><circle cx="56" cy="72" r="2.5" fill="#151515"/><circle cx="40" cy="52" r="3.5" fill="#151515"/><circle cx="60" cy="52" r="3.5" fill="#151515"/><path d="M28 40 L14 30 L24 46 Z M72 40 L86 30 L76 46 Z" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M34 34 q-4 -14 6 -18 M66 34 q4 -14 -6 -18" fill="none" stroke="#c46a12" stroke-width="4" stroke-linecap="round"/><path d="M58 38 q8 -6 12 4 q-8 6 -12 -4z" fill="#151515"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Gowri, did you get my ₹7?</p></div>
+      <p class="wa"><b>Moooo. 🐄 Ask my feed bag.</b><span class="tm">Gowri · (translated by Prof. Bolt)</span></p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Why farmers asked for more</b></p>
+      <div class="big"><b>₹750 → ₹1,250</b><span class="arrow">rough rise in a bag of cattle feed over the past few years, as reported to lawmakers</span></div>
+      <p>Add drought, dry fodder, vet bills and labour. Some farmers in Mandya have sold their cows and quit dairying because the sums stopped working.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">CHOMP CHOMP</span>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>So most of your ₹7 doesn't stay with the farmer. It goes straight into Gowri.</p></div>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>She's eating my coffee money.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>The whole ₹54, on one page</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <p class="cap"><b>Roughly where a ₹54 packet goes</b></p>
+      <div class="ladder">
+        <div class="bar">Farmer (average)<div class="hot" style="width:78%">₹42 · 78%</div></div>
+        <div class="bar">Everyone else: society, tanker, dairy, packet, truck, shop<div style="width:22%">₹12 · 22%</div></div>
+      </div>
+      <p class="small">Our arithmetic from the average farmer price. Each union pays a slightly different rate, so treat this as a rough guide.</p>
+    </div>
+    <div class="panel">
+      <span class="stamp twist">78 PAISE!</span>
+      <p>So about <b>78 paise of every rupee</b> you pay reaches the farmer. Amul and Mother Dairy say they pass on <b>75–80%</b> of their sales to producers, so Nandini is in the same range.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>That's more than the farmer's share of my ₹300 restaurant thali.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Much more. That's the whole point of a cooperative.</p></div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>And the other ₹12?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Diesel, electricity, packets, salaries and the shop. Milk doesn't walk to Mysuru by itself.</p></div>
+      <span class="sfx b">MOO-NEY!</span>
+    </div>
+  </div>
+</section>
+
+<p class="era p4">PART 3: THE DEEP DIVE<small>The research behind the packet</small></p>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>The ₹5 that travels separately</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The Ksheeradhaare incentive</b></p>
+      <p>On top of the union's price, the state pays farmers an extra amount for every litre they pour.</p>
+      <div class="chain"><span>2008: ₹2</span><i>→</i><span>2013: ₹4</span><i>→</i><span class="hit">2016: ₹5</span></div>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="myth"><span class="lbl">MYTH</span>"The ₹5 incentive is hidden inside my ₹54."</p>
+        <p class="fact"><span class="lbl">FACT</span>It comes from the <b>state budget</b>, which means from taxpayers, not from the packet. It also continues after this hike.</p>
+      </div>
+      <span class="stamp">BUSTED</span>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The catch</b></p>
+      <p>Payments have often been <b>late</b>. In 2024, farmer groups said about ₹800 crore was pending. Finance officials said those dues came from earlier years and would be cleared over time.</p>
+      <span class="sfx r">STILL WAITING...</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>Nandini was born in Kodagu</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M4 80 L30 40 L48 62 L66 30 L96 80 Z" fill="#2e8b57" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M60 40 L66 30 L72 40" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="36" y="66" width="22" height="18" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M33 66 L47 56 L61 66 Z" fill="#c2410c" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><text x="47" y="80" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="9" fill="#151515">1955</text><path d="M4 86 H96" stroke="#151515" stroke-width="4"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The story in four steps</b></p>
+      <ul class="clean">
+        <li>🌄 <b>1955:</b> Karnataka's first dairy cooperative starts in Kudige, Kodagu.</li>
+        <li>🏦 <b>1974:</b> The Karnataka Dairy Development Corporation is set up for a World Bank dairy project.</li>
+        <li>🐄 <b>1975:</b> It starts in four districts: Mysuru, Hassan, Tumakuru and Bengaluru.</li>
+        <li>🏷️ <b>1984:</b> Renamed the Karnataka Milk Federation (KMF).</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The "Anand pattern"</b></p>
+      <p>It copies the model made famous by <b>Amul</b> in Gujarat, during India's "White Revolution": three layers, each run by boards elected by farmers.</p>
+      <div class="chain"><span>🏠 Village society</span><i>→</i><span>🏭 District union</span><i>→</i><span class="hit">🏛️ KMF</span></div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So Mysuru was there from the very first batch?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Of course. We don't miss anything that involves coffee.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>How big is Nandini?</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 30 L36 18 H64 L80 30 L72 44 L66 40 V86 H34 V40 L28 44 Z" fill="#1d4ed8" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M42 18 q8 8 16 0" fill="none" stroke="#151515" stroke-width="3"/><rect x="22" y="28" width="12" height="8" rx="1" fill="#ffd23f" stroke="#151515" stroke-width="2" transform="rotate(-36 28 32)"/><text x="50" y="66" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="14" fill="#fff">SCO</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="big"><b>1.08 crore</b><span class="arrow">litres collected in a single day: a record, on 20 May 2026</span></div>
+      <ul class="clean">
+        <li>🏭 16 district milk unions</li>
+        <li>👩‍🌾 About 27 lakh farmer members</li>
+        <li>🏠 About 16,000 village societies</li>
+        <li>🥈 India's second-largest dairy cooperative, after Amul</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Where the milk goes</b></p>
+      <p>Roughly <b>65 lakh litres</b> a day leaves as milk and curd. Much of the rest becomes <b>milk powder</b>, ghee, butter, peda and ice cream.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">HOWZAT?</span>
+      <p>At the <b>2024 T20 World Cup</b>, Nandini's logo (in English <b>and</b> Kannada) was on the sleeves of the <b>Scotland</b> and <b>Ireland</b> teams.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Scotland was playing on Mysuru milk?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>A bit of every Karnataka district's milk. Some people loved it. Some asked why farmers' money was sponsoring foreign teams.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>Is Karnataka's milk still cheap?</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <p class="cap"><b>A litre of toned milk, by state</b></p>
+      <table class="vs">
+        <thead><tr><th>Brand</th><th>Where</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Aavin</td><td>Tamil Nadu</td><td class="ok">₹40</td></tr>
+          <tr><td>Nandini (new)</td><td>Karnataka</td><td>₹54</td></tr>
+          <tr><td>Mother Dairy</td><td>Delhi</td><td>₹60</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Prices as last reported; brands and states set them differently, and some get state support.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Two fair arguments</b></p>
+      <ul class="clean">
+        <li>🐄 <b>Unions said</b> Karnataka's price was well below its neighbours', so farmers were losing out.</li>
+        <li>🛒 <b>Shoppers say</b> five hikes in four years add up, and milk is something every home buys daily.</li>
+      </ul>
+      <p>The government said it tried to balance both.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Then I'll just buy Aavin!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Sure. Enjoy your daily bus ride to Tamil Nadu. Carry a flask.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>Milk at school</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M32 22 H68 L64 86 H36 Z" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M34 40 H66 L63 84 H37 Z" fill="#f4f7fb" stroke="#151515" stroke-width="2"/><path d="M40 52 q10 -6 20 0" fill="none" stroke="#9aa6b2" stroke-width="2.5"/><path d="M74 20 l4 8 8 1 -6 6 2 8 -8 -4 -8 4 2 -8 -6 -6 8 -1z" fill="#ffd23f" stroke="#151515" stroke-width="2"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p>Back to today's special day. Under Karnataka's <b>Ksheera Bhagya</b> scheme, children in government and aided schools get a glass of milk, and that milk comes from Nandini.</p>
+      <p>So a dairy farmer in Mysuru district helps feed a classroom in another district.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Maulana Azad built schools and colleges. Gowri fills the glass.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Education Day and milk maths, both in one comic. Full marks, Zappy.</p></div>
+      <span class="sfx">GULP!</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>OPINION: Prof. Bolt's verdict</h2></div>
+  <div class="grid">
+    <div class="panel green">
+      <span class="sfx">WHAT'S FAIR</span>
+      <p><b>Most of the hike goes where it should.</b> ₹7 of ₹8 heads to farmers whose feed costs have climbed for years. A cooperative that passes on about 78 paise per rupee is doing its basic job.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">WHAT STINGS</span>
+      <p><b>Big jumps are hard on families.</b> ₹8 in one go hurts more than small, regular changes. And the state's ₹5 only helps farmers if it arrives on time.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">MY TAKE</span>
+      <p>Pay the ₹8 without guilt: it mostly feeds Gowri. But watch two things: whether farmers' payment slips really show ₹42, and whether the ₹5 incentive stops running late.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Your kitchen</b></p>
+      <ul class="clean">
+        <li>Budget about ₹240 more a month for each daily litre.</li>
+        <li>Making curd at home from packet milk usually works out cheaper than buying curd.</li>
+        <li>Check the price on the packet, not what the shop says.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Your coffee</b></p>
+      <ul class="clean">
+        <li>If your darshini adds ₹1–2 to a coffee, that's probably the milk, not greed.</li>
+        <li>Four coffees a day? Maybe three. Your heart and wallet both say thanks.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Your WhatsApp group</b></p>
+      <ul class="clean">
+        <li>When someone says "the farmer gets nothing", share the ₹42 out of ₹54.</li>
+        <li>When someone says "it's all fine", share the late ₹5.</li>
+      </ul>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I'm sending Gowri a thank-you note.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Send her some green grass instead. She can't read, but she can chew.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>The hike</b></p><ul class="clean">
+      <li>🥛 Nandini toned milk: ₹46 → ₹54 from 1 Nov 2026.</li>
+      <li>🐄 ₹7 to farmers (about ₹35 → ₹42), ₹1 to unions.</li>
+      <li>🏠 2 litres a day = about ₹480 more a month.</li>
+      <li>🔁 Fifth Nandini price rise since November 2022.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>💰 About 78 paise of each rupee reaches the farmer.</li>
+      <li>🏛️ Plus ₹5 a litre from the state, often paid late.</li>
+      <li>🌄 Born 1955 in Kudige, Kodagu; KMF since 1984.</li>
+      <li>📈 Record 1.08 crore litres in a day (20 May 2026).</li>
+      <li>🏏 Nandini on Scotland and Ireland jerseys, 2024.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>✅ Budget ₹240 a month per daily litre.</li>
+      <li>✅ Set curd at home.</li>
+      <li>✅ Share the real numbers, not the angry ones.</li>
+      <li>❌ Blaming the farmer for the hike.</li>
+      <li>❌ Blaming the darshini for ₹1 more.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy, Prof. Bolt and Gowri the cow are made-up characters; the numbers and events are real. This story explains how milk pricing works, without taking sides. Sources: reports on the Karnataka Cabinet's 29 Oct 2026 decision and the 1 Nov 2026 Nandini price revision (₹46 to ₹54, ₹7 to farmers and ₹1 to unions); Siasat, ThePrint/PTI and News Karnataka on the unions' ₹8–10 demand (Sept–Oct 2026); South First on farmers' production costs (May 2025) and on pending incentives (May 2024); Dairy News 7x7 and DairyNews.today on cattle-feed prices, small farmers, union payments to societies and the 2024 sponsorship debate; The New Indian Express (Dec 2024) on the history of the Ksheeradhaare incentive; eFeedLink (May 2026) and Dairy News 7x7 (2024) on MyMUL procurement and sales; KMF history from Wikipedia, Dairy News 7x7 ("back to the humble beginnings of Nandini in Kodagu") and The Caravan (KMF feature) on members, societies and unions; reports of KMF's record 1.08 crore litres (20 May 2026); Udayavani, Deccan Herald and Cricket Scotland (May 2024) on the T20 World Cup sponsorship; reported Mother Dairy (May 2026) and Aavin toned-milk prices; Deccan Herald on Ksheera Bhagya school milk; Drishti IAS and the Ministry of Education's 2008 notice on National Education Day. The ₹54 split is our own arithmetic from average farmer prices; each union's rate differs. Figures rounded. Prof. Bolt's verdict is opinion. General information only, not financial advice.</p>
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
