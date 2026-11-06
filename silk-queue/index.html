@@ -1,0 +1,674 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style><style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+
+<title>The 4 AM Saree Queue</title>
+<meta property="og:title" content="The 4 AM Saree Queue">
+<meta property="og:description" content="Mysuru queues from 4 am for one saree. The factory makes 300–400 a day; buyers want 600 more.">
+<meta property="og:image" content="https://sriniurs.github.io/silk-queue/og.png">
+<meta property="og:url" content="https://sriniurs.github.io/silk-queue/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+
+
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="dayspecial">
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+@media (max-width:640px){.dayspecial{font-size:16.5px}}
+</style>
+<style id="brand">
+.cover.t-mon{background:#c2410c;color:#fff}
+.byline .tagline{display:block;font-family:var(--body);font-weight:700;font-size:15px;letter-spacing:.03em;margin-top:4px;line-height:1.2;opacity:.95}
+</style>
+<style id="mythfact">
+.mf{display:flex;flex-direction:column;gap:10px}
+.myth,.fact{border:3px solid #151515;padding:10px 12px;color:#151515;border-radius:4px}
+.myth{background:#ffe0e3}.fact{background:#dff3e4}
+.myth .lbl,.fact .lbl{display:block;font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.07em;line-height:1.1;margin-bottom:2px}
+.myth .lbl{color:#b3121f}.fact .lbl{color:#17703f}
+.stamp{display:inline-block;align-self:center;font-family:var(--display);font-size:32px;letter-spacing:.08em;line-height:1;padding:6px 16px;border:4px solid currentColor;border-radius:10px;transform:rotate(-7deg);color:#c1121f;margin:6px 0 4px;text-align:center}
+.stamp.half{color:#b45309}.stamp.twist{color:#1d4ed8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .stamp{color:#ff6b6b}:root:not([data-theme="light"]) .stamp.half{color:#fbbf24}:root:not([data-theme="light"]) .stamp.twist{color:#7cc0ff}}
+:root[data-theme="dark"] .stamp{color:#ff6b6b}:root[data-theme="dark"] .stamp.half{color:#fbbf24}:root[data-theme="dark"] .stamp.twist{color:#7cc0ff}
+.era.p3{background:#c2410c}
+</style>
+<style id="silk-extra">
+.ep-head .clock{font-family:var(--body);font-weight:800;font-size:15px;background:#151515;color:#ffd23f;border:2.5px solid #151515;border-radius:999px;padding:3px 11px;white-space:nowrap;transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep-head .clock{border-color:#e9edf2}}
+.silk{background:#f6e3ef;color:#151515}
+.silk .small,.green .small{color:#4a5560}
+.cover.t-tue .cast figure span{color:#151515}
+</style>
+<style id="topnav">
+.topnav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;width:100%;box-sizing:border-box;margin:0 auto -12px;padding:calc(8px + env(safe-area-inset-top,0px)) 4px 8px;background:var(--paper);font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
+<main class="wrap">
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<header class="cover t-tue">
+  <div>
+    <span class="daytag">TUESDAY</span>
+    <p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p>
+    <h1>The 4 AM Saree Queue</h1>
+    <p class="sub">It's 4 o'clock on a chilly Mysuru morning. Outside the KSIC factory showroom on Manandavadi Road, people are already sitting on plastic chairs with flasks of filter coffee. The shutter opens at 10. Zappy has token No. 97. Prof. Bolt has token No. 1, and won't say how.</p>
+    <div class="fs"><span>Karnataka Treasure Chest</span><span>Mysore Silk</span><span>The 4 AM Club</span><span>Past → Present → Future</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">token No. 97, sent by Amma for a cousin's wedding, has never seen 4 am from this side</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">token No. 1, retired queue champion: ration shop, Dasara pass, electricity-bill counter</span></figure>
+  </div>
+</header>
+
+<aside class="dayspecial"><svg class="dsav"><use href="#guru"/></svg><div><span class="dstag">TODAY IS SPECIAL!</span>It's <b>World Science Day for Peace and Development</b> (UNESCO, since 2001) 🔬 Today's star scientist is a silkworm: it spins one unbroken thread that can run past a kilometre, with no engineering degree.</div></aside>
+
+<p class="era">PART 1, 4 AM: THE PAST<small>It's still dark, so Prof. Bolt starts with history</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>The queue already has a queue</h2><span class="clock">⏰ 4:02 AM</span></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><circle cx="80" cy="20" r="9" fill="#ffd23f" stroke="#151515" stroke-width="3"/><circle cx="84" cy="17" r="8" fill="#fff"/><circle cx="20" cy="46" r="8" fill="#f4c7a1" stroke="#151515" stroke-width="3"/><path d="M9 86 Q9 58 20 58 Q31 58 31 86 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><circle cx="44" cy="46" r="8" fill="#f4c7a1" stroke="#151515" stroke-width="3"/><path d="M33 86 Q33 58 44 58 Q55 58 55 86 Z" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><circle cx="68" cy="46" r="8" fill="#f4c7a1" stroke="#151515" stroke-width="3"/><path d="M57 86 Q57 58 68 58 Q79 58 79 86 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><rect x="80" y="66" width="9" height="18" rx="3" fill="#9aa4ad" stroke="#151515" stroke-width="2.5"/><path d="M84 62 q-3 -5 0 -9 M88 62 q-3 -5 0 -9" stroke="#9aa4ad" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M6 88 H94" stroke="#151515" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">YAWWWN!</span>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Prof., it's 4 am. Even the temple bells on Chamundi Hills are still asleep.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Welcome to the 4 AM Club, Zappy. The prize is one saree. If you're lucky.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The club rules</b></p>
+      <ul class="clean">
+        <li>No token, no entry. Tokens go only to people standing in the line.</li>
+        <li><b>One saree</b> per person.</li>
+        <li>Price: about <b>₹19,000 to ₹2.5 lakh</b>, after an 8–10% rise in February 2026.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <span class="sfx r">VIRAL!</span>
+      <p>In January 2026, a video of women queuing from <b>4 am</b> outside a Bengaluru KSIC showroom went viral. One post jokingly renamed the company "Karnataka <b>Soviet</b> (sorry, Silk) Industries".</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Soviet queues were for bread. Ours is for a saree with real silver in it. Very different.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>A Sultan orders silkworms by post</h2><span class="clock">⏰ 4:30 AM</span></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="20" width="56" height="62" rx="4" fill="#f3e3c3" stroke="#151515" stroke-width="3"/><rect x="16" y="14" width="68" height="10" rx="5" fill="#c58b4a" stroke="#151515" stroke-width="3"/><rect x="16" y="78" width="68" height="10" rx="5" fill="#c58b4a" stroke="#151515" stroke-width="3"/><path d="M30 36 H70 M30 46 H64 M30 56 H70" stroke="#8a6a3b" stroke-width="3" stroke-linecap="round"/><path d="M32 68 q6 -8 12 0 q6 8 12 0 q4 -6 8 -2" fill="none" stroke="#2a9d5c" stroke-width="5" stroke-linecap="round"/><circle cx="64" cy="65" r="2.2" fill="#151515"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>April 1786</b></p>
+      <p><b>Tipu Sultan</b> wrote to his agent in Muscat: find silkworm eggs, and people who know how to rear them. He also sent teams to Bengal and to China.</p>
+      <p>The China team took <b>12 years</b> to come back.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">WHERE'S MY PARCEL?</span>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Twelve years for one delivery? I complain when my phone cover takes two days.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>No tracking number, no "out for delivery". Only ships, bullock carts and hope.</p></div>
+    </div>
+    <div class="panel">
+      <p>Tipu set up about <b>21</b> silk-rearing centres in his kingdom. The worms got used to Mysuru's weather and became a local breed: the <b>"Pure Mysore"</b> silkworm.</p>
+      <p class="take">Karnataka's silk story is older than its saree story by about 125 years.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>A Maharaja goes loom-shopping in Switzerland</h2><span class="clock">⏰ 5:15 AM</span></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 68 L14 32 L32 48 L50 24 L68 48 L86 32 L82 68 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><rect x="18" y="68" width="64" height="12" rx="3" fill="#e8590c" stroke="#151515" stroke-width="3"/><circle cx="50" cy="24" r="5" fill="#e63946" stroke="#151515" stroke-width="3"/><circle cx="14" cy="32" r="4" fill="#2a9df4" stroke="#151515" stroke-width="3"/><circle cx="86" cy="32" r="4" fill="#2a9df4" stroke="#151515" stroke-width="3"/><circle cx="38" cy="58" r="3.5" fill="#2bb673"/><circle cx="62" cy="58" r="3.5" fill="#2bb673"/></svg>
+  <div class="grid">
+    <div class="panel silk">
+      <p class="cap"><b>1912</b></p>
+      <p>Maharaja <b>Nalvadi Krishnaraja Wadiyar IV</b> opened a silk weaving factory in Mysuru with looms brought from <b>Switzerland</b> (most accounts say 32 of them).</p>
+      <p>It wove silk for the royal family, and fancy fabric for the army's uniforms.</p>
+      <span class="sfx">CLACK-CLACK!</span>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the first customers didn't have to queue?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>When you own the factory, the palace and the army, the queue comes to you.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>How the factory changed hands</b></p>
+      <div class="chain"><span>1912: royal factory</span><i>→</i><span>After 1947: State Sericulture Dept</span><i>→</i><span>1980: KSIC</span><i>→</i><span class="hit">2005: GI tag</span></div>
+      <p class="small">KSIC = Karnataka Silk Industries Corporation, owned by the state government.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">TOP SECRET!</span>
+      <p>In <b>1942</b>, every cocoon in the state was sent to make <b>parachutes</b> for World War II.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So Mysuru silk literally fell from the sky?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Softest landing in history.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">PART 2, 6 AM: THE PRESENT<small>The sun is up. So is the price.</small></p>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Why is everyone here?</h2><span class="clock">⏰ 6:00 AM</span></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M24 38 H76 L72 88 H28 Z" fill="#f6e3ef" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M38 38 Q38 20 50 20 Q62 20 62 38" fill="none" stroke="#151515" stroke-width="3"/><g transform="rotate(-18 50 62)"><rect x="14" y="52" width="72" height="20" rx="3" fill="#fff" stroke="#e63946" stroke-width="3"/><text x="50" y="67" font-family="Arial Black,Arial" font-weight="900" font-size="12.5" text-anchor="middle" fill="#e63946">SOLD OUT</text></g></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Sarees per day</b> (KSIC, March 2026)</p>
+      <div class="ladder">
+        <div class="bar">Made<div style="width:40%">300–400</div></div>
+        <div class="bar">Extra wanted<div class="hot" style="width:60%">~600 more</div></div>
+      </div>
+      <p class="small">KSIC's managing director put the demand gap at nearly 600 sarees a day.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">SOLD OUT!</span>
+      <p>The sericulture minister told the Assembly in March 2026: "Whatever is produced gets sold within a day."</p>
+      <p>Over three years (2022-23 to 2024-25), KSIC made <b>3,10,667</b> sarees and sold <b>3,09,659</b>. That's <b>99.7%</b>.</p>
+      <p class="small">The 99.7% is our arithmetic.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the shelves are empty by lunch?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>My Mysore Pak tin lasts longer than that. And I hide that tin from my own family.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>The legend of the secret counter</h2><span class="clock">⏰ 7:10 AM</span></div>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx b">SHHH!</span>
+      <p>In April 2026, the <i>Star of Mysore</i> reported a quiet counter inside the factory's Centenary Building. People with a "recommendation" collected sarees there after <b>3 pm</b>.</p>
+      <p>The paper said about <b>50</b> of roughly <b>300</b> daily sarees went that way. KSIC denied it was running.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>A 3 pm queue?! I could have slept till noon!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>That queue needed a minister's phone call, Zappy. Not a flask of coffee.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Five days later</b></p>
+      <p>After a public outcry, the same paper reported that the counter was <b>shut</b>, and sarees were going out more fairly to people in the queue.</p>
+      <p class="take">Today, the only shortcut is an alarm clock.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>The week the looms went quiet</h2><span class="clock">⏰ 8:00 AM</span></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>February 2026</b></p>
+      <p>A plan to build a <b>stadium</b> on part of KSIC's 12-acre reeling unit at <b>T. Narasipura</b> worried its workers. That unit turns cocoons into the silk thread for every saree.</p>
+      <p>About <b>1,100</b> employees stopped work. All three KSIC units came to a halt.</p>
+      <span class="sfx">CLACK... CLACK... ...</span>
+    </div>
+    <div class="panel">
+      <span class="sfx r">SAREE POWER!</span>
+      <p>In early March, more than <b>100 women</b> wearing Mysore silk sarees set out to meet the Mysuru Deputy Commissioner about it. Days later, the minister told the Assembly the land plan was <b>dropped</b>.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Lesson: never stand between a Mysuru woman and her saree. Not even with a stadium.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>And online sales?</b></p>
+      <p>Paused, so showrooms get stock first. The minister said they'll return once production rises.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So no "Add to cart". Only "Add to queue".</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p4">THE DEEP DIVE, 8:30 AM<small>The research behind the headlines (still in the queue, on the third coffee)</small></p>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>From worm to wardrobe</h2><span class="clock">⏰ 8:30 AM</span></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 90 Q14 78 18 44 Q22 16 50 10 Q78 16 82 44 Q86 78 50 90 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M50 14 V86" stroke="#1d8a55" stroke-width="2.5"/><path d="M50 40 L30 30 M50 56 L28 50 M50 40 L70 30 M50 56 L72 50" stroke="#1d8a55" stroke-width="2"/><circle cx="30" cy="62" r="7" fill="#f3efe6" stroke="#151515" stroke-width="3"/><circle cx="40" cy="57" r="7" fill="#f3efe6" stroke="#151515" stroke-width="3"/><circle cx="50" cy="54" r="7" fill="#f3efe6" stroke="#151515" stroke-width="3"/><circle cx="60" cy="56" r="7" fill="#f3efe6" stroke="#151515" stroke-width="3"/><circle cx="69" cy="58" r="8" fill="#f3efe6" stroke="#151515" stroke-width="3"/><circle cx="72" cy="56" r="1.8" fill="#151515"/><ellipse cx="78" cy="80" rx="10" ry="7" fill="#fff8dc" stroke="#151515" stroke-width="3"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The supply line</b></p>
+      <div class="chain"><span>Farmers rear silkworms on mulberry leaves</span><i>→</i><span>Cocoon markets: Sidlaghatta, Ramanagara, Kollegal</span><i>→</i><span>KSIC buys ~2,000 kg a day</span><i>→</i><span>T. Narasipura reels 250–300 kg of thread</span><i>→</i><span class="hit">Looms in Mysuru and Channapatna</span></div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the silkworm eats for weeks, spins for three days, and never wears the saree?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Works day and night, someone else enjoys the product. Like every Bengaluru techie.</p></div>
+    </div>
+    <div class="panel silk">
+      <p class="cap"><b>The maths</b></p>
+      <div class="big"><b>~7 kg → 1 kg</b></div>
+      <p>About 7 kg of cocoons give 1 kg of silk thread. At about <b>₹700</b> a kilo of cocoons, that's roughly <b>₹5,000</b> of cocoons in every kilo of thread, before a single border is woven.</p>
+      <p class="small">KSIC figures (2026); the ratio and ₹5,000 are our arithmetic.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">BID! BID! BID!</span>
+      <p><b>Ramanagara</b> runs Asia's largest cocoon market, trading about <b>40–50 tonnes</b> of cocoons a day. It shuts only <b>two days a year</b>: 26 January and 15 August.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>The "gold" border is mostly silver</h2><span class="clock">⏰ 8:50 AM</span></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><rect x="30" y="14" width="40" height="10" rx="3" fill="#8d5a3b" stroke="#151515" stroke-width="3"/><rect x="30" y="76" width="40" height="10" rx="3" fill="#8d5a3b" stroke="#151515" stroke-width="3"/><rect x="34" y="24" width="32" height="52" fill="#ffd23f" stroke="#151515" stroke-width="3"/><path d="M34 30 Q50 34 66 30 M34 37 Q50 41 66 37 M34 44 Q50 48 66 44 M34 51 Q50 55 66 51 M34 58 Q50 62 66 58 M34 65 Q50 69 66 65 M34 72 Q50 76 66 72" fill="none" stroke="#e0a800" stroke-width="2"/><path d="M66 50 Q84 52 88 72 Q90 84 80 88" fill="none" stroke="#e0a800" stroke-width="3" stroke-linecap="round"/><path d="M14 22 l4 4 m0 -4 l-4 4 M84 18 l5 5 m0 -5 l-5 5" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel silk">
+      <p class="cap"><b>Inside the zari (metal thread)</b></p>
+      <div class="big"><b>65% silver</b><span class="arrow">+</span><b class="hot">0.65% gold</b></div>
+      <p>That's why the price follows silver and gold rates. When metals shot up early in 2026, sarees went up <b>8–10%</b>.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So my "gold" border is a silver border wearing a thin gold jacket?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Exactly like my hair. Grey underneath, a little colour on top.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The crepe secret</b></p>
+      <p>The yarn is twisted about <b>2,200 times per metre</b>. That high twist gives Mysore silk its light, soft, slightly grainy feel.</p>
+      <p>Every KSIC saree carries a <b>woven code, a hologram and a barcode</b>, to beat fakes.</p>
+      <span class="sfx b">TWIST!</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>Real or look-alike? The scorecard</h2><span class="clock">⏰ 9:05 AM</span></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Saree</th><th>What it is</th><th>Allowed to be called "Mysore Silk"?</th></tr></thead>
+        <tbody>
+          <tr><td>KSIC Mysore Silk</td><td>Pure mulberry silk, silver-and-gold zari, woven code + hologram</td><td class="ok">Yes. Only this one (GI tag)</td></tr>
+          <tr><td>"Mysore crepe" or "inspired by"</td><td>Pure or mixed crepe silk from other makers</td><td class="bad">No</td></tr>
+          <tr><td>Silk Mark saree</td><td>Certified pure silk, any style, any maker</td><td class="bad">No. Pure silk, but not Mysore Silk</td></tr>
+          <tr><td>Shop with a KSIC-sounding name</td><td>Sometimes Chinese silk or imitation sarees</td><td class="bad">No, and it's a trap</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <p class="warn">Where there's a shortage, there are look-alikes. In January 2026, private shops with names resembling KSIC were reported selling Chinese silk and imitations.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>What does GI even mean?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Geographical Indication. The name is protected, like Darjeeling tea or Mysore Sandal Soap. Anyone can make soap. Only one maker gets to call it that.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>Why not just make more?</h2><span class="clock">⏰ 9:20 AM</span></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="20" width="76" height="62" rx="4" fill="#d9b38c" stroke="#151515" stroke-width="3"/><rect x="22" y="30" width="56" height="42" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M28 30 V72 M34 30 V72 M40 30 V72 M46 30 V72 M52 30 V72 M58 30 V72 M64 30 V72 M70 30 V72" stroke="#e63946" stroke-width="2"/><path d="M22 46 H78 M22 56 H78" stroke="#2a9df4" stroke-width="3"/><path d="M40 52 L62 50 L66 53 L62 56 L40 54 Z" fill="#8d5a3b" stroke="#151515" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 86 V92 M88 86 V92" stroke="#151515" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Looms, then and now</b></p>
+      <div class="ladder">
+        <div class="bar">5 years ago<div style="width:59%">189 looms</div></div>
+        <div class="bar">2026<div style="width:100%">319 looms</div></div>
+      </div>
+      <p>Sarees a day went from about <b>280</b> to <b>400</b>. Twenty more looms are being added.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">QUICK MATHS!</span>
+      <p>400 sarees from 319 looms is about <b>1.25 sarees per loom per day</b>.</p>
+      <p>To make 600 more a day, KSIC would need about <b>480 more looms</b>. That's <b>two and a half times</b> today's count.</p>
+      <p class="small">Our arithmetic, from KSIC's figures.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The real bottleneck: people</b></p>
+      <p>It takes <b>6–7 months</b> to train a weaver to do even a small-border saree properly, and skilled weavers are retiring faster than new ones are trained.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>You can buy a loom in a month. You can't buy a weaver.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>A government company with a fan club</h2><span class="clock">⏰ 9:40 AM</span></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 40 Q20 54 22 70 Q26 88 50 88 Q74 88 78 70 Q80 54 70 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M36 40 L30 26 Q50 20 70 26 L64 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M34 40 H66" stroke="#151515" stroke-width="3"/><text x="50" y="74" font-family="Arial Black,Arial" font-weight="900" font-size="26" text-anchor="middle" fill="#fff">₹</text><path d="M82 30 L88 22 M86 40 L94 38 M78 22 L80 14" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>KSIC's profit after tax</b> (₹ crore)</p>
+      <div class="ladder">
+        <div class="bar">2021-22<div style="width:33%">31.6</div></div>
+        <div class="bar">2022-23<div style="width:49%">46.8</div></div>
+        <div class="bar">2024-25<div class="hot" style="width:100%">96</div></div>
+      </div>
+      <p>Profit roughly <b>tripled</b> in three years.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">KA-CHING!</span>
+      <p>In 2022-23, KSIC sold <b>98,277</b> sarees for <b>₹206 crore</b>. That's about <b>₹21,000</b> a saree on average.</p>
+      <p class="small">The average is our arithmetic.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>A government company that's profitable AND has a queue? Is that even legal?</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Karnataka, India's silk state</b></p>
+      <p>Karnataka made about <b>32%</b> of India's raw silk in 2023-24, and <b>42%</b> of its mulberry silk.</p>
+      <p>India hit a record <b>41,121 tonnes</b> in 2024-25, second only to China.</p>
+      <p class="take">So the state has plenty of silk. What's short is KSIC's looms, weavers and top-grade thread.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">PART 3, 10 AM: THE FUTURE<small>The shutter rolls up. Prof. Bolt gives his verdict.</small></p>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>Shutter up!</h2><span class="clock">⏰ 10:00 AM</span></div>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx r">KRRRRRRRK!</span>
+      <p>Buyers go in <b>ten at a time</b>. Each batch sees about ten sarees, and has to choose fast. Most of the day's stock is gone in a couple of hours.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Ten minutes to pick a wedding saree? Amma takes ten minutes to pick a brinjal!</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>What's coming</b></p>
+      <ul class="clean">
+        <li>More looms: 10 new e-jacquard (computer-controlled) looms, plus 20 more machines at Channapatna.</li>
+        <li>Two new machines and 30 new workers at the 114-year-old T. Narasipura thread unit (May 2026).</li>
+        <li>Online sales back, once supply is steady.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>More looms, more thread, same weavers. That's like building more Dasara stands without more elephants.</p></div>
+      <span class="sfx b">HMM...</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>OPINION: Prof. Bolt's verdict</h2></div>
+  <div class="grid">
+    <div class="panel green">
+      <span class="sfx">GOOD NEWS</span>
+      <p><b>The queue is a compliment.</b> A 114-year-old government factory, making real silver-and-gold sarees, and people line up at 4 am. Very few brands anywhere get that.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">BAD NEWS</span>
+      <p><b>The queue is also a warning.</b> Long waits feed touts, fake shops and "recommendation" counters, and they slowly eat the trust the name is built on.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">MY TAKE</span>
+      <p><b>Train weavers like it's an emergency.</b> A profit of ₹96 crore can fund a proper weaving school. Looms are the easy part; hands are the hard part. Until then, keep the queue fair and the code on every saree.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Before you buy</b></p>
+      <ul class="clean">
+        <li>Buy only at a KSIC showroom.</li>
+        <li>Check the woven code and the hologram.</li>
+        <li>Take a KSIC bill.</li>
+        <li>Never pay anyone to "arrange" one.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Smart moves</b></p>
+      <ul class="clean">
+        <li>For a wedding, start looking months ahead, not weeks.</li>
+        <li>Mysuru's factory outlet usually has more stock than city stores.</li>
+        <li>Short on time? A good crepe silk is fine. Just don't pay a Mysore Silk price for it.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So: alarm at 3:30, flask of coffee, check the hologram?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>And bring a second chair. For me. Token No. 1 has a bad back.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>The story</b></p><ul class="clean">
+      <li>🐛 1786: Tipu Sultan sends for silkworms.</li>
+      <li>👑 1912: Swiss looms, Krishnaraja Wadiyar IV.</li>
+      <li>🪂 1942: cocoons become war parachutes.</li>
+      <li>🏛️ 1980: KSIC; 2005: GI tag.</li>
+      <li>⏰ 2026: 4 am queues, one saree each.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>📉 Makes 300–400 a day; ~600 more wanted.</li>
+      <li>🪙 Zari: 65% silver, 0.65% gold.</li>
+      <li>🧵 ~7 kg cocoons → 1 kg thread.</li>
+      <li>🪡 6–7 months to train a weaver.</li>
+      <li>💰 Profit ₹31.6 cr → ₹96 cr in 3 years.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>✅ KSIC showroom + code + hologram + bill.</li>
+      <li>✅ Plan wedding sarees months ahead.</li>
+      <li>❌ Touts and "arranged" sarees.</li>
+      <li>❌ Shops with KSIC-sounding names.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the numbers and events are real. Sources: Republic World, Odisha TV and EdTimes on the viral 4 am Bengaluru queue (20 Jan–18 Feb 2026); Asianet Newsable on tokens, one-saree rule and look-alike shops (21 Jan 2026) and the six-hour wait (8 Apr 2026); Star of Mysore on prices up 8–10% (23 Feb 2026), the "Saree Statement" (3 Mar 2026), the Assembly debate and online sales (10 Mar 2026), 3 lakh sarees sold and 2022-23 sales and profit (10 Mar 2026), the reported VIP counter (21 Apr 2026) and its closure (26 Apr 2026), and the filature upgrade (19 May 2026); Deccan Herald (Mar 2026) and News Karnataka (2 Mar 2026) on production, looms, demand gap, cocoon buying, reeling output, ₹700/kg cocoons and profits; The People's Board on the work stoppage (Feb 2026); Newsfirst on online sales paused and new e-jacquard looms (2026); The Federal on the 1912 looms and weaver training; Wikipedia, Fibre2Fashion and KSIC on zari, 2,200 twists per metre, the 1980 handover, the codes and holograms; Down To Earth and Millennium Post on Tipu Sultan's 1786 letters, the 12-year China mission, about 21 centres, the Pure Mysore breed and 1942 parachutes (2015); Outlook Traveller and Forbes India on Ramanagara's cocoon market; Adda247 on Karnataka's 32%/42% shares (2023-24); Central Silk Board via Vikaspedia on India's record 41,121 tonnes (2024-25); UNESCO via public listings for World Science Day (10 Nov); silk filament lengths from textile references. Figures marked "our arithmetic" are our own calculations. Figures rounded. Prof. Bolt's verdict is opinion. General information only; prices and stock change often, so check with KSIC before you travel.</p>
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
