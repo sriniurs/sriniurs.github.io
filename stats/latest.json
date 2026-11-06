@@ -1,182 +1,105 @@
 {
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "total": {
-  "total": 231,
-  "total_events": 0,
-  "total_utc": 229,
-  "stats": [
-   {
-    "day": "2026-11-04",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     8,
-     1,
-     28,
-     27,
-     17,
-     12,
-     5,
-     1,
-     3,
-     3,
-     4,
-     3,
-     4,
-     5,
-     38,
-     37,
-     8,
-     20,
-     3,
-     4
-    ],
-    "daily": 231,
-    "weekly": 231,
-    "monthly": 231
-   }
-  ]
+  "total": 128,
+  "derived_from": "day_hits"
  },
  "day_hits": {
   "hits": [
    {
-    "count": 170,
+    "count": 54,
+    "path_id": 118937982,
+    "path": "/robot-jobs",
+    "event": false,
+    "title": "Will a Robot Take My Job? 5 Robot Myths, Checked",
+    "max": 15,
+    "stats": [
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       6,
+       15,
+       10,
+       3,
+       3,
+       5,
+       3,
+       2,
+       0,
+       1,
+       3,
+       1,
+       1,
+       0
+      ],
+      "daily": 54,
+      "weekly": 54,
+      "monthly": 54
+     }
+    ]
+   },
+   {
+    "count": 34,
     "path_id": 118163900,
     "path": "/archive/2026-11-04-dhanteras-decoded.html",
     "event": false,
     "title": "Dhanteras Decoded: A Broom, a Lamp and 7 Gold Myths",
-    "max": 30,
+    "max": 6,
     "stats": [
      {
-      "day": "2026-11-04",
+      "day": "2026-11-05",
       "hourly": [
        0,
        0,
-       0,
-       0,
        1,
        1,
-       24,
-       22,
-       16,
-       11,
+       0,
        4,
-       0,
-       3,
-       3,
-       3,
-       2,
-       3,
-       2,
-       30,
-       24,
+       6,
        4,
-       12,
-       2,
-       3
-      ],
-      "daily": 170,
-      "weekly": 170,
-      "monthly": 170
-     }
-    ]
-   },
-   {
-    "count": 17,
-    "path_id": 118318599,
-    "path": "/s/dhanteras",
-    "event": false,
-    "title": "Dhanteras Decoded: A Broom, a Lamp and 7 Gold Myths",
-    "max": 7,
-    "stats": [
-     {
-      "day": "2026-11-04",
-      "hourly": [
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       7,
-       4,
-       1,
        3,
        1,
-       1
-      ],
-      "daily": 17,
-      "weekly": 17,
-      "monthly": 17
-     }
-    ]
-   },
-   {
-    "count": 14,
-    "path_id": 117844397,
-    "path": "/archive",
-    "event": false,
-    "title": "Srini Presents: Past stories",
-    "max": 3,
-    "stats": [
-     {
-      "day": "2026-11-04",
-      "hourly": [
+       2,
+       1,
+       3,
        0,
-       0,
-       0,
+       1,
+       2,
        0,
        3,
        0,
-       2,
-       1,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
        0,
        1,
-       1,
-       1,
-       2,
-       2,
-       1,
        0,
+       1,
        0
       ],
-      "daily": 14,
-      "weekly": 14,
-      "monthly": 14
+      "daily": 34,
+      "weekly": 34,
+      "monthly": 34
      }
     ]
    },
    {
     "count": 7,
-    "path_id": 117934087,
-    "path": "/archive/2026-11-03-mysore-to-karnataka.html",
+    "path_id": 119020036,
+    "path": "/s/robot-jobs",
     "event": false,
-    "title": "Why Isn't It Still Mysore? The 17-Year Name Fight",
+    "title": "Will a Robot Take My Job? 5 Robot Myths, Checked",
     "max": 2,
     "stats": [
      {
-      "day": "2026-11-04",
+      "day": "2026-11-05",
       "hourly": [
        0,
        0,
@@ -184,23 +107,23 @@
        0,
        0,
        0,
-       1,
+       0,
+       0,
+       0,
+       0,
+       0,
        2,
-       0,
        1,
        0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
+       1,
        1,
        0,
        1,
        0,
-       1,
        0,
+       0,
+       0,
+       1,
        0
       ],
       "daily": 7,
@@ -211,48 +134,6 @@
    },
    {
     "count": 7,
-    "path_id": 117838328,
-    "path": "/ortho-pulse/2026-11-02.html",
-    "event": false,
-    "title": "The Ortho Pulse \u2014 Late Oct\u20132 Nov 2026",
-    "max": 2,
-    "stats": [
-     {
-      "day": "2026-11-04",
-      "hourly": [
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       1,
-       1,
-       0,
-       0,
-       1,
-       0,
-       0,
-       1,
-       0,
-       0,
-       1,
-       0,
-       2,
-       0,
-       0,
-       0,
-       0
-      ],
-      "daily": 7,
-      "weekly": 7,
-      "monthly": 7
-     }
-    ]
-   },
-   {
-    "count": 5,
     "path_id": 117806312,
     "path": "/",
     "event": false,
@@ -260,7 +141,133 @@
     "max": 1,
     "stats": [
      {
-      "day": "2026-11-04",
+      "day": "2026-11-05",
+      "hourly": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       1,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "daily": 7,
+      "weekly": 7,
+      "monthly": 7
+     }
+    ]
+   },
+   {
+    "count": 6,
+    "path_id": 117934087,
+    "path": "/archive/2026-11-03-mysore-to-karnataka.html",
+    "event": false,
+    "title": "Why Isn't It Still Mysore? The 17-Year Name Fight",
+    "max": 2,
+    "stats": [
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       2,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 6,
+      "weekly": 6,
+      "monthly": 6
+     }
+    ]
+   },
+   {
+    "count": 6,
+    "path_id": 117844397,
+    "path": "/archive",
+    "event": false,
+    "title": "Srini Presents: Past stories",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "daily": 6,
+      "weekly": 6,
+      "monthly": 6
+     }
+    ]
+   },
+   {
+    "count": 5,
+    "path_id": 119141273,
+    "path": "/one-laddoo",
+    "event": false,
+    "title": "What One Laddoo Does to Your Body in 2 Hours",
+    "max": 2,
+    "stats": [
+     {
+      "day": "2026-11-05",
       "hourly": [
        0,
        0,
@@ -268,22 +275,64 @@
        0,
        0,
        0,
-       1,
-       1,
        0,
        0,
        0,
        0,
        0,
        0,
-       0,
-       1,
        0,
        0,
        0,
        1,
+       1,
+       0,
        0,
        1,
+       0,
+       0,
+       2,
+       0
+      ],
+      "daily": 5,
+      "weekly": 5,
+      "monthly": 5
+     }
+    ]
+   },
+   {
+    "count": 5,
+    "path_id": 118318599,
+    "path": "/s/dhanteras",
+    "event": false,
+    "title": "Dhanteras Decoded: A Broom, a Lamp and 7 Gold Myths",
+    "max": 2,
+    "stats": [
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       2,
+       2,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
        0,
        0
       ],
@@ -295,14 +344,14 @@
    },
    {
     "count": 3,
-    "path_id": 117804126,
-    "path": "/archive/2026-11-02-trin-trin.html",
+    "path_id": 117838328,
+    "path": "/ortho-pulse/2026-11-02.html",
     "event": false,
-    "title": "Trin Trin Goes Silent: Why Mysuru Lost Its Green Bicycles",
+    "title": "The Ortho Pulse \u2014 Late Oct\u20132 Nov 2026",
     "max": 1,
     "stats": [
      {
-      "day": "2026-11-04",
+      "day": "2026-11-05",
       "hourly": [
        0,
        0,
@@ -314,18 +363,18 @@
        0,
        0,
        0,
-       1,
-       0,
-       0,
-       0,
-       0,
        0,
        0,
        0,
        0,
        1,
+       0,
+       0,
+       0,
+       0,
        1,
        0,
+       1,
        0,
        0
       ],
@@ -336,99 +385,15 @@
     ]
    },
    {
-    "count": 2,
-    "path_id": 118158735,
-    "path": "/archive/2026-11-02-gold-vs-silver.html",
-    "event": false,
-    "title": "Gold vs Silver: The Dhanteras Showdown",
-    "max": 1,
-    "stats": [
-     {
-      "day": "2026-11-04",
-      "hourly": [
-       0,
-       0,
-       0,
-       0,
-       1,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       1,
-       0,
-       0
-      ],
-      "daily": 2,
-      "weekly": 2,
-      "monthly": 2
-     }
-    ]
-   },
-   {
-    "count": 2,
-    "path_id": 118155846,
-    "path": "/archive/2026-11-04-gold-mountain.html",
-    "event": false,
-    "title": "India's Gold Mountain: 7 Numbers Behind Dhanteras",
-    "max": 2,
-    "stats": [
-     {
-      "day": "2026-11-04",
-      "hourly": [
-       0,
-       0,
-       0,
-       0,
-       2,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0
-      ],
-      "daily": 2,
-      "weekly": 2,
-      "monthly": 2
-     }
-    ]
-   },
-   {
     "count": 1,
-    "path_id": 118435195,
-    "path": "/oil-kraken",
+    "path_id": 119275766,
+    "path": "/s/one-laddoo",
     "event": false,
-    "title": "The Oil Kraken: Hormuz and Your Wallet",
+    "title": "What One Laddoo Does to Your Body in 2 Hours",
     "max": 1,
     "stats": [
      {
-      "day": "2026-11-04",
+      "day": "2026-11-05",
       "hourly": [
        0,
        0,
@@ -451,134 +416,8 @@
        0,
        0,
        0,
-       1,
-       0,
-       0
-      ],
-      "daily": 1,
-      "weekly": 1,
-      "monthly": 1
-     }
-    ]
-   },
-   {
-    "count": 1,
-    "path_id": 118330996,
-    "path": "/ai-bubble",
-    "event": false,
-    "title": "Is the AI Bubble Bursting?",
-    "max": 1,
-    "stats": [
-     {
-      "day": "2026-11-04",
-      "hourly": [
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
        0,
        1,
-       0,
-       0,
-       0,
-       0
-      ],
-      "daily": 1,
-      "weekly": 1,
-      "monthly": 1
-     }
-    ]
-   },
-   {
-    "count": 1,
-    "path_id": 118155874,
-    "path": "/?v=1104",
-    "event": false,
-    "title": "India's Gold Mountain: 7 Numbers Behind Dhanteras",
-    "max": 1,
-    "stats": [
-     {
-      "day": "2026-11-04",
-      "hourly": [
-       0,
-       0,
-       0,
-       0,
-       1,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0
-      ],
-      "daily": 1,
-      "weekly": 1,
-      "monthly": 1
-     }
-    ]
-   },
-   {
-    "count": 1,
-    "path_id": 117845201,
-    "path": "/archive/2026-11-02-scan-pay-repeat.html",
-    "event": false,
-    "title": "Scan, Pay, Repeat: The UPI Story",
-    "max": 1,
-    "stats": [
-     {
-      "day": "2026-11-04",
-      "hourly": [
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       0,
-       1,
-       0,
-       0,
-       0,
        0
       ],
       "daily": 1,
@@ -588,13 +427,13 @@
     ]
    }
   ],
-  "total": 231,
+  "total": 128,
   "more": false
  },
  "all_time_hits": {
   "hits": [
    {
-    "count": 170,
+    "count": 204,
     "path_id": 118163900,
     "path": "/archive/2026-11-04-dhanteras-decoded.html",
     "event": false,
@@ -630,8 +469,8 @@
        0
       ],
       "daily": 0,
-      "weekly": 170,
-      "monthly": 170
+      "weekly": 204,
+      "monthly": 204
      },
      {
       "day": "2026-11-03",
@@ -692,11 +531,41 @@
        3
       ],
       "daily": 170
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       1,
+       1,
+       0,
+       4,
+       6,
+       4,
+       3,
+       1,
+       2,
+       1,
+       3,
+       0,
+       1,
+       2,
+       0,
+       3,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0
+      ],
+      "daily": 34
      }
     ]
    },
    {
-    "count": 61,
+    "count": 67,
     "path_id": 117934087,
     "path": "/archive/2026-11-03-mysore-to-karnataka.html",
     "event": false,
@@ -732,8 +601,8 @@
        0
       ],
       "daily": 0,
-      "weekly": 61,
-      "monthly": 61
+      "weekly": 67,
+      "monthly": 67
      },
      {
       "day": "2026-11-03",
@@ -794,11 +663,173 @@
        0
       ],
       "daily": 7
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       2,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 6
      }
     ]
    },
    {
-    "count": 49,
+    "count": 54,
+    "path_id": 118937982,
+    "path": "/robot-jobs",
+    "event": false,
+    "title": "Will a Robot Take My Job? 5 Robot Myths, Checked",
+    "max": 15,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0,
+      "weekly": 54,
+      "monthly": 54
+     },
+     {
+      "day": "2026-11-03",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     },
+     {
+      "day": "2026-11-04",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       6,
+       15,
+       10,
+       3,
+       3,
+       5,
+       3,
+       2,
+       0,
+       1,
+       3,
+       1,
+       1,
+       0
+      ],
+      "daily": 54
+     }
+    ]
+   },
+   {
+    "count": 52,
     "path_id": 117838328,
     "path": "/ortho-pulse/2026-11-02.html",
     "event": false,
@@ -834,8 +865,8 @@
        7
       ],
       "daily": 7,
-      "weekly": 49,
-      "monthly": 49
+      "weekly": 52,
+      "monthly": 52
      },
      {
       "day": "2026-11-03",
@@ -896,6 +927,36 @@
        0
       ],
       "daily": 7
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      "daily": 3
      }
     ]
    },
@@ -998,11 +1059,41 @@
        0
       ],
       "daily": 3
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
      }
     ]
    },
    {
-    "count": 19,
+    "count": 25,
     "path_id": 117844397,
     "path": "/archive",
     "event": false,
@@ -1038,8 +1129,8 @@
        1
       ],
       "daily": 1,
-      "weekly": 19,
-      "monthly": 19
+      "weekly": 25,
+      "monthly": 25
      },
      {
       "day": "2026-11-03",
@@ -1100,11 +1191,41 @@
        0
       ],
       "daily": 14
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "daily": 6
      }
     ]
    },
    {
-    "count": 17,
+    "count": 22,
     "path_id": 118318599,
     "path": "/s/dhanteras",
     "event": false,
@@ -1140,8 +1261,8 @@
        0
       ],
       "daily": 0,
-      "weekly": 17,
-      "monthly": 17
+      "weekly": 22,
+      "monthly": 22
      },
      {
       "day": "2026-11-03",
@@ -1202,11 +1323,41 @@
        1
       ],
       "daily": 17
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       2,
+       2,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 5
      }
     ]
    },
    {
-    "count": 14,
+    "count": 21,
     "path_id": 117806312,
     "path": "/",
     "event": false,
@@ -1242,8 +1393,8 @@
        1
       ],
       "daily": 2,
-      "weekly": 14,
-      "monthly": 14
+      "weekly": 21,
+      "monthly": 21
      },
      {
       "day": "2026-11-03",
@@ -1301,6 +1452,300 @@
        0,
        1,
        0,
+       0
+      ],
+      "daily": 5
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       1,
+       1,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "daily": 7
+     }
+    ]
+   },
+   {
+    "count": 7,
+    "path_id": 119020036,
+    "path": "/s/robot-jobs",
+    "event": false,
+    "title": "Will a Robot Take My Job? 5 Robot Myths, Checked",
+    "max": 2,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0,
+      "weekly": 7,
+      "monthly": 7
+     },
+     {
+      "day": "2026-11-03",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     },
+     {
+      "day": "2026-11-04",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       2,
+       1,
+       0,
+       1,
+       1,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "daily": 7
+     }
+    ]
+   },
+   {
+    "count": 5,
+    "path_id": 119141273,
+    "path": "/one-laddoo",
+    "event": false,
+    "title": "What One Laddoo Does to Your Body in 2 Hours",
+    "max": 2,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0,
+      "weekly": 5,
+      "monthly": 5
+     },
+     {
+      "day": "2026-11-03",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     },
+     {
+      "day": "2026-11-04",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       2,
        0
       ],
       "daily": 5
@@ -1406,6 +1851,36 @@
        0
       ],
       "daily": 2
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
      }
     ]
    },
@@ -1508,6 +1983,36 @@
        0
       ],
       "daily": 2
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
      }
     ]
    },
@@ -1610,6 +2115,36 @@
        0
       ],
       "daily": 1
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
      }
     ]
    },
@@ -1712,6 +2247,168 @@
        0
       ],
       "daily": 0
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     }
+    ]
+   },
+   {
+    "count": 1,
+    "path_id": 119275766,
+    "path": "/s/one-laddoo",
+    "event": false,
+    "title": "What One Laddoo Does to Your Body in 2 Hours",
+    "max": 1,
+    "stats": [
+     {
+      "day": "2026-11-02",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0,
+      "weekly": 1,
+      "monthly": 1
+     },
+     {
+      "day": "2026-11-03",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     },
+     {
+      "day": "2026-11-04",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ],
+      "daily": 1
      }
     ]
    },
@@ -1814,6 +2511,36 @@
        0
       ],
       "daily": 1
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
      }
     ]
    },
@@ -1916,6 +2643,36 @@
        0
       ],
       "daily": 1
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
      }
     ]
    },
@@ -2018,42 +2775,84 @@
        0
       ],
       "daily": 1
+     },
+     {
+      "day": "2026-11-05",
+      "hourly": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "daily": 0
      }
     ]
    }
   ],
-  "total": 367,
+  "total": 495,
   "more": false
  },
  "referrers": {
   "stats": [
    {
     "name": "",
-    "count": 146,
+    "count": 69,
     "ref_scheme": "o"
+   },
+   {
+    "id": "sriniurs.github.io/s/robot-jobs",
+    "name": "sriniurs.github.io/s/robot-jobs",
+    "count": 27,
+    "ref_scheme": "h"
    },
    {
     "id": "sriniurs.github.io/s/dhanteras",
     "name": "sriniurs.github.io/s/dhanteras",
-    "count": 35,
-    "ref_scheme": "h"
-   },
-   {
-    "id": "sriniurs.github.io/dhanteras",
-    "name": "sriniurs.github.io/dhanteras",
-    "count": 26,
-    "ref_scheme": "h"
-   },
-   {
-    "id": "sriniurs.github.io/archive/2026-11-04-dhanteras-decoded.html",
-    "name": "sriniurs.github.io/archive/2026-11-04-dhanteras-decoded.html",
-    "count": 11,
+    "count": 18,
     "ref_scheme": "h"
    },
    {
     "id": "sriniurs.github.io/archive",
     "name": "sriniurs.github.io/archive",
-    "count": 10,
+    "count": 3,
+    "ref_scheme": "h"
+   },
+   {
+    "id": "sriniurs.github.io/archive/2026-11-04-dhanteras-decoded.html",
+    "name": "sriniurs.github.io/archive/2026-11-04-dhanteras-decoded.html",
+    "count": 3,
+    "ref_scheme": "h"
+   },
+   {
+    "id": "sriniurs.github.io/one-laddoo",
+    "name": "sriniurs.github.io/one-laddoo",
+    "count": 3,
+    "ref_scheme": "h"
+   },
+   {
+    "id": "bing.com",
+    "name": "bing.com",
+    "count": 1,
     "ref_scheme": "h"
    },
    {
@@ -2063,14 +2862,20 @@
     "ref_scheme": "h"
    },
    {
-    "id": "sriniurs.github.io/archive/2026-11-04-gold-mountain.html",
-    "name": "sriniurs.github.io/archive/2026-11-04-gold-mountain.html",
+    "id": "sriniurs.github.io/dhanteras",
+    "name": "sriniurs.github.io/dhanteras",
     "count": 1,
     "ref_scheme": "h"
    },
    {
-    "id": "sriniurs.github.io/preview/topbar-latest-page.html",
-    "name": "sriniurs.github.io/preview/topbar-latest-page.html",
+    "id": "sriniurs.github.io/robot-jobs",
+    "name": "sriniurs.github.io/robot-jobs",
+    "count": 1,
+    "ref_scheme": "h"
+   },
+   {
+    "id": "sriniurs.github.io/s/one-laddoo",
+    "name": "sriniurs.github.io/s/one-laddoo",
     "count": 1,
     "ref_scheme": "h"
    }
