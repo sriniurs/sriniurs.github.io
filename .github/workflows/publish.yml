@@ -2,8 +2,8 @@ name: Publish today's story
 # Srini, 6 Nov 2026: stories wait in queue/ and go live on their date (India time).
 on:
   schedule:
-    - cron: "35 18 * * *"   # 00:05 IST; GitHub can start scheduled jobs late
-    - cron: "17 0 * * *"    # 05:47 IST backup run
+    - cron: "30 0 * * *"    # 06:00 IST (Srini, 6 Nov 2026); GitHub can start scheduled jobs a little late
+    - cron: "15 1 * * *"    # 06:45 IST backup run
   workflow_dispatch: {}
 permissions:
   contents: write
