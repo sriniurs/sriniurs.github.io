@@ -1,0 +1,31 @@
+name: Publish today's story
+# Srini, 6 Nov 2026: stories wait in queue/ and go live on their date (India time).
+on:
+  schedule:
+    - cron: "35 18 * * *"   # 00:05 IST; GitHub can start scheduled jobs late
+    - cron: "17 0 * * *"    # 05:47 IST backup run
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: site-write
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish due stories
+        run: python3 .github/publish_due.py
+      - name: Commit
+        run: |
+          git config user.name "Srini Presents bot"; git config user.email "sriniurs@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing due"; exit 0; fi
+          git commit -m "Publish story for $(TZ=Asia/Kolkata date +%F)"
+          git pull --rebase origin main && git push origin HEAD:main
+      - name: Rebuild GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST repos/${{ github.repository }}/pages/builds || echo "Pages rebuild request failed (push may already trigger it)"

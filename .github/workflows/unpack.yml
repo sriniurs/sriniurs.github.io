@@ -8,7 +8,7 @@ permissions:
   contents: write
   pages: write
 concurrency:
-  group: unpack-site
+  group: site-write
   cancel-in-progress: false
 jobs:
   unpack:
@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Unpack zip(s)
         run: python3 .github/unpack_site.py
+      - name: Publish anything already due (stories uploaded on their own day)
+        run: python3 .github/publish_due.py
       - name: Commit unpacked files
         run: |
           git config user.name "github-actions[bot]"
