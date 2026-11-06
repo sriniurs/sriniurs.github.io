@@ -1,0 +1,669 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style><style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+
+<title>The Last Diya Makers of Doora</title>
+<meta property="og:title" content="The Last Diya Makers of Doora">
+<meta property="og:description" content="A village near Mysuru once made lakhs of clay lamps every Deepavali. Now a lamp sells for about one rupee. What happened?">
+<meta property="og:image" content="https://sriniurs.github.io/diya-makers/og.png">
+<meta property="og:url" content="https://sriniurs.github.io/diya-makers/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+
+
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="dayspecial">
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+@media (max-width:640px){.dayspecial{font-size:16.5px}}
+</style>
+<style id="topnav">
+.topnav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;width:100%;box-sizing:border-box;margin:0 auto -12px;padding:calc(8px + env(safe-area-inset-top,0px)) 4px 8px;background:var(--paper);font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
+<main class="wrap">
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<header class="cover t-sat">
+  <div>
+    <span class="daytag">SATURDAY</span>
+    <p class="byline">Srini presents</p>
+    <h1>The Last Diya Makers of Doora</h1>
+    <p class="sub">Zappy is off to buy shiny moulded lamps for Deepavali. Prof. Bolt takes a detour to a village 20 km from Mysuru that once lit up four districts, where a clay diya still sells for about one rupee.</p>
+    <div class="fs"><span>People Behind the Story</span><span>Deepavali</span><span>Mysuru Potters</span><span>Past → Present → Future</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, owns 40 metres of fairy lights</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, still lights the same clay diyas every year</span></figure>
+  </div>
+</header>
+
+<aside class="dayspecial"><svg class="dsav"><use href="#guru"/></svg><div><span class="dstag">TODAY IS SPECIAL!</span>It's <b>Naraka Chaturdashi</b>, the day Deepavali starts in Karnataka, with a pre-dawn oil bath for Krishna's win over Narakasura 🪔 It's also the birthday of <b>C.V. Raman</b>, who won a Nobel for explaining how light scatters. Today we follow the light back to the hands that make the lamp.</div></aside>
+
+<p class="era">PART 1: THE PAST<small>A 4,500-year-old idea, made by hand</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>Welcome to Doora: the village called "far away"</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M14 50 L44 24 L74 50 Z" fill="#c2410c" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><rect x="20" y="50" width="48" height="34" fill="#f3d9b1" stroke="#151515" stroke-width="3"/><rect x="38" y="62" width="12" height="22" fill="#8a4b1f" stroke="#151515" stroke-width="3"/><ellipse cx="82" cy="78" rx="10" ry="8" fill="#c96a32" stroke="#151515" stroke-width="3"/><path d="M76 70 h12" stroke="#151515" stroke-width="3"/><ellipse cx="80" cy="60" rx="7" ry="5" fill="#c96a32" stroke="#151515" stroke-width="3"/><path d="M8 86 H94" stroke="#151515" stroke-width="3"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Why are we in a village? The mall has lamps that glow in five colours!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Because the lamps your grandmother lit probably came from a place like this. Meet Doora.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The place</b></p>
+      <p><b>Doora</b> is a village in Mysuru taluk, about <b>20 km south</b> of the city. In Kannada, <i>doora</i> means <b>"far away"</b>.</p>
+      <p><b>14 Kumbara (potter) families</b> here run a small cooperative, the <b>Kumbara Kushala Kaigarika Sangha</b>, to help each other survive. More than 50 artisans belong to it.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">WAIT, REALLY?</span>
+      <p>At Deepavali, Doora's clay lamps went out to <b>four districts</b>: Mysuru, Chamarajanagar, Mandya and Kodagu.</p>
+      <p>A lamp still costs about <b>₹1</b> at the village production centre.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>A 4,500-year-old idea</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 50 L82 50 L74 78 L26 78 Z" fill="#b5651d" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M14 46 L26 50 M86 46 L74 50" stroke="#151515" stroke-width="3" stroke-linecap="round"/><path d="M30 60 q10 6 20 0 q10 -6 20 0" fill="none" stroke="#151515" stroke-width="2.5"/><path d="M14 46 Q8 34 14 26 Q20 34 14 46 Z" fill="#ffd23f" stroke="#151515" stroke-width="2.5"/><path d="M86 46 Q80 34 86 26 Q92 34 86 46 Z" fill="#ffd23f" stroke="#151515" stroke-width="2.5"/><path d="M50 46 Q44 34 50 24 Q56 34 50 46 Z" fill="#e8590c" stroke="#151515" stroke-width="2.5"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>4,500 years ago</b></p>
+      <p>Oxford's Pitt Rivers Museum holds a clay lamp from <b>Nal</b> in the Indus Valley, dated to around <b>2500 BC</b>.</p>
+      <p>It was made on a <b>potter's wheel</b>. Then the potter pinched its four corners to hold the wicks, the same trick a diya's spout uses today.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">FUN FACT</span>
+      <p>The museum notes that Indus potters were using the wheel <b>thousands of years</b> before potters in Britain.</p>
+      <p>The name <b>Kumbara</b> comes from Sanskrit <i>kumbhakara</i>, "pot-maker". North India says <b>Kumhar</b>.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>A potter's son became Kannada's poet</b></p>
+      <p><b>Sarvajna</b>, the 16th-century poet whose three-line <i>tripadi</i> verses are still quoted across Karnataka, came from a <b>potter's family</b>, as tradition and his own verses tell it.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Even the chief minister mentioned it at a potters' meet in Mysuru this January.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>Fifteen days to make a one-rupee lamp</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="70" rx="38" ry="10" fill="#8a4b1f" stroke="#151515" stroke-width="3"/><rect x="44" y="72" width="12" height="20" fill="#5b3a1a" stroke="#151515" stroke-width="3"/><path d="M34 66 Q30 44 42 36 L58 36 Q70 44 66 66 Z" fill="#c96a32" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><ellipse cx="50" cy="36" rx="8" ry="3" fill="#7a3d12" stroke="#151515" stroke-width="2.5"/><path d="M14 58 q-4 -10 6 -12 M86 58 q4 -10 -6 -12" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/><path d="M22 50 l-4 -4 M78 50 l4 -4" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel wide">
+      <p class="cap"><b>How a Doora diya is born</b></p>
+      <div class="chain"><span>👣 Clay is softened by stamping on it</span><i>→</i><span>🌀 Shaped on the wheel or by hand</span><i>→</i><span>☀️ Sun-dried 3–4 days</span><i>→</i><span>🔥 Fired in a wood kiln</span><i>→</i><span class="hit">🔔 Tapped: the sound says if it's baked</span></div>
+      <p>From clay to market, one batch takes up to <b>15 days</b>.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">TING!</span>
+      <p>A well-baked lamp rings when tapped. A dull thud means it's under-fired and may crack. Doora's potters check every single lamp this way.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Fifteen days of work... for one rupee?!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>For thousands at once, but yes. Now you see why the story turns sad.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">PART 2: THE PRESENT<small>The lamp that lost its light</small></p>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Ten lakh lamps became fifty thousand</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M12 14 V86 H90" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"/><path d="M18 24 L40 36 L54 58 L84 74" fill="none" stroke="#e63946" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M84 74 l-12 -2 M84 74 l-6 -10" stroke="#e63946" stroke-width="5" stroke-linecap="round"/><path d="M26 18 Q30 10 26 4 Q22 10 26 18Z" fill="#ffd23f" stroke="#151515" stroke-width="2"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Doora's Deepavali output</b></p>
+      <div class="big"><b>8–10 lakh</b><span class="arrow">lamps a year, about five years earlier</span></div>
+      <div class="big"><b class="hot">~50,000</b><span class="arrow">in 2025</span></div>
+      <p>That's a fall of nearly <b>95%</b>, reported by Star of Mysore in October 2025.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Year by year, the same story</b></p>
+      <ul class="clean">
+        <li><b>2021:</b> of 14 families, only <b>8</b> still made diyas.</li>
+        <li><b>2023:</b> about <b>60,000</b> lamps, down from "not less than 2 lakh".</li>
+        <li><b>2024:</b> about <b>70,000</b>, down from 3–4 lakh.</li>
+        <li><b>2025:</b> about <b>50,000</b>.</li>
+      </ul>
+      <p class="small">The "before" number changes with who was asked and when. Every year, the direction is the same: down.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">OUCH</span>
+      <p>Doora used to send about <b>3 lakh</b> lamps to <b>Tamil Nadu</b>. Now it sends about <b>30,000</b>. Tamil Nadu built its own clay-lamp industry.</p>
+      <p>In Mysuru city, the potters' area of <b>Kumbarageri</b> stopped making lamps altogether, for lack of space and facilities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>₹1 versus ₹50: the price fight</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 40 Q20 54 22 70 Q26 88 50 88 Q74 88 78 70 Q80 54 70 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 40 L30 26 Q50 20 70 26 L64 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M34 40 H66" stroke="#151515" stroke-width="3"/><text x="50" y="74" font-family="Arial Black,Arial" font-weight="900" font-size="26" text-anchor="middle" fill="#fff">₹</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>What Mysuru shoppers pay</b></p>
+      <div class="big"><b>₹1–5</b><span class="arrow">a Doora clay lamp</span></div>
+      <div class="big"><b class="hot">₹25–100</b><span class="arrow">a shiny moulded lamp</span></div>
+      <p class="small">Clay: ₹1 at the production centre (2025), ₹3–5 at sale (2024). Moulded: ₹25–35 (2024), ₹50–100 (2025), mostly brought in from other states.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">PLOT TWIST</span>
+      <p>The clay lamp is the <b>cheaper</b> one, and it's still losing.</p>
+      <p>Buyers pick the moulded lamps for their <b>glossy finish and new designs</b>. Price isn't the problem. <b>Looks</b> are.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Meanwhile, costs went up</b></p>
+      <p>Doora's potters said in 2021 that clay, firewood and transport cost <b>4–5 times</b> more than a decade earlier.</p>
+      <p>Orders used to arrive <b>3–4 months</b> before Deepavali. Now lamps are mostly made to order.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>Who took the diya's job?</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M6 24 Q50 52 94 24" fill="none" stroke="#151515" stroke-width="3"/><g stroke="#151515" stroke-width="2.5"><rect x="16" y="32" width="8" height="12" rx="3" fill="#e63946"/><rect x="32" y="40" width="8" height="12" rx="3" fill="#ffd23f"/><rect x="48" y="42" width="8" height="12" rx="3" fill="#2a9d5c"/><rect x="64" y="40" width="8" height="12" rx="3" fill="#1f7ad1"/><rect x="80" y="32" width="8" height="12" rx="3" fill="#be185d"/></g><path d="M50 66 Q60 76 54 86 Q50 92 46 86 Q40 76 50 66Z" fill="#cfd6dd" stroke="#151515" stroke-width="3"/><path d="M38 70 L62 90" stroke="#e63946" stroke-width="4" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The usual suspects</b></p>
+      <ul class="clean">
+        <li>💡 <b>Electric strings and LED lamps</b>, once mostly from China</li>
+        <li>✨ <b>Moulded and painted "designer" lamps</b></li>
+        <li>🏺 Porcelain, brass, bronze and glass lamps</li>
+        <li>📦 Fancy lamps sold online</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <span class="sfx b">THE CONVENIENCE TAX</span>
+      <p>A clay diya needs oil, a wick, and someone to keep relighting it. A string of lights needs one switch.</p>
+      <p>Potters across India say the same thing: people don't want the <b>trouble</b> of filling oil.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Guilty. I just plug mine in.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>No guilt needed. But Doora's potters told reporters the painted lamps worry them for another reason: chemical finishes, versus plain baked earth.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>But in North Karnataka, the wheels are spinning</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 14 Q62 30 56 42 Q50 50 44 42 Q38 30 50 14 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M50 26 Q55 36 50 42 Q45 36 50 26 Z" fill="#e8590c"/><path d="M12 54 Q50 50 88 54 Q82 80 50 82 Q18 80 12 54 Z" fill="#e8590c" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M24 62 Q50 68 76 62" fill="none" stroke="#ffd23f" stroke-width="3" stroke-linecap="round"/><path d="M50 46 V54" stroke="#151515" stroke-width="3"/><path d="M18 21 V31 M13 26 H23" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/><path d="M84 23 V33 M79 28 H89" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Melkunda K, Kalaburagi</b></p>
+      <p>About <b>50 potter households</b>. In the festival season, each family makes about <b>60,000 lamps a month</b>.</p>
+      <p>Wholesalers from Yadgir, Raichur, Kalaburagi and Solapur buy them at <b>₹1</b> each. Families here pray to the clay as Goddess Lakshmi.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Khanapur, Belagavi</b></p>
+      <p>Potter Krishna Kumbar says demand <b>hasn't fallen</b>. Customers want variety, so they make it: lamps that burn for <b>up to 24 hours</b>, and new designs.</p>
+      <p>His son, a BSc graduate, chose to stay in the craft.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">THIS WEEK</span>
+      <p>On <b>5 November 2026</b>, news agency IANS photographed Mysuru artisans making clay diyas ahead of Deepavali, amid what it called <b>increased demand</b> for earthen lamps.</p>
+      <p class="small">A good sign, but there's no count yet for this year.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">PART 3: THE FUTURE<small>Can the little lamp come back?</small></p>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>The potters who changed the product</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M28 36 H72 L66 84 Q50 90 34 84 Z" fill="#c96a32" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><ellipse cx="50" cy="36" rx="22" ry="5" fill="#7a3d12" stroke="#151515" stroke-width="3"/><path d="M40 26 q-4 -8 2 -14 M52 26 q-4 -8 2 -14 M64 26 q-4 -8 2 -14" fill="none" stroke="#9aa3ad" stroke-width="3" stroke-linecap="round"/><path d="M36 56 H64" stroke="#7a3d12" stroke-width="2.5"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Pottery Town, Bengaluru</b></p>
+      <p>Founded in <b>1926</b> by <b>40 families</b> from Tamil Nadu and Andhra Pradesh, who came after the city's first railway line was built. About <b>100 families</b> live there today.</p>
+      <p>They now make <b>2–3 lakh</b> clay tea cups a month for city cafés and restaurants. That's steady work all year, not just at Deepavali.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">SMART MOVE</span>
+      <p>When sales collapsed in the pandemic, a potter named Suresh and others reached out to a regional social-media star with <b>12 lakh subscribers</b>.</p>
+      <p>Then they started <b>pottery classes</b>, after hearing that cafés charged for the same thing.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the potters who survived stopped selling only diyas?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Exactly. Doora makes flower pots, tulasi katte and dhoop holders too. The diya is the festival. The other things pay the rent.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p4">THE DEEP DIVE<small>The research behind the headlines</small></p>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>The maths of a one-rupee lamp</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="34" fill="#ffd23f" stroke="#151515" stroke-width="3"/><circle cx="50" cy="50" r="25" fill="none" stroke="#151515" stroke-width="2.5" stroke-dasharray="4 4"/><text x="50" y="62" font-family="Arial Black,Arial" font-weight="900" font-size="30" text-anchor="middle" fill="#151515">₹1</text></svg>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Lighting 20 lamps at your door</th><th>Price each</th><th>Cost for 20</th><th>Who gets the money</th></tr></thead>
+        <tbody>
+          <tr><td>Clay diyas from a potter</td><td>₹3–5</td><td><b>₹60–100</b></td><td>A Karnataka potter family</td></tr>
+          <tr><td>Moulded "designer" lamps</td><td>₹25–35</td><td><b>₹500–700</b></td><td>Mostly makers in other states</td></tr>
+          <tr><td>Clay, bought at Doora itself</td><td>₹1</td><td><b>₹20</b></td><td>The cooperative, directly</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Prices: Star of Mysore (Oct 2024, Oct 2025). Totals: our arithmetic. Oil and wicks are extra for clay lamps.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>A potter family's season</b></p>
+      <p>At Melkunda: <b>60,000 lamps × ₹1 = ₹60,000</b> a month in peak season.</p>
+      <p>That's <b>before</b> paying for clay, firewood, transport and the whole family's labour. Our arithmetic.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">HARD TRUTH</span>
+      <p>A clay lamp's price has barely moved, while its costs have multiplied. Bengaluru potters pay about <b>₹1,200</b> for one truckload of clay from Hoskote, because nearby lakebeds are polluted, plus commercial rates for water and electricity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>4,500 years in one line</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <div class="chain"><span>c. 2500 BC: wheel-made Indus lamp (Nal)</span><i>→</i><span>1500s: Sarvajna, from a potter's family</span><i>→</i><span>1926: Pottery Town, Bengaluru</span><i>→</i><span>1954: India's pottery institute opens at Khanapur</span><i>→</i><span>2018: electric-wheel scheme for potters</span><i>→</i><span class="hit">2025: Doora down to ~50,000 lamps</span><i>→</i><span>2026: potters' corporation promised</span></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Karnataka's quiet record</b></p>
+      <p>The <b>Central Village Pottery Institute</b> at Khanapur, on the Malaprabha river, was set up in <b>1954</b>. It is the only national institute devoted to pottery training and research.</p>
+      <p>Its products are sold at <b>Hubballi railway station</b>, and many graduates open their own studios.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">THE WHEEL WITH A MOTOR</span>
+      <p>Under the national <b>Kumhar Sashaktikaran Yojana</b> (potters' empowerment scheme, 2018), potters get <b>electric wheels</b> and training.</p>
+      <p>Officials said in 2020 that one potter's output rose from about <b>100 to 600 cups a day</b>, and more than <b>18,000</b> wheels had been given out.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>Clay vs moulded vs LED: the honest table</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><rect x="44" y="10" width="12" height="70" fill="#151515"/><path d="M14 30 H86" stroke="#151515" stroke-width="4" stroke-linecap="round"/><path d="M14 30 L6 54 H22 Z" fill="#c96a32" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M86 30 L78 54 H94 Z" fill="#1f7ad1" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><rect x="30" y="80" width="40" height="8" rx="2" fill="#ffd23f" stroke="#151515" stroke-width="3"/></svg>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Question</th><th>Clay diya</th><th>Moulded lamp</th><th>LED string</th></tr></thead>
+        <tbody>
+          <tr><td>Price</td><td class="ok">₹1–5</td><td>₹25–100</td><td>One-time buy</td></tr>
+          <tr><td>Made from</td><td>Baked earth, no paint</td><td>Moulded, with glossy finishes</td><td>Plastic, wire, electronics</td></tr>
+          <tr><td>Running cost</td><td>Oil and a wick</td><td>Oil, wax or battery</td><td>Electricity</td></tr>
+          <tr><td>Lasts</td><td>Several years if not broken</td><td>Several years</td><td>Several seasons</td></tr>
+          <tr><td>Who earns</td><td class="ok">Local potter families</td><td>Factories, often far away</td><td>Factories, often abroad</td></tr>
+          <tr><td>Hassle</td><td class="bad">Refill, relight</td><td>Some</td><td class="ok">One switch</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Our summary from the reports in this comic. Durability is general experience, not a lab test.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">FAIR POINT</span>
+      <p>No lamp wins every row. LED wins on hassle. Clay wins on price, and on where your money goes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>What the big players say</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Traders: "Swadeshi Diwali"</b></p>
+      <p>The traders' body <b>CAIT</b> put Diwali 2025 sales at a record <b>₹6.05 lakh crore</b> and said <b>87%</b> of shoppers preferred Indian-made goods. It named <b>clay lamps</b> among the products that gained.</p>
+      <p class="small">CAIT is a traders' lobby, and its figures are survey estimates. "Made in India" also covers factory-made lamps, not just village potters.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Temples and towns: bulk orders</b></p>
+      <div class="big"><b>26,17,215</b><span class="arrow">diyas lit in Ayodhya, Oct 2025</span></div>
+      <p>That's a Guinness World Record, counted by drone. Big Deepotsavs like this need potters by the hundred.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Railways: tea in clay</b></p>
+      <p>Since 2019, the Railways have pushed clay <b>kulhads</b> (tea cups) at hundreds of stations to replace plastic. It's tried before and fizzled, partly over complaints about cup quality.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Lesson: a market helps potters only if it's steady and fair.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>The Karnataka angle</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 90 C30 64 20 52 20 38 A30 30 0 0 1 80 38 C80 52 70 64 50 90 Z" fill="#6d28d9" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><circle cx="50" cy="38" r="12" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M50 30 Q55 37 50 44 Q45 37 50 30Z" fill="#e8590c"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>A promise made in Mysuru</b></p>
+      <p>On <b>5 January 2026</b>, at the first state-level convention of the Kumbara community in <b>Mysuru</b>, the then chief minister said a <b>Kumbara Development Corporation</b> would be launched soon, with grants.</p>
+      <p class="small">We couldn't find a report of it starting work yet.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Four clay belts, four stories</b></p>
+      <ul class="clean">
+        <li><b>Doora (Mysuru):</b> shrinking, hoping for support.</li>
+        <li><b>Khanapur (Belagavi):</b> free clay from farmers' fields, steady demand.</li>
+        <li><b>Melkunda K (Kalaburagi):</b> volume, at ₹1 a lamp.</li>
+        <li><b>Pottery Town (Bengaluru):</b> switched to cafés and classes.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <span class="sfx b">THE PATTERN</span>
+      <p>Where clay is <b>free</b> and buyers want <b>variety</b>, potters do fine. Where clay is costly and the product never changed, they struggle.</p>
+      <p>It's not about a dying art. It's about <b>clay, design and market</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>OPINION: Prof. Bolt's verdict</h2></div>
+  <div class="grid">
+    <div class="panel green">
+      <span class="sfx">THE GOOD NEWS</span>
+      <p><b>The clay lamp isn't dying everywhere.</b> Khanapur and Pottery Town show that potters who change the product and find steady buyers can do well.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">THE HARD PART</span>
+      <p><b>Guilt won't save Doora. A steady market will.</b> Fifteen days of work sold for ₹1 isn't a business. Cheap clay, a shared modern kiln and year-round products would change more than one festival's sympathy.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">MY TAKE</span>
+      <p><b>Keep your fairy lights. Just put one row of clay diyas at the door.</b> It costs less than a pizza and goes to a family 20 km away.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>This Deepavali</b></p>
+      <ul class="clean">
+        <li>Buy <b>20 clay diyas</b> from a potter, a cooperative or a roadside seller: about <b>₹60–100</b>.</li>
+        <li>Ask where they were made. Local is best.</li>
+        <li>Old household trick: <b>soak new diyas in water</b> for a few hours before use, so they drink less oil.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>After the festival</b></p>
+      <ul class="clean">
+        <li>Wash, dry and <b>keep them for next year</b>.</li>
+        <li>Broken ones? Put the pieces at the bottom of a plant pot for drainage.</li>
+        <li>Buy a <b>clay pot, planter or kulhad</b> in March too. Potters need year-round sales.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Stay safe</b></p>
+      <ul class="clean">
+        <li>Keep lit diyas away from curtains, rangoli powder piles and crackers.</li>
+        <li>Never leave them burning in an empty room.</li>
+      </ul>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Fine. Fairy lights on the balcony, clay diyas at the door.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>That's the spirit. Happy Deepavali.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>The story</b></p><ul class="clean">
+      <li>🏘️ Doora, 20 km from Mysuru: 14 potter families.</li>
+      <li>📉 8–10 lakh lamps a year down to ~50,000 (2025).</li>
+      <li>🪔 A clay lamp: ₹1 at the village, 15 days to make.</li>
+      <li>✨ Moulded lamps: ₹25–100, and winning on looks.</li>
+      <li>🌀 Khanapur and Bengaluru potters adapted and survived.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>🏺 Indus wheel-made lamp: about 2500 BC.</li>
+      <li>🎓 Khanapur: India's pottery institute since 1954.</li>
+      <li>⚙️ Electric wheel: ~100 → 600 cups a day.</li>
+      <li>🛕 Ayodhya: 26.17 lakh diyas, Oct 2025.</li>
+      <li>🏛️ Kumbara corporation promised, Jan 2026.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>✅ 20 clay diyas ≈ ₹60–100.</li>
+      <li>✅ Soak before use; reuse next year.</li>
+      <li>✅ Buy clay things outside Deepavali too.</li>
+      <li>❌ Feel guilty about fairy lights.</li>
+      <li>❌ Leave a lit diya near curtains or crackers.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the people, places and numbers are real. Sources: Star of Mysore on Doora village ("Doorada Deepa", 26 Oct 2019; "Festival brings no light to clay diya-makers", 4 Nov 2021; "No light at the end of tunnel for potters of Doora village", 12 Nov 2023; "Clay lamps flicker amidst onslaught of modern lights", 30 Oct 2024; "Disappearing Diyas", 18 Oct 2025), Deccan Herald ("Restoring the earthen glow" on Melkunda K, Khanapur and Doora; "Turning wheels: Pottery's challenges and second chances", 10 Oct 2024; Kumbara Development Corporation, 5 Jan 2026; Central Village Pottery Institute), IANS photos via Social News XYZ (Mysuru diya makers, 5 Nov 2026), Pitt Rivers Museum, Oxford (Nal pottery lamp, c. 2500 BC), Wikipedia (Kumbara; Sarvajna) and V.K. Gokak in Triveni journal (Sarvajna's parentage), ETV Bharat and The Hindu (Khanapur institute, est. 1954; Hubballi station sales), KVIC and PIB via Energetica India, The Quint and Drishti IAS (Kumhar Sashaktikaran Yojana, 2018; electric wheels, 2020), CAIT press release and Business Today (Diwali 2025 sales, 21 Oct 2025), PTI via Deccan Herald and The Bridge Chronicle (Ayodhya Deepotsav record, 19 Oct 2025), ThePrint, YourStory and The Better India (railway kulhads), festival calendars from Hindutone and Hindu Blog (Naraka Chaturdashi, 7 Nov 2026), Vajiram &amp; Ravi (C.V. Raman's birth anniversary). Figures marked "our arithmetic" are our own calculations. Figures rounded. Prof. Bolt's verdict is opinion.</p>
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+</main>
+
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>

@@ -1,0 +1,716 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style><style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+
+<title>Green Crackers on Trial</title>
+<meta property="og:title" content="Green Crackers on Trial">
+<meta property="og:description" content="A “green” cracker still makes up to 70% of the smoke. Seven Deepavali myths, checked.">
+<meta property="og:image" content="https://sriniurs.github.io/green-crackers/og.png">
+<meta property="og:url" content="https://sriniurs.github.io/green-crackers/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+
+
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="dayspecial">
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+@media (max-width:640px){.dayspecial{font-size:16.5px}}
+</style>
+<style id="brand">
+.cover.t-mon{background:#c2410c;color:#fff}
+.byline .tagline{display:block;font-family:var(--body);font-weight:700;font-size:15px;letter-spacing:.03em;margin-top:4px;line-height:1.2;opacity:.95}
+</style>
+<style id="mythfact">
+.mf{display:flex;flex-direction:column;gap:10px}
+.myth,.fact{border:3px solid #151515;padding:10px 12px;color:#151515;border-radius:4px}
+.myth{background:#ffe0e3}.fact{background:#dff3e4}
+.myth .lbl,.fact .lbl{display:block;font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.07em;line-height:1.1;margin-bottom:2px}
+.myth .lbl{color:#b3121f}.fact .lbl{color:#17703f}
+.stamp{display:inline-block;align-self:center;font-family:var(--display);font-size:32px;letter-spacing:.08em;line-height:1;padding:6px 16px;border:4px solid currentColor;border-radius:10px;transform:rotate(-7deg);color:#c1121f;margin:6px 0 4px;text-align:center}
+.stamp.half{color:#b45309}.stamp.twist{color:#1d4ed8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .stamp{color:#ff6b6b}:root:not([data-theme="light"]) .stamp.half{color:#fbbf24}:root:not([data-theme="light"]) .stamp.twist{color:#7cc0ff}}
+:root[data-theme="dark"] .stamp{color:#ff6b6b}:root[data-theme="dark"] .stamp.half{color:#fbbf24}:root[data-theme="dark"] .stamp.twist{color:#7cc0ff}
+.era.p3{background:#c2410c}
+</style>
+<style id="topnav">
+.topnav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;width:100%;box-sizing:border-box;margin:0 auto -12px;padding:calc(8px + env(safe-area-inset-top,0px)) 4px 8px;background:var(--paper);font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style></head><body>
+<main class="wrap">
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<header class="cover t-mon">
+  <div>
+    <span class="daytag">MONDAY</span>
+    <p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p>
+    <h1>Green Crackers on Trial</h1>
+    <p class="sub">It's the morning after Deepavali, and the Colony Court of Kuvempunagar is meeting in the park, ankle-deep in burnt paper. Seven popular beliefs about "green" crackers are in the dock. Judge Bolt has had about two hours of sleep.</p>
+    <div class="fs"><span>India Unpacked</span><span>Deepavali</span><span>Green Crackers</span><span>Myth vs Fact</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">junior lawyer, has never won a case, bought crackers "only for the kids"</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">retired judge of the Colony Court, lights one sparkler a year, then complains about it</span></figure>
+  </div>
+</header>
+
+<aside class="dayspecial"><svg class="dsav"><use href="#guru"/></svg><div><span class="dstag">TODAY IS SPECIAL!</span>It's <b>National Legal Services Day</b> (free legal help for people who can't afford a lawyer) and <b>Govardhan Puja</b> in many states ⚖️ Fitting, because today our crackers go on trial. In Delhi-NCR, the full cracker ban is back from this morning.</div></aside>
+
+<p class="era">PART 1: THE CASE FILE<small>What the courts decided, and where "green" came from</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>Order! Order! The morning after</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="20" y="22" width="40" height="18" rx="4" fill="#8a4b1f" stroke="#151515" stroke-width="3" transform="rotate(-30 40 31)"/><path d="M44 40 L74 78" stroke="#151515" stroke-width="9" stroke-linecap="round"/><path d="M44 40 L74 78" stroke="#c46a12" stroke-width="4" stroke-linecap="round"/><rect x="14" y="78" width="50" height="10" rx="3" fill="#8a4b1f" stroke="#151515" stroke-width="3"/><path d="M70 22 l8 -6 M76 32 l10 -2 M64 14 l2 -10" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">ORDER! ORDER!</span>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Your Honour, I have brought the evidence. One full bag.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Zappy, that is my doormat. And it is still smoking.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Delhi's rule (Supreme Court, 2 Nov 2026)</b></p>
+      <p>Green crackers could be sold only from <b>4 to 6 Nov</b>, and burst only on <b>7 and 8 Nov</b>, between <b>6–7 am</b> and <b>8–10 pm</b>.</p>
+      <p>From <b>9 Nov</b>, a full ban again. No ladis, nothing with barium, no online sales. Every box had to be sealed and carry its own <b>QR code</b>.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>And here in Karnataka</b></p>
+      <p>Green crackers only, <b>8 to 10 pm</b>, from <b>8 to 10 Nov</b>. If a warehouse is caught with banned stock, the <b>whole warehouse</b> gets sealed. Crackers brought in from other states can be seized at the border.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Two hours a night. My neighbour started at 7:58 and called it a "warm-up".</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>Who invented a "green" cracker?</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M40 12 H60 M44 12 V40 L22 80 Q18 88 28 88 H72 Q82 88 78 80 L56 40 V12" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M30 70 L70 70 L76 82 Q78 86 72 86 H28 Q22 86 24 82 Z" fill="#2a9d5c"/><circle cx="42" cy="76" r="3" fill="#fff"/><circle cx="56" cy="79" r="2" fill="#fff"/><path d="M50 4 q6 -2 4 6 M62 6 q6 2 2 8" fill="none" stroke="#9fd3b4" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The back story</b></p>
+      <p>In <b>2018</b>, eight government science labs, led by <b>CSIR-NEERI</b> in Nagpur, started work on cleaner crackers. In <b>October 2018</b>, the Supreme Court banned crackers made with <b>barium</b> salts.</p>
+      <p>The first green crackers came out in <b>2019</b>.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">PLOT TWIST</span>
+      <p>Barium is what gave old crackers their bright <b>green</b> colour.</p>
+      <p><b>So the "green" cracker was born by banning the green chemical.</b></p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So a green cracker isn't actually green?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>"Green" means kinder to the air, not the colour. Like Silk Board junction: no silk, only traffic.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">PART 2: SEVEN MYTHS IN THE DOCK<small>Each belief takes the stand. The court checks the evidence.</small></p>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>Myth 1: "Green crackers don't pollute"</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M34 88 L40 54 H60 L66 88 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M38 70 H62" stroke="#ffd23f" stroke-width="4"/><path d="M50 52 L44 30 M50 52 L50 24 M50 52 L58 30 M50 52 L36 38 M50 52 L66 38" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/><circle cx="44" cy="28" r="3" fill="#ffd23f" stroke="#151515" stroke-width="1.5"/><circle cx="58" cy="28" r="3" fill="#ffd23f" stroke="#151515" stroke-width="1.5"/><circle cx="50" cy="20" r="3" fill="#ffd23f" stroke="#151515" stroke-width="1.5"/><path d="M70 30 q8 -4 10 4 q8 0 6 8 q-6 4 -12 0" fill="#cfd6dd" stroke="#151515" stroke-width="2.5"/><path d="M18 34 q-6 -6 2 -10 q2 -8 10 -4 q4 6 -2 10" fill="#cfd6dd" stroke="#151515" stroke-width="2.5"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>My uncle says green crackers are so clean, you could burst one in the pooja room.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Your uncle also says he could have played for India. Next witness.</p></div>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="myth"><span class="lbl">MYTH</span>Green means zero smoke, zero harm.</p>
+        <p class="fact"><span class="lbl">FACT</span>NEERI's rule: at least <b>30% less</b> particulate matter (the fine dust in smoke) than an ordinary cracker of the same size.</p>
+      </div>
+      <p>So up to about <b>70%</b> of the smoke is still there.</p>
+      <p class="small">70%: our arithmetic. Some lab tests show bigger cuts in some products.</p>
+    </div>
+    <div class="panel">
+      <span class="stamp">BUSTED</span>
+      <p><b>Green crackers are cleaner, not clean.</b> They pollute less per bang. They still pollute.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Myth 2: "Green crackers are quiet"</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><rect x="10" y="62" width="80" height="12" rx="3" fill="#8a4b1f" stroke="#151515" stroke-width="3"/><path d="M16 74 V90 M84 74 V90" stroke="#151515" stroke-width="4"/><ellipse cx="50" cy="84" rx="20" ry="8" fill="#c8a27a" stroke="#151515" stroke-width="3"/><circle cx="42" cy="82" r="2" fill="#151515"/><circle cx="54" cy="82" r="2" fill="#151515"/><path d="M30 80 q-6 -8 2 -10 M68 80 q6 -8 -2 -10" fill="#c8a27a" stroke="#151515" stroke-width="2.5"/><path d="M24 30 l6 6 M50 20 v10 M76 30 l-6 6" stroke="#e8590c" stroke-width="4" stroke-linecap="round"/><text x="50" y="52" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="18" fill="#e63946" stroke="#151515" stroke-width="1">BOOM!</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">DHAM! DHAM!</span>
+      <p>The colony dog, Tiger, has filed a complaint. He has been under the cot since Saturday. His paw print is the signature.</p>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="myth"><span class="lbl">MYTH</span>Green crackers barely make a sound.</p>
+        <p class="fact"><span class="lbl">FACT</span>Green crackers are about <b>110–125 decibels</b>, against about <b>160</b> for many old-style ones.</p>
+      </div>
+      <p>Since <b>1999</b>, the legal limit for one cracker is <b>125 dB</b>, measured 4 metres away. The night limit for a residential area is <b>45 dB</b>.</p>
+      <p class="small">Decibels climb fast: every extra 10 dB is about ten times the sound energy.</p>
+    </div>
+    <div class="panel">
+      <span class="stamp half">HALF TRUE</span>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Quieter than before. Not quiet enough for a sleeping baby, a dog, or a retired judge.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>Myth 3: "Less smoke means safer smoke"</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Look, Your Honour! I can hardly see any smoke from this one!</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The bits you can't see are the ones I'm worried about.</p></div>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="myth"><span class="lbl">MYTH</span>Smaller smoke is always safer smoke.</p>
+        <p class="fact"><span class="lbl">FACT</span>A 2022 Delhi study by DTU and IIT Roorkee found green crackers gave off a <b>bigger share of ultrafine particles</b>: <b>0.72</b> of all particles, against under 0.6 for traditional ones.</p>
+      </div>
+      <p><b>Ultrafine</b> means smaller than 0.1 micrometre, about <b>700 times thinner</b> than a hair. Small enough to go deep into the lungs and even into the blood.</p>
+      <p class="small">700 times: our estimate, using a 70-micrometre hair.</p>
+    </div>
+    <div class="panel">
+      <span class="stamp twist">TWIST</span>
+      <p>This is <b>one study</b>, and its authors say real-world tests are still needed. But it's a fair warning: <b>less smoke you can see is not the same as less harm</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>Myth 4: "If the box says GREEN, it's green"</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="14" y="26" width="72" height="56" rx="4" fill="#2a9d5c" stroke="#151515" stroke-width="3"/><rect x="22" y="36" width="30" height="30" fill="#fff" stroke="#151515" stroke-width="2.5"/><rect x="25" y="39" width="8" height="8" fill="#151515"/><rect x="41" y="39" width="8" height="8" fill="#151515"/><rect x="25" y="55" width="8" height="8" fill="#151515"/><rect x="38" y="52" width="4" height="4" fill="#151515"/><rect x="44" y="58" width="5" height="5" fill="#151515"/><rect x="36" y="46" width="3" height="3" fill="#151515"/><path d="M58 40 h20 M58 50 h16 M58 60 h20" stroke="#fff" stroke-width="4" stroke-linecap="round"/><text x="50" y="20" text-anchor="middle" font-family="Bangers,Impact,sans-serif" font-size="17" fill="#e8590c" stroke="#151515" stroke-width="0.8">GREEN?!</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">BEEP!</span>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I scanned the QR code on my box. It opened... a saree sale.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Then either it's a fake, or it's a very confused cracker.</p></div>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="myth"><span class="lbl">MYTH</span>The word "green" on the box is proof.</p>
+        <p class="fact"><span class="lbl">FACT</span>On <b>14 Oct 2026</b>, Mumbai's Awaaz Foundation tested <b>17 brands</b> bought from <b>licensed</b> shops. All said "green". Some had <b>no QR code</b>; some had <b>fake</b> ones.</p>
+      </div>
+      <p>On <b>3 Nov 2026</b>, the Supreme Court heard reports from Delhi's markets that "virtually every variety of firecracker was available" despite its order.</p>
+    </div>
+    <div class="panel">
+      <span class="stamp">BUSTED</span>
+      <p>A real one carries the <b>CSIR-NEERI green logo</b> and a working <b>QR code</b> you can check with the official <b>CSIR-NEERI Green QR Code</b> app. The code should show the maker, licence and test details.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>Myth 5: "Green crackers fixed Delhi's air"</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><rect x="14" y="50" width="16" height="36" fill="#9aa3ad" stroke="#151515" stroke-width="3"/><rect x="34" y="38" width="18" height="48" fill="#9aa3ad" stroke="#151515" stroke-width="3"/><rect x="56" y="56" width="14" height="30" fill="#9aa3ad" stroke="#151515" stroke-width="3"/><rect x="72" y="44" width="16" height="42" fill="#9aa3ad" stroke="#151515" stroke-width="3"/><path d="M6 44 q10 -12 22 -4 q10 -14 24 -4 q12 -10 24 0 q14 -6 18 6 L94 56 H6 Z" fill="#cfc6b8" stroke="#151515" stroke-width="3" opacity=".95"/><circle cx="80" cy="22" r="8" fill="#f4a836" stroke="#151515" stroke-width="3" opacity=".6"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Delhi allowed only green crackers last Diwali. Case closed?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Let me read the evidence... <i>*cough*</i> ...I can't see the evidence.</p></div>
+      <span class="sfx r">KHOO KHOO!</span>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Delhi's PM2.5, Diwali 2025 (average)</b></p>
+      <div class="ladder">
+        <div class="bar">Before<div style="width:32%">157</div></div>
+        <div class="bar">Diwali day<div style="width:48%">234</div></div>
+        <div class="bar">After<div class="hot" style="width:100%">488</div></div>
+        <div class="bar">WHO limit<div style="width:12%">15</div></div>
+      </div>
+      <p class="small">Micrograms per cubic metre, from CPCB hourly data (2021–25 analysis). WHO's 24-hour guideline is 15. The morning-after AQI was 346, "very poor".</p>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="fact"><span class="lbl">FACT</span>2025 was the first Diwali in years with only green crackers allowed in Delhi. The post-Diwali PM2.5 was the <b>highest in five years</b>.</p>
+      </div>
+      <span class="stamp">BUSTED</span>
+      <p class="small">Why? Too many crackers, fakes among them, and still winter air that traps smoke. And the court noted in 2026 that the year-long ban hadn't brought the hoped-for improvement either.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>Myth 6: "Crackers are as old as Deepavali"</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>When Lord Rama came home, everyone burst atom bombs, no?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>With what? Gunpowder hadn't been invented. They lit lamps. Lovely, quiet lamps.</p></div>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="myth"><span class="lbl">MYTH</span>Crackers have always been part of Deepavali.</p>
+        <p class="fact"><span class="lbl">FACT</span>Gunpowder was invented in <b>China</b> around the 9th century. India's earliest solid record of fireworks is from <b>1443</b>: a Persian envoy, Abdur Razzaq, saw them at the <b>Vijayanagara</b> court's Mahanavami festival.</p>
+      </div>
+      <p>That's Hampi, right here in Karnataka. And Mysuru Dasara grew out of that same Vijayanagara Mahanavami.</p>
+    </div>
+    <div class="panel">
+      <span class="stamp half">MYTH, BUT OLD</span>
+      <p>Fireworks in India are nearly <b>600 years</b> old, but the diya is the real star of Deepavali. The classic history of Indian fireworks, by P.K. Gode, was published in <b>Bangalore</b> in 1953.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>Myth 7: "Only the person lighting it gets hurt"</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 46 Q8 36 18 36 H82 Q92 36 92 46" fill="none" stroke="#151515" stroke-width="3"/><circle cx="30" cy="54" r="17" fill="#9cc6ef" stroke="#151515" stroke-width="4"/><circle cx="70" cy="54" r="17" fill="#9cc6ef" stroke="#151515" stroke-width="4"/><path d="M47 52 Q50 48 53 52" fill="none" stroke="#151515" stroke-width="4"/><path d="M22 48 l6 -4 M62 48 l6 -4" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M50 80 l-6 10 M50 80 l6 10 M50 80 v12" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I never light crackers. I just stand and watch. Totally safe.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Watchers are about half the patients. Step back, my learned friend.</p></div>
+    </div>
+    <div class="panel">
+      <div class="mf">
+        <p class="myth"><span class="lbl">MYTH</span>If you're not holding the match, you're safe.</p>
+        <p class="fact"><span class="lbl">FACT</span>Deepavali 2025, Bengaluru's Minto Eye Hospital: <b>37</b> cases. <b>20</b> of them were <b>bystanders</b>. Narayana Nethralaya saw <b>93</b> in three days.</p>
+      </div>
+      <p>Most injuries came from <b>atom bombs</b>, <b>bijli crackers</b> and <b>flowerpots</b> (anaar).</p>
+    </div>
+    <div class="panel">
+      <span class="stamp">BUSTED</span>
+      <p>Green or not, a cracker is still a small explosion. The chemistry changed. <b>The physics didn't.</b></p>
+    </div>
+  </div>
+</section>
+
+<p class="era p4">THE DEEP DIVE<small>The research behind the headlines</small></p>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>Inside a cracker: the chemistry kitchen</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Every cracker is a recipe</b></p>
+      <div class="chain"><span>🫁 Oxidiser (gives oxygen)</span><i>+</i><span>🔥 Fuel (burns)</span><i>+</i><span>🎨 Metal salts (colour)</span><i>→</i><span class="hit">💥 Light, bang, smoke</span></div>
+      <p>Old crackers used <b>barium nitrate</b> as the oxidiser. Green ones mostly use <b>potassium nitrate</b>, plus dust-trapping minerals called <b>zeolites</b>.</p>
+    </div>
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Type</th><th>The trick</th><th>Claimed cut</th></tr></thead>
+        <tbody>
+          <tr><td>SWAS (safe water releaser)</td><td>Releases water vapour that pulls dust down</td><td>~30–35% less particulate matter</td></tr>
+          <tr><td>STAR (safe thermite cracker)</td><td>Reworked burning mix; quieter</td><td>~20–30% less sulphur and nitrogen gases</td></tr>
+          <tr><td>SAFAL (safe minimal aluminium)</td><td>Less aluminium, some magnesium instead</td><td>~30–35% less particulate matter</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Figures as reported from CSIR-NEERI's lab claims. Lab cuts are per cracker, not for the whole city.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">SWEATY CRACKER</span>
+      <p>SWAS literally "sweats" as it bursts: the water vapour acts like a tiny rain shower for its own dust.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Even crackers sweat now. Welcome to the Indian summer, in November.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>Sivakasi: two cousins, eight months in Calcutta</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><rect x="16" y="34" width="68" height="42" rx="3" fill="#ffd23f" stroke="#151515" stroke-width="3"/><rect x="16" y="34" width="68" height="10" fill="#e63946" stroke="#151515" stroke-width="3"/><path d="M42 54 q8 -10 16 0 q-8 10 -16 0z" fill="#151515"/><path d="M60 22 L78 6" stroke="#8a4b1f" stroke-width="5" stroke-linecap="round"/><circle cx="80" cy="5" r="5" fill="#e63946" stroke="#151515" stroke-width="2"/><path d="M86 2 q6 -4 4 4" fill="none" stroke="#e8590c" stroke-width="3"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Past</b></p>
+      <p>In <b>1922</b>, two young cousins from drought-hit Sivakasi, <b>Ayya Nadar</b> and <b>Shanmuga Nadar</b>, went to <b>Calcutta</b> and worked in a match factory for <b>eight months</b>.</p>
+      <p>Back home they made matches. A tax on matches in <b>1934</b> pushed the town towards fireworks, and the cousins went back to Calcutta to learn how.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Present</b></p>
+      <div class="big"><b>~90%</b><span class="arrow">of India's crackers come from Sivakasi</span></div>
+      <div class="big"><b>₹6,000 cr+</b><span class="arrow">a year in business</span></div>
+      <p>About <b>4 lakh</b> workers in around <b>1,150</b> factories in Virudhunagar district. Over <b>1,400</b> makers have registered with NEERI to make green crackers.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">WAIT, REALLY?</span>
+      <p>The first bomb Sivakasi ever produced was the <b>Atom bomb</b>, say its old makers. They call the town <b>"Kutty Japan"</b> (little Japan).</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the Atom bomb is older than my grandfather?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>And louder.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>Old cracker vs green cracker: the scorecard</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Test</th><th>Old-style cracker</th><th>Green cracker</th></tr></thead>
+        <tbody>
+          <tr><td>Fine dust (PM)</td><td>Full dose</td><td class="ok">At least 30% less</td></tr>
+          <tr><td>Noise</td><td class="bad">Often ~160 dB</td><td>~110–125 dB</td></tr>
+          <tr><td>Barium</td><td class="bad">Yes (banned since 2018)</td><td class="ok">No</td></tr>
+          <tr><td>Share of ultrafine particles</td><td>Under 0.6</td><td class="bad">0.72 (one 2022 study)</td></tr>
+          <tr><td>Proof it's genuine</td><td>None</td><td>NEERI logo + QR code (if not faked)</td></tr>
+          <tr><td>Allowed in Karnataka?</td><td class="bad">No</td><td class="ok">Yes, 8–10 pm</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <span class="sfx">THE CATCH</span>
+      <p>The 30% cut is <b>per cracker</b>. If a colony bursts <b>twice as many</b>, the air gets <b>more</b> smoke, not less.</p>
+      <p class="small">Our arithmetic: 2 × 70% = 140% of the old smoke.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So "green" made people feel less guilty, and they bought more?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Same thing happens with "diet" sweets. Ask any Mysuru sweet shop.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>The expert witnesses</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Witness</th><th>What they say</th></tr></thead>
+        <tbody>
+          <tr><td>CSIR-NEERI (the makers of the formula)</td><td>At least 30% less dust. Built to clean up crackers while protecting the industry and its jobs.</td></tr>
+          <tr><td>Rajeev Kumar Mishra, Delhi Technological University</td><td>Less harmful than old crackers, "but not eco-friendly". Needs real-world testing.</td></tr>
+          <tr><td>Sunil Dahiya, Envirocatalysts (think tank)</td><td>Allowing them in Delhi in effect legalises more pollution in the festive season.</td></tr>
+          <tr><td>Lung doctors (Max Hospital, Delhi)</td><td>A modest improvement. Little help for children, the elderly and people with lung disease.</td></tr>
+          <tr><td>Supreme Court (Nov 2026)</td><td>Didn't have enough data to say if the 2024 full ban worked. Compliance reports are due 14 Dec; next hearing 16 Dec 2026.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <span class="sfx b">HMM...</span>
+      <p>Notice: nobody, not even the makers, claims green crackers are <b>clean</b>. The argument is only about <b>how much cleaner</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>The Karnataka and Mysuru angle</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Bengaluru: cleaner air, louder nights</b></p>
+      <p>During Deepavali 2025, Bengaluru's average AQI was about <b>83</b>, down from <b>120</b> the year before (KSPCB). Rain and empty roads helped.</p>
+      <p>But noise went <b>up</b>: Sarjapur averaged <b>90.4 dB</b>, 11% above the days before.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Mysuru: more choice, higher bill</b></p>
+      <p>A Mysuru dealer counted <b>200+</b> cracker varieties, against barely <b>20</b> thirty years ago. The city had about <b>100</b> temporary stalls, and prices rose nearly <b>10%</b> (Deepavali 2025).</p>
+      <p>K.R. Hospital set up special wards for eye and burn injuries.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">NAMMA RULES</span>
+      <p>This year Karnataka's environment minister fixed <b>8–10 pm</b> for 8–10 Nov, green only, with officials checking logos and QR codes at shops and warehouses.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Two hours. Less time than it takes to cross Hunsur Road during Dasara.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>OPINION: Judge Bolt's verdict</h2></div>
+  <div class="grid">
+    <div class="panel green">
+      <span class="sfx">ACQUITTED (PARTLY)</span>
+      <p><b>The green cracker itself is a real step forward.</b> Less dust, no barium, quieter. On its own, it's the better cracker.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">GUILTY</span>
+      <p><b>The real culprits are the fakes and the quantity.</b> A 30% cleaner cracker bought by the sackful, half of them fake, still chokes the city.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">MY TAKE</span>
+      <p><b>Fewer, genuine, shorter.</b> Scan before you buy, burst a few in the allowed hours, and let the diya be the hero again. Celebrate loudly with sweets, not decibels.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 16 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 16</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>At the shop</b></p>
+      <ul class="clean">
+        <li>Look for the <b>CSIR-NEERI green logo</b> and a <b>QR code</b>.</li>
+        <li>Scan it with the official app. Wrong page or no page? Walk away.</li>
+        <li>Buy from licensed stalls, not the back of a van.</li>
+        <li>Skip ladis and atom bombs. They're banned or the top injury-makers.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>On the night</b></p>
+      <ul class="clean">
+        <li>Burst only in the allowed hours (8–10 pm in Karnataka).</li>
+        <li>Cotton clothes, a bucket of water, and glasses on.</li>
+        <li>Never re-light a dud. Never bend over a lit one.</li>
+        <li>Keep pets and grandparents indoors, windows shut.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>If something goes into an eye</b></p>
+      <ul class="clean">
+        <li>Don't rub it.</li>
+        <li>Rinse gently with clean water.</li>
+        <li>Go straight to an eye hospital. Bengaluru's Minto runs a 24-hour service at festival time.</li>
+      </ul>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So I can keep my sparklers, if they pass the QR test?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Case dismissed. Now please sweep my doormat.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>The seven verdicts</b></p><ul class="clean">
+      <li>❌ Zero pollution: busted (at least 30% less, that's all).</li>
+      <li>🔉 Quiet: half true (110–125 dB).</li>
+      <li>🔬 Less smoke is safer: twist (more ultrafine share).</li>
+      <li>📦 "Green" on the box: busted (check the QR).</li>
+      <li>🌫️ Fixed Delhi: busted (PM2.5 488 after Diwali 2025).</li>
+      <li>🪔 Ancient tradition: myth (first record 1443, Vijayanagara).</li>
+      <li>👀 Only the lighter gets hurt: busted.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>🧪 SWAS, STAR, SAFAL: water vapour, new mix, less aluminium.</li>
+      <li>🚫 Barium out, potassium nitrate in.</li>
+      <li>🏭 Sivakasi: ~90% of India's crackers, ₹6,000 cr+.</li>
+      <li>✖️ 30% less per cracker × twice the crackers = more smoke.</li>
+      <li>⚖️ Supreme Court hearing again on 16 Dec 2026.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>✅ Scan the QR before you pay.</li>
+      <li>✅ Fewer crackers, allowed hours only.</li>
+      <li>✅ Glasses, water bucket, step back.</li>
+      <li>❌ Ladis, atom bombs, relighting duds.</li>
+      <li>❌ Rubbing an injured eye.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters, and the Colony Court is imaginary; the numbers and events are real. Sources: Supreme Court order in Arjun Gopal v. Union of India as reported by CourtBook and UNI (2–3 Nov 2026); Oneindia on Karnataka's 2026 cracker rules (3 Nov 2026); The Hitavada (CSIR-NEERI project from Jan 2018, 2019 launch), Outlook and HuffPost India (SWAS, STAR, SAFAL, barium; 2019), The Indian Express via Vision IAS and Anantam IAS (30–35% cuts, potassium nitrate, zeolites; 2025–26); Climate Fact Checks and ThePrint (noise of 110–125 dB vs ~160–165 dB); CPCB noise standards for firecrackers (Environment (Protection) Rules, notified 1999) and Noise Pollution Rules, 2000 (45 dB night limit); Outlook, Tribune and ABC News on the DTU–IIT Roorkee ultrafine-particle study (2022; Environmental Pollution, 2023); Free Press Journal on Awaaz Foundation's tests (14 Oct 2026); The Statesman and The Week on CPCB PM2.5 data for Diwali 2021–25, Business Today on the AQI of 346 (21 Oct 2025); WHO Global Air Quality Guidelines (2021); Scroll, Enroute Indian History and Brhat on P.K. Gode's History of Fireworks in India (1953) and Abdur Razzaq at Vijayanagara (1443); Deccan Herald on Bengaluru eye injuries (Oct 2025) and Mysuru's cracker market (2025); Madras Musings, Wikipedia and phillumeny.com on Ayya Nadar and Shanmuga Nadar; New Kerala, IANS and Orissa Post on Sivakasi's share, turnover and workforce (2025–26); Kutty Japan travelogue (first bomb); Deccan Herald/PTI on 1,403 NEERI-registered makers (Oct 2025); Business Standard, Tribune and ABC News for expert views (2025); Urban Acres on KSPCB's Deepavali 2025 data for Bengaluru. Figures marked "our arithmetic" or "our estimate" are our own calculations. Figures rounded. Judge Bolt's verdict is opinion. General information only; for an eye injury, see a doctor at once.</p>
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>

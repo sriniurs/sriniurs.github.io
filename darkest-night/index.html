@@ -1,0 +1,683 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style><style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+
+<title>Why the Festival of Lights Falls on the Darkest Night</title>
+<meta property="og:title" content="Why the Festival of Lights Falls on the Darkest Night">
+<meta property="og:description" content="Deepavali is set on the one night with no moon, on purpose. Here&#x27;s how the moon picks the date, and why South and North light up at different hours.">
+<meta property="og:image" content="https://sriniurs.github.io/darkest-night/og.png">
+<meta property="og:url" content="https://sriniurs.github.io/darkest-night/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+
+
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="dayspecial">
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+@media (max-width:640px){.dayspecial{font-size:16.5px}}
+</style>
+<style id="topnav">
+.topnav{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:10px;max-width:1000px;width:100%;box-sizing:border-box;margin:0 auto -12px;padding:calc(8px + env(safe-area-inset-top,0px)) 4px 8px;background:var(--paper);font-family:var(--body);font-weight:800;font-size:14.5px;line-height:1}
+.topnav a,.topnav span,.botnav a,.botnav span{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:2.5px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;box-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.botnav{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:22px auto 6px;font-family:var(--body);font-weight:800;font-size:16px;line-height:1}
+.botnav a,.botnav span{padding:10px 16px;box-shadow:3px 3px 0 var(--line)}
+.topnav .new,.botnav .new{background:#d62828;color:#fff;border-color:#151515;box-shadow:2px 2px 0 #151515}
+.topnav .here,.botnav .here{box-shadow:none;opacity:.75}
+</style><style id="brand">
+.cover .byline .tagline{display:block;font-family:var(--body);font-weight:700;font-size:15px;letter-spacing:.1em;text-transform:none;margin-top:4px;opacity:.95;white-space:normal}
+</style></head><body>
+<main class="wrap">
+<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<header class="cover t-sun">
+  <div>
+    <span class="daytag">SUNDAY</span>
+    <p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p>
+    <h1>Why the Festival of Lights Falls on the Darkest Night</h1>
+    <p class="sub">Zappy has lamps, oil and a box of crackers ready, and one question: why does India pick the one night with no moon at all? Prof. Bolt points at the empty sky.</p>
+    <div class="fs"><span>The Curious Files</span><span>Deepavali</span><span>Moon &amp; Calendar</span><span>How It Works</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, has never once looked at a panchanga</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, can find the moon in the sky in five seconds</span></figure>
+  </div>
+</header>
+
+<aside class="dayspecial"><svg class="dsav"><use href="#guru"/></svg><div><span class="dstag">TODAY IS SPECIAL!</span>It's <b>Deepavali</b>! This year the South's dawn oil bath and the North's Lakshmi Puja at dusk both land on the <b>same Sunday</b> 🪔 Today we find out why that doesn't always happen.</div></aside>
+
+<p class="era">PART 1: HOW THE MOON PICKS THE DATE<small>No fixed date, no mistake</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>Why Deepavali keeps moving</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="16" y="20" width="68" height="66" rx="6" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="16" y="20" width="68" height="16" fill="#0f766e" stroke="#151515" stroke-width="3"/><path d="M32 12 V28 M68 12 V28" stroke="#151515" stroke-width="4" stroke-linecap="round"/><circle cx="50" cy="61" r="15" fill="#151515" stroke="#151515" stroke-width="3"/><path d="M44 50 a15 15 0 0 1 0 22" fill="none" stroke="#ffd23f" stroke-width="3"/><path d="M26 46 h6 M26 56 h6 M68 46 h6 M68 56 h6 M26 76 h6 M68 76 h6" stroke="#9aa5b1" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Christmas is always 25 December. Why can't Deepavali just pick a date and stay there?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Because Deepavali doesn't follow the sun's calendar. It follows the <b>moon</b>. And the moon keeps its own time.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The moon's clock</b></p>
+      <p>From one new moon to the next takes about <b>29.5 days</b>. Twelve of those make a "moon year" of about <b>354 days</b>.</p>
+      <p>The sun's year is about <b>365 days</b>. So the moon falls behind by about <b>11 days</b> every year.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Deepavali night, next five years</b></p>
+      <div class="ladder">
+        <div class="bar">2026<div style="width:100%">8 Nov</div></div>
+        <div class="bar">2027<div style="width:72%">29 Oct</div></div>
+        <div class="bar">2028<div style="width:40%">17 Oct</div></div>
+        <div class="bar">2029<div class="hot" style="width:94%">5 Nov</div></div>
+        <div class="bar">2030<div style="width:66%">26 Oct</div></div>
+      </div>
+      <p class="small">Each year it jumps back about 11 days, then leaps forward again. That leap is EP 9's secret. Bar length = how late in the season.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>Amavasya: the night the moon hides</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="12" fill="#ffd23f" stroke="#151515" stroke-width="3"/><path d="M50 30 V24 M50 76 V70 M30 50 H24 M76 50 H70" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/><circle cx="50" cy="50" r="36" fill="none" stroke="#9aa5b1" stroke-width="2.5" stroke-dasharray="4 5"/><circle cx="86" cy="50" r="7" fill="#151515" stroke="#151515" stroke-width="3"/><circle cx="14" cy="50" r="7" fill="#fff" stroke="#151515" stroke-width="3"/><circle cx="50" cy="14" r="7" fill="#fff" stroke="#151515" stroke-width="3"/><path d="M50 7 a7 7 0 0 0 0 14 z" fill="#151515"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>How it works</b></p>
+      <p>The moon has no light of its own. It shines by reflecting sunlight.</p>
+      <p>On <b>Amavasya</b> (new moon), the moon sits on the <b>same side</b> of the Earth as the sun. Its lit half faces away from us, and it rises and sets with the sun. So it's up in the <b>daytime</b>, lost in the glare, and the night sky has no moon at all.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The lunar "day"</b></p>
+      <p>The Hindu calendar splits the moon's month into <b>30 tithis</b> (lunar days): 15 as the moon grows, 15 as it shrinks. <b>Amavasya is the 30th</b>, the last day of the dark half.</p>
+      <p>A tithi isn't a sunrise-to-sunrise day. It can start at <b>any hour</b>, even mid-morning.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">WAIT, REALLY?</span>
+      <p>This year Amavasya begins around <b>11 am on Sunday</b> and ends around <b>11:30 am on Monday</b> (Indian time).</p>
+      <p>The moment the moon is truly "new" comes at that end point, <b>Monday morning, in broad daylight</b>. Sunday night is the dark night closest to it.</p>
+      <p class="small">Tithi timings: Hindu Blog panchanga for 8 Nov 2026; other panchangas differ by under an hour.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>How dark is "darkest", really?</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="8" y="8" width="84" height="84" rx="12" fill="#1e293b" stroke="#151515" stroke-width="3"/><path d="M24 26 l2 5 l5 1 l-4 3 l1 5 l-4 -3 l-4 3 l1 -5 l-4 -3 l5 -1 z" fill="#ffd23f"/><circle cx="70" cy="24" r="2.5" fill="#fff"/><circle cx="52" cy="38" r="2" fill="#fff"/><circle cx="80" cy="46" r="2" fill="#fff"/><circle cx="36" cy="52" r="1.8" fill="#fff"/><path d="M8 76 Q30 64 50 72 Q70 80 92 70 V92 H8 Z" fill="#0f766e" stroke="#151515" stroke-width="3"/><path d="M40 70 h8 v-8 l4 -4 l4 4 v8" fill="#ffd23f" stroke="#151515" stroke-width="2.5"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Light on the ground, measured</b></p>
+      <div class="ladder">
+        <div class="bar">Full moon<div style="width:100%">0.25 lux</div></div>
+        <div class="bar">Quarter moon<div style="width:40%">0.01</div></div>
+        <div class="bar">No moon, stars<div class="hot" style="width:30%">0.002</div></div>
+      </div>
+      <p class="small"><b>Lux</b> measures how much light falls on a surface. A living room is about 50 lux. Figures for a clear sky: Wikipedia's Daylight table. Bars not to scale; the real gap is far bigger.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">100 TIMES DARKER</span>
+      <p>A full moon lights the ground about <b>125 times</b> more than a moonless, starlit sky (0.25 ÷ 0.002, our arithmetic).</p>
+      <p>Before electricity, that was the difference between walking home and getting lost. A moonless night was the scariest night of the month.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>MYTH / FACT</b></p>
+      <p><b>MYTH:</b> Deepavali is the darkest night of the whole year.</p>
+      <p><b>FACT:</b> Every Amavasya is equally moonless. What makes this one special is the <b>season</b>: the monsoon has gone, skies are clear, and nights are growing longer as winter comes.</p>
+      <p class="small">Verdict: it's the darkest night of the <i>festival season</i>, not of the year.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Dawn or dusk? The rule that splits India</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M8 64 H92" stroke="#151515" stroke-width="3"/><path d="M22 64 a18 18 0 0 1 36 0" fill="#ffd23f" stroke="#151515" stroke-width="3"/><path d="M40 38 V30 M26 44 l-5 -5 M54 44 l5 -5" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/><path d="M60 82 q0 -10 10 -10 h8 q10 0 10 10 z" fill="#c2410c" stroke="#151515" stroke-width="3"/><path d="M74 72 q-4 -6 0 -12 q4 6 0 12" fill="#ffd23f" stroke="#151515" stroke-width="2.5"/><path d="M12 80 q8 -6 16 0 q8 6 16 0" fill="none" stroke="#1f7ad1" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Two clocks, two rules</b></p>
+      <p><b>Most of India</b> celebrates when <b>Amavasya</b> is running just <b>after sunset</b> (called <i>pradosha</i>). That's when Lakshmi Puja is done and lamps are lit.</p>
+      <p><b>Tamil Nadu and Karnataka</b> celebrate when the day before, <b>Chaturdashi</b> (the 14th tithi), is running just <b>before sunrise</b> (<i>Brahma muhurta</i>). That's the oil bath, new clothes and dawn crackers.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Usually: South goes a day early</b></p>
+      <p>Because the South's moment comes in the <b>morning</b> and the North's in the <b>evening</b>, they usually fall on <b>different days</b>, with the South a day ahead.</p>
+      <p class="small">So in many years, Chennai has finished its crackers by the time Delhi starts.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>This year: both on Sunday</b></p>
+      <div class="chain"><span>🌅 Sun dawn: still Chaturdashi → oil bath</span><i>→</i><span>☀️ ~11 am: Amavasya begins</span><i>→</i><span class="hit">🪔 Sun dusk: Amavasya → Lakshmi Puja</span></div>
+      <p>Chaturdashi lasts till late Sunday morning, and Amavasya covers Sunday evening. So <b>one Sunday holds both</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>Same night, two month names</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>My friend in Delhi says Deepavali is in <b>Kartik</b>. Ajji says it's in <b>Ashvayuja</b>. Who's wrong?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Neither. They're looking at the <b>same night</b> and just disagree on where the month ends.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Where does a month end?</b></p>
+      <ul class="clean">
+        <li><b>Amanta</b> (Karnataka, Andhra, Telangana, Maharashtra, Gujarat): the month <b>ends on the new moon</b>. Deepavali is the last night of Ashvayuja.</li>
+        <li><b>Purnimanta</b> (most of North India): the month <b>ends on the full moon</b>. The same night is already in Kartik.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <span class="sfx b">SO THAT'S WHY</span>
+      <p>In Karnataka, <b>Karthika masa</b>, the month of lamps, starts the <b>day after</b> Deepavali (about 9 Nov this year) and runs to about 8 Dec.</p>
+      <p>In the North, Kartik ran from about <b>27 Oct</b> and ends on <b>24 Nov</b>, Kartik Purnima.</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">PART 2: WHY LAMPS ON THE DARKEST NIGHT?<small>One night, many stories</small></p>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>Everybody has a reason to light up</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 64 Q50 92 82 64 Z" fill="#c2410c" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M70 66 q12 -2 14 -10" fill="none" stroke="#151515" stroke-width="3" stroke-linecap="round"/><path d="M50 62 Q38 44 50 22 Q62 44 50 62 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M50 58 Q44 48 50 36 Q56 48 50 58 Z" fill="#e8590c"/><path d="M22 30 l4 -6 M78 30 l-4 -6 M14 44 h6 M80 44 h6" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Who</th><th>What the lamps mark</th><th>When</th></tr></thead>
+        <tbody>
+          <tr><td>North India</td><td><b>Rama</b> comes home to Ayodhya after 14 years. On a moonless night, people lit rows of lamps to light his way.</td><td>Amavasya evening</td></tr>
+          <tr><td>Tamil Nadu, Karnataka</td><td><b>Krishna and Satyabhama</b> defeat the demon <b>Narakasura</b>. Krishna is said to have taken an oil bath at dawn after the battle.</td><td>Chaturdashi dawn</td></tr>
+          <tr><td>Bengal, Assam, Odisha</td><td><b>Kali Puja</b>: the dark goddess is worshipped at midnight.</td><td>Amavasya midnight</td></tr>
+          <tr><td>Jains</td><td><b>Mahavira</b> attains nirvana at Pavapuri (Bihar), traditionally dated <b>527 BCE</b>. Lamps stand in for the light that left the world.</td><td>Dawn of Amavasya</td></tr>
+          <tr><td>Sikhs</td><td><b>Bandi Chhor Divas</b>: Guru Hargobind is freed from prison, along with other prisoners.</td><td>Same day</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <span class="sfx">WAIT, REALLY?</span>
+      <p>Jains count their own calendar, the <b>Vira Nirvana Samvat</b>, from Mahavira's nirvana. Many Jain traders start their new account books on Deepavali.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So it's five festivals sharing one dark night?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>More than five. The darkness is the one thing they all agree on.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>Lamps for the ones who came before</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M14 86 V54 L50 26 L86 54 V86 Z" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><rect x="42" y="62" width="16" height="24" fill="#0f766e" stroke="#151515" stroke-width="3"/><path d="M18 88 q4 -6 8 0 M34 88 q4 -6 8 0 M58 88 q4 -6 8 0 M74 88 q4 -6 8 0" fill="#c2410c" stroke="#151515" stroke-width="2.5"/><path d="M22 82 q-2 -4 0 -7 q2 3 0 7 M38 82 q-2 -4 0 -7 q2 3 0 7 M62 82 q-2 -4 0 -7 q2 3 0 7 M78 82 q-2 -4 0 -7 q2 3 0 7" fill="#ffd23f" stroke="#151515" stroke-width="1.5"/><path d="M70 14 q-8 0 -8 8 q8 0 8 -8 z" fill="#ffd23f" stroke="#151515" stroke-width="2.5"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Bengal's 14 lamps</b></p>
+      <p>On the night before Kali Puja, called <b>Bhoot Chaturdashi</b>, Bengali homes light <b>14 small lamps</b> in the dark corners of the house.</p>
+      <p>The belief: <b>14 generations of ancestors</b> visit that night, and the lamps guide them home and keep unwanted spirits away. Families also eat a dish of <b>14 leafy greens</b>.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">INDIA'S HALLOWEEN?</span>
+      <p>People sometimes call it Bengal's Halloween. But where Halloween is about scaring, this is about <b>welcoming</b> family back for one night.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The month of ancestors</b></p>
+      <p>The new moon before this one, <b>Mahalaya Amavasya</b> (10 Oct this year), ends <b>Pitru Paksha</b>, the fortnight of offerings to ancestors. Some families believe the Deepavali lamps light the ancestors' path back.</p>
+      <p class="small">A belief that varies by family and region, not one single rule.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>The farmer's reason</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 90 Q28 50 40 20 M50 90 Q50 50 56 16 M70 90 Q72 52 64 22" fill="none" stroke="#2a9d5c" stroke-width="4" stroke-linecap="round"/><ellipse cx="40" cy="22" rx="6" ry="12" fill="#ffd23f" stroke="#151515" stroke-width="3" transform="rotate(10 40 22)"/><ellipse cx="56" cy="18" rx="6" ry="12" fill="#ffd23f" stroke="#151515" stroke-width="3"/><ellipse cx="64" cy="24" rx="6" ry="12" fill="#ffd23f" stroke="#151515" stroke-width="3" transform="rotate(-12 64 24)"/><path d="M20 90 H80" stroke="#151515" stroke-width="3"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The granary is full</b></p>
+      <p>Deepavali comes just after the <b>kharif</b> (monsoon-season) harvest: rice, maize, cotton and pulses are in. Many historians think it began as a <b>harvest festival</b>.</p>
+      <p>Full stores, cash in hand, new grain: no wonder it's the night to thank <b>Lakshmi</b>, goddess of wealth.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>A new year, for some</b></p>
+      <p>In <b>Gujarat</b>, the new year begins right after Deepavali. In the North, Deepavali marks the start of a new <b>Vikram Samvat</b> year for many traders, who open fresh account books.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The cow's turn</b></p>
+      <p>The day after the new moon is <b>Balipadyami</b> in Karnataka. Farm families bathe their cows, decorate them with turmeric, kumkum and flowers, and feed them rice and jaggery (<b>Gopuja</b>).</p>
+    </div>
+  </div>
+</section>
+
+<p class="era p4">THE DEEP DIVE<small>The research behind the festival</small></p>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>The maths: how India stops Deepavali drifting into summer</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The 11-day problem</b></p>
+      <ul class="clean">
+        <li>One moon month: <b>29.53 days</b></li>
+        <li>12 moon months: <b>354.37 days</b></li>
+        <li>One sun year: <b>365.25 days</b></li>
+        <li>Gap: about <b>10.9 days a year</b></li>
+      </ul>
+      <p>Left alone, after <b>9 years</b> Deepavali would be about <b>99 days</b> early, around the monsoon. After about <b>33 years</b> it would go right round the calendar.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The fix: an extra month</b></p>
+      <p>About every <b>32–33 months</b>, the gap adds up to one whole moon month. So the calendar adds a <b>13th month</b>, called <b>Adhika masa</b> (the extra month).</p>
+      <p>That's the "leap forward" you saw in EP 1: 17 Oct in 2028, then 5 Nov in 2029.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">WAIT, REALLY?</span>
+      <p><b>2026 is one of those years.</b> An extra Jyeshtha month ran in June, so this year has <b>13 new moons</b> on the panchanga instead of 12.</p>
+      <p class="small">Adhika Jyeshtha Amavasya: 15–16 June 2026 (SmartPuja Amavasya list). Islamic months add no extra month, which is why Ramzan moves through every season.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>History: 1,500+ years of lamp nights, in writing</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 18 H72 Q82 18 82 28 V84 H28 Q18 84 18 74 Z" fill="#f6ead2" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><path d="M18 74 Q18 64 28 64 H82" fill="none" stroke="#151515" stroke-width="3"/><path d="M30 30 H70 M30 40 H66 M30 50 H70" stroke="#8a4b1f" stroke-width="3" stroke-linecap="round"/><path d="M56 82 q0 -6 6 -6 h6 q6 0 6 6 z" fill="#c2410c" stroke="#151515" stroke-width="2.5"/><path d="M65 76 q-3 -5 0 -9 q3 4 0 9" fill="#ffd23f" stroke="#151515" stroke-width="2"/></svg>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>When</th><th>Who wrote it</th><th>What they called it</th></tr></thead>
+        <tbody>
+          <tr><td>50–400 CE</td><td>The Kamasutra mentions a new-moon festival of Kartika; a 12th-century Jain scholar, Hemachandra, matched it to Deepavali</td><td>Yaksharatri</td></tr>
+          <tr><td>7th century</td><td>Emperor Harsha's Sanskrit play <i>Nagananda</i>: lamps lit, gifts for newly engaged couples</td><td>Deepapratipadutsava</td></tr>
+          <tr><td>9th century</td><td>Poet Rajashekhara: homes whitewashed, lamps on streets and markets</td><td>Dipamalika</td></tr>
+          <tr><td>939–967 CE</td><td>A copper-plate grant of Rashtrakuta king <b>Krishna III</b>, a Deccan dynasty that ruled much of Karnataka</td><td>Dipotsava</td></tr>
+          <tr><td>About 1030 CE</td><td>Persian scholar <b>al-Biruni</b>: Hindus celebrate on the new moon of Kartika</td><td>Deepavali</td></tr>
+          <tr><td>About 1520</td><td>Portuguese visitor <b>Domingo Paes</b> at Vijayanagara (Hampi): homes and temples lit with lamps</td><td>Dipavali</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Most of these were traced by the historian P.K. Gode (via JSTOR Daily and Wikipedia's Diwali article).</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">KARNATAKA WAS THERE</span>
+      <p>A <b>12th-century</b> inscription in mixed Sanskrit and Kannada, found in a temple in <b>Dharwad</b>, calls the festival a "sacred occasion". The new-moon timing was already the rule.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the new-moon date is at least 1,000 years old?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>al-Biruni wrote it down nearly a thousand years ago. The custom is older than the record.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>Three ways to run a calendar</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <table class="vs">
+        <thead><tr><th>Type</th><th>Follows</th><th>Year length</th><th>What happens to festivals</th></tr></thead>
+        <tbody>
+          <tr><td>Solar (Gregorian)</td><td>Sun only</td><td>365.25 days</td><td>Fixed date. Christmas is always 25 Dec, in every moon phase.</td></tr>
+          <tr><td>Lunar (Islamic)</td><td>Moon only</td><td>~354 days</td><td>Drifts ~11 days a year. Ramzan visits every season in about 33 years.</td></tr>
+          <tr><td>Lunisolar (Hindu, Jewish, Chinese)</td><td>Moon for months, sun for seasons</td><td>354 or ~384 days (with an extra month)</td><td class="ok">Stays in its season. Deepavali always falls between mid-Oct and mid-Nov.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <span class="sfx">COUSINS</span>
+      <p><b>Chinese New Year</b> also falls on a new moon, and also moves by weeks each year, for the same reason. Two of Asia's biggest festivals are timed by the dark moon.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Why the moon at all?</b></p>
+      <p>Before printed calendars, the moon was the one clock everyone could read for free. A farmer anywhere could look up and know how many nights were left to Amavasya.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>What NASA says about "Diwali from space"</h2></div>
+  <svg class="ill" viewBox="0 0 100 100" aria-hidden="true"><rect x="38" y="38" width="24" height="24" fill="#cfd6dd" stroke="#151515" stroke-width="3"/><rect x="6" y="42" width="28" height="16" fill="#1d4ed8" stroke="#151515" stroke-width="3"/><rect x="66" y="42" width="28" height="16" fill="#1d4ed8" stroke="#151515" stroke-width="3"/><path d="M15 42 V58 M24 42 V58 M75 42 V58 M84 42 V58" stroke="#fff" stroke-width="2"/><path d="M50 62 V74" stroke="#151515" stroke-width="3"/><path d="M42 82 a8 8 0 0 1 16 0" fill="#ffd23f" stroke="#151515" stroke-width="3"/><path d="M34 90 l-6 6 M66 90 l6 6 M50 90 v8" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>MYTH</b></p>
+      <p>Every year a glowing, colourful map of India goes viral as "NASA's photo of India on Diwali night".</p>
+    </div>
+    <div class="panel green">
+      <p class="cap"><b>FACT</b></p>
+      <p>NASA's Earth Observatory says that picture <b>does not show Diwali</b>. It's a <b>2003</b> image made by a US government (NOAA) scientist, with colours marking which city lights appeared in 1992, 1998 and 2003: a map of <b>population growth</b>.</p>
+      <p>NASA's own satellite view on Diwali 2012 looks like any other night. It says the extra light is so subtle it's likely <b>impossible to see from space</b>.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">BUT...</span>
+      <p>In 2020, a UK satellite-data firm compared the same sensor's images of <b>Ayodhya</b> a week apart. On the night of the record diya-lighting at the river ghats, the brightness <b>did show up</b>.</p>
+      <p class="small">One city, one record-breaking night, not the whole country. Source: Pixalytics blog (Nov 2020), NOAA data.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>The Karnataka angle: Deepavali, our way</h2></div>
+  <svg class="ill r" viewBox="0 0 100 100" aria-hidden="true"><path d="M22 52 Q22 30 50 30 Q78 30 78 52 L74 82 H26 Z" fill="#b45309" stroke="#151515" stroke-width="3" stroke-linejoin="round"/><ellipse cx="50" cy="30" rx="22" ry="7" fill="#1f7ad1" stroke="#151515" stroke-width="3"/><path d="M34 54 q16 10 32 0" fill="none" stroke="#fff" stroke-width="3"/><circle cx="50" cy="64" r="4" fill="#e63946" stroke="#151515" stroke-width="2"/><path d="M40 20 q2 -8 0 -12 M50 20 q2 -8 0 -12 M60 20 q2 -8 0 -12" fill="none" stroke="#9aa5b1" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>How we do it</b></p>
+      <div class="chain"><span>💧 Neeru tumbuva habba: scrub and fill the water pots</span><i>→</i><span>🛁 Naraka Chaturdashi: oil bath before dawn</span><i>→</i><span>🪔 Amavasya: Lakshmi Puje</span><i>→</i><span class="hit">👑 Balipadyami: King Bali visits</span></div>
+      <p>Morning greeting on the big day: "<b>Ganga snana aytha?</b>" (Had your Ganga bath?). The belief: before sunrise, all water counts as Ganga water, even a bucket.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The king who comes back</b></p>
+      <p>On <b>Balipadyami</b>, the generous demon-king <b>Bali Chakravarthi</b> is believed to rise from the underworld for one day, a boon from Vishnu as Vamana. Kerala welcomes the same king at <b>Onam</b>.</p>
+      <p>The story was carved in stone at <b>Badami</b>, in Cave 2 and Cave 3, back in the <b>6th–7th century</b>.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">ONLY IN KARNATAKA</span>
+      <ul class="clean">
+        <li>Many homes call it the festival of <b>sons-in-law</b>: the aliya is invited, gifted and fed royally (Star of Mysore).</li>
+        <li>In <b>Gummatapura</b>, Deepavali ends with <b>Gorehabba</b>, a village cow-dung fight.</li>
+        <li>In the <b>Malnad</b>, herb water is filled for the oil bath, and singing groups go house to house (<b>antige pintige</b>).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>OPINION: Prof. Bolt's verdict</h2></div>
+  <div class="grid">
+    <div class="panel green">
+      <span class="sfx">GENIUS</span>
+      <p><b>The date isn't random. It's an ancient piece of astronomy.</b> A calendar that tracks the moon, corrects itself against the sun every 2–3 years, and has kept a festival in the same season for over a thousand years.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">WE'RE MISSING THE POINT</span>
+      <p><b>The festival is about light beating darkness, but most of us never see the darkness any more.</b> City lights drown the moonless sky. We light lamps against a sky that's already orange.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">MY TAKE</span>
+      <p><b>Notice the dark before you light the lamp.</b> The festival works best when you first see how dark a no-moon night really is. That's the night our ancestors saw.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Sunday dawn</b></p>
+      <ul class="clean">
+        <li>Oil bath before sunrise: it's still Chaturdashi.</li>
+        <li>Ask the elders "Ganga snana aytha?"</li>
+        <li>Light the first lamp at dawn, Karnataka style.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Sunday night</b></p>
+      <ul class="clean">
+        <li>Before the lamps go up, switch off the lights for <b>5 minutes</b>. Look up. No moon anywhere.</li>
+        <li>Then light the diyas and feel the difference.</li>
+        <li>Lamps first, crackers later. Your neighbours' pets will thank you.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Keep the curiosity going</b></p>
+      <ul class="clean">
+        <li>Check a panchanga for <b>your city</b>: tithi timings shift by place.</li>
+        <li>Watch the moon grow nightly till full moon on <b>24 Nov</b>.</li>
+        <li>Visiting Badami? Find Vamana and Bali in the caves.</li>
+      </ul>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the darkness is part of the festival?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>It's the whole reason for it. Happy Deepavali.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>How it works</b></p><ul class="clean">
+      <li>🌑 Deepavali = Amavasya, the no-moon night.</li>
+      <li>📅 Moon year ≈ 354 days, so the date moves ~11 days.</li>
+      <li>🌅 South: Chaturdashi at dawn. 🌇 North: Amavasya at dusk.</li>
+      <li>🎯 2026: both on Sunday 8 Nov.</li>
+      <li>🌕 Full moon is ~125× brighter than a starlit night.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>➕ Extra month every ~32–33 months keeps it in autumn.</li>
+      <li>🔢 2026 has 13 new moons (extra Jyeshtha).</li>
+      <li>📜 Written about since at least the 7th century; al-Biruni, ~1030 CE.</li>
+      <li>🛰️ The viral "NASA Diwali photo" is a 2003 population map.</li>
+      <li>🗿 Bali and Vamana: carved at Badami, 6th–7th century.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>✅ Oil bath before sunrise.</li>
+      <li>✅ 5 minutes of darkness before the lamps.</li>
+      <li>✅ Check your city's panchanga.</li>
+      <li>❌ Forward the fake NASA photo.</li>
+      <li>❌ Call it "the darkest night of the year".</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the facts and dates are real. Sources: Diwali 2026 dates and five-day calendar (Vedantu, Shlokam, HinduTone, SmartPuja; Drik Panchang via Vedantu), Hindu Blog panchanga for 8 Nov 2026 (tithi timings), SmartPuja Amavasya 2026 list (13 Amavasyas, Adhika Jyeshtha), UniversalTimeDate (Diwali 2026–2030 dates), Wikipedia "Adhika-masa" and HinduTone (lunar–solar gap), Wikipedia "Daylight" and "Orders of magnitude (illuminance)" (lux values), Kaieteur News (timing of the new moon), Drik Panchang (Tamil Deepavali and Naraka Chaturdashi rules), Wikipedia "Naraka Chaturdashi", HuffPost India, Muhuratam, HinduTone and AstroMedha (Amanta and Purnimanta; Karthika Masam 2026 dates), Wikipedia "Diwali (Jainism)" and JAINA (Mahavira's nirvana), Lincolnshire ICB (Bandi Chhor Divas), The CSR Journal, Homegrown and Telegraph India (Bhoot Chaturdashi), HinduTone and Factsanddetails (harvest link), Udayavani and News on AIR (Balipadyami, Gopuja), JSTOR Daily on P.K. Gode's research and Wikipedia "Diwali" (historical references, Rashtrakuta and Dharwad inscriptions, al-Biruni, Domingo Paes), Wikipedia "Balipratipada" (Badami carvings), NASA Earth Observatory "South Asian Night Lights" (Nov 2012) and Digiteye fact check, Pixalytics (Ayodhya VIIRS images, Nov 2020), Madhwa Festivals (Ganga snana), Star of Mysore (sons-in-law), Free Malaysia Today (Gorehabba, Gummatapura), Slurrp (Malnad Deepavali). Figures marked "our arithmetic" are our own calculations. Figures rounded. Tithi timings vary by a few minutes from city to city. Prof. Bolt's verdict is opinion.</p>
+<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
+function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
+if(p==='/'){set(true);return;}
+fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
