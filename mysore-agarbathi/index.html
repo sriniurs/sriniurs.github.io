@@ -1,0 +1,488 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+<link rel="canonical" href="https://sriniurs.github.io/mysore-agarbathi/"><meta property="og:title" content="Mysore Agarbathi: The Smoke That Made Mysuru Famous"><meta property="og:description" content="The people, craft and business behind Mysuru’s fragrant sticks."><meta property="og:url" content="https://sriniurs.github.io/mysore-agarbathi/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><style>.publication-nav{max-width:1060px;margin:0 auto 20px;font:700 15px/1.4 system-ui,sans-serif}.publication-nav a{display:inline-block;padding:9px 16px;border:2px solid currentColor;border-radius:99px;color:inherit;text-decoration:none;background:var(--panel,#fff)}.publication-nav a:focus-visible{outline:3px solid #1f7ad1;outline-offset:4px}.publication-nav.end{margin:28px auto 0;text-align:center}</style></head><body><nav class="publication-nav" aria-label="Article navigation"><a href="/">← All articles</a></nav>
+<title>Mysore Agarbathi: The Smoke That Made Mysuru Famous</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+.smoke{background:#efe6da;color:#151515}
+</style>
+
+<main class="wrap">
+
+<header class="cover">
+  <div>
+    <p class="byline">Srini presents</p>
+    <h1>Mysore Agarbathi: The Smoke That Made Mysuru Famous</h1>
+    <p class="sub">A Maharaja's patronage, a ₹4,000 start in 1948, and today billions of sticks a year from Mysuru to 75+ countries. A curious young learner who lights one every morning asks how a humble stick became a global business. A wise mentor who grew up with the smell of the incense lanes explains.</p>
+    <div class="fs"><span>Mysuru</span><span>Incense</span><span>How it works</span><span>Karnataka jobs</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, lights an agarbathi every morning</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, grew up with the smell of the incense lanes</span></figure>
+  </div>
+</header>
+
+<p class="era">THE PAST<small>From "oodabathi" to a Mysuru brand</small></p>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>The king who sold incense to the world</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="48" width="72" height="38" fill="#fff3c4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M38 48 Q38 28 50 22 Q62 28 62 48 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 22 V12" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 12 L60 15 L50 18" fill="#e63946" stroke="#151515" stroke-width="2"/><path d="M14 48 Q14 38 22 34 Q30 38 30 48 M70 48 Q70 38 78 34 Q86 38 86 48" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M44 86 V68 Q50 60 56 68 V86" fill="#8d5a3b" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M20 76 V64 Q24 58 28 64 V76" fill="#cdeffd" stroke="#151515" stroke-width="2"/><path d="M30 76 V64 Q34 58 38 64 V76" fill="#cdeffd" stroke="#151515" stroke-width="2"/><path d="M62 76 V64 Q66 58 70 64 V76" fill="#cdeffd" stroke="#151515" stroke-width="2"/><path d="M72 76 V64 Q76 58 80 64 V76" fill="#cdeffd" stroke="#151515" stroke-width="2"/><circle cx="18" cy="50" r="1.8" fill="#e8590c"/><circle cx="26" cy="50" r="1.8" fill="#e8590c"/><circle cx="34" cy="50" r="1.8" fill="#e8590c"/><circle cx="42" cy="50" r="1.8" fill="#e8590c"/><circle cx="50" cy="50" r="1.8" fill="#e8590c"/><circle cx="58" cy="50" r="1.8" fill="#e8590c"/><circle cx="66" cy="50" r="1.8" fill="#e8590c"/><circle cx="74" cy="50" r="1.8" fill="#e8590c"/><circle cx="82" cy="50" r="1.8" fill="#e8590c"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Every pooja room in India smells of agarbathi. When did Mysuru get into it?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Over a hundred years ago. Locals called them <b>oodabathi</b>, "sticks that blow fumes". In the early 1900s it became an organised industry around Bengaluru and Mysuru.</p></div>
+    </div>
+    <div class="panel smoke">
+      <p class="cap"><b>Royal backing</b></p>
+      <p>The <b>Maharaja of Mysore</b> supported making and promoting the sticks. After they won a <b>certificate of merit at the Wembley exhibition</b> in London, the kingdom handed them to foreign visitors as gifts, to push exports.</p>
+      <p class="sfx">WHOOSH!</p>
+    </div>
+    <div class="panel">
+      <p class="take">Karnataka's forests were rich in two key ingredients: <b>sandalwood</b>, and <b>halmaddi</b>, a sticky grey resin from the <i>Ailanthus</i> tree.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>1948: a ₹4,000 start</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="26" cy="64" r="18" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="74" cy="64" r="18" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="26" cy="64" r="3" fill="#151515"/><circle cx="74" cy="64" r="3" fill="#151515"/><path d="M26 64 L42 38 H68 L74 64 M42 38 L50 64 L68 38 M50 64 L26 64" fill="none" stroke="#e63946" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><path d="M38 32 H48 M64 30 L68 38 M62 28 H72" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="70" y="44" width="16" height="10" rx="2" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M12 22 q4 -6 10 -2 M14 14 q8 -8 16 -2" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Mysuru, the year after Independence</b></p>
+      <p>A young man named <b>N. Ranga Rao</b>, who lost his father as a boy, had been making agarbathis at home with his grandmother. Buy raw material in the morning, make sticks, sell them, use the money for the next day.</p>
+      <p>In <b>1948</b> he set up shop in Mysuru with about <b>₹4,000</b>. By <b>1958</b> sales were close to <b>₹10 lakh</b> a year.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Why name an incense brand after a <b>cycle</b>?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Smart marketing. The business began in 1948; the <b>Cycle</b> brand came in <b>1950</b>. A cycle meant freedom, and it's called a "cycle" in every Indian language. One word, the whole country understood it.</p></div>
+    </div>
+    <div class="panel">
+      <p class="take">He treated a loose, unbranded product as a <b>brand</b>, with his own fragrance lab and packaging. That idea built Mysuru's biggest incense name. Today his grandson, <b>Arjun Ranga</b>, runs it as the third generation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>A smell with a legal address</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>2005: the GI tag</b></p>
+      <div class="big"><b>Mysore Agarbathi</b></div>
+      <p>It was among the very first products in India to get a <b>Geographical Indication (GI)</b> tag, in the same early batch as Mysore Silk. The application came from the national agarbathi makers' association.</p>
+      <p>The tag covers agarbathi made across <b>Karnataka</b>, the old <b>Mysore State</b>, not just Mysuru city.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>What does a GI tag actually do?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>It ties a name to a place, like Darjeeling tea. The reason given: its history, and materials from the region's forests, like sandalwood and halmaddi.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p2">HOW IT WORKS<small>From bamboo to your pooja room</small></p>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>Anatomy of one stick</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M30 86 H70 L64 76 H36 Z" fill="#8d5a3b" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 76 L58 30" stroke="#8d5a3b" stroke-width="4" stroke-linecap="round"/><path d="M53 58 L58 30" stroke="#151515" stroke-width="2"/><circle cx="58" cy="29" r="3" fill="#e8590c" stroke="#151515" stroke-width="2"/><path d="M58 24 Q50 18 58 12 Q66 6 58 2 M64 26 Q74 20 68 12" fill="none" stroke="#9aa4ad" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="40" r="3" fill="#ffd23f" stroke="#151515" stroke-width="1.5"/><circle cx="80" cy="46" r="3" fill="#ffd23f" stroke="#151515" stroke-width="1.5"/><circle cx="30" cy="60" r="3" fill="#ffd23f" stroke="#151515" stroke-width="1.5"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The supply line</b></p>
+      <div class="chain">
+        <span>Thin bamboo stick</span><i>→</i>
+        <span>Paste rolled on: a charcoal mix, or a herb-and-resin masala</span><i>→</i>
+        <span>Dried in the shade or sun</span><i>→</i>
+        <span class="hit">Charcoal sticks are dipped in perfume; masala sticks already carry their scent</span><i>→</i>
+        <span>Packed and shipped</span>
+      </div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Two big families</b></p>
+      <p><b>Dipped sticks:</b> a dried charcoal-coated stick soaked in fragrance oil. Cheaper, and most common in shops.</p>
+      <p><b>Masala sticks:</b> a thick paste of herbs, resins and sandalwood rolled onto the bamboo, then dried. The famous <b>Nag Champa</b>, made in Bengaluru since the 1960s, uses grey, sticky <b>halmaddi</b> resin. That's why it feels slightly soft.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the smell is just the last step?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The smell is the brand. The stick is the delivery van. Some makers, like the Mysuru firm, create hundreds of fragrances in their own labs; many others buy ready-made ones.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>The China and Vietnam twist</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g><rect x="22" y="8" width="12" height="84" rx="4" fill="#9fd3b4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M22 30 H34" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M22 54 H34" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M22 76 H34" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></g><g><rect x="44" y="8" width="12" height="84" rx="4" fill="#9fd3b4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M44 30 H56" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M44 54 H56" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M44 76 H56" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></g><path d="M70 92 L82 20 M76 92 L86 24 M82 92 L90 30" stroke="#d9b38c" stroke-width="3" stroke-linecap="round"/><path d="M56 30 Q70 22 72 12 Q62 16 56 30 Z" fill="#2bb673" stroke="#151515" stroke-width="2"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>What went wrong</b></p>
+      <p>In <b>2011</b> import duty on raw sticks was cut from <b>30% to 10%</b>. Cheap raw agarbathis poured in from China and Vietnam.</p>
+      <div class="ladder">
+        <div class="bar">2009<div style="width:35%">2% imported</div></div>
+        <div class="bar">2019<div class="hot" style="width:100%">80% imported</div></div>
+      </div>
+      <p class="small">Raw-agarbathi imports went from about ₹31 crore (2009) to ₹546 crore (2019), per KVIC.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The fix, in two steps</b></p>
+      <p><b>31 Aug 2019:</b> import of raw agarbathi put in the "restricted" list.</p>
+      <p>Makers then imported plain bamboo sticks instead: ₹210 crore → ₹370 crore in one year.</p>
+      <p><b>June 2020:</b> duty on bamboo sticks raised from <b>10% to 25%</b>.</p>
+      <p class="sfx r">PLOT TWIST!</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>India grows tons of bamboo. Why import sticks at all?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Importers say much Indian bamboo is too fibrous and jams the machines. The right variety grows mostly in the North-East, far from Karnataka's factories.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p3">THE PRESENT<small>A ₹8,000-crore daily habit</small></p>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>The size of the smoke</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M30 40 Q20 54 22 70 Q26 88 50 88 Q74 88 78 70 Q80 54 70 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 40 L30 26 Q50 20 70 26 L64 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M34 40 H66" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" font-family="Arial Black,Arial" font-weight="900" font-size="26" text-anchor="middle" fill="#fff">₹</text><path d="M82 30 L88 22 M86 40 L94 38 M78 22 L80 14" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="big"><b>₹8,000 cr</b></div>
+      <p>Retail value of India's agarbathi market, with <b>82%</b> of homes using it (industry estimate, July 2025). Some estimates go to ₹10,000–12,000 crore.</p>
+    </div>
+    <div class="panel">
+      <div class="big"><b>~₹1,000 cr</b></div>
+      <p>exported every year to about <b>125 countries</b>. The <b>USA</b> is the biggest buyer.</p>
+      <p class="small">Nigeria burns the most incense per person, says Mysuru's biggest maker.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Karnataka's share</b></p>
+      <div class="big"><b>~50%</b></div>
+      <p>of India's agarbathi manufacturing happens in Karnataka, mainly around Bengaluru and Mysuru.</p>
+      <p class="take">Half of India's agarbathi, and most of its exports, come from one state: ours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>From Mysuru, 12 billion sticks</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="34" fill="#cdeffd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M30 30 Q40 26 44 34 Q40 42 46 48 Q42 58 32 54 Q26 44 30 30 Z M58 22 Q70 24 76 36 Q68 40 62 36 Q56 30 58 22 Z M56 56 Q66 52 72 60 Q70 74 60 78 Q54 68 56 56 Z" fill="#2bb673" stroke="#151515" stroke-width="2" stroke-linejoin="round"/><path d="M8 66 Q50 92 92 40" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 6"/><path d="M86 34 l8 4 -6 6" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The 1948 start-up, today</b> (company figures, Sept 2026)</p>
+      <div class="big"><b>12 billion</b></div>
+      <p>sticks a year across its manufacturing network, sold through about <b>5,000 distributors</b> and <b>5 lakh shops</b> in India, and in <b>75+ countries</b>.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Beyond the stick</b></p>
+      <ul class="clean">
+        <li>In April 2026 it took a majority stake in an online pooja-items brand, chasing the whole "devotional basket".</li>
+        <li>It collects flowers offered at Mysuru temples and turns them into agarbathis.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>12 billion a year! How many is that a day?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>About <b>3.3 crore sticks every day</b>. Line them up and they'd stretch round the Earth more than once a week.</p></div>
+    </div>
+  </div>
+</section>
+
+<p class="era p4">THE DEEP DIVE<small>The research behind the smoke</small></p>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>India vs China, the incense league</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M8 66 H92 L82 84 H18 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="20" y="50" width="16" height="16" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="38" y="50" width="16" height="16" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="56" y="50" width="16" height="16" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="38" y="34" width="16" height="16" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="74" y="40" width="10" height="26" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M4 92 Q14 86 24 92 T44 92 T64 92 T84 92 T100 92" fill="none" stroke="#2a9df4" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel wide">
+      <p class="cap"><b>Top exporters of incense and similar products, 2022</b> (OEC trade data)</p>
+      <table class="vs">
+        <thead><tr><th>Country</th><th>Exports</th><th>What it means</th></tr></thead>
+        <tbody>
+          <tr><td>China</td><td>$218 million</td><td>Biggest overall, includes joss sticks and coils</td></tr>
+          <tr><td>India</td><td>$138 million</td><td>No. 2, strongest in agarbathi itself</td></tr>
+          <tr><td>UAE</td><td>$36 million</td><td>Mostly bakhoor and re-exports</td></tr>
+          <tr><td>Vietnam</td><td>$24 million</td><td>Also a big supplier of raw bamboo sticks</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So we're second in a product we invented?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Second in this wider trade group. In masala-style agarbathi, Indian makers lead. The industry's goal is to make India the world's incense hub.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>The Karnataka engine</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M14 30 L36 20 L64 30 L86 20 V72 L64 82 L36 72 L14 82 Z" fill="#fff3c4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 20 V72 M64 30 V82" stroke="#151515" stroke-width="2"/><path d="M50 64 Q34 46 38 36 Q42 26 50 26 Q58 26 62 36 Q66 46 50 64 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="38" r="5" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 60 Q30 50 42 58" fill="none" stroke="#2a9df4" stroke-width="2.5" stroke-dasharray="2 4" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Three numbers</b></p>
+      <ul class="clean">
+        <li><b>60%+</b> of India's agarbathi makers are in Karnataka (2019 report).</li>
+        <li><b>~95%</b> of agarbathi exporters are based in Karnataka, says the industry body's past president (2020).</li>
+        <li>The national makers' association started in <b>1949</b>, and its big trade expo is held in Bengaluru.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>And the sandalwood that made it famous?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Much scarcer now. Most sticks today use other fragrances. That story deserves its own episode, and Mysuru will get one soon.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>Prof. Bolt's verdict (opinion)</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>What Mysuru got right</b></p>
+      <p>It turned a smell into a <b>brand</b>, a brand into exports, and kept the headquarters at home. Few Indian consumer products travel this far from one small city.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The weak link</b></p>
+      <p>Raw materials. The right bamboo and the old forest resins are increasingly imported or scarce. A fragrance capital needs its own supply line.</p>
+    </div>
+    <div class="panel">
+      <p class="take">My read: the next win isn't just more sticks. It's home-grown bamboo, premium natural fragrances, and taking the Mysore name to many more countries.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>So what should Zappy do?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Notice what you burn</b></p>
+      <ul class="clean">
+        <li>🌿 Try a masala stick and a dipped stick side by side; you'll smell the difference.</li>
+        <li>🔥 Read the pack: the flower or resin named is the fragrance, the bamboo is just the carrier.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>When you buy</b></p>
+      <ul class="clean">
+        <li>🏷️ Check where it's made. A Karnataka-made packet supports local jobs.</li>
+        <li>🎁 A box of Mysore agarbathi makes a good gift for friends abroad, just like the Maharaja's guests got.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>If you visit Mysuru</b></p>
+      <p>Look for the "Mysore Agarbathi" name. It's a GI-tagged product, in the same club as Mysore Silk and Mysore Sandal Soap.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><p><b>The story</b></p><ul class="clean">
+      <li>🏰 Maharaja-backed "oodabathi", prized at Wembley.</li>
+      <li>🚲 1948: a ₹4,000 Mysuru start; the Cycle brand in 1950.</li>
+      <li>🏷️ 2005: GI tag for Mysore Agarbathi, covering all of Karnataka.</li>
+    </ul></div>
+    <div class="panel"><p><b>Deep dive</b></p><ul class="clean">
+      <li>💰 ₹8,000 cr market; ~₹1,000 cr exports; US top buyer.</li>
+      <li>📍 ~50% made in Karnataka.</li>
+            <li>🚢 Imports went 2% → 80%, then were curbed in 2019–20.</li>
+    </ul></div>
+    <div class="panel"><p><b>Your move</b></p><ul class="clean">
+      <li>🌿 Try masala vs dipped.</li>
+      <li>🏷️ Read where it's made.</li>
+      <li>🎁 Gift the Mysore name.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">Zappy and Prof. Bolt are made-up characters; the facts are real. Sources: Wikipedia and KSTDC (oodabathi, Maharaja, Wembley, 2005 GI tag); IP India GI registry; Business Today (22 Oct 2022) and YourStory (1948 start, ₹4,000, 1958 sales); afaqs (name "Cycle", Nigeria); impactonnet (8 Sept 2026: 12 billion sticks, 5,000 distributors, 5 lakh outlets, 75+ countries; Apr 2026 Satvik stake); The Week (18 Jul 2025: ₹8,000 cr, 82%, ~₹1,000 cr exports, 125 countries, Karnataka ~50%, AIAMA 1949); Civil Society (2020: 95% of exporters in Karnataka); The Caravan (2019: 60%+ of makers in Karnataka); KVIC via PSU Watch, GKToday, Krishi Jagran (2009–2020 import figures and duties); Sugandh India (bamboo suitability); OEC (2022 exports). Figures rounded.</p>
+
+</main>
+<nav class="publication-nav end" aria-label="Article navigation"><a href="/">← All articles</a></nav></body></html>
