@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The QR Code Trap | Srini presents | 7 November 2026</title>
+<meta name="description" content="A five-minute illustrated guide to robotic-assisted total knee replacement: precision, pain, recovery, implant longevity and what the latest evidence actually shows.">
+<meta property="og:title" content="Can a Robot Give You a Better Knee?">
+<meta property="og:description" content="Robotics improves surgical precision. But does it reliably improve pain, recovery or implant life? A patient-friendly look at the evidence.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sriniurs.github.io/archive/2026-11-06-can-a-robot-give-you-a-better-knee.html">
+<meta name="theme-color" content="#ffc6cf">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}.cover.t-sat .byline{color:#5b2b86}.cover.t-sat .daytag{background:#151515;color:#fff}.cover.t-sat .fs span{color:#151515}@media(max-width:600px){.cover.t-sat h1{font-size:clamp(2.15rem,10vw,3.2rem)}}
+</style>
+<style>
+
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+
+</style>
+<style>
+
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+
+</style>
+<style>
+
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+
+</style>
+<style>
+
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+
+</style>
+<style>
+
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+
+</style>
+<style>
+
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+
+</style>
+<style>
+
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+
+</style>
+<style>
+
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+
+</style>
+<style>
+
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+
+</style>
+<style>
+
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+
+</style>
+<style>
+.foot a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.foot{max-width:88ch;line-height:1.55;text-align:left}
+.panel:has(table.vs.stk){overflow:visible}
+@media(max-width:640px){.wrap{gap:28px}.ep{padding:14px}.cover{padding:22px 17px}.cover h1{font-size:clamp(42px,12vw,64px)}.cover .sub{font-size:17.5px}.cast figure{max-width:135px}.foot{font-size:15px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<main class="wrap"><header class="cover t-sat"><div><span class="daytag">SATURDAY</span><p class="byline">Srini presents</p><h1>The QR Code Trap</h1><p class="sub">Zappy sells his old sofa. A buyer offers ₹8,000 and sends a QR code. “Scan this to receive the money,” he says. What happens next?</p><div class="fs"><span>Living Smart</span><span>UPI safety</span><span>QR code tricks</span><span>Protect your money</span></div></div><div class="cast"><figure><svg viewBox="0 0 64 64"><use href="#kiran"></use></svg>Zappy<br><span style="font-weight:400">curious learner</span></figure><figure><svg viewBox="0 0 64 64"><use href="#guru"></use></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor</span></figure></div></header><p class="era">PART 1: THE BAIT<small>A tempting offer</small></p><section class="ep"><div class="ep-head"><span class="no">EP 1</span><h2>The sofa, the buyer and the twist</h2></div><svg class="ill r" viewBox="0 0 100 100" role="img" aria-label="Flat illustration of mobile UPI payment"><rect x="15" y="6" width="70" height="88" rx="12" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="29" y="14" width="42" height="64" rx="5" fill="#d7edff" stroke="#151515" stroke-width="3"/><path d="M38 30h24M38 40h24" stroke="#151515" stroke-width="3"/><circle cx="50" cy="61" r="12" fill="#ffd23f" stroke="#151515" stroke-width="2"/><text x="50" y="68" font-size="20" text-anchor="middle">₹</text><path d="M72 40l18 10-18 10" stroke="#e63946" stroke-width="4" fill="none"/></svg><div class="grid"><div class="panel"><p>A stranger offers ₹8,000 for Zappy’s second-hand sofa. Then comes a QR code with the instruction: “Scan it to receive your money.”</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>Why should I scan his code if he is paying me?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>That is the right question. Someone sending you money should not need you to authorise an outgoing payment.</div></div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 2</span><h2>The direction of money</h2></div><div class="grid"><div class="panel"><p>A UPI payment QR normally identifies the person or business who will receive the money. Scanning it in a UPI app usually prepares a payment TO that account.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>So scanning is not the same as collecting?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Exactly. Look at the payment screen before doing anything else.</div></div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 3</span><h2>The PIN is the trapdoor</h2></div><svg class="ill r" viewBox="0 0 100 100" role="img" aria-label="Flat illustration of mobile UPI payment"><rect x="15" y="6" width="70" height="88" rx="12" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="29" y="14" width="42" height="64" rx="5" fill="#cdebd5" stroke="#151515" stroke-width="3"/><path d="M38 30h24M38 40h24" stroke="#151515" stroke-width="3"/><circle cx="50" cy="61" r="12" fill="#ffd23f" stroke="#151515" stroke-width="2"/><text x="50" y="68" font-size="20" text-anchor="middle">₹</text><path d="M72 40l18 10-18 10" stroke="#e63946" stroke-width="4" fill="none"/></svg><div class="grid"><div class="panel"><p>The stranger says: “Enter your PIN to accept the ₹8,000.” But the app may actually be asking Zappy to authorise paying ₹8,000.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>Does scanning alone take money?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Normally, no. A UPI QR scan by itself does not debit you. The risk is approving a payment—or opening a malicious link from an unknown QR.</div></div><span class="sfx">WAIT! READ THE SCREEN!</span></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 4</span><h2>How a real buyer pays</h2></div><div class="grid"><div class="panel"><p>A genuine buyer can use the seller’s own UPI ID, linked number or receiving QR. The seller checks the incoming credit independently.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>So I do not enter my PIN to receive?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Correct. Receiving an ordinary UPI transfer does not require your UPI PIN.</div></div><div class="take">Read the actual action in your payment app before approving.</div></div></div></section><p class="era">PART 2: THE TRICKS<small>When money moves the wrong way</small></p><section class="ep"><div class="ep-head"><span class="no">EP 5</span><h2>The collect-request costume</h2></div><svg class="ill r" viewBox="0 0 100 100" role="img" aria-label="Flat illustration of mobile UPI payment"><rect x="15" y="6" width="70" height="88" rx="12" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="29" y="14" width="42" height="64" rx="5" fill="#d7edff" stroke="#151515" stroke-width="3"/><path d="M38 30h24M38 40h24" stroke="#151515" stroke-width="3"/><circle cx="50" cy="61" r="12" fill="#ffd23f" stroke="#151515" stroke-width="2"/><text x="50" y="68" font-size="20" text-anchor="middle">₹</text><path d="M72 40l18 10-18 10" stroke="#e63946" stroke-width="4" fill="none"/></svg><div class="grid"><div class="panel"><p>A collect request may be described by a caller as a refund or a payment waiting for acceptance. But approving it means you are agreeing to PAY.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>The label in a message can be false?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Yes. Trust the action shown inside your official payment app, not the stranger’s narration.</div></div><div class="warn">A stranger’s promise does not prove a payment is safe.</div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 6</span><h2>The ₹1 confidence trick</h2></div><div class="grid"><div class="panel"><p>The buyer first sends a genuine ₹1. Now he seems trustworthy, and asks you to scan his QR to receive the remaining amount.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>But the ₹1 was real!</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>A real small credit proves only that ₹1 arrived. It does not make the next instruction safe.</div></div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 7</span><h2>A sticker on a shop counter</h2></div><svg class="ill r" viewBox="0 0 100 100" role="img" aria-label="Flat illustration of mobile UPI payment"><rect x="15" y="6" width="70" height="88" rx="12" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="29" y="14" width="42" height="64" rx="5" fill="#cdebd5" stroke="#151515" stroke-width="3"/><path d="M38 30h24M38 40h24" stroke="#151515" stroke-width="3"/><circle cx="50" cy="61" r="12" fill="#ffd23f" stroke="#151515" stroke-width="2"/><text x="50" y="68" font-size="20" text-anchor="middle">₹</text><path d="M72 40l18 10-18 10" stroke="#e63946" stroke-width="4" fill="none"/></svg><div class="grid"><div class="panel"><p>A fake QR sticker pasted over a merchant’s genuine code can divert a payment to a different account.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>But the QR works!</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>A working QR proves nothing about who receives the money. Confirm the payee name with the shop.</div></div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 8</span><h2>Five seconds of protection</h2></div><div class="grid"><div class="panel"><p>Before authorising any transfer: pause, read the recipient, check the amount and confirm the exact action.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>That is my whole security plan?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>It is an excellent habit. Add one more: refuse pressure from anyone asking you to hurry.</div></div><div class="take">Read the actual action in your payment app before approving.</div></div></div></section><p class="era">PART 3: THE DEFENCE<small>A few habits that matter</small></p><section class="ep"><div class="ep-head"><span class="no">EP 9</span><h2>The fake screenshot</h2></div><svg class="ill r" viewBox="0 0 100 100" role="img" aria-label="Flat illustration of mobile UPI payment"><rect x="15" y="6" width="70" height="88" rx="12" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="29" y="14" width="42" height="64" rx="5" fill="#d7edff" stroke="#151515" stroke-width="3"/><path d="M38 30h24M38 40h24" stroke="#151515" stroke-width="3"/><circle cx="50" cy="61" r="12" fill="#ffd23f" stroke="#151515" stroke-width="2"/><text x="50" y="68" font-size="20" text-anchor="middle">₹</text><path d="M72 40l18 10-18 10" stroke="#e63946" stroke-width="4" fill="none"/></svg><div class="grid"><div class="panel"><p>A buyer shows a “payment successful” screenshot and asks for the item immediately. Screenshots can be altered.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>How do I check?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Look in your OWN bank or UPI app for the incoming credit. Do not rely on someone else’s screen.</div></div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 10</span><h2>Not every QR is a payment QR</h2></div><div class="grid"><div class="panel"><p>A QR can open a webpage, form or download. Unknown codes can lead to fake bank pages or dangerous app-installation prompts.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>So I should not blindly follow QR links?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Correct. Never enter banking secrets into an unsolicited link or install an app at a caller’s request.</div></div><div class="warn">A stranger’s promise does not prove a payment is safe.</div></div></div></section><p class="era">DEEP DIVE<small>What official guidance says</small></p><section class="ep"><div class="ep-head"><span class="no">EP 11</span><h2>DEEP DIVE: RBI’s warning</h2></div><svg class="ill r" viewBox="0 0 100 100" role="img" aria-label="Flat illustration of mobile UPI payment"><rect x="15" y="6" width="70" height="88" rx="12" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="29" y="14" width="42" height="64" rx="5" fill="#cdebd5" stroke="#151515" stroke-width="3"/><path d="M38 30h24M38 40h24" stroke="#151515" stroke-width="3"/><circle cx="50" cy="61" r="12" fill="#ffd23f" stroke="#151515" stroke-width="2"/><text x="50" y="68" font-size="20" text-anchor="middle">₹</text><path d="M72 40l18 10-18 10" stroke="#e63946" stroke-width="4" fill="none"/></svg><div class="grid"><div class="panel"><p>The Reserve Bank of India’s BE(A)WARE booklet and QR-safety campaign warn against scanning a QR code to receive money and say a PIN or OTP is not needed for incoming funds.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>So this is official advice?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Yes. It is established fraud-prevention guidance, not a new viral claim.</div></div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 12</span><h2>DEEP DIVE: NPCI’s guidance</h2></div><div class="grid"><div class="panel"><p>NPCI says scanning a QR and entering a UPI PIN is meant for making payments, not receiving them. Its FAQ also warns never to share a UPI PIN.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>Does any PIN prompt mean money is leaving?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Not always. Balance enquiries and PIN management may also use a PIN. Read what action you are authorising.</div></div><div class="take">Read the actual action in your payment app before approving.</div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 13</span><h2>DEEP DIVE: If money has gone</h2></div><svg class="ill r" viewBox="0 0 100 100" role="img" aria-label="Flat illustration of mobile UPI payment"><rect x="15" y="6" width="70" height="88" rx="12" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="29" y="14" width="42" height="64" rx="5" fill="#d7edff" stroke="#151515" stroke-width="3"/><path d="M38 30h24M38 40h24" stroke="#151515" stroke-width="3"/><circle cx="50" cy="61" r="12" fill="#ffd23f" stroke="#151515" stroke-width="2"/><text x="50" y="68" font-size="20" text-anchor="middle">₹</text><path d="M72 40l18 10-18 10" stroke="#e63946" stroke-width="4" fill="none"/></svg><div class="grid"><div class="panel"><p>Contact your bank and UPI app promptly. Save transaction IDs and screenshots. Report financial cybercrime via helpline 1930 or the official cybercrime portal.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>Can they guarantee a refund?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>No. Fast reporting can help, but recovery is not guaranteed. Beware anyone charging an upfront 'recovery fee'.</div></div></div></div></section><section class="ep"><div class="ep-head"><span class="no">EP 14</span><h2>DEEP DIVE: Why it works</h2></div><svg class="ill " viewBox="0 0 100 100" role="img" aria-label="Flat illustration of mobile UPI payment"><rect x="15" y="6" width="70" height="88" rx="12" fill="#fff" stroke="#151515" stroke-width="3"/><rect x="29" y="14" width="42" height="64" rx="5" fill="#f9d4da" stroke="#151515" stroke-width="3"/><path d="M38 30h24M38 40h24" stroke="#151515" stroke-width="3"/><circle cx="50" cy="61" r="12" fill="#ffd23f" stroke="#151515" stroke-width="2"/><text x="50" y="68" font-size="20" text-anchor="middle">₹</text><path d="M72 40l18 10-18 10" stroke="#e63946" stroke-width="4" fill="none"/></svg><div class="grid"><div class="panel"><p>The scam combines a familiar action—QR payment—with a false story about refunds, sales or customer care. Urgency makes people stop reading their screens.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>So it is psychology as much as technology?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>Precisely. A confident voice cannot change what the payment button actually does.</div></div></div></div></section><p class="era">THE VERDICT<small>Prof. Bolt’s OPINION</small></p><section class="ep"><div class="ep-head"><span class="no">EP 15</span><h2>OPINION: Prof. Bolt’s rule</h2></div><div class="grid"><div class="panel"><p>UPI is useful and usually convenient. The safest habit is to check every transaction, especially when a stranger gives instructions.</p><div class="say "><svg class="av" viewBox="0 0 64 64"><use href="#kiran"></use></svg><div class="bubble"><span class="who">Zappy</span>What sentence should every family remember?</div></div></div><div class="panel"><div class="say g"><svg class="av" viewBox="0 0 64 64"><use href="#guru"></use></svg><div class="bubble"><span class="who">Prof. Bolt</span>OPINION · To RECEIVE money, never scan someone else’s payment QR or enter your UPI PIN. If someone insists, stop and verify independently.</div></div><div class="take">Read the actual action in your payment app before approving.</div></div></div></section><p class="era">SO WHAT SHOULD ZAPPY DO?<small>Make the safe choice automatic.</small></p><section class="ep"><div class="ep-head"><span class="no">ACTION</span><h2>The five-second UPI checklist</h2></div><div class="grid"><div class="panel"><p><b>Receiving?</b> Share your own UPI ID or receiving QR. Verify credit in your own app.</p><p><b>Paying?</b> Check recipient, amount and action before approval.</p></div><div class="panel"><p><b>Under pressure?</b> Cancel and verify independently.</p><p><b>Already paid a fraudster?</b> Contact your bank and app, report promptly to 1930 or the official cybercrime portal.</p><div class="take">Never disclose a UPI PIN or OTP to anyone.</div></div></div></section><p class="era">FRIDGE-DOOR CHEAT SHEET<small>Three rules worth remembering.</small></p><section class="ep"><div class="grid" style="background:#ffd23f;border-radius:14px;padding:12px"><div class="panel"><h2>RECEIVING</h2><p>No PIN. Share your own receiving details.</p></div><div class="panel"><h2>PAYING</h2><p>Read recipient, amount and action.</p></div><div class="panel"><h2>FRAUD?</h2><p>Bank + app + 1930. Report promptly.</p></div></div></section><section class="ep"><div class="ep-head"><span class="no">SOURCES</span><h2>Original guidance</h2></div><p><a href="https://www.npci.org.in/fraud-awareness">NPCI fraud awareness</a> · <a href="https://www.npci.org.in/what-we-do/upi/faqs">NPCI UPI FAQ</a> · <a href="https://rbikehtahai.rbi.org.in/qr">RBI QR safety</a> · <a href="https://systemhealth.rbi.org.in/cms.rbi.org.in/cms/assets/Documents/BEAWARE07032022.pdf">RBI BE(A)WARE</a> · <a href="https://www.cybercrime.gov.in/">Cybercrime reporting portal</a></p><p class="small">Educational guidance checked 7 November 2026. UPI interfaces and features vary. A QR scan alone does not normally debit your account.</p></section></main>
+</body>
+</html>
