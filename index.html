@@ -90,6 +90,10 @@ section.tg>h2 small{white-space:nowrap;margin-left:8px;font-size:13.5px;font-wei
  lis.forEach(function(li){var k=themeOf(li);(groups[k]=groups[k]||[]).push(li);});
  T.forEach(function(t){if(groups[t[0]])order.push(t);});if(groups["More stories"])order.push(["More stories","📚","#ffffff"]);
  var wrap=document.createElement('div');
+ var recent=document.createElement('section');recent.id='recent';recent.setAttribute('aria-labelledby','recent-heading');
+ var rh=document.createElement('h2');rh.id='recent-heading';rh.className='tg-h';rh.textContent='📰 Recent 7 articles';recent.appendChild(rh);
+ var ru=document.createElement('ul');lis.slice(0,7).forEach(function(li){ru.appendChild(li.cloneNode(true));});recent.appendChild(ru);wrap.appendChild(recent);
+
 var h2=document.createElement('div');h2.className='tg-h';h2.textContent='📂 Browse by theme';wrap.appendChild(h2);
  var chips=document.createElement('div');chips.className='chips';wrap.appendChild(chips);
  var secs=[];
