@@ -62,8 +62,25 @@ section.tg>h2{display:flex;justify-content:space-between;align-items:center;marg
 section.tg>h2 span{display:inline;color:#151515;font-size:19px;margin:0}
 section.tg>h2 small{white-space:nowrap;margin-left:8px;font-size:13.5px;font-weight:700;opacity:.75}
 </style>
+<style id="article-sidebar">
+body{max-width:1100px}
+.article-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,330px);gap:32px;align-items:start}
+.article-layout>*{min-width:0}
+#recent>.tg-h{margin-top:0}
+.older-articles{background:#fff;border:3px solid #111;box-shadow:4px 4px 0 #111;padding:14px}
+summary{cursor:pointer;font-weight:800;line-height:1.5}
+summary:focus-visible{outline:3px solid #c0262d;outline-offset:4px}
+.older-articles>summary{font-size:18px}
+.archive-hint{font-size:14px;color:#555;margin:12px 0}
+.archive-topic{border-top:2px solid #ddd;padding:12px 0}
+.archive-topic>summary{background:var(--c,#fff);padding:6px;font-size:15px}
+.archive-topic li{border-width:2px;box-shadow:2px 2px 0 #111;padding:10px;margin-bottom:12px}
+.archive-topic a{font-size:16px}
+.archive-topic span{font-size:13px}
+@media(max-width:760px){.article-layout{grid-template-columns:1fr;gap:20px}}
+</style>
 </head>
-<body><nav class="listnav" aria-label="Main navigation"><a href="/">📰 Srini Presents</a><span>📚 All articles</span></nav><h1>📰 Srini Presents</h1><p class="s">Explore all articles. Choose a topic and read whatever catches your interest.</p>
+<body><nav class="listnav" aria-label="Main navigation"><a href="/">📰 Srini Presents</a><span>📚 All articles</span></nav><h1>📰 Srini Presents</h1><p class="s">Read a recent article, or expand Older articles to explore earlier stories.</p>
 <ul>
 <!-- Add each finished article below this line. Keep article links absolute from the site root. -->
 <li><a href="/diya-makers/">The Last Diya Makers of Doora</a><span>7 Nov 2026 · People Behind the Story · Past → Present → Future</span></li>
@@ -81,31 +98,36 @@ section.tg>h2 small{white-space:nowrap;margin-left:8px;font-size:13.5px;font-wei
 <script id="theme-groups-js">
 (function(){
  var T=[["India Unpacked","🇮🇳","#f4d3b8"],["Karnataka Treasure Chest","🏛️","#f3e1a6"],["Money Talks","💰","#d3e3c2"],["Future Is Here","🚀","#cfdcee"],["The Human Machine","❤️","#f3cfd4"],["People Behind the Story","👤","#ddd3f0"],["The Curious Files","🔍","#c6e1dc"],["Chai & Charts","☕","#ead7c3"]];
- var ul=document.querySelector('body>ul');if(!ul)return;
- var lis=[].slice.call(ul.querySelectorAll(':scope>li'));
- function themeOf(li){var t=(li.querySelector('span')||{}).textContent||'';
-  if(/Markets \+ Funds|Chai & Charts/i.test(t))return "Chai & Charts";
-  for(var i=0;i<T.length;i++)if(t.indexOf(T[i][0])>=0)return T[i][0];return "More stories";}
- var groups={},order=[];
- lis.forEach(function(li){var k=themeOf(li);(groups[k]=groups[k]||[]).push(li);});
- T.forEach(function(t){if(groups[t[0]])order.push(t);});if(groups["More stories"])order.push(["More stories","📚","#ffffff"]);
- var wrap=document.createElement('div');
+ var source=document.querySelector('body>ul');if(!source)return;
+ var articles=Array.prototype.slice.call(source.children);
+ var layout=document.createElement('main');layout.className='article-layout';
  var recent=document.createElement('section');recent.id='recent';recent.setAttribute('aria-labelledby','recent-heading');
- var rh=document.createElement('h2');rh.id='recent-heading';rh.className='tg-h';rh.textContent='📰 Recent 7 articles';recent.appendChild(rh);
- var ru=document.createElement('ul');lis.slice(0,7).forEach(function(li){ru.appendChild(li.cloneNode(true));});recent.appendChild(ru);wrap.appendChild(recent);
-
-var h2=document.createElement('div');h2.className='tg-h';h2.textContent='📂 Browse by theme';wrap.appendChild(h2);
- var chips=document.createElement('div');chips.className='chips';wrap.appendChild(chips);
- var secs=[];
- function chip(label,col,key){var b=document.createElement('button');b.type='button';b.style.setProperty('--c',col);b.innerHTML=label;b.setAttribute('aria-pressed',key==='all'?'true':'false');
-  b.onclick=function(){[].forEach.call(chips.children,function(c){c.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');
-   secs.forEach(function(s){s.hidden=!(key==='all'||s.dataset.k===key)});};chips.appendChild(b);}
- chip('All <b>'+lis.length+'</b>','#fff','all');
- order.forEach(function(t){var n=groups[t[0]].length;chip(t[1]+' '+t[0]+' <b>'+n+'</b>',t[2],t[0]);
-  var s=document.createElement('section');s.className='tg';s.dataset.k=t[0];s.style.setProperty('--c',t[2]);
-  s.innerHTML='<h2><span>'+t[1]+' '+t[0]+'</span><small>'+n+(n===1?' story':' stories')+'</small></h2>';
-  var u=document.createElement('ul');groups[t[0]].forEach(function(li){u.appendChild(li)});s.appendChild(u);wrap.appendChild(s);secs.push(s);});
- ul.parentNode.insertBefore(wrap,ul);ul.style.display='none';
+ var heading=document.createElement('h2');heading.id='recent-heading';heading.className='tg-h';heading.textContent='📰 Recent 7 articles';recent.appendChild(heading);
+ var list=document.createElement('ul');articles.slice(0,7).forEach(function(li){list.appendChild(li);});recent.appendChild(list);layout.appendChild(recent);
+ var older=articles.slice(7);
+ if(older.length){
+  var sidebar=document.createElement('aside');sidebar.setAttribute('aria-label','Older articles');
+  var archive=document.createElement('details');archive.className='older-articles';archive.id='older-articles';
+  var summary=document.createElement('summary');summary.textContent='📚 Older articles ('+older.length+')';archive.appendChild(summary);
+  var hint=document.createElement('p');hint.className='archive-hint';hint.textContent='Browse earlier stories by topic.';archive.appendChild(hint);
+  var groups={};
+  older.forEach(function(li){
+   var text=(li.querySelector('span')||{}).textContent||'';
+   var theme=T.find(function(t){return text.indexOf(t[0])>=0;});
+   var name=theme?theme[0]:'More stories';
+   if(!groups[name])groups[name]={theme:theme||[name,'📚','#fff'],items:[]};
+   groups[name].items.push(li);
+  });
+  T.concat([['More stories','📚','#fff']]).forEach(function(t){
+   var group=groups[t[0]];if(!group)return;
+   var section=document.createElement('details');section.className='archive-topic';
+   section.style.setProperty('--c',t[2]);
+   var title=document.createElement('summary');title.textContent=t[1]+' '+t[0]+' ('+group.items.length+')';section.appendChild(title);
+   var items=document.createElement('ul');group.items.forEach(function(li){items.appendChild(li);});section.appendChild(items);archive.appendChild(section);
+  });
+  sidebar.appendChild(archive);layout.appendChild(sidebar);
+ }
+ source.parentNode.insertBefore(layout,source);source.remove();
 })();
 </script>
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
