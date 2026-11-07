@@ -242,7 +242,7 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 @media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
 </style>
 <main class="wrap">
-<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="topnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 <header class="cover t-thu">
   <div>
     <span class="daytag">THURSDAY</span>
@@ -600,11 +600,8 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; the numbers and events are real. Sources: International Federation of Robotics (World Robotics 2025 robot density, 2024 data, release of 8 Apr 2026; World Robotics 2026 installations, release of 24 Sep 2026; India press release of 25 Sep 2025 for the 52,570 operational stock), MoSPI Annual Survey of Industries 2024-25 (2.1 crore factory workers; top five states; release of 30 Sep 2026) and coverage of ASI/PLFS unorganised-sector employment (Superkalam/The Hindu, Oct 2026; CivilsDaily on PLFS 2025), Mashable and others on Moravec's paradox (Hans Moravec, 1988), AFP via Gulf News and LetsDataScience (Indian workers filming chores, ₹250/hour, Objectways; May 2026), NPR (Karur factory workers, Amit Basole quote; 14 Oct 2026), The Robot Report, Engadget, PCMag, Tom's Guide and Ground News (1X NEO price, Expert Mode teleoperation), Digital Trends and RoboZaps (Unitree R1 from $4,900), Longforecast/PTI (rupee near ₹96 per dollar, Aug–Sep 2026), David Autor's TEDx talk and ITIF on James Bessen's ATM research, World Economic Forum Future of Jobs Report 2025 (Jan 2025), Addverb and India TV (Elixis-W, 3,000 humanoids by 2030; 2026), Business Today and Tracxn (CynLr, Niqo Robotics, Ati Motors; 2026), The Rocket Media (Perceptyne). Density, rupee and ratio figures marked "our arithmetic" or "our estimate" are our own calculations. Figures rounded. Prof. Bolt's verdict and the risk table are opinion, not a forecast or career advice.</p>
 
-<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="botnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 </main>
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
-function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
-if(p==='/'){set(true);return;}
-fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
+</body></html>

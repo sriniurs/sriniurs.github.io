@@ -190,7 +190,7 @@ ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
 
 <main class="wrap">
 
-<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="topnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 <header class="cover">
   <div>
     <p class="byline">Srini presents</p>
@@ -500,14 +500,11 @@ ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; the events and figures are real. Sources: Reuters/ARY and Engine Online (Brent, 30 Oct 2026), Washington Institute data via Khaleej Times, IMA Research, IMPRI, ORF, S&amp;P Global, Business Today, Moneylife, Ease My Prep/UNI (fuel prices and OMC losses), Asia News Network/CREA ($22 bn), MUFG Research, The Logical Indian, Equentis (RBI rate). Figures rounded; oil prices change daily. The "three endings" are opinion, not forecasts. For learning, not investment advice.</p>
 
-<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="botnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 </main>
 
 <script id="stack-tables-js">
 document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
 </script>
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
-function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
-if(p==='/'){set(true);return;}
-fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
+</body></html>

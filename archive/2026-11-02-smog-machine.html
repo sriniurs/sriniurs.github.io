@@ -209,7 +209,7 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 
 <main class="wrap">
 
-<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="topnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 <header class="cover">
   <div>
     <p class="byline">Srini presents</p>
@@ -593,11 +593,8 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; the data and events are real. Sources: Bombay Samachar and Whalesbook (Delhi AQI 312, 2 Nov 2026), AQI.in (PM2.5 214 µg/m³), MitKat Advisory (CPCB bulletin), Berkeley Earth (cigarette equivalence), NewsBytes/Decision Support System (26 Oct 2026 source split), Centre for Science and Environment and Down To Earth (vehicles' local share, December surge), Govardhan et al. 2024, Geoscientific Model Development (DSS seasonal shares), Climate Trends via PTI/The Statesman (Diwali 2025 PM2.5), Business Today and ThePrint (GRAP stages and 2026 revision), EPIC/AQLI 2025 (life expectancy), Beijing Municipal Ecology and Environment Bureau and CAE (Beijing PM2.5), CREA (Delhi 2025 ranking, Bengaluru Nov 2025, 1,787 towns), Business Standard, Tribune and Outlook (cloud seeding costs), Dalberg/Clean Air Fund/CII (economic cost), Greenpeace India (south Indian cities). Cigarette and percentage conversions are our own arithmetic. Figures rounded. Health tips are general; see a doctor for symptoms. The three endings are opinion.</p>
 
-<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="botnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 </main>
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
-function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
-if(p==='/'){set(true);return;}
-fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
+</body></html>

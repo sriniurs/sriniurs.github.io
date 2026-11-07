@@ -240,7 +240,7 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 .topnav .here,.botnav .here{box-shadow:none;opacity:.75}
 </style></head><body>
 <main class="wrap">
-<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="topnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 <header class="cover t-sat">
   <div>
     <span class="daytag">SATURDAY</span>
@@ -658,12 +658,9 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 </section>
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; the people, places and numbers are real. Sources: Star of Mysore on Doora village ("Doorada Deepa", 26 Oct 2019; "Festival brings no light to clay diya-makers", 4 Nov 2021; "No light at the end of tunnel for potters of Doora village", 12 Nov 2023; "Clay lamps flicker amidst onslaught of modern lights", 30 Oct 2024; "Disappearing Diyas", 18 Oct 2025), Deccan Herald ("Restoring the earthen glow" on Melkunda K, Khanapur and Doora; "Turning wheels: Pottery's challenges and second chances", 10 Oct 2024; Kumbara Development Corporation, 5 Jan 2026; Central Village Pottery Institute), IANS photos via Social News XYZ (Mysuru diya makers, 5 Nov 2026), Pitt Rivers Museum, Oxford (Nal pottery lamp, c. 2500 BC), Wikipedia (Kumbara; Sarvajna) and V.K. Gokak in Triveni journal (Sarvajna's parentage), ETV Bharat and The Hindu (Khanapur institute, est. 1954; Hubballi station sales), KVIC and PIB via Energetica India, The Quint and Drishti IAS (Kumhar Sashaktikaran Yojana, 2018; electric wheels, 2020), CAIT press release and Business Today (Diwali 2025 sales, 21 Oct 2025), PTI via Deccan Herald and The Bridge Chronicle (Ayodhya Deepotsav record, 19 Oct 2025), ThePrint, YourStory and The Better India (railway kulhads), festival calendars from Hindutone and Hindu Blog (Naraka Chaturdashi, 7 Nov 2026), Vajiram &amp; Ravi (C.V. Raman's birth anniversary). Figures marked "our arithmetic" are our own calculations. Figures rounded. Prof. Bolt's verdict is opinion.</p>
-<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="botnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 </main>
 
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
-function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
-if(p==='/'){set(true);return;}
-fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
+</body></html>

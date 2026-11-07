@@ -207,7 +207,7 @@ table.vs td.bad{color:var(--red);font-weight:700}
 
 <main class="wrap">
 
-<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="topnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 <header class="cover">
   <div>
     <p class="byline">Srini presents</p>
@@ -674,11 +674,8 @@ table.vs td.bad{color:var(--red);font-weight:700}
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; UPI, the companies and the figures are real. Numbers are rounded from public sources (NPCI, PIB, Parliament replies, RBI, IMF, Reuters) and change every month. The "three endings" are opinion, not forecasts. For learning, not financial advice. Deep dive: Inc42 and Outlook Business (UPI incentive scheme), The Painted Stork and BivashVlog (cost estimates, ranges vary), Morung Express/PIB (₹8,730 cr total incentives), Brazil central bank data via The Rio Times, IMF paper via card-industry reporting, SBI Research and Moneylife (currency in circulation), Multibagg (RBI UPI-to-cash ratio), Business Standard, Outlook Money, Outlook Business and Fintech Chronicler (outages), ORF and Vajiram &amp; Ravi (single point of failure), Kiwi via Kashmir Reader, Outlook Money, Juspay and Business Standard (credit on UPI). Per-payment and per-hour figures are our own arithmetic.</p>
 
-<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="botnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 </main>
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
-function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
-if(p==='/'){set(true);return;}
-fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
+</body></html>

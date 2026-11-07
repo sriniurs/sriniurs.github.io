@@ -210,7 +210,7 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 
 <main class="wrap">
 
-<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="topnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 <header class="cover">
   <div>
     <p class="byline">Srini presents</p>
@@ -628,12 +628,9 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; the history and data are real. Sources: Deccan Herald ("United by a new name"; Karnataka Economic Survey share of GDP and district incomes), The Hindu ("Karnataka: a 50-year-old name, centuries of legacy"), The News Minute (making of Karnataka; Bengaluru streetlight; Kittur Karnataka), Wikipedia (Mysore State, Karnataka Rajyotsava, States Reorganisation Commission, Krishna Raja Wadiyar IV, Kalyana-Karnataka, Article 371J), GKToday (2026 Rajyotsava awards; state renamings and process), Manorama Yearbook (Keralam Bill, Aug 2026), PRS Legislative Research (Karnataka Budget 2026-27), Law Commission of India Report No. 14 (area and population, 1951 Census basis), GlobalSecurity (princely Mysore area), ClearIAS (Belagavi border dispute). Ratios and percentages are our own arithmetic. Figures rounded. Prof. Bolt's verdict is opinion.</p>
 
-<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="botnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 </main>
 
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
-function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
-if(p==='/'){set(true);return;}
-fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
+</body></html>

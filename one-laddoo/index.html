@@ -240,7 +240,7 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 .topnav .here,.botnav .here{box-shadow:none;opacity:.75}
 </style></head><body>
 <main class="wrap">
-<nav class="topnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="topnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 <header class="cover t-fri">
   <div>
     <span class="daytag">FRIDAY</span>
@@ -656,11 +656,8 @@ table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--r
 </section>
 
 <p class="foot">Zappy and Prof. Bolt are made-up characters; the numbers and events are real. Sources: Business Standard (calories in Diwali sweets, nutritionist estimates; Oct 2025), Govindam and Clearcals recipe nutrition data (sugar per laddoo), ICMR-NIN Dietary Guidelines for Indians (May 2024) and ChiniMandi on NIN-FSSAI sugar posters, WHO sugars guideline (2015), Max Planck Institute for Metabolism Research (Thanarajah et al., Cell Metabolism 2019, dopamine; Fenselau group in Science, "dessert stomach"), CNN/Sports Medicine meta-analysis on walking after meals (Buffey et al., 2022), Shukla et al., Diabetes Care (2015) on food order, Kent Community Health NHS Trust and NIH (reactive hypoglycaemia), ICMR-INDIAB study in The Lancet Diabetes &amp; Endocrinology (June 2023) and The Tribune (ICMR DG on reversibility), FSSAI festive-drive letter (29 Sept 2026), FSSAI DART booklet (iodine test), FSSAI silver leaf standards (notified July 2016) and ITRC Lucknow study (2005), Food Safety Helpline (best-before on loose sweets), Karnataka Health Department via Deccan Herald, IANS and The Week (colour ban, March 2024), NewsKarnataka (sweet-unit drive, 15–17 Oct 2026), The News Minute (drive of 31 Aug 2026), ISMA via ChiniMandi, Outlook Business, Mint and India Business Trade (sugar consumption, per capita, Karnataka output; 2025–26), Tarla Dalal (calories burnt walking), Wikipedia "History of sugar" and Scroll (khanda, sharkara, Gupta era, Chinese missions). Figures marked "our estimate" or "our arithmetic" are our own calculations. Figures rounded. Prof. Bolt's verdict is opinion. This is general information, not medical advice; people with diabetes should follow their doctor.</p>
-<nav class="botnav"><a href="/archive/">📚 Past stories</a><a class="js-latest" href="/">🔴 Latest story →</a></nav>
+<nav class="botnav" aria-label="Article navigation"><a href="/">📚 All articles</a></nav>
 </main>
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script id="topnav-js">(function(){var n=function(x){return x.replace(/index\.html$/,'').replace(/\/$/,'')||'/';};var p=n(location.pathname);
-function set(latest){document.querySelectorAll('.js-latest').forEach(function(a){if(latest){a.className='js-latest here';a.textContent='\u{1F534} Latest story';a.removeAttribute('href');}else{a.className='js-latest new';a.textContent='\u{1F534} New story today \u2192';a.setAttribute('href','/');}});}
-if(p==='/'){set(true);return;}
-fetch('/',{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){var m=t.match(/<meta name="latest-story" content="([^"]+)"/);if(m)set(n(m[1])===p);}).catch(function(){});})();</script></body></html>
+</body></html>
