@@ -97,7 +97,6 @@ summary:focus-visible{outline:3px solid #c0262d;outline-offset:4px}
 </ul>
 <script id="theme-groups-js">
 (function(){
- var T=[["India Unpacked","🇮🇳","#f4d3b8"],["Karnataka Treasure Chest","🏛️","#f3e1a6"],["Money Talks","💰","#d3e3c2"],["Future Is Here","🚀","#cfdcee"],["The Human Machine","❤️","#f3cfd4"],["People Behind the Story","👤","#ddd3f0"],["The Curious Files","🔍","#c6e1dc"],["Chai & Charts","☕","#ead7c3"]];
  var source=document.querySelector('body>ul');if(!source)return;
  var articles=Array.prototype.slice.call(source.children);
  var layout=document.createElement('main');layout.className='article-layout';
@@ -109,21 +108,24 @@ summary:focus-visible{outline:3px solid #c0262d;outline-offset:4px}
   var sidebar=document.createElement('aside');sidebar.setAttribute('aria-label','Older articles');
   var archive=document.createElement('details');archive.className='older-articles';archive.id='older-articles';
   var summary=document.createElement('summary');summary.textContent='📚 Older articles ('+older.length+')';archive.appendChild(summary);
-  var hint=document.createElement('p');hint.className='archive-hint';hint.textContent='Browse earlier stories by topic.';archive.appendChild(hint);
+  var hint=document.createElement('p');hint.className='archive-hint';hint.textContent='Browse earlier stories by month.';archive.appendChild(hint);
   var groups={};
+  var months=['January','February','March','April','May','June','July','August','September','October','November','December'];
   older.forEach(function(li){
    var text=(li.querySelector('span')||{}).textContent||'';
-   var theme=T.find(function(t){return text.indexOf(t[0])>=0;});
-   var name=theme?theme[0]:'More stories';
-   if(!groups[name])groups[name]={theme:theme||[name,'📚','#fff'],items:[]};
-   groups[name].items.push(li);
+   var match=text.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
+   var month=match?months.findIndex(function(name){return name.slice(0,3).toLowerCase()===match[2].slice(0,3).toLowerCase();}):-1;
+   var key=month>=0?match[3]+'-'+String(month+1).padStart(2,'0'):'0000-00';
+   var label=month>=0?months[month]+' '+match[3]:'Undated articles';
+   if(!groups[key])groups[key]={label:label,items:[]};
+   groups[key].items.push({li:li,day:match?Number(match[1]):0});
   });
-  T.concat([['More stories','📚','#fff']]).forEach(function(t){
-   var group=groups[t[0]];if(!group)return;
+  Object.keys(groups).sort().reverse().forEach(function(key){
+   var group=groups[key];
    var section=document.createElement('details');section.className='archive-topic';
-   section.style.setProperty('--c',t[2]);
-   var title=document.createElement('summary');title.textContent=t[1]+' '+t[0]+' ('+group.items.length+')';section.appendChild(title);
-   var items=document.createElement('ul');group.items.forEach(function(li){items.appendChild(li);});section.appendChild(items);archive.appendChild(section);
+   section.style.setProperty('--c','#f3e1a6');
+   var title=document.createElement('summary');title.textContent=group.label+' ('+group.items.length+')';section.appendChild(title);
+   var items=document.createElement('ul');group.items.sort(function(a,b){return b.day-a.day;}).forEach(function(item){items.appendChild(item.li);});section.appendChild(items);archive.appendChild(section);
   });
   sidebar.appendChild(archive);layout.appendChild(sidebar);
  }
