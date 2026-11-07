@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "time_zone": "Asia/Kolkata",
+  "publish_time": "05:00",
+  "start_date": "2026-11-08",
+  "last_published_on": null,
+  "entries": [
+    {
+      "number": 1,
+      "url": "https://sriniurs.github.io/darkest-night/",
+      "path": "/darkest-night/",
+      "title": "Why the Festival of Lights Falls on the Darkest Night",
+      "not_before": "2026-11-08T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"1\"><a href=\"/darkest-night/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"16\" y=\"20\" width=\"68\" height=\"66\" rx=\"6\" fill=\"#fff\" stroke=\"#151515\" stroke-width=\"3\"/><rect x=\"16\" y=\"20\" width=\"68\" height=\"16\" fill=\"#0f766e\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M32 12 V28 M68 12 V28\" stroke=\"#151515\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"61\" r=\"15\" fill=\"#151515\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M44 50 a15 15 0 0 1 0 22\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"3\"/><path d=\"M26 46 h6 M26 56 h6 M68 46 h6 M68 56 h6 M26 76 h6 M68 76 h6\" stroke=\"#9aa5b1\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></div><div class=\"card-copy\"><h3>Why the Festival of Lights Falls on the Darkest Night</h3><p>Deepavali is set on the one night with no moon, on purpose. Here&#x27;s how the moon picks the date, and why South and North light up at different hours.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">8 Nov 2026</span></li>"
+    },
+    {
+      "number": 2,
+      "url": "https://sriniurs.github.io/green-crackers/",
+      "path": "/green-crackers/",
+      "title": "Green Crackers on Trial",
+      "not_before": "2026-11-09T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"2\"><a href=\"/green-crackers/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"20\" y=\"22\" width=\"40\" height=\"18\" rx=\"4\" fill=\"#8a4b1f\" stroke=\"#151515\" stroke-width=\"3\" transform=\"rotate(-30 40 31)\"/><path d=\"M44 40 L74 78\" stroke=\"#151515\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M44 40 L74 78\" stroke=\"#c46a12\" stroke-width=\"4\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"78\" width=\"50\" height=\"10\" rx=\"3\" fill=\"#8a4b1f\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M70 22 l8 -6 M76 32 l10 -2 M64 14 l2 -10\" stroke=\"#e8590c\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></div><div class=\"card-copy\"><h3>Green Crackers on Trial</h3><p>A “green” cracker still makes up to 70% of the smoke. Five Deepavali myths, checked.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">9 Nov 2026</span></li>"
+    },
+    {
+      "number": 3,
+      "url": "https://sriniurs.github.io/silk-queue/",
+      "path": "/silk-queue/",
+      "title": "The 4 AM Saree Queue",
+      "not_before": "2026-11-10T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"3\"><a href=\"/silk-queue/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"80\" cy=\"20\" r=\"9\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"84\" cy=\"17\" r=\"8\" fill=\"#fff\"/><circle cx=\"20\" cy=\"46\" r=\"8\" fill=\"#f4c7a1\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M9 86 Q9 58 20 58 Q31 58 31 86 Z\" fill=\"#e63946\" stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"44\" cy=\"46\" r=\"8\" fill=\"#f4c7a1\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M33 86 Q33 58 44 58 Q55 58 55 86 Z\" fill=\"#2a9df4\" stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"/><circle cx=\"68\" cy=\"46\" r=\"8\" fill=\"#f4c7a1\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M57 86 Q57 58 68 58 Q79 58 79 86 Z\" fill=\"#2bb673\" stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"/><rect x=\"80\" y=\"66\" width=\"9\" height=\"18\" rx=\"3\" fill=\"#9aa4ad\" stroke=\"#151515\" stroke-width=\"2.5\"/><path d=\"M84 62 q-3 -5 0 -9 M88 62 q-3 -5 0 -9\" stroke=\"#9aa4ad\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M6 88 H94\" stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></div><div class=\"card-copy\"><h3>The 4 AM Saree Queue</h3><p>Mysuru queues from 4 am for one saree. The factory makes 300–400 a day; buyers want 600 more.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">10 Nov 2026</span></li>"
+    }
+  ]
+}
