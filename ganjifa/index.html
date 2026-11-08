@@ -1,0 +1,233 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><title>Ganjifa: A World Painted on Playing Cards — srini.presents</title><meta name='description' content='An illustrated journey through Ganjifa history, art, regional traditions and play.'><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap'>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="myth-fact">
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box}body{padding:24px 18px 48px}.wrap{max-width:1060px;margin:auto;display:grid;gap:36px}.cover{background:#ffd23f!important;color:#151515!important;padding:28px 24px;border:4px solid var(--line);box-shadow:8px 8px 0 var(--line)}.cover h1{color:#151515!important;font-size:clamp(45px,7vw,78px);line-height:1.03;text-shadow:none!important;-webkit-text-stroke:0!important;margin:20px 0}.cover .byline{color:#9d0208!important;font-size:28px!important;white-space:normal!important}.tagline{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:5px}.sample{display:inline-block;background:#151515;color:#fff;padding:5px 10px;font-weight:bold}.cast{display:flex;gap:30px;flex-wrap:wrap}.cast figure{margin:12px 0 0;max-width:180px;font-weight:bold}.cast svg{display:block;width:84px;height:84px;background:white;border:2px solid #151515;border-radius:50%;margin-bottom:8px}.cast small{font-weight:normal}.fact{display:block!important;font-size:18px;line-height:1.5}.say{align-items:flex-start}.av{flex-shrink:0;width:54px;height:54px}.bubble{min-width:0}.ep{min-width:0}.grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.panel{min-width:0}a{color:#165da3}.cover .sub{color:#151515!important}.evidence{padding:20px;border:3px solid var(--line);background:var(--panel)}.evidence p,.evidence li{font-size:15px;line-height:1.5}.next{background:#ffd23f;color:#151515;border:3px solid var(--line);padding:18px;font-size:19px}.foot{text-align:center}h2{line-height:1.15}.fs{display:flex;flex-wrap:wrap;gap:8px}.fs span{background:#fff!important;color:#151515!important;border:2px solid #151515;padding:4px 8px}
+@media(prefers-color-scheme:dark){a{color:#8cc9ff}.sfx{color:#ffae73}.sfx.b{color:#86c6ff}.sfx.r{color:#ff9ca6}.cap,.take,.warn{color:#151515}.take{background:#dff2e5}}
+@media(max-width:640px){body{padding:16px 16px 32px}.wrap{gap:28px}.grid{grid-template-columns:minmax(0,1fr)!important}.cover{padding:22px 16px}.ep{padding:12px}.panel{padding:12px}.fact{font-size:17.5px}.ep-head{align-items:flex-start}.cover h1{font-size:48px}.ep h2{font-size:29px}.cast{gap:20px}.cast figure{max-width:125px}}
+</style><style>
+.wrap{gap:36px}.cover h1{font-size:clamp(44px,6.2vw,72px)}.cover .sub{max-width:45ch;line-height:1.55}.cast figure{font-size:17px}.ep{display:grid;gap:22px}.ep-head{margin-bottom:0}.reading{max-width:760px;width:100%;margin:0 auto;font:19px/1.65 var(--body)}.reading p{margin:0 0 16px}.reading p:last-child{margin-bottom:0}.reading .cap{margin:0 0 14px;font-size:19px;line-height:1.4}.lead{font-size:22px;font-weight:700;line-height:1.5}.banter{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:18px;background:var(--panel);border-top:2px dashed var(--muted);border-bottom:2px dashed var(--muted)}.banter .bubble{margin:0;line-height:1.5}.math{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bill{padding:18px;border:3px solid var(--line);background:var(--panel)}.bill h3{font-family:var(--display);font-size:28px;letter-spacing:.03em;margin:0 0 12px}.bill dl{margin:0}.bill dl div{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.bill dd{margin:0;white-space:nowrap;font-weight:700}.bill .total{border-top:2px solid var(--line);padding-top:10px;font-size:23px}.delta{background:#ffd23f;color:#151515;padding:15px 18px;border:3px solid var(--line);font-size:21px;font-weight:700;text-align:center}.ep .take{font-size:19px;line-height:1.55;border:2px solid #245e3b;background:#e3f5ea;color:#153c25;padding:16px 18px}.questions{display:grid;gap:13px}.question{border:2px solid var(--line);padding:15px 18px;background:var(--panel)}.question h3{font-family:var(--body);font-size:20px;line-height:1.4;margin:0 0 7px}.question p{margin:0}.source-note{font-size:15px!important;color:var(--muted)}.sample-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.sample-nav a{border:2px solid #151515;color:#151515;background:white;padding:6px 12px;font-weight:700;text-decoration:none}.ep p{overflow-wrap:break-word}.page-marker{font-weight:700;color:var(--muted);font-size:15px;letter-spacing:.08em}.ep-head .no{white-space:nowrap}html{scroll-behavior:smooth}
+@media(max-width:640px){.reading{font-size:17.5px;line-height:1.6}.reading .lead{font-size:20px!important}.banter,.math{grid-template-columns:minmax(0,1fr)}.banter{padding:16px 0;gap:16px}.ep{gap:18px}.bill{padding:16px}.question{padding:14px}.question h3{font-size:19px}.cover h1{font-size:46px}.ep .take{font-size:17.5px}.reading .cap{font-size:18px}.delta{font-size:19px}.wrap{gap:28px}.sample-nav{gap:8px}.sample-nav a{font-size:15px}.ep-head h2{font-size:32px}}
+@media(prefers-color-scheme:dark){.ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#e9edf2;--muted:#a8b3bf}:root[data-theme="dark"] .ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}
+</style><style>
+.cover{background:#c2410c!important;color:#fff!important}.cover h1,.cover .sub{color:#fff!important}.cover .byline{color:#fff1a8!important}.cover .cast figure{color:#fff}.cover .tagline{color:#fff1a8}.time-box{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:20px;text-align:center}.time-box strong{display:block;font:clamp(44px,7vw,68px)/1.2 var(--display);letter-spacing:.03em}.time-box p{margin:8px 0 0}.spot{width:84px;height:84px;background:white;border:3px solid #151515;border-radius:16px;padding:5px;justify-self:center;box-shadow:3px 3px 0 #151515}.opinion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opinion article{border:2px solid var(--line);padding:16px}.opinion h3{font:24px var(--display);margin:0 0 10px}.opinion p{font-size:18px;line-height:1.55;margin:0}.math-note{border-left:6px solid #e8590c;padding:12px 18px;background:var(--panel)}.cheat{background:#ffd23f!important;color:#151515!important}.cheat .question{background:#fff;color:#151515;border-color:#151515}.cheat .question p{font-size:18px}.source-list{padding-left:22px}.source-list li{margin-bottom:12px}.evidence a{overflow-wrap:anywhere}.sample{background:#fff!important;color:#151515!important}.era{margin:0}.take strong{font-weight:700}@media(max-width:640px){.opinion{grid-template-columns:minmax(0,1fr)}.opinion p{font-size:17.5px}.spot{width:76px;height:76px}.time-box{padding:16px}.time-box strong{font-size:48px}.cheat .question p{font-size:17.5px}}
+</style><style>
+.cover{display:block;background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important;font-size:clamp(40px,6.3vw,74px)}.cover .byline{color:#ffd23f!important}.cover .sub{color:#fff!important;max-width:62ch}.readtime{margin-top:22px}.cover .tagline{color:white}.cover .sample{background:#ffd23f;color:#151515}.cover .cast{margin-top:12px}.cover .cast figure{max-width:180px}.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.place{border:3px solid var(--line);padding:18px;background:var(--panel)}.place h3{font-family:var(--display);font-size:27px;margin:0 0 8px}.digits{font-family:var(--display);font-size:76px;text-align:center;letter-spacing:.12em;color:var(--ink);line-height:1.1}.digits small{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:12px}.spot{width:110px;height:110px}.reading{max-width:760px}.opinion article{min-width:0}.bill p{font-size:18px}.evidence h2{font-family:var(--display);font-size:32px}.source-list li{margin:12px 0}.stamp{text-align:center;font-size:15px;color:var(--muted)}
+:root[data-theme="dark"] a{color:#8cc9ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .take{color:#d9f2e3;background:#173326}}
+@media(max-width:640px){.duo{grid-template-columns:1fr}.cover h1{font-size:42px}.reading p,.bubble{line-height:1.6!important}.digits{font-size:64px}.cover .cast{gap:22px}.cover .cast figure{font-size:16px}.opinion{grid-template-columns:1fr!important}.bill .total{font-size:21px}}
+@media print{body{background:white;padding:0}.cover,.ep,.evidence,.era{box-shadow:none;break-inside:avoid}.wrap{gap:20px}}
+</style><style>.cover{background:#0e5b57!important}.cover h1{color:#ffd23f!important}.cover .byline{color:#a7f3d0!important}.card-art{display:block;width:min(100%,410px);height:auto;margin:0 auto}.deck-note{font-size:14px!important;text-align:center;color:var(--muted)}.fact-strip{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:18px;text-align:center;font:700 21px/1.5 var(--body)}:root[data-theme="light"] a{color:#165da3}@media(max-width:360px){.cover h1{font-size:36px}.cast{gap:12px!important}.cast figure{max-width:108px!important}.ep-head h2{font-size:28px}} </style><link rel="canonical" href="https://sriniurs.github.io/ganjifa/"><style>.cover{background:#ffc6cf!important;color:#151515!important}.cover h1,.cover .sub,.cover .cast figure,.cover .tagline{color:#151515!important}.cover .byline{color:#9d174d!important}</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></svg><main class="wrap"><header class="cover"><p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p><span class="sample">FRIDAY · 13 NOVEMBER 2026</span><h1>Ganjifa:<br>A World Painted<br>on Playing Cards</h1><p class="sub">A little box opens onto royal courts, stories of Vishnu, regional artists—and a game where the bigger number does not always win.</p><div class="fs"><span>India Unpacked</span><span>A gallery in your hand</span></div><div class="cast"><figure><svg class="" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>looking closer</small></figure><figure><svg class="" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>unpacking the deck</small></figure></div><p class="readtime">ABOUT 6 MINUTES</p></header><section class="ep" id="section-01"><div class="ep-head"><span class="no">01</span><h2>A painting you can play with</h2></div><svg class="card-art" viewBox="0 0 410 155" role="img" aria-label="Stylised round playing cards with fish or crown motifs"><g transform="translate(77,80)"><circle r="58" fill="#e63946" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-30 0Q0-27 26 0Q0 27-30 0ZM26 0L40-18V18Z" fill="#ffd23f"/><circle cx="-15" cy="-4" r="3" fill="#151515"/></g><g transform="translate(202,80)"><circle r="58" fill="#1f7ad1" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-30 0Q0-27 26 0Q0 27-30 0ZM26 0L40-18V18Z" fill="#ffd23f"/><circle cx="-15" cy="-4" r="3" fill="#151515"/></g><g transform="translate(327,80)"><circle r="58" fill="#2a9d5c" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-30 0Q0-27 26 0Q0 27-30 0ZM26 0L40-18V18Z" fill="#ffd23f"/><circle cx="-15" cy="-4" r="3" fill="#151515"/></g></svg><p class="deck-note">Schematic illustration · not a reproduction of a historical deck</p><div class="reading"><p class="lead">A playing card does not have to be a rectangle with a heart in the corner.</p><p>Imagine opening a box and finding little painted circles: a royal figure, a fish, a cluster of repeated emblems. Spread across a table, they look like a miniature exhibition waiting for visitors.</p><p>Ganjifa brings that pleasure into a playing-card tradition. Many cards are round, but rectangular and even oval examples exist in the Indira Gandhi National Centre for the Arts collection. <a href="#s1">[1]</a> Shape alone cannot identify every deck.</p><p>The useful question comes next: how do these pictures work together? A single card offers an image. The whole pack offers a system—and the possibility of a game.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Do we frame these or shuffle them?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Let us understand the deck before choosing its retirement plan.</p></div></div></section><section class="ep" id="section-02"><div class="ep-head"><span class="no">02</span><h2>A traveller in the royal courts</h2></div><div class="reading"><p>Ganjifa has Persian connections and was established in India in the Mughal period. IGNCA records a particularly tangible historical detail: in <b>1527</b>, Babur sent Ganjifa cards as a gift. It also points to descriptions of packs in Abul Fazl’s <i>Ain-i-Akbari</i>, the account of Akbar’s reign. <a href="#s2">[2]</a></p><p>These references place cards within the exchange of objects and pleasures around a court. They do not tell us that every later Indian deck looked or played exactly like Babur’s gift.</p><p>As the tradition spread, its imagery developed in different directions. The story becomes more interesting when we follow that change: a game associated with imperial life could also become a vehicle for religious stories and local painting traditions.</p></div></section><section class="ep" id="section-03"><div class="ep-head"><span class="no">03</span><h2>Inside a 96-card pack</h2></div><svg class="card-art" viewBox="0 0 410 155" role="img" aria-label="Stylised round playing cards with fish or crown motifs"><g transform="translate(77,80)"><circle r="58" fill="#e63946" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-24 15L-30-15-10-4 0-25 10-4 30-15 24 15Z" fill="#ffd23f"/><path d="M-24 23H24" stroke="#ffd23f" stroke-width="6"/></g><g transform="translate(202,80)"><circle r="58" fill="#1f7ad1" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-24 15L-30-15-10-4 0-25 10-4 30-15 24 15Z" fill="#ffd23f"/><path d="M-24 23H24" stroke="#ffd23f" stroke-width="6"/></g><g transform="translate(327,80)"><circle r="58" fill="#2a9d5c" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-24 15L-30-15-10-4 0-25 10-4 30-15 24 15Z" fill="#ffd23f"/><path d="M-24 23H24" stroke="#ffd23f" stroke-width="6"/></g></svg><p class="deck-note">Schematic illustration · not a reproduction of a historical deck</p><div class="fact-strip">8 suits × (1 king + 1 minister + 10 number cards)<br>= 96 cards</div><div class="reading"><p>A standard Mughal Ganjifa pack has <b>eight suits of twelve cards</b>. A suit is a family of cards sharing an identifying sign. Each contains a king, a minister and ten numbered cards. The numbered cards use repeated emblems, rather than requiring the same numeral in every corner. <a href="#s3">[3]</a></p><p>The Horniman Museum describes a set whose suit signs include a crown, a sword and coins. Such objects give a deck its vocabulary: the player learns to recognise a suit before judging the card’s rank.</p><p>Its museum record also offers a small detective story. The collection has <b>95 cards</b>, because the king of the red-coin suit is missing. Knowing the pack’s structure tells us exactly what the surviving object lacks. <a href="#s3">[3]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Even a missing card has an identity.</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The catalogue knows who failed to turn up.</p></div></div></section><section class="ep" id="section-04"><div class="ep-head"><span class="no">04</span><h2>When the suits tell sacred stories</h2></div><svg class="card-art" viewBox="0 0 410 155" role="img" aria-label="Stylised round playing cards with fish or crown motifs"><g transform="translate(77,80)"><circle r="58" fill="#e63946" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-30 0Q0-27 26 0Q0 27-30 0ZM26 0L40-18V18Z" fill="#ffd23f"/><circle cx="-15" cy="-4" r="3" fill="#151515"/></g><g transform="translate(202,80)"><circle r="58" fill="#1f7ad1" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-30 0Q0-27 26 0Q0 27-30 0ZM26 0L40-18V18Z" fill="#ffd23f"/><circle cx="-15" cy="-4" r="3" fill="#151515"/></g><g transform="translate(327,80)"><circle r="58" fill="#2a9d5c" stroke="#151515" stroke-width="4"/><circle r="49" fill="none" stroke="#ffd23f" stroke-width="2"/><path d="M-30 0Q0-27 26 0Q0 27-30 0ZM26 0L40-18V18Z" fill="#ffd23f"/><circle cx="-15" cy="-4" r="3" fill="#151515"/></g></svg><p class="deck-note">Schematic illustration · not a reproduction of a historical deck</p><div class="reading"><p>In Dashavatara Ganjifa, the imagery draws on the ten incarnations of Vishnu. A familiar form has <b>ten suits and 120 cards</b>; IGNCA also describes standard Dashavatara packs of 144 cards. <a href="#s4">[4]</a> The name therefore does not guarantee one pack size.</p><p>Here the pictures offer another route into the deck. Someone familiar with the stories can recognise a figure or emblem and connect it with a larger narrative. Someone unfamiliar with them has a reason to ask what the image represents.</p><p>The distinction is useful: the story helps us read the imagery, while the rules explain how the card functions in a game. Appreciating one does not automatically teach us the other. We can enjoy the artwork immediately and still have something substantial left to learn.</p></div></section><section class="ep" id="section-05"><div class="ep-head"><span class="no">05</span><h2>The number can surprise you</h2></div><div class="fact-strip">Recognise the suit → recall its ranking → follow the cards played</div><div class="reading"><p class="cap">A glimpse of play—not a universal rulebook.</p><p>IGNCA’s workshop account describes players competing to win rounds, or <b>tricks</b>. A trick is a small contest within the larger game, with players contributing cards and a winner taking the round. <a href="#s4">[4]</a></p><p>One striking feature is that the numbered cards do not run in the same order in every suit. The account describes groups of suits with opposite numerical sequences. A player cannot simply assume that ten always beats one.</p><p>That changes what you need to remember. Recognising the symbol is only the first step; you must also know the ranking used for that suit and keep track of what has appeared. The artwork becomes information you use under pressure.</p><p>Exact dealing, opening and scoring conventions need the rules for the version being played. This glimpse explains the attraction without pretending to teach a complete game.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So I cannot win by collecting the biggest numbers?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>You may have to read the pictures—and the table.</p></div></div></section><section class="ep" id="section-06"><div class="ep-head"><span class="no">06</span><h2>One tradition, several local accents</h2></div><div class="fact-strip">Odisha · West Bengal · Maharashtra · Karnataka<br><small>A selection of regional connections, not an exhaustive map.</small></div><div class="reading"><p>Place matters. IGNCA’s catalogue records sets from <b>Raghurajpur and Chikiti in Odisha, Bishnupur in West Bengal, and Sawantwadi in Maharashtra</b>. It also records subjects beyond the familiar ten-incarnation theme, including Mahabharata scenes. <a href="#s1">[1]</a></p><p>Karnataka has its own connection. The Government of India’s tourism account identifies <b>Mysore Ganjifa</b> as a regional tradition and records its geographical indication recognition in <b>2008</b>. <a href="#s5">[5]</a> A geographical indication connects a product’s identity with its place of origin.</p><p>These names are more than stops on a map. They give us a better way to describe an object: where was it made, what subjects does it use, and which local tradition does it belong to?</p><p>A generic label begins the conversation. The regional details make it precise.</p></div></section><section class="ep" id="section-07"><div class="ep-head"><span class="no">07</span><h2>The maker changes what we see</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><circle cx="43" cy="57" r="31" fill="#e63946" stroke="#151515" stroke-width="3"/><circle cx="43" cy="57" r="23" fill="none" stroke="#ffd23f" stroke-width="3"/><path d="M45 58L83 12 91 20 53 66Z" fill="#1f7ad1" stroke="#151515" stroke-width="3"/><path d="M45 58L38 74 53 66" fill="#ffd23f" stroke="#151515" stroke-width="3"/></svg><div class="reading"><p>Take one documented example. IGNCA lists a round, ten-suit, <b>120-card Dashavatara set</b> by <b>Banamali Mahapatra of Raghurajpur</b>, dated <b>1996</b>. The same catalogue records much larger sets by this artist, including a <b>288-card, 24-suit set from 2007</b>. <a href="#s1">[1]</a></p><p>Those records challenge the idea that every deck must fit the most familiar formula. They also return a person’s name to objects that might otherwise be described simply as “traditional cards”.</p><p>Materials vary too. The World Culture Museum describes historical cards made from paper or cloth as well as costly materials such as ivory. <a href="#s6">[6]</a> We should not imagine one recipe behind every surviving pack.</p><p>Look closely at the spacing of emblems, the figure inside its border and the consistency across a whole suit. A deck asks its maker to balance individual pictures with a coherent visual system.</p></div></section><section class="ep" id="section-08"><div class="ep-head"><span class="no">08</span><h2>The picture is only the first move</h2></div><div class="reading"><p>The World Culture Museum has reprinted a Ganjifa deck from its collection and offered visitors a chance to try playing it. <a href="#s6">[6]</a> That is an appealing way to bridge two experiences: looking at an object and discovering what it asks people to do.</p><p>A display can reveal the painted details. A playing session reveals another layer: which marks matter, what a player must remember, and how the cards create a shared challenge.</p><p>That is what makes Ganjifa such a rewarding subject. We can enter through history, painting, religious imagery or the pleasure of a game. Follow any one of those paths far enough and the others begin to appear.</p><p>Open a little box of cards, and there is room for an artist, a historian and several players around the same table.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I came to admire a painting.</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Good. Now pull up a chair.</p></div></div></section><section class="evidence" id="sources"><h2>The evidence file</h2><p>Checked 8 November 2026 · Cultural and historical explainer.</p><ol class="source-list"><li id="s1"><a href="https://ignca.gov.in/online-digital-resources/digital-images/ganjifa-cards/">IGNCA: Ganjifa Cards collection catalogue</a> — Shapes, places, named makers, subjects and dated sets. Historical catalogue entries do not establish current workshop activity.</li><li id="s2"><a href="https://ignca.gov.in/ganjifa-cards-2/">IGNCA: Ganjifa Cards historical introduction</a> — Babur’s 1527 gift, Mughal court references and the spread of card themes. Exact origins and transmission should not be reduced to one invention story.</li><li id="s3"><a href="https://www.horniman.ac.uk/object/99.297iii/">Horniman Museum: playing card, object 99.297iii</a> — Eight suits, court and number cards, suit signs and the missing red-coin king in this particular collection set.</li><li id="s4"><a href="https://ignca.gov.in/ganjifa-traditional-playing-cards-of-india/">IGNCA: Ganjifa — Traditional playing cards of India</a> — Standard pack sizes, Dashavatara imagery and a workshop playing account. The play section is an introduction, not complete rules for all variants.</li><li id="s5"><a href="https://www.incredibleindia.gov.in/en/karnataka/ganjifa-cards-of-mysore-karnataka">Incredible India: Ganjifa Cards of Mysore</a> — Government tourism account of the Mysore tradition and its 2008 GI recognition.</li><li id="s6"><a href="https://www.varldskulturmuseet.se/en/exhibitions/tidigare-utstallningar/a-world-of-games/ganjifa/">World Culture Museum: Ganjifa</a> — Page dated 10 April 2025: materials and the museum’s reprinted deck and exhibition activity. No claim about current exhibition availability is made.</li></ol><p>Zappy and Prof. Bolt are fictional; their dialogue and the opening box scene are invented. Interpretive observations are editorial. Card drawings are schematic, not reproductions of historical decks or the work of a named artist. Pack sizes describe particular common forms and documented examples; regional structures and playing conventions vary.</p></section><footer class="foot">THE END · srini.presents · for curious grown-ups</footer></main></body></html>
