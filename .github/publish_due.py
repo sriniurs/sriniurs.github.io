@@ -4,10 +4,10 @@ Each story waits in queue/<slug>.json:
   {"slug": "green-crackers", "date": "2026-11-09", "href": "/green-crackers/",
    "line": "<li><a href=\"/green-crackers/\">Title</a><span>9 Nov 2026 · Theme · shape</span></li>"}
 The story page itself (/<slug>/index.html, og.png, s/<slug>/) is uploaded whenever it is ready,
-so its own link works at once. Nothing else changes until 6 am IST on its date. Then:
+so its own link works at once. The scheduled queue check runs at 4:30 am IST on its date. Then:
   1. its line is added to Past stories (archive/index.html), newest on top;
   2. the front page (index.html + og.png) becomes a copy of the newest story that is due.
-Safe to run any number of times. Run by .github/workflows/publish.yml at 6 am IST,
+Safe to run any number of times. Run by .github/workflows/publish.yml at 4:30 am IST,
 and again after every zip upload (so a story uploaded on its own day goes live straight away).
 Usage: python3 .github/publish_due.py [--today YYYY-MM-DD]   (--today is only for testing)
 """
@@ -19,8 +19,8 @@ SITE = "https://sriniurs.github.io"
 if "--today" in sys.argv:
     today = datetime.date.fromisoformat(sys.argv[sys.argv.index("--today") + 1])
 else:
-    # a story's day starts at 6 am IST (Srini, 6 Nov 2026): before 6 am it still counts as yesterday
-    today = (datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30) - datetime.timedelta(hours=6)).date()
+    # Publish the current Indian calendar date, including the 04:30 and 04:45 IST runs.
+    today = (datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=5, minutes=30)).date()
 
 items = []
 for p in sorted(glob.glob("queue/*.json")):
