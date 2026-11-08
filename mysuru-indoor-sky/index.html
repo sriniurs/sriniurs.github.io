@@ -1,0 +1,242 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><title>Mysuru Is Getting an Indoor Sky — srini.presents</title><meta name='description' content='A full illustrated explainer exploring Mysuru’s COSMOS LED dome planetarium.'><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap'>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="myth-fact">
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box}body{padding:24px 18px 48px}.wrap{max-width:1060px;margin:auto;display:grid;gap:36px}.cover{background:#ffd23f!important;color:#151515!important;padding:28px 24px;border:4px solid var(--line);box-shadow:8px 8px 0 var(--line)}.cover h1{color:#151515!important;font-size:clamp(45px,7vw,78px);line-height:1.03;text-shadow:none!important;-webkit-text-stroke:0!important;margin:20px 0}.cover .byline{color:#9d0208!important;font-size:28px!important;white-space:normal!important}.tagline{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:5px}.sample{display:inline-block;background:#151515;color:#fff;padding:5px 10px;font-weight:bold}.cast{display:flex;gap:30px;flex-wrap:wrap}.cast figure{margin:12px 0 0;max-width:180px;font-weight:bold}.cast svg{display:block;width:84px;height:84px;background:white;border:2px solid #151515;border-radius:50%;margin-bottom:8px}.cast small{font-weight:normal}.fact{display:block!important;font-size:18px;line-height:1.5}.say{align-items:flex-start}.av{flex-shrink:0;width:54px;height:54px}.bubble{min-width:0}.ep{min-width:0}.grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.panel{min-width:0}a{color:#165da3}.cover .sub{color:#151515!important}.evidence{padding:20px;border:3px solid var(--line);background:var(--panel)}.evidence p,.evidence li{font-size:15px;line-height:1.5}.next{background:#ffd23f;color:#151515;border:3px solid var(--line);padding:18px;font-size:19px}.foot{text-align:center}h2{line-height:1.15}.fs{display:flex;flex-wrap:wrap;gap:8px}.fs span{background:#fff!important;color:#151515!important;border:2px solid #151515;padding:4px 8px}
+@media(prefers-color-scheme:dark){a{color:#8cc9ff}.sfx{color:#ffae73}.sfx.b{color:#86c6ff}.sfx.r{color:#ff9ca6}.cap,.take,.warn{color:#151515}.take{background:#dff2e5}}
+@media(max-width:640px){body{padding:16px 16px 32px}.wrap{gap:28px}.grid{grid-template-columns:minmax(0,1fr)!important}.cover{padding:22px 16px}.ep{padding:12px}.panel{padding:12px}.fact{font-size:17.5px}.ep-head{align-items:flex-start}.cover h1{font-size:48px}.ep h2{font-size:29px}.cast{gap:20px}.cast figure{max-width:125px}}
+</style><style>
+.wrap{gap:36px}.cover h1{font-size:clamp(44px,6.2vw,72px)}.cover .sub{max-width:45ch;line-height:1.55}.cast figure{font-size:17px}.ep{display:grid;gap:22px}.ep-head{margin-bottom:0}.reading{max-width:760px;width:100%;margin:0 auto;font:19px/1.65 var(--body)}.reading p{margin:0 0 16px}.reading p:last-child{margin-bottom:0}.reading .cap{margin:0 0 14px;font-size:19px;line-height:1.4}.lead{font-size:22px;font-weight:700;line-height:1.5}.banter{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:18px;background:var(--panel);border-top:2px dashed var(--muted);border-bottom:2px dashed var(--muted)}.banter .bubble{margin:0;line-height:1.5}.math{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bill{padding:18px;border:3px solid var(--line);background:var(--panel)}.bill h3{font-family:var(--display);font-size:28px;letter-spacing:.03em;margin:0 0 12px}.bill dl{margin:0}.bill dl div{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.bill dd{margin:0;white-space:nowrap;font-weight:700}.bill .total{border-top:2px solid var(--line);padding-top:10px;font-size:23px}.delta{background:#ffd23f;color:#151515;padding:15px 18px;border:3px solid var(--line);font-size:21px;font-weight:700;text-align:center}.ep .take{font-size:19px;line-height:1.55;border:2px solid #245e3b;background:#e3f5ea;color:#153c25;padding:16px 18px}.questions{display:grid;gap:13px}.question{border:2px solid var(--line);padding:15px 18px;background:var(--panel)}.question h3{font-family:var(--body);font-size:20px;line-height:1.4;margin:0 0 7px}.question p{margin:0}.source-note{font-size:15px!important;color:var(--muted)}.sample-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.sample-nav a{border:2px solid #151515;color:#151515;background:white;padding:6px 12px;font-weight:700;text-decoration:none}.ep p{overflow-wrap:break-word}.page-marker{font-weight:700;color:var(--muted);font-size:15px;letter-spacing:.08em}.ep-head .no{white-space:nowrap}html{scroll-behavior:smooth}
+@media(max-width:640px){.reading{font-size:17.5px;line-height:1.6}.reading .lead{font-size:20px!important}.banter,.math{grid-template-columns:minmax(0,1fr)}.banter{padding:16px 0;gap:16px}.ep{gap:18px}.bill{padding:16px}.question{padding:14px}.question h3{font-size:19px}.cover h1{font-size:46px}.ep .take{font-size:17.5px}.reading .cap{font-size:18px}.delta{font-size:19px}.wrap{gap:28px}.sample-nav{gap:8px}.sample-nav a{font-size:15px}.ep-head h2{font-size:32px}}
+@media(prefers-color-scheme:dark){.ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#e9edf2;--muted:#a8b3bf}:root[data-theme="dark"] .ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}
+</style><style>
+.cover{background:#c2410c!important;color:#fff!important}.cover h1,.cover .sub{color:#fff!important}.cover .byline{color:#fff1a8!important}.cover .cast figure{color:#fff}.cover .tagline{color:#fff1a8}.time-box{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:20px;text-align:center}.time-box strong{display:block;font:clamp(44px,7vw,68px)/1.2 var(--display);letter-spacing:.03em}.time-box p{margin:8px 0 0}.spot{width:84px;height:84px;background:white;border:3px solid #151515;border-radius:16px;padding:5px;justify-self:center;box-shadow:3px 3px 0 #151515}.opinion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opinion article{border:2px solid var(--line);padding:16px}.opinion h3{font:24px var(--display);margin:0 0 10px}.opinion p{font-size:18px;line-height:1.55;margin:0}.math-note{border-left:6px solid #e8590c;padding:12px 18px;background:var(--panel)}.cheat{background:#ffd23f!important;color:#151515!important}.cheat .question{background:#fff;color:#151515;border-color:#151515}.cheat .question p{font-size:18px}.source-list{padding-left:22px}.source-list li{margin-bottom:12px}.evidence a{overflow-wrap:anywhere}.sample{background:#fff!important;color:#151515!important}.era{margin:0}.take strong{font-weight:700}@media(max-width:640px){.opinion{grid-template-columns:minmax(0,1fr)}.opinion p{font-size:17.5px}.spot{width:76px;height:76px}.time-box{padding:16px}.time-box strong{font-size:48px}.cheat .question p{font-size:17.5px}}
+</style><style>
+.cover{display:block;background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important;font-size:clamp(40px,6.3vw,74px)}.cover .byline{color:#ffd23f!important}.cover .sub{color:#fff!important;max-width:62ch}.readtime{margin-top:22px}.cover .tagline{color:white}.cover .sample{background:#ffd23f;color:#151515}.cover .cast{margin-top:12px}.cover .cast figure{max-width:180px}.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.place{border:3px solid var(--line);padding:18px;background:var(--panel)}.place h3{font-family:var(--display);font-size:27px;margin:0 0 8px}.digits{font-family:var(--display);font-size:76px;text-align:center;letter-spacing:.12em;color:var(--ink);line-height:1.1}.digits small{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:12px}.spot{width:110px;height:110px}.reading{max-width:760px}.opinion article{min-width:0}.bill p{font-size:18px}.evidence h2{font-family:var(--display);font-size:32px}.source-list li{margin:12px 0}.stamp{text-align:center;font-size:15px;color:var(--muted)}
+:root[data-theme="dark"] a{color:#8cc9ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .take{color:#d9f2e3;background:#173326}}
+@media(max-width:640px){.duo{grid-template-columns:1fr}.cover h1{font-size:42px}.reading p,.bubble{line-height:1.6!important}.digits{font-size:64px}.cover .cast{gap:22px}.cover .cast figure{font-size:16px}.opinion{grid-template-columns:1fr!important}.bill .total{font-size:21px}}
+@media print{body{background:white;padding:0}.cover,.ep,.evidence,.era{box-shadow:none;break-inside:avoid}.wrap{gap:20px}}
+</style><style>
+.cover{background:#0e5b57!important}.cover h1{color:#ffd23f!important}.cover .byline,.cover .tagline{color:#a7f3d0!important}.cover .sub{max-width:50ch}.sky-art{display:block;width:100%;max-width:620px;height:auto;margin:24px auto 6px}.diagram{display:block;width:100%;max-width:680px;height:auto;margin:auto;background:#111d36;border:3px solid var(--line);border-radius:12px}.diagram text{font:700 17px 'Trebuchet MS',sans-serif;fill:#fff}.diagram .label{fill:#ffd23f}.cover h1{overflow-wrap:normal}.reading sup{font-size:13px} .ep .cap{background:#ffd23f;color:#151515}.evidence a{color:#165da3}:root[data-theme="dark"] .evidence a{color:#8cc9ff}:root[data-theme="light"]{--paper:#eef3f8;--dot:#cfdbe8;--panel:#fff;--line:#151515;--ink:#151515;--muted:#4a5560}:root[data-theme="light"] .ep .take{background:#e3f5ea;color:#153c25}:root[data-theme="light"] a{color:#165da3}@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .evidence a{color:#8cc9ff}}@media(max-width:360px){.cover h1{font-size:36px}.cover{padding:20px 12px}.ep-head h2{font-size:28px}.cast{gap:14px}.cast figure{max-width:110px}}
+</style><link rel="canonical" href="https://sriniurs.github.io/mysuru-indoor-sky/"><style>.cover{background:#1d4f9a!important;color:#fff!important}.cover h1{color:#ffd23f!important}.cover .sub,.cover .byline,.cover .tagline,.cover .cast figure{color:#fff!important}</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></svg><main class="wrap"><header class="cover"><p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p><span class="sample">THURSDAY · 12 NOVEMBER 2026</span><h1>Mysuru is getting<br>an indoor sky</h1><p class="sub">At the foot of Chamundi Hill, a new kind of planetarium is taking shape. The clever part is not just what you will see. It is where the light comes from.</p><div class="fs"><span>The Curious Files</span><span>Mysuru + science</span><span>About 6 minutes</span></div>
+<svg class="sky-art" viewBox="0 0 620 220" aria-hidden="true"><g stroke="#151515" stroke-width="4" stroke-linejoin="round"><path d="M45 191Q145 85 248 173Q342 42 575 191Z" fill="#2a9d5c"/><path d="M185 180A126 126 0 0 1 437 180Z" fill="#152644"/><path d="M185 180H437V202H185Z" fill="#ffd23f"/><path d="M250 61Q210 110 218 179M310 54V180M371 69Q411 118 405 179M199 124H420" fill="none" stroke="#476b98" stroke-width="2"/><g fill="#ffd23f" stroke="none"><circle cx="261" cy="108" r="4"/><circle cx="337" cy="83" r="3"/><circle cx="377" cy="135" r="4"/><circle cx="292" cy="155" r="3"/><path d="M320 109L324 119L335 123L324 127L320 138L316 127L305 123L316 119Z"/></g><path d="M65 202H558" stroke="#fff"/></g></svg>
+<div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>looking up, asking why</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>following the light</small></figure></div></header>
+<section class="ep" id="section-01"><div class="ep-head"><span class="no">01</span><h2>A sky you can switch on</h2></div><div class="reading"><p class="lead">Imagine arriving while the Sun is still up—and sitting down beneath a sky full of stars.</p><p>A planetarium makes that possible by creating a sky indoors. You are watching a representation, rather than looking through the roof at the real stars. That gives a show something the actual night sky cannot offer on demand: the ability to change the scene.</p><p>Mysuru’s upcoming facility is part of <b>COSMOS—the Cosmology Education and Research Training Centre</b>, managed by the Indian Institute of Astrophysics. The institute describes an LED dome planetarium alongside a research training centre. <a href="#s1">[1]</a></p><p>The local news hook: <i>Star of Mysore</i> reported on November 7 that preparations were under way for a November 13 inauguration at the University of Mysore’s Chamundi foothill site. That is a reported schedule, not confirmation that public shows or ticket bookings have begun. <a href="#s2">[2]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So a cloudy afternoon need not cancel the stars?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Inside this dome, the weather does not choose the programme.</p></div></div></section>
+<section class="ep" id="section-02"><div class="ep-head"><span class="no">02</span><h2>The screen makes its own light</h2></div><div class="reading"><p>In a projection-based planetarium, an instrument sends light onto the dome. The surface reflects that light towards the audience.</p><p>An <b>LED dome</b> changes the arrangement. LED means <b>light-emitting diode</b>: the image is made by tiny light sources on the dome’s inner surface. The surface displaying the picture also produces its light. The Mysuru project’s technology supplier describes numerous LED panels forming a 15-metre tilted dome. <a href="#s3">[3]</a></p></div>
+<svg class="diagram" viewBox="0 0 680 285" role="img" aria-label="Simplified comparison: a projector shines light onto a reflecting dome, while an LED dome emits light from its surface towards the audience. Not to scale."><g fill="none" stroke-width="5"><path d="M30 160A130 130 0 0 1 290 160" stroke="#91b4dd"/><path d="M390 160A130 130 0 0 1 650 160" stroke="#ffd23f"/><path d="M160 162L90 55M160 162L230 55" stroke="#7cc7ff" stroke-width="3"/><path d="M450 55L485 151M590 55L555 151" stroke="#ffd23f" stroke-width="3"/><path d="M477 143L485 155L487 139M553 139L555 155L563 143" stroke="#ffd23f" stroke-width="3"/></g><rect x="141" y="149" width="38" height="32" rx="5" fill="#7cc7ff"/><g fill="#e63946"><circle cx="520" cy="165" r="12"/><path d="M502 202V191Q520 174 538 191V202Z"/></g><text x="160" y="230" text-anchor="middle" class="label">PROJECTED IMAGE</text><text x="520" y="230" text-anchor="middle" class="label">SELF-EMITTING IMAGE</text><text x="160" y="257" text-anchor="middle">Light shines onto the dome</text><text x="520" y="257" text-anchor="middle">Light comes from the dome</text></svg>
+<div class="reading"><p>Here is an easy detail to miss: a projector can also use LEDs as its light source. So “LED” alone does not tell you which system you are looking at. The useful question is: <b>are the LEDs inside a projector, or spread across the dome itself?</b> <a href="#s4">[4]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So “LED” is only half the explanation.</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Exactly. Ask where the lights live.</p></div></div></section>
+<section class="ep" id="section-03"><div class="ep-head"><span class="no">03</span><h2>A planetarium is not a telescope</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M20 30L66 12L78 40L32 58Z" fill="#1f7ad1"/><path d="M13 35L23 31L32 51L22 55Z" fill="#ffd23f"/><path d="M67 12L75 9L87 37L79 41Z" fill="#ffd23f"/><path d="M49 52V65M49 63L24 91M49 63L74 91M49 63V94" fill="none"/><circle cx="49" cy="60" r="6" fill="#e63946"/></g></svg><div class="reading"><p>A telescope collects light arriving from objects in space. A planetarium constructs a view for an audience. The distinction matters: an indoor flight past a planet is not footage from a camera making that journey.</p><p>Modern planetarium software can use astronomical databases to build navigable views of space. Berlin’s planetarium describes a system that moves from a sky seen from Earth to a wider view of the universe. That is an example of what such software can do, not a promise about Mysuru’s opening programme. <a href="#s8">[8]</a></p><p>A useful way to watch is to ask what the scene represents: a photograph, a view assembled from data, or an explanatory animation. All can teach us something, but they are different kinds of evidence.</p></div></section><section class="ep" id="section-04"><div class="ep-head"><span class="no">04</span><h2>The indoor sky is over a century old</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><circle cx="50" cy="37" r="24" fill="#1f7ad1"/><path d="M42 60V74L26 91M58 60V74L74 91M50 71V94" fill="none"/><g fill="#ffd23f"><circle cx="39" cy="28" r="4"/><circle cx="58" cy="24" r="4"/><circle cx="64" cy="41" r="4"/><circle cx="43" cy="47" r="4"/></g></g></svg><div class="reading"><p>Long before digital screens, engineers faced an ingenious challenge: how could people sitting inside a room see the sky appear to move?</p><p>The early modern answer used a carefully engineered star projector. ZEISS presented its first model in Munich in 1923. The Deutsches Museum’s permanent projection planetarium opened on May 7, 1925. Its first projector displayed about 4,500 stars. <a href="#s6">[6]</a></p><p>That history helps explain the change in Mysuru. The dome remains a shared sky above an audience, but the image-making machinery has evolved. Mechanical and optical projection, digital projection and self-emitting LED surfaces are different ways of giving a room its own universe.</p><p>The clever invention was never merely a ceiling covered in dots. It was a controllable sky that could make an explanation visible.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So people were visiting indoor skies before space travel?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Yes. The room got a universe long before a rocket got a passenger.</p></div></div></section><section class="ep" id="section-05"><div class="ep-head"><span class="no">05</span><h2>Why tilt a sky?</h2></div><svg class="diagram" viewBox="0 0 680 245" role="img" aria-label="Conceptual side view of a tilted dome. Its rim slopes relative to a horizontal reference. The drawing is not an architectural plan and is not to scale."><path d="M115 191A200 155 0 0 1 508 105Z" fill="#203e61" stroke="#ffd23f" stroke-width="5"/><path d="M115 191L508 105" stroke="#ffd23f" stroke-width="4"/><path d="M90 199H570" stroke="#9db5cf" stroke-width="2" stroke-dasharray="8 7"/><g fill="#fff"><circle cx="263" cy="71" r="3"/><circle cx="331" cy="49" r="4"/><circle cx="414" cy="79" r="3"/></g><text x="330" y="125" text-anchor="middle">A sky brought into the forward view</text><text x="330" y="227" text-anchor="middle" class="label">CONCEPTUAL SIDE VIEW · NOT TO SCALE</text></svg><div class="reading"><p>Now return to the shape of the room. A screen can surround you with an image, but where that image sits in your field of view also matters.</p><p>The Mysuru design tilts the dome. In an earlier explanation to PTI, IIA’s director said this brings the night-sky view in front of the audience, reducing the need to crane the neck upwards. The change is in the theatre’s geometry, not in the astronomy being shown. <a href="#s5">[5]</a></p><p>Think of a classroom diagram: turning the board towards the people looking at it does not change the subject. It changes how they see it. A tilted dome applies that practical question to an image that wraps around a room.</p></div></section><section class="ep" id="section-06"><div class="ep-head"><span class="no">06</span><h2>The audience could become the authors</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="10" y="12" width="80" height="58" rx="5" fill="#142b4a"/><path d="M32 88H68M50 70V88" fill="none"/><path d="M23 56L35 41L46 47L63 27L78 36" fill="none" stroke="#ffd23f"/><g fill="#e63946"><circle cx="35" cy="41" r="4"/><circle cx="63" cy="27" r="4"/></g></g></svg><div class="reading"><p>The project’s name contains an easily overlooked clue: COSMOS is a training centre as well as a planetarium. IIA’s stated goals include visualising scientific data, developing teachers’ skills and allowing students to program shows for the dome. <a href="#s1">[1]</a></p><p>Imagine a student preparing a short explanation of an astronomical observation. Choosing a beautiful image is only the beginning. What do its colours represent? Which part is measured, and which part helps explain the measurement? What needs a label?</p><p>Those questions turn a display into a learning tool. The student must understand the subject well enough to guide somebody else through it. This is an illustration of the educational opportunity, rather than a description of a course already open for enrolment.</p></div></section><section class="ep" id="section-07"><div class="ep-head"><span class="no">07</span><h2>Mysuru’s next sky has a local past</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M10 20Q30 10 50 23Q70 10 90 20V82Q70 73 50 86Q30 73 10 82Z" fill="#ffd23f"/><path d="M50 23V86M20 34L40 34M20 46L40 46M60 34L80 34M60 46L80 46" fill="none"/><circle cx="70" cy="63" r="8" fill="#1f7ad1"/></g></svg><div class="reading"><p>There is another side to the project that does not involve the newest screen. COSMOS has a history-of-astronomy initiative focused on older Kannada material from the Mysore region. Its plans include locating, scanning, cataloguing and translating literature and manuscripts. <a href="#s7">[7]</a></p><p>IIA names repositories including the Oriental Research Institute, Maharaja Sanskrit College and the University of Mysore’s Kannada studies institution, alongside private collections. The material is not all gathered in one convenient place. <a href="#s7">[7]</a></p><p>Why is this connected to a new planetarium? Because a place that explains astronomy can also explore how people here have studied and described the sky. Preserving an old text and building a modern display are different jobs, but both help knowledge find a new audience.</p></div></section><section class="ep" id="section-08"><div class="ep-head"><span class="no">08</span><h2>A room with a much larger view</h2></div><div class="reading"><p>Put the pieces together. The LED surface explains how the picture is made. The tilt changes how the audience faces it. The training and heritage projects explain why the institution could matter beyond a single show.</p><p>There are still practical details for a future visitor to check: public opening, bookings, show languages and timings. A planned inauguration does not settle those questions. This edition makes no claim that ticket sales have started.</p><p>But the idea already offers something worth being curious about. At the foot of a familiar Mysuru hill, a new room is being built to make unfamiliar distances easier to imagine. The journey begins by taking a seat.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I was going to ask for a window seat.</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Here, the ceiling gets the best view.</p></div></div></section><section class="evidence" id="sources"><h2>The evidence file</h2><p>Sources checked 8 November 2026. Illustrations are explanatory drawings, not architectural renderings. Dialogue is fictional.</p><ol class="source-list"><li id="s1"><a href="https://www.iiap.res.in/outreach/cosmos/about/the-project/">Indian Institute of Astrophysics: The COSMOS Project</a> — institutional project description, last updated 25 March 2024; supports the centre’s purpose, planned data visualisation and outreach goals.</li><li id="s2"><a href="https://starofmysore.com/mp-yaduveer-inspects-planetarium-works/">Star of Mysore: MP Yaduveer inspects planetarium works</a> — 7 November 2026; local reporting on the site and planned November 13 inauguration. Opening plans have changed in earlier reports; no public booking date is asserted here.</li><li id="s3"><a href="https://www.rsacosmos.com/news-en/the-worlds-1st-customer-contract-for-a-led-dome-planetarium-awarded-to-rsa-cosmos-konica-minolta.html">RSA Cosmos / Konica Minolta: Mysuru LED dome contract</a> — supplier description of the 15-metre tilted LED-panel system. Supports design and mechanism; promotional performance claims are not adopted.</li><li id="s4"><a href="https://www.zeiss.com/planetariums/en/products-and-solutions/planetarium-technique/star-projectors-.html">ZEISS: Star Projectors</a> — primary technical description showing that LEDs can also be light sources inside projectors.</li><li id="s5"><a href="https://pynr.in/wp-content/uploads/2024/12/02-HYD-12-PAGES-PDF.compressed.pdf">The Pioneer / PTI: Tilted LED dome planetarium</a> — 2 December 2024, page 5; director’s explanation of the tilt. Its historical opening forecast is not used.</li><li id="s6"><a href="https://www.deutsches-museum.de/en/museum-island/programme/programme-a-z/planetarium/history-of-the-planetarium">Deutsches Museum: History of the Planetarium</a> — primary institutional history; supports the 1923 development and demonstrations, the May 7, 1925 permanent opening and the approximately 4,500-star display.</li><li id="s7"><a href="https://www.iiap.res.in/outreach/cosmos/history-of-astronomy-project/">IIA: History of Astronomy Project</a> — primary description of the Kannada astronomy heritage initiative, named repositories and planned digitisation and translation work; goals are not presented as completed results.</li><li id="s8"><a href="https://www.planetarium.berlin/en/planetarium-am-insulaner/technology-and-instruments">Stiftung Planetarium Berlin: Technology and Instruments</a> — primary explanation of a planetarium’s database-supported visualisation system. This is a general example, not evidence of Mysuru’s exact show content.</li></ol><p>This edition explains the design; it does not report a visit or measured performance. It makes no global “first” claim and supplies no unverified show times or ticket prices.</p></section><footer class="foot">THE END · srini.presents · for curious grown-ups</footer></main></body></html>
