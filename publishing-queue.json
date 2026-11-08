@@ -19,11 +19,11 @@
       "number": 2,
       "url": "https://sriniurs.github.io/green-crackers/",
       "path": "/green-crackers/",
-      "title": "Green Crackers on Trial",
+      "title": "Green Crackers, Clear Rules",
       "not_before": "2026-11-09T05:00:00+05:30",
       "status": "pending",
       "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"2\"><a href=\"/green-crackers/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"20\" y=\"22\" width=\"40\" height=\"18\" rx=\"4\" fill=\"#8a4b1f\" stroke=\"#151515\" stroke-width=\"3\" transform=\"rotate(-30 40 31)\"/><path d=\"M44 40 L74 78\" stroke=\"#151515\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M44 40 L74 78\" stroke=\"#c46a12\" stroke-width=\"4\" stroke-linecap=\"round\"/><rect x=\"14\" y=\"78\" width=\"50\" height=\"10\" rx=\"3\" fill=\"#8a4b1f\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M70 22 l8 -6 M76 32 l10 -2 M64 14 l2 -10\" stroke=\"#e8590c\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></div><div class=\"card-copy\"><h3>Green Crackers on Trial</h3><p>A “green” cracker still makes up to 70% of the smoke. Five Deepavali myths, checked.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">9 Nov 2026</span></li>"
+      "card_html": "<li class=\"story-card\" data-queue-number=\"2\"><a href=\"/green-crackers/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"50\" r=\"34\" fill=\"#ffd23f\"/><path d=\"M50 25 V50 L69 61\" fill=\"none\"/><circle cx=\"50\" cy=\"50\" r=\"3\" fill=\"#151515\"/></g></svg></div><div class=\"card-copy\"><h3>Green Crackers, Clear Rules</h3><p>Karnataka timings, the chemistry behind green crackers, and why emissions and neighbourhood air are different measurements.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">9 Nov 2026</span></li>"
     },
     {
       "number": 3,
@@ -33,7 +33,17 @@
       "not_before": "2026-11-10T05:00:00+05:30",
       "status": "pending",
       "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"3\"><a href=\"/robotic-knee-replacement/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><path d=\"M34 8V34Q32 44 43 47H59Q69 43 65 34V8M39 91V67Q32 57 42 54H61Q71 59 63 69V91\" fill=\"#d9e9fb\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M38 48H63M38 53H63\" stroke=\"#e63946\" stroke-width=\"5\"/></svg></div><div class=\"card-copy\"><h3>Robotic Knee Replacement</h3><p>What the robot adds—and what patients should ask about pain, movement and cost.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">10 Nov 2026</span></li>"
+      "card_html": "<li class=\"story-card\" data-queue-number=\"3\"><a href=\"/robotic-knee-replacement/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M34 8 V34 Q32 44 43 47 H59 Q69 43 65 34 V8\" fill=\"#d9e9fb\"/><path d=\"M39 91 V67 Q32 57 42 54 H61 Q71 59 63 69 V91\" fill=\"#d9e9fb\"/><path d=\"M38 48 H63 M38 53 H63\" stroke=\"#e63946\" stroke-width=\"5\"/><circle cx=\"76\" cy=\"51\" r=\"9\" fill=\"#ffd23f\"/></g></svg></div><div class=\"card-copy\"><h3>Robotic Knee Replacement</h3><p>Inside the operation: resurfacing, digital mapping, ligament balance and what research says about patient benefit.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">10 Nov 2026</span></li>"
+    },
+    {
+      "number": 4,
+      "url": "https://sriniurs.github.io/singles-day/",
+      "path": "/singles-day/",
+      "title": "11.11: Four Singles, Two Countries, One Very Full Cart",
+      "not_before": "2026-11-11T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"4\"><a href=\"/singles-day/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"12\" y=\"18\" width=\"76\" height=\"55\" rx=\"6\" fill=\"#1f7ad1\"/><path d=\"M42 31L63 45L42 59Z\" fill=\"#ffd23f\"/><path d=\"M35 86H65M50 73V86\" fill=\"none\"/><circle cx=\"77\" cy=\"29\" r=\"4\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>11.11: Four Singles, Two Countries, One Very Full Cart</h3><p>China’s 11.11, India’s 12/12/12, and the demand forecasting, livestreams and delivery networks behind shopping festivals.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">11 Nov 2026</span></li>"
     }
   ]
 }
