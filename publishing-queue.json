@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": null,
+  "last_published_on": "2026-11-08",
   "entries": [
     {
       "number": 1,
@@ -11,8 +11,8 @@
       "path": "/darkest-night/",
       "title": "Why the Festival of Lights Falls on the Darkest Night",
       "not_before": "2026-11-08T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-08T06:52:05+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"1\"><a href=\"/darkest-night/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"16\" y=\"20\" width=\"68\" height=\"66\" rx=\"6\" fill=\"#fff\" stroke=\"#151515\" stroke-width=\"3\"/><rect x=\"16\" y=\"20\" width=\"68\" height=\"16\" fill=\"#0f766e\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M32 12 V28 M68 12 V28\" stroke=\"#151515\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"61\" r=\"15\" fill=\"#151515\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M44 50 a15 15 0 0 1 0 22\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"3\"/><path d=\"M26 46 h6 M26 56 h6 M68 46 h6 M68 56 h6 M26 76 h6 M68 76 h6\" stroke=\"#9aa5b1\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></div><div class=\"card-copy\"><h3>Why the Festival of Lights Falls on the Darkest Night</h3><p>Deepavali is set on the one night with no moon, on purpose. Here&#x27;s how the moon picks the date, and why South and North light up at different hours.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">8 Nov 2026</span></li>"
     },
     {
