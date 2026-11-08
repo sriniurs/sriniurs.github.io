@@ -17,6 +17,11 @@ by intended release. Each entry needs its URL, path, title, timezone-aware
 Preserve completed publication records. Insertions can renumber pending entries
 when needed to preserve scheduled order. Update their data-queue-number values too.
 
+Every new article must include exactly one GoatCounter script using
+`data-goatcounter="https://sriniurs.goatcounter.com/count"` and
+`src="https://gc.zgo.at/count.js"`, before its closing body tag. This ensures
+visits through direct article links are counted as well as homepage visits.
+
 Do not add pending cards to the homepage or archive early. Public repository files
 and direct article URLs are public immediately: this queue schedules homepage
 discovery, not private access. Private-until-release material must not be committed
