@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-08",
+  "last_published_on": "2026-11-09",
   "entries": [
     {
       "number": 1,
@@ -21,8 +21,8 @@
       "path": "/green-crackers/",
       "title": "Green Crackers, Clear Rules",
       "not_before": "2026-11-09T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-09T05:13:26+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"2\"><a href=\"/green-crackers/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"50\" r=\"34\" fill=\"#ffd23f\"/><path d=\"M50 25 V50 L69 61\" fill=\"none\"/><circle cx=\"50\" cy=\"50\" r=\"3\" fill=\"#151515\"/></g></svg></div><div class=\"card-copy\"><h3>Green Crackers, Clear Rules</h3><p>Karnataka timings, the chemistry behind green crackers, and why emissions and neighbourhood air are different measurements.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">9 Nov 2026</span></li>"
     },
     {
