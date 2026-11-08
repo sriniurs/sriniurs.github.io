@@ -1,17 +1,58 @@
 # Daily article queue
 
-The homepage features one queued article per day, in ascending number order, at 05:00 Asia/Kolkata, starting 8 November 2026.
+GitHub Actions owns daily publishing. The workflow is `.github/workflows/publish.yml`,
+and `.github/publish_due.py` reads `publishing-queue.json`. The former local Codex
+publisher is paused. No computer, open app, API key or local files are required.
 
-The Codex chat automation “Publish Srini’s next article” owns this task. Do not create a second publisher. The scheduler starts at 05:00; committing and GitHub Pages deployment take additional time. Local scheduled tasks need the computer awake and Codex running.
+The primary scheduled check is 05:00 Asia/Kolkata (23:30 UTC on the preceding date).
+Hourly recovery checks run at minute 15. GitHub scheduling and Pages deployment can
+be delayed; 05:00 is the target, not a guaranteed exact public-live time.
 
 ## Adding articles
 
-Upload the finished article to its own URL, then tell this chat its URL and queue number. Add a corresponding pending entry to publishing-queue.json after inspecting the actual article. Numbers must be unique positive integers. card_html is the complete matching story-card HTML, including its publication date. not_before prevents early release. Preserve existing numbers and completed publication records. Do not add pending cards to either collection page early.
+Upload the finished article to `/<slug>/index.html`, inspect it, and add a pending
+entry to `publishing-queue.json`. Numbers must be unique positive integers, ordered
+by intended release. Each entry needs its URL, path, title, timezone-aware
+`not_before`, status, `published_at` and complete matching `card_html`.
+Preserve completed publication records. Insertions can renumber pending entries
+when needed to preserve scheduled order. Update their data-queue-number values too.
 
-## Each morning
+Do not add pending cards to the homepage or archive early. Public repository files
+and direct article URLs are public immediately: this queue schedules homepage
+discovery, not private access. Private-until-release material must not be committed
+to this public repository before its release time.
 
-Read the live main branch and publishing-queue.json. Use Asia/Kolkata for the current date and time. Before 05:00 do nothing. If last_published_on is today, do nothing. If it is a later date, report a clock inconsistency and do nothing. Pick only the smallest-number pending entry: if its not_before is in the future, wait rather than skipping it. An empty queue leaves the current homepage unchanged.
+## Publishing behaviour
 
-Confirm its article exists, then read index.html and archive/index.html. Identify the direct article-source ul under .page, before the theme-groups-js script. Prepend its card_html to that source list in both pages. Never add it to the runtime generated lists. If the same canonical href already exists, move the existing card to the front instead of duplicating it, and update its date. Use the actual release date in the card when a run is delayed; do not backdate it. Preserve every other article, the hero, style, recent-seven behaviour, monthly archive and analytics.
+The script validates the queue, source lists and article files before editing.
+Before 05:00 IST it does nothing. It also does nothing when today's release is
+already recorded or the queue is empty. A future last_published_on is an error.
+It considers only the smallest-number pending entry and respects not_before;
+it never skips a future entry or publishes several stories to catch up.
 
-Update the selected queue entry to published, record its published_at timestamp, and set last_published_on to today's IST date. Commit both collection pages and publishing-queue.json in one atomic commit to main using the GitHub connector create_tree/create_commit/update_ref operations, with the freshly read main commit as base and expected_sha. Never force-push. If main changes, reread before retrying. Verify the saved pages and queue after publishing. Only one card per local calendar day, including retries and delayed runs; never bulk catch up. Do not rewrite article content, or generate another article. Existing direct article links are public; this queue schedules homepage discovery, not access control.
+It prepends the selected card to the direct `.page > ul` source list in both
+`index.html` and `archive/index.html`, before `theme-groups-js`. Existing cards
+with the same canonical link are replaced by one updated card at the front.
+It preserves the hero, all other articles, scripts, styles and analytics.
+Delayed runs use the actual release date, rather than backdating the card.
+
+The queue's selected entry, published_at and last_published_on are updated with
+both collection pages in one commit. The workflow never force-pushes or rebases
+stale generated pages. A conflicting push fails safely, and the next check
+recomputes from the latest main. It explicitly requests a Pages build because
+GITHUB_TOKEN commits do not automatically trigger branch-based Pages builds.
+
+The old `queue/*.json` files are historical and are no longer read by the
+publisher. Zip-upload processing calls the same new publisher, so it observes
+the same one-story-per-day and 05:00 IST rules.
+
+## Checking and manual recovery
+
+Open Actions → Publish today's story → Run workflow. Select dry_run for a
+read-only preview; leave it unchecked to publish if a story is due. Repeated runs
+cannot release a second queued story on the same IST calendar day. The run log
+and summary report the selected story or why no change was needed.
+
+Local preview: `python3 .github/publish_due.py --dry-run`.
+Simulated dates are allowed only in dry-run mode. Unit tests cover early runs,
+repeat runs, delays, queue order, duplicate links, missing files and preservation.

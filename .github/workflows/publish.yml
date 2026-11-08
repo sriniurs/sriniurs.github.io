@@ -1,10 +1,20 @@
 name: Publish today's story
-# Srini, 6 Nov 2026: stories wait in queue/ and go live on their date (India time).
 on:
   schedule:
-    - cron: "0 23 * * *"    # 04:30 IST next day (UTC previous day); allow for GitHub scheduler delay
-    - cron: "15 23 * * *"   # 04:45 IST next day backup
-  workflow_dispatch: {}
+    - cron: '30 23 * * *' # 05:00 IST, previous UTC date
+    - cron: '15 * * * *' # Hourly recovery checks; script enforces one release per IST day
+  push:
+    branches: [main]
+    paths:
+      - '.github/publish_due.py'
+      - '.github/test_publish_due.py'
+      - '.github/workflows/publish.yml'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Validate and preview without changing the site'
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
@@ -14,18 +24,37 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Publish due stories
+        with:
+          ref: main
+      - name: Test publishing safeguards
+        run: python3 -m unittest discover -s .github -p 'test_publish_due.py' -v
+      - name: Validate and preview current queue
+        run: python3 .github/publish_due.py --dry-run
+      - name: Publish next due story
+        id: publish
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.dry_run }}
         run: python3 .github/publish_due.py
-      - name: Commit
+      - name: Commit homepage, archive and queue together
+        if: steps.publish.outputs.changed == 'true'
         run: |
-          git config user.name "Srini Presents bot"; git config user.email "sriniurs@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then echo "nothing due"; exit 0; fi
-          git commit -m "Publish story for $(TZ=Asia/Kolkata date +%F)"
-          git pull --rebase origin main && git push origin HEAD:main
-      - name: Rebuild GitHub Pages
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html archive/index.html publishing-queue.json
+          git diff --cached --check
+          git commit -m "Feature daily story for $(TZ=Asia/Kolkata date +%F)"
+          # Never rebase stale generated pages over concurrent changes. A rejected
+          # push fails safely; the next hourly check starts from the current main.
+          git push origin HEAD:main
+      - name: Request GitHub Pages build
+        # Retry the build on later checks too, in case a previous release committed
+        # successfully but its Pages build request failed.
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.dry_run }}
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh api -X POST repos/${{ github.repository }}/pages/builds || echo "Pages rebuild request failed (push may already trigger it)"
+        run: |
+          if [ "$(TZ=Asia/Kolkata date +%H)" -ge 5 ]; then
+            gh api --method POST "repos/${{ github.repository }}/pages/builds"
+          fi
