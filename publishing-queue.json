@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-09",
+  "last_published_on": "2026-11-10",
   "entries": [
     {
       "number": 1,
@@ -31,8 +31,8 @@
       "path": "/robotic-knee-replacement/",
       "title": "Robotic Knee Replacement",
       "not_before": "2026-11-10T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-10T05:17:23+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"3\"><a href=\"/robotic-knee-replacement/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M34 8 V34 Q32 44 43 47 H59 Q69 43 65 34 V8\" fill=\"#d9e9fb\"/><path d=\"M39 91 V67 Q32 57 42 54 H61 Q71 59 63 69 V91\" fill=\"#d9e9fb\"/><path d=\"M38 48 H63 M38 53 H63\" stroke=\"#e63946\" stroke-width=\"5\"/><circle cx=\"76\" cy=\"51\" r=\"9\" fill=\"#ffd23f\"/></g></svg></div><div class=\"card-copy\"><h3>Robotic Knee Replacement</h3><p>Inside the operation: resurfacing, digital mapping, ligament balance and what research says about patient benefit.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">10 Nov 2026</span></li>"
     },
     {
