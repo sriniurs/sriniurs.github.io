@@ -1,0 +1,292 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><title>The Night the Stars Fell: the Leonids Return — srini.presents</title><meta name='description' content='Specks of comet dust hit the sky at 71 km a second. On 18 November 2026 the Leonids peak before dawn in India. What you will see, why it once rained stars, and how we now forecast meteor storms.'><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap'>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="myth-fact">
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box}body{padding:24px 18px 48px}.wrap{max-width:1060px;margin:auto;display:grid;gap:36px}.cover{background:#ffd23f!important;color:#151515!important;padding:28px 24px;border:4px solid var(--line);box-shadow:8px 8px 0 var(--line)}.cover h1{color:#151515!important;font-size:clamp(45px,7vw,78px);line-height:1.03;text-shadow:none!important;-webkit-text-stroke:0!important;margin:20px 0}.cover .byline{color:#9d0208!important;font-size:28px!important;white-space:normal!important}.tagline{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:5px}.sample{display:inline-block;background:#151515;color:#fff;padding:5px 10px;font-weight:bold}.cast{display:flex;gap:30px;flex-wrap:wrap}.cast figure{margin:12px 0 0;max-width:180px;font-weight:bold}.cast svg{display:block;width:84px;height:84px;background:white;border:2px solid #151515;border-radius:50%;margin-bottom:8px}.cast small{font-weight:normal}.fact{display:block!important;font-size:18px;line-height:1.5}.say{align-items:flex-start}.av{flex-shrink:0;width:54px;height:54px}.bubble{min-width:0}.ep{min-width:0}.grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.panel{min-width:0}a{color:#165da3}.cover .sub{color:#151515!important}.evidence{padding:20px;border:3px solid var(--line);background:var(--panel)}.evidence p,.evidence li{font-size:15px;line-height:1.5}.next{background:#ffd23f;color:#151515;border:3px solid var(--line);padding:18px;font-size:19px}.foot{text-align:center}h2{line-height:1.15}.fs{display:flex;flex-wrap:wrap;gap:8px}.fs span{background:#fff!important;color:#151515!important;border:2px solid #151515;padding:4px 8px}
+@media(prefers-color-scheme:dark){a{color:#8cc9ff}.sfx{color:#ffae73}.sfx.b{color:#86c6ff}.sfx.r{color:#ff9ca6}.cap,.take,.warn{color:#151515}.take{background:#dff2e5}}
+@media(max-width:640px){body{padding:16px 16px 32px}.wrap{gap:28px}.grid{grid-template-columns:minmax(0,1fr)!important}.cover{padding:22px 16px}.ep{padding:12px}.panel{padding:12px}.fact{font-size:17.5px}.ep-head{align-items:flex-start}.cover h1{font-size:48px}.ep h2{font-size:29px}.cast{gap:20px}.cast figure{max-width:125px}}
+</style><style>
+.wrap{gap:36px}.cover h1{font-size:clamp(44px,6.2vw,72px)}.cover .sub{max-width:45ch;line-height:1.55}.cast figure{font-size:17px}.ep{display:grid;gap:22px}.ep-head{margin-bottom:0}.reading{max-width:760px;width:100%;margin:0 auto;font:19px/1.65 var(--body)}.reading p{margin:0 0 16px}.reading p:last-child{margin-bottom:0}.reading .cap{margin:0 0 14px;font-size:19px;line-height:1.4}.lead{font-size:22px;font-weight:700;line-height:1.5}.banter{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:18px;background:var(--panel);border-top:2px dashed var(--muted);border-bottom:2px dashed var(--muted)}.banter .bubble{margin:0;line-height:1.5}.math{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bill{padding:18px;border:3px solid var(--line);background:var(--panel)}.bill h3{font-family:var(--display);font-size:28px;letter-spacing:.03em;margin:0 0 12px}.bill dl{margin:0}.bill dl div{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.bill dd{margin:0;white-space:nowrap;font-weight:700}.bill .total{border-top:2px solid var(--line);padding-top:10px;font-size:23px}.delta{background:#ffd23f;color:#151515;padding:15px 18px;border:3px solid var(--line);font-size:21px;font-weight:700;text-align:center}.ep .take{font-size:19px;line-height:1.55;border:2px solid #245e3b;background:#e3f5ea;color:#153c25;padding:16px 18px}.questions{display:grid;gap:13px}.question{border:2px solid var(--line);padding:15px 18px;background:var(--panel)}.question h3{font-family:var(--body);font-size:20px;line-height:1.4;margin:0 0 7px}.question p{margin:0}.source-note{font-size:15px!important;color:var(--muted)}.sample-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.sample-nav a{border:2px solid #151515;color:#151515;background:white;padding:6px 12px;font-weight:700;text-decoration:none}.ep p{overflow-wrap:break-word}.page-marker{font-weight:700;color:var(--muted);font-size:15px;letter-spacing:.08em}.ep-head .no{white-space:nowrap}html{scroll-behavior:smooth}
+@media(max-width:640px){.reading{font-size:17.5px;line-height:1.6}.reading .lead{font-size:20px!important}.banter,.math{grid-template-columns:minmax(0,1fr)}.banter{padding:16px 0;gap:16px}.ep{gap:18px}.bill{padding:16px}.question{padding:14px}.question h3{font-size:19px}.cover h1{font-size:46px}.ep .take{font-size:17.5px}.reading .cap{font-size:18px}.delta{font-size:19px}.wrap{gap:28px}.sample-nav{gap:8px}.sample-nav a{font-size:15px}.ep-head h2{font-size:32px}}
+@media(prefers-color-scheme:dark){.ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#e9edf2;--muted:#a8b3bf}:root[data-theme="dark"] .ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}
+</style><style>
+.cover{background:#c2410c!important;color:#fff!important}.cover h1,.cover .sub{color:#fff!important}.cover .byline{color:#fff1a8!important}.cover .cast figure{color:#fff}.cover .tagline{color:#fff1a8}.time-box{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:20px;text-align:center}.time-box strong{display:block;font:clamp(44px,7vw,68px)/1.2 var(--display);letter-spacing:.03em}.time-box p{margin:8px 0 0}.spot{width:84px;height:84px;background:white;border:3px solid #151515;border-radius:16px;padding:5px;justify-self:center;box-shadow:3px 3px 0 #151515}.opinion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opinion article{border:2px solid var(--line);padding:16px}.opinion h3{font:24px var(--display);margin:0 0 10px}.opinion p{font-size:18px;line-height:1.55;margin:0}.math-note{border-left:6px solid #e8590c;padding:12px 18px;background:var(--panel)}.cheat{background:#ffd23f!important;color:#151515!important}.cheat .question{background:#fff;color:#151515;border-color:#151515}.cheat .question p{font-size:18px}.source-list{padding-left:22px}.source-list li{margin-bottom:12px}.evidence a{overflow-wrap:anywhere}.sample{background:#fff!important;color:#151515!important}.era{margin:0}.take strong{font-weight:700}@media(max-width:640px){.opinion{grid-template-columns:minmax(0,1fr)}.opinion p{font-size:17.5px}.spot{width:76px;height:76px}.time-box{padding:16px}.time-box strong{font-size:48px}.cheat .question p{font-size:17.5px}}
+</style><style>
+.cover{display:block;background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important;font-size:clamp(40px,6.3vw,74px)}.cover .byline{color:#ffd23f!important}.cover .sub{color:#fff!important;max-width:62ch}.readtime{margin-top:22px}.cover .tagline{color:white}.cover .sample{background:#ffd23f;color:#151515}.cover .cast{margin-top:12px}.cover .cast figure{max-width:180px}.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.place{border:3px solid var(--line);padding:18px;background:var(--panel)}.place h3{font-family:var(--display);font-size:27px;margin:0 0 8px}.digits{font-family:var(--display);font-size:76px;text-align:center;letter-spacing:.12em;color:var(--ink);line-height:1.1}.digits small{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:12px}.spot{width:110px;height:110px}.reading{max-width:760px}.opinion article{min-width:0}.bill p{font-size:18px}.evidence h2{font-family:var(--display);font-size:32px}.source-list li{margin:12px 0}.stamp{text-align:center;font-size:15px;color:var(--muted)}
+:root[data-theme="dark"] a{color:#8cc9ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .take{color:#d9f2e3;background:#173326}}
+@media(max-width:640px){.duo{grid-template-columns:1fr}.cover h1{font-size:42px}.reading p,.bubble{line-height:1.6!important}.digits{font-size:64px}.cover .cast{gap:22px}.cover .cast figure{font-size:16px}.opinion{grid-template-columns:1fr!important}.bill .total{font-size:21px}}
+@media print{body{background:white;padding:0}.cover,.ep,.evidence,.era{box-shadow:none;break-inside:avoid}.wrap{gap:20px}}
+</style><style id="night-cover">.cover{background:#1d4f9a!important;color:#fff!important}.cover h1{color:#ffd23f!important;-webkit-text-stroke:0!important;text-shadow:none!important}.cover .sub,.cover .cast figure,.cover .readtime,.cover .tagline{color:#fff!important}.cover .byline{color:#fff!important}.cover .sample{background:#151515!important;color:#fff!important}.cover .fs span{background:#fff!important;color:#151515!important;border-color:#151515!important}</style>
+<style id="follow">.follow{border:3px dashed var(--line);padding:22px 18px;text-align:center;font:18px/1.6 var(--body)}.follow b{font-family:var(--display);font-weight:400;font-size:28px;letter-spacing:.05em;display:block}.follow a{font-weight:700}</style><style id="clean-subheads">
+.place h3,.bill h3,.question h3,.opinion h3,table.vs th,table.vs.stk td:first-child,.gamelist b,.myth::before,.factx::before,.take::before,.warn::before,.dstag,.coming b{font-family:var(--body)!important;font-weight:800!important;letter-spacing:.01em!important;-webkit-text-stroke:0!important;text-shadow:none!important}
+.place h3,.bill h3{font-size:21px!important;line-height:1.25!important}
+</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></svg><main class="wrap"><header class="cover"><p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p><span class="sample">LEONIDS · 17&#8211;18 NOV 2026</span><h1>The Night<br>the Stars<br>Fell</h1><p class="sub">In the early hours of Wednesday, 18 November 2026, specks of comet dust will hit the sky above Mysuru at 71 km a second. In 1833 the same shower frightened thousands and started a new science. Here&#8217;s what you&#8217;ll see, and why.</p><div class="fs"><span>Leonid meteor shower</span><span>Comet Tempel-Tuttle</span><span>Best before dawn</span></div><div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>setting an alarm for 3 am</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has seen this before</small></figure></div><p class="readtime">ABOUT 9 MINUTES</p></header>
+
+<section class="ep" id="section-01"><div class="ep-head"><span class="no">01</span><h2>A date with a comet&#8217;s dust</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M14 78L58 40" fill="none" stroke="#e8590c" stroke-width="6" stroke-linecap="round"/><path d="M20 84L52 56" fill="none" stroke="#ffd23f" stroke-width="5" stroke-linecap="round"/><circle cx="66" cy="34" r="14" fill="#cfe8ff"/><circle cx="84" cy="14" r="3" fill="#ffd23f"/><circle cx="30" cy="20" r="3" fill="#ffd23f"/><circle cx="86" cy="60" r="2.5" fill="#ffd23f"/></g></svg><div class="reading"><p class="lead">Every November, Earth drives through a trail of dust left behind by a comet. When those specks hit our air, they burn as shooting stars. This is the <b>Leonid meteor shower</b>.</p><p>In 2026 it runs from <b>6 to 30 November</b>, and the busiest night is <b>17 November</b>, according to the International Meteor Organization&#8217;s calendar. <a href="#s1">[1]</a> The name comes from the constellation Leo, the Lion: trace the streaks backwards and they all seem to start there.</p><p>Here is the lucky part for India. Forecasters put the peak at about 23:45 to 00:00 GMT on the night of 17 November. <a href="#s2">[2]</a> <a href="#s3">[3]</a> In Indian time, that is <b>about 5:15 to 5:30 am on Wednesday, 18 November 2026</b> (our conversion). That is the dark hour just before dawn, when the Leo part of the sky is high and the half-moon has already set. <a href="#s1">[1]</a> <a href="#s4">[4]</a></p></div><div class="factx"><b>When to look:</b> the night of Tuesday, 17 November into Wednesday, 18 November 2026, from about 1 am until the sky begins to brighten (sunrise in Mysuru is about 6:20 am). <a href="#s4">[4]</a> <a href="#s7">[7]</a> No telescope needed: lie back, face east and look up. Give your eyes 20 minutes to adjust. The mornings of 17 and 19 November are worth a look too. <a href="#s4">[4]</a></div><div class="reading"><p>Keep expectations honest. Under a truly dark sky you might see <b>10 to 15 meteors an hour</b>. <a href="#s2">[2]</a> From a lit city terrace, fewer. This is a quiet year, not a spectacular one.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Ten an hour? I see more autos than that on my road.</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>None of your autos came from a comet.</p></div></div></section>
+
+<section class="ep" id="section-02"><div class="ep-head"><span class="no">02</span><h2>A grain of sand that lights up the sky</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><circle cx="70" cy="30" r="12" fill="#e9edf2"/><path d="M60 38Q36 54 10 58Q34 48 58 28Z" fill="#cfe8ff"/><path d="M62 42Q40 66 16 78Q38 62 60 36Z" fill="#ffd23f"/><circle cx="40" cy="84" r="2.5" fill="#151515"/><circle cx="26" cy="90" r="2" fill="#151515"/><circle cx="52" cy="90" r="2" fill="#151515"/></g></svg><div class="reading"><p>The dust comes from <b>Comet 55P/Tempel-Tuttle</b>, which loops around the Sun about once every <b>33 years</b>. <a href="#s2">[2]</a> Each time it swings close to the Sun, it warms up and sheds a fresh trail of grit along its path. Earth crosses that path every mid-November, like a car driving through a cloud of flies.</p><p>The pieces are tiny. Most visible Leonids are <b>between 1 mm and 1 cm</b> across, about the size of a grain of sand or a small pebble. <a href="#s5">[5]</a> So how can a speck that small be seen from hundreds of kilometres away?</p><p><b>Speed.</b> Leonid dust hits our atmosphere at about <b>71 km per second</b>. At that speed you could go around the whole Earth in <b>under four minutes</b>. <a href="#s5">[5]</a> They are among the fastest meteors of any shower, because Earth and the comet&#8217;s dust stream meet nearly head-on. <a href="#s8">[8]</a></p></div><div class="cap">How a speck becomes a shooting star</div><div class="chain" aria-label="How a meteor forms"><span>Comet sheds dust near the Sun</span><i aria-hidden="true">&#8594;</i><span>Earth crosses the trail in November</span><i aria-hidden="true">&#8594;</i><span>Dust hits the air at 71 km/s</span><i aria-hidden="true">&#8594;</i><span>Air and grain glow, about 100 km up</span></div><p class="deck-note">Sources: <a href="#s2">[2]</a> <a href="#s5">[5]</a> <a href="#s6">[6]</a> <a href="#s9">[9]</a></p><div class="reading"><p>The glow is not the grain &#8220;catching fire&#8221; like a matchstick. Slamming into air that fast heats the grain until its surface turns to vapour, and it strips electrons off atoms of both the grain and the air. When those electrons rejoin their atoms, they give off light. <a href="#s6">[6]</a> <a href="#s9">[9]</a></p><p>All this happens remarkably high. A typical meteor starts glowing around <b>100 km</b> above the ground, and most are gone before they get below <b>80 km</b>. <a href="#s9">[9]</a> For scale, a passenger jet cruises at about 11 km.</p></div><div class="take">A shooting star isn&#8217;t a star. It&#8217;s a speck of comet dust, often smaller than a peppercorn, vaporising about 100 km above your head.</div></section>
+
+<section class="ep" id="section-03"><div class="ep-head"><span class="no">03</span><h2>Why they all point to the Lion</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M10 92L46 20M90 92L54 20" fill="none" stroke-width="4"/><path d="M22 76H78M30 60H70M36 46H64M41 34H59" fill="none" stroke="#e8590c" stroke-width="3"/><circle cx="50" cy="14" r="4" fill="#ffd23f"/></g></svg><div class="reading"><p>Watch for a while and you&#8217;ll notice something odd. The streaks shoot off in every direction, yet if you trace each one backwards, they all seem to start from the same patch of sky in Leo. That patch is called the <b>radiant</b>.</p><p>It&#8217;s a trick of perspective. The grains in the stream are travelling almost parallel to each other when they reach our atmosphere. Stand between the rails of a long, straight railway line and the two rails seem to meet in the distance, even though they never do. Parallel meteor paths, seen from the ground, do the same thing: they appear to fan out from one vanishing point. <a href="#s13">[13]</a></p><p>Two handy consequences follow. Meteors near the radiant look short, because they are coming almost straight at you; the long, dramatic streaks appear further away from it. <a href="#s13">[13]</a> And you don&#8217;t need to find Leo at all. Just look at a wide stretch of dark sky; the shower will find you. <a href="#s2">[2]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the lion isn&#8217;t throwing them at us?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The lion just happens to be standing in the right place for the photo.</p></div></div></section>
+
+<section class="ep" id="section-04"><div class="ep-head"><span class="no">04</span><h2>The night the stars fell</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M20 20L44 44M40 12L62 34M64 16L84 36M14 46L34 66M50 50L70 70M70 52L88 70" fill="none" stroke="#e8590c" stroke-width="4"/><path d="M8 92H92" fill="none"/><path d="M38 92V80H50V92" fill="#ffd23f"/></g></svg><div class="reading"><p>Most years the Leonids are a modest show. But roughly every 33 years, around the time the comet passes, Earth can hit a thick, fresh strand of its dust. Then the shower becomes a <b>meteor storm</b>, officially <b>at least 1,000 meteors an hour</b>, or one every second. <a href="#s5">[5]</a></p><p>The two most famous storms, in <b>1833</b> and <b>1966</b>, produced tens of thousands of meteors in their peak hour. <a href="#s4">[4]</a> On <b>17 November 1966</b>, observers in North America reported <b>40 or more meteors a second</b>. That storm turns 60 this year. <a href="#s1">[1]</a> <a href="#s3">[3]</a></p><p>The most recent storms came in <b>2001 and 2002</b>. <a href="#s10">[10]</a> <a href="#s11">[11]</a> 2026 is an ordinary year in between. Ordinary, but each of those 10-odd streaks an hour is still a speck of dust the comet shed centuries ago. <a href="#s4">[4]</a></p><p>Storms have a way of frightening people. To understand how one terrifying night turned into a branch of science, we have to go back to 1833.</p></div></section>
+
+<div class="era p2">THE DEEP DIVE<small>How a frightening night became a science, and how we now forecast storms to the minute.</small></div>
+
+<section class="ep" id="section-05"><div class="ep-head"><span class="no">05</span><h2>The professor who asked the public</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="16" y="14" width="68" height="74" rx="4" fill="#fff"/><path d="M26 30H74M26 42H74M26 54H62M26 66H70" fill="none"/><path d="M60 72L82 50" fill="none" stroke="#e8590c" stroke-width="5" stroke-linecap="round"/></g></svg><div class="reading"><p>In the early hours of <b>13 November 1833</b>, the skies over the United States filled with meteors. <a href="#s15">[15]</a> At the peak, an estimated <b>100,000 meteors an hour</b> were streaking down. <a href="#s14">[14]</a> Some people thought the world was ending. <a href="#s27">[27]</a></p><p>Denison Olmsted, a professor at Yale College, did something unusual for his time. He wrote a letter about the storm that newspapers across the country reprinted, and asked ordinary people to send in what they had seen. <a href="#s15">[15]</a> In effect, he crowdsourced it.</p><p>Sifting through the reports, he noticed two things. The meteors all radiated from one point in Leo, and that point <b>moved across the sky along with the stars</b> as the night went on. <a href="#s14">[14]</a> If the meteors were weather, something in our air, the point would have stayed fixed to the ground. Because it moved with the stars, the meteors had to be coming <b>from space</b>. <a href="#s14">[14]</a> <a href="#s15">[15]</a></p><p>His papers in the <i>American Journal of Science</i> are often counted as the birth of the study of meteor showers. <a href="#s14">[14]</a> The last piece came in 1866, when Giovanni Schiaparelli showed that a meteor shower shares its orbit with a comet. That is how the Leonids were tied to Tempel-Tuttle. <a href="#s16">[16]</a></p></div><div class="take">The clue that meteors come from space was hiding in plain sight: their starting point moved with the stars, not with the Earth.</div></section>
+
+<section class="ep" id="section-06"><div class="ep-head"><span class="no">06</span><h2>Forecasting a storm to the minute</h2></div><div class="reading"><p>For more than a century, predicting a Leonid storm was guesswork. Forecasters knew the 33-year rhythm, but some &#8220;storm years&#8221; fizzled and the timing could be off by hours. <a href="#s18">[18]</a></p><p>The breakthrough came in the late 1990s from two astronomers, <b>David Asher</b> of Armagh Observatory and <b>Rob McNaught</b> of the Australian National University, building on methods pioneered by Russian researchers. <a href="#s17">[17]</a> Their insight: each time the comet passes the Sun, it leaves its own thin <b>ribbon of dust</b>. Those ribbons stay intact for centuries, and they don&#8217;t sit exactly on the comet&#8217;s path. <a href="#s17">[17]</a></p></div><div class="duo"><article class="place"><h3>OLD METHOD</h3><p>Track the comet itself. Storm timings were sometimes right within hours, sometimes missed completely. <a href="#s18">[18]</a></p></article><article class="place"><h3>DUST-TRAIL METHOD</h3><p>Track each separate ribbon of dust, nudged by Jupiter&#8217;s gravity. Uncertainty came down to about <b>five minutes</b>. <a href="#s17">[17]</a> <a href="#s18">[18]</a></p></article></div><div class="reading"><p>The test came in November 1999. The pair had predicted when Earth would cross a ribbon of dust the comet shed in <b>1899</b>, and the storm arrived on cue, peaking at roughly <b>4,000 meteors an hour</b>. <a href="#s17">[17]</a> <a href="#s19">[19]</a> They also called the bigger storms of 2001 and 2002. <a href="#s18">[18]</a></p><p>So when you watch a Leonid, you can know roughly when that grain left the comet. The next close approach of Tempel-Tuttle to the Sun is expected in May 2031, and modellers are already working out what the 2030s might bring. <a href="#s11">[11]</a></p></div></section>
+
+<section class="ep" id="section-07"><div class="ep-head"><span class="no">07</span><h2>The night the satellites ducked</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="38" y="36" width="24" height="28" fill="#e9edf2"/><rect x="8" y="42" width="26" height="16" fill="#1f7ad1"/><rect x="66" y="42" width="26" height="16" fill="#1f7ad1"/><path d="M34 50H38M62 50H66" fill="none"/><path d="M80 10L68 24M92 18L80 30" fill="none" stroke="#e8590c" stroke-width="4" stroke-linecap="round"/></g></svg><div class="reading"><p>A grain of sand is harmless to you on the ground. In orbit it&#8217;s a different story, because nothing stops it before it hits.</p><p>When a storm was expected in <b>November 1998</b>, the space agencies took no chances. The <b>Hubble Space Telescope</b> turned its back on Leo for about ten hours around the peak. <a href="#s20">[20]</a> European operators switched off the instruments on their ERS-1 and ERS-2 Earth-observation satellites. <a href="#s20">[20]</a> The biggest worry was not a hole but a spark: <b>electrical discharges</b> and short circuits were seen as the most serious hazard. <a href="#s20">[20]</a> <a href="#s21">[21]</a></p><p>The fear wasn&#8217;t imaginary. After the 1993 Leonids, engineers found a crater about <b>0.9 mm</b> wide in a radiator on one of Hubble&#8217;s cameras; the camera itself was fine. <a href="#s21">[21]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>A billion-dollar telescope hiding from sand?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Sand at 71 km a second. I&#8217;d hide too.</p></div></div></section>
+
+<section class="ep" id="section-08"><div class="ep-head"><span class="no">08</span><h2>Darkness is the best telescope</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M10 86L36 50L52 68L70 40L92 86Z" fill="#cfd8e3"/><path d="M60 18A12 12 0 1 0 74 32A10 10 0 0 1 60 18Z" fill="#ffd23f"/><circle cx="24" cy="22" r="2.5" fill="#ffd23f"/><circle cx="40" cy="14" r="2" fill="#ffd23f"/><circle cx="86" cy="24" r="2" fill="#ffd23f"/></g></svg><div class="reading"><p>The biggest thing standing between you and the Leonids isn&#8217;t clouds or the moon. It&#8217;s streetlights. One widely quoted study found that <b>80% of the world</b> lives under a light-polluted sky. <a href="#s22">[22]</a> A faint meteor that would be obvious in a village simply vanishes into the orange glow over a city.</p><p>India now protects one patch of night on purpose. <b>Hanle</b>, in Ladakh, is the country&#8217;s first <b>Dark Sky Reserve</b>, set up with the Indian Institute of Astrophysics in Bengaluru, which runs a high-altitude observatory there. <a href="#s22">[22]</a> An area of roughly 22 km around Hanle has been notified as the reserve. <a href="#s23">[23]</a> To keep it dark, residents have been given lamp shades, blackout curtains and warm-toned bulbs. <a href="#s24">[24]</a></p><p>You don&#8217;t need Ladakh for the Leonids. Even a short drive out of town, away from the brightest lights, makes a real difference. Switch off the terrace bulb and keep your phone screen dark, so your eyes stay adjusted.</p></div><div class="cap">Want a photo? What actually works on a phone</div><ol class="clean"><li><b>Keep it still.</b> A tripod helps, but leaning the phone against something firm works too. Use the self-timer so your finger doesn&#8217;t shake it. <a href="#s25">[25]</a></li><li><b>Go long.</b> Night-sky exposures typically run 5 to 30 seconds. <a href="#s25">[25]</a> On Pixel phones, Night Sight&#8217;s astrophotography setting switches on automatically once the phone is steady on a tripod. <a href="#s26">[26]</a></li><li><b>Know the catch.</b> Some night modes blend several frames together, which can wipe out a meteor that appears in only one of them. <a href="#s26">[26]</a> Take many shots and hope one is lucky.</li></ol></section>
+
+<section class="ep" id="section-09"><div class="ep-head"><span class="no">09</span><h2>A very old visitor</h2></div><div class="reading"><p>Put it all together and the shooting star you might catch on Wednesday, 18 November 2026 becomes quite a story. It is a speck of dust that left a comet centuries ago. It has circled the Sun ever since, waiting for Earth to cross its path. In its last second it will travel 71 km and glow 100 km above Mysuru.</p><p>Nearly two hundred years ago, a professor worked out where these specks come from by asking ordinary people what they saw. Today the forecasts are good to within minutes. Only one thing still depends on you: setting the alarm.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the real show was 1966. Were you there?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>I&#8217;m wise, Zappy, not that old. Set your alarm; ten is plenty.</p></div></div></section>
+
+<section class="evidence" id="sources"><h2>The evidence file</h2><p>Checked 10 November 2026. Sources disagree slightly on the exact peak time (one general reference site gives 06:00 UTC on 17 November <a href="#s12">[12]</a>); this comic uses the International Meteor Organization&#8217;s date and the two most-cited predictions. The IST times are our own conversion (GMT + 5 h 30 min). Meteor counts are for an ideal dark sky; city counts will be lower. Historical storm rates are estimates from observers of the time.</p><ol class="source-list">
+<li id="s1"><a href="https://www.space.com/leonid-meteor-shower">Space.com: Leonid meteor shower 2026</a> (science news site) — active 6–30 Nov, peak 17 Nov per the IMO calendar; moon near first quarter, setting before the early-morning hours; 60 years since the 1966 storm, reports of 40 meteors a second.</li>
+<li id="s2"><a href="https://earthsky.org/astronomy-essentials/everything-you-need-to-know-leonid-meteor-shower/">EarthSky: Leonid meteor shower guide 2026</a> (science news site) — peak predicted for 0 UTC on 18 Nov; 10–15 per hour under ideal conditions; parent comet orbits about every 33 years; no need to locate the radiant.</li>
+<li id="s3"><a href="https://starwalk.space/en/news/leonid-meteor-shower">Star Walk: Leonids 2026</a> (astronomy app publisher) — maximum predicted at 23:45 GMT on 17 Nov; 1966 observers in North America and Hawaii saw 40–50 meteors a second.</li>
+<li id="s4"><a href="https://www.farmersalmanac.com/when-leonid-meteor-shower">Farmers&#8217; Almanac: Leonid meteor shower 2026</a> (almanac/magazine) — peak night 17–18 Nov; best from midnight to about 5:30 am local time; mornings either side also produce meteors; dust shed by Tempel-Tuttle more than four centuries ago; 1833 and 1966 storms.</li>
+<li id="s5"><a href="https://leonid.arc.nasa.gov/meteor.html">NASA Ames Leonid MAC: Background facts on meteors</a> (government science agency) — most visible Leonids 1 mm–1 cm; 71 km/s, around Earth in 3.8 minutes; a storm means 1,000 per hour.</li>
+<li id="s6"><a href="https://apod.nasa.gov/apod/ap991202.html">NASA APOD: 1999 Leonid Fireball</a> (government science agency) — light emitted when stripped electrons recombine with atoms.</li>
+<li id="s7"><a href="https://vedpanchang.com/panchang/mysore/2026-11-17">VedPanchang: Mysore, 17 November 2026</a> (calendar site) — sunrise 06:21 am.</li>
+<li id="s8"><a href="https://www.universalworkshop.com/2015/11/16/relative-speed/">Guy Ottewell, Universal Workshop: Relative speed</a> (astronomy writer&#8217;s blog, 2015) — Earth meets the Leonid stream head-on.</li>
+<li id="s9"><a href="https://britannica.com/science/meteor/Basic-features-of-meteors">Encyclopaedia Britannica: Basic features of meteors</a> (encyclopedia) — sand-grain-sized objects; glow starts at about 100 km; most end above 80 km; heat vaporises and ionises the meteoroid and air.</li>
+<li id="s10"><a href="https://www.adda247.com/upsc-exam/leonids-meteor-shower/">Adda247: Leonids meteor shower</a> (exam-reference site) — last storm in 2002; storm threshold 1,000 per hour.</li>
+<li id="s11"><a href="https://arxiv.org/pdf/2608.25456">A calibrated dust-trail model of the Leonid meteoroid stream and forecasts of the 2031–2035 encounters</a> (research preprint, arXiv, not yet peer-reviewed) — documented storms in 1833, 1866, 1966, 1999 and 2001–2002; next perihelion of 55P due 20 May 2031.</li>
+<li id="s12"><a href="https://www.universaltimedate.com/articles/leonid-meteor-shower-2026">UniversalTimeDate: Leonid meteor shower 2026</a> (general reference site) — gives a different peak time (06:00 UTC, 17 Nov).</li>
+<li id="s13"><a href="https://astronomy.swinburne.edu.au/cosmos/R/Radiant">Swinburne University COSMOS: Radiant</a> (university astronomy encyclopedia) — radiant is a perspective effect, like train tracks; meteors near the radiant appear short.</li>
+<li id="s14"><a href="https://www.lindahall.org/denison-olmsted/">Linda Hall Library: Denison Olmsted</a> (research library, history of science) — about 100,000 meteors per hour at the 1833 peak; radiant in Leo moved with the stars; papers in the <i>American Journal of Science</i> mark the birth of meteor-shower study.</li>
+<li id="s15"><a href="https://www.smithsonianmag.com/smart-news/americans-fell-in-love-with-science-when-the-breathtaking-leonid-meteor-shower-lit-up-the-skies-across-nation-180985435/">Smithsonian Magazine: Americans fell in love with science…</a> (magazine) — storm in the early hours of 13 Nov 1833; Olmsted&#8217;s letter reprinted by newspapers; crowdsourced reports; concluded meteors were cosmic, not atmospheric.</li>
+<li id="s16"><a href="https://en.wikipedia.org/wiki/Meteor_shower">Wikipedia: Meteor shower</a> (encyclopedia) — Schiaparelli in 1866 linked meteor showers to comets; Leonids share Tempel-Tuttle&#8217;s orbit.</li>
+<li id="s17"><a href="https://www.nature.com/articles/46361.pdf">Nature news, 25 November 1999: Praise greets accuracy of Leonid prediction</a> (scientific journal news) — Asher and McNaught&#8217;s dust-trail model, building on Russian work; ribbons from each passage stay coherent for centuries and are offset from the comet&#8217;s path; 1999 storm from dust shed in 1899.</li>
+<li id="s18"><a href="https://solarsystem.nasa.gov/stardust/news/news70.html">NASA / Royal Astronomical Society release, 1999: Fine Leonid displays predicted through to 2002</a> (government science agency) — comet-only theories sometimes right within hours, sometimes failed completely; dust-trail uncertainty about five minutes; storms predicted for 2001 and 2002.</li>
+<li id="s19"><a href="https://doi.org/10.1023/A:1017068618114">Earth, Moon and Planets: model of Leonid outbursts</a> (peer-reviewed journal) — observed 1999 storm ZHR about 4,000.</li>
+<li id="s20"><a href="https://sci.esa.int/web/observational-astronomy/-/11580-info-38-1998-esa-s-experts-are-ready-for-a-storm-of-comet-dust">ESA, 15 November 1998: Experts ready for a storm of comet dust</a> (government space agency) — Hubble turned away from Leo for ten hours; ERS-1 and ERS-2 instruments switched off; electrical discharges the most serious hazard.</li>
+<li id="s21"><a href="https://webarchive.library.unt.edu/eot2008/20090826143052/http://science.nasa.gov/newhome/headlines/ast16nov98_2.htm">NASA Science News, 16 November 1998 (archived)</a> (government science agency) — short circuits a major danger; 900-micron crater in a Hubble camera radiator found after the 1993 Leonids, camera not damaged.</li>
+<li id="s22"><a href="https://indiascience.dst.gov.in/videos/hanle-indias-first-dark-sky-reserve">India Science (DST): Hanle, India&#8217;s first Dark Sky Reserve</a> (government) — 80% of the world under a light-polluted sky (cited study); reserve set up by Ladakh administration, hill council and the Indian Institute of Astrophysics; Indian Astronomical Observatory.</li>
+<li id="s23"><a href="https://www.thestatesman.com/technology/indias-first-dark-sky-reserve-in-ladakh-celebrates-its-first-star-party-1503233157.html">The Statesman: India&#8217;s first dark sky reserve celebrates its first star party</a> (newspaper) — area of roughly 22 km radius notified as the Hanle Dark Sky Reserve.</li>
+<li id="s24"><a href="https://superkalam.com/current-affairs/27-10-2025/hanle-protects-its-dark-skies-and-builds-a-future-on-stargazing-pgii-cb7dca24-8188-418b-a3dd-208d3615339f">SuperKalam: Hanle protects its dark skies</a> (exam-reference site, 27 Oct 2025) — IIA gave residents lamp shades, blackout curtains and warm-toned bulbs.</li>
+<li id="s25"><a href="https://foxweather.com/learn/how-to-photograph-a-meteor-shower-with-your-phone">FOX Weather: How to photograph a meteor shower with your phone</a> (weather news site) — tripod and timer; exposures of 5–30 seconds.</li>
+<li id="s26"><a href="https://gulfnews.com/technology/perseids-2026-in-the-uae-how-to-actually-catch-a-meteor-on-an-iphone-or-android-phone-1.500628394">Gulf News, 2026: How to actually catch a meteor on an iPhone or Android phone</a> (newspaper) — frame-averaging night modes can erase a meteor; Pixel Night Sight astrophotography with a tripod.</li>
+<li id="s27"><a href="https://yaledailynews.com/?p=37993">Yale Daily News: Leonid meteor shower</a> (student newspaper) — Yale observatory director on the 1833 storm: people thought the world was ending; the storm gave rise to meteor science.</li>
+</ol><p>Zappy and Prof. Bolt are fictional; their dialogue is invented. The car-and-flies image, the railway-track comparison and the jet-altitude figure are our illustrations. Phone tips are general; camera features differ by model.</p></section>
+
+<section class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://sriniurs.github.io/">sriniurs.github.io</a></b></section>
+<footer class="foot">THE END · srini.presents · for curious grown-ups</footer></main>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body></html>
