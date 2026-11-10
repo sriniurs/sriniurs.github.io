@@ -1,0 +1,288 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><title>Why Is the Rupee at 94? — srini.presents</title><meta name='description' content='A year ago a dollar cost Rs 88.66; in May it hit Rs 97; now it is near Rs 94. Why the rupee moves, what the RBI does about it, and what it does to your bill.'><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap'>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="myth-fact">
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box}body{padding:24px 18px 48px}.wrap{max-width:1060px;margin:auto;display:grid;gap:36px}.cover{background:#ffd23f!important;color:#151515!important;padding:28px 24px;border:4px solid var(--line);box-shadow:8px 8px 0 var(--line)}.cover h1{color:#151515!important;font-size:clamp(45px,7vw,78px);line-height:1.03;text-shadow:none!important;-webkit-text-stroke:0!important;margin:20px 0}.cover .byline{color:#9d0208!important;font-size:28px!important;white-space:normal!important}.tagline{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:5px}.sample{display:inline-block;background:#151515;color:#fff;padding:5px 10px;font-weight:bold}.cast{display:flex;gap:30px;flex-wrap:wrap}.cast figure{margin:12px 0 0;max-width:180px;font-weight:bold}.cast svg{display:block;width:84px;height:84px;background:white;border:2px solid #151515;border-radius:50%;margin-bottom:8px}.cast small{font-weight:normal}.fact{display:block!important;font-size:18px;line-height:1.5}.say{align-items:flex-start}.av{flex-shrink:0;width:54px;height:54px}.bubble{min-width:0}.ep{min-width:0}.grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.panel{min-width:0}a{color:#165da3}.cover .sub{color:#151515!important}.evidence{padding:20px;border:3px solid var(--line);background:var(--panel)}.evidence p,.evidence li{font-size:15px;line-height:1.5}.next{background:#ffd23f;color:#151515;border:3px solid var(--line);padding:18px;font-size:19px}.foot{text-align:center}h2{line-height:1.15}.fs{display:flex;flex-wrap:wrap;gap:8px}.fs span{background:#fff!important;color:#151515!important;border:2px solid #151515;padding:4px 8px}
+@media(prefers-color-scheme:dark){a{color:#8cc9ff}.sfx{color:#ffae73}.sfx.b{color:#86c6ff}.sfx.r{color:#ff9ca6}.cap,.take,.warn{color:#151515}.take{background:#dff2e5}}
+@media(max-width:640px){body{padding:16px 16px 32px}.wrap{gap:28px}.grid{grid-template-columns:minmax(0,1fr)!important}.cover{padding:22px 16px}.ep{padding:12px}.panel{padding:12px}.fact{font-size:17.5px}.ep-head{align-items:flex-start}.cover h1{font-size:48px}.ep h2{font-size:29px}.cast{gap:20px}.cast figure{max-width:125px}}
+</style><style>
+.wrap{gap:36px}.cover h1{font-size:clamp(44px,6.2vw,72px)}.cover .sub{max-width:45ch;line-height:1.55}.cast figure{font-size:17px}.ep{display:grid;gap:22px}.ep-head{margin-bottom:0}.reading{max-width:760px;width:100%;margin:0 auto;font:19px/1.65 var(--body)}.reading p{margin:0 0 16px}.reading p:last-child{margin-bottom:0}.reading .cap{margin:0 0 14px;font-size:19px;line-height:1.4}.lead{font-size:22px;font-weight:700;line-height:1.5}.banter{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:18px;background:var(--panel);border-top:2px dashed var(--muted);border-bottom:2px dashed var(--muted)}.banter .bubble{margin:0;line-height:1.5}.math{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bill{padding:18px;border:3px solid var(--line);background:var(--panel)}.bill h3{font-family:var(--display);font-size:28px;letter-spacing:.03em;margin:0 0 12px}.bill dl{margin:0}.bill dl div{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.bill dd{margin:0;white-space:nowrap;font-weight:700}.bill .total{border-top:2px solid var(--line);padding-top:10px;font-size:23px}.delta{background:#ffd23f;color:#151515;padding:15px 18px;border:3px solid var(--line);font-size:21px;font-weight:700;text-align:center}.ep .take{font-size:19px;line-height:1.55;border:2px solid #245e3b;background:#e3f5ea;color:#153c25;padding:16px 18px}.questions{display:grid;gap:13px}.question{border:2px solid var(--line);padding:15px 18px;background:var(--panel)}.question h3{font-family:var(--body);font-size:20px;line-height:1.4;margin:0 0 7px}.question p{margin:0}.source-note{font-size:15px!important;color:var(--muted)}.sample-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.sample-nav a{border:2px solid #151515;color:#151515;background:white;padding:6px 12px;font-weight:700;text-decoration:none}.ep p{overflow-wrap:break-word}.page-marker{font-weight:700;color:var(--muted);font-size:15px;letter-spacing:.08em}.ep-head .no{white-space:nowrap}html{scroll-behavior:smooth}
+@media(max-width:640px){.reading{font-size:17.5px;line-height:1.6}.reading .lead{font-size:20px!important}.banter,.math{grid-template-columns:minmax(0,1fr)}.banter{padding:16px 0;gap:16px}.ep{gap:18px}.bill{padding:16px}.question{padding:14px}.question h3{font-size:19px}.cover h1{font-size:46px}.ep .take{font-size:17.5px}.reading .cap{font-size:18px}.delta{font-size:19px}.wrap{gap:28px}.sample-nav{gap:8px}.sample-nav a{font-size:15px}.ep-head h2{font-size:32px}}
+@media(prefers-color-scheme:dark){.ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#e9edf2;--muted:#a8b3bf}:root[data-theme="dark"] .ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}
+</style><style>
+.cover{background:#c2410c!important;color:#fff!important}.cover h1,.cover .sub{color:#fff!important}.cover .byline{color:#fff1a8!important}.cover .cast figure{color:#fff}.cover .tagline{color:#fff1a8}.time-box{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:20px;text-align:center}.time-box strong{display:block;font:clamp(44px,7vw,68px)/1.2 var(--display);letter-spacing:.03em}.time-box p{margin:8px 0 0}.spot{width:84px;height:84px;background:white;border:3px solid #151515;border-radius:16px;padding:5px;justify-self:center;box-shadow:3px 3px 0 #151515}.opinion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opinion article{border:2px solid var(--line);padding:16px}.opinion h3{font:24px var(--display);margin:0 0 10px}.opinion p{font-size:18px;line-height:1.55;margin:0}.math-note{border-left:6px solid #e8590c;padding:12px 18px;background:var(--panel)}.cheat{background:#ffd23f!important;color:#151515!important}.cheat .question{background:#fff;color:#151515;border-color:#151515}.cheat .question p{font-size:18px}.source-list{padding-left:22px}.source-list li{margin-bottom:12px}.evidence a{overflow-wrap:anywhere}.sample{background:#fff!important;color:#151515!important}.era{margin:0}.take strong{font-weight:700}@media(max-width:640px){.opinion{grid-template-columns:minmax(0,1fr)}.opinion p{font-size:17.5px}.spot{width:76px;height:76px}.time-box{padding:16px}.time-box strong{font-size:48px}.cheat .question p{font-size:17.5px}}
+</style><style>
+.cover{display:block;background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important;font-size:clamp(40px,6.3vw,74px)}.cover .byline{color:#ffd23f!important}.cover .sub{color:#fff!important;max-width:62ch}.readtime{margin-top:22px}.cover .tagline{color:white}.cover .sample{background:#ffd23f;color:#151515}.cover .cast{margin-top:12px}.cover .cast figure{max-width:180px}.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.place{border:3px solid var(--line);padding:18px;background:var(--panel)}.place h3{font-family:var(--display);font-size:27px;margin:0 0 8px}.digits{font-family:var(--display);font-size:76px;text-align:center;letter-spacing:.12em;color:var(--ink);line-height:1.1}.digits small{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:12px}.spot{width:110px;height:110px}.reading{max-width:760px}.opinion article{min-width:0}.bill p{font-size:18px}.evidence h2{font-family:var(--display);font-size:32px}.source-list li{margin:12px 0}.stamp{text-align:center;font-size:15px;color:var(--muted)}
+:root[data-theme="dark"] a{color:#8cc9ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .take{color:#d9f2e3;background:#173326}}
+@media(max-width:640px){.duo{grid-template-columns:1fr}.cover h1{font-size:42px}.reading p,.bubble{line-height:1.6!important}.digits{font-size:64px}.cover .cast{gap:22px}.cover .cast figure{font-size:16px}.opinion{grid-template-columns:1fr!important}.bill .total{font-size:21px}}
+@media print{body{background:white;padding:0}.cover,.ep,.evidence,.era{box-shadow:none;break-inside:avoid}.wrap{gap:20px}}
+</style><style id="tue-cover">.cover{background:#ffd23f!important;color:#151515!important}.cover h1,.cover .sub,.cover .cast figure,.cover .readtime,.cover .tagline{color:#151515!important}.cover .byline{color:#9d0208!important}.cover .sample{background:#151515!important;color:#fff!important}</style>
+<style id="follow">.follow{border:3px dashed var(--line);padding:22px 18px;text-align:center;font:18px/1.6 var(--body)}.follow b{font-family:var(--display);font-weight:400;font-size:28px;letter-spacing:.05em;display:block}.follow a{font-weight:700}</style><style id="clean-subheads">
+.place h3,.bill h3,.question h3,.opinion h3,table.vs th,table.vs.stk td:first-child,.gamelist b,.myth::before,.factx::before,.take::before,.warn::before,.dstag,.coming b{font-family:var(--body)!important;font-weight:800!important;letter-spacing:.01em!important;-webkit-text-stroke:0!important;text-shadow:none!important}
+.place h3,.bill h3{font-size:21px!important;line-height:1.25!important}
+</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></svg><main class="wrap"><header class="cover"><p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p><span class="sample">RUPEE · DOLLAR · YOUR BILL</span><h1>Why Is the<br>Rupee at 94?</h1><p class="sub">A year ago one dollar cost &#8377;88.66. In May it touched &#8377;97. Today it&#8217;s near &#8377;94. Nobody in Mysuru buys dollars at the kirana, so why should you care? Because you pay for them anyway.</p><div class="fs"><span>Rupee vs dollar</span><span>Oil, investors, RBI</span><span>What it costs you</span></div><div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>checking a phone price</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>remembers &#8377;45 a dollar</small></figure></div><p class="readtime">ABOUT 8 MINUTES</p></header>
+
+<section class="ep" id="section-01"><div class="ep-head"><span class="no">01</span><h2>A rupee has a price tag too</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M50 14V86" fill="none"/><path d="M20 30H80" fill="none"/><path d="M20 30L8 58H32Z" fill="#ffd23f"/><path d="M80 30L68 66H92Z" fill="#2a9d5c"/><text x="20" y="54" font-size="16" text-anchor="middle" font-family="Arial" font-weight="700" stroke="none" fill="#151515">&#8377;</text><text x="80" y="60" font-size="16" text-anchor="middle" font-family="Arial" font-weight="700" stroke="none" fill="#fff">$</text><rect x="38" y="84" width="24" height="6" fill="#151515"/></g></svg><div class="reading"><p class="lead">An exchange rate is just a price: how many rupees it takes to buy one US dollar. And like the price of tomatoes, it moves with demand and supply.</p><p>When Indians need more dollars than the world wants to hand over, each dollar costs more rupees. That is what &#8220;the rupee is falling&#8221; means.</p><p>Here is how far it has moved. On <b>7 November 2025</b> the rupee closed at <b>&#8377;88.66</b> a dollar. <a href="#s3">[3]</a> On <b>20 May 2026</b> it hit its weakest point, about <b>&#8377;97.12</b>. <a href="#s4">[4]</a> On <b>9 November 2026</b> it closed at <b>&#8377;93.93</b>, close to its strongest level in six months. <a href="#s1">[1]</a> <a href="#s2">[2]</a></p></div><div class="cap">One dollar, in rupees</div><div class="chain" aria-label="Rupee per dollar over the year"><span>Nov 2025 · &#8377;88.66</span><i aria-hidden="true">&#8594;</i><span>May 2026 low · &#8377;97.12</span><i aria-hidden="true">&#8594;</i><span>9 Nov 2026 · &#8377;93.93</span></div><p class="deck-note">Sources: <a href="#s3">[3]</a> <a href="#s4">[4]</a> <a href="#s1">[1]</a></p><div class="reading"><p>So the rupee has clawed back part of the fall since May. Over twelve months, though, it is still down about <b>6%</b>, <a href="#s5">[5]</a> and earlier this year it was Asia&#8217;s worst-performing currency. <a href="#s9">[9]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I&#8217;ve never bought a dollar in my life.</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>You buy them every time you fill your scooter. The petrol bunk just doesn&#8217;t mention it.</p></div></div></section>
+
+<section class="ep" id="section-02"><div class="ep-head"><span class="no">02</span><h2>Who is buying all the dollars?</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="30" y="40" width="40" height="46" rx="4" fill="#cfd8e3"/><path d="M30 52H70M30 64H70" fill="none"/><path d="M42 40V28Q50 14 58 28V40" fill="#e9edf2"/><path d="M50 22L50 14" fill="none"/><circle cx="50" cy="12" r="4" fill="#151515"/></g></svg><div class="reading"><p>Three big forces have been pulling the rupee down this year.</p><p><b>1. Oil.</b> India buys most of its crude from abroad, and pays in dollars. From April to September 2026, imports met <b>88%</b> of the country&#8217;s oil needs, and the crude import bill jumped <b>46%</b> to <b>$90.6 billion</b> as prices rose. <a href="#s6">[6]</a> When oil gets dearer, refiners need many more dollars every single day.</p><p><b>2. Foreign investors heading out.</b> When a foreign fund sells Indian shares, it converts the rupees back to dollars before leaving. Reuters reported that foreign investors had pulled more than <b>$23 billion</b> out of Indian equities in 2026. <a href="#s7">[7]</a> Every rupee sold that way adds to the pressure.</p><p><b>3. A strong dollar.</b> In uncertain times, money worldwide runs to the dollar as a safe place to park, which makes it dearer against almost everyone. <a href="#s7">[7]</a></p></div><div class="duo"><article class="place"><h3>WHAT PUSHES IT DOWN</h3><p>Dearer oil, foreign funds selling, a strong dollar, war in West Asia. <a href="#s6">[6]</a> <a href="#s7">[7]</a></p></article><article class="place"><h3>WHAT PULLED IT BACK UP</h3><p>Softer crude, foreign money returning and hopes of calm in West Asia, says this week&#8217;s market report. <a href="#s1">[1]</a></p></article></div><div class="reading"><p>Standing in the middle of all this is the <b>RBI</b>, which can slow the slide but not stop the tide. More on what it actually does in the deep dive.</p></div><div class="take">The rupee doesn&#8217;t fall because India is weak. It falls when India needs more dollars than the world is sending in. Oil is the biggest dollar bill we pay.</div></section>
+
+<section class="ep" id="section-03"><div class="ep-head"><span class="no">03</span><h2>What it does to your bill</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="24" y="12" width="52" height="76" rx="4" fill="#fff"/><path d="M34 28H66M34 40H66M34 52H56" fill="none"/><path d="M34 70H66" fill="none" stroke="#e63946" stroke-width="5"/><path d="M60 78L70 64L80 78" fill="none" stroke="#e63946" stroke-width="4"/></g></svg><div class="reading"><p>Most of us never touch a dollar, so the effect sneaks in through other bills. Anything priced in dollars, or built from imported parts, slowly gets dearer: <b>fuel</b>, <b>phones, laptops and other electronics</b>, and <b>foreign travel and education</b>. <a href="#s10">[10]</a> Fuel is the sneakiest, because it raises the cost of moving everything else around. <a href="#s7">[7]</a></p><p>But a weak rupee isn&#8217;t bad news for everyone. Anyone <b>earning</b> in dollars gains: exporters, IT companies and families who receive money from relatives working abroad. <a href="#s7">[7]</a> <a href="#s10">[10]</a></p><p>Here is what the move from &#8377;88.66 to &#8377;93.93 means in rupees (our arithmetic, illustrative):</p></div><table class="vs stk"><thead><tr><th>Who</th><th>In dollars</th><th>Nov 2025</th><th>Nov 2026</th></tr></thead><tbody>
+<tr><td data-label="Who">A student&#8217;s yearly US fees</td><td data-label="In dollars">$40,000</td><td data-label="Nov 2025">&#8377;35.46 lakh</td><td data-label="Nov 2026">&#8377;37.57 lakh (<b>&#8377;2.11 lakh more</b>)</td></tr>
+<tr><td data-label="Who">A son in the US sending home</td><td data-label="In dollars">$1,000</td><td data-label="Nov 2025">&#8377;88,660</td><td data-label="Nov 2026">&#8377;93,930 (<b>&#8377;5,270 more</b>)</td></tr>
+</tbody></table><p class="deck-note">Illustrative arithmetic using the closing rates on 7 Nov 2025 and 9 Nov 2026. <a href="#s3">[3]</a> <a href="#s1">[1]</a> Real bank rates include fees and margins.</p><div class="reading"><p>Same exchange rate, two very different moods at the dinner table. One family is cutting the hostel budget; the other is ordering sweets.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So is a weak rupee good or bad?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Depends which side of the transfer you&#8217;re standing on.</p></div></div></section>
+
+<section class="ep" id="section-04"><div class="ep-head"><span class="no">04</span><h2>The people cheering a weak rupee</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="14" y="30" width="50" height="40" rx="3" fill="#cfe8ff"/><path d="M14 30L39 52L64 30" fill="none"/><path d="M60 64L86 40" fill="none" stroke="#2a9d5c" stroke-width="5" stroke-linecap="round"/><path d="M74 40H86V52" fill="none" stroke="#2a9d5c" stroke-width="5" stroke-linecap="round"/></g></svg><div class="reading"><p>For every family paying a dollar bill, there&#8217;s another one receiving dollars.</p><p><b>Money sent home.</b> India is the world&#8217;s biggest receiver of money from its people abroad: <b>$135.46 billion</b> in 2024&#8211;25, according to RBI data. <a href="#s11">[11]</a> Every rupee of weakness makes each of those transfers bigger once it lands in an Indian bank.</p><p><b>Software from our own backyard.</b> IT companies sell services to the world in dollars and pay salaries in rupees. Karnataka is the largest single contributor: software technology park units in the state exported an estimated <b>&#8377;3.5 lakh crore</b> in 2025&#8211;26, the most of any state. <a href="#s12">[12]</a> Mysuru&#8217;s own share of the state&#8217;s IT exports was put at around <b>&#8377;3,000 crore</b> by the state IT minister. <a href="#s13">[13]</a> A weaker rupee quietly fattens all those earnings.</p><p><b>But not every exporter wins.</b> If you first import gold to make jewellery, or chips to assemble a phone, your costs go up along with your earnings. For such businesses the currency gain can be partly cancelled out. <a href="#s14">[14]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So my cousin in Bengaluru IT is secretly happy?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>His company is. His petrol bill isn&#8217;t.</p></div></div></section>
+
+<div class="era p2">THE DEEP DIVE<small>Where the rupee has been, what the RBI does on a bad day, and what to watch next.</small></div>
+
+<section class="ep" id="section-05"><div class="ep-head"><span class="no">05</span><h2>From &#8377;4.76 to &#8377;94</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M10 88H92M10 88V12" fill="none"/><path d="M14 80L32 76L48 66L64 52L78 34L90 22" fill="none" stroke="#e63946" stroke-width="5" stroke-linecap="round"/><circle cx="90" cy="22" r="4" fill="#e63946"/></g></svg><div class="reading"><p>The rupee has not always floated freely. For years its value was simply <b>fixed by the government</b>. From 1949 to 1966, one dollar cost <b>&#8377;4.76</b>. <a href="#s15">[15]</a></p><p>Then came crisis. After drought and economic strain, on <b>6 June 1966</b> India cut the rupee&#8217;s value overnight: the dollar went from &#8377;4.76 to <b>&#8377;7.50</b>, a devaluation of about 57%. <a href="#s15">[15]</a> The second big jolt came in <b>1991</b>, during a severe balance-of-payments crisis, with big deficits and investors losing confidence. Between July 1991 and March 1993, the rupee was effectively devalued by around 35%, and India moved towards letting the market set the rate. <a href="#s16">[16]</a> Both times, a crisis came first and the devaluation followed. <a href="#s16">[16]</a></p><p>Prof. Bolt&#8217;s &#8220;&#8377;45 a dollar&#8221; isn&#8217;t ancient history: the rupee traded around &#8377;44 in 2010 and near &#8377;39&#8211;40 in early 2008. <a href="#s18">[18]</a> Since then the slide has been steady. 2008 was its worst single year, down almost 24%, and from 2008 to 2022 the rupee was the worst-performing Asian currency. <a href="#s17">[17]</a></p></div><div class="cap">One dollar, in rupees, over the years</div><div class="chain" aria-label="Rupee per dollar through history"><span>1949&#8211;66 · &#8377;4.76</span><i aria-hidden="true">&#8594;</i><span>June 1966 · &#8377;7.50</span><i aria-hidden="true">&#8594;</i><span>Early 2008 · about &#8377;40</span><i aria-hidden="true">&#8594;</i><span>9 Nov 2026 · &#8377;93.93</span></div><p class="deck-note">Sources: <a href="#s15">[15]</a> <a href="#s18">[18]</a> <a href="#s1">[1]</a></p><div class="reading"><p>A slow slide over decades is normal when a country&#8217;s prices rise faster than America&#8217;s. What alarms markets is <b>speed</b>, and 2026 was fast.</p></div></section>
+
+<section class="ep" id="section-06"><div class="ep-head"><span class="no">06</span><h2>What the RBI does on a bad day</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M12 40L50 16L88 40Z" fill="#e9edf2"/><rect x="18" y="42" width="64" height="6" fill="#cfd8e3"/><path d="M26 50V78M42 50V78M58 50V78M74 50V78" fill="none" stroke-width="5"/><rect x="14" y="80" width="72" height="8" fill="#cfd8e3"/></g></svg><div class="reading"><p>The RBI says it does not defend any fixed number. It lets the market set the rate and steps in to stop <b>wild swings</b> and panic. <a href="#s20">[20]</a> Here is how a rescue usually works.</p></div><ol class="clean"><li><b>Sell dollars.</b> The RBI sells dollars from its reserves, often through big state-run banks, sometimes even before the market opens at 9 am so the rupee starts the day stronger. <a href="#s19">[19]</a> More dollars on offer means each one costs fewer rupees.</li><li><b>Put the rupees back.</b> When the RBI sells dollars, banks pay in rupees, which drains cash from the banking system. So it often follows up with &#8220;swap&#8221; deals that pump rupees back in. <a href="#s19">[19]</a> <a href="#s20">[20]</a></li><li><b>Ease the biggest buyers.</b> This year it opened a special window so state-run oil refiners don&#8217;t have to scramble for dollars in the open market, plus a deposit scheme to attract more foreign currency. <a href="#s5">[5]</a></li></ol><div class="reading"><p>The scale is huge. In the year to March 2026, the RBI sold a net <b>$53 billion</b> or so in the currency market, by one estimate the largest on record. <a href="#s21">[21]</a> Its reserves stood at about <b>$717 billion</b> at the end of October. <a href="#s8">[8]</a></p><p>That pile is India&#8217;s financial shock absorber. Every dollar spent defending the rupee today is a dollar not available for the next storm. <a href="#s21">[21]</a></p></div><div class="take">The RBI can slow a fall and calm panic. It cannot make India need fewer dollars. Only cheaper oil, more exports or more foreign investment can do that.</div></section>
+
+<section class="ep" id="section-07"><div class="ep-head"><span class="no">07</span><h2>What to watch next</h2></div><div class="reading"><p>Nobody can promise where the rupee goes next, and forecasts change fast. In May, when the rupee was near its low, one bank&#8217;s analysts expected it to stay between &#8377;95 and &#8377;100 for the rest of 2026. <a href="#s22">[22]</a> Six months later it is below &#8377;94. Instead of guessing the number, watch the forces.</p></div><div class="duo"><article class="place"><h3>COULD STRENGTHEN IF</h3><p>Oil prices keep easing, foreign investors keep buying Indian shares, and West Asia stays calm, which is what lifted it this week. <a href="#s1">[1]</a></p></article><article class="place"><h3>COULD WEAKEN IF</h3><p>Oil spikes again, foreign funds head back out, or the dollar strengthens worldwide. <a href="#s6">[6]</a> <a href="#s7">[7]</a></p></article></div><div class="reading"><p>The most useful single number for an ordinary family to watch is the <b>price of crude oil</b>. It drives the biggest share of India&#8217;s dollar demand, and through fuel it reaches almost everything else you buy. <a href="#s6">[6]</a></p></div></section>
+
+<section class="ep" id="section-08"><div class="ep-head"><span class="no">08</span><h2>The price on the price</h2></div><div class="reading"><p>The exchange rate is the price of a dollar. But because India buys so much oil, and so many phones, chips and machines, from abroad, that one price quietly sits inside thousands of others.</p><p>This year it swung from &#8377;88 to &#8377;97 and back towards &#8377;94. For a student abroad that swing is lakhs of rupees; for a family receiving money from overseas it is a bonus; for most of us it is a few rupees here and there, hidden in a bill that never mentions the dollar at all.</p><p>The rupee isn&#8217;t a scoreboard of national pride. It&#8217;s a thermometer for how many dollars India needs compared with how many flow in.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So when was the rupee at its best?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Around &#8377;45, when I was young and my scooter ran on dreams.</p></div></div></section>
+
+<section class="evidence" id="sources"><h2>The evidence file</h2><p>Checked 10 November 2026 (Indian currency markets were closed that day for Balipratipada). Exchange rates move daily; figures are closing or reported levels on the dates shown. The table in Episode 3 uses our own arithmetic on those rates and ignores bank fees and spreads. Historical rates before 1991 were officially fixed, not market rates.</p><ol class="source-list">
+<li id="s1"><a href="https://hdfcsky.com/news/rupee-rises-5-paise-to-close-at-93-93-against-us-dollar">PTI via HDFC Sky: Rupee closes at 93.93, 9 November 2026</a> (news wire, on a broker&#8217;s site) — close of 93.93 (provisional); intraday high 93.69; gains credited to softer crude, foreign fund inflows and hopes of de-escalation in West Asia.</li>
+<li id="s2"><a href="https://www.ebc.com/forex/usd-inr-rupee-six-month-high-dollar-buying">EBC Financial: USD/INR closes at 93.93</a> (broker market commentary) — strongest level in about six months on 9 Nov; Indian market closed 10 Nov for Diwali-Balipratipada.</li>
+<li id="s3"><a href="https://www.newsonair.gov.in/tag/us-dollar">News On AIR</a> (government broadcaster) — rupee closed at 88.66 against the dollar on 7 November 2025.</li>
+<li id="s4"><a href="https://www.exchangerates.org.uk/USD-INR-exchange-rate-history.html">ExchangeRates.org.uk: USD/INR history</a> (exchange-rate data site) — highest rate in the past 180 days: 97.1203 on 20 May 2026.</li>
+<li id="s5"><a href="https://tradingeconomics.com/india/currency">Trading Economics: Indian rupee</a> (market data site) — down about 6.12% over 12 months; RBI special forex window for state-owned refiners and FCNR(B) deposit scheme.</li>
+<li id="s6"><a href="https://theprint.in/economy/indias-crude-import-bill-jumps-46-to-90-6-billion-in-april-september-as-oil-prices-surge/3074774/">ThePrint: Crude import bill jumps 46% to $90.6 billion</a> (newspaper) — April–September 2026; import dependence 88.1% of consumption.</li>
+<li id="s7"><a href="https://thelogicalindian.com/?p=108235">The Logical Indian: what the falling rupee means</a> (news site, citing Reuters and Business Standard) — foreign investors withdrew more than $23 billion from Indian equities in 2026; oil, outflows and a strong dollar; fuel feeds wider inflation; remittances worth more.</li>
+<li id="s8"><a href="https://www.devdiscourse.com/article/business/4002857-indias-forex-reserves-decline-by-usd-269-billion-to-usd-71706-billion-as-of-october-30">ANI via Devdiscourse: Forex reserves at $717.06 billion</a> (news wire) — RBI data for the week ended 30 October 2026.</li>
+<li id="s9"><a href="https://www.multibagg.ai/market-pulse/articles/rupee-record-low-fastest-fall-cmpfgnf8q60app40j2yllnit9">Multibagg: Rupee hits 95.8/$</a> (market news site, citing an SBI report) — worst-performing currency in Asia in 2026 at that time; 90 to 95 in five months, fastest since 2013.</li>
+<li id="s10"><a href="https://www.theweek.in/wire-updates/business/2026/01/25/rupee-at-92-usd-imports-overseas-education-travel-hurt-exporters-gain.html">PTI via The Week: Rupee at 92</a> (news wire, January 2026) — oil, electronics components, cars, appliances, foreign education and travel get costlier; exporters gain.</li>
+<li id="s11"><a href="https://hdfcsky.com/news/india-received-135-6-billion-in-remittances-in-fy25">HDFC Sky: India received $135.46 billion in remittances in FY25</a> (broker news site, reporting RBI data) — record inflow, 14% growth; India the world&#8217;s top remittance recipient.</li>
+<li id="s12"><a href="https://ddindia.co.in/2026/08/stp-units-record-over-rs-7-73-lakh-crore-in-exports-in-fy-2025-26/">DD India: STP units record over &#8377;7.73 lakh crore in exports, FY 2025-26</a> (government broadcaster, 14 August 2026) — Karnataka the largest contributor at an estimated &#8377;3,50,184.78 crore.</li>
+<li id="s13"><a href="https://booknewproperty.com/news/karnataka-it-exports-cross-5-5-lakh-crore-priyank-kharge/">BookNewProperty: Karnataka IT exports projected to cross &#8377;5.5 lakh crore</a> (property news site, 12 March 2026, reporting the state IT-BT minister&#8217;s assembly statement) — Mysuru approx. &#8377;3,000 crore.</li>
+<li id="s14"><a href="https://www.dailyexcelsior.com/?p=2145966">PTI via Daily Excelsior: Rupee at 92/USD</a> (news wire, January 2026) — for sectors such as jewellery and electronics, imported input costs may partly offset the currency advantage.</li>
+<li id="s15"><a href="https://www.valueresearchonline.com/stories/200213/why-6-6-66-was-a-devilish-day-for-the-rupee/">Value Research: Why 6-6-66 was a devilish day for the rupee</a> (financial publication) — rupee went from &#8377;4.76 to &#8377;7.50 per dollar, a 57% devaluation; RBI lists it as the second devaluation episode.</li>
+<li id="s16"><a href="https://www.business-standard.com/article/finance/25-years-of-the-rupee-s-historic-devaluation-116070100168_1.html">Business Standard: 25 years of the rupee&#8217;s historic devaluation</a> (newspaper, 2016) — effective devaluation of around 35% between July 1991 and March 1993; both 1966 and 1991 followed macroeconomic crises.</li>
+<li id="s17"><a href="https://www.business-standard.com/amp/article/finance/the-rupee-s-journey-from-40-to-80-per-dollar-122073100642_1.html">Business Standard: The rupee&#8217;s journey from 40 to 80 per dollar</a> (newspaper, 2022) — 2008 the worst year (−23.8%); worst-performing Asian currency 2008–2022.</li>
+<li id="s18"><a href="https://insights.dsij.in/article-details/articleid/2808/the-story-of-a-tumbling-rupee">DSIJ: The story of a tumbling rupee</a> (financial magazine, 2011) — rupee around &#8377;39–40 in the first half of 2008; about &#8377;44.62 in early August 2011.</li>
+<li id="s19"><a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/rbis-intervention-to-defend-the-rupee/print_manually">Drishti IAS: RBI&#8217;s intervention to defend the rupee</a> (exam-reference site, 23 May 2026) — dollar sales through state-run banks before the market opens; swaps and sterilised intervention to manage rupee liquidity.</li>
+<li id="s20"><a href="https://bsppd.business-standard.com/finance/analysis/weak-rupee-strong-dollar-how-rbi-steps-in-to-steady-currency-markets-126060400002_1.html">Business Standard: How RBI steps in to steady currency markets</a> (newspaper, 4 June 2026) — no fixed level defended; aim is to contain excessive volatility; selling dollars absorbs rupees.</li>
+<li id="s21"><a href="https://www.wrightresearch.in/blog/rupee-near-100-what-defending-it-costs-and-how-far-the-rbi-can-go/">Wright Research: What defending the rupee costs</a> (investment research firm blog) — RBI net sold about $53 billion in the year ended March 2026, the largest on record; reserves spent are buffer used up.</li>
+<li id="s22"><a href="https://businesstoday.in/latest/economy/story/what-does-rbis-forex-market-intervention-mean-for-the-rupee-532710-2026-05-21">Business Today: What does RBI&#8217;s forex market intervention mean for the rupee</a> (magazine, 21 May 2026) — DBS Bank analysts then saw a 95–100 range for the rest of 2026.</li>
+</ol><p>Zappy and Prof. Bolt are fictional; their dialogue is invented. The student and remittance examples are illustrative, not real people. The $53 billion figure is one research firm&#8217;s estimate, not an RBI statement. This is general information, not investment advice.</p></section>
+
+<section class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://sriniurs.github.io/">sriniurs.github.io</a></b></section>
+<footer class="foot">THE END · srini.presents · for curious grown-ups</footer></main>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body></html>

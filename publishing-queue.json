@@ -77,13 +77,33 @@
     },
     {
       "number": 8,
+      "url": "https://sriniurs.github.io/why-is-the-rupee-at-94/",
+      "path": "/why-is-the-rupee-at-94/",
+      "title": "Why Is the Rupee at 94?",
+      "not_before": "2026-11-15T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"8\"><a href=\"/why-is-the-rupee-at-94/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"50\" r=\"36\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"4\"/><text x=\"50\" y=\"69\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"55\" fill=\"#151515\">₹</text></svg></div><div class=\"card-copy\"><h3>Why Is the Rupee at 94?</h3><p>Why the rupee moves against the dollar, what the RBI does, and how exchange rates reach everyday bills.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">15 Nov 2026</span></li>"
+    },
+    {
+      "number": 9,
+      "url": "https://sriniurs.github.io/mysore-silk/",
+      "path": "/mysore-silk/",
+      "title": "Mysore Silk: Why People Queue at 4 AM",
+      "not_before": "2026-11-16T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"9\"><a href=\"/mysore-silk/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><path d=\"M16 24H77L84 76H24Z\" fill=\"#a91854\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M19 35H79M22 64H82\" stroke=\"#ffd23f\" stroke-width=\"7\"/><path d=\"M35 48L43 57L51 48L59 57L67 48\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>Mysore Silk: Why People Queue at 4 AM</h3><p>From royal workshops to gold zari, trace the story of Mysore silk and the early-morning queues for its sarees.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">16 Nov 2026</span></li>"
+    },
+    {
+      "number": 10,
       "url": "https://sriniurs.github.io/the-night-the-stars-fell/",
       "path": "/the-night-the-stars-fell/",
       "title": "The Night the Stars Fell: the Leonids Return",
       "not_before": "2026-11-17T05:00:00+05:30",
       "status": "pending",
       "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"8\"><a href=\"/the-night-the-stars-fell/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"9\" y=\"12\" width=\"82\" height=\"76\" rx=\"13\" fill=\"#17366b\" stroke=\"#151515\" stroke-width=\"3\"/><g fill=\"#fff3c1\"><circle cx=\"26\" cy=\"30\" r=\"2\"/><circle cx=\"78\" cy=\"46\" r=\"2\"/><circle cx=\"62\" cy=\"73\" r=\"2\"/><circle cx=\"36\" cy=\"77\" r=\"2\"/></g><path d=\"M30 64L69 28M47 66L78 38M25 52L48 31\" stroke=\"#ffd23f\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"64\" r=\"5\" fill=\"#fff3c1\"/></svg></div><div class=\"card-copy\"><h3>The Night the Stars Fell: the Leonids Return</h3><p>Follow a speck of comet dust to find out why the Leonids return, what makes a meteor storm, and when to look up from India.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">17 Nov 2026</span></li>"
+      "card_html": "<li class=\"story-card\" data-queue-number=\"10\"><a href=\"/the-night-the-stars-fell/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"9\" y=\"12\" width=\"82\" height=\"76\" rx=\"13\" fill=\"#17366b\" stroke=\"#151515\" stroke-width=\"3\"/><g fill=\"#fff3c1\"><circle cx=\"26\" cy=\"30\" r=\"2\"/><circle cx=\"78\" cy=\"46\" r=\"2\"/><circle cx=\"62\" cy=\"73\" r=\"2\"/><circle cx=\"36\" cy=\"77\" r=\"2\"/></g><path d=\"M30 64L69 28M47 66L78 38M25 52L48 31\" stroke=\"#ffd23f\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"64\" r=\"5\" fill=\"#fff3c1\"/></svg></div><div class=\"card-copy\"><h3>The Night the Stars Fell: the Leonids Return</h3><p>Follow a speck of comet dust to find out why the Leonids return, what makes a meteor storm, and when to look up from India.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">17 Nov 2026</span></li>"
     }
   ]
 }
