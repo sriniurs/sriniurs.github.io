@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-10",
+  "last_published_on": "2026-11-11",
   "entries": [
     {
       "number": 1,
@@ -41,8 +41,8 @@
       "path": "/bandipur-tigers/",
       "title": "Why Are Tigers Walking Out of Bandipur?",
       "not_before": "2026-11-11T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-11T05:13:46+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"4\"><a href=\"/bandipur-tigers/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"27\" cy=\"31\" r=\"12\" fill=\"#ef944c\"/><circle cx=\"73\" cy=\"31\" r=\"12\" fill=\"#ef944c\"/><ellipse cx=\"50\" cy=\"52\" rx=\"35\" ry=\"29\" fill=\"#ef944c\"/><ellipse cx=\"50\" cy=\"65\" rx=\"20\" ry=\"12\" fill=\"#fff3dc\"/><path d=\"M38 25L43 40M50 24V39M62 25L57 40M18 47L30 51M82 47L70 51M18 57L29 60M82 57L71 60M39 50H42M58 50H61M47 60L50 63L53 60M50 63V68\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Why Are Tigers Walking Out of Bandipur?</h3><p>Why young tigers leave protected forests, what draws them to farmland, and how Karnataka is responding.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">11 Nov 2026</span></li>"
     },
     {
