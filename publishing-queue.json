@@ -56,16 +56,6 @@
       "card_html": "<li class=\"story-card\" data-queue-number=\"5\"><a href=\"/mysuru-indoor-sky/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><path d=\"M12 65A38 38 0 0 1 88 65Z\" fill=\"#1d4f9a\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M12 65H88V79H12Z\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"3\"/><g fill=\"#ffd23f\"><circle cx=\"37\" cy=\"42\" r=\"3\"/><circle cx=\"65\" cy=\"49\" r=\"3\"/><path d=\"M55 26L58 34L66 37L58 40L55 48L52 40L44 37L52 34Z\"/></g></svg></div><div class=\"card-copy\"><h3>Mysuru Is Getting an Indoor Sky</h3><p>Inside the COSMOS planetarium: its LED dome, tilted sky, scientific visualisation and Mysuru’s astronomy heritage.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">12 Nov 2026</span></li>"
     },
     {
-      "number": 6,
-      "url": "https://sriniurs.github.io/ganjifa/",
-      "path": "/ganjifa/",
-      "title": "Ganjifa: The Mysore King Who Invented Card Games",
-      "not_before": "2026-11-13T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"6\"><a href=\"/ganjifa/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"37\" cy=\"47\" r=\"28\" fill=\"#1f7ad1\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"28\" fill=\"#e63946\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"2\"/><path d=\"M47 60L44 43L55 49L63 36L71 49L82 43L79 60Z\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"2\"/></svg></div><div class=\"card-copy\"><h3>Ganjifa: The Mysore King Who Invented Card Games</h3><p>How Mysore’s Wadiyar king turned painted playing cards into elaborate puzzles, and how a Mysuru artist helped revive the tradition.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">13 Nov 2026</span></li>"
-    },
-    {
       "number": 7,
       "url": "https://sriniurs.github.io/myopia/",
       "path": "/myopia/",
@@ -104,6 +94,16 @@
       "status": "pending",
       "published_at": null,
       "card_html": "<li class=\"story-card\" data-queue-number=\"10\"><a href=\"/the-night-the-stars-fell/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"9\" y=\"12\" width=\"82\" height=\"76\" rx=\"13\" fill=\"#17366b\" stroke=\"#151515\" stroke-width=\"3\"/><g fill=\"#fff3c1\"><circle cx=\"26\" cy=\"30\" r=\"2\"/><circle cx=\"78\" cy=\"46\" r=\"2\"/><circle cx=\"62\" cy=\"73\" r=\"2\"/><circle cx=\"36\" cy=\"77\" r=\"2\"/></g><path d=\"M30 64L69 28M47 66L78 38M25 52L48 31\" stroke=\"#ffd23f\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"30\" cy=\"64\" r=\"5\" fill=\"#fff3c1\"/></svg></div><div class=\"card-copy\"><h3>The Night the Stars Fell: the Leonids Return</h3><p>Follow a speck of comet dust to find out why the Leonids return, what makes a meteor storm, and when to look up from India.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">17 Nov 2026</span></li>"
+    },
+    {
+      "number": 11,
+      "url": "https://sriniurs.github.io/ganjifa/",
+      "path": "/ganjifa/",
+      "title": "Ganjifa: The Mysore King Who Invented Card Games",
+      "not_before": "2026-11-18T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"11\"><a href=\"/ganjifa/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"37\" cy=\"47\" r=\"28\" fill=\"#1f7ad1\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"28\" fill=\"#e63946\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"2\"/><path d=\"M47 60L44 43L55 49L63 36L71 49L82 43L79 60Z\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"2\"/></svg></div><div class=\"card-copy\"><h3>Ganjifa: The Mysore King Who Invented Card Games</h3><p>How Mysore’s Wadiyar king turned painted playing cards into elaborate puzzles, and how a Mysuru artist helped revive the tradition.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">13 Nov 2026</span></li>"
     }
   ]
 }
