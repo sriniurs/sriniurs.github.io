@@ -15,11 +15,11 @@ or without a date are still merged at once, as before.
 import datetime, glob, json, os, re, sys, zipfile
 
 MARK = "<!-- NEWEST ENTRY GOES DIRECTLY BELOW THIS LINE -->"
-ALLOWED = re.compile(r"^(index\.html|og\.png|(archive|markets|funds|nifty|ortho-pulse)/[A-Za-z0-9._-]+\.(html|png|jpg|json))$")
+ALLOWED = re.compile(r"^(index\.html|og\.png|(archive|markets|funds|nifty)/[A-Za-z0-9._-]+\.(html|png|jpg|json))$")
 # short story links (from 5 Nov 2026): /<slug>/index.html + /<slug>/og.png
 STORY = re.compile(r"^(?!archive/|assets/|preview/|stats/|comics/|queue/)[a-z0-9][a-z0-9-]{1,40}/(index\.html|og\.png|card\.jpg|story\.jpg)$")
 QUEUE = re.compile(r"^queue/[a-z0-9][a-z0-9-]{1,40}\.json$")
-RESERVED = {"archive","assets","preview","stats","comics","markets","funds","nifty","ortho-pulse","s","queue"}
+RESERVED = {"archive","assets","preview","stats","comics","markets","funds","nifty","s","queue"}
 MONTHS = {m: i + 1 for i, m in enumerate("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split())}
 STATUS = re.compile(r"^s/[a-z0-9][a-z0-9-]{1,40}/index\.html$")
 
