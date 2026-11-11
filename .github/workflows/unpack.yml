@@ -19,6 +19,8 @@ jobs:
         run: python3 .github/unpack_site.py
       - name: Publish anything already due (stories uploaded on their own day)
         run: python3 .github/publish_due.py
+      - name: Rebuild sitemap.xml from live stories
+        run: python3 .github/build_sitemap.py
       - name: Commit unpacked files
         run: |
           git config user.name "github-actions[bot]"
