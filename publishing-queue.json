@@ -56,6 +56,16 @@
       "card_html": "<li class=\"story-card\" data-queue-number=\"5\"><a href=\"/mysuru-indoor-sky/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><path d=\"M12 65A38 38 0 0 1 88 65Z\" fill=\"#1d4f9a\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M12 65H88V79H12Z\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"3\"/><g fill=\"#ffd23f\"><circle cx=\"37\" cy=\"42\" r=\"3\"/><circle cx=\"65\" cy=\"49\" r=\"3\"/><path d=\"M55 26L58 34L66 37L58 40L55 48L52 40L44 37L52 34Z\"/></g></svg></div><div class=\"card-copy\"><h3>Mysuru Is Getting an Indoor Sky</h3><p>Inside the COSMOS planetarium: its LED dome, tilted sky, scientific visualisation and Mysuru’s astronomy heritage.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">12 Nov 2026</span></li>"
     },
     {
+      "number": 6,
+      "url": "https://sriniurs.github.io/thin-outside-sugar-inside/",
+      "path": "/thin-outside-sugar-inside/",
+      "title": "Thin Outside, Sugar Inside",
+      "not_before": "2026-11-13T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"6\"><a href=\"/thin-outside-sugar-inside/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"17\" y=\"32\" width=\"66\" height=\"36\" rx=\"8\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"4\"/><path d=\"M28 33v13m11-13v8m11-8v13m11-13v8m11-8v13\" stroke=\"#151515\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>Thin Outside, Sugar Inside</h3><p>Why type 2 diabetes can develop at a seemingly normal weight, and what waist size can tell you.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">13 Nov 2026</span></li>"
+    },
+    {
       "number": 7,
       "url": "https://sriniurs.github.io/myopia/",
       "path": "/myopia/",
