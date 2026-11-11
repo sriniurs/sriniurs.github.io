@@ -12,8 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://srinipresents.com'
-# Live sections served from their own repos (e.g. sriniurs/nifty-comics).
-OTHER_REPOS = {'/nifty-comics/'}
+# Live sections served from their own repos (e.g. sriniurs/nifty).
+OTHER_REPOS = {'/nifty/'}
 LINK = re.compile(r'href="(/[a-z0-9-]+/)"')
 
 
