@@ -21,9 +21,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://sriniurs.github.io'
 SKIP = {'archive', 'assets', 'queue', 'preview', 's', 'stats'}
-# Faceless by choice: pen name and profession only, no full name or hospital.
-AUTHOR = {'@type': 'Person', 'name': 'Dr. Srini', 'honorificPrefix': 'Dr.',
-          'jobTitle': 'Orthopaedic surgeon', 'url': BASE + '/about/'}
+# Discreet by choice: pen name and city only.
+AUTHOR = {'@type': 'Person', 'name': 'Dr. Srini',
+          'homeLocation': {'@type': 'Place', 'name': 'Mysuru'}, 'url': BASE + '/about/'}
 START, END = '<!-- seo:auto -->', '<!-- /seo:auto -->'
 BLOCK = re.compile(re.escape(START) + r'.*?' + re.escape(END), re.S)
 
