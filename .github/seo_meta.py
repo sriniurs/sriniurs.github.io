@@ -19,7 +19,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE = 'https://sriniurs.github.io'
+BASE = 'https://srinipresents.com'
 SKIP = {'archive', 'assets', 'queue', 'preview', 's', 'stats'}
 # Discreet by choice: pen name and city only.
 AUTHOR = {'@type': 'Person', 'name': 'Dr. Srini',

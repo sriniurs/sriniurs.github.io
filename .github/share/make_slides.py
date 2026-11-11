@@ -12,7 +12,7 @@ spec.json keys:
   sub        slide-1 sub line, e.g. "3 questions.\n3 traps."
   questions  list of 3 {q, a, note?}: question, short answer ("NO", "NOPE", "YES"), optional small note
   more       slide-3 headline, e.g. "4 more\n*traps*\ninside."
-  url        e.g. "sriniurs.github.io/caller-id"
+  url        e.g. "srinipresents.com/caller-id"
   tap        optional, default "Tap the link to read ↓"
   art1, art3 inner SVG (viewBox 0 0 100 100, flat cartoon, 3px #151515 outlines) for slides 1 and 3
   questions[].art  optional small icon per question (same format; reuse assets/ill/library.json)

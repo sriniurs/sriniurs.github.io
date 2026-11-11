@@ -68,9 +68,12 @@ class Structure(HTMLParser):
             self.lists.append(entry)
 
 
+SITE_HOSTS = {'srinipresents.com', 'www.srinipresents.com', 'sriniurs.github.io'}
+
+
 def canonical(href):
     parsed = urlsplit(href or '')
-    if parsed.netloc and parsed.netloc != 'sriniurs.github.io':
+    if parsed.netloc and parsed.netloc not in SITE_HOSTS:
         return None
     path = parsed.path
     if path.endswith('index.html'):

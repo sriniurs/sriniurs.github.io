@@ -32,7 +32,7 @@ class PublisherTests(unittest.TestCase):
             directory.mkdir()
             (directory / 'index.html').write_text('<html>APPROVED ARTICLE</html>', encoding='utf-8')
             self.queue['entries'].append({
-                'number': number, 'path': f'/{slug}/', 'url': f'https://sriniurs.github.io/{slug}/',
+                'number': number, 'path': f'/{slug}/', 'url': f'https://srinipresents.com/{slug}/',
                 'title': slug, 'not_before': date + 'T05:00:00+05:30', 'status': 'pending',
                 'published_at': None,
                 'card_html': f'<li class="story-card"><a href="/{slug}/">{slug}</a>'
@@ -102,7 +102,7 @@ class PublisherTests(unittest.TestCase):
 
     def test_absolute_and_index_links_are_deduplicated(self):
         text = self.page.replace('<!-- KEEP COMMENT -->',
-            '<li class="story-card"><a href="https://sriniurs.github.io/first/index.html">Duplicate</a></li>'
+            '<li class="story-card"><a href="https://srinipresents.com/first/index.html">Duplicate</a></li>'
             '<li class="story-card"><a href="/first/">Duplicate 2</a></li>')
         for name in ('index.html', 'archive/index.html'):
             (self.root / name).write_text(text)

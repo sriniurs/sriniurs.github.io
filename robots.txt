@@ -3,4 +3,4 @@ Disallow: /queue/
 Disallow: /preview/
 Disallow: /stats/
 
-Sitemap: https://sriniurs.github.io/sitemap.xml
+Sitemap: https://srinipresents.com/sitemap.xml
