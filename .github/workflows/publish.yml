@@ -37,9 +37,11 @@ jobs:
         id: publish
         if: ${{ github.event_name != 'workflow_dispatch' || !inputs.dry_run }}
         run: python3 .github/publish_due.py
-      - name: Rebuild sitemap.xml from live stories
+      - name: Rebuild sitemap.xml and search tags
         if: steps.publish.outputs.changed == 'true'
-        run: python3 .github/build_sitemap.py
+        run: |
+          python3 .github/build_sitemap.py
+          python3 .github/seo_meta.py
       - name: Commit homepage, archive and queue together
         if: steps.publish.outputs.changed == 'true'
         run: |
@@ -47,6 +49,8 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html archive/index.html publishing-queue.json sitemap.xml
           git diff --cached --check
+          # Story pages get search tags added; some use CRLF, which --check flags.
+          git add -u -- '*/index.html'
           git commit -m "Feature daily story for $(TZ=Asia/Kolkata date +%F)"
           # Never rebase stale generated pages over concurrent changes. A rejected
           # push fails safely; the next hourly check starts from the current main.
