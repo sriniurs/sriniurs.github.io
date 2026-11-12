@@ -23,6 +23,7 @@ jobs:
         run: |
           python3 .github/build_sitemap.py
           python3 .github/seo_meta.py
+          python3 .github/site_nav.py
       - name: Commit unpacked files
         run: |
           git config user.name "github-actions[bot]"
