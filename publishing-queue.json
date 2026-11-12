@@ -77,13 +77,13 @@
     },
     {
       "number": 8,
-      "url": "https://srinipresents.com/why-is-the-rupee-at-94/",
-      "path": "/why-is-the-rupee-at-94/",
-      "title": "Why Is the Rupee at 94?",
+      "url": "https://srinipresents.com/karnataka-gives-india/",
+      "path": "/karnataka-gives-india/",
+      "title": "Made in Karnataka",
       "not_before": "2026-11-15T05:00:00+05:30",
       "status": "pending",
       "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"8\"><a href=\"/why-is-the-rupee-at-94/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"50\" r=\"36\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"4\"/><text x=\"50\" y=\"69\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"55\" fill=\"#151515\">₹</text></svg></div><div class=\"card-copy\"><h3>Why Is the Rupee at 94?</h3><p>Why the rupee moves against the dollar, what the RBI does, and how exchange rates reach everyday bills.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">15 Nov 2026</span></li>"
+      "card_html": "<li class=\"story-card\" data-queue-number=\"8\"><a href=\"/karnataka-gives-india/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M30 14L60 10L74 26L70 46L80 62L66 86L44 90L34 72L22 60L26 40Z\" fill=\"#ffd23f\"/><circle cx=\"58\" cy=\"66\" r=\"5\" fill=\"#c0392b\"/></g></svg></div><div class=\"card-copy\"><h3>Made in Karnataka</h3><p>The gold, the coffee, the national flag, the ink on your finger and ISRO&#x27;s satellites: 15 things every Indian gets from one state.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">15 Nov 2026</span></li>"
     },
     {
       "number": 9,
@@ -144,6 +144,16 @@
       "status": "pending",
       "published_at": null,
       "card_html": "<li class=\"story-card\" data-queue-number=\"14\"><a href=\"/ganjifa/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"37\" cy=\"47\" r=\"28\" fill=\"#1f7ad1\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"28\" fill=\"#e63946\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"2\"/><path d=\"M47 60L44 43L55 49L63 36L71 49L82 43L79 60Z\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"2\"/></svg></div><div class=\"card-copy\"><h3>Ganjifa: The Mysore King Who Invented Card Games</h3><p>How Mysore’s Wadiyar king turned painted playing cards into elaborate puzzles, and how a Mysuru artist helped revive the tradition.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">21 Nov 2026</span></li>"
+    },
+    {
+      "number": 15,
+      "url": "https://srinipresents.com/why-is-the-rupee-at-94/",
+      "path": "/why-is-the-rupee-at-94/",
+      "title": "Why Is the Rupee at 94?",
+      "not_before": "2026-11-22T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"15\"><a href=\"/why-is-the-rupee-at-94/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"50\" r=\"36\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"4\"/><text x=\"50\" y=\"69\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"55\" fill=\"#151515\">₹</text></svg></div><div class=\"card-copy\"><h3>Why Is the Rupee at 94?</h3><p>Why the rupee moves against the dollar, what the RBI does, and how exchange rates reach everyday bills.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">22 Nov 2026</span></li>"
     }
   ]
 }
