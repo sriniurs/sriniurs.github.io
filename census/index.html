@@ -1,0 +1,316 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><title>How Do You Count 1.4 Billion People? — srini.presents</title><meta name="description" content="India is running its first digital census. How do 30 lakh people count everyone at one exact second?"><meta property="og:title" content="How Do You Count 1.4 Billion People?"><meta property="og:description" content="India is running its first digital census. How do 30 lakh people count everyone at one exact second?"><meta property="og:image" content="https://srinipresents.com/census/og.png"><meta property="og:url" content="https://srinipresents.com/census/"><meta name="twitter:card" content="summary_large_image"><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap'>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="myth-fact">
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box}body{padding:24px 18px 48px}.wrap{max-width:1060px;margin:auto;display:grid;gap:36px}.cover{background:#ffd23f!important;color:#151515!important;padding:28px 24px;border:4px solid var(--line);box-shadow:8px 8px 0 var(--line)}.cover h1{color:#151515!important;font-size:clamp(45px,7vw,78px);line-height:1.03;text-shadow:none!important;-webkit-text-stroke:0!important;margin:20px 0}.cover .byline{color:#9d0208!important;font-size:28px!important;white-space:normal!important}.tagline{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:5px}.sample{display:inline-block;background:#151515;color:#fff;padding:5px 10px;font-weight:bold}.cast{display:flex;gap:30px;flex-wrap:wrap}.cast figure{margin:12px 0 0;max-width:180px;font-weight:bold}.cast svg{display:block;width:84px;height:84px;background:white;border:2px solid #151515;border-radius:50%;margin-bottom:8px}.cast small{font-weight:normal}.fact{display:block!important;font-size:18px;line-height:1.5}.say{align-items:flex-start}.av{flex-shrink:0;width:54px;height:54px}.bubble{min-width:0}.ep{min-width:0}.grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.panel{min-width:0}a{color:#165da3}.cover .sub{color:#151515!important}.evidence{padding:20px;border:3px solid var(--line);background:var(--panel)}.evidence p,.evidence li{font-size:15px;line-height:1.5}.next{background:#ffd23f;color:#151515;border:3px solid var(--line);padding:18px;font-size:19px}.foot{text-align:center}h2{line-height:1.15}.fs{display:flex;flex-wrap:wrap;gap:8px}.fs span{background:#fff!important;color:#151515!important;border:2px solid #151515;padding:4px 8px}
+@media(prefers-color-scheme:dark){a{color:#8cc9ff}.sfx{color:#ffae73}.sfx.b{color:#86c6ff}.sfx.r{color:#ff9ca6}.cap,.take,.warn{color:#151515}.take{background:#dff2e5}}
+@media(max-width:640px){body{padding:16px 16px 32px}.wrap{gap:28px}.grid{grid-template-columns:minmax(0,1fr)!important}.cover{padding:22px 16px}.ep{padding:12px}.panel{padding:12px}.fact{font-size:17.5px}.ep-head{align-items:flex-start}.cover h1{font-size:48px}.ep h2{font-size:29px}.cast{gap:20px}.cast figure{max-width:125px}}
+</style><style>
+.wrap{gap:36px}.cover h1{font-size:clamp(44px,6.2vw,72px)}.cover .sub{max-width:45ch;line-height:1.55}.cast figure{font-size:17px}.ep{display:grid;gap:22px}.ep-head{margin-bottom:0}.reading{max-width:760px;width:100%;margin:0 auto;font:19px/1.65 var(--body)}.reading p{margin:0 0 16px}.reading p:last-child{margin-bottom:0}.reading .cap{margin:0 0 14px;font-size:19px;line-height:1.4}.lead{font-size:22px;font-weight:700;line-height:1.5}.banter{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:18px;background:var(--panel);border-top:2px dashed var(--muted);border-bottom:2px dashed var(--muted)}.banter .bubble{margin:0;line-height:1.5}.math{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bill{padding:18px;border:3px solid var(--line);background:var(--panel)}.bill h3{font-family:var(--display);font-size:28px;letter-spacing:.03em;margin:0 0 12px}.bill dl{margin:0}.bill dl div{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.bill dd{margin:0;white-space:nowrap;font-weight:700}.bill .total{border-top:2px solid var(--line);padding-top:10px;font-size:23px}.delta{background:#ffd23f;color:#151515;padding:15px 18px;border:3px solid var(--line);font-size:21px;font-weight:700;text-align:center}.ep .take{font-size:19px;line-height:1.55;border:2px solid #245e3b;background:#e3f5ea;color:#153c25;padding:16px 18px}.questions{display:grid;gap:13px}.question{border:2px solid var(--line);padding:15px 18px;background:var(--panel)}.question h3{font-family:var(--body);font-size:20px;line-height:1.4;margin:0 0 7px}.question p{margin:0}.source-note{font-size:15px!important;color:var(--muted)}.sample-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.sample-nav a{border:2px solid #151515;color:#151515;background:white;padding:6px 12px;font-weight:700;text-decoration:none}.ep p{overflow-wrap:break-word}.page-marker{font-weight:700;color:var(--muted);font-size:15px;letter-spacing:.08em}.ep-head .no{white-space:nowrap}html{scroll-behavior:smooth}
+@media(max-width:640px){.reading{font-size:17.5px;line-height:1.6}.reading .lead{font-size:20px!important}.banter,.math{grid-template-columns:minmax(0,1fr)}.banter{padding:16px 0;gap:16px}.ep{gap:18px}.bill{padding:16px}.question{padding:14px}.question h3{font-size:19px}.cover h1{font-size:46px}.ep .take{font-size:17.5px}.reading .cap{font-size:18px}.delta{font-size:19px}.wrap{gap:28px}.sample-nav{gap:8px}.sample-nav a{font-size:15px}.ep-head h2{font-size:32px}}
+@media(prefers-color-scheme:dark){.ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#e9edf2;--muted:#a8b3bf}:root[data-theme="dark"] .ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}
+</style><style>
+.cover{background:#c2410c!important;color:#fff!important}.cover h1,.cover .sub{color:#fff!important}.cover .byline{color:#fff1a8!important}.cover .cast figure{color:#fff}.cover .tagline{color:#fff1a8}.time-box{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:20px;text-align:center}.time-box strong{display:block;font:clamp(44px,7vw,68px)/1.2 var(--display);letter-spacing:.03em}.time-box p{margin:8px 0 0}.spot{width:84px;height:84px;background:white;border:3px solid #151515;border-radius:16px;padding:5px;justify-self:center;box-shadow:3px 3px 0 #151515}.opinion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opinion article{border:2px solid var(--line);padding:16px}.opinion h3{font:24px var(--display);margin:0 0 10px}.opinion p{font-size:18px;line-height:1.55;margin:0}.math-note{border-left:6px solid #e8590c;padding:12px 18px;background:var(--panel)}.cheat{background:#ffd23f!important;color:#151515!important}.cheat .question{background:#fff;color:#151515;border-color:#151515}.cheat .question p{font-size:18px}.source-list{padding-left:22px}.source-list li{margin-bottom:12px}.evidence a{overflow-wrap:anywhere}.sample{background:#fff!important;color:#151515!important}.era{margin:0}.take strong{font-weight:700}@media(max-width:640px){.opinion{grid-template-columns:minmax(0,1fr)}.opinion p{font-size:17.5px}.spot{width:76px;height:76px}.time-box{padding:16px}.time-box strong{font-size:48px}.cheat .question p{font-size:17.5px}}
+</style><style>
+.cover{display:block;background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important;font-size:clamp(40px,6.3vw,74px)}.cover .byline{color:#ffd23f!important}.cover .sub{color:#fff!important;max-width:62ch}.readtime{margin-top:22px}.cover .tagline{color:white}.cover .sample{background:#ffd23f;color:#151515}.cover .cast{margin-top:12px}.cover .cast figure{max-width:180px}.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.place{border:3px solid var(--line);padding:18px;background:var(--panel)}.place h3{font-family:var(--display);font-size:27px;margin:0 0 8px}.digits{font-family:var(--display);font-size:76px;text-align:center;letter-spacing:.12em;color:var(--ink);line-height:1.1}.digits small{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:12px}.spot{width:110px;height:110px}.reading{max-width:760px}.opinion article{min-width:0}.bill p{font-size:18px}.evidence h2{font-family:var(--display);font-size:32px}.source-list li{margin:12px 0}.stamp{text-align:center;font-size:15px;color:var(--muted)}
+:root[data-theme="dark"] a{color:#8cc9ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .take{color:#d9f2e3;background:#173326}}
+@media(max-width:640px){.duo{grid-template-columns:1fr}.cover h1{font-size:42px}.reading p,.bubble{line-height:1.6!important}.digits{font-size:64px}.cover .cast{gap:22px}.cover .cast figure{font-size:16px}.opinion{grid-template-columns:1fr!important}.bill .total{font-size:21px}}
+@media print{body{background:white;padding:0}.cover,.ep,.evidence,.era{box-shadow:none;break-inside:avoid}.wrap{gap:20px}}
+</style><style id="thu-cover">.cover{background:#1d4f9a!important;color:#fff!important}.cover h1{color:#ffd23f!important}.cover .sub,.cover .cast figure,.cover .readtime,.cover .tagline,.cover .cast small{color:#fff!important}.cover .byline{color:#fff!important}.cover .sample{background:#ffd23f!important;color:#151515!important}.cover .fs span{color:#151515}.warn{background:#ffe3e3!important;color:#151515!important}.coming{border:3px dashed var(--line);padding:16px 18px;background:var(--panel)}.coming ol{margin:8px 0 0 20px;padding:0}.coming li{margin:4px 0}</style>
+<style id="follow">.follow{border:3px dashed var(--line);padding:22px 18px;text-align:center;font:18px/1.6 var(--body)}.follow b{font-family:var(--display);font-weight:400;font-size:28px;letter-spacing:.05em;display:block}.follow a{font-weight:700}</style><style id="clean-subheads">
+.place h3,.bill h3,.question h3,.opinion h3,table.vs th,table.vs.stk td:first-child,.gamelist b,.myth::before,.factx::before,.take::before,.warn::before,.dstag,.coming b{font-family:var(--body)!important;font-weight:800!important;letter-spacing:.01em!important;-webkit-text-stroke:0!important;text-shadow:none!important}
+.place h3,.bill h3{font-size:21px!important;line-height:1.25!important}
+</style><style id="day-cover">html .cover{background:#ddd0ff!important;color:#151515!important}html .cover h1{color:#151515!important}html .cover .sub,html .cover .cast figure,html .cover .cast small,html .cover .readtime,html .cover .tagline{color:#151515!important}html .cover .byline{color:#4c1d95!important}html .cover .sample{background:#151515!important;color:#fff!important}html .cover .fs span{background:#fff!important;color:#151515!important}</style><!-- seo:auto --><link rel="canonical" href="https://srinipresents.com/census/"><meta property="og:type" content="article"><meta property="og:site_name" content="srini.presents"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Do You Count 1.4 Billion People?", "description": "India is running its first digital census. How do 30 lakh people count everyone at one exact second?", "url": "https://srinipresents.com/census/", "mainEntityOfPage": "https://srinipresents.com/census/", "image": "https://srinipresents.com/census/og.png", "author": {"@type": "Person", "name": "Dr. Srini", "homeLocation": {"@type": "Place", "name": "Mysuru"}, "url": "https://srinipresents.com/about/"}, "publisher": {"@type": "Organization", "name": "srini.presents", "url": "https://srinipresents.com/"}, "inLanguage": "en-IN"}</script><!-- /seo:auto --></head><body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:8px 4px;
+font:bold italic 15px Georgia,serif;color:#bc2236}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/archive/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a class="sp-brand" href="/">srini.presents</a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&r.indexOf(location.origin)===0&&history.length>1){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></svg><main class="wrap"><header class="cover"><p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p><span class="sample">8 EPISODES · HOW IT WORKS</span><h1>How Do You Count<br>1.4 Billion<br>People?</h1><p class="sub">India&#8217;s first census in 16 years is also its first digital one. Thirty lakh people, two phases, one frozen second. Here&#8217;s how it actually works.</p><div class="fs"><span>Census 2027</span><span>Houses first · people next</span><span>How it works</span></div><div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>counting on his fingers</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>counted in five censuses</small></figure></div><p class="readtime">ABOUT 8 MINUTES</p></header>
+
+<section class="ep" id="section-01"><div class="ep-head"><span class="no">01</span><h2>One frozen second</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="54" r="32" fill="#fff"/><path d="M50 54V30M50 54L64 62" fill="none" stroke-width="4"/><path d="M38 14H62M50 14V22" fill="none"/><circle cx="50" cy="54" r="3" fill="#e63946"/></g></svg><div class="reading"><p class="lead">Here&#8217;s a puzzle. Babies are born every few seconds. People move house, catch trains, die. How do you count a country that never stands still?</p><p>The answer: you pick one exact moment and pretend the whole country froze. For this census, that moment is <b>00:00 hours on 1 March 2027</b> for most of India. (Ladakh and snowbound parts of a few hill states use 1 October 2026, because winter makes them hard to reach.) <a href="#s1">[1]</a></p><p>Every answer is about that instant. A baby born at 00:05 on 1 March is not counted. A person who dies at 00:05 <i>is</i> counted, because they were alive at the census moment. <a href="#s2">[2]</a></p><p>This is the <b>16th census</b> since 1872 and the 8th since Independence. <a href="#s3">[3]</a> It was due in 2021, and the first phase was ready to begin in April 2020 before Covid stopped it. <a href="#s1">[1]</a> The last actual count, in 2011, found <b>121.19 crore</b> people. <a href="#s3">[3]</a> Everything since then, including the &#8220;1.4 billion&#8221; in our title, is an estimate. That&#8217;s exactly why we count.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So a baby born five minutes late misses the whole census?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Officially, yes. Unofficially, they&#8217;ll be the star of the next one.</p></div></div></section>
+
+<section class="ep" id="section-02"><div class="ep-head"><span class="no">02</span><h2>Count the houses before the people</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M10 50L30 32L50 50V84H10Z" fill="#ffd23f"/><path d="M50 50L70 32L90 50V84H50Z" fill="#cfe8ff"/><rect x="24" y="64" width="12" height="20" fill="#fff"/><rect x="64" y="64" width="12" height="20" fill="#fff"/><path d="M10 50L30 32L50 50L70 32L90 50" fill="none"/></g></svg><div class="reading"><p>You can&#8217;t knock on every door until you know where every door is. So the census runs in two phases.</p></div><div class="chain" aria-label="Census phases"><span>Phase 1 · Houselisting · Apr–Sep 2026</span><i aria-hidden="true">&#8594;</i><span class="hit">Phase 2 · Population count · Feb 2027</span></div><p class="deck-note">Source: <a href="#s4">[4]</a></p><div class="reading"><p><b>Phase 1</b> maps every building and household. India is cut into small <b>houselisting blocks</b>, each given to one enumerator, so no house is missed or counted twice. <a href="#s5">[5]</a> This time the blocks are drawn on a digital map using satellite imagery. <a href="#s6">[6]</a> At each home the enumerator asks <b>33 questions</b> about the house itself: its condition, the amenities it has, and the things the household owns. <a href="#s7">[7]</a></p><p><b>Phase 2</b>, in February 2027, uses that map to visit every household again and count each person: age, education, work, migration, and, for the first time since 1931, caste. <a href="#s3">[3]</a> <a href="#s8">[8]</a></p><p>Who does all this? About <b>30 lakh</b> field staff. Most enumerators are government schoolteachers, doing census work on top of their regular jobs. <a href="#s4">[4]</a> The Union Cabinet approved a budget of <b>&#8377;11,718 crore</b>. <a href="#s4">[4]</a> If India has about 140 crore people, that works out to roughly <b>&#8377;84 per person</b> counted. <span class="small">(Illustrative arithmetic.)</span></p></div><div class="take">The census counts houses first, because a good map is what stops anyone being missed in the second round.</div></section>
+
+<section class="ep" id="section-03"><div class="ep-head"><span class="no">03</span><h2>Karnataka went first</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="30" y="10" width="40" height="80" rx="8" fill="#151515"/><rect x="35" y="20" width="30" height="56" fill="#fff"/><path d="M40 46L48 54L62 36" fill="none" stroke="#2a9d5c" stroke-width="5" stroke-linecap="round"/></g></svg><div class="reading"><p>Karnataka was in the very first batch of states to start. <a href="#s9">[9]</a> And for the first time, you could count yourself.</p><p>From <b>1 to 15 April 2026</b>, any household in Karnataka could fill in its own Phase 1 details on the official census portal. Once done, the family got a <b>Self-Enumeration ID</b> by SMS or email. From <b>16 April to 15 May</b>, enumerators came door to door to check those entries and fill in the rest. <a href="#s10">[10]</a></p><p>Across the 11 states and UTs in that first round, more than <b>5.72 lakh households</b> had counted themselves within the first ten days. <a href="#s11">[11]</a> Everything collected is confidential under the Census Act, 1948. <a href="#s12">[12]</a> One honest trade-off that analysts point out: self-enumerating links your phone number to your house location in census records. <a href="#s13">[13]</a></p><p>By mid-2026, Phase 1 had already been completed in 29 states and UTs, with Tamil Nadu among the last to start. <a href="#s7">[7]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the census-taker now checks my homework?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>And this time, the homework is graded on a phone.</p></div></div></section>
+
+<div class="era p2">THE DEEP DIVE<small>The night count, a census from 1881, the caste question, and what these numbers decide.</small></div>
+
+<section class="ep" id="section-04"><div class="ep-head"><span class="no">04</span><h2>The night before the census</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="6" y="6" width="88" height="88" rx="10" fill="#1d2f5a"/><path d="M70 22A14 14 0 1 0 80 40A11 11 0 1 1 70 22Z" fill="#ffd23f"/><path d="M14 76H86M20 76V64H40V76M58 76V58H80V76" fill="none" stroke="#fff"/><circle cx="30" cy="22" r="2" fill="#fff" stroke="none"/><circle cx="46" cy="34" r="2" fill="#fff" stroke="none"/></g></svg><div class="reading"><p>Phase 2 is the big one: every person, one by one. India has done this before, so the 2011 census shows how it works.</p><p>In February 2011, about <b>27 lakh enumerators</b> visited roughly <b>24 crore households</b> over three weeks, from 9 to 28 February. <a href="#s14">[14]</a></p><p>But some people have no door to knock on. So on the <b>night of 28 February 2011</b>, the last night before the census moment, enumerators went out after dark to count the <b>houseless</b>: people sleeping on pavements, under flyovers, beside railway lines, in buildings under construction and around big hospitals. <a href="#s15">[15]</a> In Delhi, NGOs walked with enumerators because they knew where people slept. <a href="#s16">[16]</a></p><p>Then came a final check called the <b>Revision Round</b>. Enumerators went back to update any births or deaths between their visit and midnight, so the count matched the census moment exactly. <a href="#s14">[14]</a></p><p>The 2027 count happens in the same February window, with the same midnight on 1 March. <a href="#s4">[4]</a> <a href="#s1">[1]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the census literally works the night shift?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The people easiest to miss are counted last, and counted carefully.</p></div></div></section>
+
+<section class="ep" id="section-05"><div class="ep-head"><span class="no">05</span><h2>1881: India&#8217;s first one-night count</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M18 12H70L82 24V88H18Z" fill="#f6e7c1"/><path d="M70 12V24H82" fill="none"/><path d="M28 36H70M28 48H70M28 60H58" fill="none"/><path d="M60 82L84 50L90 56L66 88Z" fill="#e63946"/></g></svg><div class="reading"><p>India&#8217;s first all-India count took place between 1867 and 1872, but it was done at different times in different provinces. <a href="#s17">[17]</a> The first count of the whole country at once came on <b>17 February 1881</b>, led by Census Commissioner <b>W. Chichele Plowden</b>. His report called it &#8220;the first synchronous enumeration attempted for all of India.&#8221; <a href="#s18">[18]</a></p><p>The 1881 report is full of surprises. It listed <b>106 &#8220;Indian tongues&#8221;</b>, plus 17 other Asian languages, 28 European ones and one African one. <a href="#s18">[18]</a> And it has a Karnataka detail: <b>Coorg</b> (today&#8217;s Kodagu) had the highest share of men of any province, <b>56.33</b> for every 100 people, against an all-India average of about 51. <a href="#s18">[18]</a></p><p>The census has been taken every ten years since then, without a break, until Covid stopped the 2021 round. <a href="#s17">[17]</a> <a href="#s1">[1]</a> Paper slips have become a phone app, but the basic idea, one night and every person, is 145 years old.</p></div><div class="take">The 2027 census is a digital version of a method first used in 1881.</div></section>
+
+<section class="ep" id="section-06"><div class="ep-head"><span class="no">06</span><h2>The 1931 question</h2></div><div class="reading"><p class="lead">The biggest new question in 2027 is also one of the oldest: caste. This episode sticks to what happened, and when.</p></div><div class="chain" aria-label="Caste in the census timeline"><span>Up to 1931 · every caste counted</span><i aria-hidden="true">&#8594;</i><span>1951–2011 · only SC and ST counted</span><i aria-hidden="true">&#8594;</i><span>2011 · separate survey, caste data not released</span><i aria-hidden="true">&#8594;</i><span class="hit">2027 · all castes counted again</span></div><p class="deck-note">Sources: <a href="#s19">[19]</a> <a href="#s20">[20]</a> <a href="#s4">[4]</a></p><div class="reading"><p><b>1931</b> was the last census to record every caste. <a href="#s8">[8]</a> From <b>1951</b>, the first census of independent India, the government stopped counting caste in general. The reason it gave was that counting caste would keep social divisions alive. <a href="#s19">[19]</a> Only <b>Scheduled Castes</b> and <b>Scheduled Tribes</b> were still counted, because the Constitution reserves seats for them and that needs numbers. <a href="#s19">[19]</a></p><p>In <b>2011</b>, a separate <b>Socio-Economic and Caste Census (SECC)</b> was run alongside the main census. Its economic findings were published, but its caste data never was. <a href="#s20">[20]</a> The Centre later told the Supreme Court the caste data was &#8220;unusable&#8221; because of technical flaws; others have disputed that. <a href="#s21">[21]</a> Meanwhile, several states, including Bihar and Karnataka, ran caste surveys of their own. <a href="#s20">[20]</a></p><p>On <b>30 April 2025</b>, the Union Cabinet&#8217;s political affairs committee decided to include caste in the 2027 census. It will be recorded in Phase 2, in February 2027. <a href="#s4">[4]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So is counting caste a good idea or not?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>People argue both ways, and strongly. Our job today is the timeline. The argument is yours to have.</p></div></div></section>
+
+<section class="ep" id="section-07"><div class="ep-head"><span class="no">07</span><h2>What these numbers decide</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><path d="M14 40L50 18L86 40Z" fill="#ffd23f"/><rect x="18" y="40" width="64" height="8" fill="#fff"/><path d="M26 48V76M42 48V76M58 48V76M74 48V76" fill="none" stroke-width="6"/><rect x="14" y="76" width="72" height="10" fill="#fff"/></g></svg><div class="reading"><p>Census numbers aren&#8217;t just statistics. They feed into how many MPs a state gets, how central tax money is shared out, and which areas get reserved seats. <a href="#s22">[22]</a></p><p>Here&#8217;s a fact most people don&#8217;t know. The number of Lok Sabha seats each state gets is still based on the <b>1971 census</b>. Parliament froze it in 1976 and extended the freeze in 2001, partly so that states which brought their population growth down would not lose seats for doing so. The freeze lasts <b>until the figures of the first census taken after 2026 are published</b>. <a href="#s23">[23]</a> That census is this one.</p><p>The census also matters for <b>women&#8217;s reservation</b>. The 2023 law reserving one-third of Lok Sabha and Assembly seats for women takes effect only after a fresh delimitation (a redrawing of seats) based on the new census. <a href="#s23">[23]</a> In April 2026, a bill to redraw seats using the old 2011 figures instead got 298 votes in favour and 230 against. That was short of the two-thirds majority it needed, so it failed, and the related bills were withdrawn. <a href="#s24">[24]</a></p><p>So the 2027 count is, for now, the trigger for both. States in the south and the north see the possible effects very differently, which is why the debate is intense. <a href="#s25">[25]</a></p></div><div class="warn">This episode explains the rules as they stand in November 2026. Parliament can change them, and these rules have been changed before.</div></section>
+
+<section class="ep" id="section-08"><div class="ep-head"><span class="no">08</span><h2>Where your answers go</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="24" y="44" width="52" height="42" rx="6" fill="#ffd23f"/><path d="M34 44V32A16 16 0 0 1 66 32V44" fill="none" stroke-width="6"/><circle cx="50" cy="62" r="5" fill="#151515"/><path d="M50 66V74" stroke-width="4"/></g></svg><div class="reading"><p>Under the <b>Census Act, 1948</b>, what you tell the census is confidential. <a href="#s12">[12]</a> The government publishes totals, not individual answers, and this time it promises data down to the village and ward level. <a href="#s26">[26]</a></p><p>Going digital should also make results faster. In 2011, paper forms had to be scanned and read by machine before the numbers could be added up. <a href="#s27">[27]</a> This time the data goes straight from a phone to a central system, and the first figures are expected by late 2027. <a href="#s25">[25]</a></p><p>Go back to where we started: one frozen second at midnight on 1 March 2027. Behind that second are 30 lakh people, a map of every house in India, a night count of the people with no house, and questions that will shape politics for decades. <a href="#s4">[4]</a> When the enumerator comes to your door next February, you&#8217;ll know what the visit is part of.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I&#8217;m going to be one of 140 crore. Feels small.</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Small, but without you the total is wrong.</p></div></div></section>
+
+<section class="evidence" id="sources"><h2>The evidence file</h2><p>Checked 11 November 2026. Dialogue is fictional. The per-person cost is our illustrative arithmetic based on an estimated population of about 140 crore. 2011 field figures are rounded from the official 2.7 million enumerators and 240 million households. This comic takes no position on caste enumeration or delimitation; it reports the rules and events as they stand.</p><ol class="source-list">
+<li id="s1"><a href="https://www.easternmirrornagaland.com/census-2027-to-begin-on-march-1-centre-unveils-plans-for-digital-caste-inclusive-enumeration">Eastern Mirror on the MHA gazette notification</a> (newspaper report of a government notification): reference date 00:00 hours, 1 March 2027; 1 October 2026 for Ladakh and snowbound areas; 2021 census preparation was complete for April 2020.</li>
+<li id="s2"><a href="https://www.policyedge.in/p/census-2027-indias-first-fully-digital-population-count">The Policy Edge: Census 2027 explained</a> (policy newsletter, citing PIB): born-at-00:05 and died-at-00:05 examples.</li>
+<li id="s3"><a href="https://www.onmanorama.com/upsc/current-affairs/2026/04/01/census-2027-explained.amp.html">Onmanorama: Census 2027 explained</a> (newspaper): 16th census since 1872, 8th since Independence; 2011 population 121.19 crore; Phase 2 topics include migration.</li>
+<li id="s4"><a href="https://www.pmindia.gov.in/en/news_updates/cabinet-approves-scheme-of-conduct-of-census-of-india-2027">PM India: Cabinet approves Census of India 2027</a> (government, 12 Dec 2025): two phases; Phase 2 in February 2027; about 30 lakh field functionaries; enumerators generally government teachers; ₹11,718.24 crore; caste enumeration decided 30 April 2025.</li>
+<li id="s5"><a href="https://deccanchronicle.com/nation/house-listing-for-census-2026-set-to-start-on-april-1-1888309">Deccan Chronicle on houselisting</a> (newspaper): uniform blocks, one enumerator each.</li>
+<li id="s6"><a href="https://arunachaltimes.in/?p=281737">Arunachal Times on Census 2027</a> (newspaper): houselisting blocks drawn digitally using satellite imagery.</li>
+<li id="s7"><a href="https://amitshah.co.in/media/pdf_data/1784292546-181906.pdf">Ministry of Home Affairs release (2026)</a> (government release, hosted on the minister&#8217;s site): 33 notified questions; Phase 1 completed in 29 States/UTs; Tamil Nadu self-enumeration to 31 July 2026.</li>
+<li id="s8"><a href="https://www.businesstoday.in/india/story/initial-phase-of-census-2027-to-begin-on-april-1-houselisting-to-be-done-within-30-day-period-509920-2026-01-08">Business Today</a> (news, 8 Jan 2026): last comprehensive caste count by the British, 1881–1931.</li>
+<li id="s9"><a href="https://www.newsbytesapp.com/news/india/karnataka-set-to-begin-indias-1st-fully-digital-census-portal/tldr">NewsBytes</a> (news): Karnataka among the first states and UTs to begin.</li>
+<li id="s10"><a href="https://www.deccanchronicle.com/amp/southern-states/karnataka/countrys-first-digital-census-to-begin-in-karnataka-tomorrow-1947717">Deccan Chronicle: digital census begins in Karnataka</a> and <a href="https://www.deccanherald.com/india/census-2027-self-enumeration-to-begin-in-karnataka-from-april-1-heres-how-to-do-it-3950565">Deccan Herald how-to</a> (newspapers): Karnataka dates; SE ID by mobile or email.</li>
+<li id="s11"><a href="https://www.newsonair.gov.in/census-2027-over-5-72-lakh-households-have-availed-self-enumeration-facility-so-far">All India Radio News, 10 Apr 2026</a> (public broadcaster).</li>
+<li id="s12">Census Act, 1948 and Census Rules, 1990, as cited in the Deccan Chronicle Karnataka report [10].</li>
+<li id="s13"><a href="https://takshashila.org.in/content/blogs/20260413-census.html">Takshashila Institution: Before the enumerator knocks</a> (think-tank blog, 13 Apr 2026).</li>
+<li id="s14"><a href="https://es.scribd.com/document/62649882/Census-of-India-2011">Census of India 2011 overview document</a> (copy of an official overview hosted on Scribd): 9–28 February 2011; about 2.7 million enumerators, 240 million households; houseless counted night of 28 February; Revision Round.</li>
+<li id="s15"><a href="https://new.census.gov.in/nada/index.php/catalog/42598/download/46246/Census%20of%20India%202011-Module%206A%20To%206D%20%28Houseless%20Population%2C%20Revisional%20Round%2C%20Page%20Totals%2C%20Working%20Sheet%20%20Enumerator%20Abstract%29.pdf">Census of India 2011 enumerator training module 6A–6D</a> (government): where houseless people are counted at night.</li>
+<li id="s16"><a href="https://medium.causebecause.com/?p=4115">CauseBecause: NGOs help census enumerators count the homeless in Delhi</a> (news, March 2011).</li>
+<li id="s17"><a href="https://catalog.ihsn.org/catalog/4161">IHSN catalogue entry for Census of India 2011</a> (international survey catalogue, World Bank-documented): non-synchronous census 1865–1872; first synchronous census 1881; uninterrupted every ten years since.</li>
+<li id="s18"><a href="https://ruralindiaonline.org/en/library/resource/report-on-the-census-of-british-india-taken-on-the-17th-of-february-1881-vols-i-iii/">PARI Library: Report on the Census of British India, 17 February 1881</a> (archive summary of a public-domain government report by W. Chichele Plowden): languages; men per 100 by province.</li>
+<li id="s19"><a href="https://m.thewire.in/article/caste/a-look-back-at-the-indias-caste-census-journey">The Wire: a look back at India&#8217;s caste census journey</a> (news analysis) and <a href="https://theprint.in/opinion/nehru-manmohan-singh-harmed-the-cause-of-caste-census-rahul-doing-the-same-now/2078739">ThePrint opinion</a> (used only for the fact that SC/ST were kept because of constitutional reservation).</li>
+<li id="s20"><a href="https://www.business-standard.com/politics/explained-caste-census-history-data-status-bjp-policy-change-125050100792_1.html">Business Standard explainer</a> (newspaper, May 2025): caste dropped from 1951 except SC/ST; SECC 2011 caste data never released; socio-economic data published 2016; states conducting their own surveys.</li>
+<li id="s21"><a href="https://www.civilsdaily.com/news/caste-census-of-backward-classes-difficult-centre/">Civilsdaily on the Centre&#8217;s 2021 Supreme Court affidavit</a> (exam-reference site) and <a href="https://cenfa.org/?p=37596">CENFA</a> (advocacy site disputing the claim).</li>
+<li id="s22"><a href="https://anantamias.com/first-census-in-india/">Anantam IAS: uses of census data</a> (exam-reference site): delimitation, SC/ST reservation, Finance Commission formulas.</li>
+<li id="s23"><a href="https://prsindia.org/files/bills_acts/bills_parliament/2026/Issues_for_Consideration_Delimitation_Bills_of_2026.pdf">PRS Legislative Research: Issues for consideration, Delimitation Bills 2026</a> (independent legislative research): 1971-based freeze; 84th Amendment (2001) extended it to the first census after 2026; 106th Amendment (2023) ties women&#8217;s reservation to the first census after 2023. Reason for the freeze from PRS (population stabilisation).</li>
+<li id="s24"><a href="https://thesouthfirst.com/topstory/lok-sabha-defeats-constitution-131st-amendment-bill/">South First, 17 Apr 2026</a> and <a href="https://www.visionias.in/blog/english/constitution-131st-amendment-bill-defeated-in-lok-sabha">Vision IAS</a> (news; exam-reference site): 131st Amendment Bill defeated 298–230, short of 352; Delimitation Bill 2026 (which would have used 2011 data) withdrawn.</li>
+<li id="s25"><a href="https://vajiramandravi.com/current-affairs/the-delimitation-controversy/">Vajiram &amp; Ravi: the delimitation controversy</a> and <a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/delimitation-in-india/print_manually">Drishti IAS, 12 Aug 2026</a> (exam-reference sites): census figures expected by late 2027; north–south concerns. This is an expectation, not an official date.</li>
+<li id="s26"><a href="https://www.tribuneindia.com/news/india/first-ever-digital-census-gets-cabinet-nod-rs-11718-crore-sanctioned/amp">The Tribune on the Cabinet decision</a> (newspaper): data shared to village/ward level.</li>
+<li id="s27"><a href="https://catalog.ihsn.org/catalog/4161">IHSN catalogue entry for Census 2011</a>: scanning and character recognition steps.</li>
+</ol></section>
+
+<section class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></section>
+<footer class="foot">THE END · srini.presents · for curious grown-ups</footer>
+</main>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body></html>
