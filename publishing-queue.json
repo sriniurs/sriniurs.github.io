@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-12",
+  "last_published_on": "2026-11-13",
   "entries": [
     {
       "number": 1,
@@ -61,8 +61,8 @@
       "path": "/thin-outside-sugar-inside/",
       "title": "Thin Outside, Sugar Inside",
       "not_before": "2026-11-13T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-13T05:21:29+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"6\"><a href=\"/thin-outside-sugar-inside/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"17\" y=\"32\" width=\"66\" height=\"36\" rx=\"8\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"4\"/><path d=\"M28 33v13m11-13v8m11-8v13m11-13v8m11-8v13\" stroke=\"#151515\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>Thin Outside, Sugar Inside</h3><p>Why type 2 diabetes can develop at a seemingly normal weight, and what waist size can tell you.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">13 Nov 2026</span></li>"
     },
     {
