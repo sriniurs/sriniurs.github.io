@@ -15,13 +15,13 @@ BLOCK = re.compile(re.escape(START) + r'.*?' + re.escape(END) + r'\n?', re.S)
 
 BAR = START + """<style>
 .sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
-padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #1b4c4c;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
 backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
 font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
-border:2px solid #1b4c4c;background:#fff;color:#1b4c4c;text-decoration:none;box-shadow:2px 2px 0 #1b4c4c}
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
 .sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
-.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #1b4c4c}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
 .sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
 .sp-bar .sp-brand img{display:block;height:36px;width:auto}
 .sp-bar .sp-brand:hover{background:none}
