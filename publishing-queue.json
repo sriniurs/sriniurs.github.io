@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-13",
+  "last_published_on": "2026-11-14",
   "entries": [
     {
       "number": 1,
@@ -71,8 +71,8 @@
       "path": "/nvidia-exit/",
       "title": "One Affair, Two Superpowers & Your Pension",
       "not_before": "2026-11-14T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-14T05:17:23+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"7\"><a href=\"/nvidia-exit/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M32 22V12M44 22V12M56 22V12M68 22V12M32 88V78M44 88V78M56 88V78M68 88V78M22 32H12M22 44H12M22 56H12M22 68H12M88 32H78M88 44H78M88 56H78M88 68H78\" fill=\"none\"/><rect x=\"22\" y=\"22\" width=\"56\" height=\"56\" rx=\"6\" fill=\"#76b900\"/><path d=\"M50 66C36 56 32 47 37 41C41 36 47 37 50 43C53 37 59 36 63 41C68 47 64 56 50 66Z\" fill=\"#e63946\"/><path d=\"M50 43L46 50L53 54L48 62\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2.5\"/></g></svg></div><div class=\"card-copy\"><h3>One Affair, Two Superpowers &amp; Your Pension</h3><p>Why Nvidia’s founder quitting matters to Washington, Beijing and an ordinary saver’s retirement fund.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">14 Nov 2026</span></li>"
     },
     {
