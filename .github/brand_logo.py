@@ -56,7 +56,7 @@ DATEBOX = re.compile(r'<(span|p|div)\s+class=["\'](?:daytag|day|edition|tag|samp
 
 
 def strip_dates(page):
-    """Remove weekday/date boxes from the cover (Srini's rule, 13 Nov 2026)."""
+    """Remove weekday/date boxes and the black .sample label chip from the cover (Srini's rule, 13 Nov 2026)."""
     m = re.search(r'<header\b[^>]*>', page)
     if not m:
         return page
@@ -68,7 +68,7 @@ def strip_dates(page):
     def kill(e):
         txt = e.group(2).strip().upper()
         cls = re.search(r'class=["\']([^"\']+)', e.group(0)).group(1)
-        if cls in ('daytag', 'day', 'edition'):
+        if cls in ('daytag', 'day', 'edition', 'sample'):
             return ''
         if re.match(DAYS, txt):          # sample/tag that starts with a weekday
             return ''
