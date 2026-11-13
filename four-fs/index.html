@@ -1,0 +1,754 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+<title>Survive the 4 F’s | srini.presents</title><meta name="description" content="Fuel, food, finance and fertiliser: inflation, loans, gold, property and a portfolio you can sleep with in tough money times."><!-- seo:auto --><link rel="canonical" href="https://srinipresents.com/four-fs/"><meta property="og:title" content="Survive the 4 F’s"><meta property="og:description" content="Fuel, food, finance and fertiliser: inflation, loans, gold, property and a portfolio you can sleep with in tough money times."><meta property="og:url" content="https://srinipresents.com/four-fs/"><meta property="og:type" content="article"><meta property="og:image" content="https://srinipresents.com/og.png"><meta property="og:site_name" content="srini.presents"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Survive the 4 F’s", "description": "Fuel, food, finance and fertiliser: inflation, loans, gold, property and a portfolio you can sleep with in tough money times.", "url": "https://srinipresents.com/four-fs/", "mainEntityOfPage": "https://srinipresents.com/four-fs/", "image": "https://srinipresents.com/og.png", "author": {"@type": "Person", "name": "Dr. Srini", "homeLocation": {"@type": "Place", "name": "Mysuru"}, "url": "https://srinipresents.com/about/"}, "publisher": {"@type": "Organization", "name": "srini.presents", "url": "https://srinipresents.com/"}, "inLanguage": "en-IN"}</script><!-- /seo:auto --></head><body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:8px 4px;
+font:bold italic 15px Georgia,serif;color:#bc2236}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/archive/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a class="sp-brand" href="/">srini.presents</a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&r.indexOf(location.origin)===0&&history.length>1){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style>.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}</style>
+<main class="wrap">
+
+<header class="cover">
+  <div>
+    <p class="byline">Srini presents</p>
+    <h1>Survive the 4 F's</h1>
+    <p class="sub">A comic about getting through tough money times in the made-up city of Techapura. A curious young learner asks, and a wise mentor with 33 years of money experience answers: inflation, recession fears, loans, gold, property and a portfolio you can sleep with.</p>
+    <div class="fs"><span>Fuel</span><span>Food</span><span>Finance</span><span>Fertiliser</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, IT job in Techapura</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, 33 years of money experience</span></figure>
+  </div>
+</header>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>Why ₹500 buys so little now</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g transform="rotate(-12 50 52)"><rect x="16" y="36" width="68" height="34" rx="3" fill="#b8e0c8" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="53" r="9" fill="none" stroke="#151515" stroke-width="2.5"/><text x="50" y="58" font-family="Arial Black,Arial" font-size="12" text-anchor="middle" fill="#151515">₹</text></g><g transform="rotate(6 50 52)"><rect x="16" y="36" width="68" height="34" rx="3" fill="#f7c6d9" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="53" r="9" fill="none" stroke="#151515" stroke-width="2.5"/><text x="50" y="58" font-family="Arial Black,Arial" font-size="12" text-anchor="middle" fill="#151515">₹</text></g><g transform="rotate(-2 50 52)"><rect x="16" y="36" width="68" height="34" rx="3" fill="#cdeffd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="53" r="9" fill="none" stroke="#151515" stroke-width="2.5"/><text x="50" y="58" font-family="Arial Black,Arial" font-size="12" text-anchor="middle" fill="#151515">₹</text></g></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Meanwhile…</b> A senior minister warns that four F's are under pressure worldwide: fuel, food, finance and fertiliser.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>₹500 used to fill my grocery bag. Now it's half empty. Will prices ever come back down?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Almost never. About a hundred years ago, one rupee bought around 11 grams of silver. Today those 11 grams cost a few thousand rupees. That gap is inflation.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Real inflation test</b> Skip onion prices. The government controls milk, petrol and vegetables because people protest. Look at a hotel bill instead.</p>
+      <div class="big"><b>8 annas</b><span class="arrow">→</span><b class="hot">₹30</b></div>
+      <p>Idli-sambar when Prof. Bolt was a kid vs. a self-service hotel today. Kids back then even sang a little rhyme about the 8-anna idli.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>This round isn't made at home. It's crude oil, the dollar and wars abroad. That's why the warning came from the foreign affairs side, not the finance side. Nobody here controls it.</p></div>
+      <p class="take">Most people keep 2–3 months of expenses as an emergency fund. This time, keep 5–6 months, or more if you can.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>The real leak: lifestyle inflation</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So should I stop eating out?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>You can step down: 5-star → 3-star → self-service → roadside → the cheap public canteen. After that there's nowhere left. You still have to eat. Cutting has a limit.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Every 5 years…</b> nobody buys the same car or phone again. We upgrade.</p>
+      <div class="chain"><span>Small hatchback</span><i>→</i><span class="hit">Bigger car</span></div>
+      <div class="chain"><span>₹3,000 phone</span><i>→</i><span class="hit">₹40,000 phone</span></div>
+      <p class="small">Same need, bigger bill. That's lifestyle inflation, and it's the part you control.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx b">FOCUS!</span>
+      <p class="take">You can't control food prices. You can control your upgrades and grow your income. Put your energy into earning more.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>Hospital bills run the fastest</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Yearly inflation, by type</b> (rough figures)</p>
+      <div class="ladder">
+        <div class="bar">General<div style="width:43%">6%</div></div>
+        <div class="bar">Retail<div style="width:57%">8%</div></div>
+        <div class="bar">Education<div style="width:71%">10%</div></div>
+        <div class="bar">Medical<div class="hot" style="width:100%">12–14%</div></div>
+      </div>
+      <p class="small">At that pace a ₹10 lakh treatment today could cost about ₹20 lakh in five years.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Some good news. The government is watching hospitals now. They must show landed cost vs MRP for medicines and syringes, and cut bed charges. Hospital shares fell because of it. I expect medical inflation to slow to around 10%.</p></div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I'm young and I go to the gym. Can I skip health insurance?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Insurers are like you at the fruit stall. They want the good apples. Fall sick first and you get rejected, charged a huge premium, or handed pages of conditions. Buy early.</p></div>
+    </div>
+    <div class="panel">
+      <p class="take">Can't afford a full policy? At least take a top-up or critical-illness cover. After 45 it's a must. Even if it feels like money dropped into a temple donation box, take it.</p>
+      <p class="warn">Don't rely only on your company's policy. Lose the job and you lose the cover, and companies keep changing the terms.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>One job lost, ten wallets hit</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <p class="cap"><b>Meet Murali.</b> He loses his job to AI. Watch what happens next.</p>
+      <div class="chain">
+        <span class="hit">Murali's job gone</span><i>→</i>
+        <span>Cab driver loses a daily rider</span><i>→</i>
+        <span>Auto driver loses the school run (Dad drops the kid now)</span><i>→</i>
+        <span>Bar loses its Saturday regular</span><i>→</i>
+        <span>Movie hall: weekly visit becomes monthly</span>
+      </div>
+      <span class="sfx r">DOMINO!</span>
+      <p>That's how a recession spreads. In trade it works the same way. If my goods can't be shipped out, I cut production, then salaries, then people.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>How the big crash happened</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M8 90 V40 H52 L56 50 L50 60 L56 72 L52 90 Z" fill="#d9b38c" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M10 34 L24 22 L38 28 L50 18" fill="none" stroke="#2bb673" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 18 Q64 30 74 70" fill="none" stroke="#e63946" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 7"/><circle cx="76" cy="78" r="9" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M86 62 l6 -4 M88 72 h8" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>A big foreign economy, years ago.</b> Business is slow, so home-loan rates are cut step by step from about 10% to 2%.</p>
+      <p>Cheap money! People buy land left, right and centre. Buy a ₹1 crore plot, pledge it for a ₹60 lakh loan, buy another plot. Prices balloon.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Sounds like Techapura land a decade ago, when every plot doubled in a year or two!</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Then…</b> Brightstone Bank, over a century old, has lent heavily to these buyers.</p>
+      <p>Borrowers stop paying. Depositors ask for their money, get told "next month", and panic. Bad news spreads fast, lenders pull out, and the bank collapses.</p>
+      <span class="sfx r">CRASH!</span>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Our market felt it too</b></p>
+      <div class="big"><b>21,000</b><span class="arrow">→</span><b class="hot">~8,000</b></div>
+      <p>The stock index fell over 50% within a year. ₹1 crore in shares became about ₹48 lakh.</p>
+      <p class="take">Recessions come once in a while. Build a portfolio that survives them.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>When it looks too easy, step back</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 Q66 24 64 56 H36 Q34 24 50 10 Z" fill="#fff" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="34" r="7" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 46 L24 62 L36 60 Z M64 46 L76 62 L64 60 Z" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M42 58 Q50 92 58 58 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M46 58 Q50 76 54 58" fill="#e8590c"/><path d="M20 19 V29 M15 24 H25" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/><path d="M82 25 V35 M77 30 H87" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>A four-year boom.</b> The stock index goes from about 3,000 to 21,000, roughly 7x. Pick any share and it doubles in months.</p>
+      <p>A new company launches its IPO. A big, respected brokerage calls it a 100x stock. The price jumps from about ₹40 to ₹700.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx">PLOT TWIST!</span>
+      <p>Six months later people discover the "company" was just a man selling juice at a railway station. He pocketed the IPO money.</p>
+    </div>
+    <div class="panel">
+      <p class="take">Two lessons. One: when everything feels rosy, zoom out and look again. Two: even experts and big research firms get it wrong. "They said buy, so I'll make money" never holds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>The great market shake-out</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Pandemic lockdown.</b> Work from home, business TV on all day, trading apps, finfluencers online.</p>
+      <p>Millions of new investors pour money into the same shares. The index runs from about 28,000 to 86,000, nearly 3x.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The water bottle lesson</b></p>
+      <p>Water bottles run short, so a ₹10 bottle sells for ₹50. Traders see it and ship in thousands of bottles. Suddenly there's too much supply and too few buyers. Price crashes. Shares work the same way.</p>
+    </div>
+    <div class="panel">
+      <p>Now more trading accounts are closing than opening. Online-broker shares are down. The loud finfluencers have gone quiet.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>When a tiger attacks a herd, it catches the slowest deer, and the herd gets faster. When weak hands sell, shares move to strong long-term holders. That's actually healthy.</p></div>
+      <p class="take">Notice who still shows up when markets are down. Those are the voices you can trust.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>Build a full thali, not just rice</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Rice and sambar alone isn't a meal. You want chapati, palya, buttermilk and papad too. Your money needs the same variety.</p></div>
+      <p>That's why some people make money even when the economy, the market or their companies are struggling: their whole portfolio is balanced.</p>
+    </div>
+    <div class="panel">
+      <div class="thali">
+        <span class="t1">Stocks &amp; mutual funds</span><span class="t2">Gold</span><span class="t3">Silver</span>
+        <span class="t4">Real estate / REITs</span><span class="t5">International</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>Salary slip before horoscope</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Marriage talk today.</b> Families used to match horoscopes. Now they ask for the salary slip, and Prof. Bolt thinks that's fair.</p>
+      <p><b>Talk about these before the wedding:</b></p>
+      <ol class="clean">
+        <li>Does each person have an income?</li>
+        <li>Will that income last? AI is making even 25–30 year olds outdated, and companies eye 45+ staff who can be swapped for cheaper juniors.</li>
+        <li>How much debt does each person have?</li>
+        <li>Own house or not? Any bad habits?</li>
+      </ol>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>If I buy a flat on loan first, I'll find a match faster, right?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Faster match, yes. Also a faster trip into the EMI trap. You'll have to decide which freedom you give up.</p></div>
+      <span class="sfx r">EMI TRAP!</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>Loan rules of thumb</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M22 30 H78 L70 82 H30 Z" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><ellipse cx="50" cy="30" rx="28" ry="6" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="62" font-family="Arial Black,Arial" font-size="20" text-anchor="middle" fill="#151515">₹</text><path d="M36 82 q-2 6 0 8 q2 -2 0 -8 M58 76 q8 2 12 10 M64 82 q2 6 0 8 q-2 -2 0 -8" fill="#2a9df4" stroke="#2a9df4" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Rule 1</b> Keep one full year of EMIs saved, in case the job disappears.</p>
+      <p class="cap"><b>Rule 2</b> All EMIs together (home + car + personal) stay under 30% of income. Earn ₹1 lakh a month? Max ₹30,000 in EMIs.</p>
+      <p class="cap"><b>Rule 3</b> Only home loans and education loans are OK. Not phones, TVs, fridges or holidays.</p>
+    </div>
+    <div class="panel">
+      <p class="warn">"Zero-cost EMI" usually hides charges and interest. Do the maths at home and it often works out to 15–16% a year. The finance company isn't your grandfather doing you a favour.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Break these rules and the house is in your name, but the bank is the real owner. On the 1st of every month, it rings your bell.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>"Borrow and eat ghee"</b> That old saying has become true for the middle class. Our elders taught us to save first and spend later. That habit is fading.</p>
+      <p><b>Plan big costs instead of borrowing:</b> write each one down with its year. A car that costs ₹8 lakh today may cost about ₹16 lakh in six years. Start a separate SIP for it now.</p>
+      <p class="take">Have the right amount of money at the right time. Underline that.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>Will Techapura property fall?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Pretend I'm a foreign company. Twenty years ago Techapura was my only choice. Now four rival cities compete for me, and one offers land almost free. Techapura's weather isn't what it was, and there are local tensions. Why pay ₹100 crore here?</p></div>
+    </div>
+    <div class="panel">
+      <div class="chain">
+        <span>Fewer new companies</span><i>→</i><span>AI eats jobs</span><i>→</i><span>Talent moves out</span><i>→</i>
+        <span class="hit">PGs in the tech suburbs emptying</span><i>→</i><span>Landlords lose rent</span><i>→</i><span>Fewer new flats bought</span>
+      </div>
+    </div>
+    <div class="panel">
+      <p class="warn">More likely to drop: the IT belt along the Lakeside Tech Corridor.</p>
+      <p class="take">Likely to hold: old Techapura that doesn't depend on IT, like the Temple Street and Old Market neighbourhoods.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>Our state vs the rest</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Our state's weak spot</b> Almost the whole state runs on Techapura IT. Other towns never got big industry.</p>
+      <p><b>A neighbouring state</b> spreads its bets: cars in one city, textiles in another, engineering in a third. <b>Another neighbour</b> is building an AI hub and growing two port cities.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Once-lagging states are waking up</b></p>
+      <ul class="clean">
+        <li><b>One state</b> lets you buy industrial land online, like online shopping, without meeting an official.</li>
+        <li><b>Another</b> has cut crime sharply, so factories are arriving.</li>
+        <li><b>Others</b> are slowly improving.</li>
+      </ul>
+      <p class="small">Prof. Bolt's safety test: if a woman can ride a scooter alone at 9:30 pm, that place is advancing.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>How to read the economy</b></p>
+      <p>Tax collections show the past. Factory electricity use shows the future. It rose about 12% in two recent months. GDP growth is around 7%, among the fastest of big economies.</p>
+      <p class="warn">GDP isn't your wallet. A billionaire's gain lifts GDP without reaching ordinary people.</p>
+      <p>Trust your eyes: crowded airports, metros, malls and hospitals, record temple donations, sold-out pilgrimage travel, a rock band filling a 1.2 lakh seat stadium.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>So, is a recession coming?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>I don't think so. Recessions usually start from problems inside a country. Our problems are outside: costly crude, and imports from our biggest supplier about 17% dearer because the rupee fell against its currency.</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">Interest rates may keep rising in steps over the next year. Home-loan EMIs go up quickly. Banks raise FD rates much more slowly.</p>
+      <p class="take">Recession or not, get ready so it can't hurt you: savings, investments, and loans you can carry.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>My cousin graduates next year. No savings, maybe an education loan. What should she do?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Keep upskilling. With AI, what you study can be outdated in 2–3 years. Start part-time work or learning skills now, so companies chase you. And try to become independent, so you aren't waiting on anyone for a job.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>Gold sleeps like a giant</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M14 80 L22 62 H48 L54 80 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 80 L58 62 H82 L88 80 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M32 60 L40 42 H64 L70 60 Z" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M26 66 H44 M62 66 H80 M44 46 H60" stroke="#e0a800" stroke-width="2.5"/><path d="M20 25 V35 M15 30 H25" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/><path d="M80 21 V31 M75 26 H85" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/><path d="M50 15 V25 M45 20 H55" stroke="#e8590c" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx b">ZZZ…</span>
+      <p>No investment pays every year. Gold has had six-year stretches with almost no returns, more than once. Like the sleeping giant of old stories, it naps for years, then pays out all at once.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>By my reading, gold is napping for the next year or two. Short-term returns may disappoint. Over 5–10 years, it can still do well.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Silver: the busy metal</b></p>
+      <ul class="clean">
+        <li>Used in EVs, solar panels and medicine, not just kitchen vessels.</li>
+        <li>Recycling loses metal: 100 g of gold comes back as 99.9 g, silver as 97–98 g.</li>
+        <li>Harder to find, more demand.</li>
+      </ul>
+      <p class="warn">A carmaker's big battery announcement sent silver flying from about ₹80,000 to ₹3 lakh a kg. Then the carmaker shelved its plans. Speculators got caught.</p>
+    </div>
+    <div class="panel">
+      <p>Fun fact: long ago aluminium was pricier than gold, until people learnt to make it cheaply. Nobody knows what science will do to silver.</p>
+      <p class="take">If you pick only one, silver looks better. Holding both is best. Buy based on your time horizon, not on hype.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>Digital gold, gold receipts or gold funds?</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 L84 22 Q84 62 50 90 Q16 62 16 22 Z" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="36" y="44" width="28" height="22" rx="3" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M41 44 V36 Q41 28 50 28 Q59 28 59 36 V44" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="54" r="3" fill="#151515"/><path d="M50 56 V61" stroke="#151515" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Ask one question first. If someone cheats me, can I complain to the central bank or the market regulator? If neither will take responsibility, don't go there, whatever the returns.</p></div>
+    </div>
+    <div class="panel">
+      <ul class="clean">
+        <li><b>App-based digital gold:</b> the regulator says it's not their responsibility. Avoid.</li>
+        <li><b>Government gold bonds:</b> new issues have stopped.</li>
+        <li><b>Electronic gold receipts:</b> trade on the stock exchange. Buy with as little as ₹10 or ₹100, sell anytime. Prof. Bolt's pick.</li>
+        <li><b>Gold mutual funds:</b> higher charges, less useful than before.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p>Gold's superpower: land depends on the area, shares depend on the company, but gold is the same gold in any country on earth.</p>
+      <p class="take">Gold may not give the highest returns, but it lets you sleep at night.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 16 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 16</span><h2>A recession-proof portfolio</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>My gold SIP dropped and I didn't care. My equity fund dropped and I panicked. Why?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Newspapers scream "bloodbath" when stocks fall. They never write that about gold or property, because jewellers and builders buy their ads. It's psychology.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Are shares cheap now?</b> Think of the index like buying land.</p>
+      <p>At the last peak the index was around 26,000, and each "unit" earned about 1,040. Now it's near 22,000 but earnings grew to about 1,175. You get more land for a lower price.</p>
+      <p class="small">But past performance isn't guaranteed. AI is a sword hanging over parts of the economy, so pick sectors.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Where the country is strong</b></p>
+      <ul class="clean">
+        <li><b>Textiles:</b> the neighbouring country that used to lead is struggling with internal trouble and power costs.</li>
+        <li><b>Defence:</b> a grenade costs about ₹4,000 from one foreign supplier, ₹2,000 from another, and ₹260 made at home. Drones too.</li>
+        <li><b>Two economies:</b> the AI/IT one and the manufacturing one. The countryside is weak this year, since poor rains hit fertiliser firms.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Beyond local shares</b></p>
+      <ul class="clean">
+        <li><b>International:</b> keep some money abroad, however patriotic you are. A special finance zone lets you start from about $500.</li>
+        <li><b>REITs:</b> own slices of tech parks and malls and earn their rent. Over 5 years Prof. Bolt quotes about 12.4% vs the index's 10.4%, with far lower risk.</li>
+        <li><b>Specialised investment funds:</b> unlike mutual funds, they can move fully to cash or bet on falls. They fell less in a war-scare dip and rose more in the rebound.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The AI picks-and-shovels idea</b></p>
+      <p>Nobody knows which AI company wins. But all of them need power, cables, transmission lines and lots of water to cool data centres. Those suppliers earn either way. Look at funds covering them.</p>
+    </div>
+    <div class="panel">
+      <p class="take">Recession-proof isn't exciting. It's a mix of gold, silver, REITs/InvITs, equity mutual funds, specialised funds and international funds that lets you sleep whatever happens.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 17 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 17</span><h2>Fearless, not foolish</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>An old saying</b> The first quality of a wise person is fearlessness.</p>
+      <p><b>Recklessness:</b> there's a tiger on the path, let me walk past and see what happens.</p>
+      <p><b>Fearlessness:</b> there's a tiger, so I go carrying a gun.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>In investing, the gun is knowledge. No gun? Walk with someone who has one: a good advisor. And if you crash a lorry on your first drive, don't blame the lorry. Calling the market gambling is the same mistake. Learn to drive.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 18 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 18</span><h2>Should I study abroad?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Everyone's taking ₹50 lakh loans for a master's abroad. Should I?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Check where the opportunity really is. One popular region is weakening after losing its cheap energy supply; only one country there is holding up. Another has put up so many barriers that you may face humiliation, and a job isn't guaranteed.</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">Big loan + no sure job + rising interest rates = trouble repaying.</p>
+      <p class="take">Unless you only want bragging rights, put the same money into a startup with friends or your family business here. You may do far better.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 19 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 19</span><h2>What if fuel hits $120?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Every government thinks about the next election. With big polls coming, it will absorb the oil shock instead of passing it straight to the public. The country has about 75 days of reserves, stretchable to around 9 months with curbs, plus a friendly supplier nation.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The indirect hit</b> Fewer freebies and higher taxes, mostly on the rich.</p>
+      <div class="chain"><span>Earn ₹1 crore</span><i>→</i><span>18% GST</span><i>→</i><span>35% income tax</span><i>→</i><span class="hit">~₹60 lakh left</span></div>
+      <p class="small">That's why more ultra-rich people moved to low-tax countries last year.</p>
+    </div>
+    <div class="panel">
+      <p>People adapt: about half of new two-wheeler registrations are now electric. Fossil fuel use will fall slowly.</p>
+      <p class="take">No need for doomsday predictions about fuel.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 20 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 20</span><h2>Credit card: a double-edged sword</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="26" width="72" height="46" rx="6" fill="#7b4fd6" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="10" y="36" width="72" height="9" fill="#151515"/><rect x="18" y="52" width="14" height="10" rx="2" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M38 60 H70" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="78" cy="72" r="15" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="78" y="78" font-family="Arial Black,Arial" font-size="17" text-anchor="middle" fill="#fff">₹</text></svg>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx">KA-CHING!</span>
+      <p><b>Pay the full bill on time</b> and it's the most useful tool around. Prof. Bolt pays his business taxes by card, and the reward points flew his family of four abroad and back in premium class, free. Lounges, concierge booking, airport assistance, premium events.</p>
+    </div>
+    <div class="panel">
+      <span class="sfx r">OUCH!</span>
+      <p><b>Pay only the minimum</b> and nothing is more dangerous. Interest can reach 42% a year.</p>
+    </div>
+    <div class="panel">
+      <p class="take">Test yourself: use one card for 6–12 months. Always paid in full and on time? Keep using it. If not, stop.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 21 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 21</span><h2>Techapura's next chapter</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p>The bright side: Techapura is quietly becoming a finance capital. Finance firms are opening offices and fintechs are building research centres.</p>
+      <p>Startup culture is strong. In one startup neighbourhood, nearly every house has one: home nurses, maids, even window cleaning for tall buildings.</p>
+    </div>
+    <div class="panel">
+      <div class="big"><b>95</b><span class="arrow">of</span><b>100</b></div>
+      <p>startups fail. About five succeed, and one or two become huge.</p>
+      <p class="take">If the government backs founders with support and cheaper loans, Techapura stops depending on IT alone and grows again.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 22 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 22</span><h2>How much do I need to retire?</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M30 20 Q26 50 34 62 H70 L66 58" fill="none" stroke="#8d5a3b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 20 Q26 50 34 62 H70" fill="none" stroke="#151515" stroke-width="2"/><path d="M36 62 L30 80 M66 62 L72 80" stroke="#8d5a3b" stroke-width="5" stroke-linecap="round"/><path d="M14 80 Q50 94 88 80" fill="none" stroke="#8d5a3b" stroke-width="5" stroke-linecap="round"/><rect x="34" y="40" width="30" height="10" rx="3" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M74 20 q8 -6 16 0 M78 30 q6 -4 12 0" fill="none" stroke="#2bb673" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>The 3% rule</b> Some rich countries use 4%, because seniors there get health support. Here you pay hospital bills yourself, so plan to withdraw only 3% a year, raised for inflation.</p>
+      <div class="chain"><span>₹1 lakh/month spend</span><i>→</i><span>₹12 lakh/year</span><i>→</i><span class="hit">≈ ₹4 crore needed</span></div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>What if I quit at 42 to start my own thing?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>A startup takes 3–5 years to work. At ₹1 lakh a month, that's about ₹60 lakh for living costs alone, before inflation, and separate from the startup money.</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">At 40–45 you're the "sandwich generation": kids not earning yet, parents no longer earning. Risk is dangerous then.</p>
+      <p class="take">Most people say "later" at 25, "too many responsibilities" at 35, and panic at 45. Start planning early so you have a backup.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 23 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 23</span><h2>The 3 A's, 3 C's and 5 brothers</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Before any loan: the 3 A's</b></p>
+      <ol class="clean">
+        <li><b>Asset:</b> will it grow my money or remove a real worry?</li>
+        <li><b>Affordable:</b> my budget is a ₹3 crore home. Don't buy ₹6 crore just because the bank offers.</li>
+        <li><b>Aligned:</b> does it bring a real life goal closer, by years?</li>
+      </ol>
+      <p class="small">Borrowing isn't shameful. Prof. Bolt took a home loan even though he had the cash, because he knew he could repay.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Before any stock: the 3 C's</b></p>
+      <ol class="clean">
+        <li><b>Character:</b> is the owner honest? Any jail time or criminal cases?</li>
+        <li><b>Capability:</b> can they run the company if it grows 10x?</li>
+        <li><b>Cost / sustainability:</b> will the money keep coming? Is there a barrier to copying them? Rangmahal Paints ruled for 20 years until a giant conglomerate entered. Ten friends can't build a food-delivery giant or a telecom network overnight.</li>
+      </ol>
+    </div>
+    <div class="panel wide">
+      <p class="cap"><b>Or check the five hero brothers of legend</b></p>
+      <div class="five">
+        <div><b>The Honest One</b>Ethics. Clean owner, clean books.</div>
+        <div><b>The Strong One</b>Strength. It sets prices; rivals follow.</div>
+        <div><b>The Archer</b>Focus. One or two businesses, not a hundred.</div>
+        <div><b>The Manager</b>A strong team below the owner.</div>
+        <div><b>The Seer</b>Vision. Great telecom bosses already talk about 7G.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><ul class="clean">
+      <li>Emergency fund: 5–6 months of expenses.</li>
+      <li>Control lifestyle upgrades; grow your income.</li>
+      <li>Buy health insurance early, at least top-up or critical-illness cover. A must after 45.</li>
+    </ul></div>
+    <div class="panel"><ul class="clean">
+      <li>All EMIs under 30% of income.</li>
+      <li>Keep a year of EMIs saved.</li>
+      <li>Borrow only for a home or education.</li>
+      <li>Pay credit cards in full, every time.</li>
+    </ul></div>
+    <div class="panel"><ul class="clean">
+      <li>Diversify like a thali: equity, gold, silver, REITs, specialised funds, international.</li>
+      <li>Only invest where a regulator has your back.</li>
+      <li>When it all looks easy, step back.</li>
+      <li>Retire on ~3% withdrawals: yearly spend × 33.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">A work of fiction. Techapura, its neighbourhoods, Brightstone Bank, Rangmahal Paints and all characters are made up. Figures are illustrative. This comic is for learning, not personal financial advice.</p>
+
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script></body></html>

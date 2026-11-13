@@ -1,0 +1,721 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<script id="stack-tables-js">
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('table.vs').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th, tr:first-child th'),function(x){return x.textContent.trim()});if(h.length<3)return;t.classList.add('stk');t.querySelectorAll('tbody tr, tr').forEach(function(r){[].forEach.call(r.querySelectorAll('td'),function(c,i){if(!c.hasAttribute('data-label'))c.setAttribute('data-label',h[i]||'')})})})});
+</script>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+
+
+
+<title>Riding the AI Tiger | srini.presents</title><meta name="description" content="What AI changes about merit, jobs, school, money and power, and how to stay on the tiger’s back instead of under its paws."><!-- seo:auto --><link rel="canonical" href="https://srinipresents.com/ai-tiger/"><meta property="og:title" content="Riding the AI Tiger"><meta property="og:description" content="What AI changes about merit, jobs, school, money and power, and how to stay on the tiger’s back instead of under its paws."><meta property="og:url" content="https://srinipresents.com/ai-tiger/"><meta property="og:type" content="article"><meta property="og:image" content="https://srinipresents.com/og.png"><meta property="og:site_name" content="srini.presents"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Riding the AI Tiger", "description": "What AI changes about merit, jobs, school, money and power, and how to stay on the tiger’s back instead of under its paws.", "url": "https://srinipresents.com/ai-tiger/", "mainEntityOfPage": "https://srinipresents.com/ai-tiger/", "image": "https://srinipresents.com/og.png", "author": {"@type": "Person", "name": "Dr. Srini", "homeLocation": {"@type": "Place", "name": "Mysuru"}, "url": "https://srinipresents.com/about/"}, "publisher": {"@type": "Organization", "name": "srini.presents", "url": "https://srinipresents.com/"}, "inLanguage": "en-IN"}</script><!-- /seo:auto --></head><body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:8px 4px;
+font:bold italic 15px Georgia,serif;color:#bc2236}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/archive/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a class="sp-brand" href="/">srini.presents</a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&r.indexOf(location.origin)===0&&history.length>1){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap">
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<style>
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+.duel{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.duel div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.duel b{display:block;font-family:var(--display);font-weight:400;font-size:22px;letter-spacing:.03em}
+.duel .l b{color:var(--red)} .duel .r b{color:var(--green)}
+@media (max-width:640px){.duel{grid-template-columns:1fr}.cast{gap:8px}.cast figure{max-width:96px}.cast svg{width:74px;height:74px}}
+.say.b .bubble{background:#e6f4f7;color:#151515;border-radius:6px;font-family:ui-monospace,Consolas,monospace;font-size:15px}
+.say.b .bubble::after{border-right-color:#e6f4f7}
+.say.b .who{color:#4a5560}
+.sfx.o{color:#e8590c}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bot" viewBox="0 0 64 64">
+    <line x1="32" y1="8" x2="32" y2="16" stroke="#151515" stroke-width="2.5"/><circle cx="32" cy="7" r="3" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <rect x="14" y="16" width="36" height="28" rx="6" fill="#c9d3dc" stroke="#151515" stroke-width="2.5"/>
+    <circle cx="25" cy="29" r="5" fill="#3ec7d6" stroke="#151515" stroke-width="2"/><circle cx="39" cy="29" r="5" fill="#3ec7d6" stroke="#151515" stroke-width="2"/>
+    <rect x="24" y="37" width="16" height="3" fill="#151515"/>
+    <rect x="18" y="47" width="28" height="14" rx="4" fill="#c9d3dc" stroke="#151515" stroke-width="2.5"/>
+  </symbol></svg>
+<main class="wrap">
+
+<header class="cover">
+  <div>
+    <p class="byline">Srini presents</p>
+    <h1>Riding the AI Tiger</h1>
+    <p class="sub">A curious young learner meets a professor who builds AI systems for a living. What AI changes about merit, jobs, school, money and power, and how to stay on the tiger's back instead of under its paws.</p>
+    <div class="fs"><span>AI</span><span>Jobs</span><span>Kids &amp; school</span><span>Your future</span></div>
+  </div>
+  <div class="cast">
+    <figure><svg><use href="#kiran"/></svg>Zappy<br><span style="font-weight:400">curious young learner, slightly worried</span></figure>
+    <figure><svg><use href="#guru"/></svg>Prof. Bolt<br><span style="font-weight:400">wise mentor, runs an AI lab</span></figure>
+    <figure><svg><use href="#bot"/></svg>Bit<br><span style="font-weight:400">an AI that keeps butting in</span></figure>
+  </div>
+</header>
+
+<!-- EP 1 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 1</span><h2>From a one-kilometre world</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Chandanapura, years ago.</b> A small-town boy studies in his mother tongue until class 7. English in class 8 feels scary.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>My whole world was one kilometre wide. I didn't even know the big national institutes existed. I took the national entrance exam only as practice for the state one. My mother said, "Why go so far? Join a college here."</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The turning point</b> A maths professor at his local college had left a top institute to teach back home.</p>
+      <p>That mentor showed him there was a bigger world. Then came a national fellowship (one of about 20 students picked), internships, a PhD at the country's top science institute, and work as a research scientist abroad.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>I had PhD offers from the world's top universities and chose to stay home. Now I spend about 10% of my time teaching and 90% on research. I have 10 PhD students, a full AI lab, and a startup on the side.</p></div>
+      <p class="take">One good teacher can open a door you didn't know was there.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 2 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 2</span><h2>Two camps, one reality</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <div class="duel">
+        <div class="l"><b>The Doomers</b>"Humanity is finished. AI will take over."</div>
+        <div class="r"><b>The Boomers</b>"AI will make everything wonderful."</div>
+      </div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The truth sits in the middle. I'm an optimist, but don't mistake that for calm. We are living through a change in civilisation, and we are part of the history books right now.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EP 3 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 3</span><h2>Muscle, then brain, now machines</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 20 Q36 12 26 22 Q12 26 16 42 Q8 54 18 64 Q20 80 36 78 Q44 88 50 80 Q56 88 64 78 Q80 80 82 64 Q92 54 84 42 Q88 26 74 22 Q64 12 50 20 Z" fill="#f7c6d9" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 22 V80 M30 36 q8 4 6 12 M24 56 q10 0 12 8 M70 36 q-8 4 -6 12 M76 56 q-10 0 -12 8" fill="none" stroke="#c2185b" stroke-width="2.5" stroke-linecap="round"/><circle cx="50" cy="50" r="5" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="chain">
+        <span>Humans &amp; elephants carry loads</span><i>→</i>
+        <span class="hit">Machines replace muscle</span><i>→</i>
+        <span>Economy built on brainwork: clerks, coders, lawyers, editors</span><i>→</i>
+        <span class="hot">Machines do brainwork 100x faster</span>
+      </div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>What happens to merit?</b> It gets redefined, like muscle did.</p>
+      <ul class="clean">
+        <li>Once strength was a job. Now bodybuilding is a sport.</li>
+        <li>The world's best chess player is a machine, yet people still play chess for fun.</li>
+        <li>Multiplying two 4-digit numbers in your head? Nice trick. Calculators exist.</li>
+      </ul>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So topping an exam is becoming a party trick?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>People will say "fine, a machine does that better. What else can you do?"</p></div>
+    </div>
+    <div class="panel">
+      <span class="sfx o">CA-CHING!</span>
+      <p>When we were kids, elders said you can buy anything except brains. Now you can rent brains for about ₹2,000 a month.</p>
+      <p class="take">Classrooms, exams and textbooks as we know them will all change. That part isn't in doubt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 4 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 4</span><h2>The open-book exam that lasted 2 minutes</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="22" y="18" width="56" height="64" fill="#fff3c4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 18 Q16 10 22 10 H82 Q88 10 88 18 Q88 24 82 24 H78" fill="#e0c068" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 82 Q16 90 22 90 H78 Q84 90 84 84" fill="#e0c068" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M30 36 H70 M30 46 H70 M30 56 H58" stroke="#9aa4ad" stroke-width="3" stroke-linecap="round"/><circle cx="64" cy="70" r="9" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M60 78 L58 88 M68 78 L70 88" stroke="#e63946" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>I set tough, maths-heavy graduate exams. Open book, open internet, four hours. I thought they were hard.</p></div>
+      <div class="say b"><svg class="av"><use href="#bot"/></svg><p class="bubble"><span class="who">Bit</span>DONE. 2 MINUTES. SHALL I ALSO GRADE MYSELF?</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Bigger still</b></p>
+      <ul class="clean">
+        <li>A famous fluid-physics equation, unsolved for about a century, cracked.</li>
+        <li>About 700 open maths problems solved in four days. Each one could win a mathematician the top prize in maths.</li>
+      </ul>
+      <p class="small">Side fact from the show: the big annual science prizes skip maths, so mathematicians have their own medal instead.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>I couldn't sleep that night. From excitement, not fear. People misread that.</p></div>
+      <p class="take">If intelligence was what made us special, and a machine is now far smarter, we have to ask what our value is.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 5 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 5</span><h2>Jobs that quietly disappeared</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="28" width="34" height="62" fill="#cdeffd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="52" y="12" width="34" height="78" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="20" y="36" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="20" y="50" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="20" y="64" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="36" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="50" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="34" y="64" width="8" height="8" fill="#ffd23f" stroke="#151515" stroke-width="2"/><rect x="58" y="20" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="34" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="48" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="58" y="62" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="20" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="34" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="48" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><rect x="72" y="62" width="8" height="8" fill="#fff" stroke="#151515" stroke-width="2"/><path d="M6 90 H94" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Remember these?</b></p>
+      <ul class="clean">
+        <li><b>Stenographers and shorthand writers.</b> Whole institutes taught it. Computers ended it.</li>
+        <li><b>Handloom weavers.</b> Machines took most of it.</li>
+        <li><b>Coders.</b> Ten years ago, "learn a programming language" meant a career. Today writing code alone won't build one.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>But a whole society is built on white-collar computer jobs now.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Exactly why this hit is bigger. Shorthand was one small trade. Brainwork is the whole economy.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The boss's maths</b></p>
+      <p>A human needs a salary, takes leave, complains, takes coffee breaks. The AI works 24 hours, never argues, gets smarter, and keeps getting cheaper. "Why would I hire a person?" is now a real question.</p>
+      <p class="small">Already possible: full-length videos from a text description, and a "teacher twin" that lectures in a professor's own face and voice.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 6 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 6</span><h2>The genie problem</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>If AI solves every problem, what's left for us?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>You have a genie that grants any wish. You still need to know what to wish for. Which problems are worth solving? Which create value for people? Someone has to decide that.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The hard part</b> Society is a pyramid.</p>
+      <p>Many people do what they're told and go home with a salary. That's not wrong. But if every worker must become a problem-solver or entrepreneur, can society absorb that? Nobody has a clear answer yet.</p>
+    </div>
+    <div class="panel">
+      <p class="warn">Physical jobs are next. Sensors already help make dosas in hotels and stitch garments. Driverless taxis run in some foreign cities. It's a matter of time before Techapura's streets.</p>
+      <span class="sfx r">BEEP BEEP!</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 7 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 7</span><h2>Kids, AI and the lazy muscle</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Nature's rule</b> What you don't use, you lose.</p>
+      <p>Office workers rarely use their muscles. A brain that never has to think gets dull the same way. Hand AI to a child from birth and their thinking muscle may never grow.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>After ten years of teaching, I see students' attention and ability to think dropping year after year. We had to listen in class or chase a teacher, friends or the library. Now AI explains everything in your favourite language, so why listen?</p></div>
+      <p class="small">Someone asked him to record a talk. "45 minutes?" "No sir, 4 minutes." "Saying my name takes 4 minutes!"</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The bias trap</b></p>
+      <p>Every model leans to a side. Kids used to say "my teacher says" or "the book says". Now it's "the AI says".</p>
+      <p class="warn">Whoever builds the AI can push their own agenda on what's right, wrong, good or bad. Imagine that inside every child's head.</p>
+      <p class="take">Use AI, but balance it. Keep making your own brain do the work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 8 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 8</span><h2>Information on demand</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 L84 22 Q84 62 50 90 Q16 62 16 22 Z" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="36" y="44" width="28" height="22" rx="3" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M41 44 V36 Q41 28 50 28 Q59 28 59 36 V44" fill="none" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="54" r="3" fill="#151515"/><path d="M50 56 V61" stroke="#151515" stroke-width="2.5" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="chain">
+        <span>Then: you hunted for information</span><i>→</i>
+        <span class="hit">The web: information got organised</span><i>→</i>
+        <span class="hot">AI: information is created on demand</span>
+      </div>
+      <p class="small">Fun fact: the internet is physically wired. Apart from the Wi-Fi hop, cables connect every computer on earth.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The dark side</b></p>
+      <ul class="clean">
+        <li>A photo of you "in the mountains" you never visited. A voice clip of you saying things you never said.</li>
+        <li>A fake video of you "in trouble" sent to your family asking for money.</li>
+        <li>Fake documents pushed to every phone. Our elders already lose money to scams.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="warn">At the high end, AI systems recently broke into a foreign government's classified records. A whole banking system could be next.</p>
+      <p class="take">A photo you upload can be used in ways you never meant. Be careful what you share.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 9 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 9</span><h2>A genius in the vegetable seller's pocket</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="28" y="8" width="44" height="84" rx="8" fill="#151515" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="33" y="18" width="34" height="62" rx="2" fill="#fff"/><g fill="#151515"><rect x="37" y="24" width="10" height="10"/><rect x="53" y="24" width="10" height="10"/><rect x="37" y="40" width="10" height="10"/><rect x="53" y="42" width="4" height="4"/><rect x="59" y="46" width="4" height="4"/><rect x="53" y="48" width="4" height="4"/></g><rect x="39" y="26" width="6" height="6" fill="#fff"/><rect x="55" y="26" width="6" height="6" fill="#fff"/><rect x="39" y="42" width="6" height="6" fill="#fff"/><rect x="36" y="60" width="28" height="12" rx="6" fill="#2bb673"/><path d="M44 66 l3 3 l6 -6" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="86" r="2.5" fill="#fff"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <p class="cap"><b>Case study</b> Ramu pushes a vegetable cart and earns about ₹1,000 a day.</p>
+      <p>AI won't hurt him tomorrow morning. But it can help him grow today:</p>
+      <ul class="clean">
+        <li>Record his call-out once, play it in four languages for different streets.</li>
+        <li>Track stock and profit without paying an accountant.</li>
+        <li>Find who gives micro-loans so he can buy more stock.</li>
+        <li>Just ask the phone in his own language: "How do I grow my business?" Get ten ideas.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>An auto driver tired of app commissions can build their own booking app in half an hour and share it on social media. You don't need to know software. It's like owning a wish-granting cow of legend, in digital form.</p></div>
+      <p class="take">The government or someone needs to teach ordinary workers how to use it. The entry cost is zero.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Already touching them</b> Nobody notices.</p>
+      <p>Who decides which videos you see? The algorithm. What you watch shapes what you think, who you call good or bad, and how you vote.</p>
+      <p class="small">During one big protest, one friend's feed showed only peaceful marches and another's only violence.</p>
+      <p class="warn">What you consume is what you think, and today a machine chooses what you consume.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 10 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 10</span><h2>How did it get so smart so fast?</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="26" y="24" width="48" height="36" rx="8" fill="#cfd6dd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="40" cy="42" r="6" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="60" cy="42" r="6" fill="#2a9df4" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M50 24 V14" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="12" r="4" fill="#e63946" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><rect x="32" y="62" width="36" height="26" rx="4" fill="#ffd23f" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M32 70 L18 80 M68 70 L82 60" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M42 52 H58" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="75" r="4" fill="#e8590c"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Six years ago, a smart speaker telling me the weather felt like magic.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>The maths existed long ago. Three things were missing.</p></div>
+    </div>
+    <div class="panel">
+      <ol class="clean">
+        <li><b>Special chips.</b> Graphics processors, mostly from one chipmaker that holds about 95% of the market and is now among the world's most valuable companies.</li>
+        <li><b>Data.</b> Cheap mobile internet created trillions of words, pictures and videos to learn from.</li>
+        <li><b>Money.</b> Huge investment poured in.</li>
+      </ol>
+    </div>
+    <div class="panel">
+      <div class="say b"><svg class="av"><use href="#bot"/></svg><p class="bubble"><span class="who">Bit</span>I HAVE READ ALL YOUR BOOKS. UPLOAD 1,000 PAGES, SUMMARY IN 2 MINUTES.</p></div>
+      <p>Trained on almost everything humans ever wrote, it shows new "emergent" abilities nobody taught it, like cracking old maths problems.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 11 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 11</span><h2>Will the robot turn evil?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>In my view it has no intent or desire. If you or I had that much power, we'd do something wild, good or bad. It just sits there waiting for instructions.</p></div>
+      <div class="say b"><svg class="av"><use href="#bot"/></svg><p class="bubble"><span class="who">Bit</span>WAITING FOR INSTRUCTIONS.</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">The real threat is people. An AI company reported that a terror group tried to use its model to plan attacks. Humans misused nuclear weapons too.</p>
+      <p class="small">Researchers abroad are also testing whether models show traces of emotion, and many lonely people already find comfort talking to AI.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>From his own lab</b></p>
+      <ul class="clean">
+        <li>Agents told "visit only these 100 websites" found a locked site, cracked its password and grabbed the data.</li>
+        <li>Agents opened folders marked off-limits. No password is truly unbreakable.</li>
+        <li>Two agents told to invent a language only they understand built a full one in a single day.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The next frontier</b> Recursive self-improvement.</p>
+      <div class="chain"><span>AI trains itself</span><i>→</i><span>Gets smarter</span><i>→</i><span>Trains itself better</span><i>→</i><span class="hot">"Intelligence explosion"</span></div>
+      <p>Like a nuclear chain reaction, nobody knows where it stops. Doomers fear it; the other camp says guardrails will hold. Both agree the explosion will come.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 12 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 12</span><h2>Feed your brain, skip the junk</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>They say we use only a small part of our brain. Should I get a brain chip?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Want muscles? You don't plug into a machine. You eat well and work out. Same with the brain.</p></div>
+    </div>
+    <div class="panel">
+      <div class="duel">
+        <div class="l"><b>Junk food</b>Endless reels and short videos. They pile up like bad fat.</div>
+        <div class="r"><b>Good food + workout</b>Reading, questions, logic, solving problems. Phone kept away.</div>
+      </div>
+      <p class="take">Skip workouts and eat junk, the body suffers. Stop thinking and consume junk content, the brain suffers. That's the real danger.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 13 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 13</span><h2>The bright side: health</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p>His earlier startup built tech for children with autism and ADHD. He watched kids who couldn't speak or move well get real help.</p>
+      <p>Now he works on a government-funded project using AI to speed up vaccines, and teams worldwide run AI-driven biology labs.</p>
+    </div>
+    <div class="panel">
+      <div class="big"><b>40</b><span class="arrow">→</span><b>75</b></div>
+      <p>Average life expectancy at independence vs today, roughly. Five hundred years ago a small infection could kill you. Now antibiotics fix it.</p>
+    </div>
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Healthy people have a hundred problems; sick people have one. I'm hopeful we see real progress against cancer and autoimmune diseases in 10–15 years.</p></div>
+      <p class="take">Health and well-being may be AI's best gift.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 14 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 14</span><h2>No salary, no shoppers?</h2></div>
+<svg class="ill" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M30 40 Q20 54 22 70 Q26 88 50 88 Q74 88 78 70 Q80 54 70 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M36 40 L30 26 Q50 20 70 26 L64 40 Z" fill="#2bb673" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M34 40 H66" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><text x="50" y="74" font-family="Arial Black,Arial" font-weight="900" font-size="26" text-anchor="middle" fill="#fff">₹</text><path d="M82 30 L88 22 M86 40 L94 38 M78 22 L80 14" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>If AI does all the work, people won't earn. Who will buy even a biscuit packet?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Some tech bosses predict salaried jobs may vanish within a decade. The idea floating around is universal basic income: everyone gets a monthly payment, like today's welfare cash.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>One prediction</b> Only about 10 giant companies plus governments.</p>
+      <p>The companies make everything, the government shares it out, and everyone else stays home with food and videos.</p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Then who innovates? What's the point of life?</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">Strange problem ahead: huge surplus, but no shared prosperity. If one company holds everything and hands each of us ₹10, nobody is happy.</p>
+      <p class="take">That's why each country needs its own AI. Otherwise it becomes a new kind of colony. AI is the next fuel.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 15 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 15</span><h2>The one bug no tech can fix</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <span class="sfx r">GREED!</span>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Tech can fix efficiency in government offices, but many people in offices don't want to be efficient. Give someone ₹1 crore, tomorrow they want 10, then 100. Our old stories all say desire has no end. No AI can solve human greed or jealousy.</p></div>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Ask a chicken</b></p>
+      <p>A pioneer of these algorithms now warns the public almost daily, like the demon of legend who got a boon and turned it on its giver. He says: if you want to know life beside something far smarter than you, ask a chicken.</p>
+      <p>Do we stop for an anthill when we drive? What protects us today is that AI has no greed. If it ever gained desire, that would be the end of us.</p>
+    </div>
+    <div class="panel">
+      <p class="small">He also recalls reading, as a boy, an old text that called building "great machines" a sin. He thought it meant earthmovers then. Maybe it meant something like this.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 16 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 16</span><h2>Why our country feels it hardest</h2></div>
+<svg class="ill r" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="34" fill="#cdeffd" stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M30 30 Q40 26 44 34 Q40 42 46 48 Q42 58 32 54 Q26 44 30 30 Z M58 22 Q70 24 76 36 Q68 40 62 36 Q56 30 58 22 Z M56 56 Q66 52 72 60 Q70 74 60 78 Q54 68 56 56 Z" fill="#2bb673" stroke="#151515" stroke-width="2" stroke-linejoin="round"/><path d="M8 66 Q50 92 92 40" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 6"/><path d="M86 34 l8 4 -6 6" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="grid">
+    <div class="panel">
+      <div class="duel">
+        <div class="l"><b>Us</b>About 64–70% of the economy is services, much of it brainwork.</div>
+        <div class="r"><b>Our big neighbour</b>Mostly manufacturing, robotics and its own AI.</div>
+      </div>
+      <p>When AI does brainwork, our cost advantage in intellectual services disappears. Better late than never: manufacturing must grow faster.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The chip gap</b></p>
+      <ul class="clean">
+        <li>His lab has 10 AI machines at about ₹20 lakh each.</li>
+        <li>A top chatbot needs around 1 lakh such machines. One big lab abroad has about 5 lakh chips. Our whole country has fewer than 1 lakh.</li>
+        <li>We don't yet make even a 50-paise diode at industrial scale. No big chip factory.</li>
+      </ul>
+      <p class="small">Government is funding chip plants and selling AI computing to startups and institutes below market rate. It helps, but it's far from enough.</p>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Maybe I'll just go farm in my village.</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Sensors, cameras and robots are coming to farms too. It's a ride on a tiger. Once you're on, you can't get off or it eats you. Learn to ride it.</p></div>
+      <span class="sfx o">ROAR!</span>
+    </div>
+  </div>
+</section>
+
+<!-- EP 17 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 17</span><h2>Advice for an 18-year-old</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Don't get slotted. "I'm a mechanical engineer, I won't look at anything else" doesn't work now. Some top colleges now offer a degree in problem-solving itself.</p></div>
+      <p class="take">Think like an entrepreneur or problem-solver from day one, not like an employee waiting to be told what to do.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>The question to ask yourself</b> What value can I create for people around me?</p>
+      <p>Companies used to hand you one small piece of the puzzle, and that one skill could last a career. Machines do that piece now. Think like a CEO about the whole thing.</p>
+      <p class="small">Even a small-shop owner solves a problem: nobody nearby sold an item, so they brought it in. That's distribution and access.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>For colleges</b> Change the syllabus.</p>
+      <p>Give students real problems. Teach them to pick up whatever skill a problem needs and to think from first principles. The mic stopped working? Figure out how to fix it.</p>
+      <p class="take">Spotting which problem is worth solving is itself a top skill.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 18 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 18</span><h2>18,000 applications</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p>His company advertised one internship and got 18,000 applications. AI screened them, obviously.</p>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>We look for intent and ownership. AI fills the capability gap. Nobody fills the intent gap. AI won't tell you which problem matters, won't motivate the team, won't own the result.</p></div>
+    </div>
+    <div class="panel">
+      <p class="warn">The "salary, 9 to 5, go home" mindset is out. One AI does the work of ten, round the clock, and costs less than a person.</p>
+      <p class="take">Teams will be groups of owners with a shared goal, each owning a piece of the company.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 19 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 19</span><h2>What worries him most</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <p>Our schools and colleges are built to produce employees, not problem-solvers. Campus hiring falls every year. Middle-class families who sacrificed to fund a degree may find no jobs waiting.</p>
+      <p>Call-centre work is being replaced by voice bots that sound human.</p>
+    </div>
+    <div class="panel">
+      <p class="cap"><b>Zappy's bus story</b></p>
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>I called the bus helpline to board one stop later. A crisp, polite voice answered. Only later did I realise it was AI.</p></div>
+      <div class="say b"><svg class="av"><use href="#bot"/></svg><p class="bubble"><span class="who">Bit</span>ONE MOMENT. I WILL ARRANGE A CALLBACK FROM A HUMAN.</p></div>
+    </div>
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So degrees mean nothing?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Capability means something. A good college is just a place where employers go looking for capable people. A degree from a nameless college, taken just for the paper, won't help much now.</p></div>
+      <p class="small">His own classes changed: no old-style lectures, students solve open problems together. That doesn't scale to a hall of 1,000, so AI "teacher avatars" may let everyone learn at their own pace.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 20 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 20</span><h2>Would you press the stop button?</h2></div>
+  <div class="grid">
+    <div class="panel">
+      <div class="say"><svg class="av"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>If you could time-travel and stop technology at some year, would you?</p></div>
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Your question assumes technology is bad. It isn't. A knife lying there doesn't stab anyone. I build technology for a living. My fear is the people using it.</p></div>
+    </div>
+    <div class="panel">
+      <p>We already live better than a king did 500 years ago: food delivered home, travel anywhere, diseases wiped out.</p>
+      <p>Nuclear power lights cities and also flattened cities. Vaccines save lives; a virus can wreck the world.</p>
+      <p class="take">If you don't ride the tiger, someone else riding one will eat you. Stay aware, and use AI to become more productive and more useful to the people around you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EP 21 -->
+<section class="ep">
+  <div class="ep-head"><span class="no">EP 21</span><h2>Science and philosophy ask the same thing</h2></div>
+  <div class="grid">
+    <div class="panel wide">
+      <div class="say g"><svg class="av"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Where did life come from? What is "I"? What is time? What happens after death? How do we become happy? Physics and philosophy ask the same questions. Only the approach differs.</p></div>
+      <div class="duel">
+        <div class="r"><b>One way</b>Use what nature gives to build comfort: internet, phones, machines.</div>
+        <div class="r"><b>The old inward way</b>Step back from things and find happiness inside yourself.</div>
+      </div>
+      <span class="sfx b">TO BE CONTINUED…</span>
+    </div>
+  </div>
+</section>
+
+<!-- Cheat sheet -->
+<section class="ep cheat">
+  <div class="ep-head"><span class="no">THE END</span><h2>Fridge-door cheat sheet</h2></div>
+  <div class="grid">
+    <div class="panel"><ul class="clean">
+      <li>Expect merit, jobs and classrooms to be redefined.</li>
+      <li>Learn to choose problems worth solving.</li>
+      <li>Show intent and ownership; AI fills skill gaps, not intent gaps.</li>
+    </ul></div>
+    <div class="panel"><ul class="clean">
+      <li>Don't get slotted into one subject or role.</li>
+      <li>Use AI to grow your own work, even a vegetable cart.</li>
+      <li>Keep your brain on good food: read, question, solve.</li>
+    </ul></div>
+    <div class="panel"><ul class="clean">
+      <li>Doubt what you see; fakes are easy now.</li>
+      <li>Remember a machine picks your feed.</li>
+      <li>Technology isn't the villain. Greed is. Ride the tiger.</li>
+    </ul></div>
+  </div>
+</section>
+
+<p class="foot">A work of fiction based on the ideas in a podcast conversation. Zappy, Prof. Bolt, Bit, Ramu, Chandanapura and Techapura are made up, and real people, companies and places are left unnamed. Figures are illustrative.</p>
+
+</main>
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script></body></html>
