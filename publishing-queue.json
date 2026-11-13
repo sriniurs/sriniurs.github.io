@@ -67,13 +67,13 @@
     },
     {
       "number": 7,
-      "url": "https://srinipresents.com/myopia/",
-      "path": "/myopia/",
-      "title": "Why Do So Many Kids Need Glasses Now?",
+      "url": "https://srinipresents.com/nvidia-exit/",
+      "path": "/nvidia-exit/",
+      "title": "One Affair, Two Superpowers & Your Pension",
       "not_before": "2026-11-14T05:00:00+05:30",
       "status": "pending",
       "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"7\"><a href=\"/myopia/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"4\" stroke-linecap=\"round\"><circle cx=\"29\" cy=\"53\" r=\"17\" fill=\"#a7e9ed\"/><circle cx=\"71\" cy=\"53\" r=\"17\" fill=\"#a7e9ed\"/><path d=\"M46 51Q50 45 54 51M12 48L6 40M88 48L94 40M23 53L31 45M65 53L73 45\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Why Do So Many Kids Need Glasses Now?</h3><p>Why more children are becoming short-sighted, how the eye changes as they grow, and what researchers know about time outdoors.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">14 Nov 2026</span></li>"
+      "card_html": "<li class=\"story-card\" data-queue-number=\"7\"><a href=\"/nvidia-exit/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"><path d=\"M32 22V12M44 22V12M56 22V12M68 22V12M32 88V78M44 88V78M56 88V78M68 88V78M22 32H12M22 44H12M22 56H12M22 68H12M88 32H78M88 44H78M88 56H78M88 68H78\" fill=\"none\"/><rect x=\"22\" y=\"22\" width=\"56\" height=\"56\" rx=\"6\" fill=\"#76b900\"/><path d=\"M50 66C36 56 32 47 37 41C41 36 47 37 50 43C53 37 59 36 63 41C68 47 64 56 50 66Z\" fill=\"#e63946\"/><path d=\"M50 43L46 50L53 54L48 62\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2.5\"/></g></svg></div><div class=\"card-copy\"><h3>One Affair, Two Superpowers &amp; Your Pension</h3><p>Why Nvidia’s founder quitting matters to Washington, Beijing and an ordinary saver’s retirement fund.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">14 Nov 2026</span></li>"
     },
     {
       "number": 8,
@@ -204,6 +204,16 @@
       "status": "pending",
       "published_at": null,
       "card_html": "<li class=\"story-card\" data-queue-number=\"20\"><a href=\"/mysuru-squeeze/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M18 33H65V61Q65 78 43 78Q18 78 18 61Z\" fill=\"#ffd23f\"/><path d=\"M65 39H75Q90 39 84 56Q80 64 65 62\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>The Mysuru Squeeze: Peaceful City, Busy Budget</h3><p>Why a familiar city suddenly feels expensive: the coffee, the commute and the house keys.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">27 Nov 2026</span></li>"
+    },
+    {
+      "number": 21,
+      "url": "https://srinipresents.com/myopia/",
+      "path": "/myopia/",
+      "title": "Why Do So Many Kids Need Glasses Now?",
+      "not_before": "2026-11-28T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"21\"><a href=\"/myopia/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"4\" stroke-linecap=\"round\"><circle cx=\"29\" cy=\"53\" r=\"17\" fill=\"#a7e9ed\"/><circle cx=\"71\" cy=\"53\" r=\"17\" fill=\"#a7e9ed\"/><path d=\"M46 51Q50 45 54 51M12 48L6 40M88 48L94 40M23 53L31 45M65 53L73 45\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Why Do So Many Kids Need Glasses Now?</h3><p>Why more children are becoming short-sighted, how the eye changes as they grow, and what researchers know about time outdoors.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">28 Nov 2026</span></li>"
     }
   ]
 }
