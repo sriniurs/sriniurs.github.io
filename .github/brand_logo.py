@@ -51,14 +51,42 @@ def brand_wordmark(page):
     return WORDMARK.sub(lambda m: m.group(1) + img + m.group(3), page, count=1)
 
 
+DAYS = r'(?:MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)'
+DATEBOX = re.compile(r'<(span|p|div)\s+class=["\'](?:daytag|day|edition|tag|sample)["\'][^>]*>([^<]*)</\1>')
+
+
+def strip_dates(page):
+    """Remove weekday/date boxes from the cover (Srini's rule, 13 Nov 2026)."""
+    m = re.search(r'<header\b[^>]*>', page)
+    if not m:
+        return page
+    end = page.find('</header>', m.end())
+    if end < 0:
+        return page
+    seg = page[m.end():end]
+
+    def kill(e):
+        txt = e.group(2).strip().upper()
+        cls = re.search(r'class=["\']([^"\']+)', e.group(0)).group(1)
+        if cls in ('daytag', 'day', 'edition'):
+            return ''
+        if re.match(DAYS, txt):          # sample/tag that starts with a weekday
+            return ''
+        return e.group(0)
+    seg = DATEBOX.sub(kill, seg)
+    return page[:m.end()] + seg + page[end:]
+
+
 def process(path):
     page = path.read_text(encoding='utf-8')
-    if 'data-brand-logo' in page or re.search(r'(?i)http-equiv=["\']?refresh', page):
+    if re.search(r'(?i)http-equiv=["\']?refresh', page):
         return False
-    new = brand_wordmark(brand_cover(page))
+    new = strip_dates(page)
+    if 'data-brand-logo' not in new:
+        new = brand_wordmark(brand_cover(new))
     if new == page:
         return False
-    if '<style id="brand-logo">' not in new:
+    if 'data-brand-logo' in new and '<style id="brand-logo">' not in new:
         new = new.replace('</head>', CSS + '</head>', 1)
     path.write_text(new, encoding='utf-8')
     return True
