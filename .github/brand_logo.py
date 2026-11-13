@@ -18,8 +18,8 @@ CSS = ('<style id="brand-logo">'
        '.brand img{display:block;width:210px;max-width:70vw;height:auto;background:#ebeae0;border:3px solid #151515;'
        'border-radius:14px;padding:6px 10px;box-shadow:4px 4px 0 #151515}'
        '.brand .tagline{margin:0!important}'
-       '.wordmark img.brand-mark{display:block;height:58px;width:auto}'
-       '@media(max-width:640px){.brand img{width:180px}.wordmark img.brand-mark{height:46px}}'
+       ''
+       '.wordmark img.brand-mark{display:block;height:92px;width:auto;margin:-6px 0}@media(max-width:640px){.brand img{width:180px}.wordmark img.brand-mark{height:66px;margin:-4px 0}}'
        '</style>')
 IMG = f'<img data-brand-logo src="{SRC}" alt="srini.presents" width="420" height="192">'
 BYLINE = re.compile(r'<(p|div)\s+class=["\'](?:byline|by)["\'][^>]*>(.*?)</\1>', re.S)
@@ -47,7 +47,7 @@ def brand_cover(page):
 
 
 def brand_wordmark(page):
-    img = f'<img data-brand-logo class="brand-mark" src="{SRC}" alt="srini.presents" width="420" height="192">'
+    img = f'<img data-brand-logo class="brand-mark" src="/assets/brand/logo-clear.png" alt="srini.presents" width="560" height="257">'
     return WORDMARK.sub(lambda m: m.group(1) + img + m.group(3), page, count=1)
 
 
