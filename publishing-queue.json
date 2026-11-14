@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-14",
+  "last_published_on": "2026-11-15",
   "entries": [
     {
       "number": 1,
@@ -91,8 +91,8 @@
       "path": "/drought-floods/",
       "title": "Worst Drought in 150 Years. So Why Is Bengaluru Flooding?",
       "not_before": "2026-11-15T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-15T05:13:12+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"9\"><a href=\"/drought-floods/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><circle cx=\"28\" cy=\"28\" r=\"14\" fill=\"#ffd23f\"/><path d=\"M8 88V66Q30 60 50 66V88Z\" fill=\"#d9a35b\"/><path d=\"M52 40Q52 28 64 28Q68 18 80 20Q92 20 92 34Q96 40 90 46H58Q52 46 52 40Z\" fill=\"#9aa9bd\"/><path d=\"M62 56L58 66M74 56L70 66M86 56L82 66\" stroke=\"#2f6fd6\" stroke-width=\"4\" stroke-linecap=\"round\"/></g></svg></div><div class=\"card-copy\"><h3>Worst Drought in 150 Years. So Why Is Bengaluru Flooding?</h3><p>217 of 240 taluks are drought-hit, yet the city floods after one shower. The 1876 link, El Niño and Mysuru’s water.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">15 Nov 2026</span></li>"
     },
     {
