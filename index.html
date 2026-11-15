@@ -68,6 +68,31 @@ body>.page>ul{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:760px){.hero{grid-template-columns:1fr}.hero-copy{padding:30px 28px}.hero-art{aspect-ratio:3/2}.wordmark{font-size:34px}.nav-inner{padding-top:20px;padding-bottom:20px}}
 @media(max-width:450px){.wordmark{font-size:31px;letter-spacing:-1px}.nav-inner{gap:12px;flex-wrap:wrap}.nav-links{gap:16px}.hero-copy{padding:28px 24px}.hero h1{font-size:43px}}
 </style><style id="brand-ribbon">.wordmark{display:block;line-height:0;width:320px;max-width:62vw;flex:0 1 320px}.wordmark svg{display:block;width:100%;height:auto;overflow:visible}.nav-inner{padding-top:14px;padding-bottom:14px}@media(max-width:760px){.wordmark{width:280px;flex-basis:280px;max-width:64vw}}@media(max-width:450px){.wordmark{width:240px;flex-basis:240px;max-width:100%}.nav-inner{gap:14px}.nav-links{margin-left:auto}}</style><style id="flush-hero-art">.hero-art{align-self:stretch;height:100%;object-fit:cover;object-position:center;min-height:100%}@media(max-width:760px){.hero-art{height:auto;min-height:0;aspect-ratio:3/2}}</style><style id="ribbon-top-space">.nav-inner{padding-top:22px}@media(max-width:760px){.nav-inner{padding-top:22px}}</style><style id="brand-logo">.brand{display:inline-flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0 0 14px}.brand img{display:block;width:210px;max-width:70vw;height:auto;background:#ebeae0;border:3px solid #151515;border-radius:14px;padding:6px 10px;box-shadow:4px 4px 0 #151515}.brand .tagline{margin:0!important}.wordmark img.brand-mark{display:block;height:92px;width:auto;margin:-6px 0}@media(max-width:640px){.brand img{width:180px}.wordmark img.brand-mark{height:66px;margin:-4px 0}}</style><style id="ortho-nav">.nav-links{flex-wrap:wrap}@media(max-width:450px){.nav-links{margin-left:0}}</style></head><body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
 <a class="skip-link" href="#everyday-curiosity">Skip to articles</a>
 <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner"><a class="wordmark" href="/" aria-label="srini.presents home"><img data-brand-logo class="brand-mark" src="/assets/brand/logo-clear.png" alt="srini.presents" width="560" height="257"></a><div class="nav-links"><a href="#everyday-curiosity">Read the stories</a><a href="/archive/">Archive</a><a href="/about/">About</a></div></div></nav>
 <div class="page">

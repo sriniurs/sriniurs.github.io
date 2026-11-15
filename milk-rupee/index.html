@@ -274,7 +274,7 @@ border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-
 <script>
 (function(){var b=document.getElementById('sp-back');if(!b)return;
 b.addEventListener('click',function(e){var r=document.referrer;
-if(r&&r.indexOf(location.origin)===0&&history.length>1){e.preventDefault();history.back();}});})();
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
 </script>
 <!-- /sitenav:auto -->
 <main class="wrap">
