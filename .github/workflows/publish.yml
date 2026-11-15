@@ -9,6 +9,9 @@ on:
       - '.github/publish_due.py'
       - '.github/test_publish_due.py'
       - '.github/workflows/publish.yml'
+      - '.github/build_search.py'
+      - '.github/site_nav.py'
+      - '**/*.html'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -42,9 +45,18 @@ jobs:
         run: |
           python3 .github/build_sitemap.py
           python3 .github/seo_meta.py
+      - name: Build the search index
+        id: search
+        if: >-
+          steps.publish.outputs.changed == 'true' ||
+          github.event_name == 'push' ||
+          (github.event_name == 'workflow_dispatch' && !inputs.dry_run) ||
+          (github.event_name == 'schedule' && hashFiles('pagefind/pagefind.js') == '')
+        run: |
           python3 .github/site_nav.py
-      - name: Commit homepage, archive and queue together
-        if: steps.publish.outputs.changed == 'true'
+          python3 .github/build_search.py
+      - name: Commit published pages and search index together
+        if: steps.search.outcome == 'success'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -52,7 +64,9 @@ jobs:
           git diff --cached --check
           # Story pages get search tags added; some use CRLF, which --check flags.
           git add -u -- '*.html'
-          git commit -m "Feature daily story for $(TZ=Asia/Kolkata date +%F)"
+          git add -A -- pagefind
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Refresh published pages and search index"
           # Never rebase stale generated pages over concurrent changes. A rejected
           # push fails safely; the next hourly check starts from the current main.
           git push origin HEAD:main
