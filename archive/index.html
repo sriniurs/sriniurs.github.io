@@ -60,6 +60,31 @@ body>.page>ul{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:450px){.wordmark{font-size:23px}.nav-links a{font-size:12px}.nav-links{gap:12px}.hero-copy{padding:24px}h1{font-size:43px}.story-grid{grid-template-columns:1fr}.story-grid>.story-card:first-child>a{display:block}.story-grid>.story-card:first-child .card-art{height:170px;min-height:0;border-right:0;border-bottom:1px solid #09283f18}.story-grid>.story-card:first-child .card-art svg{width:125px;height:125px}.story-grid>.story-card:first-child .card-copy{padding:39px 20px 20px}.story-grid>.story-card:first-child .card-copy h3{font-size:24px}.story-grid>.story-card:first-child .story-date{left:20px;top:184px}.card-art{height:155px}.story-date{top:169px}.card-copy h3{font-size:23px}.section-intro{align-items:start}.section-intro p{font-size:11px}body>.page>ul{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.story-card{transition:none}.story-card:hover{transform:none}}
 </style><style id="brand-logo">.brand{display:inline-flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0 0 14px}.brand img{display:block;width:210px;max-width:70vw;height:auto;background:#ebeae0;border:3px solid #151515;border-radius:14px;padding:6px 10px;box-shadow:4px 4px 0 #151515}.brand .tagline{margin:0!important}.wordmark img.brand-mark{display:block;height:92px;width:auto;margin:-6px 0}@media(max-width:640px){.brand img{width:180px}.wordmark img.brand-mark{height:66px;margin:-4px 0}}</style><style id="archive-collections">.archive-collections{margin:0 0 32px;padding:24px;background:#fff4cd;border:2px solid var(--navy);border-radius:16px;box-shadow:4px 4px var(--navy)}.archive-collections h1{font-size:clamp(36px,7vw,55px)}.archive-collections ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.archive-collections .hero-button{width:100%;height:100%;justify-content:space-between;gap:8px}@media(max-width:650px){.archive-collections ul{grid-template-columns:1fr}}</style></head><body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
 <a class="skip-link" href="#recent">Skip to articles</a>
 <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner"><a class="wordmark" href="/"><img data-brand-logo class="brand-mark" src="/assets/brand/logo-clear.png" alt="srini.presents" width="560" height="257"></a><div class="nav-links"><a href="#recent">Read the stories</a><a href="#older-articles" id="archive-link">Archive</a><a href="/about/">About</a></div></div></nav>
 <div class="page">

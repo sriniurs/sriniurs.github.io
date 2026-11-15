@@ -51,7 +51,7 @@ jobs:
           git add index.html archive/index.html publishing-queue.json sitemap.xml
           git diff --cached --check
           # Story pages get search tags added; some use CRLF, which --check flags.
-          git add -u -- '*/index.html'
+          git add -u -- '*.html'
           git commit -m "Feature daily story for $(TZ=Asia/Kolkata date +%F)"
           # Never rebase stale generated pages over concurrent changes. A rejected
           # push fails safely; the next hourly check starts from the current main.

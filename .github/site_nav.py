@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
-"""Put the same Back / Home bar at the top of every story page.
-
-The bar is inserted right after <body ...> inside a marked block, so re-running
-replaces it instead of stacking copies. Back returns to the previous page when
-the reader came from this site, otherwise it goes to the archive.
-"""
+"""Add Back and Home links to public HTML pages."""
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKIP = {'archive', 'assets', 'queue', 'preview', 's', 'stats', 'about'}
+SKIP = {'assets', 'queue', 'preview', 's', 'stats', 'nifty'}
 START, END = '<!-- sitenav:auto -->', '<!-- /sitenav:auto -->'
 BLOCK = re.compile(re.escape(START) + r'.*?' + re.escape(END) + r'\n?', re.S)
 
@@ -28,16 +23,27 @@ border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-
 @media print{.sp-bar{display:none}}
 </style>
 <nav class="sp-bar" aria-label="Site">
-<a href="/archive/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="__BACK_PATH__" id="sp-back" aria-label="Go back">&larr; Back</a>
 <a href="/" aria-label="Home page">&#8962; Home</a>
 <a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
 </nav>
 <script>
 (function(){var b=document.getElementById('sp-back');if(!b)return;
 b.addEventListener('click',function(e){var r=document.referrer;
-if(r&&r.indexOf(location.origin)===0&&history.length>1){e.preventDefault();history.back();}});})();
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
 </script>
 """ + END + '\n'
+
+
+def back_path(relative):
+    directories = relative.parts[:-1]
+    if len(directories) > 1:
+        return '/' + '/'.join(directories[:-1]) + '/'
+    if directories == ('archive',) and relative.name != 'index.html':
+        return '/archive/'
+    if not directories or directories[0] in {'about', 'archive', 'health', 'ortho'}:
+        return '/'
+    return '/archive/'
 
 
 def process(path):
@@ -46,10 +52,12 @@ def process(path):
     if re.search(r'(?i)<meta[^>]+http-equiv=["\']?refresh', page):
         return False                       # redirect stub
     clean = BLOCK.sub('', page)
+    if path.relative_to(ROOT).parts[0] == 'health':
+        clean = re.sub(r'<a class="series-home"[^>]*>[^<]*</a>', '', clean)
     m = re.search(r'(?is)<body\b[^>]*>', clean)
     if not m:
         return False
-    new = clean[:m.end()] + '\n' + BAR + clean[m.end():].lstrip('\n')
+    new = clean[:m.end()] + '\n' + BAR.replace('__BACK_PATH__', back_path(path.relative_to(ROOT))) + clean[m.end():].lstrip('\n')
     if new == page:
         return False
     with open(path, 'w', encoding='utf-8', newline='') as fh:
@@ -59,12 +67,12 @@ def process(path):
 
 def main():
     changed = []
-    for d in sorted(p for p in ROOT.iterdir() if p.is_dir()):
-        page = d / 'index.html'
-        if d.name.startswith('.') or d.name in SKIP or not page.exists():
+    for page in sorted(ROOT.rglob('*.html')):
+        relative = page.relative_to(ROOT)
+        if any(part.startswith('.') or part in SKIP for part in relative.parts[:-1]):
             continue
         if process(page):
-            changed.append(d.name)
+            changed.append(relative)
     print(f'site_nav: updated {len(changed)} page(s)')
     import brand_logo
     brand_logo.main()
