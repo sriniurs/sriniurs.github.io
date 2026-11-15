@@ -47,6 +47,33 @@ table.vs{width:100%;border-collapse:collapse;font-size:15.5px;margin:10px 0;colo
 </style>
 <style id="brand-logo">.brand{display:inline-flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0 0 14px}.brand img{display:block;width:210px;max-width:70vw;height:auto;background:#ebeae0;border:3px solid #151515;border-radius:14px;padding:6px 10px;box-shadow:4px 4px 0 #151515}.brand .tagline{margin:0!important}.wordmark img.brand-mark{display:block;height:58px;width:auto}@media(max-width:640px){.brand img{width:180px}.wordmark img.brand-mark{height:46px}}</style></head>
 <body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/archive/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
 <svg aria-hidden="true" width="0" height="0" style="position:absolute">
 <symbol id="zappy" viewBox="0 0 64 64"><rect x="12" y="46" width="40" height="22" rx="10" fill="#1f7ad1" stroke="#151515" stroke-width="2"/><circle cx="32" cy="30" r="15" fill="#e3a877" stroke="#151515" stroke-width="2"/><path d="M17 26L20 14 25 21 29 11 33 20 38 11 41 21 46 15 47 27Q32 19 17 26" fill="#1a1a1a" stroke="#151515" stroke-width="1.5"/><circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/><path d="M26 37Q32 42 38 37" fill="none" stroke="#151515" stroke-width="2"/></symbol>
 <symbol id="bolt" viewBox="0 0 64 64"><rect x="12" y="46" width="40" height="22" rx="10" fill="#e63946" stroke="#151515" stroke-width="2"/><circle cx="32" cy="30" r="15" fill="#e3a877" stroke="#151515" stroke-width="2"/><path d="M17 30Q16 16 32 15Q48 16 47 30Q44 21 32 21Q20 21 17 30" fill="#b9bec4" stroke="#151515" stroke-width="1.5"/><circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/><path d="M25 37Q32 34 39 37" fill="none" stroke="#151515" stroke-width="2"/></symbol>
