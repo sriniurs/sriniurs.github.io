@@ -13,7 +13,7 @@ from urllib.parse import urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 ORIGIN = 'https://srinipresents.com'
-HUBS = {'/', '/archive/', '/ortho/', '/ortho/fracture/', '/ortho/neck-pain/', '/ortho/shoulder/', '/ortho/knee-replacement/', '/health/'}
+HUBS = {'/', '/archive/', '/health/ortho/', '/health/ortho/fracture/', '/health/ortho/neck-pain/', '/health/ortho/shoulder/', '/health/ortho/knee-replacement/', '/health/'}
 BODY = re.compile(r'<body\b[^>]*>', re.I)
 REDIRECT = re.compile(r'<meta[^>]+http-equiv\s*=\s*["\']?refresh', re.I)
 
@@ -42,10 +42,10 @@ def page_path(route):
 
 
 def section_for(route):
+    if route.startswith('/health/ortho/') or route == '/robotic-knee-replacement/':
+        return 'Ortho'
     if route.startswith('/health/'):
         return 'Common Health Conditions'
-    if route.startswith('/ortho/') or route == '/robotic-knee-replacement/':
-        return 'Ortho'
     return 'Everyday Curiosity'
 
 
@@ -60,9 +60,9 @@ def collect_articles():
         links.update(parser.routes)
 
     for route in sorted(links - pending - HUBS):
-        if not re.fullmatch(r'/(?:[a-z0-9-]+/|archive/[a-z0-9-]+\.html|(?:health|ortho)/(?:[a-z0-9-]+/)+)', route):
+        if not re.fullmatch(r'/(?:[a-z0-9-]+/|archive/[a-z0-9-]+\.html|health/(?:[a-z0-9-]+/)+)', route):
             continue
-        if route in {'/about/', '/search/', '/nifty/', '/nifty-chronicles/'}:
+        if route in {'/about/', '/search/'}:
             continue
         source = ROOT / page_path(route)
         if not source.is_file():

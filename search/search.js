@@ -2,28 +2,14 @@ const form = document.querySelector('#search');
 const query = document.querySelector('#query');
 const section = document.querySelector('#section');
 const status = document.querySelector('#status');
-const notice = document.querySelector('#notice');
 const results = document.querySelector('#results');
 const more = document.querySelector('#more');
 const pageSize = 12;
 let engine;
 let currentSearch;
 
-async function loadEngine() {
-  const pagefind = await import('/pagefind/pagefind.js');
-  try {
-    const response = await fetch('/nifty/pagefind/pagefind-entry.json');
-    if (!response.ok) throw new Error('Nifty index is unavailable');
-    await pagefind.mergeIndex('/nifty/pagefind/', {
-      baseUrl: '/nifty/',
-      mergeFilter: { section: 'The Nifty Chronicles' },
-    });
-  } catch {
-    section.querySelector('option[value="The Nifty Chronicles"]').disabled = true;
-    if (section.value === 'The Nifty Chronicles') section.value = '';
-    notice.textContent = 'Nifty search is temporarily unavailable.';
-  }
-  return pagefind;
+function loadEngine() {
+  return import('/pagefind/pagefind.js');
 }
 
 function resultItem(result) {
@@ -35,8 +21,7 @@ function resultItem(result) {
   link.href = result.url;
   link.textContent = result.meta.title || 'Read article';
   heading.append(link);
-  category.textContent = result.filters?.section?.[0] ||
-    (link.pathname.startsWith('/nifty/') ? 'The Nifty Chronicles' : '');
+  category.textContent = result.filters?.section?.[0] || '';
   // Pagefind escapes excerpt text and inserts only its own highlight markup.
   excerpt.innerHTML = result.excerpt;
   item.append(heading, category, excerpt);
