@@ -13,7 +13,7 @@ from urllib.parse import urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 ORIGIN = 'https://srinipresents.com'
-HUBS = {'/', '/archive/', '/health/ortho/', '/health/ortho/fracture/', '/health/ortho/neck-pain/', '/health/ortho/shoulder/', '/health/ortho/knee-replacement/', '/health/'}
+HUBS = {'/', '/archive/', '/health/ortho/', '/health/ortho/fracture/', '/health/ortho/neck-pain/', '/health/ortho/shoulder/', '/health/ortho/knee-replacement/', '/health/', '/health/general/'}
 BODY = re.compile(r'<body\b[^>]*>', re.I)
 REDIRECT = re.compile(r'<meta[^>]+http-equiv\s*=\s*["\']?refresh', re.I)
 

@@ -39,6 +39,8 @@ if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split
 
 def back_path(relative):
     directories = relative.parts[:-1]
+    if len(directories) == 2 and directories[0] == 'health' and re.match(r'^\d{2}-', directories[1]):
+        return '/health/general/'
     if len(directories) > 1:
         return '/' + '/'.join(directories[:-1]) + '/'
     if directories == ('archive',) and relative.name != 'index.html':
