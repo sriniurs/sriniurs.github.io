@@ -11,6 +11,7 @@ on:
       - '.github/workflows/publish.yml'
       - '.github/build_search.py'
       - '.github/site_nav.py'
+      - '.github/seo_meta.py'
       - '**/*.html'
   workflow_dispatch:
     inputs:
@@ -40,11 +41,9 @@ jobs:
         id: publish
         if: ${{ github.event_name != 'workflow_dispatch' || !inputs.dry_run }}
         run: python3 .github/publish_due.py
-      - name: Rebuild sitemap.xml and search tags
+      - name: Rebuild sitemap.xml
         if: steps.publish.outputs.changed == 'true'
-        run: |
-          python3 .github/build_sitemap.py
-          python3 .github/seo_meta.py
+        run: python3 .github/build_sitemap.py
       - name: Build the search index
         id: search
         if: >-
@@ -53,6 +52,9 @@ jobs:
           (github.event_name == 'workflow_dispatch' && !inputs.dry_run) ||
           (github.event_name == 'schedule' && hashFiles('pagefind/pagefind.js') == '')
         run: |
+          python3 -m venv "$RUNNER_TEMP/story-seo"
+          "$RUNNER_TEMP/story-seo/bin/pip" install playwright
+          "$RUNNER_TEMP/story-seo/bin/python" .github/seo_meta.py
           python3 .github/site_nav.py
           python3 .github/build_search.py
       - name: Commit published pages and search index together
@@ -64,7 +66,7 @@ jobs:
           git diff --cached --check
           # Story pages get search tags added; some use CRLF, which --check flags.
           git add -u -- '*.html'
-          git add -A -- pagefind
+          git add -A -- pagefind '*og-share.jpg'
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Refresh published pages and search index"
           # Never rebase stale generated pages over concurrent changes. A rejected
