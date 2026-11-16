@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Health · srini.presents</title><meta name="description" content="Illustrated articles about common health conditions and orthopaedics."><link rel="canonical" href="https://srinipresents.com/health/"><style>
 :root{--ink:#09283f;--paper:#fffdf4;--cream:#fff9e7;--red:#962039}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 "Trebuchet MS",Arial,sans-serif}a{color:inherit}a:focus-visible{outline:3px solid #087c75;outline-offset:4px}.site-nav{border-bottom:1px solid #dcd6c3}.nav-inner,main,footer{max-width:1200px;margin:auto;padding:16px 26px}.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand img{display:block;width:112px;height:auto}.nav-inner>a:last-child{font-weight:bold}header{padding:24px clamp(16px,4vw,40px);background:#cbdfff;border:2px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink)}h1{margin:0;color:var(--red);font:bold italic clamp(32px,6vw,56px)/1.04 Georgia,serif}header p{margin:12px 0 0;max-width:60ch}.tiles{list-style:none;padding:0;margin:28px 0 10px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.tiles a{display:flex;height:100%;flex-direction:column;border:2px solid var(--ink);border-radius:12px;background:var(--paper);overflow:hidden;box-shadow:3px 3px 0 var(--ink);text-decoration:none}.tiles a:hover h2{text-decoration:underline}.tile-art{background:#d7eeff;display:grid;place-items:center;border-bottom:2px solid var(--ink);height:104px}.tile-art svg{width:88px;height:88px}.tiles li:nth-child(5n+2) .tile-art{background:#c8edda}.tiles li:nth-child(5n+3) .tile-art{background:#ffe49d}.tiles li:nth-child(5n+4) .tile-art{background:#f9d7c4}.tiles li:nth-child(5n+5) .tile-art{background:#e4dbfb}.tile-copy{padding:9px 12px 14px}.article-number{font-size:12px;font-weight:bold}.tiles h2{margin:3px 0 0;font:bold 19px/1.18 Georgia,serif}footer{font-size:13px}@media(max-width:850px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:620px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.nav-inner,main,footer{padding-inline:14px}.tiles h2{font-size:17px}}@media(max-width:340px){.tiles{grid-template-columns:1fr}}
+.health-hero{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);align-items:stretch;overflow:hidden;padding:0;background:#fff4cd}
+.health-hero-copy{align-self:center;padding:clamp(22px,5vw,56px)}
+.health-hero img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+@media(max-width:650px){.health-hero{grid-template-columns:1fr}.health-hero img{aspect-ratio:3/2}}
 .health-sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;margin:24px 0 8px}
 .health-sections a{display:flex;flex-direction:column;gap:6px;padding:20px;background:var(--paper);border:2px solid var(--ink);border-radius:12px;box-shadow:3px 3px 0 var(--ink);text-decoration:none}
 .health-sections a:hover{background:#e6f4ee}.health-sections strong{font:bold 26px Georgia,serif}
@@ -34,7 +38,10 @@ if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split
 <!-- /sitenav:auto -->
 <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner"><a href="/" class="brand"><img src="/assets/brand/logo-clear.png" width="560" height="257" alt="srini.presents home"></a><a href="/">← Home</a></div></nav>
 <main>
-  <header><h1>Health</h1></header>
+  <header class="health-hero">
+    <div class="health-hero-copy"><h1>Health</h1></div>
+    <img src="/health/health-banner.jpg" alt="" width="1200" height="800" fetchpriority="high">
+  </header>
   <nav class="health-sections" aria-label="Health sections">
     <a href="/health/general/"><strong>General</strong><span>25 articles on common health conditions</span></a>
     <a href="/health/ortho/"><strong>Orthopaedics</strong><span>40 articles on knee replacement, fractures, neck pain and shoulders</span></a>
