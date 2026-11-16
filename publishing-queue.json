@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-16",
+  "last_published_on": "2026-11-17",
   "entries": [
     {
       "number": 1,
@@ -111,8 +111,8 @@
       "path": "/sabarimala-vow/",
       "title": "The 41-Day Sabarimala Vow, Decoded",
       "not_before": "2026-11-17T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-17T05:20:18+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"11\"><a href=\"/sabarimala-vow/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M14 88H86V76H74V64H62V52H50V40H38V28H26V88Z\" fill=\"#ffd23f\"/><ellipse cx=\"66\" cy=\"22\" rx=\"14\" ry=\"10\" fill=\"#151515\"/></g></svg></div><div class=\"card-copy\"><h3>The 41-Day Sabarimala Vow, Decoded</h3><p>The mala, the black clothes, the two-pocket irumudi, the 18 steps, and how Kerala moves lakhs of pilgrims through a tiger reserve.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">17 Nov 2026</span></li>"
     },
     {
