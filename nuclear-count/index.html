@@ -1,0 +1,341 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><title>How Many Nuclear Weapons Exist, and How Does Anyone Count Them? — srini.presents</title><meta name="description" content="About 12,187 nuclear warheads exist, but no government announced that number. How researchers count hidden arsenals with satellites, budgets and plutonium arithmetic, and where India fits."><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap'>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="myth-fact">
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box}body{padding:24px 18px 48px}.wrap{max-width:1060px;margin:auto;display:grid;gap:36px}.cover{background:#ffd23f!important;color:#151515!important;padding:28px 24px;border:4px solid var(--line);box-shadow:8px 8px 0 var(--line)}.cover h1{color:#151515!important;font-size:clamp(45px,7vw,78px);line-height:1.03;text-shadow:none!important;-webkit-text-stroke:0!important;margin:20px 0}.cover .byline{color:#9d0208!important;font-size:28px!important;white-space:normal!important}.tagline{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:5px}.sample{display:inline-block;background:#151515;color:#fff;padding:5px 10px;font-weight:bold}.cast{display:flex;gap:30px;flex-wrap:wrap}.cast figure{margin:12px 0 0;max-width:180px;font-weight:bold}.cast svg{display:block;width:84px;height:84px;background:white;border:2px solid #151515;border-radius:50%;margin-bottom:8px}.cast small{font-weight:normal}.fact{display:block!important;font-size:18px;line-height:1.5}.say{align-items:flex-start}.av{flex-shrink:0;width:54px;height:54px}.bubble{min-width:0}.ep{min-width:0}.grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.panel{min-width:0}a{color:#165da3}.cover .sub{color:#151515!important}.evidence{padding:20px;border:3px solid var(--line);background:var(--panel)}.evidence p,.evidence li{font-size:15px;line-height:1.5}.next{background:#ffd23f;color:#151515;border:3px solid var(--line);padding:18px;font-size:19px}.foot{text-align:center}h2{line-height:1.15}.fs{display:flex;flex-wrap:wrap;gap:8px}.fs span{background:#fff!important;color:#151515!important;border:2px solid #151515;padding:4px 8px}
+@media(prefers-color-scheme:dark){a{color:#8cc9ff}.sfx{color:#ffae73}.sfx.b{color:#86c6ff}.sfx.r{color:#ff9ca6}.cap,.take,.warn{color:#151515}.take{background:#dff2e5}}
+@media(max-width:640px){body{padding:16px 16px 32px}.wrap{gap:28px}.grid{grid-template-columns:minmax(0,1fr)!important}.cover{padding:22px 16px}.ep{padding:12px}.panel{padding:12px}.fact{font-size:17.5px}.ep-head{align-items:flex-start}.cover h1{font-size:48px}.ep h2{font-size:29px}.cast{gap:20px}.cast figure{max-width:125px}}
+</style><style>
+.wrap{gap:36px}.cover h1{font-size:clamp(44px,6.2vw,72px)}.cover .sub{max-width:45ch;line-height:1.55}.cast figure{font-size:17px}.ep{display:grid;gap:22px}.ep-head{margin-bottom:0}.reading{max-width:760px;width:100%;margin:0 auto;font:19px/1.65 var(--body)}.reading p{margin:0 0 16px}.reading p:last-child{margin-bottom:0}.reading .cap{margin:0 0 14px;font-size:19px;line-height:1.4}.lead{font-size:22px;font-weight:700;line-height:1.5}.banter{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:18px;background:var(--panel);border-top:2px dashed var(--muted);border-bottom:2px dashed var(--muted)}.banter .bubble{margin:0;line-height:1.5}.math{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bill{padding:18px;border:3px solid var(--line);background:var(--panel)}.bill h3{font-family:var(--display);font-size:28px;letter-spacing:.03em;margin:0 0 12px}.bill dl{margin:0}.bill dl div{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.bill dd{margin:0;white-space:nowrap;font-weight:700}.bill .total{border-top:2px solid var(--line);padding-top:10px;font-size:23px}.delta{background:#ffd23f;color:#151515;padding:15px 18px;border:3px solid var(--line);font-size:21px;font-weight:700;text-align:center}.ep .take{font-size:19px;line-height:1.55;border:2px solid #245e3b;background:#e3f5ea;color:#153c25;padding:16px 18px}.questions{display:grid;gap:13px}.question{border:2px solid var(--line);padding:15px 18px;background:var(--panel)}.question h3{font-family:var(--body);font-size:20px;line-height:1.4;margin:0 0 7px}.question p{margin:0}.source-note{font-size:15px!important;color:var(--muted)}.sample-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.sample-nav a{border:2px solid #151515;color:#151515;background:white;padding:6px 12px;font-weight:700;text-decoration:none}.ep p{overflow-wrap:break-word}.page-marker{font-weight:700;color:var(--muted);font-size:15px;letter-spacing:.08em}.ep-head .no{white-space:nowrap}html{scroll-behavior:smooth}
+@media(max-width:640px){.reading{font-size:17.5px;line-height:1.6}.reading .lead{font-size:20px!important}.banter,.math{grid-template-columns:minmax(0,1fr)}.banter{padding:16px 0;gap:16px}.ep{gap:18px}.bill{padding:16px}.question{padding:14px}.question h3{font-size:19px}.cover h1{font-size:46px}.ep .take{font-size:17.5px}.reading .cap{font-size:18px}.delta{font-size:19px}.wrap{gap:28px}.sample-nav{gap:8px}.sample-nav a{font-size:15px}.ep-head h2{font-size:32px}}
+@media(prefers-color-scheme:dark){.ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#e9edf2;--muted:#a8b3bf}:root[data-theme="dark"] .ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}
+</style><style>
+.cover{background:#c2410c!important;color:#fff!important}.cover h1,.cover .sub{color:#fff!important}.cover .byline{color:#fff1a8!important}.cover .cast figure{color:#fff}.cover .tagline{color:#fff1a8}.time-box{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:20px;text-align:center}.time-box strong{display:block;font:clamp(44px,7vw,68px)/1.2 var(--display);letter-spacing:.03em}.time-box p{margin:8px 0 0}.spot{width:84px;height:84px;background:white;border:3px solid #151515;border-radius:16px;padding:5px;justify-self:center;box-shadow:3px 3px 0 #151515}.opinion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opinion article{border:2px solid var(--line);padding:16px}.opinion h3{font:24px var(--display);margin:0 0 10px}.opinion p{font-size:18px;line-height:1.55;margin:0}.math-note{border-left:6px solid #e8590c;padding:12px 18px;background:var(--panel)}.cheat{background:#ffd23f!important;color:#151515!important}.cheat .question{background:#fff;color:#151515;border-color:#151515}.cheat .question p{font-size:18px}.source-list{padding-left:22px}.source-list li{margin-bottom:12px}.evidence a{overflow-wrap:anywhere}.sample{background:#fff!important;color:#151515!important}.era{margin:0}.take strong{font-weight:700}@media(max-width:640px){.opinion{grid-template-columns:minmax(0,1fr)}.opinion p{font-size:17.5px}.spot{width:76px;height:76px}.time-box{padding:16px}.time-box strong{font-size:48px}.cheat .question p{font-size:17.5px}}
+</style><style>
+.cover{display:block;background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important;font-size:clamp(40px,6.3vw,74px)}.cover .byline{color:#ffd23f!important}.cover .sub{color:#fff!important;max-width:62ch}.readtime{margin-top:22px}.cover .tagline{color:white}.cover .sample{background:#ffd23f;color:#151515}.cover .cast{margin-top:12px}.cover .cast figure{max-width:180px}.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.place{border:3px solid var(--line);padding:18px;background:var(--panel)}.place h3{font-family:var(--display);font-size:27px;margin:0 0 8px}.digits{font-family:var(--display);font-size:76px;text-align:center;letter-spacing:.12em;color:var(--ink);line-height:1.1}.digits small{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:12px}.spot{width:110px;height:110px}.reading{max-width:760px}.opinion article{min-width:0}.bill p{font-size:18px}.evidence h2{font-family:var(--display);font-size:32px}.source-list li{margin:12px 0}.stamp{text-align:center;font-size:15px;color:var(--muted)}
+:root[data-theme="dark"] a{color:#8cc9ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .take{color:#d9f2e3;background:#173326}}
+@media(max-width:640px){.duo{grid-template-columns:1fr}.cover h1{font-size:42px}.reading p,.bubble{line-height:1.6!important}.digits{font-size:64px}.cover .cast{gap:22px}.cover .cast figure{font-size:16px}.opinion{grid-template-columns:1fr!important}.bill .total{font-size:21px}}
+@media print{body{background:white;padding:0}.cover,.ep,.evidence,.era{box-shadow:none;break-inside:avoid}.wrap{gap:20px}}
+</style><style id="tue-cover">.cover{background:#ffd23f!important;color:#151515!important}.cover h1,.cover .sub,.cover .cast figure,.cover .readtime,.cover .tagline{color:#151515!important}.cover .byline{color:#9d0208!important}.cover .sample{background:#151515!important;color:#fff!important}</style>
+<style id="follow">.follow{border:3px dashed var(--line);padding:22px 18px;text-align:center;font:18px/1.6 var(--body)}.follow b{font-family:var(--display);font-weight:400;font-size:28px;letter-spacing:.05em;display:block}.follow a{font-weight:700}</style><style id="clean-subheads">
+.place h3,.bill h3,.question h3,.opinion h3,table.vs th,table.vs.stk td:first-child,.gamelist b,.myth::before,.factx::before,.take::before,.warn::before,.dstag,.coming b{font-family:var(--body)!important;font-weight:800!important;letter-spacing:.01em!important;-webkit-text-stroke:0!important;text-shadow:none!important}
+.place h3,.bill h3{font-size:21px!important;line-height:1.25!important}
+</style><style id="bars-grid">
+.bar{display:grid;grid-template-columns:200px 1fr;gap:8px 12px;align-items:center;max-width:760px;width:100%;margin:0 auto}
+.bar span{font-weight:700;font-size:16px}
+.bar div{height:34px;display:flex;align-items:center;padding-left:10px;border:3px solid var(--line)}
+</style>
+<style id="cover-logo">
+.cover .brandmark{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.cover .brandmark img{display:block;width:220px;height:auto}
+.cover .brandmark .tagline{color:#9d0208!important;margin-top:0}
+.bar div.none{border-style:dashed}
+.bar div{min-width:max-content;white-space:nowrap;padding-right:10px}
+@media(max-width:640px){.cover .brandmark img{width:180px}}
+</style>
+<style id="thu-cover">.cover{background:#1d4f9a!important;color:#fff!important}.cover h1{color:#ffd23f!important}.cover .sub,.cover .cast figure,.cover .readtime,.cover .tagline,.cover .cast small{color:#fff!important}.cover .byline{color:#fff!important}.cover .fs span{color:#151515}</style>
+<style id="brand-logo">.brand{display:inline-flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0 0 14px}.brand img{display:block;width:210px;max-width:70vw;height:auto;background:#ebeae0;border:3px solid #151515;border-radius:14px;padding:6px 10px;box-shadow:4px 4px 0 #151515}.brand .tagline{margin:0!important}.wordmark img.brand-mark{display:block;height:92px;width:auto;margin:-6px 0}@media(max-width:640px){.brand img{width:180px}.wordmark img.brand-mark{height:66px;margin:-4px 0}}</style></head><body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/archive/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></svg><main class="wrap"><header class="cover"><div class="brand"><img data-brand-logo src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"><span class="tagline">for curious grown-ups</span></div><h1>How Many Nuclear Weapons Exist, and How Does Anyone Count Them?</h1><p class="sub">The number everyone quotes is about 12,000. No government announced it. It was worked out by researchers using satellite photos, budget documents, plutonium arithmetic and a great deal of patience.</p><div class="fs"><span>The 12,187 estimate</span><span>Counting from space</span><span>Where India fits</span></div><div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>would like a recount</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>remembers when it was 70,000</small></figure></div><p class="readtime">ABOUT 8 MINUTES</p></header>
+
+<section class="ep" id="section-01"><div class="ep-head"><span class="no">01</span><h2>A number nobody announces</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="12" y="20" width="76" height="60" rx="6" fill="#fff"/><path d="M24 34V66M32 34V66M40 34V66M48 34V66M20 58L54 40" fill="none"/><path d="M66 40Q66 30 74 30Q82 30 82 38Q82 44 74 48V54" fill="none" stroke="#e63946" stroke-width="4"/><circle cx="74" cy="64" r="2.5" fill="#e63946" stroke="#e63946"/></g></svg><div class="reading"><p class="lead">Today, 19 November 2026, the leaders of the United States, China and Russia are due to sit at one table in Shenzhen, China, with nuclear arms cuts on the agenda.</p><p>It is the first meeting of its kind between the leaders of the world&#8217;s three largest nuclear powers. <a href="#s1">[1]</a> Even the White House has played down expectations; a senior official said they did not expect any agreement. <a href="#s2">[2]</a></p><p>Here is the odd part. To cut something, you need to know how much there is. Yet the figure in every news report, about <b>12,187 nuclear warheads</b> in the world as of January 2026, was not announced by any government. <a href="#s3">[3]</a> It is an <b>estimate</b>, built by a small group of researchers from public clues.</p><p>Of the nine countries with nuclear weapons, only three (the US, the UK and France) have ever declared how many they hold. <a href="#s4">[4]</a> The rest, including India, never have.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the most important number in the world is basically a guess?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>An estimate. A guess has no method. This one has a very good one.</p></div></div></section>
+
+<section class="ep" id="section-02"><div class="ep-head"><span class="no">02</span><h2>One number is really three</h2></div><svg class="spot r" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="8" y="10" width="84" height="80" rx="6" fill="#ffd23f"/><rect x="20" y="26" width="60" height="56" rx="5" fill="#fff"/><rect x="32" y="44" width="36" height="34" rx="4" fill="#e8590c"/></g></svg><div class="reading"><p>&#8220;How many nuclear weapons?&#8221; has three honest answers, and news reports often mix them up.</p><p>The <b>total inventory</b> counts every warhead that still exists, including old ones that have been retired and are waiting in a queue to be taken apart. The <b>military stockpile</b> is the smaller group a country keeps ready for possible use. The <b>deployed</b> warheads are the ones actually sitting on missiles or at bomber bases. <a href="#s3">[3]</a> <a href="#s5">[5]</a></p></div><div class="cap">The world&#8217;s warheads, January 2026 (estimates)</div><div class="bar" aria-label="Total inventory 12,187; military stockpile 9,745; deployed about 3,900 to 4,000; on high alert about 2,100"><span>Total inventory</span><div style="width:100%;background:#151515;color:#fff">12,187</div><span>Military stockpile</span><div style="width:80%;background:#e8590c;color:#fff">9,745</div><span>Deployed</span><div style="width:33%;background:#e63946;color:#fff">~4,000</div><span>On high alert</span><div style="width:17%;background:#ffd23f;color:#151515">~2,100</div></div><p class="deck-note">One common scale; very short bars widen to fit their labels. SIPRI counts 4,012 deployed; the Federation of American Scientists counts about 3,912. Sources: <a href="#s3">[3]</a> <a href="#s5">[5]</a></p><div class="reading"><p>About <b>2,100</b> of the deployed warheads, all American, Russian, British and French, are kept on high alert, ready to launch at short notice. <a href="#s5">[5]</a> The usable stockpile alone carries the explosive force of more than <b>135,000 Hiroshima bombs</b>. <a href="#s6">[6]</a></p></div></section>
+
+<section class="ep" id="section-03"><div class="ep-head"><span class="no">03</span><h2>Who holds them</h2></div><div class="reading"><p>Nine countries own all of them. Here is the estimate from the Federation of American Scientists (FAS), the group whose researchers also write the nuclear chapter of the SIPRI Yearbook, the reference most newspapers quote. <a href="#s5">[5]</a> <a href="#s3">[3]</a></p></div><table class="vs stk"><thead><tr><th>Country</th><th>Total warheads (estimate)</th><th>Has it ever declared a number?</th></tr></thead><tbody>
+<tr><td data-label="Country">Russia</td><td data-label="Total warheads (estimate)">5,420</td><td data-label="Has it ever declared a number?">No (treaty data only)</td></tr>
+<tr><td data-label="Country">United States</td><td data-label="Total warheads (estimate)">5,042</td><td data-label="Has it ever declared a number?">Yes, in some years</td></tr>
+<tr><td data-label="Country">China</td><td data-label="Total warheads (estimate)">620</td><td data-label="Has it ever declared a number?">No</td></tr>
+<tr><td data-label="Country">France</td><td data-label="Total warheads (estimate)">370</td><td data-label="Has it ever declared a number?">Yes</td></tr>
+<tr><td data-label="Country">United Kingdom</td><td data-label="Total warheads (estimate)">225</td><td data-label="Has it ever declared a number?">Yes</td></tr>
+<tr><td data-label="Country">India</td><td data-label="Total warheads (estimate)">190</td><td data-label="Has it ever declared a number?">No</td></tr>
+<tr><td data-label="Country">Pakistan</td><td data-label="Total warheads (estimate)">170</td><td data-label="Has it ever declared a number?">No</td></tr>
+<tr><td data-label="Country">Israel</td><td data-label="Total warheads (estimate)">90</td><td data-label="Has it ever declared a number?">Does not confirm it has any</td></tr>
+<tr><td data-label="Country">North Korea</td><td data-label="Total warheads (estimate)">60</td><td data-label="Has it ever declared a number?">No</td></tr>
+</tbody></table><p class="deck-note">Totals include retired warheads awaiting dismantlement. Declaration column summarises SIPRI&#8217;s account. Sources: <a href="#s5">[5]</a> <a href="#s4">[4]</a></p><div class="reading"><p>Two countries dominate. By our arithmetic, Russia and the US together hold about <b>86%</b> of all warheads in the world. <a href="#s5">[5]</a> ChinaChina&#8217;s 620 is the number most closely watched, because it has been rising fastest.#8217;s 620 is the most closely watched number of all, for reasons episode 6 explains.</p></div></section>
+
+<section class="ep" id="section-04"><div class="ep-head"><span class="no">04</span><h2>From 70,000 to 12,000, and turning again</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M10 88H92M10 88V10" fill="none"/><path d="M14 74L30 30L44 22L58 56L74 70L88 64" fill="none" stroke="#e63946" stroke-width="4"/><circle cx="44" cy="22" r="4" fill="#ffd23f"/><circle cx="88" cy="64" r="4" fill="#ffd23f"/></g></svg><div class="reading"><p>The world&#8217;s count peaked at about <b>70,300 warheads in 1986</b>, at the height of the Cold War. Most of the fall since then happened in the 1990s, after the Soviet Union broke up. <a href="#s5">[5]</a> The US stockpile alone had peaked even earlier, at <b>31,225</b> in 1967. <a href="#s7">[7]</a></p><p>So the headline number is still shrinking, slowly, as old retired warheads are taken apart. But the number kept <b>ready for use</b> has started growing again. <a href="#s5">[5]</a> SIPRI&#8217;s 2026 Yearbook describes countries leaning on nuclear weapons more, reversing decades of effort to reduce their numbers and role. <a href="#s8">[8]</a></p><p>The rules have thinned too. New START, the last treaty limiting American and Russian strategic weapons, expired on <b>5 February 2026</b>. <a href="#s9">[9]</a> For the first time since the early 1970s, there is no legal cap on either country&#8217;s strategic forces. <a href="#s10">[10]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the total goes down while the ready ones go up?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Like clearing out the attic while buying new furniture.</p></div></div></section>
+
+<div class="era p2">THE DEEP DIVE<small>How do you count something its owners are trying to hide?</small></div>
+
+<section class="ep" id="section-05"><div class="ep-head"><span class="no">05</span><h2>The counter&#8217;s toolkit</h2></div><svg class="spot r" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="14" y="14" width="50" height="66" rx="4" fill="#fff"/><path d="M24 30H54M24 42H54M24 54H44" fill="none"/><circle cx="62" cy="62" r="16" fill="#d6ecff"/><path d="M74 74L90 90" fill="none" stroke-width="6"/></g></svg><div class="reading"><p>The estimates come mainly from two researchers at FAS, Hans Kristensen and Matt Korda, who have explained their method publicly. <a href="#s4">[4]</a> They piece the count together from several kinds of clue, each checking the others:</p></div><div class="cap">Where the clues come from</div><div class="chain" aria-label="Government documents and budgets, then treaty data, then fissile material limits, then satellite images, then leaks and conversations, then a cross-checked estimate"><span>Government papers &amp; budgets</span><i aria-hidden="true">&#8594;</i><span>Treaty data</span><i aria-hidden="true">&#8594;</i><span>Fissile-material limits</span><i aria-hidden="true">&#8594;</i><span>Satellite images</span><i aria-hidden="true">&#8594;</i><span>Leaks &amp; conversations</span><i aria-hidden="true">&#8594;</i><span class="hit">Estimate</span></div><div class="reading"><p><b>Budgets and documents</b> describe weapon programmes, even when the totals are secret. <a href="#s4">[4]</a> <b>Treaty data</b> was once the richest source: New START allowed each side up to <b>18 on-site inspections</b> a year and about 2,000 notifications a year. <a href="#s11">[11]</a> Inspections stopped during COVID and never restarted. <a href="#s10">[10]</a></p><p><b>Fissile material</b> sets a ceiling. A warhead needs a few kilograms of plutonium or highly enriched uranium, so knowing how much a country has made tells you the most it <i>could</i> have built. The researchers do not simply divide, because countries keep material in reserve. <a href="#s4">[4]</a></p><p>Then come <b>satellite photos</b> of bases and construction, and, used carefully, <b>leaks and off-the-record conversations</b>. Social media is treated with suspicion, because reports often repeat each other. <a href="#s4">[4]</a></p></div></section>
+
+<section class="ep" id="section-06"><div class="ep-head"><span class="no">06</span><h2>Counting from space, and checking the answer</h2></div><svg class="spot" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="38" y="14" width="24" height="18" fill="#d6ecff"/><rect x="10" y="17" width="24" height="12" fill="#1f7ad1"/><rect x="66" y="17" width="24" height="12" fill="#1f7ad1"/><path d="M50 32V40" fill="none"/><path d="M38 48L20 88H80L62 48" fill="#ffd23f" stroke-dasharray="5 5" opacity=".6"/><circle cx="34" cy="78" r="3" fill="#151515"/><circle cx="48" cy="78" r="3" fill="#151515"/><circle cx="62" cy="78" r="3" fill="#151515"/><circle cx="41" cy="66" r="3" fill="#151515"/><circle cx="55" cy="66" r="3" fill="#151515"/></g></svg><div class="reading"><p>In June 2021, researchers at the James Martin Center for Nonproliferation Studies in California were studying commercial satellite pictures of China&#8217;s western desert. They spotted about <b>120 missile silos</b> under construction near Yumen. <a href="#s12">[12]</a> Weeks later, Matt Korda at FAS used the same kind of images to find a second field of about <b>110 silos</b> near Hami, some 380 km away. FAS called it the biggest expansion of China&#8217;s nuclear arsenal ever. <a href="#s13">[13]</a></p><p>The giveaway was almost comic: identical white shelter domes laid out in neat grids, so the builders could work out of sight. That repetition is what led the analysts from one field to the next. <a href="#s14">[14]</a></p><p>But how good are these estimates? There is one clean test. In February 2009, Kristensen and a colleague estimated the US stockpile at <b>5,200</b> warheads. <a href="#s15">[15]</a> In May 2010, the US declassified the real figure for that date: <b>5,113</b>. <a href="#s7">[7]</a> By our arithmetic, the outside estimate was off by less than 2%.</p><p>That window has since closed again. In 2019 the Pentagon refused a request to release the current stockpile number. <a href="#s16">[16]</a></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>They found 230 silos using the same kind of pictures as a map app?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Sharper pictures, and a lot more patience. But yes, mostly the same sky.</p></div></div></section>
+
+<section class="ep" id="section-07"><div class="ep-head"><span class="no">07</span><h2>Where India fits, and a plant near Mysuru</h2></div><svg class="spot r" viewBox="0 0 100 100" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round"><rect x="12" y="20" width="16" height="64" rx="8" fill="#fff"/><rect x="34" y="20" width="16" height="64" rx="8" fill="#fff"/><rect x="56" y="20" width="16" height="64" rx="8" fill="#fff"/><path d="M20 30V74M42 30V74M64 30V74" fill="none" stroke="#1f7ad1" stroke-dasharray="4 6"/><path d="M78 52H92M85 45V59" fill="none" stroke="#2a9d5c" stroke-width="4"/></g></svg><div class="reading"><p>India has never said how many nuclear weapons it has. So the estimate starts with plutonium. The International Panel on Fissile Materials estimates that India had made about <b>730 kg</b> of weapons-grade plutonium by early 2026, give or take about 170 kg. At roughly 4 kg per warhead, that is enough for <b>140 to 225</b> warheads. <a href="#s17">[17]</a></p><p>The researchers then look at India&#8217;s missiles, aircraft and submarines and judge how many warheads that force needs. Their answer: up to <b>190</b>. <a href="#s18">[18]</a> Even the two big trackers read India differently. SIPRI estimates that 12 Indian warheads may now be deployed on a submarine on patrol; FAS lists none as deployed. <a href="#s19">[19]</a> <a href="#s5">[5]</a> The government&#8217;s stated policy is &#8220;credible minimum deterrence&#8221; and &#8220;no first use&#8221;: India says it will use nuclear weapons only in retaliation for a nuclear attack. <a href="#s20">[20]</a> <a href="#s21">[21]</a></p><p>Karnataka has its own place in these reports. About 15 km from Mysuru, at Ratnahalli, sits the <b>Rare Materials Plant</b>, a uranium enrichment facility using gas centrifuges, machines that spin uranium gas to concentrate the useful kind. <a href="#s22">[22]</a> Its work is secret, but analysts at the Institute for Science and International Security have watched it for years through <b>commercial satellite images</b>, the same method used on China. They believe it has supplied enriched uranium for India&#8217;s nuclear-powered submarine, INS Arihant. <a href="#s23">[23]</a> A second, larger enrichment complex has been reported in Chitradurga district. <a href="#s24">[24]</a></p></div><div class="take">Everything about the Mysuru plant&#8217;s output here comes from outside analysts and reports; the government does not publish details.</div></section>
+
+<section class="ep" id="section-08"><div class="ep-head"><span class="no">08</span><h2>The world&#8217;s most important estimate</h2></div><div class="reading"><p>It is strange, when you think about it. The weapons that shaped the last 80 years of world politics are counted the way an astronomer counts stars in a distant galaxy: from light, shadows and arithmetic, never by touching them.</p><p>And the method only works as well as the clues allow. With New START gone and fewer governments publishing anything, the clues are getting thinner just as the numbers start rising. Whatever is said at Shenzhen, the first question for any future deal is the one in this article&#8217;s title: how many are there, and how would anyone check?</p><p>Until someone opens the doors, the best answer we have will keep coming from people looking down from space and adding up kilograms.</p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the most important number in the world is homework.</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Very careful homework. Marked against satellite photos.</p></div></div></section>
+
+<section class="evidence" id="sources"><h2>The evidence file</h2><p>Checked 17 November 2026. Source types are labelled. All warhead numbers for countries other than declared figures are independent estimates, and the main trackers revise them every year. Our arithmetic: Russia plus US = 10,462 of 12,187 (about 86%); 5,200 vs 5,113 is a difference of 87 warheads (about 1.7%).</p><ol class="source-list">
+<li id="s1"><a href="https://swarajyamag.com/world/trump-putin-and-xi-jinping-to-hold-trilateral-meeting-on-nuclear-arms-reduction-in-china-on-19-november">Swarajya: Trump, Putin and Xi Jinping to hold trilateral meeting on nuclear arms reduction on 19 November</a> — news magazine, November 2026; first such talks; APEC in Shenzhen. Also <a href="https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china">Al Jazeera</a>, 14 November 2026 (news).</li>
+<li id="s2"><a href="https://www.al-monitor.com/originals/2026/11/trump-raise-nuclear-arms-cuts-putin-xi-thursday-white-house-says">Reuters via Al-Monitor: Trump to raise nuclear-arms cuts with Putin, Xi</a> — news agency, 13 November 2026; senior official does not expect an agreement.</li>
+<li id="s3"><a href="https://www.sipri.org/sites/default/files/YB26%2008%20World%20Nuclear%20Forces.pdf">SIPRI Yearbook 2026, Chapter 8: World nuclear forces</a> — independent research institute (Stockholm), June 2026; 12,187 total, 9,745 in military stockpiles; 4,012 deployed (as reported by <a href="https://defence-industry.eu/sipri-says-nuclear-armed-states-are-expanding-and-modernising-arsenals-as-escalation-risks-and-arms-control-pressures-grow/">Defence Industry Europe</a>); definitions of deployed, retired and total inventory from SIPRI&#8217;s <a href="https://datawrapper.dwcdn.net/vIDRY/1/">data table notes</a>.</li>
+<li id="s4"><a href="https://www.sipri.org/commentary/topical-backgrounder/2021/estimating-world-nuclear-forces-overview-and-assessment-sources">Kristensen &amp; Korda: Estimating world nuclear forces, an overview and assessment of sources</a> — research institute commentary (SIPRI), 2021; source types; only the US, UK and France have declared stockpile sizes; fissile material as an upper limit; Israel does not acknowledge its weapons.</li>
+<li id="s5"><a href="https://fas.org/initiative/status-world-nuclear-forces/">Federation of American Scientists: Status of World Nuclear Forces 2026</a> — independent research organisation; country table; ~3,912 deployed; ~2,100 on high alert; 86% held by US and Russia; 1986 peak of about 70,300; stockpiles rising again; India listed with none deployed. The same page also gives 12,321 in its historical section; we use the table figure.</li>
+<li id="s6"><a href="https://banmonitor.org/news/press-release-25-march-2026-world-divided-over-nuclear-weapons-as-arsenals-grow-and-ban-treaty-gains-ground">Nuclear Weapons Ban Monitor: press release</a> — campaign/research report (Norwegian People&#8217;s Aid with FAS), 25 March 2026; more than 135,000 Hiroshima bombs.</li>
+<li id="s7"><a href="https://tribune.com.pk/story/10713/us-says-nuclear-arsenal-includes-5113-warheads">Reuters via Express Tribune: US says nuclear arsenal includes 5,113 warheads</a> — news agency, 4 May 2010; peak of 31,225 in 1967. Official figure confirmed in the <a href="https://www.af.mil/News/Article-Display/Article/116787/officials-declassify-nuclear-stockpile-details-to-promote-transparency">US Air Force news release</a> (government), 4 May 2010.</li>
+<li id="s8"><a href="https://www.sipri.org/node/7895">SIPRI: New SIPRI Yearbook out now</a> — research institute press release, June 2026; states increasingly relying on nuclear weapons.</li>
+<li id="s9"><a href="https://www.icanw.org/new_start_expiration_what_it_means_and_what_s_next">ICAN: New START expiration</a> — campaign organisation, February 2026; treaty could be extended only once, expired 5 February 2026.</li>
+<li id="s10"><a href="https://cfr.org/articles/nukes-without-limits-a-new-era-after-the-end-of-new-start">Council on Foreign Relations: Nukes without limits?</a> — think tank, 2026; inspections ceased during COVID and never restarted. &#8220;First time since the early 1970s&#8221; from <a href="https://365.military.com/feature/2026/02/06/after-new-start-why-end-of-us-russia-nuclear-limits-matters.html">Military.com</a> (news), 6 February 2026.</li>
+<li id="s11"><a href="https://europeanleadershipnetwork.org/commentary/life-without-the-new-start-treaty-what-nuclear-weapons-states-can-do-to-help-strengthen-the-non-proliferation-regime/">European Leadership Network: Life without the New START Treaty</a> — think tank commentary, 17 February 2026; up to 18 on-site inspections per year; about 2,000 notifications per year.</li>
+<li id="s12"><a href="https://www.aljazeera.com/amp/news/2021/7/28/china-is-building-a-second-missile-silo-field-say-us-researchers">Al Jazeera: China is building a second base for nuclear missiles, say analysts</a> — news, 28 July 2021; 120 silos near Yumen; about 230 silos found using commercial satellite data. Discovery by the James Martin Center from <a href="https://m.washingtontimes.com/news/2021/aug/12/china-engaged-breathtaking-nuclear-breakout-us-str/">Washington Times</a> (newspaper).</li>
+<li id="s13"><a href="https://fas.org/blogs/security/2021/07/china-is-building-a-second-nuclear-missile-silo-field/">FAS: China is building a second nuclear missile silo field</a> — research organisation, July 2021; Hami, 380 km from Yumen; first spotted by Matt Korda; &#8220;most significant expansion&#8221;. About 110 silos from <a href="https://www.armscontrol.org/node/12513">Arms Control Association</a> (research organisation).</li>
+<li id="s14"><a href="https://fas.org/publication/a-closer-look-at-chinas-missile-silo-construction/">FAS: A closer look at China&#8217;s missile silo construction</a> — research organisation, November 2021; identical shelter domes; structures first seen at Jilantai led to the discoveries.</li>
+<li id="s15"><a href="https://fas.org/blogs/secrecy/2015/01/arsenal-classified/">FAS: Size of US nuclear arsenal remains classified</a> — research organisation, January 2015; Kristensen and Norris estimated 5,200 in February 2009.</li>
+<li id="s16"><a href="https://www.upi.com/Defense-News/2019/04/18/Pentagon-declines-to-disclose-US-nuclear-weapons-stockpile/1001555592186/">UPI: Pentagon declines to disclose US nuclear weapons stockpile</a> — news agency, 18 April 2019.</li>
+<li id="s17"><a href="https://www.outlookindia.com/international/indias-nuclear-stockpile-estimated-at-190-warheads-report">Outlook: India&#8217;s nuclear stockpile estimated at 190 warheads</a> — news magazine, September 2026; IPFM estimate of about 730 kg ±170 kg; about 4 kg per warhead; 140–225 warheads; not an official Indian figure.</li>
+<li id="s18"><a href="https://thebulletin.org/?p=133667">Kristensen et al.: Indian nuclear weapons, 2026</a> — peer-reviewed column (Nuclear Notebook), <i>Bulletin of the Atomic Scientists</i>, September 2026; up to 190 warheads.</li>
+<li id="s19"><a href="https://www.thenews.pk/print/1419690-nuclear-disarmament-era-in-reverse-sipri">The News: Nuclear disarmament era in reverse, SIPRI</a> — newspaper, June 2026; SIPRI&#8217;s assessment that India may have begun deploying a small number of warheads on a submarine; 12 deployed per <a href="https://visionias.in/current-affairs/news-today/2026-06-09">Vision IAS summary of SIPRI</a> (exam-prep site).</li>
+<li id="s20"><a href="https://www.freepressjournal.in/business/india-may-have-190-nuclear-warheads-more-weapon-systems-in-development-us-think-tank">Free Press Journal: India may have 190 nuclear warheads</a> — newspaper, 2026; government told Parliament India is committed to credible minimum deterrence and no first use.</li>
+<li id="s21"><a href="https://indiawrites.org/diplomacy/revisiting-indias-nuclear-doctrine-is-it-necessary/">India Writes: Revisiting India&#8217;s nuclear doctrine</a> — policy magazine; summary of the Cabinet Committee on Security statement of 4 January 2003 (retaliation only).</li>
+<li id="s22"><a href="https://mainstreamweekly.net/article2685.html">Mainstream Weekly: Uranium enrichment plant, focus on Mysore</a> — magazine opinion article, April 2011; Rare Materials Plant at Ratnahalli, about 15 km from Mysuru.</li>
+<li id="s23"><a href="https://isis-online.org/isis-reports/detail/indias-new-uranium-enrichment-plant-in-karnataka1">ISIS: India&#8217;s new uranium enrichment plant in Karnataka</a> — independent research institute, 1 July 2014; RMP believed to have produced HEU for INS Arihant. Satellite monitoring described in <a href="https://isis-online.org/isis-reports/detail/construction-finishing-of-likely-new-indian-centrifuge-facility-at-rare-mat/7">ISIS, December 2013</a>.</li>
+<li id="s24"><a href="https://www.deccanherald.com/amp/story/india%2Fchitradurga-set-to-host-uranium-enrichment-plant-403180.html">Deccan Herald: Chitradurga set to host uranium enrichment plant</a> — newspaper; Special Material Enrichment Facility, second nuclear fuel source in Karnataka after the Mysore RMP.</li>
+</ol><p>Zappy and Prof. Bolt are fictional; their dialogue is invented. This article describes estimates and policies neutrally and takes no side on nuclear policy. The comparison with astronomers in episode 8 is our observation.</p></section>
+
+<section class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></section>
+<footer class="foot">THE END · srini.presents · for curious grown-ups</footer></main>
+
+
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body></html>

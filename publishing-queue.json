@@ -127,13 +127,13 @@
     },
     {
       "number": 13,
-      "url": "https://srinipresents.com/drishti-face/",
-      "path": "/drishti-face/",
-      "title": "Who Is the Shocked Woman Staring From Every Half-Built House?",
+      "url": "https://srinipresents.com/nuclear-count/",
+      "path": "/nuclear-count/",
+      "title": "How Many Nuclear Weapons Exist, and How Does Anyone Count Them?",
       "not_before": "2026-11-19T05:00:00+05:30",
       "status": "pending",
       "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"13\"><a href=\"/drishti-face/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"14\" width=\"60\" height=\"72\" rx=\"4\" fill=\"#fff\"/><ellipse cx=\"38\" cy=\"46\" rx=\"10\" ry=\"11\" fill=\"#fff\"/><ellipse cx=\"62\" cy=\"46\" rx=\"10\" ry=\"11\" fill=\"#fff\"/><circle cx=\"38\" cy=\"47\" r=\"5\" fill=\"#151515\"/><circle cx=\"62\" cy=\"47\" r=\"5\" fill=\"#151515\"/><circle cx=\"50\" cy=\"28\" r=\"4\" fill=\"#e63946\" stroke=\"none\"/><ellipse cx=\"50\" cy=\"68\" rx=\"6\" ry=\"5\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>Who Is the Shocked Woman Staring From Every Half-Built House?</h3><p>The wide-eyed poster on Karnataka&#x27;s building sites is the newest drishti gombe. From temple faces to a tea-room experiment: why eyes that stare back work.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">19 Nov 2026</span></li>"
+      "card_html": "<li class=\"story-card\" data-queue-number=\"13\"><a href=\"/nuclear-count/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"34\" y=\"12\" width=\"20\" height=\"14\" fill=\"#d6ecff\"/><rect x=\"14\" y=\"14\" width=\"18\" height=\"10\" fill=\"#1f7ad1\"/><rect x=\"56\" y=\"14\" width=\"18\" height=\"10\" fill=\"#1f7ad1\"/><path d=\"M38 30L22 74H72L50 30\" fill=\"#ffd23f\" opacity=\".7\" stroke-dasharray=\"4 4\"/><path d=\"M12 74H88V88H12Z\" fill=\"#f1d9a7\"/><path d=\"M24 74a6 5 0 0 1 12 0M44 74a6 5 0 0 1 12 0M64 74a6 5 0 0 1 12 0\" fill=\"#fff\"/><circle cx=\"80\" cy=\"44\" r=\"9\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>How Many Nuclear Weapons Exist, and How Does Anyone Count Them?</h3><p>About 12,187 warheads, and no government announced it. How researchers count hidden arsenals from space, and where India fits.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">19 Nov 2026</span></li>"
     },
     {
       "number": 14,
@@ -244,6 +244,16 @@
       "status": "pending",
       "published_at": null,
       "card_html": "<li class=\"story-card\" data-queue-number=\"24\"><a href=\"/voter-list/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"12\" width=\"56\" height=\"74\" rx=\"5\" fill=\"#fff\"/><path d=\"M30 28H66M30 42H66M30 56H66M30 70H56\" stroke=\"#9aa5b1\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M26 42H70\" stroke=\"#e63946\" stroke-width=\"5\"/><circle cx=\"72\" cy=\"72\" r=\"13\" fill=\"#ffd23f\"/><path d=\"M66 72L71 77L79 67\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Nearly 1 Crore Voters Gone. Are You Still on the List?</h3><p>Why Karnataka’s voter list shrank by 99 lakh names, and how to check yours in two minutes.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">30 Nov 2026</span></li>"
+    },
+    {
+      "number": 25,
+      "url": "https://srinipresents.com/drishti-face/",
+      "path": "/drishti-face/",
+      "title": "Who Is the Shocked Woman Staring From Every Half-Built House?",
+      "not_before": "2026-12-01T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"25\"><a href=\"/drishti-face/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"14\" width=\"60\" height=\"72\" rx=\"4\" fill=\"#fff\"/><ellipse cx=\"38\" cy=\"46\" rx=\"10\" ry=\"11\" fill=\"#fff\"/><ellipse cx=\"62\" cy=\"46\" rx=\"10\" ry=\"11\" fill=\"#fff\"/><circle cx=\"38\" cy=\"47\" r=\"5\" fill=\"#151515\"/><circle cx=\"62\" cy=\"47\" r=\"5\" fill=\"#151515\"/><circle cx=\"50\" cy=\"28\" r=\"4\" fill=\"#e63946\" stroke=\"none\"/><ellipse cx=\"50\" cy=\"68\" rx=\"6\" ry=\"5\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>Who Is the Shocked Woman Staring From Every Half-Built House?</h3><p>The wide-eyed poster on Karnataka&#x27;s building sites is the newest drishti gombe. From temple faces to a tea-room experiment: why eyes that stare back work.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">1 Dec 2026</span></li>"
     }
   ]
 }
