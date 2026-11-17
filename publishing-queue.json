@@ -117,13 +117,13 @@
     },
     {
       "number": 12,
-      "url": "https://srinipresents.com/voter-list/",
-      "path": "/voter-list/",
-      "title": "Nearly 1 Crore Voters Gone. Are You Still on the List?",
+      "url": "https://srinipresents.com/coorg-highway/",
+      "path": "/coorg-highway/",
+      "title": "Why Is the New Road to Coorg Taking So Long?",
       "not_before": "2026-11-18T05:00:00+05:30",
       "status": "pending",
       "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"12\"><a href=\"/voter-list/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"12\" width=\"56\" height=\"74\" rx=\"5\" fill=\"#fff\"/><path d=\"M30 28H66M30 42H66M30 56H66M30 70H56\" stroke=\"#9aa5b1\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M26 42H70\" stroke=\"#e63946\" stroke-width=\"5\"/><circle cx=\"72\" cy=\"72\" r=\"13\" fill=\"#ffd23f\"/><path d=\"M66 72L71 77L79 67\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Nearly 1 Crore Voters Gone. Are You Still on the List?</h3><p>Why Karnataka’s voter list shrank by 99 lakh names, and how to check yours in two minutes.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">18 Nov 2026</span></li>"
+      "card_html": "<li class=\"story-card\" data-queue-number=\"12\"><a href=\"/coorg-highway/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M34 94L46 8H54L66 94Z\" fill=\"#555\"/><path d=\"M50 16V28M50 40V54M50 66V82\" stroke=\"#ffd23f\" stroke-width=\"4\" fill=\"none\"/><path d=\"M12 94L20 64H30L36 94Z\" fill=\"#e8590c\"/><path d=\"M16 80H33\" stroke=\"#fff\" stroke-width=\"4\"/><path d=\"M66 94L72 64H82L90 94Z\" fill=\"#e8590c\"/><path d=\"M69 80H87\" stroke=\"#fff\" stroke-width=\"4\"/></g></svg></div><div class=\"card-copy\"><h3>Why Is the New Road to Coorg Taking So Long?</h3><p>The Mysuru–Kushalnagar highway is a quarter built after 3 years 7 months. Here is where the time went.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">18 Nov 2026</span></li>"
     },
     {
       "number": 13,
@@ -234,6 +234,16 @@
       "status": "pending",
       "published_at": null,
       "card_html": "<li class=\"story-card\" data-queue-number=\"23\"><a href=\"/why-is-the-rupee-at-94/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"50\" r=\"36\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"4\"/><text x=\"50\" y=\"69\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"55\" fill=\"#151515\">₹</text></svg></div><div class=\"card-copy\"><h3>Why Is the Rupee at 94?</h3><p>Why the rupee moves against the dollar, what the RBI does, and how exchange rates reach everyday bills.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">29 Nov 2026</span></li>"
+    },
+    {
+      "number": 24,
+      "url": "https://srinipresents.com/voter-list/",
+      "path": "/voter-list/",
+      "title": "Nearly 1 Crore Voters Gone. Are You Still on the List?",
+      "not_before": "2026-11-30T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"24\"><a href=\"/voter-list/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"12\" width=\"56\" height=\"74\" rx=\"5\" fill=\"#fff\"/><path d=\"M30 28H66M30 42H66M30 56H66M30 70H56\" stroke=\"#9aa5b1\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M26 42H70\" stroke=\"#e63946\" stroke-width=\"5\"/><circle cx=\"72\" cy=\"72\" r=\"13\" fill=\"#ffd23f\"/><path d=\"M66 72L71 77L79 67\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Nearly 1 Crore Voters Gone. Are You Still on the List?</h3><p>Why Karnataka’s voter list shrank by 99 lakh names, and how to check yours in two minutes.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">30 Nov 2026</span></li>"
     }
   ]
 }
