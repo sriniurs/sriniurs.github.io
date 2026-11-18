@@ -127,133 +127,143 @@
     },
     {
       "number": 13,
-      "url": "https://srinipresents.com/nuclear-count/",
-      "path": "/nuclear-count/",
-      "title": "How Many Nuclear Weapons Exist, and How Does Anyone Count Them?",
-      "not_before": "2026-11-19T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"13\"><a href=\"/nuclear-count/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"34\" y=\"12\" width=\"20\" height=\"14\" fill=\"#d6ecff\"/><rect x=\"14\" y=\"14\" width=\"18\" height=\"10\" fill=\"#1f7ad1\"/><rect x=\"56\" y=\"14\" width=\"18\" height=\"10\" fill=\"#1f7ad1\"/><path d=\"M38 30L22 74H72L50 30\" fill=\"#ffd23f\" opacity=\".7\" stroke-dasharray=\"4 4\"/><path d=\"M12 74H88V88H12Z\" fill=\"#f1d9a7\"/><path d=\"M24 74a6 5 0 0 1 12 0M44 74a6 5 0 0 1 12 0M64 74a6 5 0 0 1 12 0\" fill=\"#fff\"/><circle cx=\"80\" cy=\"44\" r=\"9\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>How Many Nuclear Weapons Exist, and How Does Anyone Count Them?</h3><p>About 12,187 warheads, and no government announced it. How researchers count hidden arsenals from space, and where India fits.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">19 Nov 2026</span></li>"
+      "url": "https://srinipresents.com/mysuru-squeeze/",
+      "path": "/mysuru-squeeze/",
+      "title": "The Mysuru Squeeze: Peaceful City, Busy Budget",
+      "not_before": "2026-11-08T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-08T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"13\"><a href=\"/mysuru-squeeze/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M18 33H65V61Q65 78 43 78Q18 78 18 61Z\" fill=\"#ffd23f\"/><path d=\"M65 39H75Q90 39 84 56Q80 64 65 62\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>The Mysuru Squeeze: Peaceful City, Busy Budget</h3><p>Why a familiar city suddenly feels expensive: the coffee, the commute and the house keys.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">8 Nov 2026</span></li>"
     },
     {
       "number": 14,
-      "url": "https://srinipresents.com/mysuru-flights/",
-      "path": "/mysuru-flights/",
-      "title": "Why Can’t Mysuru Fly Anywhere?",
-      "not_before": "2026-11-20T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"14\"><a href=\"/mysuru-flights/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M10 56L44 50L62 20H72L64 50L88 46Q94 46 92 52L64 60L58 84H50L50 62L16 66Z\" fill=\"#d9e9fb\"/><path d=\"M8 90H92\" stroke-width=\"4\"/></g></svg></div><div class=\"card-copy\"><h3>Why Can’t Mysuru Fly Anywhere?</h3><p>Mysuru has an airport but few flights. The runway, the planes that could land, and what a big IndiGo order could change.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">20 Nov 2026</span></li>"
+      "url": "https://srinipresents.com/why-is-the-rupee-at-94/",
+      "path": "/why-is-the-rupee-at-94/",
+      "title": "Why Is the Rupee at 94?",
+      "not_before": "2026-11-10T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-10T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"14\"><a href=\"/why-is-the-rupee-at-94/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"50\" r=\"36\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"4\"/><text x=\"50\" y=\"69\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"55\" fill=\"#151515\">₹</text></svg></div><div class=\"card-copy\"><h3>Why Is the Rupee at 94?</h3><p>Why the rupee moves against the dollar, what the RBI does, and how exchange rates reach everyday bills.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">10 Nov 2026</span></li>"
     },
     {
       "number": 15,
-      "url": "https://srinipresents.com/census/",
-      "path": "/census/",
-      "title": "How Do You Count 1.4 Billion People?",
-      "not_before": "2026-11-21T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"15\"><a href=\"/census/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"22\" y=\"14\" width=\"56\" height=\"74\" rx=\"6\" fill=\"#fff\"/><path d=\"M32 32H68M32 46H68M32 60H58\" fill=\"none\"/><circle cx=\"66\" cy=\"72\" r=\"9\" fill=\"#ffd23f\"/></g></svg></div><div class=\"card-copy\"><h3>How Do You Count 1.4 Billion People?</h3><p>India&#x27;s first digital census: two phases, 30 lakh counters and one frozen second.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">21 Nov 2026</span></li>"
+      "url": "https://srinipresents.com/voter-list/",
+      "path": "/voter-list/",
+      "title": "Nearly 1 Crore Voters Gone. Are You Still on the List?",
+      "not_before": "2026-11-11T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-11T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"15\"><a href=\"/voter-list/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"12\" width=\"56\" height=\"74\" rx=\"5\" fill=\"#fff\"/><path d=\"M30 28H66M30 42H66M30 56H66M30 70H56\" stroke=\"#9aa5b1\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M26 42H70\" stroke=\"#e63946\" stroke-width=\"5\"/><circle cx=\"72\" cy=\"72\" r=\"13\" fill=\"#ffd23f\"/><path d=\"M66 72L71 77L79 67\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Nearly 1 Crore Voters Gone. Are You Still on the List?</h3><p>Why Karnataka’s voter list shrank by 99 lakh names, and how to check yours in two minutes.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">11 Nov 2026</span></li>"
     },
     {
       "number": 16,
-      "url": "https://srinipresents.com/mysore-silk/",
-      "path": "/mysore-silk/",
-      "title": "Mysore Silk: Why People Queue at 4 AM",
-      "not_before": "2026-11-22T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"16\"><a href=\"/mysore-silk/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><path d=\"M16 24H77L84 76H24Z\" fill=\"#a91854\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M19 35H79M22 64H82\" stroke=\"#ffd23f\" stroke-width=\"7\"/><path d=\"M35 48L43 57L51 48L59 57L67 48\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>Mysore Silk: Why People Queue at 4 AM</h3><p>From royal workshops to gold zari, trace the story of Mysore silk and the early-morning queues for its sarees.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">22 Nov 2026</span></li>"
+      "url": "https://srinipresents.com/census/",
+      "path": "/census/",
+      "title": "How Do You Count 1.4 Billion People?",
+      "not_before": "2026-11-12T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-12T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"16\"><a href=\"/census/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"22\" y=\"14\" width=\"56\" height=\"74\" rx=\"6\" fill=\"#fff\"/><path d=\"M32 32H68M32 46H68M32 60H58\" fill=\"none\"/><circle cx=\"66\" cy=\"72\" r=\"9\" fill=\"#ffd23f\"/></g></svg></div><div class=\"card-copy\"><h3>How Do You Count 1.4 Billion People?</h3><p>India&#x27;s first digital census: two phases, 30 lakh counters and one frozen second.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">12 Nov 2026</span></li>"
     },
     {
       "number": 17,
       "url": "https://srinipresents.com/karnataka-gives-india/",
       "path": "/karnataka-gives-india/",
       "title": "Made in Karnataka",
-      "not_before": "2026-11-23T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"17\"><a href=\"/karnataka-gives-india/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M30 14L60 10L74 26L70 46L80 62L66 86L44 90L34 72L22 60L26 40Z\" fill=\"#ffd23f\"/><circle cx=\"58\" cy=\"66\" r=\"5\" fill=\"#c0392b\"/></g></svg></div><div class=\"card-copy\"><h3>Made in Karnataka</h3><p>The gold, the coffee, the national flag, the ink on your finger and ISRO&#x27;s satellites: 15 things every Indian gets from one state.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">23 Nov 2026</span></li>"
+      "not_before": "2026-11-13T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-13T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"17\"><a href=\"/karnataka-gives-india/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M30 14L60 10L74 26L70 46L80 62L66 86L44 90L34 72L22 60L26 40Z\" fill=\"#ffd23f\"/><circle cx=\"58\" cy=\"66\" r=\"5\" fill=\"#c0392b\"/></g></svg></div><div class=\"card-copy\"><h3>Made in Karnataka</h3><p>The gold, the coffee, the national flag, the ink on your finger and ISRO&#x27;s satellites: 15 things every Indian gets from one state.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">13 Nov 2026</span></li>"
     },
     {
       "number": 18,
-      "url": "https://srinipresents.com/ganjifa/",
-      "path": "/ganjifa/",
-      "title": "Ganjifa: The Mysore King Who Invented Card Games",
-      "not_before": "2026-11-24T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"18\"><a href=\"/ganjifa/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"37\" cy=\"47\" r=\"28\" fill=\"#1f7ad1\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"28\" fill=\"#e63946\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"2\"/><path d=\"M47 60L44 43L55 49L63 36L71 49L82 43L79 60Z\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"2\"/></svg></div><div class=\"card-copy\"><h3>Ganjifa: The Mysore King Who Invented Card Games</h3><p>How Mysore’s Wadiyar king turned painted playing cards into elaborate puzzles, and how a Mysuru artist helped revive the tradition.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">24 Nov 2026</span></li>"
-    },
-    {
-      "number": 19,
-      "url": "https://srinipresents.com/mysuru-gi-crops/",
-      "path": "/mysuru-gi-crops/",
-      "title": "Mysuru’s Three Vanishing GI Crops",
-      "not_before": "2026-11-25T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"19\"><a href=\"/mysuru-gi-crops/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M50 88C20 70 14 40 30 24C40 14 50 22 50 30C50 22 60 14 70 24C86 40 80 70 50 88Z\" fill=\"#2a9d5c\"/></g></svg></div><div class=\"card-copy\"><h3>Mysuru’s Three Vanishing GI Crops</h3><p>Mysore Mallige, Mysore Vilyedele and Nanjangud Rasabale all won GI tags. Two are fading. One fought back.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">25 Nov 2026</span></li>"
-    },
-    {
-      "number": 20,
-      "url": "https://srinipresents.com/mysore-or-tanjore/",
-      "path": "/mysore-or-tanjore/",
-      "title": "Mysore or Tanjore? Check Your Wall",
-      "not_before": "2026-11-26T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"20\"><a href=\"/mysore-or-tanjore/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"16\" y=\"10\" width=\"68\" height=\"80\" fill=\"#c98b4f\"/><rect x=\"24\" y=\"18\" width=\"52\" height=\"64\" fill=\"#1d4f9a\"/><path d=\"M30 82V40Q50 18 70 40V82\" fill=\"#ffd23f\"/></g></svg></div><div class=\"card-copy\"><h3>Mysore or Tanjore? Check Your Wall</h3><p>Two golden painting styles from one family tree at Hampi, and a 10-second test for the painting in your pooja room.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">26 Nov 2026</span></li>"
-    },
-    {
-      "number": 21,
-      "url": "https://srinipresents.com/mysuru-squeeze/",
-      "path": "/mysuru-squeeze/",
-      "title": "The Mysuru Squeeze: Peaceful City, Busy Budget",
-      "not_before": "2026-11-27T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"21\"><a href=\"/mysuru-squeeze/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M18 33H65V61Q65 78 43 78Q18 78 18 61Z\" fill=\"#ffd23f\"/><path d=\"M65 39H75Q90 39 84 56Q80 64 65 62\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>The Mysuru Squeeze: Peaceful City, Busy Budget</h3><p>Why a familiar city suddenly feels expensive: the coffee, the commute and the house keys.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">27 Nov 2026</span></li>"
-    },
-    {
-      "number": 22,
       "url": "https://srinipresents.com/myopia/",
       "path": "/myopia/",
       "title": "Why Do So Many Kids Need Glasses Now?",
-      "not_before": "2026-11-28T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"22\"><a href=\"/myopia/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"4\" stroke-linecap=\"round\"><circle cx=\"29\" cy=\"53\" r=\"17\" fill=\"#a7e9ed\"/><circle cx=\"71\" cy=\"53\" r=\"17\" fill=\"#a7e9ed\"/><path d=\"M46 51Q50 45 54 51M12 48L6 40M88 48L94 40M23 53L31 45M65 53L73 45\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Why Do So Many Kids Need Glasses Now?</h3><p>Why more children are becoming short-sighted, how the eye changes as they grow, and what researchers know about time outdoors.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">28 Nov 2026</span></li>"
+      "not_before": "2026-11-14T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-14T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"18\"><a href=\"/myopia/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"4\" stroke-linecap=\"round\"><circle cx=\"29\" cy=\"53\" r=\"17\" fill=\"#a7e9ed\"/><circle cx=\"71\" cy=\"53\" r=\"17\" fill=\"#a7e9ed\"/><path d=\"M46 51Q50 45 54 51M12 48L6 40M88 48L94 40M23 53L31 45M65 53L73 45\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Why Do So Many Kids Need Glasses Now?</h3><p>Why more children are becoming short-sighted, how the eye changes as they grow, and what researchers know about time outdoors.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">14 Nov 2026</span></li>"
+    },
+    {
+      "number": 19,
+      "url": "https://srinipresents.com/mysore-silk/",
+      "path": "/mysore-silk/",
+      "title": "Mysore Silk: Why People Queue at 4 AM",
+      "not_before": "2026-11-15T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-15T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"19\"><a href=\"/mysore-silk/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><path d=\"M16 24H77L84 76H24Z\" fill=\"#a91854\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M19 35H79M22 64H82\" stroke=\"#ffd23f\" stroke-width=\"7\"/><path d=\"M35 48L43 57L51 48L59 57L67 48\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>Mysore Silk: Why People Queue at 4 AM</h3><p>From royal workshops to gold zari, trace the story of Mysore silk and the early-morning queues for its sarees.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">15 Nov 2026</span></li>"
+    },
+    {
+      "number": 20,
+      "url": "https://srinipresents.com/mysuru-gi-crops/",
+      "path": "/mysuru-gi-crops/",
+      "title": "Mysuru’s Three Vanishing GI Crops",
+      "not_before": "2026-11-15T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-15T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"20\"><a href=\"/mysuru-gi-crops/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M50 88C20 70 14 40 30 24C40 14 50 22 50 30C50 22 60 14 70 24C86 40 80 70 50 88Z\" fill=\"#2a9d5c\"/></g></svg></div><div class=\"card-copy\"><h3>Mysuru’s Three Vanishing GI Crops</h3><p>Mysore Mallige, Mysore Vilyedele and Nanjangud Rasabale all won GI tags. Two are fading. One fought back.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">15 Nov 2026</span></li>"
+    },
+    {
+      "number": 21,
+      "url": "https://srinipresents.com/ganjifa/",
+      "path": "/ganjifa/",
+      "title": "Ganjifa: The Mysore King Who Invented Card Games",
+      "not_before": "2026-11-16T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-16T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"21\"><a href=\"/ganjifa/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"37\" cy=\"47\" r=\"28\" fill=\"#1f7ad1\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"28\" fill=\"#e63946\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"63\" cy=\"55\" r=\"22\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"2\"/><path d=\"M47 60L44 43L55 49L63 36L71 49L82 43L79 60Z\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"2\"/></svg></div><div class=\"card-copy\"><h3>Ganjifa: The Mysore King Who Invented Card Games</h3><p>How Mysore’s Wadiyar king turned painted playing cards into elaborate puzzles, and how a Mysuru artist helped revive the tradition.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">16 Nov 2026</span></li>"
+    },
+    {
+      "number": 22,
+      "url": "https://srinipresents.com/mysore-or-tanjore/",
+      "path": "/mysore-or-tanjore/",
+      "title": "Mysore or Tanjore? Check Your Wall",
+      "not_before": "2026-11-16T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-16T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"22\"><a href=\"/mysore-or-tanjore/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"16\" y=\"10\" width=\"68\" height=\"80\" fill=\"#c98b4f\"/><rect x=\"24\" y=\"18\" width=\"52\" height=\"64\" fill=\"#1d4f9a\"/><path d=\"M30 82V40Q50 18 70 40V82\" fill=\"#ffd23f\"/></g></svg></div><div class=\"card-copy\"><h3>Mysore or Tanjore? Check Your Wall</h3><p>Two golden painting styles from one family tree at Hampi, and a 10-second test for the painting in your pooja room.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">16 Nov 2026</span></li>"
     },
     {
       "number": 23,
-      "url": "https://srinipresents.com/why-is-the-rupee-at-94/",
-      "path": "/why-is-the-rupee-at-94/",
-      "title": "Why Is the Rupee at 94?",
-      "not_before": "2026-11-29T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"23\"><a href=\"/why-is-the-rupee-at-94/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"50\" r=\"36\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"4\"/><text x=\"50\" y=\"69\" text-anchor=\"middle\" font-family=\"sans-serif\" font-weight=\"bold\" font-size=\"55\" fill=\"#151515\">₹</text></svg></div><div class=\"card-copy\"><h3>Why Is the Rupee at 94?</h3><p>Why the rupee moves against the dollar, what the RBI does, and how exchange rates reach everyday bills.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">29 Nov 2026</span></li>"
-    },
-    {
-      "number": 24,
-      "url": "https://srinipresents.com/voter-list/",
-      "path": "/voter-list/",
-      "title": "Nearly 1 Crore Voters Gone. Are You Still on the List?",
-      "not_before": "2026-11-30T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"24\"><a href=\"/voter-list/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"12\" width=\"56\" height=\"74\" rx=\"5\" fill=\"#fff\"/><path d=\"M30 28H66M30 42H66M30 56H66M30 70H56\" stroke=\"#9aa5b1\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M26 42H70\" stroke=\"#e63946\" stroke-width=\"5\"/><circle cx=\"72\" cy=\"72\" r=\"13\" fill=\"#ffd23f\"/><path d=\"M66 72L71 77L79 67\" fill=\"none\"/></g></svg></div><div class=\"card-copy\"><h3>Nearly 1 Crore Voters Gone. Are You Still on the List?</h3><p>Why Karnataka’s voter list shrank by 99 lakh names, and how to check yours in two minutes.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">30 Nov 2026</span></li>"
-    },
-    {
-      "number": 25,
       "url": "https://srinipresents.com/drishti-face/",
       "path": "/drishti-face/",
       "title": "Who Is the Shocked Woman Staring From Every Half-Built House?",
-      "not_before": "2026-12-01T05:00:00+05:30",
+      "not_before": "2026-11-17T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-17T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"23\"><a href=\"/drishti-face/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"14\" width=\"60\" height=\"72\" rx=\"4\" fill=\"#fff\"/><ellipse cx=\"38\" cy=\"46\" rx=\"10\" ry=\"11\" fill=\"#fff\"/><ellipse cx=\"62\" cy=\"46\" rx=\"10\" ry=\"11\" fill=\"#fff\"/><circle cx=\"38\" cy=\"47\" r=\"5\" fill=\"#151515\"/><circle cx=\"62\" cy=\"47\" r=\"5\" fill=\"#151515\"/><circle cx=\"50\" cy=\"28\" r=\"4\" fill=\"#e63946\" stroke=\"none\"/><ellipse cx=\"50\" cy=\"68\" rx=\"6\" ry=\"5\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>Who Is the Shocked Woman Staring From Every Half-Built House?</h3><p>The wide-eyed poster on Karnataka&#x27;s building sites is the newest drishti gombe. From temple faces to a tea-room experiment: why eyes that stare back work.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">17 Nov 2026</span></li>"
+    },
+    {
+      "number": 24,
+      "url": "https://srinipresents.com/mosquito-magnet/",
+      "path": "/mosquito-magnet/",
+      "title": "Why Do Mosquitoes Bite You and Not the Person Next to You?",
+      "not_before": "2026-11-17T05:00:00+05:30",
+      "status": "published",
+      "published_at": "2026-11-17T05:00:00+05:30",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"24\"><a href=\"/mosquito-magnet/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><ellipse cx=\"56\" cy=\"44\" rx=\"22\" ry=\"8\" fill=\"#6b6b6b\" transform=\"rotate(-25 56 44)\"/><circle cx=\"34\" cy=\"56\" r=\"7\" fill=\"#6b6b6b\"/><path d=\"M28 60L12 74M54 38Q44 14 30 18Q40 32 54 38ZM60 36Q72 12 86 18Q74 32 60 36Z\" fill=\"#cfe8ff\"/><path d=\"M14 88H86\" fill=\"none\"/><circle cx=\"50\" cy=\"84\" r=\"4\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>Why Do Mosquitoes Bite You and Not the Person Next to You?</h3><p>It isn&#8217;t sweet blood. Your breath, your heat and the bacteria on your skin decide who gets bitten.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">17 Nov 2026</span></li>"
+    },
+    {
+      "number": 25,
+      "url": "https://srinipresents.com/nuclear-count/",
+      "path": "/nuclear-count/",
+      "title": "How Many Nuclear Weapons Exist, and How Does Anyone Count Them?",
+      "not_before": "2026-11-19T05:00:00+05:30",
       "status": "pending",
       "published_at": null,
-      "card_html": "<li class=\"story-card\" data-queue-number=\"25\"><a href=\"/drishti-face/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"20\" y=\"14\" width=\"60\" height=\"72\" rx=\"4\" fill=\"#fff\"/><ellipse cx=\"38\" cy=\"46\" rx=\"10\" ry=\"11\" fill=\"#fff\"/><ellipse cx=\"62\" cy=\"46\" rx=\"10\" ry=\"11\" fill=\"#fff\"/><circle cx=\"38\" cy=\"47\" r=\"5\" fill=\"#151515\"/><circle cx=\"62\" cy=\"47\" r=\"5\" fill=\"#151515\"/><circle cx=\"50\" cy=\"28\" r=\"4\" fill=\"#e63946\" stroke=\"none\"/><ellipse cx=\"50\" cy=\"68\" rx=\"6\" ry=\"5\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>Who Is the Shocked Woman Staring From Every Half-Built House?</h3><p>The wide-eyed poster on Karnataka&#x27;s building sites is the newest drishti gombe. From temple faces to a tea-room experiment: why eyes that stare back work.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">1 Dec 2026</span></li>"
+      "card_html": "<li class=\"story-card\" data-queue-number=\"25\"><a href=\"/nuclear-count/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"34\" y=\"12\" width=\"20\" height=\"14\" fill=\"#d6ecff\"/><rect x=\"14\" y=\"14\" width=\"18\" height=\"10\" fill=\"#1f7ad1\"/><rect x=\"56\" y=\"14\" width=\"18\" height=\"10\" fill=\"#1f7ad1\"/><path d=\"M38 30L22 74H72L50 30\" fill=\"#ffd23f\" opacity=\".7\" stroke-dasharray=\"4 4\"/><path d=\"M12 74H88V88H12Z\" fill=\"#f1d9a7\"/><path d=\"M24 74a6 5 0 0 1 12 0M44 74a6 5 0 0 1 12 0M64 74a6 5 0 0 1 12 0\" fill=\"#fff\"/><circle cx=\"80\" cy=\"44\" r=\"9\" fill=\"#e63946\"/></g></svg></div><div class=\"card-copy\"><h3>How Many Nuclear Weapons Exist, and How Does Anyone Count Them?</h3><p>About 12,187 warheads, and no government announced it. How researchers count hidden arsenals from space, and where India fits.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">19 Nov 2026</span></li>"
+    },
+    {
+      "number": 26,
+      "url": "https://srinipresents.com/mysuru-flights/",
+      "path": "/mysuru-flights/",
+      "title": "Why Can’t Mysuru Fly Anywhere?",
+      "not_before": "2026-11-20T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"26\"><a href=\"/mysuru-flights/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M10 56L44 50L62 20H72L64 50L88 46Q94 46 92 52L64 60L58 84H50L50 62L16 66Z\" fill=\"#d9e9fb\"/><path d=\"M8 90H92\" stroke-width=\"4\"/></g></svg></div><div class=\"card-copy\"><h3>Why Can’t Mysuru Fly Anywhere?</h3><p>Mysuru has an airport but few flights. The runway, the planes that could land, and what a big IndiGo order could change.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">20 Nov 2026</span></li>"
     }
   ]
 }
