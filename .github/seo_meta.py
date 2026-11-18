@@ -11,7 +11,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://srinipresents.com'
-SKIP = {'about', 'archive', 'assets', 'health', 'ortho', 'pagefind', 'preview', 'queue', 's', 'search', 'stats'}
+SKIP = {'about', 'archive', 'assets', 'devi', 'health', 'ortho', 'pagefind', 'preview', 'queue', 's', 'search', 'stats'}
 # Discreet by choice: pen name and city only.
 AUTHOR = {'@type': 'Person', 'name': 'Dr. Srini',
           'homeLocation': {'@type': 'Place', 'name': 'Mysuru'}, 'url': BASE + '/about/'}
