@@ -1,0 +1,294 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><title>Why ₹1 Crore May Not Make You Rich Anymore — srini.presents</title><meta name="description" content="Is one crore enough? A lively, illustrated 8-minute explanation of inflation, retirement, taxes and the maths behind real wealth.">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style id="comic-ills">
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+</style>
+<style id="mobile-fonts">
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+</style>
+<style id="stack-tables">
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+</style>
+<style id="chain-arrows">
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+</style>
+<style id="bars-clean">
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+</style>
+<style>
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+</style>
+<style id="day-themes">
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+</style>
+<style>
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+</style>
+<style id="sfx-dark">
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+</style>
+<style id="myth-fact">
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+</style>
+<style>
+*,*::before,*::after{box-sizing:border-box}body{padding:24px 18px 48px}.wrap{max-width:1060px;margin:auto;display:grid;gap:36px}.cover{background:#ffd23f!important;color:#151515!important;padding:28px 24px;border:4px solid var(--line);box-shadow:8px 8px 0 var(--line)}.cover h1{color:#151515!important;font-size:clamp(45px,7vw,78px);line-height:1.03;text-shadow:none!important;-webkit-text-stroke:0!important;margin:20px 0}.cover .byline{color:#9d0208!important;font-size:28px!important;white-space:normal!important}.tagline{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:5px}.sample{display:inline-block;background:#151515;color:#fff;padding:5px 10px;font-weight:bold}.cast{display:flex;gap:30px;flex-wrap:wrap}.cast figure{margin:12px 0 0;max-width:180px;font-weight:bold}.cast svg{display:block;width:84px;height:84px;background:white;border:2px solid #151515;border-radius:50%;margin-bottom:8px}.cast small{font-weight:normal}.fact{display:block!important;font-size:18px;line-height:1.5}.say{align-items:flex-start}.av{flex-shrink:0;width:54px;height:54px}.bubble{min-width:0}.ep{min-width:0}.grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.panel{min-width:0}a{color:#165da3}.cover .sub{color:#151515!important}.evidence{padding:20px;border:3px solid var(--line);background:var(--panel)}.evidence p,.evidence li{font-size:15px;line-height:1.5}.next{background:#ffd23f;color:#151515;border:3px solid var(--line);padding:18px;font-size:19px}.foot{text-align:center}h2{line-height:1.15}.fs{display:flex;flex-wrap:wrap;gap:8px}.fs span{background:#fff!important;color:#151515!important;border:2px solid #151515;padding:4px 8px}
+@media(prefers-color-scheme:dark){a{color:#8cc9ff}.sfx{color:#ffae73}.sfx.b{color:#86c6ff}.sfx.r{color:#ff9ca6}.cap,.take,.warn{color:#151515}.take{background:#dff2e5}}
+@media(max-width:640px){body{padding:16px 16px 32px}.wrap{gap:28px}.grid{grid-template-columns:minmax(0,1fr)!important}.cover{padding:22px 16px}.ep{padding:12px}.panel{padding:12px}.fact{font-size:17.5px}.ep-head{align-items:flex-start}.cover h1{font-size:48px}.ep h2{font-size:29px}.cast{gap:20px}.cast figure{max-width:125px}}
+</style><style>
+.wrap{gap:36px}.cover h1{font-size:clamp(44px,6.2vw,72px)}.cover .sub{max-width:45ch;line-height:1.55}.cast figure{font-size:17px}.ep{display:grid;gap:22px}.ep-head{margin-bottom:0}.reading{max-width:760px;width:100%;margin:0 auto;font:19px/1.65 var(--body)}.reading p{margin:0 0 16px}.reading p:last-child{margin-bottom:0}.reading .cap{margin:0 0 14px;font-size:19px;line-height:1.4}.lead{font-size:22px;font-weight:700;line-height:1.5}.banter{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:18px;background:var(--panel);border-top:2px dashed var(--muted);border-bottom:2px dashed var(--muted)}.banter .bubble{margin:0;line-height:1.5}.math{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bill{padding:18px;border:3px solid var(--line);background:var(--panel)}.bill h3{font-family:var(--display);font-size:28px;letter-spacing:.03em;margin:0 0 12px}.bill dl{margin:0}.bill dl div{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.bill dd{margin:0;white-space:nowrap;font-weight:700}.bill .total{border-top:2px solid var(--line);padding-top:10px;font-size:23px}.delta{background:#ffd23f;color:#151515;padding:15px 18px;border:3px solid var(--line);font-size:21px;font-weight:700;text-align:center}.ep .take{font-size:19px;line-height:1.55;border:2px solid #245e3b;background:#e3f5ea;color:#153c25;padding:16px 18px}.questions{display:grid;gap:13px}.question{border:2px solid var(--line);padding:15px 18px;background:var(--panel)}.question h3{font-family:var(--body);font-size:20px;line-height:1.4;margin:0 0 7px}.question p{margin:0}.source-note{font-size:15px!important;color:var(--muted)}.sample-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.sample-nav a{border:2px solid #151515;color:#151515;background:white;padding:6px 12px;font-weight:700;text-decoration:none}.ep p{overflow-wrap:break-word}.page-marker{font-weight:700;color:var(--muted);font-size:15px;letter-spacing:.08em}.ep-head .no{white-space:nowrap}html{scroll-behavior:smooth}
+@media(max-width:640px){.reading{font-size:17.5px;line-height:1.6}.reading .lead{font-size:20px!important}.banter,.math{grid-template-columns:minmax(0,1fr)}.banter{padding:16px 0;gap:16px}.ep{gap:18px}.bill{padding:16px}.question{padding:14px}.question h3{font-size:19px}.cover h1{font-size:46px}.ep .take{font-size:17.5px}.reading .cap{font-size:18px}.delta{font-size:19px}.wrap{gap:28px}.sample-nav{gap:8px}.sample-nav a{font-size:15px}.ep-head h2{font-size:32px}}
+@media(prefers-color-scheme:dark){.ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#e9edf2;--muted:#a8b3bf}:root[data-theme="dark"] .ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}
+</style><style>
+.cover{background:#c2410c!important;color:#fff!important}.cover h1,.cover .sub{color:#fff!important}.cover .byline{color:#fff1a8!important}.cover .cast figure{color:#fff}.cover .tagline{color:#fff1a8}.time-box{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:20px;text-align:center}.time-box strong{display:block;font:clamp(44px,7vw,68px)/1.2 var(--display);letter-spacing:.03em}.time-box p{margin:8px 0 0}.spot{width:84px;height:84px;background:white;border:3px solid #151515;border-radius:16px;padding:5px;justify-self:center;box-shadow:3px 3px 0 #151515}.opinion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opinion article{border:2px solid var(--line);padding:16px}.opinion h3{font:24px var(--display);margin:0 0 10px}.opinion p{font-size:18px;line-height:1.55;margin:0}.math-note{border-left:6px solid #e8590c;padding:12px 18px;background:var(--panel)}.cheat{background:#ffd23f!important;color:#151515!important}.cheat .question{background:#fff;color:#151515;border-color:#151515}.cheat .question p{font-size:18px}.source-list{padding-left:22px}.source-list li{margin-bottom:12px}.evidence a{overflow-wrap:anywhere}.sample{background:#fff!important;color:#151515!important}.era{margin:0}.take strong{font-weight:700}@media(max-width:640px){.opinion{grid-template-columns:minmax(0,1fr)}.opinion p{font-size:17.5px}.spot{width:76px;height:76px}.time-box{padding:16px}.time-box strong{font-size:48px}.cheat .question p{font-size:17.5px}}
+</style><style>
+.cover{display:block;background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important;font-size:clamp(40px,6.3vw,74px)}.cover .byline{color:#ffd23f!important}.cover .sub{color:#fff!important;max-width:62ch}.readtime{margin-top:22px}.cover .tagline{color:white}.cover .sample{background:#ffd23f;color:#151515}.cover .cast{margin-top:12px}.cover .cast figure{max-width:180px}.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.place{border:3px solid var(--line);padding:18px;background:var(--panel)}.place h3{font-family:var(--display);font-size:27px;margin:0 0 8px}.digits{font-family:var(--display);font-size:76px;text-align:center;letter-spacing:.12em;color:var(--ink);line-height:1.1}.digits small{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:12px}.spot{width:110px;height:110px}.reading{max-width:760px}.opinion article{min-width:0}.bill p{font-size:18px}.evidence h2{font-family:var(--display);font-size:32px}.source-list li{margin:12px 0}.stamp{text-align:center;font-size:15px;color:var(--muted)}
+:root[data-theme="dark"] a{color:#8cc9ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .take{color:#d9f2e3;background:#173326}}
+@media(max-width:640px){.duo{grid-template-columns:1fr}.cover h1{font-size:42px}.reading p,.bubble{line-height:1.6!important}.digits{font-size:64px}.cover .cast{gap:22px}.cover .cast figure{font-size:16px}.opinion{grid-template-columns:1fr!important}.bill .total{font-size:21px}}
+@media print{body{background:white;padding:0}.cover,.ep,.evidence,.era{box-shadow:none;break-inside:avoid}.wrap{gap:20px}}
+</style><style>.cover{background:#0e5b57!important}.cover h1{color:#ffd23f!important}.cover .byline{color:#a7f3d0!important}.card-art{display:block;width:min(100%,410px);height:auto;margin:0 auto}.deck-note{font-size:14px!important;text-align:center;color:var(--muted)}.fact-strip{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:18px;text-align:center;font:700 21px/1.5 var(--body)}:root[data-theme="light"] a{color:#165da3}@media(max-width:360px){.cover h1{font-size:36px}.cast{gap:12px!important}.cast figure{max-width:108px!important}.ep-head h2{font-size:28px}} </style><style id="follow">.follow{border:3px dashed var(--line);padding:22px 18px;text-align:center;font:18px/1.6 var(--body)}.follow b{font-family:var(--display);font-weight:400;font-size:28px;letter-spacing:.05em;display:block}.follow a{font-weight:700}
+.gamelist{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.gamelist div{border:2.5px solid var(--line);padding:10px;background:var(--panel);min-width:0}.gamelist b{display:block;font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.03em;color:var(--red)}.gamelist span{font-weight:700}@media(max-width:640px){.gamelist{grid-template-columns:1fr 1fr}.gamelist b{font-size:18px;overflow-wrap:anywhere}}
+</style><style id="day-cover">.cover{background:#ffd23f!important;color:#151515!important}.cover h1{color:#151515!important}.cover .sub,.cover .cast figure,.cover .readtime,.cover .tagline{color:#151515!important}.cover .byline{color:#9d0208!important}.cover .fs span{color:#151515}</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></svg><style id="crore-fidelity">
+.cover{background:#ffc6cf!important;color:#151515!important}.cover h1{color:#151515!important}.cover .sub{color:#151515!important}.cover .byline{color:#9d174d!important}.cover .tagline{color:#671c3e!important}.cover .cast figure{color:#151515!important}
+.cover .sample{background:#fff!important;color:#151515!important}.cover .daytag{position:absolute;right:12px;top:12px;background:#151515;color:#fff;font:bold 11px/1.2 var(--body);padding:5px 9px;border:2px solid #151515}
+.cover{position:relative}.reading p{margin:0 0 14px}.ep .take{background:#e3f5ea!important;color:#153c25!important;border-color:#245e3b!important}.ep .warn{background:#fde8ea!important;color:#5a1824!important;border:2px solid #ba303b;padding:14px}
+.source-list li{overflow-wrap:anywhere}.source-list a{overflow-wrap:anywhere}.minirow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.minirow>div{border:2.5px solid var(--line);padding:12px;background:var(--panel);min-width:0;font-size:16px}.minirow strong{display:block;font:clamp(23px,5vw,34px) var(--display);color:#e8590c}.smallnote{font-size:14px!important;color:var(--muted);text-align:center}
+.illus{display:block;width:150px;height:128px;margin:0 auto 7px;background:#fff;border:3px solid #151515;border-radius:20px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:4px;box-sizing:border-box}
+.illus.r{transform:rotate(2deg)}.illus text{font-family:Arial,sans-serif;font-weight:bold}.source-list{padding-left:25px}
+.cheat{background:#ffd23f!important;color:#151515!important;border-color:#151515}.cheat .panel,.cheat .question{background:#fff!important;color:#151515!important;border-color:#151515!important}.cheat .question h3{color:#151515!important}.cheat .question p{color:#151515!important}
+@media(max-width:640px){.reading{font-size:17.5px!important;line-height:1.58}.reading p{font-size:17.5px!important}.cover h1{font-size:clamp(38px,10vw,49px)!important}.minirow{grid-template-columns:1fr}.minirow>div{font-size:17.5px}.ep{padding:12px!important}.bubble{font-size:17.5px!important}.illus{width:132px;height:118px}}
+@media(prefers-color-scheme:dark){.minirow{color:var(--ink)}.ep .warn{background:#4a2630!important;color:#ffe9ec!important;border-color:#ff8a94!important}.ep .take{background:#173326!important;color:#d9f2e3!important;border-color:#80b792!important}.cover{border-color:#151515!important;box-shadow:7px 7px 0 #151515!important}.illus{border-color:#151515!important;box-shadow:4px 4px 0 #151515!important}}
+</style><style id="day-cover-2">.cover{background:#ffd23f!important;color:#151515!important}.cover h1{color:#151515!important}.cover .sub,.cover .cast figure,.cover .readtime,.cover .tagline{color:#151515!important}.cover .byline{color:#9d0208!important}.cover .fs span{color:#151515}</style><main class="wrap"><header class="cover"><p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p><h1>Why ₹1 Crore May Not Make You Rich Anymore</h1><p class="sub">A number with eight digits. A lifetime of dreams. But why can two crorepatis have completely different futures? Follow the numbers that hide behind the zeroes.</p><div class="fs"><span>The Human Machine</span><span>Money &amp; Life</span><span>The Invisible Thief</span><span>8-Minute Read</span></div><div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>counting all eight digits</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>counting the years</small></figure></div><p class="readtime">ABOUT 8 MINUTES · 9 EPISODES</p></header><section class="ep" id="section-01"><div class="ep-head"><span class="no">01</span><h2>The crore club: one number, two lives</h2></div><svg class="illus " viewBox="0 0 148 126" aria-hidden="true"><rect width="148" height="126" fill="#fff"/><rect x="17" y="38" width="112" height="58" rx="7" fill="#a7ddb4" stroke="#151515" stroke-width="4"/><rect x="28" y="45" width="92" height="45" rx="5" fill="#d7f3d7" stroke="#151515" stroke-width="2"/><circle cx="74" cy="67" r="19" fill="#ffd23f" stroke="#151515" stroke-width="3"/><text x="74" y="74" font-size="23" fill="#151515" text-anchor="middle">₹</text><path d="M30 26l14-10 13 10 M89 26l14-10 13 10" fill="none" stroke="#e8590c" stroke-width="5"/></svg><div class="reading">
+<p class="lead">The bank app flashes a beautiful number: ₹1,00,00,000. Eight digits. A small private firework goes off in your head.</p>
+<p>Picture two old school friends meeting at a Mysuru coffee shop. Both have <b>exactly ₹1 crore in investments</b>. Ravi owns his home, has no loans and spends ₹30,000 a month. Sameer rents in a metro, supports his parents and pays school fees. His family spends ₹1 lakh monthly.</p>
+<p>Ravi looks relaxed. Sameer is still checking the school-fee email. They hold the same money but live in entirely different financial worlds.</p>
+<p>Here is the trick. Wealth in rupees tells you <i>how big the pile is</i>. Financial independence asks a harder question: <b>how many years of your own expenses can that pile support?</b> In a no-return, no-inflation thought experiment, Ravi's annual ₹3.6 lakh bill is about 27.8 years of expenses. Sameer's ₹12 lakh is only about 8.3. Neither is a retirement forecast; it is simply the first clue.</p>
+<p>A crore isn't “small change.” It is a major achievement. But the number cannot answer the question people most want it to answer: <i>Am I safe?</i></p></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So they are both crorepatis. Why is only one smiling?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Because money buys a lifestyle, not a title. The lifestyle comes with its own price tag.</p></div></div></section><section class="ep" id="section-02"><div class="ep-head"><span class="no">02</span><h2>The ₹1 crore time machine</h2></div><svg class="illus r" viewBox="0 0 148 126" aria-hidden="true"><rect width="148" height="126" fill="#fff"/><circle cx="74" cy="65" r="48" fill="#ffd23f" stroke="#151515" stroke-width="4"/><circle cx="74" cy="65" r="34" fill="none" stroke="#151515" stroke-width="3"/><path d="M74 34v31l21 18" fill="none" stroke="#151515" stroke-width="6" stroke-linecap="round"/><path d="M29 19l14 12M118 19l-14 12" stroke="#e8590c" stroke-width="7"/></svg><div class="reading">
+<p class="lead">Suppose you could hand your ₹1 crore to a relative living in the year 2000. You would not be giving away the same purchasing power.</p>
+<p>The World Bank's India consumer-price index, on a common 2010 base, was about <b>54.3 in 2000</b> and <b>233.1 in 2025</b>. Divide the second by the first: <b>4.29</b>. The broad average basket of consumer goods and services that cost ₹1 crore in 2000 would cost about <b>₹4.29 crore in 2025</b>. <a href="#s1">[1]</a></p>
+<p>Turn it around and something startling happens. <b>₹1 crore in 2025 had the purchasing power of roughly ₹23.3 lakh in 2000.</b> It compares <i>what an average basket buys</i>, using complete historical annual data.</p>
+<p>Don't take this as a house-price chart. Land prices and medical bills need not track average inflation; 2025 is not a live 2026 figure. India's official CPI series has also been rebased, so mixing different index bases without linking them can mislead. <a href="#s2">[2]</a></p>
+<p>But as a time machine, the lesson is unforgettable: <b>the country's price tags have changed far more than our mental image of “one crore.”</b></p></div><div class="fact-strip">INDIA CPI · 2000: 54.3 → 2025: 233.1<br><b>₹1 crore then ≈ ₹4.29 crore in 2025 purchasing power</b></div><p class="smallnote">World Bank annual CPI; rounded, average-basket comparison, not property values.</p><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>₹23 lakh? Has my money been stolen?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>No thief broke into the bank. Prices climbed the staircase while your picture of a crore stayed downstairs.</p></div></div></section><section class="ep" id="section-03"><div class="ep-head"><span class="no">03</span><h2>The grocery bag gets heavier</h2></div><svg class="illus " viewBox="0 0 148 126" aria-hidden="true"><rect width="148" height="126" fill="#fff"/><path d="M27 60h95l-14 45H42z" fill="#ffc6cf" stroke="#151515" stroke-width="4"/><path d="M43 59l18-30 M108 59L88 29" stroke="#151515" stroke-width="5"/><circle cx="59" cy="43" r="15" fill="#e8590c" stroke="#151515" stroke-width="3"/><circle cx="90" cy="42" r="16" fill="#2a9d5c" stroke="#151515" stroke-width="3"/><path d="M40 80h70" stroke="#151515" stroke-width="3"/></svg><div class="reading">
+<p class="lead">The sneakiest part of inflation is not the price of one tomato. It is what happens when thousands of little prices keep moving for twenty years.</p>
+<p>Imagine a household that spends <b>₹50,000 a month today</b>. At an illustrative steady 4% annual increase in expenses, maintaining the same lifestyle would cost about <b>₹74,000 after ten years</b>, and <b>₹1.10 lakh after twenty</b>. At 6%, the twenty-year bill becomes about <b>₹1.60 lakh a month</b>. The bill grows while each rupee buys less.</p>
+<p>The consumer-price index averages a basket, while <b>your personal inflation</b> depends on what you actually spend. A young couple may worry about rent and school fees; a retired couple may worry about medicines, helpers and care. Your expenses may rise faster than headline CPI. <a href="#s3">[3]</a></p>
+<p>The Reserve Bank of India's inflation framework aims at <b>4% CPI inflation</b>, with a tolerance range of <b>2% to 6%</b>, for April 2026 to March 2031. But that is a policy target, not a promise about your family's next twenty shopping lists. <a href="#s4">[4]</a></p>
+<p>So the crore is not just fighting today's expenses. It must also fight all the future versions of those expenses.</p></div><div class="minirow"><div><strong>₹50,000</strong>Monthly expenses today</div><div><strong>₹1.10 L</strong>After 20 years at 4%</div><div><strong>₹1.60 L</strong>After 20 years at 6%</div></div><p class="smallnote">Illustrative compounding only. Neither 4% nor 6% is a forecast.</p><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Can a ₹50,000 monthly budget really become ₹1 lakh?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>In twenty years, yes, under a simple 4% scenario. Time does the heavy lifting.</p></div></div></section><div class="era p2">THE NUMBERS THAT MATTER<small>Not just how much you have, but how much it must do.</small></div><section class="ep" id="section-04"><div class="ep-head"><span class="no">04</span><h2>The FD that looks richer than it feels</h2></div><svg class="illus r" viewBox="0 0 148 126" aria-hidden="true"><rect width="148" height="126" fill="#fff"/><path d="M17 51l57-32 57 32z" fill="#ffd23f" stroke="#151515" stroke-width="4"/><rect x="23" y="52" width="102" height="12" fill="#1f7ad1" stroke="#151515" stroke-width="3"/><path d="M35 66v39M58 66v39M90 66v39M113 66v39" stroke="#151515" stroke-width="8"/><path d="M21 110h108" stroke="#151515" stroke-width="8"/></svg><div class="reading">
+<p class="lead">Here is a common retirement conversation: “Put the crore in a fixed deposit. Seven per cent interest gives seven lakh a year. Problem solved!”</p>
+<p>It sounds tidy. At an <b>illustrative 7% annual interest rate</b>, ₹1 crore earns ₹7 lakh before tax. If that interest is effectively taxed at a 30% marginal rate, ignoring cess and special circumstances for the illustration, the interest left is about <b>₹4.9 lakh</b>, or <b>4.9% of the starting capital</b>. Now suppose prices rise by 5%. The after-tax amount has barely kept pace with the increase in the general price level—its exact real growth is slightly negative.</p>
+<p>The point is not that bank deposits are bad. Deposits can be extremely useful for predictable cash flow and emergency reserves. The point is that <b>nominal return</b> (“my balance earned 7%”) is not the same thing as <b>real, after-tax return</b> (“how much extra life can I buy?”). FD rates also change.</p>
+<p>Equities offer growth potential but can fall sharply; gold fluctuates and property is illiquid. No asset offers high growth, complete safety and instant access together.</p>
+<p>For an ordinary family, the real task is to give different parts of the money different jobs: near-term spending, protection from unpleasant surprises and long-term growth. <a href="#s3">[3]</a></p></div><div class="delta">ILLUSTRATION: 7% BEFORE TAX → ~4.9% AFTER 30% TAX, BEFORE CESS</div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So a 7% FD can leave me barely ahead of 5% inflation?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>After tax, possibly. Always check what remains in your pocket and what it buys.</p></div></div></section><section class="ep" id="section-05"><div class="ep-head"><span class="no">05</span><h2>Is a crore enough to stop working?</h2></div><svg class="illus " viewBox="0 0 148 126" aria-hidden="true"><rect width="148" height="126" fill="#fff"/><path d="M20 17v92h112" stroke="#151515" stroke-width="5" fill="none"/><path d="M28 92l27-38 26 16 38-48" stroke="#e63946" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M101 22h18v17" fill="none" stroke="#e63946" stroke-width="6"/><circle cx="54" cy="53" r="8" fill="#ffd23f" stroke="#151515" stroke-width="3"/></svg><div class="reading">
+<p class="lead">This is where the conversation changes from being rich to staying solvent.</p>
+<p>A corpus of ₹1 crore can give very different starting withdrawal rates. Draw ₹25,000 a month and the first year's withdrawal is ₹3 lakh, or <b>3%</b> of the starting corpus. Draw ₹50,000 monthly and it becomes <b>6%</b>. Draw ₹1 lakh monthly and it is <b>12%</b>. That last figure is not the investment's promised return; it is simply how fast you are taking money out.</p>
+<p>Withdrawals may need to grow with inflation: ₹4 lakh this year becomes ₹4.16 lakh next year at 4%. An increasing draw needs careful planning.</p>
+<p>There is research relevant to India. A PFRDA-published analysis of withdrawal strategies under specified asset mixes and simulation assumptions found that starting around <b>3%</b> can be more robust than higher withdrawal rates over a long retirement. But real-world longevity, taxes, markets and spending may differ. <a href="#s5">[5]</a></p>
+<p>Think of your corpus as a water tank. The size matters, but so do the tap, the incoming rainfall and the number of summers ahead. Two people can start with an identical tank and make it last very different lengths of time.</p></div><table class="vs stk"><thead><tr><th>Monthly withdrawal</th><th>Annual amount</th><th>Starting withdrawal rate on ₹1 crore</th></tr></thead><tbody><tr><td>₹25,000</td><td>₹3 lakh</td><td>3%</td></tr><tr><td>₹50,000</td><td>₹6 lakh</td><td>6%</td></tr><tr><td>₹1,00,000</td><td>₹12 lakh</td><td>12%</td></tr></tbody></table><p class="smallnote">These are starting arithmetic rates, not safe withdrawal recommendations.</p><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Does the famous 4% retirement rule guarantee anything in India?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>No. It is a planning framework, not a warranty card. Your spending and market risks decide the real answer.</p></div></div></section><section class="ep" id="section-06"><div class="ep-head"><span class="no">06</span><h2>The market's cruel timing trick</h2></div><svg class="illus r" viewBox="0 0 148 126" aria-hidden="true"><rect width="148" height="126" fill="#fff"/><path d="M20 17v92h112" stroke="#151515" stroke-width="5" fill="none"/><path d="M28 92l27-38 26 16 38-48" stroke="#e63946" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M101 22h18v17" fill="none" stroke="#e63946" stroke-width="6"/><circle cx="54" cy="53" r="8" fill="#ffd23f" stroke="#151515" stroke-width="3"/></svg><div class="reading">
+<p class="lead">A market crash is unpleasant at any age. In the first year of retirement, it can be much more than unpleasant.</p>
+<p>Imagine ₹1 crore invested in a volatile portfolio. It drops <b>20%</b>, leaving ₹80 lakh. The retiree still needs ₹4 lakh for living expenses, so the balance becomes ₹76 lakh. Then the market recovers <b>25%</b>—exactly enough for an untouched portfolio to recover from a 20% fall. But this retiree's remaining ₹76 lakh rises only to <b>₹95 lakh</b>, even before a second year's withdrawal or fees.</p>
+<p>The market recovered; the retiree did not, because some investments were sold while prices were low. That is called <b>sequence-of-returns risk</b>. A long-term average return can hide the painful timing of losses. India's National Institute of Securities Markets highlights this risk in retirement planning. <a href="#s6">[6]</a></p>
+<p>A liquid spending reserve can reduce forced selling during market dips. Diversification and flexible spending may help, but cannot remove risk.</p>
+<p>For a retirement lasting decades, a sound plan matters as much as the starting cheque.</p></div><div class="chain"><span>₹1 crore</span><i>→</i><span>−20%: ₹80L</span><i>→</i><span>Withdraw ₹4L: ₹76L</span><i>→</i><span>+25%: ₹95L</span></div><p class="smallnote">Simplified example before tax, fees and any second withdrawal; not a market forecast.</p><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>But the market bounced back 25%! Why am I still short?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Because you sold part of the portfolio while it was down. Timing can steal more than the headline loss.</p></div></div></section><div class="era p4">THE DEEP DIVE<small>What the headline does not tell you.</small></div><section class="ep" id="section-07"><div class="ep-head"><span class="no">07</span><h2>The home you live in is not the money you spend</h2></div><svg class="illus " viewBox="0 0 148 126" aria-hidden="true"><rect width="148" height="126" fill="#fff"/><path d="M17 62L74 17 131 62" fill="#e63946" stroke="#151515" stroke-width="5"/><path d="M31 59v51h87V59" fill="#ffe5aa" stroke="#151515" stroke-width="4"/><rect x="65" y="79" width="24" height="31" fill="#1f7ad1" stroke="#151515" stroke-width="4"/><rect x="41" y="70" width="15" height="15" fill="#a7d9e9" stroke="#151515" stroke-width="3"/></svg><div class="reading">
+<p class="lead">A person may tell you, “My net worth is ₹2 crore!” But a large part of that could be the family home. Can it pay next month's electricity bill?</p>
+<p>Of course the home has value. It provides shelter and may spare you rent. But unless you sell, rent out part of it, borrow against it or move somewhere cheaper, <b>you cannot spend its market value like money in the bank</b>. This is why “net worth” and “investable retirement corpus” are different figures.</p>
+<p>Suppose one retiree has a debt-free home and ₹1 crore of financial assets; another has a rented home and the same financial assets. Their starting corpus is equal. Their required withdrawals are not. Now add two dependants, periodic repairs and medical expenses. The answer to whether the corpus is enough shifts again.</p>
+<p>An inherited plot or investment flat may be valuable but slow to sell; a hospital bill will not wait for the buyer's paperwork.</p>
+<p>On the other hand, a pension, rent from a reliably occupied property or an annuity can reduce what must come from invested savings. The correct plan counts <b>all cash inflows</b>, but does not pretend they are risk-free. Rent can stop. Vacancies, taxes, repairs and inflation can change the sums.</p>
+<p>Financial security is always a household-level story.</p></div><div class="duo"><article class="place"><h3>NET WORTH</h3><p>Everything you own minus what you owe. Some may be difficult to sell.</p></article><article class="place"><h3>SPENDABLE CORPUS</h3><p>Financial assets available to fund goals and withdrawals.</p></article></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So my flat's estimated sale price isn't my monthly income?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Exactly. A valuable roof and a spendable bank balance are different animals.</p></div></div></section><section class="ep" id="section-08"><div class="ep-head"><span class="no">08</span><h2>The deep dive: four numbers worth knowing</h2></div><svg class="illus r" viewBox="0 0 148 126" aria-hidden="true"><rect width="148" height="126" fill="#fff"/><path d="M74 17l43 14v37q0 30-43 44Q31 98 31 68V31z" fill="#a7ddb4" stroke="#151515" stroke-width="5"/><path d="M49 65l18 18 32-38" stroke="#151515" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="reading">
+<p class="lead">Before making a retirement decision, collect four numbers. Not from a viral WhatsApp chart—from your own household.</p>
+<p><b>1. Annual spending.</b> Count ordinary expenses plus irregular bills: insurance, property maintenance, holidays, family responsibilities and replacement of things like cars and appliances. A ₹60,000 monthly life is already ₹7.2 lakh annually before extras.</p>
+<p><b>2. Years to fund.</b> Retiring at 50 is a very different maths problem from retiring at 70. Plan for either spouse living longer than expected.</p>
+<p><b>3. Inflation and after-tax return.</b> The exact real-return formula is <b>(1 + nominal return) ÷ (1 + inflation) − 1</b>. At a hypothetical 8% nominal return and 5% inflation, real return is about <b>2.86%</b> before tax and fees—not 8%. At a higher effective tax burden, the gap narrows.</p>
+<p><b>4. The bad-year reserve.</b> What happens if markets decline, a tenant moves out or medical costs arrive earlier than expected? A plan without shock absorbers looks great in a spreadsheet and miserable in a crisis.</p>
+<p>CPI is not your personal cost of living; a single return estimate hides uncertainty. A resilient plan survives when assumptions prove wrong. <a href="#s3">[3]</a> <a href="#s6">[6]</a></p></div><div class="take">A plan that survives a bad scenario is more valuable than one that looks fantastic in a perfect scenario.</div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>Can a spreadsheet predict my retirement exactly?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>No. But a sensible spreadsheet can show you which assumptions are dangerous.</p></div></div></section><div class="era p3">THE VERDICT<small>Prof. Bolt and the real meaning of rich.</small></div><section class="ep" id="section-09"><div class="ep-head"><span class="no">09</span><h2>A richer question than 'Am I a crorepati?'</h2></div><div class="reading">
+<p class="lead">Back at the coffee shop, Ravi and Sameer have stopped comparing balances. They have begun comparing responsibilities.</p>
+<p>Ravi's debt-free home and low expenses make his crore go further. Sameer needs a bigger cushion for school, rent and family support. Their money has different jobs to do.</p>
+<p>So what is the verdict? <b>₹1 crore remains a remarkable milestone.</b> It buys choices and a strong foundation—but not a universal retirement ticket. Inflation does not know how many commas are in your bank balance. Neither does an unexpected health expense.</p>
+<p>The intelligent question is not “Is one crore enough for everyone?” It is: <b>“Is my corpus big enough for my spending, my time horizon and the risks I am willing to bear?”</b></p>
+<p>List annual expenses, dependable income and debts; hold appropriate liquidity; project inflation; and test both good and difficult scenarios. Seek qualified advice for major decisions.</p>
+<p>And remember the original lesson: a lakh is a number, a crore is a number—but <b>freedom is the ability to live the life you need without constantly fearing the next bill.</b></p></div><div class="opinion"><article><h3>GOOD NEWS</h3><p>₹1 crore is substantial wealth, especially with low debt and modest expenses.</p></article><article><h3>WATCH OUT</h3><p>Inflation, taxes, large withdrawals and bad early market returns can shorten its life.</p></article><article><h3>OPINION · PROF. BOLT</h3><p>Replace the magic-number goal with an expense-based, risk-tested financial plan.</p></article></div><div class="take"><b>SO WHAT SHOULD ZAPPY DO?</b><br>Write down one year's true spending; estimate what it may become; subtract reliable income; plan an emergency reserve; review the retirement number every year.</div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>So the new dream isn't “one crore by forty”?</p></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>Dream bigger—and more precisely. Count the years of life your money can support, not just the zeroes.</p></div></div></section><section class="ep cheat" id="fridge"><div class="ep-head"><span class="no">SAVE THIS</span><h2>Fridge-door cheat sheet</h2></div><div class="opinion"><article class="question"><h3>THE STORY</h3><p>💰 A crore is a milestone, not a salary.<br>⏳ Inflation steadily changes its power.<br>🏠 A home and spendable savings differ.</p></article><article class="question"><h3>DEEP DIVE</h3><p>📊 ₹50,000 becomes ~₹1.10L in 20 years at 4%.<br>🧮 Returns after tax and inflation matter.<br>📉 Withdrawal timing can hurt.</p></article><article class="question"><h3>YOUR MOVE</h3><p>📝 List annual household expenses.<br>🛟 Keep room for bad surprises.<br>🔁 Review the plan as life changes.</p></article></div><p class="smallnote">All growth-rate illustrations are hypothetical, not assured returns or forecasts.</p></section><section class="evidence" id="sources"><h2>The evidence file</h2><p>Researched 13 November 2026 · India’s historical CPI comparison uses annual data through 2025. All calculations are rounded educational illustrations; household experience, taxes and returns vary.</p><ol class="source-list"><li id="s1"><a href="https://databank.worldbank.org/reports.aspx?country=IND%2CCOD&series=FP.CPI.TOTL&source=2" target="_blank" rel="noopener">World Bank, World Development Indicators: Consumer price index (2010=100), India</a> — Annual CPI index: India 2000 ≈ 54.3; 2025 ≈ 233.1; purchasing-power conversion based on the ratio, values rounded.</li><li id="s2"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2291051" target="_blank" rel="noopener">Ministry of Statistics and Programme Implementation / PIB, CPI base revision, 2026</a> — Explains new 2024-base CPI series and why direct comparison across the series requires care.</li><li id="s3"><a href="https://investor.sebi.gov.in/moneymatters-inflation.html" target="_blank" rel="noopener">SEBI Investor Education: Inflation and the value of money</a> — Official investor-education primer on purchasing power and inflation.</li><li id="s4"><a href="https://egazette.gov.in/WriteReadData/2026/271285.pdf" target="_blank" rel="noopener">Government of India, Ministry of Finance notification of 25 March 2026</a> — Official CPI inflation target 4%, lower and upper tolerance limits 2% and 6%, 1 April 2026–31 March 2031.</li><li id="s5"><a href="https://www.pfrda.org.in/documents/33652/198397/Pension%2BSecurity%2Bin%2BIndia-Book.pdf" target="_blank" rel="noopener">PFRDA: Pension Security in India — On Safe Withdrawal Rate in the Indian Context</a> — Retirement withdrawal simulation under particular Indian-market and portfolio assumptions; not a universal safety guarantee.</li><li id="s6"><a href="https://www.nism.ac.in/revamp-nism/financial-planning/retirement-planning-the-under-estimated-risks-and-how-to-deal/" target="_blank" rel="noopener">National Institute of Securities Markets: Retirement planning — the under-estimated risks</a> — Explains sequence-of-returns risk and why spending reserves may help.</li></ol></section><section class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></section><footer class="foot">THE END · srini.presents · for curious grown-ups</footer></main><script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body></html>

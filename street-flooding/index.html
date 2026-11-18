@@ -1,0 +1,287 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Why Does One Street Flood While the Next Stays Dry? — srini.presents</title><meta name="description" content="Follow stormwater through two neighbouring streets in an illustrated explainer about urban flooding."><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+
+.ill{display:block;width:118px;height:118px;margin:2px auto 4px;background:#fff;border:3px solid #151515;border-radius:22px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:6px;box-sizing:border-box}
+.ill.r{transform:rotate(2deg)}
+@media (prefers-color-scheme:dark){.ill{border-color:#e9edf2;box-shadow:4px 4px 0 #e9edf2}}
+@media (max-width:640px){.ill{width:112px;height:112px}}
+
+
+@media (max-width:640px){
+ .wrap p,.panel p,.panel li,.bubble{font-size:17.5px!important;line-height:1.45}
+ .cap{font-size:17.5px!important}
+ .wrap .small,.wrap p.small,.chain span,.chain b,.chain div,.foot,.ladder,.bar{font-size:15px!important}
+ .take,.warn{font-size:17.5px!important}
+
+}
+
+
+@media (max-width:640px){
+ table.vs.stk,table.vs.stk tbody,table.vs.stk tr,table.vs.stk td{display:block;width:auto!important}
+ table.vs.stk{table-layout:auto!important;border:0}
+ table.vs.stk thead{display:none}
+ table.vs.stk tr{border:3px solid var(--line);margin:0 0 12px;background:var(--panel)}
+ table.vs.stk td{border:0!important;border-top:1.5px dashed var(--muted)!important;display:block;padding:7px 12px!important;font-size:16px!important;overflow-wrap:normal!important;hyphens:none!important;text-align:left!important}
+ table.vs.stk td::before{content:attr(data-label);display:block;font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--muted);margin-bottom:1px}
+ table.vs.stk td:first-child{display:block;border-top:0!important;background:#151515;color:#ffd23f!important;font-family:var(--display);letter-spacing:.04em;font-size:18px!important;text-align:left}
+ table.vs.stk td:first-child::before{content:none}
+ .panel:has(table.vs.stk){overflow:visible}
+}
+
+
+.chain i{font-style:normal;font-family:var(--body);font-weight:900;font-size:28px!important;color:#e8590c;line-height:1;-webkit-text-stroke:1.5px #e8590c}
+@media (max-width:640px){
+ .chain{flex-direction:column;align-items:stretch;gap:4px}
+ .chain span{font-size:16px!important;text-align:center;align-self:stretch;display:block}
+ .chain i{display:block;text-align:center;transform:rotate(90deg);font-size:30px!important;margin:0 auto}
+}
+
+
+.bar div{font-family:var(--body)!important;font-weight:800;font-size:15px!important;letter-spacing:.02em;text-shadow:none;-webkit-text-stroke:0;box-sizing:border-box;max-width:100%;padding-right:10px!important;white-space:nowrap}
+@media (max-width:640px){
+ .bar{grid-template-columns:1fr!important;gap:3px}
+ .bar div{height:30px;font-size:16px!important}
+}
+
+
+/* Layout: a comic book. Each episode is a page with a caption bar and a grid of inked panels; two characters talk it through. */
+:root{
+  --paper:#eef3f8; --dot:#cfdbe8; --panel:#ffffff; --line:#151515; --ink:#151515; --muted:#4a5560;
+  --yellow:#ffd23f; --red:#e63946; --blue:#1f7ad1; --green:#2a9d5c; --cap-ink:#151515;
+  --take:#e3f5ea; --warn:#fde8ea; --skin:#e3a877; --hair:#1a1a1a; --grey:#b9bec4;
+  --display:"Bangers","Impact","Arial Black",sans-serif;
+  --body:"Comic Neue","Comic Sans MS","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#10151d; --dot:#1c2532; --panel:#1b222d; --line:#e9edf2; --ink:#eef1f4; --muted:#a8b3bf;
+  --take:#173326; --warn:#3a1d22; --skin:#d39a6a; --hair:#0d0d0d; --grey:#8d949b; color-scheme:dark}
+
+body{background:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.6px);background-size:14px 14px;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2,.sfx,.big b,.cap b{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+p{margin:0}
+
+/* cover */
+.cover{background:var(--yellow);color:var(--cap-ink);border:4px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:28px 24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.cover h1{font-size:clamp(46px,9vw,92px);line-height:.9;margin:0;color:var(--red);-webkit-text-stroke:2px #151515;text-shadow:4px 4px 0 #151515;text-wrap:balance}
+.cover .sub{font-size:19px;font-weight:700;margin-top:12px;max-width:60ch}
+.fs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fs span{font-family:var(--display);font-size:22px;background:#fff;border:3px solid #151515;padding:2px 12px;transform:rotate(-2deg)}
+.fs span:nth-child(even){transform:rotate(2deg)}
+.cast{display:flex;gap:14px}
+.cast figure{margin:0;text-align:center;font-weight:700;font-size:14px;max-width:130px}
+.cast svg{width:96px;height:96px;display:block;margin:0 auto 6px;border:3px solid #151515;border-radius:50%;background:#fff}
+
+/* episode */
+.ep{background:var(--panel);border:4px solid var(--line);box-shadow:7px 7px 0 var(--line);padding:18px;display:flex;flex-direction:column;gap:14px}
+.ep-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ep-head .no{font-family:var(--display);font-size:20px;background:var(--red);color:#fff;border:3px solid var(--line);padding:0 10px;transform:rotate(-3deg)}
+.ep-head h2{font-size:clamp(28px,4.6vw,40px);margin:0;line-height:1;text-wrap:balance}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.panel{border:3px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0;background:var(--panel)}
+.panel.wide{grid-column:1/-1}
+
+/* speech */
+.say{display:flex;gap:10px;align-items:flex-start}
+.say.g{flex-direction:row-reverse}
+.av{width:54px;height:54px;flex:none;border:2.5px solid var(--line);border-radius:50%;background:#fff}
+.bubble{position:relative;border:2.5px solid var(--line);border-radius:18px;padding:10px 13px;background:var(--panel);min-width:0}
+.bubble::before{content:"";position:absolute;top:16px;left:-11px;border:9px solid transparent;border-right-color:var(--line);border-left:0}
+.bubble::after{content:"";position:absolute;top:18px;left:-7px;border:7px solid transparent;border-right-color:var(--panel);border-left:0}
+.say.g .bubble::before{left:auto;right:-11px;border-right:0;border-left:9px solid var(--line)}
+.say.g .bubble::after{left:auto;right:-7px;border-right:0;border-left:7px solid var(--panel)}
+.who{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+
+/* narration, takeaway, sfx */
+.cap{background:var(--yellow);color:var(--cap-ink);border:2.5px solid var(--line);padding:8px 12px;font-weight:700}
+.cap b{font-size:18px;margin-right:6px}
+.take{background:var(--take);border:3px dashed var(--green);padding:12px 14px}
+.take::before{content:"TAKEAWAY";display:block;font-family:var(--display);font-size:20px;color:var(--green);letter-spacing:.06em}
+.warn{background:var(--warn);border:3px dashed var(--red);padding:12px 14px}
+.warn::before{content:"WATCH OUT";display:block;font-family:var(--display);font-size:20px;color:var(--red);letter-spacing:.06em}
+.sfx{font-size:clamp(34px,6vw,52px);color:#e8590c;-webkit-text-stroke:2px #151515;text-shadow:3px 3px 0 #151515;transform:rotate(-6deg);align-self:flex-start;line-height:1}
+.sfx.r{color:var(--red)} .sfx.b{color:var(--blue)}
+.big{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big b{font-size:clamp(34px,6vw,48px);line-height:1;color:var(--blue)}
+.big .arrow{font-family:var(--display);font-size:32px}
+.big b.hot{color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+ol.clean{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
+
+/* chain */
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chain span{border:2.5px solid var(--line);padding:6px 10px;background:var(--panel);font-weight:700;font-size:15px}
+.chain span.hit{background:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:var(--display);font-size:24px}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-weight:700;font-size:15px}
+.bar div{height:26px;border:2.5px solid var(--line);background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-family:var(--display);font-size:18px;font-variant-numeric:tabular-nums}
+.bar div.hot{background:var(--red)}
+
+/* thali */
+.thali{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.thali span{width:108px;height:108px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;padding:8px;color:#151515}
+.t1{background:#ffd23f}.t2{background:#f4c95d}.t3{background:#cfd6dd}.t4{background:#9fd3b4}.t5{background:#9cc6ef}.t6{background:#f3a5ad}
+
+/* five brothers */
+.five{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.five div{border:2.5px solid var(--line);padding:10px;min-width:0}
+.five b{display:block;font-family:var(--display);font-size:22px;font-weight:400;color:var(--red);letter-spacing:.03em}
+
+/* cheat sheet */
+.cheat{background:var(--yellow);color:var(--cap-ink)}
+.cheat .panel{background:#fff;color:#151515;border-color:#151515}
+.cheat .ep-head h2{color:#151515}
+.foot{font-size:14px;color:var(--muted);text-align:center;max-width:70ch;margin:0 auto}
+
+@media (max-width:640px){
+  .cover{grid-template-columns:1fr}
+  .cast{justify-content:flex-start}
+  .bar{grid-template-columns:86px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .sfx{transition:transform .2s} .sfx:hover{transform:rotate(0) scale(1.08)}
+}
+
+
+/* One cover colour per weekday. Pastel cover = black text; dark cover = white text. */
+.cover.t-mon{background:#b83a0b;color:#fff}.cover.t-mon h1{color:#fff}
+.cover.t-tue{background:#ffd23f;color:#151515}.cover.t-tue h1{color:#151515}
+.cover.t-wed{background:#17703f;color:#fff}.cover.t-wed h1{color:#fff}
+.cover.t-thu{background:#1d4f9a;color:#fff}.cover.t-thu h1{color:#ffd23f}
+.cover.t-fri{background:#ffc6cf;color:#151515}.cover.t-fri h1{color:#151515}
+.cover.t-sat{background:#ddd0ff;color:#151515}.cover.t-sat h1{color:#151515}
+.cover.t-sun{background:#0e5b57;color:#fff}.cover.t-sun h1{color:#ffd23f}
+.cover[class*="t-"] h1{-webkit-text-stroke:0!important;text-shadow:none!important}
+.cover[class*="t-"] .sub,.cover[class*="t-"] figure{color:inherit}
+.cover[class*="t-"] .fs span{background:#fff;color:#151515;border-color:#151515}
+.daytag{display:inline-block;font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:.12em;padding:1px 7px;margin:0 0 8px;border:2px solid #151515;background:#151515;color:#fff}
+.t-mon .daytag,.t-wed .daytag,.t-thu .daytag,.t-sun .daytag{background:#fff;color:#151515}
+.cover[class*="t-"] .byline{font-family:var(--display)!important;font-size:28px!important;letter-spacing:.05em;margin:0 0 6px!important;line-height:1.1}
+.cover[class*="t-"]{position:relative}
+.cover[class*="t-"] .daytag{position:absolute;top:12px;right:12px;margin:0}
+.cover[class*="t-"] .byline{margin:0 0 18px!important;white-space:nowrap}
+.cover.t-mon .byline{color:#fff1a8}.cover.t-tue .byline{color:#9d0208}.cover.t-wed .byline{color:#ffd23f}.cover.t-thu .byline{color:#ffffff}.cover.t-fri .byline{color:#9d174d}.cover.t-sat .byline{color:#4c1d95}.cover.t-sun .byline{color:#a7f3d0}
+
+
+.era{font-family:var(--display);font-size:clamp(30px,5vw,44px);letter-spacing:.05em;text-align:center;color:#fff;background:var(--blue);border:4px solid var(--line);box-shadow:6px 6px 0 var(--line);padding:6px 12px;transform:rotate(-1deg)}
+.era.p2{background:var(--green)} .era.p3{background:var(--red)} .era.p4{background:#6b4fbb}
+.era small{display:block;font-family:var(--body);font-size:15px;font-weight:700;letter-spacing:0}
+.byline{font-family:var(--display);font-size:22px;letter-spacing:.06em;margin:0 0 8px}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+table.vs th,table.vs td{border:2.5px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.vs th{background:#151515;color:#ffd23f;font-family:var(--display);font-weight:400;letter-spacing:.05em;font-size:17px}
+table.vs td.ok{color:var(--green);font-weight:700} table.vs td.bad{color:var(--red);font-weight:700}
+.panel:has(table.vs){overflow-x:auto}
+.green{background:#d8f0dc;color:#151515}
+
+
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.b{color:#7cc0ff;-webkit-text-stroke:1px #151515}
+:root:not([data-theme="light"]) .ep .panel:not(.green) .sfx.r{color:#ff8a94;-webkit-text-stroke:1px #151515}}
+:root[data-theme="dark"] .ep .panel:not(.green) .sfx.b{color:#7cc0ff}:root[data-theme="dark"] .ep .panel:not(.green) .sfx.r{color:#ff8a94}
+
+
+.myth{background:var(--warn);border:3px solid var(--red);padding:12px 14px;font-weight:700;font-size:19px;margin:0}
+.myth::before{content:"MYTH";display:block;font-family:var(--display);font-size:24px;color:var(--red);letter-spacing:.08em;font-weight:400}
+.factx{background:var(--take);border:3px solid var(--green);padding:12px 14px;margin:0 0 10px}
+.factx::before{content:"FACT";display:block;font-family:var(--display);font-size:24px;color:var(--green);letter-spacing:.08em}
+.score{display:inline-block;font-family:var(--display);font-size:20px;letter-spacing:.05em;border:2.5px solid var(--line);padding:2px 10px;background:var(--yellow);color:#151515;transform:rotate(-2deg)}
+@media (max-width:640px){.myth{font-size:18px!important}.factx{font-size:17.5px!important}}
+.dayspecial{display:flex;gap:10px;align-items:center;margin:16px auto 6px;max-width:640px;padding:10px 14px;border:3px solid #151515;background:#ffd23f;color:#151515;font-size:15.5px;line-height:1.4;border-radius:14px;box-shadow:4px 4px 0 #151515;transform:rotate(-1.2deg)}
+.dayspecial .dsav{width:52px;height:52px;flex:0 0 52px;border:2.5px solid #151515;border-radius:50%;background:#fff}
+.dayspecial .dstag{display:block;font-family:var(--display);font-size:21px;letter-spacing:.05em;color:#9d0208;line-height:1.1;margin-bottom:2px}
+
+
+*,*::before,*::after{box-sizing:border-box}body{padding:24px 18px 48px}.wrap{max-width:1060px;margin:auto;display:grid;gap:36px}.cover{background:#ffd23f!important;color:#151515!important;padding:28px 24px;border:4px solid var(--line);box-shadow:8px 8px 0 var(--line)}.cover h1{color:#151515!important;font-size:clamp(45px,7vw,78px);line-height:1.03;text-shadow:none!important;-webkit-text-stroke:0!important;margin:20px 0}.cover .byline{color:#9d0208!important;font-size:28px!important;white-space:normal!important}.tagline{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:5px}.sample{display:inline-block;background:#151515;color:#fff;padding:5px 10px;font-weight:bold}.cast{display:flex;gap:30px;flex-wrap:wrap}.cast figure{margin:12px 0 0;max-width:180px;font-weight:bold}.cast svg{display:block;width:84px;height:84px;background:white;border:2px solid #151515;border-radius:50%;margin-bottom:8px}.cast small{font-weight:normal}.fact{display:block!important;font-size:18px;line-height:1.5}.say{align-items:flex-start}.av{flex-shrink:0;width:54px;height:54px}.bubble{min-width:0}.ep{min-width:0}.grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.panel{min-width:0}a{color:#165da3}.cover .sub{color:#151515!important}.evidence{padding:20px;border:3px solid var(--line);background:var(--panel)}.evidence p,.evidence li{font-size:15px;line-height:1.5}.next{background:#ffd23f;color:#151515;border:3px solid var(--line);padding:18px;font-size:19px}.foot{text-align:center}h2{line-height:1.15}.fs{display:flex;flex-wrap:wrap;gap:8px}.fs span{background:#fff!important;color:#151515!important;border:2px solid #151515;padding:4px 8px}
+@media(prefers-color-scheme:dark){a{color:#8cc9ff}.sfx{color:#ffae73}.sfx.b{color:#86c6ff}.sfx.r{color:#ff9ca6}.cap,.take,.warn{color:#151515}.take{background:#dff2e5}}
+@media(max-width:640px){body{padding:16px 16px 32px}.wrap{gap:28px}.grid{grid-template-columns:minmax(0,1fr)!important}.cover{padding:22px 16px}.ep{padding:12px}.panel{padding:12px}.fact{font-size:17.5px}.ep-head{align-items:flex-start}.cover h1{font-size:48px}.ep h2{font-size:29px}.cast{gap:20px}.cast figure{max-width:125px}}
+
+
+.wrap{gap:36px}.cover h1{font-size:clamp(44px,6.2vw,72px)}.cover .sub{max-width:45ch;line-height:1.55}.cast figure{font-size:17px}.ep{display:grid;gap:22px}.ep-head{margin-bottom:0}.reading{max-width:760px;width:100%;margin:0 auto;font:19px/1.65 var(--body)}.reading p{margin:0 0 16px}.reading p:last-child{margin-bottom:0}.reading .cap{margin:0 0 14px;font-size:19px;line-height:1.4}.lead{font-size:22px;font-weight:700;line-height:1.5}.banter{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:18px;background:var(--panel);border-top:2px dashed var(--muted);border-bottom:2px dashed var(--muted)}.banter .bubble{margin:0;line-height:1.5}.math{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bill{padding:18px;border:3px solid var(--line);background:var(--panel)}.bill h3{font-family:var(--display);font-size:28px;letter-spacing:.03em;margin:0 0 12px}.bill dl{margin:0}.bill dl div{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.bill dd{margin:0;white-space:nowrap;font-weight:700}.bill .total{border-top:2px solid var(--line);padding-top:10px;font-size:23px}.delta{background:#ffd23f;color:#151515;padding:15px 18px;border:3px solid var(--line);font-size:21px;font-weight:700;text-align:center}.ep .take{font-size:19px;line-height:1.55;border:2px solid #245e3b;background:#e3f5ea;color:#153c25;padding:16px 18px}.questions{display:grid;gap:13px}.question{border:2px solid var(--line);padding:15px 18px;background:var(--panel)}.question h3{font-family:var(--body);font-size:20px;line-height:1.4;margin:0 0 7px}.question p{margin:0}.source-note{font-size:15px!important;color:var(--muted)}.sample-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.sample-nav a{border:2px solid #151515;color:#151515;background:white;padding:6px 12px;font-weight:700;text-decoration:none}.ep p{overflow-wrap:break-word}.page-marker{font-weight:700;color:var(--muted);font-size:15px;letter-spacing:.08em}.ep-head .no{white-space:nowrap}html{scroll-behavior:smooth}
+@media(max-width:640px){.reading{font-size:17.5px;line-height:1.6}.reading .lead{font-size:20px!important}.banter,.math{grid-template-columns:minmax(0,1fr)}.banter{padding:16px 0;gap:16px}.ep{gap:18px}.bill{padding:16px}.question{padding:14px}.question h3{font-size:19px}.cover h1{font-size:46px}.ep .take{font-size:17.5px}.reading .cap{font-size:18px}.delta{font-size:19px}.wrap{gap:28px}.sample-nav{gap:8px}.sample-nav a{font-size:15px}.ep-head h2{font-size:32px}}
+@media(prefers-color-scheme:dark){.ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}}
+:root[data-theme="dark"]{--paper:#10151d;--dot:#1c2532;--panel:#1b222d;--line:#e9edf2;--ink:#e9edf2;--muted:#a8b3bf}:root[data-theme="dark"] .ep .take{background:#173326;color:#d9f2e3;border-color:#80b792}
+
+
+.cover{background:#c2410c!important;color:#fff!important}.cover h1,.cover .sub{color:#fff!important}.cover .byline{color:#fff1a8!important}.cover .cast figure{color:#fff}.cover .tagline{color:#fff1a8}.time-box{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:20px;text-align:center}.time-box strong{display:block;font:clamp(44px,7vw,68px)/1.2 var(--display);letter-spacing:.03em}.time-box p{margin:8px 0 0}.spot{width:84px;height:84px;background:white;border:3px solid #151515;border-radius:16px;padding:5px;justify-self:center;box-shadow:3px 3px 0 #151515}.opinion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opinion article{border:2px solid var(--line);padding:16px}.opinion h3{font:24px var(--display);margin:0 0 10px}.opinion p{font-size:18px;line-height:1.55;margin:0}.math-note{border-left:6px solid #e8590c;padding:12px 18px;background:var(--panel)}.cheat{background:#ffd23f!important;color:#151515!important}.cheat .question{background:#fff;color:#151515;border-color:#151515}.cheat .question p{font-size:18px}.source-list{padding-left:22px}.source-list li{margin-bottom:12px}.evidence a{overflow-wrap:anywhere}.sample{background:#fff!important;color:#151515!important}.era{margin:0}.take strong{font-weight:700}@media(max-width:640px){.opinion{grid-template-columns:minmax(0,1fr)}.opinion p{font-size:17.5px}.spot{width:76px;height:76px}.time-box{padding:16px}.time-box strong{font-size:48px}.cheat .question p{font-size:17.5px}}
+
+
+.cover{display:block;background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important;font-size:clamp(40px,6.3vw,74px)}.cover .byline{color:#ffd23f!important}.cover .sub{color:#fff!important;max-width:62ch}.readtime{margin-top:22px}.cover .tagline{color:white}.cover .sample{background:#ffd23f;color:#151515}.cover .cast{margin-top:12px}.cover .cast figure{max-width:180px}.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.place{border:3px solid var(--line);padding:18px;background:var(--panel)}.place h3{font-family:var(--display);font-size:27px;margin:0 0 8px}.digits{font-family:var(--display);font-size:76px;text-align:center;letter-spacing:.12em;color:var(--ink);line-height:1.1}.digits small{display:block;font:700 16px var(--body);letter-spacing:0;margin-top:12px}.spot{width:110px;height:110px}.reading{max-width:760px}.opinion article{min-width:0}.bill p{font-size:18px}.evidence h2{font-family:var(--display);font-size:32px}.source-list li{margin:12px 0}.stamp{text-align:center;font-size:15px;color:var(--muted)}
+:root[data-theme="dark"] a{color:#8cc9ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .ep .take{color:#d9f2e3;background:#173326}}
+@media(max-width:640px){.duo{grid-template-columns:1fr}.cover h1{font-size:42px}.reading p,.bubble{line-height:1.6!important}.digits{font-size:64px}.cover .cast{gap:22px}.cover .cast figure{font-size:16px}.opinion{grid-template-columns:1fr!important}.bill .total{font-size:21px}}
+@media print{body{background:white;padding:0}.cover,.ep,.evidence,.era{box-shadow:none;break-inside:avoid}.wrap{gap:20px}}
+
+.cover{background:#0e5b57!important}.cover h1{color:#ffd23f!important}.cover .byline{color:#a7f3d0!important}.card-art{display:block;width:min(100%,410px);height:auto;margin:0 auto}.deck-note{font-size:14px!important;text-align:center;color:var(--muted)}.fact-strip{background:#fff2bc;color:#151515;border:3px solid var(--line);padding:18px;text-align:center;font:700 21px/1.5 var(--body)}:root[data-theme="light"] a{color:#165da3}@media(max-width:360px){.cover h1{font-size:36px}.cast{gap:12px!important}.cast figure{max-width:108px!important}.ep-head h2{font-size:28px}} 
+.follow{border:3px dashed var(--line);padding:22px 18px;text-align:center;font:18px/1.6 var(--body)}.follow b{font-family:var(--display);font-weight:400;font-size:28px;letter-spacing:.05em;display:block}.follow a{font-weight:700}
+.gamelist{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.gamelist div{border:2.5px solid var(--line);padding:10px;background:var(--panel);min-width:0}.gamelist b{display:block;font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.03em;color:var(--red)}.gamelist span{font-weight:700}@media(max-width:640px){.gamelist{grid-template-columns:1fr 1fr}.gamelist b{font-size:18px;overflow-wrap:anywhere}}
+
+
+.cover{background:#ffc6cf!important;color:#151515!important}.cover h1{color:#151515!important}.cover .sub{color:#151515!important}.cover .byline{color:#9d174d!important}.cover .tagline{color:#671c3e!important}.cover .cast figure{color:#151515!important}
+.cover .sample{background:#fff!important;color:#151515!important}.cover .daytag{position:absolute;right:12px;top:12px;background:#151515;color:#fff;font:bold 11px/1.2 var(--body);padding:5px 9px;border:2px solid #151515}
+.cover{position:relative}.reading p{margin:0 0 14px}.ep .take{background:#e3f5ea!important;color:#153c25!important;border-color:#245e3b!important}.ep .warn{background:#fde8ea!important;color:#5a1824!important;border:2px solid #ba303b;padding:14px}
+.source-list li{overflow-wrap:anywhere}.source-list a{overflow-wrap:anywhere}.minirow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.minirow>div{border:2.5px solid var(--line);padding:12px;background:var(--panel);min-width:0;font-size:16px}.minirow strong{display:block;font:clamp(23px,5vw,34px) var(--display);color:#e8590c}.smallnote{font-size:14px!important;color:var(--muted);text-align:center}
+.illus{display:block;width:150px;height:128px;margin:0 auto 7px;background:#fff;border:3px solid #151515;border-radius:20px;box-shadow:4px 4px 0 #151515;transform:rotate(-2deg);padding:4px;box-sizing:border-box}
+.illus.r{transform:rotate(2deg)}.illus text{font-family:Arial,sans-serif;font-weight:bold}.source-list{padding-left:25px}
+.cheat{background:#ffd23f!important;color:#151515!important;border-color:#151515}.cheat .panel,.cheat .question{background:#fff!important;color:#151515!important;border-color:#151515!important}.cheat .question h3{color:#151515!important}.cheat .question p{color:#151515!important}
+@media(max-width:640px){.reading{font-size:17.5px!important;line-height:1.58}.reading p{font-size:17.5px!important}.cover h1{font-size:clamp(38px,10vw,49px)!important}.minirow{grid-template-columns:1fr}.minirow>div{font-size:17.5px}.ep{padding:12px!important}.bubble{font-size:17.5px!important}.illus{width:132px;height:118px}}
+@media(prefers-color-scheme:dark){.minirow{color:var(--ink)}.ep .warn{background:#4a2630!important;color:#ffe9ec!important;border-color:#ff8a94!important}.ep .take{background:#173326!important;color:#d9f2e3!important;border-color:#80b792!important}.cover{border-color:#151515!important;box-shadow:7px 7px 0 #151515!important}.illus{border-color:#151515!important;box-shadow:4px 4px 0 #151515!important}}
+
+.cover.t-wed{background:#17703f!important;color:white!important}.cover.t-wed h1,.cover.t-wed .sub,.cover.t-wed .cast figure{color:white!important}.cover.t-wed .byline,.cover.t-wed .tagline{color:#ffd23f!important}.cover.t-wed .daytag{background:white;color:#151515}.era.p2{background:#17703f}.era.p3{background:#bd2938}.ep-head .no{background:#bd2938}.wrap>*{min-width:0}.reading a{white-space:nowrap}.source-list li{margin-bottom:.65em}.source-list li:target{outline:3px solid #247bd0;outline-offset:3px}.vs caption{text-align:left;padding:0 0 8px;font-weight:bold}a:focus-visible{outline:3px solid #247bd0;outline-offset:3px}.cover .sample{display:inline-block}.cheat .minirow .panel{display:block}.cheat .panel strong{display:block;margin-bottom:5px}.opinion article p{margin:0}@media(max-width:640px){.cover .daytag{font-size:10px}}</style><style>.cover.t-mon{background:#b83a0b!important;color:#fff!important}.cover.t-mon h1,.cover.t-mon .sub,.cover.t-mon .cast figure{color:#fff!important}.cover.t-mon .byline,.cover.t-mon .tagline{color:#fff1a8!important}.cover.t-mon .daytag{background:#fff;color:#151515}</style><style id="day-cover">.cover{background:#17703f!important;color:#fff!important}.cover h1{color:#fff!important}.cover .sub,.cover .cast figure,.cover .readtime,.cover .tagline{color:#fff!important}.cover .byline{color:#ffd23f!important}.cover .fs span{color:#151515}</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--blue)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="var(--hair)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="var(--red)" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="var(--skin)" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 37 Q32 34 39 37 Q32 40 25 37Z" fill="var(--grey)" stroke="#151515" stroke-width="1.5"/>
+    <path d="M28 41 Q32 43 36 41" stroke="#151515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </symbol></svg><main class="wrap"><header class="cover"><p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p><h1>Why Does One Street Flood While the Next Stays Dry?</h1><p class="sub">The bakery street clears. Around the corner, water is still rising. Follow the rain from the roofs above a Mysuru lane to the drain below it.</p><div class="fs"><span>Slopes &amp; runoff</span><span>Street drains</span><span>Lakes &amp; outlets</span></div><div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>watching from the bakery</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>tracing the water downhill</small></figure></div><p class="readtime">7–8 MINUTE READ · 9 EPISODES</p></header>
+<section class="ep" aria-labelledby="ep01"><div class="ep-head"><span class="no">01</span><h2 id="ep01">Two streets, one cloudburst</h2></div><svg class="illus " viewBox="0 0 120 105" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M12 76h96v16H12z" fill="#a9d2ff"/><path d="M20 75V44h37v31M16 46l22-21 22 21" fill="#ffc6cf"/><path d="M65 65q10-6 20 0t20 0m-40 12q10-6 20 0t20 0" fill="none" stroke="#247bd0"/><path d="M74 22l-5 9m17-8-5 9m17-8-5 9" stroke="#247bd0"/></g></svg><div class="reading"><p class="lead">At the end of a Mysuru downpour, Zappy could see the white road markings outside the bakery. One turn away, a scooter rider had stopped at the edge of a brown pool that covered the full width of the lane. The rain had eased on both streets. At the corner, water was still streaming downhill into the pool.</p>
+<p>The baker said the drain must be blocked. A customer blamed the apartment block up the road. Zappy pointed out that the bakery street had plenty of concrete too. Prof. Bolt suggested a different first question. Where did all that water come from, and where could it go?</p>
+<p>Imagine both streets got the same rain in this fictional example. Their water levels could still differ because the rain that lands on a street is only part of what reaches it. Some comes from roofs, parking areas and roads higher up. Some leaves quickly. What remains can collect at the lowest point. <a href="#s1">[1]</a></p>
+<p>From dry ground, Zappy looked back at the corner. The small stream was tracing a route he’d never noticed in dry weather.</p></div><div class="fact-strip">ONE STREET SHEDS WATER. THE NEXT ONE COLLECTS IT.</div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>How can it still be filling if the rain has eased?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>Water from uphill is still arriving.</div></div></div></section>
+<section class="ep" aria-labelledby="ep02"><div class="ep-head"><span class="no">02</span><h2 id="ep02">Follow the slope past the street sign</h2></div><svg class="illus r" viewBox="0 0 120 105" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M12 39q27 49 50 47 23-2 45-47v56H12z" fill="#a6dac2"/><path d="M22 36l26 32m-10-3 10 3-2-10m51-22L72 68m10-3-10 3 2-10" fill="none" stroke="#247bd0"/></g></svg><div class="reading"><p class="lead">Imagine spilling a glass of water at the top of a sloping driveway. The water takes the downhill route, even if that means crossing into the next property. Streets work on the same principle. Curbs, driveway ramps and the curve of the road change the route at a much smaller scale. A dip in the road can collect water from both directions. <a href="#s1">[1]</a></p>
+<p>The land that drains towards a particular point is its <b>catchment</b>. The bakery street in our story is slightly higher and keeps sloping towards another outlet. The flooded lane lies at the bottom of a dip, where two uphill roads deliver runoff. A large catchment can feed a low point even if the patch of road actually underwater is small.</p>
+<p>Think of an underpass. Its low point is the reason traffic can pass beneath another road. That same shape means water must be carried away through drainage, sometimes with pumping. It can be hard to see the full route from the pavement because the pipes disappear underground.</p>
+<p>When the rain clears, the useful clues are where the road falls away, which surfaces feed it and where a low point could overflow. Look from safe ground. The deepest part of the pool can be hard to judge from its edge. <a href="#s5">[5]</a></p></div><div class="chain"><span>Higher roads and plots</span><i aria-hidden="true">→</i><span>Runoff follows slopes and curbs</span><i aria-hidden="true">→</i><span>Water gathers at the dip</span></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>Does the neighbourhood boundary tell us where the water goes?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>The slope and the drains draw their own boundaries.</div></div></div></section>
+<section class="ep" aria-labelledby="ep03"><div class="ep-head"><span class="no">03</span><h2 id="ep03">Concrete changes how quickly water arrives</h2></div><svg class="illus " viewBox="0 0 120 105" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M12 57h96v27H12z" fill="#a9d2ff"/><path d="M59 57h49v27H59z" fill="#a6dac2"/><path d="M39 20l-8 15a9 9 0 1 0 16 0zM82 20l-8 15a9 9 0 1 0 16 0z" fill="#a9d2ff"/><path d="M30 69h16m-6-5 6 5-6 5m45-11v15" fill="none"/></g></svg><div class="reading"><p class="lead">Follow one drop onto a tiled courtyard. It can run to a gutter almost immediately. Another lands in a garden, where some of it can collect in a shallow hollow or soak into the soil. Roofs and paved surfaces generally allow much less infiltration, which can increase runoff and deliver it more quickly to streams and drains. <a href="#s2">[2]</a></p>
+<p>A garden still has limits. If the soil is saturated from earlier rain or compacted by construction, it can take up water more slowly. A patch of paving can also drain towards a garden rather than straight to the road. How surfaces are connected changes how much water reaches the street and how soon it gets there.</p>
+<p>This helps explain the apartment-block argument. A newly paved site could contribute extra runoff if it sends more water towards the low lane. To know whether that happened here, you would need the layout, outlet and former drainage route. The building’s presence alone cannot establish how much it contributed.</p>
+<p>Zappy draws arrows from three roofs to the uphill road. He adds a fourth roof whose pipe leads into a storage tank. Both the roof and its connection belong in the drawing.</p></div><div class="duo"><article class="place"><h3>Tiles to gutter</h3><p>A direct path can deliver runoff quickly.</p></article><article class="place"><h3>Roof to tank</h3><p>Available storage can hold some of the rain back.</p></article></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>Can two equally paved streets send different amounts to the same drain?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>Yes. Trace where their gutters and pipes actually lead.</div></div></div></section>
+<div class="era p2">The Numbers That Matter<small>How much water arrives and how fast</small></div><section class="ep" aria-labelledby="ep04"><div class="ep-head"><span class="no">04</span><h2 id="ep04">Twenty millimetres is a lot of buckets</h2></div><svg class="illus r" viewBox="0 0 120 105" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M30 46h60l-7 44H37z" fill="#ffd23f"/><path d="M37 46a23 23 0 0 1 46 0M47 60h9m-7 10h7m-5 10h5" fill="none"/><path d="m55 15-5 10m17-10-5 10m17-10-5 10" stroke="#247bd0"/></g></svg><div class="reading"><p class="lead">Take a hypothetical catchment with an area of <b>5,000 square metres</b>. If 20 mm of rain falls evenly on it, that is 0.02 metres of rain multiplied by 5,000 square metres, or <b>100 cubic metres</b>. That’s <b>1,00,000 litres</b> of rain falling across the whole area. The volume that reaches a particular drain will depend on infiltration, storage and the drainage route. <a href="#s1">[1]</a></p>
+<p>Now suppose that rain falls in 15 minutes. Spread evenly across that interval, the average intensity is <b>80 mm per hour</b>. Spread the same 20 mm over two hours and the average intensity is <b>10 mm per hour</b>. Same total depth. Very different rate of delivery. Real rainfall can also peak within either interval.</p>
+<p>The danger at the lane is a period when water arrives faster than it can leave. A daily rain total hides that timing. It also doesn’t tell you how much rain fell upstream of the street, which can matter if showers vary across a city. The calculation assumes uniform rain to make the arithmetic visible.</p>
+<p>The bakery can reopen its door while the lane still has a pool. One location kept passing water along. The other has a backlog to drain.</p></div><div class="minirow"><div><strong>1,00,000 L</strong>Rain falling on 5,000 m² at 20 mm depth</div><div><strong>80 mm/h</strong>If it falls evenly in 15 minutes</div><div><strong>10 mm/h</strong>If it falls evenly in two hours</div></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>Which matters more, the day’s rainfall or the hardest fifteen minutes?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>For a quick street flood, check the short burst and where it fell.</div></div></div></section>
+<section class="ep" aria-labelledby="ep05"><div class="ep-head"><span class="no">05</span><h2 id="ep05">A drain has three places to fail</h2></div><svg class="illus " viewBox="0 0 120 105" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="14" y="27" width="43" height="24" rx="4" fill="#a9d2ff"/><path d="M23 32v14m9-14v14m9-14v14m9-14v14M35 51v26h59" fill="none" stroke-width="5"/><path d="M68 86q10-8 20 0t20 0m-13-17 10 8-10 8" fill="none" stroke="#247bd0"/></g></svg><div class="reading"><p class="lead">At the lane’s edge sits a grated opening. Think of it as the front door of the drainage system. Water must first reach that <b>inlet</b>. Leaves can cover the grate, or the road may slope so the flow bypasses it. Even a clean grate can take only so much water at a given depth and flow. <a href="#s1">[1]</a></p>
+<p>Next comes the pipe or channel. It can be restricted by silt or debris, or simply receive more flow than it can carry. Other roads may be sending water into the same pipe. A grate near your feet and a narrow stretch several blocks away can both affect the pool you see.</p>
+<p>The third place is the <b>outlet</b>. A pipe that normally drains into a channel may discharge less easily if that channel is already running high. Water can back up through the system. Enlarging a street inlet can help when the inlet is the limiting point. It won’t solve a high downstream water level on its own. <a href="#s1">[1]</a></p>
+<p>This gives the baker’s theory a place on the list. A blocked grate is worth checking alongside the buried route and the point where the drain empties.</p></div><div class="chain"><span>Inlet captures runoff</span><i aria-hidden="true">→</i><span>Pipe or channel carries it</span><i aria-hidden="true">→</i><span>Outlet discharges it</span></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>If the grate is clear, can the street still flood?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>Yes. The pipe or the outlet can be the bottleneck.</div></div></div></section>
+<section class="ep" aria-labelledby="ep06"><div class="ep-head"><span class="no">06</span><h2 id="ep06">Why the puddle outlasts the rain</h2></div><svg class="illus r" viewBox="0 0 120 105" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M12 44q30 40 48 40t48-40v48H12z" fill="#f6deb0"/><path d="M31 67h59q-14 18-30 17T31 67z" fill="#a9d2ff"/><path d="M44 28l13 24m-10-4 10 4 3-10m14 15 15-18" fill="none" stroke="#247bd0"/></g></svg><div class="reading"><p class="lead">Picture a shallow dip holding water. As long as the inflow is greater than the outflow, the pool grows. As inflow eases below outflow, the water level starts to fall. If the lowest point has a poor connection to a drain, water can sit there even after the rest of the street has cleared. <a href="#s1">[1]</a></p>
+<p>Try a simplified five-minute example. Suppose 1,200 litres per minute enter the dip and 800 leave it. The difference is 400 litres per minute. Over five minutes the dip accumulates <b>2,000 litres</b>, assuming no infiltration or overflow and constant flow rates. If inflow then stops and outflow stays at 800 litres per minute, that stored volume would take another <b>2½ minutes</b> to clear.</p>
+<p>A real street will rarely hold those rates steady. The flow reaching the pool can lag behind the rain. The discharge can change as the water level falls or the receiving drain backs up. The depth depends on the shape of the road and how far the pool spreads.</p>
+<p>Still, the little calculation tells Zappy what to watch from the bakery. If the pool is growing after the rain stops, there is still more water arriving than leaving.</p></div><div class="fact-strip">HYPOTHETICAL DIP<br>(1,200 − 800 L/min) × 5 min = 2,000 L stored</div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>Why is the lane flooded after the sky clears?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>The water already in the dip needs somewhere to go.</div></div></div></section>
+<div class="era p4">The Deep Dive<small>Follow the drain beyond the corner</small></div><section class="ep" aria-labelledby="ep07"><div class="ep-head"><span class="no">07</span><h2 id="ep07">Where the lake fits into the story</h2></div><svg class="illus " viewBox="0 0 120 105" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M10 42h21l15 16h35l13-16h16v44H10z" fill="#a6dac2"/><ellipse cx="62" cy="70" rx="34" ry="15" fill="#a9d2ff"/><path d="M18 34l14 12m65-12L84 47M49 70q7-6 14 0t14 0" fill="none" stroke="#247bd0"/></g></svg><div class="reading"><p class="lead">Zoom out from the lane to the neighbourhood. A connected lake, wetland or detention basin can hold part of a storm’s runoff and release it more slowly if there is room available and the inlet and outlet work. A water body that is already high has less room left for the next burst. Water level downstream can also affect how well a street drain empties. <a href="#s1">[1]</a> <a href="#s3">[3]</a></p>
+<p>Bengaluru offers a documented Karnataka example of the importance of those connections. A Comptroller and Auditor General performance audit tabled in 2021 examined stormwater management for 2013–14 to 2017–18. It reported encroachment on lakes and drains, loss of natural drainage and weakened connections between water bodies as land use changed. Those are historical findings for Bengaluru. Our Mysuru lane is fictional. <a href="#s4">[4]</a></p>
+<p>A drain repair at one street corner can relieve a local blockage. At catchment scale, officials also need to know whether the rest of the route can take that flow, where water can be held temporarily and what happens when the system fills. A faster outlet from one place can send a sharper flow peak downstream.</p></div><div class="take">A storage area can hold runoff when water can reach it and there is room available.</div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>Does a lake nearby mean the lane is protected?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>Check whether the water can reach the lake and how much storage is available.</div></div></div></section>
+<section class="ep" aria-labelledby="ep08"><div class="ep-head"><span class="no">08</span><h2 id="ep08">The evidence a neighbour can collect safely</h2></div><svg class="illus r" viewBox="0 0 120 105" aria-hidden="true"><g stroke="#151515" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="35" y="15" width="50" height="76" rx="8" fill="#a9d2ff"/><rect x="42" y="27" width="36" height="48" fill="#fff"/><path d="M60 35c16 0 14 15 0 27-14-12-16-27 0-27Z" fill="#ffc6cf"/><circle cx="60" cy="45" r="4" fill="#fff"/></g></svg><div class="reading"><p class="lead">After the water recedes, Zappy sketches the lane from the bakery. He marks the low point, the nearest grate and the corner where the water streamed in. A useful report records the street or landmark, the time and direction of incoming water if it was visible, how long the pool lasted and whether the location floods repeatedly. A photo from dry ground can help identify the spot.</p>
+<p>These details can help a municipal drainage team distinguish among plausible causes. If flow runs straight past an inlet, they can check its position and capture capacity. If water comes up through an opening, they can inspect downstream conditions. If neighbouring streets have been repaved, they can check changes in road levels and drainage routes. A resident’s observations point to where to investigate. <a href="#s1">[1]</a></p>
+<p>During flooding, take a dry route. Avoid walking, riding or driving through floodwater. It can hide holes, displaced covers or damaged road surfaces. Keep away from electrical equipment and follow official warnings. Report the location from safety and leave drain covers and grates alone. <a href="#s5">[5]</a></p></div><div class="warn"><b>Take a dry route.</b> Record the location from safety. Leave grates and covers alone. <a href="#s5">[5]</a></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>Should I step in to see whether the grate is blocked?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>Stay on dry ground and report where the water is collecting.</div></div></div></section>
+<div class="era p3">The Verdict<small>Back to the bakery</small></div><section class="ep" aria-labelledby="ep09"><div class="ep-head"><span class="no">09</span><h2 id="ep09">Back to the bakery corner</h2></div><div class="reading"><p class="lead">The next morning the scooter is gone and the lane looks ordinary again. From the corner Zappy can see a slight dip, a driveway tilted towards it and two road edges that carry water downhill. He sketches those routes and circles the grate. He can explain why the lane is more exposed to ponding than the bakery street. Which part of the system limited drainage that evening would take an inspection.</p>
+<p>The verdict is a balance. The bakery street had a route that could carry its runoff away. The low lane received water from a wider area and stored the excess while it waited to drain. In another neighbourhood, local rainfall, a blocked opening, a small pipe or high water at the outlet could change the result.</p>
+<p>If it happens again, note the location and time from somewhere safe. Report repeated ponding with enough detail for the local team to trace the water uphill to its sources and downhill to the receiving drain or water body. The dry street gives a comparison right next door.</p></div><div class="opinion"><article><h3>Good news</h3><p>The dry street offers a nearby comparison.</p></article><article><h3>Watch out</h3><p>A clear grate can sit above a restricted pipe or a backed-up outlet.</p></article><article><h3>Opinion · Prof. Bolt</h3><p>Investigate repeat flooding from the uphill catchment to the outlet.</p></article></div><div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><div class="bubble"><b class="who">Zappy</b>What would you check first?</div></div><div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><div class="bubble"><b class="who">Prof. Bolt</b>Where the water came from, where it collected and where it could leave.</div></div></div></section>
+<section class="ep cheat"><div class="ep-head"><h2>Fridge-door cheat sheet</h2></div><div class="minirow"><div class="panel"><strong>The Story</strong>Runoff can arrive from roofs and streets uphill. A dip collects the water that can’t drain away fast enough.</div><div class="panel"><strong>Deep Dive</strong>Check three points: the inlet, the pipe or channel, and the outlet. Storage and downstream water levels can change the result.</div><div class="panel"><strong>Your Move</strong>Take a dry route and report repeat flooding with the location, time and a photo from a safe spot.</div></div></section><section class="evidence ep"><div class="ep-head"><h2>The evidence file</h2></div><p>Research checked 13 November 2026. The Mysuru streets and worked calculations are hypothetical. The Bengaluru example uses a historical audit.</p><ol class="source-list"><li id="s1"><a href="https://www.fhwa.dot.gov/engineering/hydraulics/pubs/hif24006.pdf">Federal Highway Administration · Urban Drainage Design, 4th edition</a><br>Technical guidance on rainfall and runoff, low points, inlets, drainage pipes and downstream water levels.</li><li id="s2"><a href="https://www.usgs.gov/water-science-school/science/impervious-surfaces-and-flooding">US Geological Survey · Impervious Surfaces and Flooding</a><br>How paved surfaces affect infiltration and the timing of runoff.</li><li id="s3"><a href="https://nidm.gov.in/PDF/pubs/NDMA/12.pdf">National Disaster Management Authority · Management of Urban Flooding</a><br>India’s national guidelines on urban catchments, drainage and flood management.</li><li id="s4"><a href="https://cag.gov.in/ag1/karnataka/en/audit-report/details/114419">Comptroller and Auditor General of India · Bengaluru stormwater performance audit</a><br>Report No. 2 of 2021. See the executive summary for historical findings on lakes, drains and drainage connections.</li><li id="s5"><a href="https://sachet.ndma.gov.in/DosDont">National Disaster Management Authority · SACHET dos and don’ts</a><br>Flood safety advice and official alerts.</li></ol></section>
+<section class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></section><footer class="foot">THE END · srini.presents · for curious grown-ups</footer></main><script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body></html>
