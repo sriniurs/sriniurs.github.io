@@ -30,6 +30,8 @@ def main():
 
     paths.update('/' + f.parent.relative_to(ROOT).as_posix() + '/'
                  for f in (ROOT / 'health').rglob('index.html'))
+    paths.update('/' + f.parent.relative_to(ROOT).as_posix() + '/'
+                 for f in (ROOT / 'devi').rglob('index.html'))
 
     live = sorted(p for p in paths
                   if p not in pending and (ROOT / p.strip('/') / 'index.html').exists())
