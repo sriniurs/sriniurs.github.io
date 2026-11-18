@@ -11,7 +11,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://srinipresents.com'
-SKIP = {'about', 'archive', 'assets', 'devi', 'gods', 'health', 'ortho', 'pagefind', 'preview', 'queue', 's', 'search', 'stats'}
+SKIP = {'about', 'archive', 'assets', 'bhakti', 'devi', 'gods', 'health', 'ortho', 'pagefind', 'preview', 'queue', 's', 'search', 'stats'}
 # Discreet by choice: pen name and city only.
 AUTHOR = {'@type': 'Person', 'name': 'Dr. Srini',
           'homeLocation': {'@type': 'Place', 'name': 'Mysuru'}, 'url': BASE + '/about/'}
@@ -117,8 +117,8 @@ def story_pages():
             yield path
     yield from (ROOT / 'health').glob('[0-9][0-9]-*/index.html')
     yield from (ROOT / 'health' / 'ortho').glob('*/*/index.html')
-    yield from (ROOT / 'gods').glob('*/*/index.html')
-    yield from (ROOT / 'gods').glob('*/*/*/index.html')
+    yield from (ROOT / 'bhakti').glob('*/*/index.html')
+    yield from (ROOT / 'bhakti').glob('*/*/*/index.html')
 
 
 def card_art():

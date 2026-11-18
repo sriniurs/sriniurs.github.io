@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Śrī Rudrāṣṭakam · srini.presents</title>
+<meta name="description" content="Namāmīśam īśāna nirvāṇarūpam: Tulasīdāsa's Rudrāṣṭakam explained verse by verse in plain English with illustrations, with the story of the guru who sang it for his proud student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#2c5f9e,#0b2a4a 55%,#04101f)}
+  .sloka-head{background:#0b2a4a}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0b2a4a}
+  .sub{color:#1d4f9a}
+  .num{background:#0b2a4a}
+  .steps div:before{background:#1d4f9a}
+  .full .vn,.full .end{color:#1d4f9a}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d4f9a}
+  .contlink{color:#1d4f9a}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#2c5f9e,#0b2a4a 55%,#04101f)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+</style>
+<!-- seo:auto --><meta property="og:title" content="Śrī Rudrāṣṭakam"><meta property="og:description" content="Namāmīśam īśāna nirvāṇarūpam: Tulasīdāsa&#x27;s Rudrāṣṭakam explained verse by verse in plain English with illustrations, with the story of the guru who sang it for…"><meta property="og:type" content="article"><meta property="og:url" content="https://srinipresents.com/bhakti/shiva/rudrashtakam/"><meta property="og:site_name" content="srini.presents"><meta property="og:image" content="https://srinipresents.com/bhakti/shiva/rudrashtakam/og-share.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Srini Presents cover for Śrī Rudrāṣṭakam"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Śrī Rudrāṣṭakam"><meta name="twitter:description" content="Namāmīśam īśāna nirvāṇarūpam: Tulasīdāsa&#x27;s Rudrāṣṭakam explained verse by verse in plain English with illustrations, with the story of the guru who sang it for…"><meta name="twitter:image" content="https://srinipresents.com/bhakti/shiva/rudrashtakam/og-share.jpg"><link rel="canonical" href="https://srinipresents.com/bhakti/shiva/rudrashtakam/"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Śrī Rudrāṣṭakam", "description": "Namāmīśam īśāna nirvāṇarūpam: Tulasīdāsa's Rudrāṣṭakam explained verse by verse in plain English with illustrations, with the story of the guru who sang it for…", "url": "https://srinipresents.com/bhakti/shiva/rudrashtakam/", "mainEntityOfPage": "https://srinipresents.com/bhakti/shiva/rudrashtakam/", "image": "https://srinipresents.com/bhakti/shiva/rudrashtakam/og-share.jpg", "author": {"@type": "Person", "name": "Dr. Srini", "homeLocation": {"@type": "Place", "name": "Mysuru"}, "url": "https://srinipresents.com/about/"}, "publisher": {"@type": "Organization", "name": "srini.presents", "url": "https://srinipresents.com/"}, "inLanguage": "en-IN"}</script><!-- /seo:auto --></head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/shiva/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">NAMĀMĪŚAM!</div>
+  <p class="byline">Srini presents</p>
+  <h1>ŚRĪ RUDRĀṢṬAKAM</h1>
+  <div class="tag">Tulasīdāsa's eight verses to Śiva · explained and illustrated</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Shiva on the snowy Himalaya with the Ganga flowing from his hair, a crescent moon and a serpent, framed by rays"><path d="M190 120 L350 120" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L342 169" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L319 214" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L284 249" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L239 272" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L190 280" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L141 272" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L96 249" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L61 214" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L38 169" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L30 120" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L38 71" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L61 26" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L96 -9" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L141 -32" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L190 -40" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L239 -32" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L284 -9" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L319 26" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M190 120 L342 71" stroke="#ffd60a" stroke-width="4" opacity=".3"/><path d="M0 268 L80 150 L140 210 L210 120 L300 200 L380 150 L380 268Z" fill="#e8f0f8" stroke="#111" stroke-width="2.5"/><g transform="translate(200 92) scale(1.9)"><path d="M-16 44 q16 -20 32 0 v34 h-32z" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-18 60 h36 v18 h-36z" fill="#e8a33d" stroke="#111" stroke-width="2"/><path d="M-12 62 l4 14 M0 62 l3 14 M10 62 l3 14" stroke="#111" stroke-width="2"/><rect x="-7" y="16" width="14" height="12" fill="#2d6cdf" stroke="#111" stroke-width="2"/><ellipse cx="0" cy="-30" rx="12" ry="10" fill="#6b4423" stroke="#111" stroke-width="2"/><path d="M6 -40 a8 8 0 1 0 6 10 a6 6 0 1 1 -6 -10z" fill="#fff6b0" stroke="#111" stroke-width="1.5"/><circle r="20" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-10 -12 h20" stroke="#fff" stroke-width="2.5"/><path d="M-10 -9 h20" stroke="#fff" stroke-width="2"/><ellipse cx="0" cy="-12" rx="1.6" ry="3" fill="#e63946"/><path d="M-9 -2 q4 -3 8 0 M3 -2 q4 -3 8 0" fill="none" stroke="#111" stroke-width="2"/><path d="M-5 10 q5 4 10 0" fill="none" stroke="#111" stroke-width="2"/></g><path d="M188.6 19.799999999999997 q-57.0 -19.0 -76.0 38.0 q-11.399999999999999 38.0 -19.0 95.0" fill="none" stroke="#9fd3f0" stroke-width="7.6"/><path d="M177.2 149.0 q22.799999999999997 19.0 45.599999999999994 0" fill="none" stroke="#2a7a2a" stroke-width="7.6"/><circle cx="224.7" cy="147.1" r="5.699999999999999" fill="#2a7a2a" stroke="#111" stroke-width="1"/></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  <div class="bubble" style="max-width:620px;margin:10px auto 4px;text-align:left">
+    <span class="who">HOW THIS WORKS:</span> First the whole hymn for chanting in one go. Then the story and background, and <b>two pages for each verse</b>: the chant, a picture, what it says and the key words; then a deeper look, background facts, the inner teaching and the one thing to remember.
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6">
+    <p>"Namāmīśam īśāna nirvāṇarūpam…" In North India especially, few Śiva hymns are sung as often or with as much feeling. Its rolling rhythm stays in the ear; its words go from the highest philosophy to the most personal cry for help.</p>
+    <p>The surprise is where it comes from. The Rudrāṣṭakam was written by Gosvāmī Tulasīdāsa, the great poet of Lord Rāma, and placed inside his Rāmacaritamānas. And in that book, it is sung by a guru, for a proud student who had insulted him. It is a prayer of forgiveness as much as praise.</p>
+    <p>Its eighth verse may be the most comforting line in all devotional poetry: "I know no yoga, no japa, no pūjā; I only bow to You." May every reader find that bowing is enough.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#1d4f9a">Har Har Mahādev,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+</section>
+
+<section class="page" id="full">
+  <h2 class="page-title">THE FULL RUDRĀṢṬAKAM</h2>
+  <div class="sub">All eight verses and the phalaśruti, for chanting in one go</div>
+  <div class="full"><p><span class="vn">VERSE 1</span><span class="ln">namāmīśam īśāna nirvāṇarūpaṃ</span><span class="ln">vibhuṃ vyāpakaṃ brahmavedasvarūpam</span><span class="ln">nijaṃ nirguṇaṃ nirvikalpaṃ nirīhaṃ</span><span class="ln">cidākāśam ākāśavāsaṃ bhaje'ham<span class="end">‖ 1 ‖</span></span></p><p><span class="vn">VERSE 2</span><span class="ln">nirākāram oṃkāramūlaṃ turīyaṃ</span><span class="ln">girā jñāna gotītam īśaṃ girīśam</span><span class="ln">karālaṃ mahākāla kālaṃ kṛpālaṃ</span><span class="ln">guṇāgāra saṃsārapāraṃ nato'ham<span class="end">‖ 2 ‖</span></span></p><p><span class="vn">VERSE 3</span><span class="ln">tuṣārādri saṃkāśa gauraṃ gabhīraṃ</span><span class="ln">manobhūta koṭiprabhā śrī śarīram</span><span class="ln">sphuranmauli kallolinī cāru gaṅgā</span><span class="ln">lasadbhālabālendu kaṇṭhe bhujaṅgā<span class="end">‖ 3 ‖</span></span></p><p><span class="vn">VERSE 4</span><span class="ln">calatkuṇḍalaṃ bhrū sunetraṃ viśālaṃ</span><span class="ln">prasannānanaṃ nīlakaṇṭhaṃ dayālam</span><span class="ln">mṛgādhīśa carmāmbaraṃ muṇḍamālaṃ</span><span class="ln">priyaṃ śaṅkaraṃ sarvanāthaṃ bhajāmi<span class="end">‖ 4 ‖</span></span></p><p><span class="vn">VERSE 5</span><span class="ln">pracaṇḍaṃ prakṛṣṭaṃ pragalbhaṃ pareśaṃ</span><span class="ln">akhaṇḍaṃ ajaṃ bhānukoṭiprakāśam</span><span class="ln">trayaḥśūla nirmūlanaṃ śūlapāṇiṃ</span><span class="ln">bhaje'haṃ bhavānīpatiṃ bhāvagamyam<span class="end">‖ 5 ‖</span></span></p><p><span class="vn">VERSE 6</span><span class="ln">kalātīta kalyāṇa kalpāntakārī</span><span class="ln">sadā sajjanānandadātā purārī</span><span class="ln">cidānanda sandoha mohāpahārī</span><span class="ln">prasīda prasīda prabho manmathārī<span class="end">‖ 6 ‖</span></span></p><p><span class="vn">VERSE 7</span><span class="ln">na yāvad umānātha pādāravindaṃ</span><span class="ln">bhajantīha loke pare vā narāṇām</span><span class="ln">na tāvat sukhaṃ śānti santāpanāśaṃ</span><span class="ln">prasīda prabho sarvabhūtādhivāsa<span class="end">‖ 7 ‖</span></span></p><p><span class="vn">VERSE 8</span><span class="ln">na jānāmi yogaṃ japaṃ naiva pūjāṃ</span><span class="ln">nato'haṃ sadā sarvadā śambhu tubhyam</span><span class="ln">jarā janma duḥkhaugha tātapyamānaṃ</span><span class="ln">prabho pāhi āpannam āmīśa śambho<span class="end">‖ 8 ‖</span></span></p><p><span class="vn">PHALAŚRUTI</span><span class="ln">rudrāṣṭakam idaṃ proktaṃ</span><span class="ln">vipreṇa haratoṣaye</span><span class="ln">ye paṭhanti narā bhaktyā</span><span class="ln">teṣāṃ śambhuḥ prasīdati<span class="end">‖ 9 ‖</span></span></p></div>
+</section>
+
+<section class="page" id="story">
+  <h2 class="page-title">THE STORY · THE GURU'S PRAYER</h2>
+  <div class="sub">From the Rāmacaritamānas, as Kākabhuśuṇḍi tells it</div>
+  <svg class="fig" style="border:3px solid var(--ink);background:#fff" width="460" height="210" viewBox="0 0 460 210" role="img" aria-label="A proud student ignores his guru, is cursed to become a serpent, and the guru prays to Shiva for him"><rect width="460" height="210" fill="#fff3d6"/><g transform="translate(40 92) scale(0.9)"><path d="M-14 60 q14 -40 28 0z" fill="#2a9d6f" stroke="#111" stroke-width="2"/><circle cy="8" r="11" fill="#f2c79b" stroke="#111" stroke-width="2"/><path d="M-11 4 q11 -14 22 0" fill="#151515" stroke="#111" stroke-width="1.5"/><path d="M-4 10 q4 3 8 0" fill="none" stroke="#111" stroke-width="1.5"/></g><g transform="translate(110 70) scale(1.1)"><path d="M-14 60 q14 -40 28 0z" fill="#fff" stroke="#111" stroke-width="2"/><circle cy="8" r="11" fill="#f2c79b" stroke="#111" stroke-width="2"/><path d="M-11 4 q11 -14 22 0" fill="#ddd" stroke="#111" stroke-width="1.5"/><path d="M-4 10 q4 3 8 0" fill="none" stroke="#111" stroke-width="1.5"/></g><path d="M98 90 q12 14 24 0" fill="#eee" stroke="#111" stroke-width="1.5"/><path d="M40 76 q-8 -8 0 -14" fill="none" stroke="#e63946" stroke-width="2"/><path d="M190 150 q30 -40 50 0 q20 40 50 0" fill="none" stroke="#2a7a2a" stroke-width="8" stroke-linecap="round"/><circle cx="292" cy="148" r="8" fill="#2a7a2a" stroke="#111" stroke-width="2"/><path d="M300 148 l8 -2 l-2 4" stroke="#e63946" stroke-width="2" fill="none"/><g transform="translate(410 160) scale(0.6)" stroke="#111" stroke-width="3"><path d="M-60 40 h120 l-10 18 h-100z" fill="#7a7f8a"/><path d="M-46 22 h92 v18 h-92z" fill="#9aa0ab"/><path d="M46 26 h30 l6 6 h-36z" fill="#9aa0ab"/><path d="M-22 22 v-48 a22 22 0 0 1 44 0 v48z" fill="#2b2f36"/><path d="M-14 -20 h28 M-14 -14 h28 M-14 -8 h28" stroke="#fff" stroke-width="2.5"/><circle cx="0" cy="-12" r="3" fill="#e63946" stroke-width="1"/></g><g transform="translate(350 70) scale(1.0)"><path d="M-14 60 q14 -40 28 0z" fill="#fff" stroke="#111" stroke-width="2"/><circle cy="8" r="11" fill="#f2c79b" stroke="#111" stroke-width="2"/><path d="M-11 4 q11 -14 22 0" fill="#ddd" stroke="#111" stroke-width="1.5"/><path d="M-4 10 q4 3 8 0" fill="none" stroke="#111" stroke-width="1.5"/></g><path d="M356 104 l8 -12 l6 12" fill="#f2c79b" stroke="#111" stroke-width="1.5"/><path d="M372 64 q3 -5 6 0" fill="none" stroke="#1d4f9a" stroke-width="2"/><path d="M382 58 q3 -5 6 0" fill="none" stroke="#1d4f9a" stroke-width="2"/><path d="M392 52 q3 -5 6 0" fill="none" stroke="#1d4f9a" stroke-width="2"/><path d="M402 46 q3 -5 6 0" fill="none" stroke="#1d4f9a" stroke-width="2"/><text x="80" y="30" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">PRIDE IN THE TEMPLE</text><text x="240" y="100" text-anchor="middle" font-family="Bangers" font-size="13" fill="#c0392b">THE CURSE</text><text x="380" y="30" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">THE GURU PRAYS</text></svg>
+  <div class="panel" style="margin-top:12px">
+    <span class="caption">The story in 5 frames</span>
+    <div class="steps" style="margin:0">
+      <div><b>A proud devotee.</b> In Ujjain long ago, a young devotee of Śiva studied under a kind, learned guru. But he was arrogant, and looked down on others. His guru gently warned him, again and again.</div>
+      <div><b>The insult.</b> One day, as the young man sat chanting in Śiva's temple, his guru walked in. Out of pride, he did not rise or even greet him. The gentle guru said nothing.</div>
+      <div><b>The curse.</b> But Śiva could not bear it. A voice thundered from the shrine: for this arrogance, become a serpent, and suffer a thousand births.</div>
+      <div><b>The guru prays.</b> Horrified, the guru, the very man who had been insulted, folded his hands and sang this hymn, the Rudrāṣṭakam, begging Śiva to show mercy to his student.</div>
+      <div><b>Grace.</b> Śiva was pleased. The curse ran its course, but without suffering and with knowledge intact. In a later life the student became Kākabhuśuṇḍi, the crow-sage devoted to Rāma.</div>
+    </div>
+  </div>
+  <div class="g3">
+    <div class="card bg-yellow"><h4>The place</h4><p><b>Ujjain</b>, city of Mahākāla.</p></div>
+    <div class="card bg-red"><h4>The fault</h4><p><b>Pride</b> before one's guru.</p></div>
+    <div class="card bg-green"><h4>The cure</h4><p>A <b>guru's forgiveness</b>, sung.</p></div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> The guru prayed for the student who insulted him?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That's why Śiva was so moved. The hymn is beautiful, but the forgiveness behind it is what was heard.</p></div></div>
+  <div class="key">The Rudrāṣṭakam was born as <b>a prayer of forgiveness</b>, sung for someone else.</div>
+</section>
+
+<section class="page" id="about">
+  <h2 class="page-title">ABOUT THE RUDRĀṢṬAKAM</h2>
+  <div class="sub">A Sanskrit jewel inside a Hindi epic</div>
+  <div class="g2">
+    <div class="card bg-blue"><h4>✍️ The poet</h4><p><b>Gosvāmī Tulasīdāsa</b> (16th century), who wrote the Rāmacaritamānas in Avadhī Hindi, mostly at Vārāṇasī.</p></div>
+    <div class="card bg-yellow"><h4>📜 Where it's found</h4><p><b>Rāmacaritamānas, Uttara Kāṇḍa</b>, in Kākabhuśuṇḍi's account of his past life. One of the few passages in the epic written in Sanskrit.</p></div>
+  </div>
+  <div class="panel reading">
+    <p><b>The shape.</b> Eight verses (an <i>aṣṭakam</i>) and a closing verse. Verses 1–2 describe the formless Absolute; 3–5 paint Śiva's form; 6–8 turn into personal prayer: <i>prasīda</i>, "be gracious", and <i>pāhi</i>, "protect me".</p>
+    <p><b>The music.</b> It is in <i>bhujaṅgaprayāta</i>, "the serpent's movement", a rolling twelve-syllable metre, which is why it is so easy to sing and so often set to music.</p>
+    <p><b>Where you'll hear it.</b> Sung at Śiva temples, especially in North India and at Kāśī, on Mondays, in Śrāvaṇa and on Mahāśivarātri, and at the close of Rāmāyaṇa recitals.</p>
+  </div>
+  <table class="ct">
+    <tr><th>Verse</th><th>In one line</th><th>Verse</th><th>In one line</th></tr>
+    <tr><td>1</td><td>The formless, the sky of awareness</td><td>6</td><td>Prasīda, prasīda</td></tr>
+    <tr><td>2</td><td>Root of Oṃ, death of Time</td><td>7</td><td>No peace without His feet</td></tr>
+    <tr><td>3</td><td>Snow-white, Gaṅgā, moon, serpents</td><td>8</td><td>No yoga, japa or pūjā: I bow</td></tr>
+    <tr><td>4</td><td>Smiling face, blue throat</td><td>9</td><td>The guru's hymn</td></tr>
+    <tr><td>5</td><td>The trident ends three pains</td><td></td><td></td></tr>
+  </table>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li class="part">START HERE</li>
+    <li><span class="num">✍</span><a href="#foreword">Foreword</a></li>
+    <li><span class="num">🔤</span><a href="#full">The Full Rudrāṣṭakam</a></li>
+    <li><span class="num">★</span><a href="#story">The Story: The Guru's Prayer</a></li>
+    <li><span class="num">ℹ</span><a href="#about">About the Rudrāṣṭakam</a></li>
+    <li><span class="num">∑</span><a href="#end">The Whole Hymn on One Page</a></li>
+    <li class="part">THE 8 VERSES + PHALAŚRUTI</li>
+    <li><span class="num">1</span><a href="#v1">Verse 1: The Formless Lord Of All</a></li><li><span class="num">2</span><a href="#v2">Verse 2: Oṃ, Time, And The Far Shore</a></li><li><span class="num">3</span><a href="#v3">Verse 3: Fair As The Snowy Mountain</a></li><li><span class="num">4</span><a href="#v4">Verse 4: The Kind Face Of The Lord Of All</a></li><li><span class="num">5</span><a href="#v5">Verse 5: The Trident That Ends Three Pains</a></li><li><span class="num">6</span><a href="#v6">Verse 6: Prasīda, Prasīda</a></li><li><span class="num">7</span><a href="#v7">Verse 7: No Peace Without His Feet</a></li><li><span class="num">8</span><a href="#v8">Verse 8: I Know No Yoga, No Japa, No Pūjā</a></li><li><span class="num">9</span><a href="#v9">Phalaśruti: The Guru'S Hymn</a></li>
+  </ul>
+</section>
+
+<section class="page" id="v1">
+  <h2 class="page-title">VERSE 1</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE FORMLESS LORD OF ALL</span></div>
+    <div class="iast"><span class="cl">namāmīśam īśāna nirvāṇarūpaṃ</span><span class="cl">vibhuṃ vyāpakaṃ brahmavedasvarūpam</span><span class="cl">nijaṃ nirguṇaṃ nirvikalpaṃ nirīhaṃ</span><span class="cl">cidākāśam ākāśavāsaṃ bhaje'ham ‖1‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A vast starry sky with a faint outline of Shiva meditating in it, filling the whole space"><rect width="220" height="160" fill="#16264a"/><circle cx="20" cy="20" r="1.6" fill="#fff"/><circle cx="60" cy="40" r="1.6" fill="#fff"/><circle cx="200" cy="24" r="1.6" fill="#fff"/><circle cx="180" cy="120" r="1.6" fill="#fff"/><circle cx="30" cy="130" r="1.6" fill="#fff"/><circle cx="150" cy="14" r="1.6" fill="#fff"/><circle cx="90" cy="150" r="1.6" fill="#fff"/><circle cx="200" cy="150" r="1.6" fill="#fff"/><g opacity=".55"><g transform="translate(110 50) scale(1.1)"><path d="M-16 44 q16 -20 32 0 v34 h-32z" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-18 60 h36 v18 h-36z" fill="#e8a33d" stroke="#111" stroke-width="2"/><path d="M-12 62 l4 14 M0 62 l3 14 M10 62 l3 14" stroke="#111" stroke-width="2"/><rect x="-7" y="16" width="14" height="12" fill="#2d6cdf" stroke="#111" stroke-width="2"/><ellipse cx="0" cy="-30" rx="12" ry="10" fill="#6b4423" stroke="#111" stroke-width="2"/><path d="M6 -40 a8 8 0 1 0 6 10 a6 6 0 1 1 -6 -10z" fill="#fff6b0" stroke="#111" stroke-width="1.5"/><circle r="20" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-10 -12 h20" stroke="#fff" stroke-width="2.5"/><path d="M-10 -9 h20" stroke="#fff" stroke-width="2"/><ellipse cx="0" cy="-12" rx="1.6" ry="3" fill="#e63946"/><path d="M-9 -2 q4 -3 8 0 M3 -2 q4 -3 8 0" fill="none" stroke="#111" stroke-width="2"/><path d="M-5 10 q5 4 10 0" fill="none" stroke="#111" stroke-width="2"/></g></g><text x="110" y="152" text-anchor="middle" font-family="Bangers" font-size="10" fill="#fff">CIDĀKĀŚA · SKY OF CONSCIOUSNESS</text><text x="40" y="60" text-anchor="middle" font-family="Bangers" font-size="10" fill="#ffd60a">NIRGUṆA</text><text x="184" y="60" text-anchor="middle" font-family="Bangers" font-size="10" fill="#ffd60a">NIRVIKALPA</text></svg><div class="mean">I bow to the Lord, Īśāna, whose very form is liberation; all-pervading, vast, Brahman, the Veda itself. Self-existent, beyond qualities, beyond every thought, beyond desire; the sky of consciousness, clothed in the sky itself: Him I worship.</div></div>
+    <div class="plain">I bow to Śiva: liberation itself, everywhere, beyond qualities and thought, the sky of pure awareness.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">namāmi</td><td><b>I bow</b></td></tr><tr><td class="w">nirvāṇarūpa</td><td><b>whose form is liberation</b></td></tr><tr><td class="w">vyāpaka</td><td><b>all-pervading</b></td></tr><tr><td class="w">nirguṇa</td><td><b>beyond qualities</b></td></tr><tr><td class="w">nirvikalpa</td><td><b>beyond all mental distinctions</b></td></tr><tr><td class="w">cidākāśa</td><td>the <b>sky of consciousness</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v1b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v1b">
+  <h2 class="page-title">VERSE 1 · GOING DEEPER</h2>
+  <div class="sub">THE FORMLESS LORD OF ALL</div>
+  <div class="panel reading"><p><b>Starting with the Absolute.</b> Count the "beyond" words: <i>nirvāṇa</i>, <i>nirguṇa</i>, <i>nirvikalpa</i>, <i>nirīha</i>. The hymn begins by saying what Śiva is <i>not</i>: not limited by form, quality, thought or desire. This is pure Vedānta, the same Śiva as our Nirvāṇa Ṣaṭkam.</p><p><b>The sky.</b> <i>Cidākāśam ākāśavāsam</i>: the sky of consciousness, who dwells in the sky, or who wears the sky as his clothes (<i>digambara</i>). Space contains everything and is stained by nothing; so is Śiva.</p><p><b>A Rāma devotee sings Śiva.</b> Tulasīdāsa is the great poet of Rāma. Yet in the middle of his Rāma epic he places this Sanskrit hymn to Śiva, in the deepest philosophical language. For him, there was no rivalry: Śiva is Rāma's own beloved devotee and Lord.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Bhujaṅgaprayāta</h4><p>The metre, "the movement of a serpent": twelve syllables a line in a rolling da-DUM-DUM rhythm. That's why it is so easy to sing.</p></div><div class="card bg-blue"><h4>💡 Īśāna</h4><p>"The Ruler": also the upward, fifth face of Śiva in our Pañca-Brahma Mantras.</p></div></div>
+  <div class="inner">Before picturing God, remember He is bigger than any picture. The sky holds every cloud and is stained by none.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A god with no form, no qualities, no desire... how do I picture that?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Like the sky: everywhere, holding everything, touched by nothing. Tulasīdāsa starts there before he paints any picture.</p></div></div>
+  <div class="key">Before the snake and the moon: Śiva as <b>the sky of consciousness</b>.</div>
+</section>
+<section class="page" id="v2">
+  <h2 class="page-title">VERSE 2</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">OṂ, TIME, AND THE FAR SHORE</span></div>
+    <div class="iast"><span class="cl">nirākāram oṃkāramūlaṃ turīyaṃ</span><span class="cl">girā jñāna gotītam īśaṃ girīśam</span><span class="cl">karālaṃ mahākāla kālaṃ kṛpālaṃ</span><span class="cl">guṇāgāra saṃsārapāraṃ nato'ham ‖2‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="The syllable Om in a circle, an hourglass for Time, and a boat crossing a river to the far shore"><rect width="220" height="160" fill="#dfe9f6"/><circle cx="50" cy="50" r="32" fill="#ffd60a" stroke="#111" stroke-width="2.5"/><text x="50" y="62" text-anchor="middle" font-family="Bangers" font-size="30" fill="#0b2a4a">OṂ</text><path d="M150 20 h34 M150 84 h34 M154 20 q0 24 13 32 q-13 8 -13 32 M180 20 q0 24 -13 32 q13 8 13 32" fill="#fff" stroke="#111" stroke-width="2.5"/><path d="M160 74 q7 -8 14 0z" fill="#e8c27a"/><path d="M0 120 h220 v26 h-220z" fill="#4aa3df" stroke="#111" stroke-width="2"/><path d="M180 120 h40 v-10 h-40z M0 120 h30 v-6 h-30z" fill="#a8d47a" stroke="#111" stroke-width="2"/><path d="M90 118 h40 l-6 10 h-28z" fill="#8a5a2b" stroke="#111" stroke-width="2"/><text x="50" y="100" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">OṂKĀRAMŪLA · TURĪYA</text><text x="167" y="104" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">MAHĀKĀLA</text><text x="110" y="156" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">SAṂSĀRAPĀRA · THE FAR SHORE</text></svg><div class="mean">Formless, the root of Oṃ, the Fourth, beyond waking, dream and sleep; beyond speech, knowledge and the senses; the Lord, the Lord of the mountain. Terrible, the death of Time itself, yet full of compassion; home of every virtue, beyond the cycle of worldly life: to Him I bow.</div></div>
+    <div class="plain">Śiva is the root of Oṃ, beyond words and senses, the death of Time itself: terrible, yet compassionate.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">oṃkāramūla</td><td><b>root of Oṃ</b></td></tr><tr><td class="w">turīya</td><td>the <b>Fourth</b>: pure awareness</td></tr><tr><td class="w">girā jñāna gotīta</td><td><b>beyond speech, knowledge and senses</b></td></tr><tr><td class="w">mahākāla-kāla</td><td><b>the death of Time itself</b></td></tr><tr><td class="w">kṛpāla</td><td><b>compassionate</b></td></tr><tr><td class="w">saṃsārapāra</td><td><b>beyond the cycle of birth</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v2b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v2b">
+  <h2 class="page-title">VERSE 2 · GOING DEEPER</h2>
+  <div class="sub">OṂ, TIME, AND THE FAR SHORE</div>
+  <div class="panel reading"><p><b>Oṃ and the Fourth.</b> The Māṇḍūkya Upaniṣad teaches that the three sounds of Oṃ (A-U-M) are waking, dreaming and deep sleep, and the silence after them is <i>turīya</i>, "the Fourth", pure awareness. Tulasīdāsa says Śiva is the root of Oṃ and that Fourth itself.</p><p><b>Mahākāla.</b> <i>Mahākāla-kāla</i>: the death even of Time. It's also a pointer to Ujjain's Mahākāla temple, where this hymn's story takes place.</p><p><b>Karāla, kṛpāla.</b> "Terrible" and "compassionate" rhyme in the same line. Tulasīdāsa loves such sound-pairs. The meaning is serious: the same Śiva who destroys is the one who cares.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Mahākāleśvara</h4><p>The jyotirliṅga at Ujjain, famous for its dawn bhasma-ārati with sacred ash.</p></div><div class="card bg-blue"><h4>💡 Māṇḍūkya</h4><p>The shortest major Upaniṣad, entirely about Oṃ and the Fourth state.</p></div></div>
+  <div class="inner">What frightens us in life is often what frees us. The power that ends things is also the one that cares.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Terrible AND compassionate?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Terrible to our ego and illusions, kind to us. Like a surgeon: the knife looks frightening, the purpose is healing.</p></div></div>
+  <div class="key">Beyond words, senses and Time itself: <b>terrible to ignorance, kind to us</b>.</div>
+</section>
+<section class="page" id="v3">
+  <h2 class="page-title">VERSE 3</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">FAIR AS THE SNOWY MOUNTAIN</span></div>
+    <div class="iast"><span class="cl">tuṣārādri saṃkāśa gauraṃ gabhīraṃ</span><span class="cl">manobhūta koṭiprabhā śrī śarīram</span><span class="cl">sphuranmauli kallolinī cāru gaṅgā</span><span class="cl">lasadbhālabālendu kaṇṭhe bhujaṅgā ‖3‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Shiva, fair as the snowy Himalaya, with the Ganga flowing from his hair, a crescent moon on his brow and a serpent at his neck"><rect width="220" height="160" fill="#dfe9f6"/><path d="M0 160 L60 60 L110 120 L160 40 L220 160Z" fill="#e8f0f8" stroke="#111" stroke-width="2"/><g transform="translate(120 50) scale(1.0)"><path d="M-16 44 q16 -20 32 0 v34 h-32z" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-18 60 h36 v18 h-36z" fill="#e8a33d" stroke="#111" stroke-width="2"/><path d="M-12 62 l4 14 M0 62 l3 14 M10 62 l3 14" stroke="#111" stroke-width="2"/><rect x="-7" y="16" width="14" height="12" fill="#2d6cdf" stroke="#111" stroke-width="2"/><ellipse cx="0" cy="-30" rx="12" ry="10" fill="#6b4423" stroke="#111" stroke-width="2"/><path d="M6 -40 a8 8 0 1 0 6 10 a6 6 0 1 1 -6 -10z" fill="#fff6b0" stroke="#111" stroke-width="1.5"/><circle r="20" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-10 -12 h20" stroke="#fff" stroke-width="2.5"/><path d="M-10 -9 h20" stroke="#fff" stroke-width="2"/><ellipse cx="0" cy="-12" rx="1.6" ry="3" fill="#e63946"/><path d="M-9 -2 q4 -3 8 0 M3 -2 q4 -3 8 0" fill="none" stroke="#111" stroke-width="2"/><path d="M-5 10 q5 4 10 0" fill="none" stroke="#111" stroke-width="2"/></g><path d="M114.0 12.0 q-30.0 -10.0 -40.0 20.0 q-6.0 20.0 -10.0 50.0" fill="none" stroke="#9fd3f0" stroke-width="4.0"/><path d="M108.0 80.0 q12.0 10.0 24.0 0" fill="none" stroke="#2a7a2a" stroke-width="4.0"/><circle cx="133.0" cy="79.0" r="3.0" fill="#2a7a2a" stroke="#111" stroke-width="1"/><text x="40" y="30" text-anchor="middle" font-family="Bangers" font-size="11" fill="#1d4f9a">GAṄGĀ</text><text x="176" y="22" text-anchor="middle" font-family="Bangers" font-size="11" fill="#111">BĀLENDU</text><text x="176" y="96" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">BHUJAṄGA</text><text x="40" y="150" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">TUṢĀRĀDRI</text></svg><div class="mean">Fair as the snowy Himālaya, deep and grave, His body shining with the beauty of millions of Kāmas; on His head sparkles the lovely, wave-tossed Gaṅgā; on His brow gleams the young crescent moon, and serpents coil at His throat.</div></div>
+    <div class="plain">Now a picture: fair as the Himālaya, beautiful beyond Kāma, the Gaṅgā in His hair, the young moon on His brow, serpents at His throat.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">tuṣārādri</td><td>the <b>snowy mountain</b></td></tr><tr><td class="w">gaura</td><td><b>fair</b>, white</td></tr><tr><td class="w">manobhū</td><td><b>Kāma</b>, god of beauty and love</td></tr><tr><td class="w">kallolinī</td><td>the <b>wave-tossed river</b></td></tr><tr><td class="w">bālendu</td><td>the <b>young crescent moon</b></td></tr><tr><td class="w">bhujaṅga</td><td><b>serpent</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v3b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v3b">
+  <h2 class="page-title">VERSE 3 · GOING DEEPER</h2>
+  <div class="sub">FAIR AS THE SNOWY MOUNTAIN</div>
+  <div class="panel reading"><p><b>From formless to form.</b> After two verses on the formless (<i>nirguṇa</i>), Tulasīdāsa paints the Śiva with form (<i>saguṇa</i>) that devotees love. Both are true; the form is the formless made approachable.</p><p><b>The Gaṅgā.</b> When King Bhagīratha brought the heavenly Gaṅgā down to earth, her fall would have shattered the world. Śiva caught her in his matted locks and let her flow gently out. Hence Gaṅgādhara, "Bearer of the Gaṅgā".</p><p><b>Moon and serpent.</b> The moon god, cursed to waste away, took shelter on Śiva's head, and still waxes and wanes there. The serpent Vāsuki coils at his throat: danger worn as an ornament.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Gaṅgādhara</h4><p>"Bearer of the Gaṅgā": one of Śiva's best-loved names, and a favourite theme of temple sculpture.</p></div><div class="card bg-blue"><h4>💡 Candraśekhara</h4><p>"Moon-crested": the crescent's shelter on Śiva's head is linked to the Somnāth jyotirliṅga.</p></div></div>
+  <div class="inner">The infinite takes a form so we can love it. Use the form, but remember what it points to.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Now we get the picture!</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Verses 1 and 2 said He has no form. Verse 3 paints one anyway, for those of us who need a face to love.</p></div></div>
+  <div class="key">Gaṅgā in His hair, the moon on His brow, a snake at His throat: <b>a form for the heart</b>.</div>
+</section>
+<section class="page" id="v4">
+  <h2 class="page-title">VERSE 4</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE KIND FACE OF THE LORD OF ALL</span></div>
+    <div class="iast"><span class="cl">calatkuṇḍalaṃ bhrū sunetraṃ viśālaṃ</span><span class="cl">prasannānanaṃ nīlakaṇṭhaṃ dayālam</span><span class="cl">mṛgādhīśa carmāmbaraṃ muṇḍamālaṃ</span><span class="cl">priyaṃ śaṅkaraṃ sarvanāthaṃ bhajāmi ‖4‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Close-up of Shiva's smiling face with swaying earrings, wide eyes, blue throat, a tiger-skin garment and a garland of small skulls"><rect width="220" height="160" fill="#fff3d6"/><g transform="translate(110 46) scale(1.25)"><path d="M-16 44 q16 -20 32 0 v34 h-32z" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-18 60 h36 v18 h-36z" fill="#e8a33d" stroke="#111" stroke-width="2"/><path d="M-12 62 l4 14 M0 62 l3 14 M10 62 l3 14" stroke="#111" stroke-width="2"/><rect x="-7" y="16" width="14" height="12" fill="#2d6cdf" stroke="#111" stroke-width="2"/><ellipse cx="0" cy="-30" rx="12" ry="10" fill="#6b4423" stroke="#111" stroke-width="2"/><path d="M6 -40 a8 8 0 1 0 6 10 a6 6 0 1 1 -6 -10z" fill="#fff6b0" stroke="#111" stroke-width="1.5"/><circle r="20" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-10 -12 h20" stroke="#fff" stroke-width="2.5"/><path d="M-10 -9 h20" stroke="#fff" stroke-width="2"/><ellipse cx="0" cy="-12" rx="1.6" ry="3" fill="#e63946"/><path d="M-9 -2 q4 -3 8 0 M3 -2 q4 -3 8 0" fill="none" stroke="#111" stroke-width="2"/><path d="M-5 10 q5 4 10 0" fill="none" stroke="#111" stroke-width="2"/></g><path d="M95.0 83.5 q15.0 12.5 30.0 0" fill="none" stroke="#2a7a2a" stroke-width="5.0"/><circle cx="126.25" cy="82.25" r="3.75" fill="#2a7a2a" stroke="#111" stroke-width="1"/><circle cx="92" cy="68" r="5" fill="#f5f5f5" stroke="#111" stroke-width="1.5"/><circle cx="102" cy="68" r="5" fill="#f5f5f5" stroke="#111" stroke-width="1.5"/><circle cx="112" cy="68" r="5" fill="#f5f5f5" stroke="#111" stroke-width="1.5"/><circle cx="122" cy="68" r="5" fill="#f5f5f5" stroke="#111" stroke-width="1.5"/><circle cx="132" cy="68" r="5" fill="#f5f5f5" stroke="#111" stroke-width="1.5"/><circle cx="84" cy="52" r="5" fill="#ffd60a" stroke="#111" stroke-width="1.5"/><circle cx="136" cy="52" r="5" fill="#ffd60a" stroke="#111" stroke-width="1.5"/><text x="40" y="40" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">KUṆḌALA</text><text x="184" y="40" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">PRASANNA</text><text x="184" y="86" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">NĪLAKAṆṬHA</text><text x="40" y="150" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">MUṆḌAMĀLA</text><text x="180" y="150" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">MṚGA-CARMA</text></svg><div class="mean">Earrings swaying, fine brows and large beautiful eyes; a cheerful face, a blue throat, full of compassion; wearing the skin of the king of beasts and a garland of skulls: dear Śaṅkara, Lord of all, Him I worship.</div></div>
+    <div class="plain">A face that smiles: swaying earrings, wide eyes, blue throat, compassion; tiger skin and skull garland; dear Śaṅkara, Lord of all.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">calatkuṇḍala</td><td><b>swaying earrings</b></td></tr><tr><td class="w">prasannānana</td><td><b>cheerful face</b></td></tr><tr><td class="w">nīlakaṇṭha</td><td><b>blue-throated</b></td></tr><tr><td class="w">dayāla</td><td><b>compassionate</b></td></tr><tr><td class="w">mṛgādhīśa-carma</td><td><b>skin of the king of beasts</b></td></tr><tr><td class="w">muṇḍamāla</td><td><b>garland of skulls</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v4b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v4b">
+  <h2 class="page-title">VERSE 4 · GOING DEEPER</h2>
+  <div class="sub">THE KIND FACE OF THE LORD OF ALL</div>
+  <div class="panel reading"><p><b>The blue throat.</b> At the churning of the ocean, the first thing to rise was <i>hālāhala</i>, a poison that could destroy the world. Śiva drank it to save everyone; Pārvatī held his throat so it wouldn't go down, and it stayed there, blue. Nīlakaṇṭha is compassion in one word.</p><p><b>Fierce dress, gentle face.</b> Skull garland, animal skin, serpents: frightening ornaments. But the face is <i>prasanna</i>, cheerful, and the heart <i>dayāla</i>, kind. The ornaments show mastery over death and over our animal nature; the face shows how He feels about us.</p><p><b>Priya.</b> "Dear". After all the grand titles, Tulasīdāsa calls Śiva simply dear: the Lord of all, and also my own.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Hālāhala</h4><p>The world-killing poison from the churning of the ocean, which Śiva drank to save creation.</p></div><div class="card bg-blue"><h4>💡 Śaṅkara</h4><p>"Maker of peace" (<i>śam-kara</i>): the same name we met in the Rudram's eighth anuvāka.</p></div></div>
+  <div class="inner">Take on hardship so others don't have to, and keep smiling. That's what the blue throat teaches.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A skull garland and a happy face?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Death hangs around His neck, and He's smiling. He has made friends with mortality.</p></div></div>
+  <div class="key">Skull garland, smiling face: <b>He wears death lightly</b>.</div>
+</section>
+<section class="page" id="v5">
+  <h2 class="page-title">VERSE 5</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE TRIDENT THAT ENDS THREE PAINS</span></div>
+    <div class="iast"><span class="cl">pracaṇḍaṃ prakṛṣṭaṃ pragalbhaṃ pareśaṃ</span><span class="cl">akhaṇḍaṃ ajaṃ bhānukoṭiprakāśam</span><span class="cl">trayaḥśūla nirmūlanaṃ śūlapāṇiṃ</span><span class="cl">bhaje'haṃ bhavānīpatiṃ bhāvagamyam ‖5‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A golden trident whose three prongs pierce three dark clouds of suffering, against the light of many suns"><rect width="220" height="160" fill="#fff8ec"/><path d="M110 90 L220 90" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L213 128" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L194 161" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L165 185" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L129 198" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L91 198" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L55 185" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L26 161" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L7 128" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L0 90" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L7 52" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L26 19" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L55 -5" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L91 -18" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L129 -18" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L165 -5" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L194 19" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 90 L213 52" stroke="#ffd60a" stroke-width="3" opacity=".6"/><path d="M110 156 v-104" stroke="#555" stroke-width="6"/><path d="M84 70 q0 -26 26 -26 q26 0 26 26 M110 44 v-20" fill="none" stroke="#555" stroke-width="5"/><path d="M78 70 l6 -18 l6 18z M130 70 l6 -18 l6 18z M104 24 l6 -18 l6 18z" fill="#ffd60a" stroke="#111" stroke-width="2"/><path d="M24 40 a8 8 0 0 1 8 -10 a10 10 0 0 1 18 0 a8 8 0 0 1 6 10z" fill="#5b6f8a" stroke="#111" stroke-width="1.5"/><path d="M26 26 l26 14" stroke="#e63946" stroke-width="3"/><path d="M94 18 a8 8 0 0 1 8 -10 a10 10 0 0 1 18 0 a8 8 0 0 1 6 10z" fill="#5b6f8a" stroke="#111" stroke-width="1.5"/><path d="M96 4 l26 14" stroke="#e63946" stroke-width="3"/><path d="M164 40 a8 8 0 0 1 8 -10 a10 10 0 0 1 18 0 a8 8 0 0 1 6 10z" fill="#5b6f8a" stroke="#111" stroke-width="1.5"/><path d="M166 26 l26 14" stroke="#e63946" stroke-width="3"/><text x="40" y="62" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">BODY & MIND</text><text x="180" y="62" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">NATURE & FATE</text><text x="110" y="132" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">OTHERS</text><text x="176" y="150" text-anchor="middle" font-family="Bangers" font-size="11" fill="#1d4f9a">ŚŪLAPĀṆI</text></svg><div class="mean">Fierce, supreme, bold, the highest Lord; undivided, unborn, shining like millions of suns; uprooting the three kinds of suffering, trident in hand; reached through love: I worship Him, the husband of Bhavānī.</div></div>
+    <div class="plain">Fierce and supreme, unborn, bright as millions of suns; His trident uproots the three kinds of suffering; and He is reached through love.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">pracaṇḍa</td><td><b>fierce</b></td></tr><tr><td class="w">aja</td><td><b>unborn</b></td></tr><tr><td class="w">bhānukoṭi-prakāśa</td><td><b>light of millions of suns</b></td></tr><tr><td class="w">trayaḥśūla</td><td>the <b>three sufferings</b></td></tr><tr><td class="w">śūlapāṇi</td><td><b>trident in hand</b></td></tr><tr><td class="w">bhāvagamya</td><td><b>reached through love</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v5b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v5b">
+  <h2 class="page-title">VERSE 5 · GOING DEEPER</h2>
+  <div class="sub">THE TRIDENT THAT ENDS THREE PAINS</div>
+  <div class="panel reading"><p><b>A pun on śūla.</b> <i>Śūlapāṇi</i> means "trident in hand". <i>Trayaḥśūla</i> means the three sufferings, since śūla also means sharp pain. The weapon that pierces is the one that ends our piercing pain.</p><p><b>The three sufferings.</b> Tradition counts three: <i>ādhyātmika</i> (from our own body and mind), <i>ādhibhautika</i> (from other beings) and <i>ādhidaivika</i> (from nature and fate). It's why "śāntiḥ" is said three times at the end of prayers.</p><p><b>Bhāvagamya.</b> "Reached through feeling". Not by learning, wealth or elaborate ritual, but by <i>bhāva</i>, heartfelt devotion. This is the heart of Tulasīdāsa's bhakti.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Tāpatraya</h4><p>The three sufferings, the reason for the triple <i>oṃ śāntiḥ śāntiḥ śāntiḥ</i>.</p></div><div class="card bg-blue"><h4>💡 Bhavānī</h4><p>A name of Pārvatī, "wife of Bhava". Her temple at Tuljāpur was dear to Śivājī.</p></div></div>
+  <div class="inner">Feeling, not cleverness, is the road to the divine. Bring your heart, not just your head.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why a trident?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Three prongs for three kinds of pain: from our own body and mind, from other beings, and from nature and fate. One weapon uproots all three.</p></div></div>
+  <div class="key">Three prongs for <b>three kinds of pain</b>, and the road to Him is love.</div>
+</section>
+<section class="page" id="v6">
+  <h2 class="page-title">VERSE 6</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">PRASĪDA, PRASĪDA</span></div>
+    <div class="iast"><span class="cl">kalātīta kalyāṇa kalpāntakārī</span><span class="cl">sadā sajjanānandadātā purārī</span><span class="cl">cidānanda sandoha mohāpahārī</span><span class="cl">prasīda prasīda prabho manmathārī ‖6‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Shiva's third eye sending out a flame that burns a bow of flowers, and an arrow striking three flying cities"><rect width="220" height="160" fill="#16264a"/><g transform="translate(46 60) scale(0.75)"><path d="M-16 44 q16 -20 32 0 v34 h-32z" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-18 60 h36 v18 h-36z" fill="#e8a33d" stroke="#111" stroke-width="2"/><path d="M-12 62 l4 14 M0 62 l3 14 M10 62 l3 14" stroke="#111" stroke-width="2"/><rect x="-7" y="16" width="14" height="12" fill="#2d6cdf" stroke="#111" stroke-width="2"/><ellipse cx="0" cy="-30" rx="12" ry="10" fill="#6b4423" stroke="#111" stroke-width="2"/><path d="M6 -40 a8 8 0 1 0 6 10 a6 6 0 1 1 -6 -10z" fill="#fff6b0" stroke="#111" stroke-width="1.5"/><circle r="20" fill="#bcd4f0" stroke="#111" stroke-width="2.5"/><path d="M-10 -12 h20" stroke="#fff" stroke-width="2.5"/><path d="M-10 -9 h20" stroke="#fff" stroke-width="2"/><ellipse cx="0" cy="-12" rx="1.6" ry="3" fill="#e63946"/><path d="M-11 -7 l8 3 M11 -7 l-8 3" stroke="#111" stroke-width="2.5"/><circle cx="-6" cy="0" r="3" fill="#fff" stroke="#111" stroke-width="1.5"/><circle cx="6" cy="0" r="3" fill="#fff" stroke="#111" stroke-width="1.5"/><circle cx="-6" cy="0" r="1.3" fill="#e63946"/><circle cx="6" cy="0" r="1.3" fill="#e63946"/><path d="M-6 11 h12" stroke="#111" stroke-width="2.5"/></g><path d="M54 50 q30 -6 60 4" fill="none" stroke="#ff8c1a" stroke-width="5"/><path d="M118 70 q20 -40 40 0" fill="none" stroke="#ff9ec4" stroke-width="5"/><circle cx="122" cy="58" r="4" fill="#ffd60a"/><circle cx="138" cy="42" r="4" fill="#ffd60a"/><circle cx="154" cy="58" r="4" fill="#ffd60a"/><path d="M118 70 q-6 -14 4 -24 q2 12 10 14 q2 -10 8 -12 q6 14 0 22z" fill="#ff8c1a" opacity=".85"/><rect x="150" y="112" width="18" height="12" fill="#ffd60a" stroke="#111" stroke-width="1.5"/><path d="M150 112 l9 -8 l9 8" fill="#ffd60a" stroke="#111" stroke-width="1.5"/><rect x="174" y="104" width="18" height="12" fill="#ddd" stroke="#111" stroke-width="1.5"/><path d="M174 104 l9 -8 l9 8" fill="#ddd" stroke="#111" stroke-width="1.5"/><rect x="198" y="112" width="18" height="12" fill="#777" stroke="#111" stroke-width="1.5"/><path d="M198 112 l9 -8 l9 8" fill="#777" stroke="#111" stroke-width="1.5"/><path d="M30 146 L150 120" stroke="#fff" stroke-width="2"/><path d="M146 116 l8 4 l-8 6z" fill="#fff"/><text x="136" y="92" text-anchor="middle" font-family="Bangers" font-size="10" fill="#fff">MANMATHĀRĪ</text><text x="70" y="154" text-anchor="middle" font-family="Bangers" font-size="10" fill="#ffd60a">PURĀRĪ</text></svg><div class="mean">Beyond all the divisions of time, the auspicious one who ends the world-age; always the giver of joy to the good; destroyer of the three cities; a mass of consciousness and bliss, remover of delusion: be pleased, be pleased, O Lord, destroyer of Kāma!</div></div>
+    <div class="plain">Beyond time, auspicious, ender of the age, giver of joy, destroyer of the three cities and of Kāma: be gracious, be gracious!</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">kalātīta</td><td><b>beyond all divisions</b> of time</td></tr><tr><td class="w">kalpāntakārī</td><td><b>who ends the world-age</b></td></tr><tr><td class="w">purārī</td><td><b>enemy of the three cities</b></td></tr><tr><td class="w">cidānanda</td><td><b>consciousness and bliss</b></td></tr><tr><td class="w">mohāpahārī</td><td><b>remover of delusion</b></td></tr><tr><td class="w">manmathārī</td><td><b>destroyer of Kāma</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v6b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v6b">
+  <h2 class="page-title">VERSE 6 · GOING DEEPER</h2>
+  <div class="sub">PRASĪDA, PRASĪDA</div>
+  <div class="panel reading"><p><b>The ka-sound.</b> <i>Kalātīta kalyāṇa kalpāntakārī</i>: three "ka" words in a row. Tulasīdāsa's Sanskrit rings like a bell; the sound itself is part of the worship.</p><p><b>Purārī.</b> The three flying cities of the demons, of gold, silver and iron, could be destroyed only when they lined up, once in a thousand years. At that moment Śiva shot one arrow and destroyed all three: Tripurāntaka.</p><p><b>Manmathārī.</b> When Kāma, the god of desire, shot his flower-arrow to break Śiva's meditation, Śiva opened his third eye and burnt him to ash. Desire burnt, delusion (<i>moha</i>) removed: and then, at last, the poet pleads: <i>prasīda, prasīda</i>.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Tripura</h4><p>The three cities were built by the demon architect Maya; their destruction is one of Śiva's great deeds in the Purāṇas.</p></div><div class="card bg-blue"><h4>💡 Anaṅga</h4><p>After being burnt, Kāma lived on without a body, "Anaṅga": desire that works invisibly.</p></div></div>
+  <div class="inner">There's a time to describe and a time to simply ask. Real prayer ends in "please".</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why say 'prasīda' twice?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That's the turning point of the hymn. The poet stops describing and starts pleading: be pleased, be pleased.</p></div></div>
+  <div class="key">From describing to pleading: <b>prasīda, prasīda</b>, be gracious to me.</div>
+</section>
+<section class="page" id="v7">
+  <h2 class="page-title">VERSE 7</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">NO PEACE WITHOUT HIS FEET</span></div>
+    <div class="iast"><span class="cl">na yāvad umānātha pādāravindaṃ</span><span class="cl">bhajantīha loke pare vā narāṇām</span><span class="cl">na tāvat sukhaṃ śānti santāpanāśaṃ</span><span class="cl">prasīda prabho sarvabhūtādhivāsa ‖7‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Two lotus feet in the centre; on the left a worried person under a cloud, on the right a peaceful person in sunshine"><rect width="220" height="160" fill="#eaf5e0"/><path d="M88 120 q-6 -40 10 -50 q14 6 10 50z M114 120 q-4 -44 10 -50 q16 10 10 50z" fill="#bcd4f0" stroke="#111" stroke-width="2"/><g transform="translate(110 150) scale(1.2)" stroke="#111" stroke-width="2.5"><path d="M0 0 q-34 -6 -30 -30 q22 4 30 30z" fill="#ff9ec4"/><path d="M0 0 q34 -6 30 -30 q-22 4 -30 30z" fill="#ff9ec4"/><path d="M0 0 q-16 -26 0 -46 q16 20 0 46z" fill="#ffc2dc"/></g><path d="M14 30 a10 8 0 0 1 16 -6 a12 10 0 0 1 22 2 a8 8 0 0 1 2 12 h-36 a8 6 0 0 1 -4 -8z" fill="#8a96a8" stroke="#111" stroke-width="1.5"/><circle cx="34" cy="80" r="9" fill="#f2c79b" stroke="#111" stroke-width="2"/><path d="M30 85 q4 -4 8 0" fill="none" stroke="#111" stroke-width="1.5"/><path d="M24 116 q10 -30 20 0z" fill="#5b6f8a" stroke="#111" stroke-width="2"/><path d="M186 30 L206 30" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L203 40" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L196 47" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L186 50" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L176 47" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L169 40" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L166 30" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L169 20" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L176 13" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L186 10" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L196 13" stroke="#ff8c1a" stroke-width="3"/><path d="M186 30 L203 20" stroke="#ff8c1a" stroke-width="3"/><circle cx="186" cy="30" r="10" fill="#ffd60a" stroke="#111" stroke-width="2.5"/><circle cx="186" cy="80" r="9" fill="#f2c79b" stroke="#111" stroke-width="2"/><path d="M182 83 q4 4 8 0" fill="none" stroke="#111" stroke-width="1.5"/><path d="M176 116 q10 -30 20 0z" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="34" y="144" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">NO ŚĀNTI</text><text x="186" y="144" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">SUKHA · ŚĀNTI</text><text x="110" y="22" text-anchor="middle" font-family="Bangers" font-size="11" fill="#1d4f9a">PĀDĀRAVINDA</text></svg><div class="mean">As long as people, in this world or the next, do not worship the lotus feet of Umā's Lord, they find no happiness, no peace, no end to their burning sorrow. Be pleased, O Lord, who dwells in all beings.</div></div>
+    <div class="plain">As long as people don't worship the lotus feet of Umā's Lord, they find no happiness, no peace, no end to sorrow. Be gracious, Lord who lives in all beings.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">umānātha</td><td><b>Lord of Umā</b> (Pārvatī)</td></tr><tr><td class="w">pādāravinda</td><td><b>lotus feet</b></td></tr><tr><td class="w">sukha · śānti</td><td><b>happiness</b> · <b>peace</b></td></tr><tr><td class="w">santāpa</td><td><b>burning sorrow</b></td></tr><tr><td class="w">sarvabhūtādhivāsa</td><td><b>who dwells in all beings</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v7b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v7b">
+  <h2 class="page-title">VERSE 7 · GOING DEEPER</h2>
+  <div class="sub">NO PEACE WITHOUT HIS FEET</div>
+  <div class="panel reading"><p><b>As long as… so long.</b> <i>Na yāvat … na tāvat</i>: "as long as not… so long not". A firm, logical shape: without this, no that. It's the strongest claim in the hymn.</p><p><b>The feet.</b> In Indian tradition, bowing at someone's feet is total humility and trust. The feet are also the part we can reach: we may not understand the Absolute, but we can hold the feet.</p><p><b>In all beings.</b> The verse ends <i>sarvabhūtādhivāsa</i>, "dwelling in all beings". So worshipping His feet includes respecting every living being, the same lesson as the Śrī Rudram, which finds Rudra in everyone.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Pādāravinda</h4><p>"Lotus feet": bowing at the feet is the gesture of complete surrender.</p></div><div class="card bg-blue"><h4>💡 Umānātha</h4><p>Umā is Pārvatī. Her penance to win Śiva is told in Kālidāsa's Kumārasambhava.</p></div></div>
+  <div class="inner">If peace keeps slipping away, check what you're anchored to. Anchor deeper.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> No peace at all without Him? That's strong.</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Peace that depends on circumstances comes and goes. Lasting peace needs an anchor deeper than circumstances.</p></div></div>
+  <div class="key">Happiness and peace need <b>an anchor deeper than circumstances</b>.</div>
+</section>
+<section class="page" id="v8">
+  <h2 class="page-title">VERSE 8</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">I KNOW NO YOGA, NO JAPA, NO PŪJĀ</span></div>
+    <div class="iast"><span class="cl">na jānāmi yogaṃ japaṃ naiva pūjāṃ</span><span class="cl">nato'haṃ sadā sarvadā śambhu tubhyam</span><span class="cl">jarā janma duḥkhaugha tātapyamānaṃ</span><span class="cl">prabho pāhi āpannam āmīśa śambho ‖8‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A person bowing low with empty hands before a linga, with no beads, no lamp and no books around"><rect width="220" height="160" fill="#dfe9f6"/><g transform="translate(160 116) scale(0.75)" stroke="#111" stroke-width="3"><path d="M-60 40 h120 l-10 18 h-100z" fill="#7a7f8a"/><path d="M-46 22 h92 v18 h-92z" fill="#9aa0ab"/><path d="M46 26 h30 l6 6 h-36z" fill="#9aa0ab"/><path d="M-22 22 v-48 a22 22 0 0 1 44 0 v48z" fill="#2b2f36"/><path d="M-14 -20 h28 M-14 -14 h28 M-14 -8 h28" stroke="#fff" stroke-width="2.5"/><circle cx="0" cy="-12" r="3" fill="#e63946" stroke-width="1"/></g><circle cx="60" cy="120" r="10" fill="#f2c79b" stroke="#111" stroke-width="2"/><path d="M68 124 q30 -6 34 20 h-60 q4 -20 26 -20z" fill="#f4a63a" stroke="#111" stroke-width="2"/><path d="M50 126 l-10 12" stroke="#f2c79b" stroke-width="5" stroke-linecap="round"/><g transform="translate(36 30)"><rect x="-14" y="-12" width="28" height="24" fill="#fff" stroke="#111" stroke-width="1.5"/><text x="0" y="4" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">YOGA</text><path d="M-14 -12 l28 24" stroke="#e63946" stroke-width="2.5"/></g><g transform="translate(80 30)"><rect x="-14" y="-12" width="28" height="24" fill="#fff" stroke="#111" stroke-width="1.5"/><text x="0" y="4" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">JAPA</text><path d="M-14 -12 l28 24" stroke="#e63946" stroke-width="2.5"/></g><g transform="translate(124 30)"><rect x="-14" y="-12" width="28" height="24" fill="#fff" stroke="#111" stroke-width="1.5"/><text x="0" y="4" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">PŪJĀ</text><path d="M-14 -12 l28 24" stroke="#e63946" stroke-width="2.5"/></g><text x="110" y="72" text-anchor="middle" font-family="Bangers" font-size="11" fill="#1d4f9a">NATO'HAṂ: I JUST BOW</text></svg><div class="mean">I know no yoga, no japa, not even pūjā. I simply bow to You, Śambhu, always, at every moment. I am scorched again and again by the flood of sorrows of old age and birth: Lord, protect me, who has come to You for refuge, O Lord Śambhu.</div></div>
+    <div class="plain">I know no yoga, no japa, no pūjā; I only bow, always. Burning in the cycle of birth and age, I come for refuge: protect me, Śambhu.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">yoga · japa · pūjā</td><td><b>meditation</b> · <b>mantra repetition</b> · <b>ritual worship</b></td></tr><tr><td class="w">nato'ham</td><td><b>I bow</b></td></tr><tr><td class="w">sadā sarvadā</td><td><b>always, at every moment</b></td></tr><tr><td class="w">jarā · janma</td><td><b>old age</b> · <b>birth</b></td></tr><tr><td class="w">tātapyamāna</td><td><b>scorched again and again</b></td></tr><tr><td class="w">āpanna</td><td><b>one in distress</b>, seeking refuge</td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v8b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v8b">
+  <h2 class="page-title">VERSE 8 · GOING DEEPER</h2>
+  <div class="sub">I KNOW NO YOGA, NO JAPA, NO PŪJĀ</div>
+  <div class="panel reading"><p><b>The most quoted verse.</b> <i>Na jānāmi yogaṃ japaṃ naiva pūjām</i>: "I know no yoga, no japa, not even pūjā". In the story, it's sung by a learned guru, who certainly knew all three. Before God, even the expert is a beginner.</p><p><b>Burning again and again.</b> <i>Tātapyamāna</i> is an intensive verb: scorched over and over by the flood of sorrows, birth after birth, old age after old age. It's the cry of every person who has been through hard times.</p><p><b>Refuge.</b> <i>Āpanna</i>: one in distress who comes for shelter. This is <i>śaraṇāgati</i>, surrender, the simplest and most complete form of devotion. When every method fails, taking refuge is still possible.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Gītā 18.66</h4><p>"Give up all methods and take refuge in Me alone": the same surrender.</p></div><div class="card bg-blue"><h4>💡 Āmīśa</h4><p>"My Lord": the hymn ends on a personal note, not a title.</p></div></div>
+  <div class="inner">You don't need to be good at religion to be heard. Bow, ask for help, and that is prayer.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> He admits he doesn't know how to pray, in the middle of a prayer?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That's the most honest line in the hymn. When you have no method left, bowing is enough.</p></div></div>
+  <div class="key">No yoga, no japa, no pūjā: <b>just bowing is enough</b>.</div>
+</section>
+<section class="page" id="v9">
+  <h2 class="page-title">PHALAŚRUTI · THE FRUIT</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE GURU'S HYMN</span></div>
+    <div class="iast"><span class="cl">rudrāṣṭakam idaṃ proktaṃ</span><span class="cl">vipreṇa haratoṣaye</span><span class="cl">ye paṭhanti narā bhaktyā</span><span class="cl">teṣāṃ śambhuḥ prasīdati ‖9‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="An old guru with folded hands singing before a linga on behalf of a young student who kneels beside him"><rect width="220" height="160" fill="#fff3d6"/><g transform="translate(176 112) scale(0.7)" stroke="#111" stroke-width="3"><path d="M-60 40 h120 l-10 18 h-100z" fill="#7a7f8a"/><path d="M-46 22 h92 v18 h-92z" fill="#9aa0ab"/><path d="M46 26 h30 l6 6 h-36z" fill="#9aa0ab"/><path d="M-22 22 v-48 a22 22 0 0 1 44 0 v48z" fill="#2b2f36"/><path d="M-14 -20 h28 M-14 -14 h28 M-14 -8 h28" stroke="#fff" stroke-width="2.5"/><circle cx="0" cy="-12" r="3" fill="#e63946" stroke-width="1"/></g><g transform="translate(70 50) scale(1.1)"><path d="M-14 60 q14 -40 28 0z" fill="#fff" stroke="#111" stroke-width="2"/><circle cy="8" r="11" fill="#f2c79b" stroke="#111" stroke-width="2"/><path d="M-11 4 q11 -14 22 0" fill="#ddd" stroke="#111" stroke-width="1.5"/><path d="M-4 10 q4 3 8 0" fill="none" stroke="#111" stroke-width="1.5"/></g><path d="M58 70 q12 14 24 0" fill="#eee" stroke="#111" stroke-width="1.5"/><path d="M76 84 l8 -12 l6 12" fill="#f2c79b" stroke="#111" stroke-width="1.5"/><g transform="translate(120 96) scale(0.7)"><path d="M-14 60 q14 -40 28 0z" fill="#2a9d6f" stroke="#111" stroke-width="2"/><circle cy="8" r="11" fill="#f2c79b" stroke="#111" stroke-width="2"/><path d="M-11 4 q11 -14 22 0" fill="#151515" stroke="#111" stroke-width="1.5"/><path d="M-4 10 q4 3 8 0" fill="none" stroke="#111" stroke-width="1.5"/></g><path d="M96 40 q4 -6 8 0" fill="none" stroke="#1d4f9a" stroke-width="2"/><path d="M110 34 q4 -6 8 0" fill="none" stroke="#1d4f9a" stroke-width="2"/><path d="M124 28 q4 -6 8 0" fill="none" stroke="#1d4f9a" stroke-width="2"/><path d="M138 22 q4 -6 8 0" fill="none" stroke="#1d4f9a" stroke-width="2"/><text x="70" y="150" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">VIPRA · THE GURU</text><text x="176" y="30" text-anchor="middle" font-family="Bangers" font-size="11" fill="#111">HARATOṢA</text></svg><div class="mean">This Rudrāṣṭakam was spoken by a Brahmin to please Hara. Those who recite it with devotion: Śambhu is pleased with them.</div></div>
+    <div class="plain">This hymn was spoken by a Brahmin to please Śiva; whoever recites it with devotion, Śambhu is pleased with them.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">proktam</td><td><b>spoken</b></td></tr><tr><td class="w">vipra</td><td>a <b>Brahmin</b>, a learned one</td></tr><tr><td class="w">haratoṣa</td><td><b>to please Hara</b> (Śiva)</td></tr><tr><td class="w">bhakti</td><td><b>devotion</b></td></tr><tr><td class="w">prasīdati</td><td><b>is pleased</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v9b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v9b">
+  <h2 class="page-title">PHALAŚRUTI · GOING DEEPER</h2>
+  <div class="sub">THE GURU'S HYMN</div>
+  <div class="panel reading"><p><b>The Brahmin.</b> <i>Vipreṇa</i>, "by a Brahmin": in the Rāmacaritamānas, this is the guru of our story, who sang the hymn to save his proud student from Śiva's curse.</p><p><b>Prasīdati.</b> "He is pleased". Verses 6 and 7 pleaded <i>prasīda</i>, "be pleased"; the phalaśruti answers: <i>prasīdati</i>, He is pleased. The prayer is heard.</p><p><b>Inside a Rāma epic.</b> The story is told by Kākabhuśuṇḍi, the crow-sage, to Garuḍa, near the end of the Rāmacaritamānas. The proud student of the story is Kākabhuśuṇḍi himself, in an earlier life.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Kākabhuśuṇḍi</h4><p>The crow-sage of the Rāmacaritamānas, an immortal devotee of Rāma who narrates the epic to Garuḍa.</p></div><div class="card bg-blue"><h4>💡 Hara</h4><p>"The one who takes away": Śiva removes sin, sorrow and delusion.</p></div></div>
+  <div class="inner">The most powerful prayers are often said for others, even for those who have hurt us.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Who's the Brahmin?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The guru in our story, praying for the rude student who had insulted him. That's why Śiva listened.</p></div></div>
+  <div class="key">A hymn sung <b>for someone else</b>: the guru's prayer for his student.</div>
+</section>
+
+<section class="page" id="end">
+  <h2 class="page-title">THE WHOLE HYMN ON ONE PAGE</h2>
+  <div class="sub">From the formless sky to "I just bow"</div>
+  <div class="steps">
+    <div><b>Verses 1–2: the formless.</b> Liberation itself, beyond qualities and thought; root of Oṃ, the Fourth, the death of Time; terrible, yet compassionate.</div>
+    <div><b>Verses 3–5: the form.</b> Snow-white, Gaṅgā in His hair, moon and serpents; a smiling face and blue throat; the trident that ends three pains; reached through love.</div>
+    <div><b>Verses 6–8: the prayer.</b> Be gracious, be gracious; no peace without Your feet; I know no yoga, japa or pūjā, I only bow: protect me.</div>
+    <div><b>Phalaśruti.</b> Sung by a guru for his student; whoever recites it with devotion, Śambhu is pleased.</div>
+  </div>
+  <div class="g4">
+    <div class="card bg-yellow"><h4>🌌 Vast</h4><p>The sky of awareness.</p></div>
+    <div class="card bg-red"><h4>💙 Kind</h4><p>Blue throat, smiling face.</p></div>
+    <div class="card bg-blue"><h4>🙏 Humble</h4><p>Bowing is enough.</p></div>
+    <div class="card bg-green"><h4>🤝 Forgive</h4><p>Pray even for those who hurt you.</p></div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What's the one thing to take home?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Verse 8. You don't need to know yoga, japa or pūjā. Bow, ask for help, and Śiva listens.</p></div></div>
+  <div class="key">Rudrāṣṭakam: <b>na jānāmi… nato'haṃ</b>, I know nothing, I just bow. 🙏</div>
+  <div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+
+<footer style="text-align:center;font-size:13px;opacity:.75">Study notes on the Rudrāṣṭakam of Tulasīdāsa (Rāmacaritamānas, Uttara Kāṇḍa), made from the commonly sung text and published translations. Meanings are simplified; the stories are traditional and retold briefly. Zappy and Prof. Bolt are fictional. Illustrations drawn for this article.</footer>
+</div>
+<script>
+  document.querySelectorAll('section.page[id$="b"], section.page#about').forEach(function (sec) {
+    var t = sec.querySelector('.page-title');
+    var bar = document.createElement('div');
+    bar.className = 'ch-end';
+    var next = sec.nextElementSibling && sec.nextElementSibling.id ? '#' + sec.nextElementSibling.id : '#contents';
+    bar.innerHTML = '<span class="lbl">END OF ' + (t ? t.textContent.split('·')[0].trim() : '') + '</span><a href="#contents">⬆ CONTENTS</a><a href="' + next + '">NEXT ➜</a>';
+    sec.appendChild(bar);
+  });
+</script>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
