@@ -45,7 +45,7 @@ def back_path(relative):
         return '/' + '/'.join(directories[:-1]) + '/'
     if directories == ('archive',) and relative.name != 'index.html':
         return '/archive/'
-    if not directories or directories[0] in {'about', 'archive', 'health', 'ortho'}:
+    if not directories or directories[0] in {'about', 'archive', 'gods', 'health', 'ortho'}:
         return '/'
     return '/archive/'
 
