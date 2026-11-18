@@ -118,6 +118,7 @@ def story_pages():
     yield from (ROOT / 'health').glob('[0-9][0-9]-*/index.html')
     yield from (ROOT / 'health' / 'ortho').glob('*/*/index.html')
     yield from (ROOT / 'gods').glob('*/*/index.html')
+    yield from (ROOT / 'gods').glob('*/*/*/index.html')
 
 
 def card_art():
