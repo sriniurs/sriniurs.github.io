@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acyutāṣṭakam · srini.presents</title>
+<meta name="description" content="Acyutaṃ keśavaṃ: the Acyutāṣṭakam attributed to Ādi Śaṅkarācārya, a garland of the names of Viṣṇu, Rāma and Kṛṣṇa, explained verse by verse in plain English with illustrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#2c5f9e,#0b2a4a 55%,#04101f)}
+  .sloka-head{background:#0b2a4a}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0b2a4a}
+  .sub{color:#1d4f9a}
+  .num{background:#0b2a4a}
+  .steps div:before{background:#1d4f9a}
+  .full .vn,.full .end{color:#1d4f9a}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d4f9a}
+  .contlink{color:#1d4f9a}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#2c5f9e,#0b2a4a 55%,#04101f)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .jl td:first-child{font-family:Bangers;letter-spacing:1px;color:#1d4f9a;font-size:17px;text-align:center}
+  @media print{.jl td,.jl th{padding:3px 6px;font-size:11.5px}}
+  /* Viṣṇu theme: light blue */
+  .cover{background:radial-gradient(circle at 50% 38%,#8fd0f5,#1d6fb8 55%,#0b3d6e)}
+  .sloka-head{background:#1d6fb8}
+  .sloka{background:#e3f2fd;box-shadow:7px 7px 0 #1d6fb8}
+  .sub{color:#1d6fb8}
+  .num{background:#1d6fb8}
+  .steps div:before{background:#1d6fb8}
+  .full .vn,.full .end{color:#1d6fb8}
+  .iast:before{color:#1d6fb8}
+  .contlink{color:#1d6fb8}
+  .iast .cl2{padding-left:2.2em}
+  .full .ln2{padding-left:2.2em}
+  @media(max-width:720px){.iast .cl2{padding-left:1.4em}.full .ln2{padding-left:1.4em}}
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/vishnu/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">8 + 1 VERSES</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(24px,7.4vw,80px)">ACYUTĀṢṬAKAM</h1>
+  <div class="series">ĀDI ŚAṄKARĀCĀRYA · A GARLAND OF THE LORD’S NAMES</div>
+  <div class="tag">“Acyutaṃ keśavaṃ” · explained and illustrated</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Rama with his bow and Krishna with his flute standing side by side, framed by a garland of flowers"><circle cx="190" cy="130" r="110" fill="none" stroke="#f08aa6" stroke-width="10" stroke-dasharray="2 14" stroke-linecap="round"/><g transform="translate(130 40) scale(1.1)" stroke="#111" stroke-width="2.5"><circle cy="50" r="13" fill="#2a9d6f"/><path d="M-12 36 h24 v-12 h-24z" fill="#ffd60a"/><path d="M-20 140 q-4 -60 20 -76 q24 16 20 76z" fill="#ffd60a"/><path d="M-34 40 q-24 44 0 90" fill="none" stroke="#7a5a3a" stroke-width="5"/></g><g transform="translate(250 40) scale(1.1)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><path d="M260 106 l50 -14" stroke="#7a5a3a" stroke-width="6" stroke-linecap="round"/><text x="190" y="258" text-anchor="middle" font-family="Bangers" font-size="22" fill="#fff" stroke="#111" stroke-width="1">RĀMA · KṚṢṆA</text></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  <div class="bubble" style="max-width:620px;margin:10px auto 4px;text-align:left">
+    <span class="who">HOW THIS WORKS:</span> First the whole hymn for chanting in one go. Then the story of how the hymn came to be and its background, and <b>two pages for each verse</b>: the chant, a picture, what it says and the key words; then a deeper look, background facts, the inner teaching and the one thing to remember.
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6">
+    <p>"Acyutaṃ keśavaṃ rāma-nārāyaṇaṃ…" It opens like a bell ringing: name after name of the Lord, in a lilting, swinging rhythm that children learn before they know what it means.</p>
+    <p>The Acyutāṣṭakam is traditionally attributed to <b>Ādi Śaṅkarācārya</b>. In eight verses it worships the Lord by His names, then turns to Rāma in the forest and to little Kṛṣṇa among the cows, and ends with a meditation on His form, from rain-cloud body to jingling waist-bells.</p>
+    <p>It is a hymn for singing aloud: <i>nāma-saṅkīrtana</i>, the joy of the holy names.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#1d6fb8">Hari Oṃ,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is this the bhajan 'Acyutam Keśavam Kṛṣṇa Dāmodaram'?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That popular Hindi bhajan borrows this hymn's opening, then goes its own way. This is the original Sanskrit hymn.</p></div></div>
+</section>
+
+<section class="page" id="full">
+  <h2 class="page-title">THE ACYUTĀṢṬAKAM IN ONE GO</h2>
+  <div class="sub">All 9 verses, for chanting</div>
+  <div class="full"><p><span class="vn">VERSE 1</span><span class="ln">acyutaṃ keśavaṃ</span><span class="ln ln2">rāmanārāyaṇaṃ</span><span class="ln">kṛṣṇadāmodaraṃ</span><span class="ln ln2">vāsudevaṃ harim |</span><span class="ln">śrīdharaṃ mādhavaṃ</span><span class="ln ln2">gopikāvallabhaṃ</span><span class="ln">jānakīnāyakaṃ</span><span class="ln ln2">rāmacandraṃ bhaje<span class="end">‖ 1 ‖</span></span></p><p><span class="vn">VERSE 2</span><span class="ln">acyutaṃ keśavaṃ</span><span class="ln ln2">satyabhāmādhavaṃ</span><span class="ln">mādhavaṃ śrīdharaṃ</span><span class="ln ln2">rādhikārādhitam |</span><span class="ln">indirāmandiraṃ</span><span class="ln ln2">cetasā sundaraṃ</span><span class="ln">devakīnandanaṃ</span><span class="ln ln2">nandajaṃ sandadhe<span class="end">‖ 2 ‖</span></span></p><p><span class="vn">VERSE 3</span><span class="ln">viṣṇave jiṣṇave</span><span class="ln ln2">śaṅkhine cakriṇe</span><span class="ln">rukmiṇīrāgiṇe</span><span class="ln ln2">jānakījānaye |</span><span class="ln">vallavīvallabhāya</span><span class="ln ln2">arcitāyātmane</span><span class="ln">kaṃsavidhvaṃsine</span><span class="ln ln2">vaṃśine te namaḥ<span class="end">‖ 3 ‖</span></span></p><p><span class="vn">VERSE 4</span><span class="ln">kṛṣṇa govinda he</span><span class="ln ln2">rāma nārāyaṇa</span><span class="ln">śrīpate vāsudeva-</span><span class="ln ln2">ajita śrīnidhe |</span><span class="ln">acyutānanta he</span><span class="ln ln2">mādhavādhokṣaja</span><span class="ln">dvārakānāyaka</span><span class="ln ln2">draupadīrakṣaka<span class="end">‖ 4 ‖</span></span></p><p><span class="vn">VERSE 5</span><span class="ln">rākṣasakṣobhitaḥ</span><span class="ln ln2">sītayā śobhito</span><span class="ln">daṇḍakāraṇyabhū-</span><span class="ln ln2">puṇyatākāraṇaḥ |</span><span class="ln">lakṣmaṇenānvito</span><span class="ln ln2">vānaraiḥ sevito</span><span class="ln">'gastyasampūjito</span><span class="ln ln2">rāghavaḥ pātu mām<span class="end">‖ 5 ‖</span></span></p><p><span class="vn">VERSE 6</span><span class="ln">dhenukāriṣṭakā-</span><span class="ln ln2">niṣṭakṛddveṣihā</span><span class="ln">keśihā kaṃsahṛd-</span><span class="ln ln2">vaṃśikāvādakaḥ |</span><span class="ln">pūtanākopakaḥ</span><span class="ln ln2">sūrajākhelano</span><span class="ln">bālagopālakaḥ</span><span class="ln ln2">pātu māṃ sarvadā<span class="end">‖ 6 ‖</span></span></p><p><span class="vn">VERSE 7</span><span class="ln">vidyududyotavat-</span><span class="ln ln2">prasphuradvāsasaṃ</span><span class="ln">prāvṛḍambhodavat-</span><span class="ln ln2">prollasadvigraham |</span><span class="ln">vanyayā mālayā</span><span class="ln ln2">śobhitoraḥsthalaṃ</span><span class="ln">lohitāṅghridvayaṃ</span><span class="ln ln2">vārijākṣaṃ bhaje<span class="end">‖ 7 ‖</span></span></p><p><span class="vn">VERSE 8</span><span class="ln">kuñcitaiḥ kuntalair</span><span class="ln ln2">bhrājamānānanaṃ</span><span class="ln">ratnamauliṃ lasat-</span><span class="ln ln2">kuṇḍalaṃ gaṇḍayoḥ |</span><span class="ln">hārakeyūrakaṃ</span><span class="ln ln2">kaṅkaṇaprojjvalaṃ</span><span class="ln">kiṅkiṇīmañjulaṃ</span><span class="ln ln2">śyāmalaṃ taṃ bhaje<span class="end">‖ 8 ‖</span></span></p><p><span class="vn">VERSE 9</span><span class="ln">acyutasyāṣṭakaṃ</span><span class="ln ln2">yaḥ paṭhed iṣṭadaṃ</span><span class="ln">premataḥ pratyahaṃ</span><span class="ln ln2">pūruṣaḥ saspṛham |</span><span class="ln">vṛttataḥ sundaraṃ</span><span class="ln ln2">kartṛviśvambharas</span><span class="ln">tasya vaśyo harir</span><span class="ln ln2">jāyate satvaram<span class="end">‖ 9 ‖</span></span></p></div>
+  <div class="note">Each line is split at its natural pause. Text checked against shlokam.org; variant readings are noted on the verse pages.</div>
+</section>
+
+<section class="page" id="story">
+  <h2 class="page-title">THE STORY · A TEACHER WHO SANG</h2>
+  <div class="sub">Śaṅkara, the philosopher of oneness, singing the names</div>
+  <div class="panel" style="margin-top:6px">
+    <span class="caption">The story in 5 frames</span>
+    <div class="steps" style="margin:0">
+      <div><b>The philosopher.</b> Ādi Śaṅkarācārya, from Kālaḍi in Kerala, taught Advaita Vedānta: the Self and Brahman are one.</div>
+      <div><b>The poet.</b> Tradition credits him with many devotional hymns too: Bhaja Govindam, Śiva Pañcākṣara, Kanakadhārā and others.</div>
+      <div><b>Knowledge and love.</b> For Śaṅkara, devotion purifies the mind and prepares it for knowledge; singing the names is open to everyone.</div>
+      <div><b>A garland of names.</b> The Acyutāṣṭakam is pure <i>nāma-saṅkīrtana</i>: the Lord's names, strung together in a singing metre.</div>
+      <div><b>A note on authorship.</b> Scholars debate which hymns Śaṅkara himself wrote; this one is traditionally attributed to him.</div>
+    </div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A philosopher of oneness singing to Kṛṣṇa?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Why not? The Lord we sing to is our own deepest Self, says verse 3. Love and knowledge meet.</p></div></div>
+</section>
+
+<section class="page" id="about">
+  <h2 class="page-title">ABOUT THE ACYUTĀṢṬAKAM</h2>
+  <div class="sub">Eight verses and a blessing</div>
+  <div class="g2">
+    <div class="card bg-blue"><h4>🔔 The rhythm</h4><p><b>Sragviṇī</b>, "garland-wearer": four DUM-da-DUM beats a line. ACyu-TAM KEśa-VAM.</p></div>
+    <div class="card bg-yellow"><h4>📛 The name</h4><p>"Acyuta" means unfailing: the One who never falls, and never lets His devotee fall.</p></div>
+  </div>
+  <table class="ct">
+    <tr><th>Verse</th><th>What it does</th></tr>
+    <tr><td><b>1</b></td><td>I worship: a garland of His names</td></tr>
+    <tr><td><b>2</b></td><td>I hold in mind: Devakī's joy, Nanda's son</td></tr>
+    <tr><td><b>3</b></td><td>Salutations to You: conch, discus, flute</td></tr>
+    <tr><td><b>4</b></td><td>Calling out: "O Kṛṣṇa! O Govinda!"</td></tr>
+    <tr><td><b>5</b></td><td>May Rāma of the forest protect me</td></tr>
+    <tr><td><b>6</b></td><td>May little Gopāla always protect me</td></tr>
+    <tr><td><b>7–8</b></td><td>Meditation on His form, head to foot</td></tr>
+    <tr><td><b>9</b></td><td>The fruit: Hari is won by love</td></tr>
+  </table>
+  <div class="panel reading"><p><b>Not to be confused</b> with another hymn of the same name, "acyutācyuta hare paramātman…", also attributed to Śaṅkara.</p></div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li class="part">START HERE</li>
+    <li><span class="num">✍</span><a href="#foreword">Foreword</a></li>
+    <li><span class="num">🔤</span><a href="#full">The Acyutāṣṭakam in One Go</a></li>
+    <li><span class="num">★</span><a href="#story">The Story: A Teacher Who Sang</a></li>
+    <li><span class="num">ℹ</span><a href="#about">About the Acyutāṣṭakam</a></li>
+    <li><span class="num">∑</span><a href="#end">The Acyutāṣṭakam on One Page</a></li>
+    <li class="part">THE 9 VERSES</li>
+    <li><span class="num">1</span><a href="#v1">Verse 1: A Garland Of Names</a></li><li><span class="num">2</span><a href="#v2">Verse 2: Held In The Mind</a></li><li><span class="num">3</span><a href="#v3">Verse 3: Salutations To You</a></li><li><span class="num">4</span><a href="#v4">Verse 4: O Kṛṣṇa, O Govinda!</a></li><li><span class="num">5</span><a href="#v5">Verse 5: May Rāma Protect Me</a></li><li><span class="num">6</span><a href="#v6">Verse 6: May Little Gopāla Protect Me</a></li><li><span class="num">7</span><a href="#v7">Verse 7: Like A Rain Cloud With Lightning</a></li><li><span class="num">8</span><a href="#v8">Verse 8: Curls, Crown And Jingling Bells</a></li><li><span class="num">9</span><a href="#v9">Verse 9: The Fruit Of Reciting</a></li>
+  </ul>
+</section>
+<section class="page" id="v1">
+  <h2 class="page-title">VERSE 1</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">A GARLAND OF NAMES</span></div>
+    <div class="iast"><span class="cl">acyutaṃ keśavaṃ</span><span class="cl cl2">rāmanārāyaṇaṃ</span><span class="cl">kṛṣṇadāmodaraṃ</span><span class="cl cl2">vāsudevaṃ harim |</span><span class="cl">śrīdharaṃ mādhavaṃ</span><span class="cl cl2">gopikāvallabhaṃ</span><span class="cl">jānakīnāyakaṃ</span><span class="cl cl2">rāmacandraṃ bhaje ‖1‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A garland of flowers in a circle, each flower carrying a name of Vishnu, around a shining figure"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 20) scale(0.55)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><text x="190.0" y="84.0" text-anchor="middle" font-family="Bangers" font-size="8">ACYUTA</text><text x="166.5685424949238" y="123.59797974644665" text-anchor="middle" font-family="Bangers" font-size="8">KEŚAVA</text><text x="110.0" y="140.0" text-anchor="middle" font-family="Bangers" font-size="8">NĀRĀYAṆA</text><text x="53.4314575050762" y="123.59797974644667" text-anchor="middle" font-family="Bangers" font-size="8">KṚṢṆA</text><text x="30.0" y="84.0" text-anchor="middle" font-family="Bangers" font-size="8">DĀMODARA</text><text x="53.43145750507618" y="44.402020253553346" text-anchor="middle" font-family="Bangers" font-size="8">VĀSUDEVA</text><text x="109.99999999999999" y="28.0" text-anchor="middle" font-family="Bangers" font-size="8">HARI</text><text x="166.5685424949238" y="44.40202025355333" text-anchor="middle" font-family="Bangers" font-size="8">MĀDHAVA</text><text x="110" y="156" text-anchor="middle" font-family="Bangers" font-size="11">BHAJE</text></svg><div class="mean">I worship Acyuta, Keśava, Rāma, Nārāyaṇa, Kṛṣṇa, Dāmodara, Vāsudeva, Hari; Śrīdhara, Mādhava, the beloved of the gopīs; the husband of Jānakī, Rāmacandra.</div></div>
+    <div class="plain">I worship the Lord by all His names: the Unfailing, Keśava, Rāma, Nārāyaṇa, Kṛṣṇa, Dāmodara, Vāsudeva, Hari, Lakṣmī's husband, the gopīs' darling, and Sītā's Rāma.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">acyuta</td><td>the <b>unfailing</b>, who never falls</td></tr><tr><td class="w">keśava</td><td><b>with beautiful hair</b>; slayer of Keśī</td></tr><tr><td class="w">dāmodara</td><td><b>rope round His waist</b></td></tr><tr><td class="w">śrīdhara</td><td><b>bearer of Śrī</b></td></tr><tr><td class="w">gopikā-vallabha</td><td><b>beloved of the gopīs</b></td></tr><tr><td class="w">jānakī-nāyaka</td><td><b>husband of Jānakī</b>, Sītā</td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v1b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v1b">
+  <h2 class="page-title">VERSE 1 · GOING DEEPER</h2>
+  <div class="sub">A GARLAND OF NAMES</div>
+  <div class="panel reading"><p><b>Twelve names in one verse.</b> The hymn opens with a cascade of the Lord's names, then one verb at the end: <i>bhaje</i>, "I worship". This is <b>nāma-saṅkīrtana</b>, singing the names.</p><p><b>Acyuta.</b> "The One who never slips": never falls from His nature, and never lets His devotees fall. The hymn is named after this first word.</p><p><b>Dāmodara.</b> "Rope (<i>dāma</i>) round the belly (<i>udara</i>)": little Kṛṣṇa, tied to a mortar by Yaśodā for stealing butter. God, bound by a mother's love.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Nāma-saṅkīrtana</h4><p>Singing the names of God: a simple, open path of devotion.</p></div><div class="card bg-blue"><h4>💡 Acyuta</h4><p>"Unfailing": a name in the Viṣṇu Sahasranāma.</p></div></div>
+  <div class="inner">Each name of God is a doorway. Say them slowly, and walk through.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is it just a list of names?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> A garland of names! Each one is a story: Dāmodara is baby Kṛṣṇa tied with a rope; Jānakī-nāyaka is Sītā's Rāma.</p></div></div>
+  <div class="key">"Acyutaṃ keśavaṃ": <b>a garland of the Lord's names</b>.</div>
+</section>
+<section class="page" id="v2">
+  <h2 class="page-title">VERSE 2</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">HELD IN THE MIND</span></div>
+    <div class="iast"><span class="cl">acyutaṃ keśavaṃ</span><span class="cl cl2">satyabhāmādhavaṃ</span><span class="cl">mādhavaṃ śrīdharaṃ</span><span class="cl cl2">rādhikārādhitam |</span><span class="cl">indirāmandiraṃ</span><span class="cl cl2">cetasā sundaraṃ</span><span class="cl">devakīnandanaṃ</span><span class="cl cl2">nandajaṃ sandadhe ‖2‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A devotee with eyes closed holding the image of Krishna inside a glowing heart"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 148) scale(0.9)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><circle cx="110" cy="110" r="18" fill="#fff8c0" stroke="#111" stroke-width="2"/><g transform="translate(110 86) scale(0.2)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><text x="40" y="40" text-anchor="middle" font-family="Bangers" font-size="8">SATYABHĀMĀ</text><text x="180" y="40" text-anchor="middle" font-family="Bangers" font-size="8">RĀDHIKĀ</text><text x="40" y="70" text-anchor="middle" font-family="Bangers" font-size="8">DEVAKĪ</text><text x="180" y="70" text-anchor="middle" font-family="Bangers" font-size="8">NANDA</text></svg><div class="mean">I hold in my mind Acyuta, Keśava, the husband of Satyabhāmā; Mādhava, Śrīdhara, worshipped by Rādhikā; the home of Indirā, beautiful in the heart; the joy of Devakī, the son of Nanda.</div></div>
+    <div class="plain">I keep in my heart the Lord: Satyabhāmā's husband, worshipped by Rādhā, Lakṣmī's home, Devakī's darling, Nanda's son, beautiful within.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">satyabhāmā-dhava</td><td><b>husband of Satyabhāmā</b></td></tr><tr><td class="w">rādhikā-ārādhita</td><td><b>worshipped by Rādhā</b></td></tr><tr><td class="w">indirā-mandira</td><td><b>home of Indirā</b> (Lakṣmī)</td></tr><tr><td class="w">cetasā sundaram</td><td><b>beautiful to the mind</b></td></tr><tr><td class="w">devakī-nandana</td><td><b>joy of Devakī</b></td></tr><tr><td class="w">sandadhe</td><td><b>I hold</b>, I fix (in mind)</td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v2b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v2b">
+  <h2 class="page-title">VERSE 2 · GOING DEEPER</h2>
+  <div class="sub">HELD IN THE MIND</div>
+  <div class="panel reading"><p><b>Two mothers.</b> Kṛṣṇa is <i>Devakī-nandana</i>, born to Devakī in Kaṃsa's prison, and <i>Nanda-ja</i>, raised as Nanda's son in Gokula. Both families belong to Him.</p><p><b>Three women who loved Him.</b> Satyabhāmā, His queen in Dvārakā; Rādhā, His beloved in Vraja; Indirā, Lakṣmī Herself, who lives in Him.</p><p><b>Sandadhe.</b> Verse 1 said "I worship"; verse 2 says "I hold Him in my mind": worship moving inward.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Rādhā</h4><p>Kṛṣṇa's beloved in Vraja, the supreme devotee in many traditions.</p></div><div class="card bg-blue"><h4>💡 Satyabhāmā</h4><p>One of Kṛṣṇa's principal queens in Dvārakā.</p></div></div>
+  <div class="inner">Worship outside, and then hold Him inside.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Two mothers?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Devakī gave birth to Him; Yaśodā and Nanda raised Him. The hymn honours both.</p></div></div>
+  <div class="key">I hold in my heart <b>Devakī's joy, Nanda's son</b>.</div>
+  <div class="note">Some texts read nandanaṃ for nandajaṃ.</div>
+</section>
+<section class="page" id="v3">
+  <h2 class="page-title">VERSE 3</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">SALUTATIONS TO YOU</span></div>
+    <div class="iast"><span class="cl">viṣṇave jiṣṇave</span><span class="cl cl2">śaṅkhine cakriṇe</span><span class="cl">rukmiṇīrāgiṇe</span><span class="cl cl2">jānakījānaye |</span><span class="cl">vallavīvallabhāya</span><span class="cl cl2">arcitāyātmane</span><span class="cl">kaṃsavidhvaṃsine</span><span class="cl cl2">vaṃśine te namaḥ ‖3‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Vishnu holding conch and discus, with a flute and folded hands of devotees below"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 0) scale(0.8)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><circle cx="60" cy="60" r="14" fill="#fff" stroke="#111" stroke-width="2"/><circle cx="160" cy="60" r="14" fill="#ffd60a" stroke="#111" stroke-width="2"/><path d="M160 60 l12 0" stroke="#111"/><path d="M160 60 l8 8" stroke="#111"/><path d="M160 60 l0 12" stroke="#111"/><path d="M160 60 l-8 8" stroke="#111"/><path d="M160 60 l-12 0" stroke="#111"/><path d="M160 60 l-9 -8" stroke="#111"/><path d="M160 60 l-0 -12" stroke="#111"/><path d="M160 60 l8 -9" stroke="#111"/><path d="M30 140 l50 -10" stroke="#7a5a3a" stroke-width="5" stroke-linecap="round"/><text x="110" y="156" text-anchor="middle" font-family="Bangers" font-size="11">NAMAḤ</text></svg><div class="mean">Salutations to You: the all-pervading, the victorious, bearer of the conch and the discus; beloved of Rukmiṇī, husband of Jānakī; beloved of the cowherd women, the worshipped Self; destroyer of Kaṃsa, player of the flute.</div></div>
+    <div class="plain">I bow to You: Viṣṇu who is everywhere, always victorious, with conch and discus; loved by Rukmiṇī, Sītā's husband, the gopīs' darling, the Self of all, Kaṃsa's destroyer, the flute-player.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">viṣṇave</td><td><b>to the all-pervading</b></td></tr><tr><td class="w">jiṣṇave</td><td><b>to the victorious</b></td></tr><tr><td class="w">śaṅkhine · cakriṇe</td><td><b>conch-bearer</b> · <b>discus-bearer</b></td></tr><tr><td class="w">rukmiṇī-rāgiṇe</td><td><b>loving Rukmiṇī</b></td></tr><tr><td class="w">vallavī-vallabha</td><td><b>beloved of the cowherd women</b></td></tr><tr><td class="w">vaṃśine</td><td><b>flute-player</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v3b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v3b">
+  <h2 class="page-title">VERSE 3 · GOING DEEPER</h2>
+  <div class="sub">SALUTATIONS TO YOU</div>
+  <div class="panel reading"><p><b>A change of grammar.</b> Verses 1–2 used the accusative ("I worship X"); verse 3 uses the dative ("to X"), ending <i>te namaḥ</i>, "salutations to You".</p><p><b>Rāma and Kṛṣṇa together.</b> Rukmiṇī (Kṛṣṇa's chief queen) and Jānakī (Rāma's Sītā) stand side by side; the gopīs' darling and Kaṃsa's destroyer are one Lord.</p><p><b>Ātman.</b> <i>Arcitāya ātmane</i>: "to the worshipped Self". Śaṅkara's Advaita sees the Lord we worship as our own deepest Self.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Rukmiṇī</h4><p>Kṛṣṇa's chief queen at Dvārakā, honoured as Lakṣmī.</p></div><div class="card bg-blue"><h4>💡 Kaṃsa</h4><p>The tyrant king of Mathurā, Kṛṣṇa's uncle, slain by Him.</p></div></div>
+  <div class="inner">The Lord we bow to outside is the Self within.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why "to You" now?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> First "I worship", then "I hold in mind", now "salutations to You": the devotee speaks to Him directly.</p></div></div>
+  <div class="key">"Te namaḥ": <b>salutations to the Self of all</b>.</div>
+  <div class="note">Some texts read rukmiṇi-rāgiṇe.</div>
+</section>
+<section class="page" id="v4">
+  <h2 class="page-title">VERSE 4</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">O KṚṢṆA, O GOVINDA!</span></div>
+    <div class="iast"><span class="cl">kṛṣṇa govinda he</span><span class="cl cl2">rāma nārāyaṇa</span><span class="cl">śrīpate vāsudeva-</span><span class="cl cl2">ajita śrīnidhe |</span><span class="cl">acyutānanta he</span><span class="cl cl2">mādhavādhokṣaja</span><span class="cl">dvārakānāyaka</span><span class="cl cl2">draupadīrakṣaka ‖4‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Draupadi in the court with an endless sari streaming from her, protected by Krishna above"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(70 146) scale(0.8)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e05a8a"/></g><path d="M80 110 q40 -20 60 10 q30 30 70 0" fill="none" stroke="#e05a8a" stroke-width="10" opacity=".7"/><g transform="translate(170 -20) scale(0.5)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><text x="70" y="30" text-anchor="middle" font-family="Bangers" font-size="10">DRAUPADĪ</text></svg><div class="mean">O Kṛṣṇa, O Govinda, O Rāma, O Nārāyaṇa! O Lord of Śrī, Vāsudeva, unconquered, treasure of Śrī! O Acyuta, endless One, O Mādhava, Adhokṣaja! O Lord of Dvārakā, protector of Draupadī!</div></div>
+    <div class="plain">O Kṛṣṇa, Govinda, Rāma, Nārāyaṇa, Lakṣmī's Lord, Vāsudeva, the unconquered, the endless, Mādhava, Adhokṣaja, King of Dvārakā, Draupadī's protector!</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">govinda</td><td><b>finder of cows</b>, knower of the Vedas</td></tr><tr><td class="w">ajita</td><td><b>unconquered</b></td></tr><tr><td class="w">ananta</td><td><b>endless</b></td></tr><tr><td class="w">adhokṣaja</td><td><b>beyond the senses</b></td></tr><tr><td class="w">dvārakā-nāyaka</td><td><b>Lord of Dvārakā</b></td></tr><tr><td class="w">draupadī-rakṣaka</td><td><b>protector of Draupadī</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v4b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v4b">
+  <h2 class="page-title">VERSE 4 · GOING DEEPER</h2>
+  <div class="sub">O KṚṢṆA, O GOVINDA!</div>
+  <div class="panel reading"><p><b>Only calling.</b> This verse has no verb at all: just names, in the vocative, "O…!". It is pure calling out, like a cry for help.</p><p><b>Draupadī's cry.</b> The verse ends with <i>Draupadī-rakṣaka</i>. When Draupadī was being disrobed in the Kaurava court, tradition says she called "Govinda!", and her sari became endless. The verse itself sounds like that cry.</p><p><b>Adhokṣaja.</b> "Beyond the senses": the Lord can't be grasped by the eyes or mind, yet answers when called.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Draupadī</h4><p>The Pāṇḍavas' queen, saved by Kṛṣṇa in the dice-game court.</p></div><div class="card bg-blue"><h4>💡 Dvārakā</h4><p>Kṛṣṇa's city on the western sea, His capital as king.</p></div></div>
+  <div class="inner">When you have nothing else, call His name. It is enough.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> No verb in this verse?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> None! Just calling: "O Kṛṣṇa! O Govinda!", like Draupadī calling for help.</p></div></div>
+  <div class="key">"Kṛṣṇa govinda he": <b>the cry that saved Draupadī</b>.</div>
+</section>
+<section class="page" id="v5">
+  <h2 class="page-title">VERSE 5</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">MAY RĀMA PROTECT ME</span></div>
+    <div class="iast"><span class="cl">rākṣasakṣobhitaḥ</span><span class="cl cl2">sītayā śobhito</span><span class="cl">daṇḍakāraṇyabhū-</span><span class="cl cl2">puṇyatākāraṇaḥ |</span><span class="cl">lakṣmaṇenānvito</span><span class="cl cl2">vānaraiḥ sevito</span><span class="cl">'gastyasampūjito</span><span class="cl cl2">rāghavaḥ pātu mām ‖5‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Rama with his bow beside Sita and Lakshmana in the forest, with monkeys serving them"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(80 0) scale(0.85)" stroke="#111" stroke-width="2.5"><circle cy="50" r="13" fill="#2a9d6f"/><path d="M-12 36 h24 v-12 h-24z" fill="#ffd60a"/><path d="M-20 140 q-4 -60 20 -76 q24 16 20 76z" fill="#ffd60a"/><path d="M30 40 q24 44 0 90" fill="none" stroke="#7a5a3a" stroke-width="5"/><path d="M30 40 v90" stroke="#111" stroke-width="1"/></g><g transform="translate(130 140) scale(0.6)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e05a8a"/></g><g transform="translate(170 140) scale(0.6)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ffd60a"/></g><circle cx="20" cy="146" r="6" fill="#8a6a4a" stroke="#111"/><circle cx="34" cy="146" r="6" fill="#8a6a4a" stroke="#111"/><circle cx="48" cy="146" r="6" fill="#8a6a4a" stroke="#111"/><path d="M190 30 v30" stroke="#7a5a3a" stroke-width="3"/><circle cx="190" cy="24" r="10" fill="#2a9d6f" stroke="#111"/><path d="M160 30 v30" stroke="#7a5a3a" stroke-width="3"/><circle cx="160" cy="24" r="10" fill="#2a9d6f" stroke="#111"/><text x="60" y="20" text-anchor="middle" font-family="Bangers" font-size="10">DAṆḌAKA</text></svg><div class="mean">Troubled by the rākṣasas, shining beside Sītā, the cause of the holiness of the Daṇḍaka forest; accompanied by Lakṣmaṇa, served by the monkeys, worshipped by Agastya: may Rāghava protect me.</div></div>
+    <div class="plain">Rāma, who faced the demons, who shone beside Sītā, who made the Daṇḍaka forest holy, with Lakṣmaṇa at his side, served by the monkeys and honoured by the sage Agastya: may he protect me.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">rākṣasa-kṣobhitaḥ</td><td><b>troubled by demons</b></td></tr><tr><td class="w">sītayā śobhitaḥ</td><td><b>shining with Sītā</b></td></tr><tr><td class="w">daṇḍaka-araṇya</td><td>the <b>Daṇḍaka forest</b></td></tr><tr><td class="w">puṇyatā-kāraṇaḥ</td><td><b>the cause of its holiness</b></td></tr><tr><td class="w">vānaraiḥ sevitaḥ</td><td><b>served by monkeys</b></td></tr><tr><td class="w">pātu mām</td><td><b>may he protect me</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v5b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v5b">
+  <h2 class="page-title">VERSE 5 · GOING DEEPER</h2>
+  <div class="sub">MAY RĀMA PROTECT ME</div>
+  <div class="panel reading"><p><b>The Rāmāyaṇa in four lines.</b> The demons who troubled the sages, Sītā at his side, the forest exile, Lakṣmaṇa, the monkey army of Hanumān and Sugrīva, and the sage Agastya: the whole forest story.</p><p><b>He made the forest holy.</b> The Daṇḍaka forest was wild and fearsome; Rāma's footsteps made it sacred. (Compare the Prapatti's "feet in the wild forests".)</p><p><b>Agastya.</b> The great sage who welcomed Rāma in the forest and gave him divine weapons; later, on the battlefield, he teaches Rāma the Āditya Hṛdayam.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Daṇḍakāraṇya</h4><p>The vast forest of central India where Rāma spent much of his exile.</p></div><div class="card bg-blue"><h4>💡 Agastya</h4><p>The sage who honoured Rāma and gave him the Āditya Hṛdayam.</p></div></div>
+  <div class="inner">Hardship walked with grace becomes holy ground.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Where did Kṛṣṇa go?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> This verse is all Rāma: the forest, Sītā, Lakṣmaṇa, the monkeys. The next is all Kṛṣṇa!</p></div></div>
+  <div class="key">Rāma of the forest: <b>may he protect me</b>.</div>
+</section>
+<section class="page" id="v6">
+  <h2 class="page-title">VERSE 6</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">MAY LITTLE GOPĀLA PROTECT ME</span></div>
+    <div class="iast"><span class="cl">dhenukāriṣṭakā-</span><span class="cl cl2">niṣṭakṛddveṣihā</span><span class="cl">keśihā kaṃsahṛd-</span><span class="cl cl2">vaṃśikāvādakaḥ |</span><span class="cl">pūtanākopakaḥ</span><span class="cl cl2">sūrajākhelano</span><span class="cl">bālagopālakaḥ</span><span class="cl cl2">pātu māṃ sarvadā ‖6‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Little Krishna playing the flute by the river, with a defeated donkey demon, bull demon and horse demon running away"><rect width="220" height="160" fill="#e3f2fd"/><path d="M0 130 q55 -12 110 0 t110 0 V160 H0z" fill="#4aa3df" stroke="#111" stroke-width="2"/><g transform="translate(90 0) scale(0.75)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><path d="M96 58 l50 -14" stroke="#7a5a3a" stroke-width="5" stroke-linecap="round"/><g transform="translate(170 40)"><ellipse rx="16" ry="9" fill="#555" stroke="#111"/><text x="0" y="-12" text-anchor="middle" font-family="Bangers" font-size="7">DHENUKA</text></g><g transform="translate(170 76)"><ellipse rx="16" ry="9" fill="#555" stroke="#111"/><text x="0" y="-12" text-anchor="middle" font-family="Bangers" font-size="7">ARIṢṬA</text></g><g transform="translate(170 112)"><ellipse rx="16" ry="9" fill="#555" stroke="#111"/><text x="0" y="-12" text-anchor="middle" font-family="Bangers" font-size="7">KEŚĪ</text></g><text x="60" y="24" text-anchor="middle" font-family="Bangers" font-size="10">BĀLA GOPĀLA</text></svg><div class="mean">Slayer of the haters who did harm, Dhenuka and Ariṣṭa; slayer of Keśī; destroyer of Kaṃsa; player of the flute; who angered Pūtanā; who played in the Yamunā, daughter of the Sun: may the child Gopāla always protect me.</div></div>
+    <div class="plain">Little Kṛṣṇa, who defeated the demons Dhenuka, Ariṣṭa, Keśī and Pūtanā and the tyrant Kaṃsa, who played the flute and splashed in the Yamunā: may He always protect me.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">dhenuka · ariṣṭa</td><td>demons as a <b>donkey</b> · a <b>bull</b></td></tr><tr><td class="w">keśi-hā</td><td><b>slayer of Keśī</b> (a horse-demon)</td></tr><tr><td class="w">kaṃsa-hṛt</td><td><b>destroyer of Kaṃsa</b></td></tr><tr><td class="w">pūtanā</td><td>the <b>demoness</b> who tried to poison Him</td></tr><tr><td class="w">sūrajā</td><td><b>the Sun's daughter</b>: the Yamunā</td></tr><tr><td class="w">bāla-gopālaka</td><td><b>the child cowherd</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v6b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v6b">
+  <h2 class="page-title">VERSE 6 · GOING DEEPER</h2>
+  <div class="sub">MAY LITTLE GOPĀLA PROTECT ME</div>
+  <div class="panel reading"><p><b>The Bhāgavatam in four lines.</b> The demon-donkey Dhenuka, the demon-bull Ariṣṭa, the horse-demon Keśī (from which "Keśava" is sometimes explained), the demoness Pūtanā, the tyrant Kaṃsa: all defeated by a child with a flute.</p><p><b>Sūrajā.</b> The Yamunā is the daughter of Sūrya, the Sun. Kṛṣṇa played (<i>khelana</i>) in her waters.</p><p><b>Rāma then Kṛṣṇa.</b> Verse 5 asked Rāma for protection; verse 6 asks little Gopāla, and adds <i>sarvadā</i>, "always".</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Pūtanā</h4><p>The demoness who tried to kill baby Kṛṣṇa with poisoned milk.</p></div><div class="card bg-blue"><h4>💡 Bāla Gopāla</h4><p>Kṛṣṇa as a little cowherd boy, much loved in home worship.</p></div></div>
+  <div class="inner">Evil is defeated not only by force, but by innocence and joy.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A child beat all these demons?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> In the Bhāgavatam, yes! Donkey, bull, horse and Pūtanā: all defeated by a flute-playing boy.</p></div></div>
+  <div class="key">The child with the flute: <b>may He always protect me</b>.</div>
+  <div class="note">Some texts read dhenukāriṣṭako'niṣṭakṛd dveṣiṇāṃ.</div>
+</section>
+<section class="page" id="v7">
+  <h2 class="page-title">VERSE 7</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">LIKE A RAIN CLOUD WITH LIGHTNING</span></div>
+    <div class="iast"><span class="cl">vidyududyotavat-</span><span class="cl cl2">prasphuradvāsasaṃ</span><span class="cl">prāvṛḍambhodavat-</span><span class="cl cl2">prollasadvigraham |</span><span class="cl">vanyayā mālayā</span><span class="cl cl2">śobhitoraḥsthalaṃ</span><span class="cl">lohitāṅghridvayaṃ</span><span class="cl cl2">vārijākṣaṃ bhaje ‖7‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A dark monsoon cloud with a flash of yellow lightning, beside Krishna in yellow silk with a forest garland"><rect width="220" height="160" fill="#e3f2fd"/><path d="M20 70 q10 -30 40 -24 q20 -24 50 -6 q30 -6 30 24 q10 20 -20 20 h-80 q-30 0 -20 -14z" fill="#3b5a8a" stroke="#111" stroke-width="2"/><path d="M80 80 l-10 24 h12 l-8 24" fill="none" stroke="#ffd60a" stroke-width="4"/><g transform="translate(170 0) scale(0.75)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><path d="M154 66 q16 40 32 0" fill="none" stroke="#2a9d6f" stroke-width="5"/><text x="70" y="150" text-anchor="middle" font-family="Bangers" font-size="10">PRĀVṚṢ</text></svg><div class="mean">I worship the lotus-eyed One: whose garment flashes like lightning; whose form shines like a rain cloud in the monsoon; whose chest is adorned with a garland of forest flowers; whose two feet are rosy red.</div></div>
+    <div class="plain">I worship the lotus-eyed Lord: dark as a monsoon cloud, His yellow silk flashing like lightning, a wild-flower garland on His chest, His feet rosy red.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">vidyut-udyota-vat</td><td><b>like a flash of lightning</b></td></tr><tr><td class="w">vāsas</td><td><b>garment</b></td></tr><tr><td class="w">prāvṛṭ-ambhoda</td><td><b>rain cloud of the monsoon</b></td></tr><tr><td class="w">vanyā mālā</td><td>a <b>garland of forest flowers</b></td></tr><tr><td class="w">lohita-aṅghri</td><td><b>red feet</b></td></tr><tr><td class="w">vārija-akṣa</td><td><b>lotus-eyed</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v7b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v7b">
+  <h2 class="page-title">VERSE 7 · GOING DEEPER</h2>
+  <div class="sub">LIKE A RAIN CLOUD WITH LIGHTNING</div>
+  <div class="panel reading"><p><b>A picture to meditate on.</b> Verses 7–8 are a <b>dhyāna</b>, a description to hold in the mind's eye, head to foot.</p><p><b>Cloud and lightning.</b> Kṛṣṇa's dark body is the monsoon cloud; His yellow silk is the lightning. To Indian eyes, the first monsoon cloud is pure joy and relief.</p><p><b>Vanamālā.</b> The "forest garland" of wild flowers and leaves: the cowherd's ornament, not a king's.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Dhyāna</h4><p>A meditation verse describing the deity's form.</p></div><div class="card bg-blue"><h4>💡 Vanamālā</h4><p>Kṛṣṇa's garland of forest flowers, reaching to His knees.</p></div></div>
+  <div class="inner">Hold one beautiful image of the Lord in your mind. Let it calm you like rain.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A rain cloud?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Dark and full of rain, with a flash of lightning: that's Kṛṣṇa in yellow silk. Perfect for a hot land!</p></div></div>
+  <div class="key">Dark as a rain cloud, <b>flashing like lightning</b>.</div>
+</section>
+<section class="page" id="v8">
+  <h2 class="page-title">VERSE 8</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">CURLS, CROWN AND JINGLING BELLS</span></div>
+    <div class="iast"><span class="cl">kuñcitaiḥ kuntalair</span><span class="cl cl2">bhrājamānānanaṃ</span><span class="cl">ratnamauliṃ lasat-</span><span class="cl cl2">kuṇḍalaṃ gaṇḍayoḥ |</span><span class="cl">hārakeyūrakaṃ</span><span class="cl cl2">kaṅkaṇaprojjvalaṃ</span><span class="cl">kiṅkiṇīmañjulaṃ</span><span class="cl cl2">śyāmalaṃ taṃ bhaje ‖8‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Close-up of Krishna's face with curly hair, a jewelled crown, earrings, necklace, armlets and tiny bells at the waist"><rect width="220" height="160" fill="#e3f2fd"/><g stroke="#111" stroke-width="2.5"><circle cx="110" cy="70" r="30" fill="#3b6fd0"/><path d="M84 54 q26 -40 52 0" fill="#ffd60a"/><circle cx="110" cy="38" r="5" fill="#e63946"/><circle cx="80" cy="82" r="6" fill="#ffd60a"/><circle cx="140" cy="82" r="6" fill="#ffd60a"/><path d="M80 104 q30 26 60 0" fill="none" stroke="#e0a800" stroke-width="5"/></g><path d="M78 56 q-4 6 0 12" fill="none" stroke="#111" stroke-width="2"/><path d="M86 56 q-4 6 0 12" fill="none" stroke="#111" stroke-width="2"/><circle cx="70" cy="146" r="4" fill="#ffd60a" stroke="#111"/><circle cx="82" cy="146" r="4" fill="#ffd60a" stroke="#111"/><circle cx="94" cy="146" r="4" fill="#ffd60a" stroke="#111"/><circle cx="106" cy="146" r="4" fill="#ffd60a" stroke="#111"/><circle cx="118" cy="146" r="4" fill="#ffd60a" stroke="#111"/><circle cx="130" cy="146" r="4" fill="#ffd60a" stroke="#111"/><circle cx="142" cy="146" r="4" fill="#ffd60a" stroke="#111"/><text x="110" y="158" text-anchor="middle" font-family="Bangers" font-size="8">KIṄKIṆĪ</text></svg><div class="mean">I worship that dark One: whose face shines framed by curling locks; with a jewelled crown and earrings gleaming on His cheeks; with necklace and armlets, radiant with bracelets; charming with tinkling bells.</div></div>
+    <div class="plain">I worship the dark Lord: curls around His shining face, a jewelled crown, earrings glinting on His cheeks, necklace, armlets and bangles, and little bells that jingle as He moves.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">kuñcitaiḥ kuntalaiḥ</td><td><b>with curly locks</b></td></tr><tr><td class="w">ratna-mauli</td><td><b>jewelled crown</b></td></tr><tr><td class="w">kuṇḍala · gaṇḍa</td><td><b>earrings</b> · <b>cheeks</b></td></tr><tr><td class="w">hāra · keyūra</td><td><b>necklace</b> · <b>armlets</b></td></tr><tr><td class="w">kaṅkaṇa</td><td><b>bracelets</b></td></tr><tr><td class="w">kiṅkiṇī</td><td><b>tiny bells</b> (on a waist-chain)</td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v8b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v8b">
+  <h2 class="page-title">VERSE 8 · GOING DEEPER</h2>
+  <div class="sub">CURLS, CROWN AND JINGLING BELLS</div>
+  <div class="panel reading"><p><b>Head to waist.</b> Verse 7 gave the whole form; verse 8 looks closely: curls, crown, earrings, necklace, armlets, bracelets, bells. Like a painter adding detail.</p><p><b>The sound.</b> <i>Kiṅkiṇī-mañjulam</i>: you can almost hear the little bells on His waist-chain as He runs about Gokula.</p><p><b>Śyāmala.</b> "Dark", the colour of Kṛṣṇa (whose name itself means "dark"). The meditation ends on that single word.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Kṛṣṇa</h4><p>The name itself means "dark", "black-blue".</p></div><div class="card bg-blue"><h4>💡 Kiṅkiṇī</h4><p>A waist-chain with small bells, worn by children and by the child Kṛṣṇa.</p></div></div>
+  <div class="inner">Look closely at what you love. Devotion lives in the details.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Every jewel described!</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> It's a meditation: picture Him detail by detail, and you can even hear His little bells!</p></div></div>
+  <div class="key">Curls, crown, bells: <b>I worship the dark One</b>.</div>
+</section>
+<section class="page" id="v9">
+  <h2 class="page-title">VERSE 9</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE FRUIT OF RECITING</span></div>
+    <div class="iast"><span class="cl">acyutasyāṣṭakaṃ</span><span class="cl cl2">yaḥ paṭhed iṣṭadaṃ</span><span class="cl">premataḥ pratyahaṃ</span><span class="cl cl2">pūruṣaḥ saspṛham |</span><span class="cl">vṛttataḥ sundaraṃ</span><span class="cl cl2">kartṛviśvambharas</span><span class="cl">tasya vaśyo harir</span><span class="cl cl2">jāyate satvaram ‖9‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A person at home reciting from a small book with love, and the Lord drawing near, smiling"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(60 146) scale(0.8)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><rect x="70" y="100" width="24" height="16" fill="#fff3b0" stroke="#111" stroke-width="2"/><g transform="translate(160 0) scale(0.7)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><text x="110" y="70" font-family="Bangers" font-size="18" fill="#e05a8a">♥</text><text x="110" y="22" text-anchor="middle" font-family="Bangers" font-size="11">PHALAŚRUTI</text></svg><div class="mean">The person who recites every day, with love and longing, this Acyutāṣṭakam, which grants what is desired and is beautiful in its metre: Hari, who sustains the universe, quickly comes under that reciter's sway.</div></div>
+    <div class="plain">Whoever sings this lovely hymn every day, with love and longing, wins over Hari, the keeper of the universe, and quickly.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">iṣṭa-dam</td><td><b>granting what is desired</b></td></tr><tr><td class="w">premataḥ</td><td><b>with love</b></td></tr><tr><td class="w">pratyaham</td><td><b>every day</b></td></tr><tr><td class="w">sa-spṛham</td><td><b>with longing</b></td></tr><tr><td class="w">vṛttataḥ sundaram</td><td><b>beautiful in metre</b></td></tr><tr><td class="w">vaśyaḥ jāyate</td><td><b>comes under one's sway</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v9b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v9b">
+  <h2 class="page-title">VERSE 9 · GOING DEEPER</h2>
+  <div class="sub">THE FRUIT OF RECITING</div>
+  <div class="panel reading"><p><b>The phalaśruti.</b> The ninth verse states the fruit of reciting. The fruit is remarkable: not wealth or heaven, but <b>Hari Himself</b>, won over by love.</p><p><b>God won by love.</b> <i>Vaśyo harir jāyate</i>: the Lord who sustains the universe becomes "subject" to the devotee. Bhakti texts often say this: the Lord bound Himself to Yaśodā's rope, to the gopīs, to His devotees.</p><p><b>The metre.</b> <i>Vṛttataḥ sundaram</i>, "beautiful in its metre": the verses run in <b>sragviṇī</b>, a lilting DUM-da-DUM ×4 rhythm that is easy to sing.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Sragviṇī</h4><p>"Wearing a garland": a 12-syllable metre of four DUM-da-DUM beats.</p></div><div class="card bg-blue"><h4>💡 Bhakta-vaśya</h4><p>"Under the devotee's sway": a name of the Lord.</p></div></div>
+  <div class="inner">The Lord who holds the universe lets love hold Him.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> God comes under our control?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Not by force; by love. Like Dāmodara tied by Yaśodā's rope in verse 1!</p></div></div>
+  <div class="key">Sung with love each day, <b>it wins Hari's heart</b>.</div>
+</section>
+<section class="page" id="end">
+  <h2 class="page-title">THE ACYUTĀṢṬAKAM ON ONE PAGE</h2>
+  <div class="sub">Nine verses in five lines</div>
+  <div class="steps">
+    <div><b>Verses 1–3.</b> I worship, I hold in mind, I bow: Acyuta, Keśava, Rāma, Nārāyaṇa, Kṛṣṇa, the Self of all.</div>
+    <div><b>Verse 4.</b> Pure calling: "Kṛṣṇa! Govinda! Protector of Draupadī!"</div>
+    <div><b>Verses 5–6.</b> Rāma of the forest and little Gopāla among the cows: may they protect me.</div>
+    <div><b>Verses 7–8.</b> Meditation: rain-cloud body, lightning silk, curls, crown and tinkling bells.</div>
+    <div><b>Verse 9.</b> Sung with love each day, the hymn wins Hari's heart.</div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What's the one thing to remember?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The names of God are enough. Sing them with love, and the Unfailing One comes close.</p></div></div>
+  <div class="key">"Acyutaṃ keśavaṃ": <b>sing the names, and He comes</b>. 🙏</div>
+  
+<div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+
+<footer style="text-align:center;font-size:13px;opacity:.75">Study notes on the Acyutāṣṭakam (acyutaṃ keśavaṃ), traditionally attributed to Ādi Śaṅkarācārya. Text checked word by word against shlokam.org; variant readings (nandanaṃ, rukmiṇi-, dhenukāriṣṭako’niṣṭakṛd dveṣiṇāṃ) are noted. Authorship of many hymns attributed to Śaṅkara is debated by scholars. The metre (sragviṇī) is from standard prosody. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</footer>
+</div>
+<script>
+  document.querySelectorAll('section.page[id$="b"], section.page#about').forEach(function (sec) {
+    var t = sec.querySelector('.page-title');
+    var bar = document.createElement('div');
+    bar.className = 'ch-end';
+    var next = sec.nextElementSibling && sec.nextElementSibling.id ? '#' + sec.nextElementSibling.id : '#contents';
+    bar.innerHTML = '<span class="lbl">END OF ' + (t ? t.textContent.split('·')[0].trim() : '') + '</span><a href="#contents">⬆ CONTENTS</a><a href="' + next + '">NEXT ➜</a>';
+    sec.appendChild(bar);
+  });
+</script>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

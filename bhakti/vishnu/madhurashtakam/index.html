@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madhurāṣṭakam · srini.presents</title>
+<meta name="description" content="Adharaṃ madhuram: Vallabhācārya’s Madhurāṣṭakam, the hymn to Kṛṣṇa’s sweetness, explained verse by verse in plain English with illustrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#2c5f9e,#0b2a4a 55%,#04101f)}
+  .sloka-head{background:#0b2a4a}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0b2a4a}
+  .sub{color:#1d4f9a}
+  .num{background:#0b2a4a}
+  .steps div:before{background:#1d4f9a}
+  .full .vn,.full .end{color:#1d4f9a}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d4f9a}
+  .contlink{color:#1d4f9a}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#2c5f9e,#0b2a4a 55%,#04101f)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .jl td:first-child{font-family:Bangers;letter-spacing:1px;color:#1d4f9a;font-size:17px;text-align:center}
+  @media print{.jl td,.jl th{padding:3px 6px;font-size:11.5px}}
+  /* Viṣṇu theme: light blue */
+  .cover{background:radial-gradient(circle at 50% 38%,#8fd0f5,#1d6fb8 55%,#0b3d6e)}
+  .sloka-head{background:#1d6fb8}
+  .sloka{background:#e3f2fd;box-shadow:7px 7px 0 #1d6fb8}
+  .sub{color:#1d6fb8}
+  .num{background:#1d6fb8}
+  .steps div:before{background:#1d6fb8}
+  .full .vn,.full .end{color:#1d6fb8}
+  .iast:before{color:#1d6fb8}
+  .contlink{color:#1d6fb8}
+  .iast .cl2{padding-left:2.2em}
+  .full .ln2{padding-left:2.2em}
+  @media(max-width:720px){.iast .cl2{padding-left:1.4em}.full .ln2{padding-left:1.4em}}
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/vishnu/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">8 VERSES</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(24px,7vw,80px)">MADHURĀṢṬAKAM</h1>
+  <div class="series">ŚRĪ VALLABHĀCĀRYA · THE SWEETNESS OF KṚṢṆA</div>
+  <div class="tag">“Adharaṃ madhuram” · explained and illustrated</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Young Krishna playing the flute by the Yamuna river under a full moon, with a cow and lotuses"><circle cx="300" cy="60" r="34" fill="#fff8c0" stroke="#111" stroke-width="3"/><path d="M0 220 q95 -20 190 0 t190 0 V268 H0z" fill="#4aa3df" stroke="#111" stroke-width="2"/><path d="M40 236 q-12 -18 0 -26 q12 8 0 26z" fill="#f08aa6" stroke="#111"/><path d="M330 236 q-12 -18 0 -26 q12 8 0 26z" fill="#f08aa6" stroke="#111"/><g transform="translate(190 30) scale(1.3)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><path d="M200 106 l70 -18" stroke="#7a5a3a" stroke-width="6" stroke-linecap="round"/><g transform="translate(90 196)" stroke="#111" stroke-width="2"><ellipse rx="30" ry="16" fill="#fff"/><circle cx="-32" cy="-8" r="10" fill="#fff"/><circle cx="6" cy="-2" r="6" fill="#8a6a4a"/></g><text x="280" y="120" font-family="Bangers" font-size="22" fill="#fff">♪</text><text x="310" y="150" font-family="Bangers" font-size="22" fill="#fff">♪</text><text x="250" y="150" font-family="Bangers" font-size="22" fill="#fff">♪</text></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  <div class="bubble" style="max-width:620px;margin:10px auto 4px;text-align:left">
+    <span class="who">HOW THIS WORKS:</span> First the whole hymn for chanting in one go. Then the story of how the hymn came to be and its background, and <b>two pages for each verse</b>: the chant, a picture, what it says and the key words; then a deeper look, background facts, the inner teaching and the one thing to remember.
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6">
+    <p>"Adharaṃ madhuraṃ, vadanaṃ madhuraṃ…" Few Sanskrit hymns are as easy to love. Even a child can sing it, and many do: one word, <i>madhuram</i>, "sweet", sung again and again.</p>
+    <p>The Madhurāṣṭakam was composed by <b>Śrī Vallabhācārya</b>, founder of the Puṣṭimārga, the "Path of Grace". In eight short verses, he looks at Kṛṣṇa from head to foot, from His smile to His flute, His river, His cows and the whole creation, and finds only one word for all of it.</p>
+    <p>This is not a hymn that argues or asks. It simply gazes, and is overwhelmed.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#1d6fb8">Jai Śrī Kṛṣṇa,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is it really just one word?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Almost! Six sweet things in each verse, and every verse ends: 'everything about the Lord of Sweetness is sweet'.</p></div></div>
+</section>
+
+<section class="page" id="full">
+  <h2 class="page-title">THE MADHURĀṢṬAKAM IN ONE GO</h2>
+  <div class="sub">All 8 verses, for chanting</div>
+  <div class="full"><p><span class="vn">VERSE 1</span><span class="ln">adharaṃ madhuraṃ</span><span class="ln ln2">vadanaṃ madhuraṃ</span><span class="ln">nayanaṃ madhuraṃ</span><span class="ln ln2">hasitaṃ madhuram |</span><span class="ln">hṛdayaṃ madhuraṃ</span><span class="ln ln2">gamanaṃ madhuraṃ</span><span class="ln">madhurādhipater</span><span class="ln ln2">akhilaṃ madhuram<span class="end">‖ 1 ‖</span></span></p><p><span class="vn">VERSE 2</span><span class="ln">vacanaṃ madhuraṃ</span><span class="ln ln2">caritaṃ madhuraṃ</span><span class="ln">vasanaṃ madhuraṃ</span><span class="ln ln2">valitaṃ madhuram |</span><span class="ln">calitaṃ madhuraṃ</span><span class="ln ln2">bhramitaṃ madhuraṃ</span><span class="ln">madhurādhipater</span><span class="ln ln2">akhilaṃ madhuram<span class="end">‖ 2 ‖</span></span></p><p><span class="vn">VERSE 3</span><span class="ln">veṇur madhuro</span><span class="ln ln2">reṇur madhuraḥ</span><span class="ln">pāṇir madhuraḥ</span><span class="ln ln2">pādau madhurau |</span><span class="ln">nṛtyaṃ madhuraṃ</span><span class="ln ln2">sakhyaṃ madhuraṃ</span><span class="ln">madhurādhipater</span><span class="ln ln2">akhilaṃ madhuram<span class="end">‖ 3 ‖</span></span></p><p><span class="vn">VERSE 4</span><span class="ln">gītaṃ madhuraṃ</span><span class="ln ln2">pītaṃ madhuraṃ</span><span class="ln">bhuktaṃ madhuraṃ</span><span class="ln ln2">suptaṃ madhuram |</span><span class="ln">rūpaṃ madhuraṃ</span><span class="ln ln2">tilakaṃ madhuraṃ</span><span class="ln">madhurādhipater</span><span class="ln ln2">akhilaṃ madhuram<span class="end">‖ 4 ‖</span></span></p><p><span class="vn">VERSE 5</span><span class="ln">karaṇaṃ madhuraṃ</span><span class="ln ln2">taraṇaṃ madhuraṃ</span><span class="ln">haraṇaṃ madhuraṃ</span><span class="ln ln2">ramaṇaṃ madhuram |</span><span class="ln">vamitaṃ madhuraṃ</span><span class="ln ln2">śamitaṃ madhuraṃ</span><span class="ln">madhurādhipater</span><span class="ln ln2">akhilaṃ madhuram<span class="end">‖ 5 ‖</span></span></p><p><span class="vn">VERSE 6</span><span class="ln">guñjā madhurā</span><span class="ln ln2">mālā madhurā</span><span class="ln">yamunā madhurā</span><span class="ln ln2">vīcī madhurā |</span><span class="ln">salilaṃ madhuraṃ</span><span class="ln ln2">kamalaṃ madhuraṃ</span><span class="ln">madhurādhipater</span><span class="ln ln2">akhilaṃ madhuram<span class="end">‖ 6 ‖</span></span></p><p><span class="vn">VERSE 7</span><span class="ln">gopī madhurā</span><span class="ln ln2">līlā madhurā</span><span class="ln">yuktaṃ madhuraṃ</span><span class="ln ln2">muktaṃ madhuram |</span><span class="ln">dṛṣṭaṃ madhuraṃ</span><span class="ln ln2">śiṣṭaṃ madhuraṃ</span><span class="ln">madhurādhipater</span><span class="ln ln2">akhilaṃ madhuram<span class="end">‖ 7 ‖</span></span></p><p><span class="vn">VERSE 8</span><span class="ln">gopā madhurā</span><span class="ln ln2">gāvo madhurā</span><span class="ln">yaṣṭir madhurā</span><span class="ln ln2">sṛṣṭir madhurā |</span><span class="ln">dalitaṃ madhuraṃ</span><span class="ln ln2">phalitaṃ madhuraṃ</span><span class="ln">madhurādhipater</span><span class="ln ln2">akhilaṃ madhuram<span class="end">‖ 8 ‖</span></span></p></div>
+  <div class="note">Each line is split at its natural pause. Text checked against shlokam.org and Wikipedia; variant readings are noted on the verse pages.</div>
+</section>
+
+<section class="page" id="story">
+  <h2 class="page-title">THE STORY · A MIDNIGHT VISION</h2>
+  <div class="sub">Vallabhācārya and the Path of Grace</div>
+  <div class="panel" style="margin-top:6px">
+    <span class="caption">The story in 5 frames</span>
+    <div class="steps" style="margin:0">
+      <div><b>A Telugu boy.</b> Vallabhācārya (1479–1531, by most accounts) was born into a Telugu brāhmaṇa family and became a great scholar of the Vedānta and the Bhāgavatam.</div>
+      <div><b>A teacher who walked.</b> He travelled across India on foot, debating and teaching, and visited Vraja, Kṛṣṇa's land, many times.</div>
+      <div><b>A vision at midnight.</b> According to tradition, Kṛṣṇa appeared to him at midnight on the eleventh day of the bright half of Śrāvaṇa, and Vallabha composed the Madhurāṣṭakam in His praise.</div>
+      <div><b>The Path of Grace.</b> He founded the <b>Puṣṭimārga</b>, where the Lord is loved and served (<i>sevā</i>) as a beloved child, by singing, remembering, seeing and serving Him.</div>
+      <div><b>Every Janmāṣṭamī.</b> The hymn is sung wherever Kṛṣṇa is loved, especially on His birthday; M. S. Subbulakshmi's rendition is widely loved.</div>
+    </div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why 'Path of Grace'?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Puṣṭi means nourishment, grace. Vallabha taught that we are held by the Lord's grace, not by our own efforts. And grace tastes sweet!</p></div></div>
+</section>
+
+<section class="page" id="about">
+  <h2 class="page-title">ABOUT THE MADHURĀṢṬAKAM</h2>
+  <div class="sub">Eight verses, forty-eight sweet things</div>
+  <div class="g2">
+    <div class="card bg-blue"><h4>✍️ The author</h4><p><b>Śrī Vallabhācārya</b>, founder of the Puṣṭimārga and the philosophy of Śuddhādvaita, "pure non-dualism".</p></div>
+    <div class="card bg-yellow"><h4>🍯 The word</h4><p><b>Madhura</b> means sweet, lovely, charming. <b>Mādhurya</b>, the Lord's sweetness, is set against His <b>aiśvarya</b>, majesty.</p></div>
+  </div>
+  <table class="ct">
+    <tr><th>Verse</th><th>What is sweet</th></tr>
+    <tr><td><b>1</b></td><td>Lips, face, eyes, smile, heart, walk</td></tr>
+    <tr><td><b>2</b></td><td>Words, deeds, clothes, posture, movement, wandering</td></tr>
+    <tr><td><b>3</b></td><td>Flute, dust of His feet, hands, feet, dance, friendship</td></tr>
+    <tr><td><b>4</b></td><td>Singing, drinking, eating, sleeping, form, tilaka</td></tr>
+    <tr><td><b>5</b></td><td>Deeds, saving, stealing, play, giving, calm</td></tr>
+    <tr><td><b>6</b></td><td>Berry necklace, garland, Yamunā, waves, water, lotuses</td></tr>
+    <tr><td><b>7</b></td><td>Gopīs, play, union, parting, glance, courtesy</td></tr>
+    <tr><td><b>8</b></td><td>Cowherds, cows, staff, creation, crushing evil, fruit</td></tr>
+  </table>
+  <div class="panel reading"><p><b>The movement.</b> From His face (1) to His life (2–5), to what is near Him (6–7), to the whole creation (8): sweetness spreading outward like ripples.</p></div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li class="part">START HERE</li>
+    <li><span class="num">✍</span><a href="#foreword">Foreword</a></li>
+    <li><span class="num">🔤</span><a href="#full">The Madhurāṣṭakam in One Go</a></li>
+    <li><span class="num">★</span><a href="#story">The Story: A Midnight Vision</a></li>
+    <li><span class="num">ℹ</span><a href="#about">About the Madhurāṣṭakam</a></li>
+    <li><span class="num">∑</span><a href="#end">The Madhurāṣṭakam on One Page</a></li>
+    <li class="part">THE 8 VERSES</li>
+    <li><span class="num">1</span><a href="#v1">Verse 1: His Face, His Smile, His Heart</a></li><li><span class="num">2</span><a href="#v2">Verse 2: His Words, His Ways, His Wanderings</a></li><li><span class="num">3</span><a href="#v3">Verse 3: His Flute, The Dust Of His Feet</a></li><li><span class="num">4</span><a href="#v4">Verse 4: Singing, Eating, Sleeping</a></li><li><span class="num">5</span><a href="#v5">Verse 5: His Deeds, His Rescue, His Mischief</a></li><li><span class="num">6</span><a href="#v6">Verse 6: His Garland, His River</a></li><li><span class="num">7</span><a href="#v7">Verse 7: The Gopīs And His Play</a></li><li><span class="num">8</span><a href="#v8">Verse 8: His Cows, His Staff, His Whole Creation</a></li>
+  </ul>
+</section>
+<section class="page" id="v1">
+  <h2 class="page-title">VERSE 1</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">HIS FACE, HIS SMILE, HIS HEART</span></div>
+    <div class="iast"><span class="cl">adharaṃ madhuraṃ</span><span class="cl cl2">vadanaṃ madhuraṃ</span><span class="cl">nayanaṃ madhuraṃ</span><span class="cl cl2">hasitaṃ madhuram |</span><span class="cl">hṛdayaṃ madhuraṃ</span><span class="cl cl2">gamanaṃ madhuraṃ</span><span class="cl">madhurādhipater</span><span class="cl cl2">akhilaṃ madhuram ‖1‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Young Krishna smiling, with a peacock feather, walking gracefully, with hearts and honey drops around him"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 0) scale(1)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><text x="40" y="50" font-family="Bangers" font-size="14" fill="#e05a8a">♥</text><text x="170" y="60" font-family="Bangers" font-size="14" fill="#e05a8a">♥</text><text x="50" y="110" font-family="Bangers" font-size="14" fill="#e05a8a">♥</text><text x="176" y="120" font-family="Bangers" font-size="14" fill="#e05a8a">♥</text><text x="110" y="20" text-anchor="middle" font-family="Bangers" font-size="13">MADHURAM!</text></svg><div class="mean">His lips are sweet, His face is sweet, His eyes are sweet, His smile is sweet; His heart is sweet, His walk is sweet. Everything about the Lord of Sweetness is sweet.</div></div>
+    <div class="plain">Sweet lips, sweet face, sweet eyes, sweet smile, sweet heart, sweet walk: everything about Kṛṣṇa is sweet.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">adharam</td><td><b>lips</b></td></tr><tr><td class="w">vadanam</td><td><b>face</b></td></tr><tr><td class="w">nayanam</td><td><b>eyes</b></td></tr><tr><td class="w">hasitam</td><td><b>smile</b></td></tr><tr><td class="w">hṛdayam · gamanam</td><td><b>heart</b> · <b>walk</b></td></tr><tr><td class="w">madhura-adhipati</td><td><b>Lord of sweetness</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v1b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v1b">
+  <h2 class="page-title">VERSE 1 · GOING DEEPER</h2>
+  <div class="sub">HIS FACE, HIS SMILE, HIS HEART</div>
+  <div class="panel reading"><p><b>Beginning with the face.</b> The poet looks at Kṛṣṇa as a lover looks: lips first, then face, eyes, smile. Then he goes inward, to the heart, and back out, to the way He walks.</p><p><b>The refrain.</b> Every verse ends <i>madhurādhipater akhilaṃ madhuram</i>: "everything about the Lord of Sweetness is sweet". Each verse lists six sweet things and then gives up: it is all sweet.</p><p><b>A pun.</b> <i>Madhurā</i> is also an old name of Mathurā, Kṛṣṇa's birthplace; so <i>madhurādhipati</i> can be read as "Lord of Mathurā" too.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Mādhurya</h4><p>Sweetness: the loving, intimate side of the Lord, as against His majesty (aiśvarya).</p></div><div class="card bg-blue"><h4>💡 Mathurā</h4><p>Kṛṣṇa's birthplace on the Yamunā, also called Madhurā or Madhupurī.</p></div></div>
+  <div class="inner">When you truly love someone, you stop listing reasons. Everything about them is dear.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> The same word, over and over?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That's the magic! "Madhuram, madhuram": like a child who can only say "sweet!" because there's no better word.</p></div></div>
+  <div class="key">"Adharaṃ madhuram": <b>everything about Kṛṣṇa is sweet</b>.</div>
+</section>
+<section class="page" id="v2">
+  <h2 class="page-title">VERSE 2</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">HIS WORDS, HIS WAYS, HIS WANDERINGS</span></div>
+    <div class="iast"><span class="cl">vacanaṃ madhuraṃ</span><span class="cl cl2">caritaṃ madhuraṃ</span><span class="cl">vasanaṃ madhuraṃ</span><span class="cl cl2">valitaṃ madhuram |</span><span class="cl">calitaṃ madhuraṃ</span><span class="cl cl2">bhramitaṃ madhuraṃ</span><span class="cl">madhurādhipater</span><span class="cl cl2">akhilaṃ madhuram ‖2‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Krishna in yellow silk talking and laughing, then wandering through a forest of trees"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(80 0) scale(0.9)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><g transform="translate(140 130)"><path d="M0 0 v-30" stroke="#7a5a3a" stroke-width="4"/><circle cy="-40" r="16" fill="#2a9d6f" stroke="#111" stroke-width="2"/></g><g transform="translate(170 120)"><path d="M0 0 v-30" stroke="#7a5a3a" stroke-width="4"/><circle cy="-40" r="16" fill="#2a9d6f" stroke="#111" stroke-width="2"/></g><g transform="translate(200 130)"><path d="M0 0 v-30" stroke="#7a5a3a" stroke-width="4"/><circle cy="-40" r="16" fill="#2a9d6f" stroke="#111" stroke-width="2"/></g><path d="M40 40 q-20 -10 -8 -24 q30 -4 30 16z" fill="#fff" stroke="#111"/><text x="110" y="20" text-anchor="middle" font-family="Bangers" font-size="11">VṚNDĀVANA</text></svg><div class="mean">His words are sweet, His deeds are sweet, His garments are sweet, His posture is sweet; His movements are sweet, His wanderings are sweet. Everything about the Lord of Sweetness is sweet.</div></div>
+    <div class="plain">What He says, what He does, what He wears, how He stands, how He moves, where He roams: all sweet.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">vacanam</td><td><b>words</b></td></tr><tr><td class="w">caritam</td><td><b>deeds</b>, story</td></tr><tr><td class="w">vasanam</td><td><b>clothes</b>: the yellow silk</td></tr><tr><td class="w">valitam</td><td><b>posture</b>, the bend of His body</td></tr><tr><td class="w">calitam</td><td><b>movement</b></td></tr><tr><td class="w">bhramitam</td><td><b>wandering</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v2b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v2b">
+  <h2 class="page-title">VERSE 2 · GOING DEEPER</h2>
+  <div class="sub">HIS WORDS, HIS WAYS, HIS WANDERINGS</div>
+  <div class="panel reading"><p><b>From face to life.</b> Verse 1 was about how He looks; verse 2 is about how He lives: what He says, does and wears, and where He goes.</p><p><b>Valita.</b> "The bend": Kṛṣṇa is often shown in the <i>tribhaṅga</i> pose, bent at neck, waist and knee, playing His flute.</p><p><b>Pītāmbara.</b> His garment is the yellow silk (<i>pītāmbara</i>), one of His names. Even His clothes are sweet because He wears them (compare Veṅkaṭeśa Maṅgalāśāsanam verse 11).</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Tribhaṅga</h4><p>The graceful three-bend pose of Kṛṣṇa playing the flute.</p></div><div class="card bg-blue"><h4>💡 Pītāmbara</h4><p>"Yellow-clad": Kṛṣṇa's silk garment, and a name for Him.</p></div></div>
+  <div class="inner">Love sees sweetness in ordinary things: how someone speaks, stands, walks.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> His clothes are sweet too?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Everything is! What He says, what He wears, even how He wanders about Vṛndāvana.</p></div></div>
+  <div class="key">Words, deeds, clothes, wanderings: <b>all sweet</b>.</div>
+</section>
+<section class="page" id="v3">
+  <h2 class="page-title">VERSE 3</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">HIS FLUTE, THE DUST OF HIS FEET</span></div>
+    <div class="iast"><span class="cl">veṇur madhuro</span><span class="cl cl2">reṇur madhuraḥ</span><span class="cl">pāṇir madhuraḥ</span><span class="cl cl2">pādau madhurau |</span><span class="cl">nṛtyaṃ madhuraṃ</span><span class="cl cl2">sakhyaṃ madhuraṃ</span><span class="cl">madhurādhipater</span><span class="cl cl2">akhilaṃ madhuram ‖3‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Krishna dancing and playing the flute, dust rising from his feet, with friends around"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 0) scale(0.9)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><path d="M116 62 l50 -14" stroke="#7a5a3a" stroke-width="5" stroke-linecap="round"/><circle cx="90" cy="150" r="2" fill="#c9a26b"/><circle cx="98" cy="146" r="2" fill="#c9a26b"/><circle cx="106" cy="142" r="2" fill="#c9a26b"/><circle cx="114" cy="150" r="2" fill="#c9a26b"/><circle cx="122" cy="146" r="2" fill="#c9a26b"/><circle cx="130" cy="142" r="2" fill="#c9a26b"/><g transform="translate(40 150) scale(0.55)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><g transform="translate(180 150) scale(0.55)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#2a9d6f"/></g><text x="170" y="40" font-family="Bangers" font-size="16" fill="#1d6fb8">♪</text><text x="190" y="70" font-family="Bangers" font-size="16" fill="#1d6fb8">♪</text></svg><div class="mean">His flute is sweet, the dust of His feet is sweet, His hands are sweet, His feet are sweet; His dance is sweet, His friendship is sweet. Everything about the Lord of Sweetness is sweet.</div></div>
+    <div class="plain">His flute, the dust His feet raise, His hands, His feet, His dancing, His friendship: all sweet.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">veṇuḥ</td><td><b>flute</b></td></tr><tr><td class="w">reṇuḥ</td><td><b>dust</b> (of His feet)</td></tr><tr><td class="w">pāṇiḥ</td><td><b>hand</b></td></tr><tr><td class="w">pādau</td><td><b>two feet</b></td></tr><tr><td class="w">nṛtyam</td><td><b>dance</b></td></tr><tr><td class="w">sakhyam</td><td><b>friendship</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v3b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v3b">
+  <h2 class="page-title">VERSE 3 · GOING DEEPER</h2>
+  <div class="sub">HIS FLUTE, THE DUST OF HIS FEET</div>
+  <div class="panel reading"><p><b>The flute.</b> Kṛṣṇa's flute (<i>veṇu</i>, <i>muralī</i>) called the cows, the gopīs and all Vṛndāvana. In the Bhāgavatam, even rivers stopped to listen.</p><p><b>The dust.</b> Devotees long for the dust of His feet (<i>pāda-reṇu</i>), or of His devotees' feet. Vraja's dust is still held sacred.</p><p><b>Friendship.</b> <i>Sakhya</i>, friendship with God, is one of the moods of bhakti: the cowherd boys loved Him as their friend, wrestling and eating with Him.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Muralī</h4><p>Kṛṣṇa's bamboo flute; Muralīdhara, "flute-bearer", is His name.</p></div><div class="card bg-blue"><h4>💡 Sakhya-bhāva</h4><p>Loving God as a friend: the mood of the cowherd boys and Arjuna.</p></div></div>
+  <div class="inner">Even the dust of His path is sacred. Walk where He walked.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Even the dust is sweet?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The dust from His dancing feet! Devotees still treasure the dust of Vraja.</p></div></div>
+  <div class="key">Flute, dust, dance, friendship: <b>all sweet</b>.</div>
+</section>
+<section class="page" id="v4">
+  <h2 class="page-title">VERSE 4</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">SINGING, EATING, SLEEPING</span></div>
+    <div class="iast"><span class="cl">gītaṃ madhuraṃ</span><span class="cl cl2">pītaṃ madhuraṃ</span><span class="cl">bhuktaṃ madhuraṃ</span><span class="cl cl2">suptaṃ madhuram |</span><span class="cl">rūpaṃ madhuraṃ</span><span class="cl cl2">tilakaṃ madhuraṃ</span><span class="cl">madhurādhipater</span><span class="cl cl2">akhilaṃ madhuram ‖4‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Little Krishna eating butter from a pot with a tilak on his forehead, then asleep, with a song note above"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(70 0) scale(0.8)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><path d="M110 120 q-4 -30 20 -34 q24 4 20 34z" fill="#c0703a" stroke="#111" stroke-width="2"/><path d="M116 90 q14 -10 28 0" fill="#fff" stroke="#111"/><text x="130" y="140" text-anchor="middle" font-family="Bangers" font-size="8">NAVANĪTA</text><path d="M70 38 v-8" stroke="#e63946" stroke-width="4"/><text x="180" y="50" font-family="Bangers" font-size="16">💤</text></svg><div class="mean">His singing is sweet, His drinking is sweet, His eating is sweet, His sleeping is sweet; His form is sweet, His tilaka is sweet. Everything about the Lord of Sweetness is sweet.</div></div>
+    <div class="plain">How He sings, drinks, eats and sleeps; His beautiful form and the mark on His forehead: all sweet.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">gītam</td><td><b>song</b></td></tr><tr><td class="w">pītam</td><td><b>drinking</b></td></tr><tr><td class="w">bhuktam</td><td><b>eating</b></td></tr><tr><td class="w">suptam</td><td><b>sleeping</b></td></tr><tr><td class="w">rūpam</td><td><b>form</b></td></tr><tr><td class="w">tilakam</td><td>the <b>tilaka</b> mark</td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v4b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v4b">
+  <h2 class="page-title">VERSE 4 · GOING DEEPER</h2>
+  <div class="sub">SINGING, EATING, SLEEPING</div>
+  <div class="panel reading"><p><b>Everyday life.</b> Singing, drinking, eating, sleeping: the most ordinary acts. In Kṛṣṇa they are lovely because they are His. This is the heart of <i>mādhurya</i> bhakti: God as a beloved child or friend, not a distant king.</p><p><b>The butter thief.</b> Kṛṣṇa's eating means, above all, the stolen butter of Gokula: the favourite childhood story.</p><p><b>Puṣṭimārga sevā.</b> In Vallabha's tradition, the Lord is served through the day like a beloved child: woken, fed, dressed, put to rest.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Tilaka</h4><p>A sacred mark on the forehead; Vaiṣṇavas wear the ūrdhva-puṇḍra.</p></div><div class="card bg-blue"><h4>💡 Navanīta-cora</h4><p>"Butter thief": Kṛṣṇa as the mischievous child of Gokula.</p></div></div>
+  <div class="inner">God is found in ordinary moments, not only in temples.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Even His sleeping is sweet?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Think of a sleeping child! In Vallabha's path, the Lord is cared for like a child: fed, sung to, put to sleep.</p></div></div>
+  <div class="key">Even eating and sleeping: <b>sweet, because it is He</b>.</div>
+</section>
+<section class="page" id="v5">
+  <h2 class="page-title">VERSE 5</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">HIS DEEDS, HIS RESCUE, HIS MISCHIEF</span></div>
+    <div class="iast"><span class="cl">karaṇaṃ madhuraṃ</span><span class="cl cl2">taraṇaṃ madhuraṃ</span><span class="cl">haraṇaṃ madhuraṃ</span><span class="cl cl2">ramaṇaṃ madhuram |</span><span class="cl">vamitaṃ madhuraṃ</span><span class="cl cl2">śamitaṃ madhuraṃ</span><span class="cl">madhurādhipater</span><span class="cl cl2">akhilaṃ madhuram ‖5‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Krishna carrying friends across a river, and running off with a pot of butter"><rect width="220" height="160" fill="#e3f2fd"/><path d="M0 130 q55 -12 110 0 t110 0 V160 H0z" fill="#4aa3df" stroke="#111" stroke-width="2"/><g transform="translate(80 0) scale(0.75)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><g transform="translate(130 124) scale(0.45)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><path d="M160 100 q-4 -24 16 -28 q20 4 16 28z" fill="#c0703a" stroke="#111" stroke-width="2"/><text x="176" y="120" text-anchor="middle" font-family="Bangers" font-size="8">HARAṆA!</text></svg><div class="mean">His actions are sweet, His saving is sweet, His stealing is sweet, His love-play is sweet; what He gives away is sweet, His calm is sweet. Everything about the Lord of Sweetness is sweet.</div></div>
+    <div class="plain">What He does, how He rescues, how He steals hearts and butter, how He plays, what He gives, how He calms: all sweet.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">karaṇam</td><td><b>doing</b>, deeds</td></tr><tr><td class="w">taraṇam</td><td><b>carrying across</b>, saving</td></tr><tr><td class="w">haraṇam</td><td><b>stealing</b></td></tr><tr><td class="w">ramaṇam</td><td><b>sporting</b>, love-play</td></tr><tr><td class="w">vamitam</td><td><b>giving out</b></td></tr><tr><td class="w">śamitam</td><td><b>calming</b>, peace</td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v5b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v5b">
+  <h2 class="page-title">VERSE 5 · GOING DEEPER</h2>
+  <div class="sub">HIS DEEDS, HIS RESCUE, HIS MISCHIEF</div>
+  <div class="panel reading"><p><b>A harder verse.</b> These words have several meanings, and commentators differ. <i>Taraṇa</i>: carrying across, as He carries devotees across saṃsāra. <i>Haraṇa</i>: stealing: butter, clothes, and hearts. <i>Ramaṇa</i>: His play, His love.</p><p><b>Vamita and śamita.</b> Read variously: <i>vamita</i> as what He "lets out", such as the prasāda of chewed betel He shares, or His giving; <i>śamita</i> as His peace, or His calming of devotees' troubles.</p><p><b>Even mischief.</b> Stealing is wrong; but His stealing of hearts is sweet. Love sees everything differently.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Hari</h4><p>"The one who takes away": His name, from the same root as haraṇa.</p></div><div class="card bg-blue"><h4>💡 Variant</h4><p>Some texts read smaraṇam, "remembering", for ramaṇam.</p></div></div>
+  <div class="inner">Let Him steal your heart. That theft makes you richer.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Stealing is sweet?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> When He steals hearts, yes! Hari literally means "the one who takes away", our sorrows and our hearts.</p></div></div>
+  <div class="key">Rescuing, stealing, playing: <b>His every act is sweet</b>.</div>
+  <div class="note">Interpretations of vamitam and śamitam vary between commentators.</div>
+</section>
+<section class="page" id="v6">
+  <h2 class="page-title">VERSE 6</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">HIS GARLAND, HIS RIVER</span></div>
+    <div class="iast"><span class="cl">guñjā madhurā</span><span class="cl cl2">mālā madhurā</span><span class="cl">yamunā madhurā</span><span class="cl cl2">vīcī madhurā |</span><span class="cl">salilaṃ madhuraṃ</span><span class="cl cl2">kamalaṃ madhuraṃ</span><span class="cl">madhurādhipater</span><span class="cl cl2">akhilaṃ madhuram ‖6‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A garland of red and black gunja berries, the Yamuna river with waves and lotuses"><rect width="220" height="160" fill="#e3f2fd"/><path d="M0 130 q55 -12 110 0 t110 0 V160 H0z" fill="#4aa3df" stroke="#111" stroke-width="2"/><path d="M40 136 q-10 -16 0 -22 q10 6 0 22z" fill="#f08aa6" stroke="#111"/><path d="M110 136 q-10 -16 0 -22 q10 6 0 22z" fill="#f08aa6" stroke="#111"/><path d="M180 136 q-10 -16 0 -22 q10 6 0 22z" fill="#f08aa6" stroke="#111"/><circle cx="167.32018934753637" cy="47.73121239968037" r="4" fill="#e63946" stroke="#111"/><circle cx="157.76502791294337" cy="66.31118434416237" r="4" fill="#e63946" stroke="#111"/><circle cx="142.4181383520884" cy="80.4882590884738" r="4" fill="#e63946" stroke="#111"/><circle cx="123.14040122558251" cy="88.54340146959954" r="4" fill="#e63946" stroke="#111"/><circle cx="102.26933034226852" cy="89.49988862714812" r="4" fill="#e63946" stroke="#111"/><circle cx="82.33563851739723" cy="83.24174211800252" r="4" fill="#e63946" stroke="#111"/><circle cx="65.75637706752529" cy="70.52779083306908" r="4" fill="#e63946" stroke="#111"/><circle cx="54.5418572820522" cy="52.89965952313993" r="4" fill="#e63946" stroke="#111"/><circle cx="50.05189098360323" cy="32.49483974599745" r="4" fill="#e63946" stroke="#111"/><text x="110" y="154" text-anchor="middle" font-family="Bangers" font-size="10">YAMUNĀ</text></svg><div class="mean">His guñjā-berry necklace is sweet, His garland is sweet; the Yamunā is sweet, her waves are sweet; her water is sweet, her lotuses are sweet. Everything about the Lord of Sweetness is sweet.</div></div>
+    <div class="plain">His berry necklace and garland, the river Yamunā, its waves, its water, its lotuses: all sweet.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">guñjā</td><td><b>guñjā berries</b> (red and black seeds)</td></tr><tr><td class="w">mālā</td><td><b>garland</b></td></tr><tr><td class="w">yamunā</td><td>the <b>river Yamunā</b></td></tr><tr><td class="w">vīcī</td><td><b>waves</b></td></tr><tr><td class="w">salilam</td><td><b>water</b></td></tr><tr><td class="w">kamalam</td><td><b>lotus</b></td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v6b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v6b">
+  <h2 class="page-title">VERSE 6 · GOING DEEPER</h2>
+  <div class="sub">HIS GARLAND, HIS RIVER</div>
+  <div class="panel reading"><p><b>Beyond His body.</b> The sweetness now spreads outward: to what He wears, and then to His river. Things become sweet by being near Him.</p><p><b>Guñjā.</b> A cowherd boy's necklace of bright red-and-black seeds: simple jewellery for a village Lord.</p><p><b>The Yamunā.</b> The river of Vṛndāvana, where Kṛṣṇa played, bathed, subdued Kāliya and danced the rāsa. In Vallabha's tradition the Yamunā is honoured as a goddess; he wrote the <i>Yamunāṣṭakam</i> to her.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Guñjā-mālā</h4><p>A necklace of guñjā seeds, worn by Kṛṣṇa as a cowherd.</p></div><div class="card bg-blue"><h4>💡 Yamunāṣṭakam</h4><p>Vallabha's eight verses in praise of the Yamunā.</p></div></div>
+  <div class="inner">Whatever is close to Him becomes sweet. Stay close.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Now the river is sweet too?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Anything near Him becomes sweet: His necklace, His garland, the Yamunā, even her lotuses!</p></div></div>
+  <div class="key">Garland, river, waves, lotuses: <b>sweet by being near Him</b>.</div>
+</section>
+<section class="page" id="v7">
+  <h2 class="page-title">VERSE 7</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE GOPĪS AND HIS PLAY</span></div>
+    <div class="iast"><span class="cl">gopī madhurā</span><span class="cl cl2">līlā madhurā</span><span class="cl">yuktaṃ madhuraṃ</span><span class="cl cl2">muktaṃ madhuram |</span><span class="cl">dṛṣṭaṃ madhuraṃ</span><span class="cl cl2">śiṣṭaṃ madhuraṃ</span><span class="cl">madhurādhipater</span><span class="cl cl2">akhilaṃ madhuram ‖7‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Krishna with gopis in a circle dance under the moon"><rect width="220" height="160" fill="#e3f2fd"/><circle cx="190" cy="26" r="12" fill="#fff8c0" stroke="#111"/><g transform="translate(184.0 118.0) scale(0.38)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e05a8a"/></g><g transform="translate(147.01265952018318 137.0503854483321) scale(0.38)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e05a8a"/></g><g transform="translate(73.02532337181101 137.05690352236132) scale(0.38)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e05a8a"/></g><g transform="translate(36.00001299581588 118.01303837821219) scale(0.38)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e05a8a"/></g><g transform="translate(72.949370588085 98.95613931692148) scale(0.38)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e05a8a"/></g><g transform="translate(146.93668074927342 98.93658509712326) scale(0.38)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e05a8a"/></g><g transform="translate(110 40) scale(0.5)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><text x="40" y="26" text-anchor="middle" font-family="Bangers" font-size="12">LĪLĀ</text></svg><div class="mean">The gopīs are sweet, His play is sweet; being with Him is sweet, being apart is sweet; His glance is sweet, His courtesy is sweet. Everything about the Lord of Sweetness is sweet.</div></div>
+    <div class="plain">The gopīs and His games, being with Him and missing Him, His look and His manners: all sweet.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">gopī</td><td>the <b>gopīs</b>, cowherd women</td></tr><tr><td class="w">līlā</td><td><b>divine play</b></td></tr><tr><td class="w">yuktam</td><td><b>union</b>, being with Him</td></tr><tr><td class="w">muktam</td><td><b>release</b>, parting</td></tr><tr><td class="w">dṛṣṭam</td><td><b>His glance</b></td></tr><tr><td class="w">śiṣṭam</td><td><b>courtesy</b>, His teaching</td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v7b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v7b">
+  <h2 class="page-title">VERSE 7 · GOING DEEPER</h2>
+  <div class="sub">THE GOPĪS AND HIS PLAY</div>
+  <div class="panel reading"><p><b>The gopīs.</b> The cowherd women of Vraja, whose love for Kṛṣṇa is, for many traditions, the highest form of devotion: total, selfless, without calculation.</p><p><b>Even separation.</b> <i>Yuktaṃ … muktaṃ</i>: meeting Him is sweet, and so is parting. In the bhakti tradition, the longing of separation (<i>viraha</i>) is itself a deep form of love; the gopīs' longing after Kṛṣṇa left Vraja is celebrated in song.</p><p><b>Līlā.</b> Everything He does is play: free, joyful, without need.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Viraha</h4><p>The pain of separation from the beloved: a key mood of bhakti.</p></div><div class="card bg-blue"><h4>💡 Variant</h4><p>Some texts read bhuktam ("eating") for muktam here.</p></div></div>
+  <div class="inner">Even missing Him is a way of loving Him.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Being apart is sweet?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Longing for Him keeps Him in your heart. The gopīs' longing is one of the deepest forms of love.</p></div></div>
+  <div class="key">Union and separation: <b>both are sweet with Him</b>.</div>
+</section>
+<section class="page" id="v8">
+  <h2 class="page-title">VERSE 8</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">HIS COWS, HIS STAFF, HIS WHOLE CREATION</span></div>
+    <div class="iast"><span class="cl">gopā madhurā</span><span class="cl cl2">gāvo madhurā</span><span class="cl">yaṣṭir madhurā</span><span class="cl cl2">sṛṣṭir madhurā |</span><span class="cl">dalitaṃ madhuraṃ</span><span class="cl cl2">phalitaṃ madhuraṃ</span><span class="cl">madhurādhipater</span><span class="cl cl2">akhilaṃ madhuram ‖8‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Krishna with a herding staff among cows and cowherd boys on a green meadow under the sun"><rect width="220" height="160" fill="#e3f2fd"/><circle cx="190" cy="30" r="14" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/><rect x="0" y="120" width="220" height="40" fill="#7fc47f"/><g transform="translate(110 0) scale(0.75)" stroke="#111" stroke-width="2.5"><circle cy="56" r="15" fill="#3b6fd0"/><path d="M-10 40 q10 -14 20 0" fill="#111"/><path d="M4 36 q10 -20 6 -30" stroke="#2a9d6f" stroke-width="3" fill="none"/><circle cx="10" cy="8" r="4" fill="#1d6fb8" stroke="#2a9d6f"/><path d="M-22 150 q-4 -66 22 -78 q26 12 22 78z" fill="#ffd60a"/><path d="M-14 82 q14 30 28 0" fill="none" stroke="#e05a8a" stroke-width="4"/></g><path d="M134 60 v90" stroke="#7a5a3a" stroke-width="4"/><g transform="translate(40 130) scale(0.8)" stroke="#111" stroke-width="2"><ellipse rx="22" ry="12" fill="#fff"/><circle cx="-24" cy="-6" r="8" fill="#fff"/><path d="M-14 10 v12 M14 10 v12 M-6 10 v12 M6 10 v12"/><circle cx="4" cy="-2" r="4" fill="#8a6a4a"/></g><g transform="translate(180 136) scale(0.7)" stroke="#111" stroke-width="2"><ellipse rx="22" ry="12" fill="#fff"/><circle cx="-24" cy="-6" r="8" fill="#fff"/><path d="M-14 10 v12 M14 10 v12 M-6 10 v12 M6 10 v12"/><circle cx="4" cy="-2" r="4" fill="#8a6a4a"/></g><g transform="translate(70 150) scale(0.4)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><text x="60" y="26" text-anchor="middle" font-family="Bangers" font-size="11">SṚṢṬI</text></svg><div class="mean">The cowherds are sweet, the cows are sweet, His staff is sweet, His creation is sweet; His crushing of evil is sweet, the fruit He gives is sweet. Everything about the Lord of Sweetness is sweet.</div></div>
+    <div class="plain">His cowherd friends, His cows, His herding stick, the whole world He made, how He destroys evil, what He gives: all sweet.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">gopāḥ</td><td><b>cowherds</b></td></tr><tr><td class="w">gāvaḥ</td><td><b>cows</b></td></tr><tr><td class="w">yaṣṭiḥ</td><td><b>staff</b>, herding stick</td></tr><tr><td class="w">sṛṣṭiḥ</td><td><b>creation</b></td></tr><tr><td class="w">dalitam</td><td><b>crushing</b>, trampling (evil)</td></tr><tr><td class="w">phalitam</td><td><b>fruit</b>, fulfilment</td></tr></table>
+  </div>
+  <p class="center" style="margin:0"><a href="#v8b" class="contlink">Continue: going deeper ➜</a></p>
+</section>
+<section class="page" id="v8b">
+  <h2 class="page-title">VERSE 8 · GOING DEEPER</h2>
+  <div class="sub">HIS COWS, HIS STAFF, HIS WHOLE CREATION</div>
+  <div class="panel reading"><p><b>From the cowshed to the cosmos.</b> The last verse moves from His friends, His cows and His stick to <i>sṛṣṭi</i>, the whole creation. The cowherd boy is the creator of the universe.</p><p><b>Dalita and phalita.</b> He crushes evil (as He crushed Kāliya and Kaṃsa) and brings everything to fruit. Destruction and fulfilment, both sweet in His hands.</p><p><b>The end of the list.</b> After 48 sweet things in 8 verses, the refrain says it all: <i>akhilaṃ madhuram</i>, everything is sweet.</p></div>
+  <div class="g2"><div class="card bg-yellow"><h4>💡 Gopāla</h4><p>"Protector of cows": the cowherd Kṛṣṇa.</p></div><div class="card bg-blue"><h4>💡 Govinda</h4><p>"One who finds joy in cows", or "who is known through the Vedas".</p></div></div>
+  <div class="inner">If the creator is sweet, the creation is too. Look at the world with love.</div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> The whole creation is sweet?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> If He made it, it's His, and everything of His is sweet. That's where the hymn ends!</p></div></div>
+  <div class="key">From cows to the cosmos: <b>akhilaṃ madhuram, all is sweet</b>.</div>
+</section>
+<section class="page" id="end">
+  <h2 class="page-title">THE MADHURĀṢṬAKAM ON ONE PAGE</h2>
+  <div class="sub">Eight verses in four lines</div>
+  <div class="steps">
+    <div><b>Verses 1–2.</b> His face, smile, heart, words, deeds, clothes and wanderings: all sweet.</div>
+    <div><b>Verses 3–5.</b> His flute, dance, friendship, eating, sleeping, stealing and saving: all sweet.</div>
+    <div><b>Verses 6–7.</b> His garland, the Yamunā, the gopīs, His play, union and parting: all sweet.</div>
+    <div><b>Verse 8.</b> His cows, His staff, His whole creation: <i>akhilaṃ madhuram</i>, everything is sweet.</div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What's the one thing to remember?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> When you love the Lord, everything about Him, and everything He touches, becomes sweet. Madhuram!</p></div></div>
+  <div class="key">"Madhurādhipater akhilaṃ madhuram": <b>everything about Him is sweet</b>. 🙏</div>
+  
+<div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+
+<footer style="text-align:center;font-size:13px;opacity:.75">Study notes on the Madhurāṣṭakam of Śrī Vallabhācārya. Text checked word by word against shlokam.org and the Wikipedia article “Madhurāṣṭakam”; variant readings (smaraṇam, bhuktam) are noted. Background: Wikipedia (author, legend of composition, Puṣṭimārga); shlokam.org. Vallabha’s dates differ slightly between sources (1478 or 1479–1531). Meanings of vamitam and śamitam vary between commentators. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</footer>
+</div>
+<script>
+  document.querySelectorAll('section.page[id$="b"], section.page#about').forEach(function (sec) {
+    var t = sec.querySelector('.page-title');
+    var bar = document.createElement('div');
+    bar.className = 'ch-end';
+    var next = sec.nextElementSibling && sec.nextElementSibling.id ? '#' + sec.nextElementSibling.id : '#contents';
+    bar.innerHTML = '<span class="lbl">END OF ' + (t ? t.textContent.split('·')[0].trim() : '') + '</span><a href="#contents">⬆ CONTENTS</a><a href="' + next + '">NEXT ➜</a>';
+    sec.appendChild(bar);
+  });
+</script>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
