@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-19",
+  "last_published_on": "2026-11-20",
   "entries": [
     {
       "number": 1,
@@ -261,8 +261,8 @@
       "path": "/mysuru-flights/",
       "title": "Why Can’t Mysuru Fly Anywhere?",
       "not_before": "2026-11-20T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-20T05:22:54+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"26\"><a href=\"/mysuru-flights/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M10 56L44 50L62 20H72L64 50L88 46Q94 46 92 52L64 60L58 84H50L50 62L16 66Z\" fill=\"#d9e9fb\"/><path d=\"M8 90H92\" stroke-width=\"4\"/></g></svg></div><div class=\"card-copy\"><h3>Why Can’t Mysuru Fly Anywhere?</h3><p>Mysuru has an airport but few flights. The runway, the planes that could land, and what a big IndiGo order could change.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">20 Nov 2026</span></li>"
     },
     {
