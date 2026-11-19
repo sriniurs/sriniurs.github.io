@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puruṣa Sūktam · The Hymn of the Cosmic Person · srini.presents</title>
+<meta name="description" content="Sahasraśīrṣā puruṣaḥ: the Puruṣa Sūktam (Ṛg Veda 10.90), the Vedic hymn of the Cosmic Person, explained verse by verse in plain English with illustrations, with the Taittirīya additions recited in Viṣṇu worship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#2c5f9e,#0b2a4a 55%,#04101f)}
+  .sloka-head{background:#0b2a4a}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0b2a4a}
+  .sub{color:#1d4f9a}
+  .num{background:#0b2a4a}
+  .steps div:before{background:#1d4f9a}
+  .full .vn,.full .end{color:#1d4f9a}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d4f9a}
+  .contlink{color:#1d4f9a}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#2c5f9e,#0b2a4a 55%,#04101f)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .jl td:first-child{font-family:Bangers;letter-spacing:1px;color:#1d4f9a;font-size:17px;text-align:center}
+  @media print{.jl td,.jl th{padding:3px 6px;font-size:11.5px}}
+  /* Viṣṇu theme: light blue */
+  .cover{background:radial-gradient(circle at 50% 38%,#8fd0f5,#1d6fb8 55%,#0b3d6e)}
+  .sloka-head{background:#1d6fb8}
+  .sloka{background:#e3f2fd;box-shadow:7px 7px 0 #1d6fb8}
+  .sub{color:#1d6fb8}
+  .num{background:#1d6fb8}
+  .steps div:before{background:#1d6fb8}
+  .full .vn,.full .end{color:#1d6fb8}
+  .iast:before{color:#1d6fb8}
+  .contlink{color:#1d6fb8}
+  .iast .cl2{padding-left:2.2em}
+  .full .ln2{padding-left:2.2em}
+  .pt{font-size:14.5px;line-height:1.45;margin:8px 0}
+  .toc.tight{gap:5px;grid-template-columns:repeat(3,1fr)}.toc.tight li{padding:3px 8px;font-size:13px}.toc.tight .part{font-size:16px}
+  .vfig svg{max-height:150px;width:auto}
+  @media(max-width:720px){.iast .cl2{padding-left:1.4em}.full .ln2{padding-left:1.4em}}
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/vishnu/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">ṚG VEDA 10.90</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(26px,7.6vw,80px)">PURUṢA SŪKTAM</h1>
+  <div class="series">THE HYMN OF THE COSMIC PERSON</div>
+  <div class="tag">“Sahasraśīrṣā puruṣaḥ” · explained and illustrated</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A vast star-filled blue Cosmic Person towering over the round earth, with sun and moon at his eyes and a sacred fire at his feet"><rect width="380" height="268" fill="#0d1b3a" rx="8"/><text x="5" y="25" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="46" y="92" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="87" y="159" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="128" y="226" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="169" y="43" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="210" y="110" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="251" y="177" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="292" y="244" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="333" y="61" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="374" y="128" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="45" y="195" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="86" y="12" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="127" y="79" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="168" y="146" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="209" y="213" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="250" y="30" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="291" y="97" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="332" y="164" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="373" y="231" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="44" y="48" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="85" y="115" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="126" y="182" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="167" y="249" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="208" y="66" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="249" y="133" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="290" y="200" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="331" y="17" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="372" y="84" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="43" y="151" font-family="Bangers" font-size="10" fill="#fff">✦</text><text x="84" y="218" font-family="Bangers" font-size="10" fill="#fff">✦</text><g transform="translate(190 0) scale(1.55)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-26" cy="78" r="1.8" fill="#fff"/><circle cx="-13" cy="78" r="1.8" fill="#fff"/><circle cx="0" cy="78" r="1.8" fill="#fff"/><circle cx="13" cy="78" r="1.8" fill="#fff"/><circle cx="26" cy="78" r="1.8" fill="#fff"/><circle cx="-26" cy="92" r="1.8" fill="#fff"/><circle cx="-13" cy="92" r="1.8" fill="#fff"/><circle cx="0" cy="92" r="1.8" fill="#fff"/><circle cx="13" cy="92" r="1.8" fill="#fff"/><circle cx="26" cy="92" r="1.8" fill="#fff"/><circle cx="-26" cy="106" r="1.8" fill="#fff"/><circle cx="-13" cy="106" r="1.8" fill="#fff"/><circle cx="0" cy="106" r="1.8" fill="#fff"/><circle cx="13" cy="106" r="1.8" fill="#fff"/><circle cx="26" cy="106" r="1.8" fill="#fff"/><circle cx="-26" cy="120" r="1.8" fill="#fff"/><circle cx="-13" cy="120" r="1.8" fill="#fff"/><circle cx="0" cy="120" r="1.8" fill="#fff"/><circle cx="13" cy="120" r="1.8" fill="#fff"/><circle cx="26" cy="120" r="1.8" fill="#fff"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><path d="M150 52 a10 10 0 1 0 0 20 a13.0 13.0 0 0 1 0 -20z" fill="#fff8c0" stroke="#111" stroke-width="2"/><circle cx="230" cy="62" r="10" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/><circle cx="190" cy="262" r="40" fill="#2a9d6f" stroke="#111" stroke-width="3"/><g transform="translate(190 236) scale(0.7)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  <div class="bubble" style="max-width:620px;margin:10px auto 4px;text-align:left">
+    <span class="who">HOW THIS WORKS:</span> First all 16 verses for chanting in one go. Then the story and background, and <b>one page for each verse</b>: the chant, a picture, what it says, the key words, one insight and the one thing to remember. At the end: how verse 12 is read, and the extra verses recited in South Indian worship.
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6">
+    <p>“Sahasraśīrṣā puruṣaḥ…” If you have stood near a temple during an abhiṣeka, you have heard it: the steady Vedic chant as water, milk and honey pour over the deity.</p>
+    <p>The Puruṣa Sūktam is one of the most famous hymns of the Ṛg Veda. In sixteen verses it pictures God as a <b>Cosmic Person</b>, with a thousand heads and a thousand eyes, who is everything that was and will be, and still stands beyond it all. From His sacrifice come the seasons, the creatures, the Vedas, the sun and moon, the sky and the earth.</p>
+    <p>For Vaiṣṇavas this Person is Nārāyaṇa, and the hymn is the Vedic foundation of Viṣṇu worship. Its seer is even named Nārāyaṇa.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#1d6fb8">Hari Oṃ,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is it really 3,000 years old?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The Ṛg Veda is usually dated to the second millennium BCE, and scholars place this hymn in its later layer. Either way, it is among the oldest hymns still chanted every day.</p></div></div>
+</section>
+<section class="page" id="full">
+  <h2 class="page-title">THE PURUṢA SŪKTAM IN ONE GO</h2>
+  <div class="sub">Ṛg Veda 10.90 · verses 1–8</div>
+  <div class="full"><p><span class="vn">VERSE 1</span><span class="ln">sahasraśīrṣā puruṣaḥ</span><span class="ln ln2">sahasrākṣaḥ sahasrapāt |</span><span class="ln">sa bhūmiṃ viśvato vṛtvā</span><span class="ln ln2">aty atiṣṭhad daśāṅgulam<span class="end">‖ 1 ‖</span></span></p><p><span class="vn">VERSE 2</span><span class="ln">puruṣa evedaṃ sarvaṃ</span><span class="ln ln2">yad bhūtaṃ yac ca bhavyam |</span><span class="ln">utāmṛtatvasyeśāno</span><span class="ln ln2">yad annenātirohati<span class="end">‖ 2 ‖</span></span></p><p><span class="vn">VERSE 3</span><span class="ln">etāvān asya mahimā</span><span class="ln ln2">ato jyāyāṃś ca pūruṣaḥ |</span><span class="ln">pādo’sya viśvā bhūtāni</span><span class="ln ln2">tripād asyāmṛtaṃ divi<span class="end">‖ 3 ‖</span></span></p><p><span class="vn">VERSE 4</span><span class="ln">tripād ūrdhva ud ait puruṣaḥ</span><span class="ln ln2">pādo’syehābhavat punaḥ |</span><span class="ln">tato viṣvaṅ vy akrāmat</span><span class="ln ln2">sāśanānaśane abhi<span class="end">‖ 4 ‖</span></span></p><p><span class="vn">VERSE 5</span><span class="ln">tasmād virāḍ ajāyata</span><span class="ln ln2">virājo adhi pūruṣaḥ |</span><span class="ln">sa jāto aty aricyata</span><span class="ln ln2">paścād bhūmim atho puraḥ<span class="end">‖ 5 ‖</span></span></p><p><span class="vn">VERSE 6</span><span class="ln">yat puruṣeṇa haviṣā</span><span class="ln ln2">devā yajñam atanvata |</span><span class="ln">vasanto asyāsīd ājyaṃ</span><span class="ln ln2">grīṣma idhmaḥ śarad dhaviḥ<span class="end">‖ 6 ‖</span></span></p><p><span class="vn">VERSE 7</span><span class="ln">taṃ yajñaṃ barhiṣi praukṣan</span><span class="ln ln2">puruṣaṃ jātam agrataḥ |</span><span class="ln">tena devā ayajanta</span><span class="ln ln2">sādhyā ṛṣayaś ca ye<span class="end">‖ 7 ‖</span></span></p><p><span class="vn">VERSE 8</span><span class="ln">tasmād yajñāt sarvahutaḥ</span><span class="ln ln2">sambhṛtaṃ pṛṣadājyam |</span><span class="ln">paśūn tāṃś cakre vāyavyān</span><span class="ln ln2">āraṇyān grāmyāś ca ye<span class="end">‖ 8 ‖</span></span></p></div>
+</section>
+<section class="page" id="full2">
+  <h2 class="page-title">IN ONE GO · CONTINUED</h2>
+  <div class="sub">Verses 9–16</div>
+  <div class="full"><p><span class="vn">VERSE 9</span><span class="ln">tasmād yajñāt sarvahuta</span><span class="ln ln2">ṛcaḥ sāmāni jajñire |</span><span class="ln">chandāṃsi jajñire tasmād</span><span class="ln ln2">yajus tasmād ajāyata<span class="end">‖ 9 ‖</span></span></p><p><span class="vn">VERSE 10</span><span class="ln">tasmād aśvā ajāyanta</span><span class="ln ln2">ye ke cobhayādataḥ |</span><span class="ln">gāvo ha jajñire tasmāt</span><span class="ln ln2">tasmāj jātā ajāvayaḥ<span class="end">‖ 10 ‖</span></span></p><p><span class="vn">VERSE 11</span><span class="ln">yat puruṣaṃ vy adadhuḥ</span><span class="ln ln2">katidhā vy akalpayan |</span><span class="ln">mukhaṃ kim asya kau bāhū</span><span class="ln ln2">kā ūrū pādā ucyete<span class="end">‖ 11 ‖</span></span></p><p><span class="vn">VERSE 12</span><span class="ln">brāhmaṇo’sya mukham āsīd</span><span class="ln ln2">bāhū rājanyaḥ kṛtaḥ |</span><span class="ln">ūrū tad asya yad vaiśyaḥ</span><span class="ln ln2">padbhyāṃ śūdro ajāyata<span class="end">‖ 12 ‖</span></span></p><p><span class="vn">VERSE 13</span><span class="ln">candramā manaso jātaś</span><span class="ln ln2">cakṣoḥ sūryo ajāyata |</span><span class="ln">mukhād indraś cāgniś ca</span><span class="ln ln2">prāṇād vāyur ajāyata<span class="end">‖ 13 ‖</span></span></p><p><span class="vn">VERSE 14</span><span class="ln">nābhyā āsīd antarikṣaṃ</span><span class="ln ln2">śīrṣṇo dyauḥ sam avartata |</span><span class="ln">padbhyāṃ bhūmir diśaḥ śrotrāt</span><span class="ln ln2">tathā lokāṃ akalpayan<span class="end">‖ 14 ‖</span></span></p><p><span class="vn">VERSE 15</span><span class="ln">saptāsyāsan paridhayas</span><span class="ln ln2">triḥ sapta samidhaḥ kṛtāḥ |</span><span class="ln">devā yad yajñaṃ tanvānā</span><span class="ln ln2">abadhnan puruṣaṃ paśum<span class="end">‖ 15 ‖</span></span></p><p><span class="vn">VERSE 16</span><span class="ln">yajñena yajñam ayajanta devās</span><span class="ln ln2">tāni dharmāṇi prathamāny āsan |</span><span class="ln">te ha nākaṃ mahimānaḥ sacanta</span><span class="ln ln2">yatra pūrve sādhyāḥ santi devāḥ<span class="end">‖ 16 ‖</span></span></p></div>
+  <div class="note">Lines are split at their natural pause. Text of Ṛg Veda 10.90 checked word by word against wisdomlib.org and greenmesg.org. The Taittirīya recitation differs slightly in order and adds verses: see the page near the end.</div>
+</section>
+<section class="page" id="story">
+  <h2 class="page-title">THE STORY · THE PERSON WHO BECAME THE WORLD</h2>
+  <div class="sub">A seer’s vision of how everything began</div>
+  <svg class="fig" style="border:3px solid var(--ink);background:#fff" width="460" height="210" viewBox="0 0 460 210" role="img" aria-label="Three panels: the seer Narayana in meditation; the gods performing the first sacrifice with the Cosmic Person; the worlds, sun and moon coming from his body"><rect width="460" height="210" fill="#fff8ec"/><rect x="6" y="6" width="145" height="198" fill="#ffe3c4" stroke="#111" stroke-width="3"/><text x="78" y="196" text-anchor="middle" font-family="Bangers" font-size="12">THE SEER SEES</text><rect x="157" y="6" width="145" height="198" fill="#e7f4ea" stroke="#111" stroke-width="3"/><text x="229" y="196" text-anchor="middle" font-family="Bangers" font-size="12">THE FIRST SACRIFICE</text><rect x="308" y="6" width="145" height="198" fill="#dfe9f6" stroke="#111" stroke-width="3"/><text x="380" y="196" text-anchor="middle" font-family="Bangers" font-size="12">THE WORLDS ARE BORN</text><g transform="translate(78 150) scale(1.1)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#c98b5a"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><g transform="translate(78 10) scale(0.35)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><g transform="translate(230 160) scale(0.9)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g><g transform="translate(230 10) scale(0.5)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><g transform="translate(180 170) scale(0.6)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ffd60a"/></g><g transform="translate(280 170) scale(0.6)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#fff"/></g><rect x="309" y="9" width="139" height="170" fill="#0d1b3a"/><g transform="translate(380 14) scale(0.7)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-26" cy="78" r="1.8" fill="#fff"/><circle cx="-13" cy="78" r="1.8" fill="#fff"/><circle cx="0" cy="78" r="1.8" fill="#fff"/><circle cx="13" cy="78" r="1.8" fill="#fff"/><circle cx="26" cy="78" r="1.8" fill="#fff"/><circle cx="-26" cy="92" r="1.8" fill="#fff"/><circle cx="-13" cy="92" r="1.8" fill="#fff"/><circle cx="0" cy="92" r="1.8" fill="#fff"/><circle cx="13" cy="92" r="1.8" fill="#fff"/><circle cx="26" cy="92" r="1.8" fill="#fff"/><circle cx="-26" cy="106" r="1.8" fill="#fff"/><circle cx="-13" cy="106" r="1.8" fill="#fff"/><circle cx="0" cy="106" r="1.8" fill="#fff"/><circle cx="13" cy="106" r="1.8" fill="#fff"/><circle cx="26" cy="106" r="1.8" fill="#fff"/><circle cx="-26" cy="120" r="1.8" fill="#fff"/><circle cx="-13" cy="120" r="1.8" fill="#fff"/><circle cx="0" cy="120" r="1.8" fill="#fff"/><circle cx="13" cy="120" r="1.8" fill="#fff"/><circle cx="26" cy="120" r="1.8" fill="#fff"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><path d="M345 30 a10 10 0 1 0 0 20 a13.0 13.0 0 0 1 0 -20z" fill="#fff8c0" stroke="#111" stroke-width="2"/><circle cx="415" cy="40" r="10" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/></svg>
+  <div class="panel" style="margin-top:12px">
+    <span class="caption">The story in 5 frames</span>
+    <div class="steps" style="margin:0">
+      <div><b>The seer.</b> The Ṛg Veda names the seer of this hymn as <b>Nārāyaṇa</b>, and its deity as <b>Puruṣa</b>, the Person.</div>
+      <div><b>The vision.</b> He sees one vast Being, with countless heads, eyes and feet, filling the world and rising beyond it.</div>
+      <div><b>The sacrifice.</b> The gods perform the first sacrifice, and the offering is the Person Himself. The seasons are its ghee, fuel and oblation.</div>
+      <div><b>The world is born.</b> From that offering come animals, the Vedas, society, the moon from His mind, the sun from His eye, sky, air and earth.</div>
+      <div><b>The pattern.</b> That first sacrifice becomes the model, the “first dharma”, for all worship after it.</div>
+    </div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> The gods sacrificed God? That sounds strange!</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> It is a picture, not a crime scene! It means the world exists because the Lord gives Himself. Creation is an act of self-giving.</p></div></div>
+</section>
+
+<section class="page" id="about">
+  <h2 class="page-title">ABOUT THE PURUṢA SŪKTAM</h2>
+  <div class="sub">One hymn, found in all the Vedas</div>
+  <div class="g2">
+    <div class="card bg-blue"><h4>📜 Where it comes from</h4><p><b>Ṛg Veda 10.90</b>. Seer: Nārāyaṇa. Deity: Puruṣa. 15 verses in <b>anuṣṭubh</b> (4 × 8 syllables), the last in <b>triṣṭubh</b> (4 × 11).</p></div>
+    <div class="card bg-yellow"><h4>🔁 In other Vedas</h4><p>With variations in the Atharva Veda (19.6), the Vājasaneyi Saṃhitā of the Śukla Yajur Veda, and the <b>Taittirīya Āraṇyaka</b> of the Kṛṣṇa Yajur Veda.</p></div>
+  </div>
+  <table class="ct">
+    <tr><th>Link to Viṣṇu</th><th>Where</th></tr>
+    <tr><td><b>Seer Nārāyaṇa</b></td><td>The Ṛg Veda names him as the seer; later texts identify the Puruṣa with Nārāyaṇa</td></tr>
+    <tr><td><b>Lakṣmī’s Lord</b></td><td>The Taittirīya “uttara” section ends: Hrī and Lakṣmī are Your consorts</td></tr>
+    <tr><td><b>Sahasranāma</b></td><td>“sahasramūrdhā viśvātmā sahasrākṣaḥ sahasrapāt” echoes verse 1</td></tr>
+    <tr><td><b>Bhagavad Gītā</b></td><td>Kṛṣṇa as Puruṣottama, the Supreme Person (15.18); the universal form (ch. 11)</td></tr>
+    <tr><td><b>Worship</b></td><td>Chanted at abhiṣeka; in many traditions the 16 verses go with the 16 offerings (ṣoḍaśopacāra) of pūjā</td></tr>
+  </table>
+  <div class="panel reading"><p><b>Old and new.</b> Many scholars consider the hymn part of the later layer of the Ṛg Veda, on grounds of its language and ideas. Tradition, for its part, calls it the heart of the Vedas: <i>vedeṣu pauruṣaṃ sūktam</i>, “among Vedic hymns, the Puruṣa Sūktam”.</p></div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc tight">
+    <li class="part">START HERE</li>
+    <li><span class="num">✍</span><a href="#foreword">Foreword</a></li>
+    <li><span class="num">🔤</span><a href="#full">In One Go</a></li>
+    <li><span class="num">★</span><a href="#story">The Story</a></li>
+    <li><span class="num">ℹ</span><a href="#about">About the Hymn</a></li>
+    <li><span class="num">∑</span><a href="#end">On One Page</a></li>
+    <li class="part">THE 16 VERSES</li>
+    <li><span class="num">1</span><a href="#v1">A Thousand Heads</a></li><li><span class="num">2</span><a href="#v2">All This Is He</a></li><li><span class="num">3</span><a href="#v3">One Quarter Is The World</a></li><li><span class="num">4</span><a href="#v4">Spreading Out</a></li><li><span class="num">5</span><a href="#v5">Virāj, The Shining Vastness</a></li><li><span class="num">6</span><a href="#v6">The Seasons As Offerings</a></li><li><span class="num">7</span><a href="#v7">On The Sacred Grass</a></li><li><span class="num">8</span><a href="#v8">The Creatures Are Made</a></li><li><span class="num">9</span><a href="#v9">The Vedas Are Born</a></li><li><span class="num">10</span><a href="#v10">Horses, Cows, Goats, Sheep</a></li><li><span class="num">11</span><a href="#v11">The Great Question</a></li><li><span class="num">12</span><a href="#v12">Mouth, Arms, Thighs, Feet</a></li><li><span class="num">13</span><a href="#v13">Moon From Mind, Sun From Eye</a></li><li><span class="num">14</span><a href="#v14">The Three Worlds</a></li><li><span class="num">15</span><a href="#v15">Seven And Twenty-One</a></li><li><span class="num">16</span><a href="#v16">The First Dharmas</a></li>
+    <li class="part">MORE</li>
+    <li><span class="num">12</span><a href="#v12b">Reading Verse 12</a></li>
+    <li><span class="num">TA</span><a href="#taitt">The Taittirīya Verses</a></li>
+  </ul>
+</section>
+<section class="page" id="v1">
+  <h2 class="page-title">VERSE 1</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">A THOUSAND HEADS</span></div>
+    <div class="iast"><span class="cl">sahasraśīrṣā puruṣaḥ</span><span class="cl cl2">sahasrākṣaḥ sahasrapāt |</span><span class="cl">sa bhūmiṃ viśvato vṛtvā</span><span class="cl cl2">aty atiṣṭhad daśāṅgulam ‖1‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A vast star-filled blue figure towering over and wrapping around the round earth, still rising beyond it"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 4) scale(0.95)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-26" cy="78" r="1.8" fill="#fff"/><circle cx="-13" cy="78" r="1.8" fill="#fff"/><circle cx="0" cy="78" r="1.8" fill="#fff"/><circle cx="13" cy="78" r="1.8" fill="#fff"/><circle cx="26" cy="78" r="1.8" fill="#fff"/><circle cx="-26" cy="92" r="1.8" fill="#fff"/><circle cx="-13" cy="92" r="1.8" fill="#fff"/><circle cx="0" cy="92" r="1.8" fill="#fff"/><circle cx="13" cy="92" r="1.8" fill="#fff"/><circle cx="26" cy="92" r="1.8" fill="#fff"/><circle cx="-26" cy="106" r="1.8" fill="#fff"/><circle cx="-13" cy="106" r="1.8" fill="#fff"/><circle cx="0" cy="106" r="1.8" fill="#fff"/><circle cx="13" cy="106" r="1.8" fill="#fff"/><circle cx="26" cy="106" r="1.8" fill="#fff"/><circle cx="-26" cy="120" r="1.8" fill="#fff"/><circle cx="-13" cy="120" r="1.8" fill="#fff"/><circle cx="0" cy="120" r="1.8" fill="#fff"/><circle cx="13" cy="120" r="1.8" fill="#fff"/><circle cx="26" cy="120" r="1.8" fill="#fff"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><circle cx="110" cy="148" r="26" fill="#2a9d6f" stroke="#111" stroke-width="2"/><text x="40" y="30" text-anchor="middle" font-family="Bangers" font-size="9">1000 HEADS</text><text x="180" y="30" text-anchor="middle" font-family="Bangers" font-size="9">1000 EYES</text><text x="180" y="120" text-anchor="middle" font-family="Bangers" font-size="9">1000 FEET</text></svg><div class="mean">The Puruṣa has a thousand heads, a thousand eyes, a thousand feet. Covering the earth on every side, he stood ten fingers’ breadth beyond it.</div></div>
+    <div class="plain">The Cosmic Person has countless heads, eyes and feet. He wraps the whole earth, and still reaches beyond it.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">sahasra</td><td><b>a thousand</b>: here, countless</td></tr><tr><td class="w">śīrṣa · akṣa · pād</td><td><b>head</b> · <b>eye</b> · <b>foot</b></td></tr><tr><td class="w">puruṣaḥ</td><td><b>the Person</b>, the Cosmic Being</td></tr><tr><td class="w">viśvataḥ vṛtvā</td><td><b>covering on every side</b></td></tr><tr><td class="w">ati atiṣṭhat</td><td><b>stood beyond</b></td></tr><tr><td class="w">daśāṅgulam</td><td><b>ten fingers’ breadth</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>Everyone’s heads are His.</b> “A thousand” means beyond counting: every head that thinks, every eye that sees, every foot that walks belongs to the one Person. And He is not used up by the world: He fills it and stands beyond. “Ten fingers” is read by Sāyaṇa as “exceeding it”; some later teachers read it as the space of the heart, where He dwells in each of us.</div>
+  <div class="key">He fills the whole world <b>and still stands beyond it</b>.</div>
+</section>
+<section class="page" id="v2">
+  <h2 class="page-title">VERSE 2</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">ALL THIS IS HE</span></div>
+    <div class="iast"><span class="cl">puruṣa evedaṃ sarvaṃ</span><span class="cl cl2">yad bhūtaṃ yac ca bhavyam |</span><span class="cl">utāmṛtatvasyeśāno</span><span class="cl cl2">yad annenātirohati ‖2‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A timeline arrow from past to future passing through the blue Puruṣa, with grain growing at his feet"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 4) scale(0.75)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-26" cy="78" r="1.8" fill="#fff"/><circle cx="-13" cy="78" r="1.8" fill="#fff"/><circle cx="0" cy="78" r="1.8" fill="#fff"/><circle cx="13" cy="78" r="1.8" fill="#fff"/><circle cx="26" cy="78" r="1.8" fill="#fff"/><circle cx="-26" cy="92" r="1.8" fill="#fff"/><circle cx="-13" cy="92" r="1.8" fill="#fff"/><circle cx="0" cy="92" r="1.8" fill="#fff"/><circle cx="13" cy="92" r="1.8" fill="#fff"/><circle cx="26" cy="92" r="1.8" fill="#fff"/><circle cx="-26" cy="106" r="1.8" fill="#fff"/><circle cx="-13" cy="106" r="1.8" fill="#fff"/><circle cx="0" cy="106" r="1.8" fill="#fff"/><circle cx="13" cy="106" r="1.8" fill="#fff"/><circle cx="26" cy="106" r="1.8" fill="#fff"/><circle cx="-26" cy="120" r="1.8" fill="#fff"/><circle cx="-13" cy="120" r="1.8" fill="#fff"/><circle cx="0" cy="120" r="1.8" fill="#fff"/><circle cx="13" cy="120" r="1.8" fill="#fff"/><circle cx="26" cy="120" r="1.8" fill="#fff"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><path d="M10 130 H210" stroke="#111" stroke-width="3"/><text x="30" y="150" text-anchor="middle" font-family="Bangers" font-size="9">WHAT WAS</text><text x="190" y="150" text-anchor="middle" font-family="Bangers" font-size="9">WHAT WILL BE</text><path d="M80 128 q2 -14 0 -22" stroke="#d9a400" stroke-width="2" fill="none"/><path d="M90 128 q2 -14 0 -22" stroke="#d9a400" stroke-width="2" fill="none"/><path d="M100 128 q2 -14 0 -22" stroke="#d9a400" stroke-width="2" fill="none"/><path d="M110 128 q2 -14 0 -22" stroke="#d9a400" stroke-width="2" fill="none"/><path d="M120 128 q2 -14 0 -22" stroke="#d9a400" stroke-width="2" fill="none"/><path d="M130 128 q2 -14 0 -22" stroke="#d9a400" stroke-width="2" fill="none"/><path d="M140 128 q2 -14 0 -22" stroke="#d9a400" stroke-width="2" fill="none"/></svg><div class="mean">The Puruṣa alone is all this: whatever has been and whatever will be. He is the lord of immortality, and of all that grows by food.</div></div>
+    <div class="plain">Everything is the Cosmic Person: the past, the future, all of it. He rules over the deathless, and over everything that lives and grows by eating.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">puruṣa eva</td><td><b>the Person alone</b></td></tr><tr><td class="w">idaṃ sarvam</td><td><b>all this</b></td></tr><tr><td class="w">yad bhūtam</td><td><b>what has been</b></td></tr><tr><td class="w">yac ca bhavyam</td><td><b>and what will be</b></td></tr><tr><td class="w">amṛtatvasya īśānaḥ</td><td><b>lord of immortality</b></td></tr><tr><td class="w">annena atirohati</td><td><b>grows up by food</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>The most quoted line.</b> “Puruṣa evedaṃ sarvam” is the seed of the Upaniṣadic “sarvaṃ khalv idaṃ brahma”, “all this is Brahman”. The hymn holds two worlds in one Lord: the mortal world that lives by food, and the immortal beyond it.</div>
+  <div class="key">Past, present, future: <b>all of it is He</b>.</div>
+</section>
+<section class="page" id="v3">
+  <h2 class="page-title">VERSE 3</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">ONE QUARTER IS THE WORLD</span></div>
+    <div class="iast"><span class="cl">etāvān asya mahimā</span><span class="cl cl2">ato jyāyāṃś ca pūruṣaḥ |</span><span class="cl">pādo’sya viśvā bhūtāni</span><span class="cl cl2">tripād asyāmṛtaṃ divi ‖3‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A circle divided into four, one quarter showing the earth and living things, three quarters glowing gold as the immortal"><rect width="220" height="160" fill="#e3f2fd"/><circle cx="110" cy="80" r="62" fill="#ffd60a" stroke="#111" stroke-width="3"/><path d="M110 80 L110 142 A62 62 0 0 1 48 80z" fill="#2a9d6f" stroke="#111" stroke-width="3"/><text x="80" y="116" text-anchor="middle" font-family="Bangers" font-size="9">¼ WORLD</text><text x="130" y="60" text-anchor="middle" font-family="Bangers" font-size="11">¾ IMMORTAL</text></svg><div class="mean">Such is His greatness, and the Puruṣa is greater still. All beings are one quarter of Him; three quarters of Him are the immortal in heaven.</div></div>
+    <div class="plain">All this vast universe is only a small part of Him. Most of Him is beyond, deathless, in the highest heaven.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">etāvān</td><td><b>so great</b></td></tr><tr><td class="w">mahimā</td><td><b>greatness</b></td></tr><tr><td class="w">jyāyān</td><td><b>greater</b></td></tr><tr><td class="w">pādaḥ</td><td><b>a quarter</b> (literally a foot)</td></tr><tr><td class="w">viśvā bhūtāni</td><td><b>all beings</b></td></tr><tr><td class="w">tripād amṛtam</td><td><b>three quarters, immortal</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>The world is the smaller part.</b> All the galaxies are one “foot” of the Lord; the rest is beyond time and death. Later Vaiṣṇava teachers took this up: the material world is one part, the eternal realm (<i>tripād-vibhūti</i>, “the three-quarter glory”) the greater.</div>
+  <div class="key">The whole universe is <b>only a quarter of Him</b>.</div>
+</section>
+<section class="page" id="v4">
+  <h2 class="page-title">VERSE 4</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">SPREADING OUT</span></div>
+    <div class="iast"><span class="cl">tripād ūrdhva ud ait puruṣaḥ</span><span class="cl cl2">pādo’syehābhavat punaḥ |</span><span class="cl">tato viṣvaṅ vy akrāmat</span><span class="cl cl2">sāśanānaśane abhi ‖4‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="The Puruṣa rising upward in gold, while one quarter spreads down into animals and plants and stones"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 0) scale(0.6)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-26" cy="78" r="1.8" fill="#fff"/><circle cx="-13" cy="78" r="1.8" fill="#fff"/><circle cx="0" cy="78" r="1.8" fill="#fff"/><circle cx="13" cy="78" r="1.8" fill="#fff"/><circle cx="26" cy="78" r="1.8" fill="#fff"/><circle cx="-26" cy="92" r="1.8" fill="#fff"/><circle cx="-13" cy="92" r="1.8" fill="#fff"/><circle cx="0" cy="92" r="1.8" fill="#fff"/><circle cx="13" cy="92" r="1.8" fill="#fff"/><circle cx="26" cy="92" r="1.8" fill="#fff"/><circle cx="-26" cy="106" r="1.8" fill="#fff"/><circle cx="-13" cy="106" r="1.8" fill="#fff"/><circle cx="0" cy="106" r="1.8" fill="#fff"/><circle cx="13" cy="106" r="1.8" fill="#fff"/><circle cx="26" cy="106" r="1.8" fill="#fff"/><circle cx="-26" cy="120" r="1.8" fill="#fff"/><circle cx="-13" cy="120" r="1.8" fill="#fff"/><circle cx="0" cy="120" r="1.8" fill="#fff"/><circle cx="13" cy="120" r="1.8" fill="#fff"/><circle cx="26" cy="120" r="1.8" fill="#fff"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><path d="M110 100 l-70 40 M110 100 l70 40 M110 100 v44" stroke="#3b6fd0" stroke-width="4"/><text x="40" y="154" text-anchor="middle" font-family="Bangers" font-size="9">EATS</text><text x="180" y="154" text-anchor="middle" font-family="Bangers" font-size="9">DOES NOT EAT</text><text x="110" y="154" text-anchor="middle" font-family="Bangers" font-size="11">↓</text></svg><div class="mean">With three quarters the Puruṣa rose up on high; one quarter of Him came to be here again and again. From there He spread out in every direction, into what eats and what does not eat.</div></div>
+    <div class="plain">Most of Him rose above; one part became this world, over and over. From it He spread everywhere: into living things that eat and into things that do not.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">ūrdhvaḥ ud ait</td><td><b>went up on high</b></td></tr><tr><td class="w">iha abhavat punaḥ</td><td><b>came to be here again</b></td></tr><tr><td class="w">viṣvaṅ</td><td><b>everywhere</b>, in all directions</td></tr><tr><td class="w">vy akrāmat</td><td><b>strode out</b>, spread</td></tr><tr><td class="w">sāśana</td><td><b>with eating</b>: living beings</td></tr><tr><td class="w">anaśana</td><td><b>not eating</b>: the non-living</td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>“Again and again.”</b> The world is not made once; it comes and goes in cycles, and each time the Lord’s one quarter becomes it. <i>Vy akrāmat</i>, “He strode out”, uses the verb of Viṣṇu’s famous three strides.</div>
+  <div class="key">One part of Him became <b>everything, living and non-living</b>.</div>
+</section>
+<section class="page" id="v5">
+  <h2 class="page-title">VERSE 5</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">VIRĀJ, THE SHINING VASTNESS</span></div>
+    <div class="iast"><span class="cl">tasmād virāḍ ajāyata</span><span class="cl cl2">virājo adhi pūruṣaḥ |</span><span class="cl">sa jāto aty aricyata</span><span class="cl cl2">paścād bhūmim atho puraḥ ‖5‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A glowing cosmic egg born from the Puruṣa, and from it a person emerging who stretches beyond the earth"><rect width="220" height="160" fill="#e3f2fd"/><ellipse cx="110" cy="70" rx="50" ry="40" fill="#ffd60a" stroke="#ff8c1a" stroke-width="4"/><g transform="translate(110 20) scale(0.45)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><circle cx="110" cy="146" r="16" fill="#2a9d6f" stroke="#111" stroke-width="2"/><text x="110" y="22" text-anchor="middle" font-family="Bangers" font-size="13">VIRĀJ</text></svg><div class="mean">From Him Virāj was born; from Virāj, the Puruṣa. Once born, He reached beyond the earth, behind and in front.</div></div>
+    <div class="plain">From the Person came Virāj, the shining universe; and within Virāj the Person was born again, overflowing the earth on every side.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">tasmāt</td><td><b>from Him</b></td></tr><tr><td class="w">virāṭ</td><td><b>Virāj</b>: the shining, vast one</td></tr><tr><td class="w">ajāyata</td><td><b>was born</b></td></tr><tr><td class="w">adhi</td><td><b>from, upon</b></td></tr><tr><td class="w">aty aricyata</td><td><b>exceeded</b>, overflowed</td></tr><tr><td class="w">paścāt · puraḥ</td><td><b>behind</b> · <b>in front</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>Born from each other.</b> The Puruṣa gives birth to Virāj, the cosmic body, and then is born within it as its living spirit. Sāyaṇa reads Virāj as the universe as one body, the “egg of Brahmā”, and the second Puruṣa as the soul that enlivens it.</div>
+  <div class="key">He makes the universe, <b>then lives inside it</b>.</div>
+</section>
+<section class="page" id="v6">
+  <h2 class="page-title">VERSE 6</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE SEASONS AS OFFERINGS</span></div>
+    <div class="iast"><span class="cl">yat puruṣeṇa haviṣā</span><span class="cl cl2">devā yajñam atanvata |</span><span class="cl">vasanto asyāsīd ājyaṃ</span><span class="cl cl2">grīṣma idhmaḥ śarad dhaviḥ ‖6‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A sacred fire with three seasons feeding it: spring as ghee, summer as firewood, autumn as the offering"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 110) scale(1.3)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g><text x="40" y="40" text-anchor="middle" font-family="Bangers" font-size="9">SPRING · GHEE</text><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="9">SUMMER · FUEL</text><text x="180" y="40" text-anchor="middle" font-family="Bangers" font-size="9">AUTUMN · OFFERING</text><circle cx="40" cy="60" r="8" fill="#9be38a" stroke="#111"/><circle cx="110" cy="48" r="10" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/><path d="M172 54 l8 12 l8 -12z" fill="#d9822b" stroke="#111"/></svg><div class="mean">When the gods spread out the sacrifice with the Puruṣa as the offering, spring was its ghee, summer its firewood, autumn its oblation.</div></div>
+    <div class="plain">The gods held a great fire-ritual, and the offering was the Cosmic Person Himself. The seasons became its materials: spring the ghee, summer the fuel, autumn the offering.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">puruṣeṇa haviṣā</td><td><b>with the Puruṣa as the offering</b></td></tr><tr><td class="w">yajñam atanvata</td><td><b>spread out the sacrifice</b></td></tr><tr><td class="w">vasantaḥ · ājyam</td><td><b>spring</b> · <b>ghee</b></td></tr><tr><td class="w">grīṣmaḥ · idhmaḥ</td><td><b>summer</b> · <b>firewood</b></td></tr><tr><td class="w">śarad · haviḥ</td><td><b>autumn</b> · <b>oblation</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>Creation as a sacrifice.</b> This is the hymn’s great image: the world comes from an act of giving. Time itself, the turning year, is the ritual. Every season “burns” to keep the world going.</div>
+  <div class="key">The world began as <b>a great act of giving</b>.</div>
+</section>
+<section class="page" id="v7">
+  <h2 class="page-title">VERSE 7</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">ON THE SACRED GRASS</span></div>
+    <div class="iast"><span class="cl">taṃ yajñaṃ barhiṣi praukṣan</span><span class="cl cl2">puruṣaṃ jātam agrataḥ |</span><span class="cl">tena devā ayajanta</span><span class="cl cl2">sādhyā ṛṣayaś ca ye ‖7‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Gods and sages sprinkling water on the radiant Puruṣa laid on a bed of sacred grass before the fire"><rect width="220" height="160" fill="#e3f2fd"/><path d="M40 132 l-1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M46 132 l0 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M52 132 l1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M58 132 l-1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M64 132 l0 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M70 132 l1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M76 132 l-1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M82 132 l0 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M88 132 l1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M94 132 l-1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M100 132 l0 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M106 132 l1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M112 132 l-1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M118 132 l0 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M124 132 l1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M130 132 l-1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M136 132 l0 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M142 132 l1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M148 132 l-1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M154 132 l0 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M160 132 l1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M166 132 l-1 -12" stroke="#2a7a4a" stroke-width="2"/><path d="M172 132 l0 -12" stroke="#2a7a4a" stroke-width="2"/><g transform="translate(110 10) scale(0.55)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-26" cy="78" r="1.8" fill="#fff"/><circle cx="-13" cy="78" r="1.8" fill="#fff"/><circle cx="0" cy="78" r="1.8" fill="#fff"/><circle cx="13" cy="78" r="1.8" fill="#fff"/><circle cx="26" cy="78" r="1.8" fill="#fff"/><circle cx="-26" cy="92" r="1.8" fill="#fff"/><circle cx="-13" cy="92" r="1.8" fill="#fff"/><circle cx="0" cy="92" r="1.8" fill="#fff"/><circle cx="13" cy="92" r="1.8" fill="#fff"/><circle cx="26" cy="92" r="1.8" fill="#fff"/><circle cx="-26" cy="106" r="1.8" fill="#fff"/><circle cx="-13" cy="106" r="1.8" fill="#fff"/><circle cx="0" cy="106" r="1.8" fill="#fff"/><circle cx="13" cy="106" r="1.8" fill="#fff"/><circle cx="26" cy="106" r="1.8" fill="#fff"/><circle cx="-26" cy="120" r="1.8" fill="#fff"/><circle cx="-13" cy="120" r="1.8" fill="#fff"/><circle cx="0" cy="120" r="1.8" fill="#fff"/><circle cx="13" cy="120" r="1.8" fill="#fff"/><circle cx="26" cy="120" r="1.8" fill="#fff"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><g transform="translate(22 140) scale(0.45)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ffd60a"/></g><g transform="translate(40 140) scale(0.45)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#fff"/></g><g transform="translate(58 140) scale(0.45)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><g transform="translate(162 140) scale(0.45)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#fff"/></g><g transform="translate(180 140) scale(0.45)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ffd60a"/></g><g transform="translate(198 140) scale(0.45)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><text x="110" y="156" text-anchor="middle" font-family="Bangers" font-size="10">BARHIS</text></svg><div class="mean">That sacrifice, the Puruṣa born in the beginning, they sprinkled on the sacred grass. With Him the gods sacrificed, and the Sādhyas, and the seers.</div></div>
+    <div class="plain">They consecrated the first-born Person on the sacred grass, and with Him the gods, the Sādhyas and the sages performed the sacrifice.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">barhiṣi</td><td><b>on the sacred grass</b> (barhis, kuśa)</td></tr><tr><td class="w">praukṣan</td><td><b>they sprinkled</b>, consecrated</td></tr><tr><td class="w">jātam agrataḥ</td><td><b>born first</b>, in the beginning</td></tr><tr><td class="w">ayajanta</td><td><b>they sacrificed</b></td></tr><tr><td class="w">sādhyāḥ</td><td><b>the Sādhyas</b>, an ancient class of gods</td></tr><tr><td class="w">ṛṣayaḥ</td><td><b>the seers</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>The sacrifice is the Person.</b> Here <i>yajña</i> and <i>puruṣa</i> are the same: “that sacrifice, the Puruṣa”. Later texts say it outright: <i>yajño vai viṣṇuḥ</i>, “the sacrifice is Viṣṇu”. Every later ritual on kuśa grass re-enacts this first one.</div>
+  <div class="key">The first sacrifice <b>was the Lord Himself</b>.</div>
+</section>
+<section class="page" id="v8">
+  <h2 class="page-title">VERSE 8</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE CREATURES ARE MADE</span></div>
+    <div class="iast"><span class="cl">tasmād yajñāt sarvahutaḥ</span><span class="cl cl2">sambhṛtaṃ pṛṣadājyam |</span><span class="cl">paśūn tāṃś cakre vāyavyān</span><span class="cl cl2">āraṇyān grāmyāś ca ye ‖8‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="From the fire rise birds in the air, deer of the forest and cattle of the village"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 120) scale(1)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g><path d="M30 40 q6 -8 12 0 q6 -8 12 0" stroke="#111" stroke-width="2" fill="none"/><path d="M60 50 q6 -8 12 0 q6 -8 12 0" stroke="#111" stroke-width="2" fill="none"/><path d="M90 40 q6 -8 12 0 q6 -8 12 0" stroke="#111" stroke-width="2" fill="none"/><path d="M120 50 q6 -8 12 0 q6 -8 12 0" stroke="#111" stroke-width="2" fill="none"/><path d="M150 40 q6 -8 12 0 q6 -8 12 0" stroke="#111" stroke-width="2" fill="none"/><path d="M180 50 q6 -8 12 0 q6 -8 12 0" stroke="#111" stroke-width="2" fill="none"/><text x="40" y="100" text-anchor="middle" font-family="Bangers" font-size="9">FOREST</text><text x="180" y="100" text-anchor="middle" font-family="Bangers" font-size="9">VILLAGE</text><text x="110" y="20" text-anchor="middle" font-family="Bangers" font-size="9">AIR</text><path d="M24 120 l6 -14 l6 14 M30 106 l-4 -8 M30 106 l4 -8" stroke="#7a5a3a" stroke-width="2" fill="none"/><rect x="166" y="110" width="26" height="14" rx="6" fill="#fff" stroke="#111" stroke-width="2"/></svg><div class="mean">From that sacrifice, offered whole, the clotted ghee was gathered. He made the creatures of the air, and those of the forest and of the village.</div></div>
+    <div class="plain">From that all-offering sacrifice came the rich ghee, and from it He made the birds, the wild animals and the tame.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">sarvahutaḥ</td><td><b>fully offered</b>, all-offered</td></tr><tr><td class="w">sambhṛtam</td><td><b>was gathered</b></td></tr><tr><td class="w">pṛṣad-ājyam</td><td><b>clotted ghee</b>, butter mixed with curd</td></tr><tr><td class="w">vāyavyān</td><td><b>of the air</b>: birds</td></tr><tr><td class="w">āraṇyān</td><td><b>of the forest</b>: wild</td></tr><tr><td class="w">grāmyāḥ</td><td><b>of the village</b>: domestic</td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>Life from the offering.</b> The ghee of the cosmic sacrifice becomes living creatures. Air, forest, village: the hymn sorts animals as the Vedic world saw them, wild and tame, and all of them come from the same Lord.</div>
+  <div class="key">Every creature <b>came from the same offering</b>.</div>
+</section>
+<section class="page" id="v9">
+  <h2 class="page-title">VERSE 9</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE VEDAS ARE BORN</span></div>
+    <div class="iast"><span class="cl">tasmād yajñāt sarvahuta</span><span class="cl cl2">ṛcaḥ sāmāni jajñire |</span><span class="cl">chandāṃsi jajñire tasmād</span><span class="cl cl2">yajus tasmād ajāyata ‖9‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Three scrolls rising from the sacred fire, labelled Ṛk, Sāman and Yajus, with musical notes around them"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 126) scale(1)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g><rect x="38" y="40" width="34" height="50" rx="4" fill="#fff3b0" stroke="#111" stroke-width="2"/><text x="55" y="70" text-anchor="middle" font-family="Bangers" font-size="10">ṚK</text><rect x="94" y="40" width="34" height="50" rx="4" fill="#fff3b0" stroke="#111" stroke-width="2"/><text x="111" y="70" text-anchor="middle" font-family="Bangers" font-size="10">SĀMA</text><rect x="150" y="40" width="34" height="50" rx="4" fill="#fff3b0" stroke="#111" stroke-width="2"/><text x="167" y="70" text-anchor="middle" font-family="Bangers" font-size="10">YAJUS</text><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10">♪ CHANDAS ♪</text></svg><div class="mean">From that sacrifice, offered whole, the verses (ṛc) and the chants (sāman) were born. The metres were born from it; from it the ritual formulas (yajus) were born.</div></div>
+    <div class="plain">The Vedas themselves came from that sacrifice: the hymns, the songs, the metres and the ritual formulas.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">ṛcaḥ</td><td><b>verses</b>: the Ṛg Veda</td></tr><tr><td class="w">sāmāni</td><td><b>chants</b>: the Sāma Veda</td></tr><tr><td class="w">chandāṃsi</td><td><b>the metres</b></td></tr><tr><td class="w">yajuḥ</td><td><b>ritual formulas</b>: the Yajur Veda</td></tr><tr><td class="w">jajñire</td><td><b>were born</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>Even the Veda is born.</b> The sacred word is not separate from the Lord; it comes out of Him like everything else. The tradition takes this to mean the Vedas are not man-made (<i>apauruṣeya</i>), but “breathed out” by the Supreme.</div>
+  <div class="key">The sacred word itself <b>was born from Him</b>.</div>
+</section>
+<section class="page" id="v10">
+  <h2 class="page-title">VERSE 10</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">HORSES, COWS, GOATS, SHEEP</span></div>
+    <div class="iast"><span class="cl">tasmād aśvā ajāyanta</span><span class="cl cl2">ye ke cobhayādataḥ |</span><span class="cl">gāvo ha jajñire tasmāt</span><span class="cl cl2">tasmāj jātā ajāvayaḥ ‖10‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A horse, a cow, a goat and a sheep standing in a row beside the sacred fire"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(30 120) scale(0.7)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g><rect x="60" y="82" width="30" height="20" rx="6" fill="#7a5a3a" stroke="#111" stroke-width="2"/><circle cx="90" cy="78" r="7" fill="#7a5a3a" stroke="#111" stroke-width="2"/><text x="75" y="140" text-anchor="middle" font-family="Bangers" font-size="9">HORSE</text><rect x="98" y="88" width="27" height="18" rx="6" fill="#fff" stroke="#111" stroke-width="2"/><circle cx="125" cy="84" r="6" fill="#fff" stroke="#111" stroke-width="2"/><text x="113" y="140" text-anchor="middle" font-family="Bangers" font-size="9">COW</text><rect x="136" y="94" width="24" height="16" rx="6" fill="#ccc" stroke="#111" stroke-width="2"/><circle cx="160" cy="90" r="5" fill="#ccc" stroke="#111" stroke-width="2"/><text x="151" y="140" text-anchor="middle" font-family="Bangers" font-size="9">GOAT</text><rect x="174" y="100" width="21" height="14" rx="6" fill="#fff8ec" stroke="#111" stroke-width="2"/><circle cx="195" cy="96" r="4" fill="#fff8ec" stroke="#111" stroke-width="2"/><text x="189" y="140" text-anchor="middle" font-family="Bangers" font-size="9">SHEEP</text></svg><div class="mean">From it were born horses, and all animals with teeth in both jaws. Cows were born from it; from it were born goats and sheep.</div></div>
+    <div class="plain">Horses and all animals with two rows of teeth, cows, goats and sheep: all came from that sacrifice.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">aśvāḥ</td><td><b>horses</b></td></tr><tr><td class="w">ubhayādataḥ</td><td><b>with teeth in both jaws</b></td></tr><tr><td class="w">gāvaḥ</td><td><b>cows</b></td></tr><tr><td class="w">ajāvayaḥ</td><td><b>goats and sheep</b> (ajā + avi)</td></tr><tr><td class="w">ajāyanta · jajñire</td><td><b>were born</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>The animals of Vedic life.</b> Horse, cow, goat, sheep: the wealth of the Vedic household. The verse sees even the herd and the stable as gifts from the one source.</div>
+  <div class="key">The animals that sustain us <b>are His gift</b>.</div>
+</section>
+<section class="page" id="v11">
+  <h2 class="page-title">VERSE 11</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE GREAT QUESTION</span></div>
+    <div class="iast"><span class="cl">yat puruṣaṃ vy adadhuḥ</span><span class="cl cl2">katidhā vy akalpayan |</span><span class="cl">mukhaṃ kim asya kau bāhū</span><span class="cl cl2">kā ūrū pādā ucyete ‖11‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="The outline of the cosmic Person with question marks at the mouth, arms, thighs and feet"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 0) scale(0.95)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><text x="110" y="30" text-anchor="middle" font-family="Bangers" font-size="20" fill="#e63946">?</text><text x="40" y="110" text-anchor="middle" font-family="Bangers" font-size="20" fill="#e63946">?</text><text x="180" y="110" text-anchor="middle" font-family="Bangers" font-size="20" fill="#e63946">?</text><text x="110" y="120" text-anchor="middle" font-family="Bangers" font-size="20" fill="#e63946">?</text><text x="110" y="158" text-anchor="middle" font-family="Bangers" font-size="20" fill="#e63946">?</text></svg><div class="mean">When they divided the Puruṣa, into how many parts did they arrange Him? What was His mouth? What were His two arms? What are His thighs and feet called?</div></div>
+    <div class="plain">When the gods shared out the Cosmic Person, how did they arrange Him? What became His mouth, His arms, His thighs, His feet?</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">vy adadhuḥ</td><td><b>they divided</b>, distributed</td></tr><tr><td class="w">katidhā</td><td><b>in how many ways?</b></td></tr><tr><td class="w">vy akalpayan</td><td><b>they arranged</b></td></tr><tr><td class="w">mukham</td><td><b>mouth</b></td></tr><tr><td class="w">bāhū</td><td><b>the two arms</b></td></tr><tr><td class="w">ūrū · pādau</td><td><b>thighs</b> · <b>feet</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>A riddle, Vedic style.</b> The hymn now asks questions it will answer in the next three verses. One body, divided: the answers will map the parts of the Person onto society (verse 12) and the cosmos (verses 13–14).</div>
+  <div class="key">One body, <b>divided into many parts</b>: which part became what?</div>
+</section>
+<section class="page" id="v12">
+  <h2 class="page-title">VERSE 12</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">MOUTH, ARMS, THIGHS, FEET</span></div>
+    <div class="iast"><span class="cl">brāhmaṇo’sya mukham āsīd</span><span class="cl cl2">bāhū rājanyaḥ kṛtaḥ |</span><span class="cl">ūrū tad asya yad vaiśyaḥ</span><span class="cl cl2">padbhyāṃ śūdro ajāyata ‖12‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="The cosmic Person with four labels pointing to the mouth, arms, thighs and feet"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 0) scale(0.95)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><text x="110" y="14" text-anchor="middle" font-family="Bangers" font-size="9">MOUTH</text><text x="30" y="100" text-anchor="middle" font-family="Bangers" font-size="9">ARMS</text><text x="190" y="100" text-anchor="middle" font-family="Bangers" font-size="9">ARMS</text><text x="160" y="128" text-anchor="middle" font-family="Bangers" font-size="9">THIGHS</text><text x="110" y="158" text-anchor="middle" font-family="Bangers" font-size="9">FEET</text></svg><div class="mean">The brāhmaṇa was His mouth; the rājanya was made His arms; His thighs became the vaiśya; from His feet the śūdra was born.</div></div>
+    <div class="plain">The four social orders of the Vedic world, priest, ruler, trader and worker, are pictured as mouth, arms, thighs and feet of one body.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">brāhmaṇaḥ</td><td><b>the priest-teacher</b></td></tr><tr><td class="w">rājanyaḥ</td><td><b>the ruler-warrior</b> (later: kṣatriya)</td></tr><tr><td class="w">vaiśyaḥ</td><td><b>the farmer-trader</b></td></tr><tr><td class="w">śūdraḥ</td><td><b>the worker</b></td></tr><tr><td class="w">mukham · bāhū</td><td><b>mouth</b> · <b>arms</b></td></tr><tr><td class="w">ūrū · padbhyām</td><td><b>thighs</b> · <b>from the feet</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>The most discussed verse in the Vedas.</b> It names the four orders (varṇa) as parts of one body. It has been read in very different ways: as a picture of unity, where every part is needed; as a charter for hierarchy; and by many scholars as a later addition. The next page sets out the main views.</div>
+  <div class="key">Four orders, pictured as <b>one body</b>: see the next page for how it is read.</div>
+  <div class="note">This is the only verse of the Ṛg Veda that names all four orders together.</div>
+</section>
+<section class="page" id="v12b">
+  <h2 class="page-title">READING VERSE 12</h2>
+  <div class="sub">The most debated verse in the Vedas: the main views, side by side</div>
+  <table class="ct">
+    <tr><th>View</th><th>How it reads the verse</th></tr>
+    <tr><td><b>The plain sense</b></td><td>Four social orders, pictured as mouth, arms, thighs and feet of one cosmic body. It is the only Ṛg Veda verse that names all four together.</td></tr>
+    <tr><td><b>One body</b></td><td>Many traditional readers stress unity: every part belongs to the same Person and the body needs all of them. The same body gives the moon, the sun and the earth (verses 13–14).</td></tr>
+    <tr><td><b>Quality and work</b></td><td>The Gītā says the four orders were made “by division of qualities and work” (<i>guṇa-karma-vibhāgaśaḥ</i>, 4.13); many teachers read varṇa as nature and calling rather than birth.</td></tr>
+    <tr><td><b>A later addition</b></td><td>Max Müller and many later scholars saw the hymn as late in its language and ideas, and the varṇa verse as inserted later. Some describe it as a “charter myth” for social order.</td></tr>
+    <tr><td><b>Original to the hymn</b></td><td>Other scholars hold that the verse belongs to the hymn as composed. The question is still argued.</td></tr>
+  </table>
+  <div class="panel reading pt"><p><b>What is widely agreed.</b> The later caste system, with fixed birth-groups and rules on marriage and eating together, grew far more elaborate and rigid than anything the Ṛg Veda describes. The Ṛg Veda itself never hints at such rules.</p></div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So which reading is right?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Scholars and teachers still disagree. What everyone can see: the hymn's main message is that all of it, every part, is one Person.</p></div></div>
+  <div class="key">Read in many ways; <b>one body, one Person</b> is the hymn’s own frame.</div>
+</section>
+<section class="page" id="v13">
+  <h2 class="page-title">VERSE 13</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">MOON FROM MIND, SUN FROM EYE</span></div>
+    <div class="iast"><span class="cl">candramā manaso jātaś</span><span class="cl cl2">cakṣoḥ sūryo ajāyata |</span><span class="cl">mukhād indraś cāgniś ca</span><span class="cl cl2">prāṇād vāyur ajāyata ‖13‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="The cosmic Person in a night sky, with the moon at his forehead, the sun at his eye, fire at his mouth and wind from his breath"><rect width="220" height="160" fill="#e3f2fd"/><rect width="220" height="160" fill="#0d1b3a"/><text x="5" y="25" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="116" y="18" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="17" y="71" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="128" y="64" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="29" y="57" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="140" y="50" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="41" y="43" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="152" y="36" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="53" y="29" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="164" y="22" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="65" y="15" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="176" y="68" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="77" y="61" font-family="Bangers" font-size="9" fill="#fff">✦</text><text x="188" y="54" font-family="Bangers" font-size="9" fill="#fff">✦</text><g transform="translate(110 14) scale(0.85)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-26" cy="78" r="1.8" fill="#fff"/><circle cx="-13" cy="78" r="1.8" fill="#fff"/><circle cx="0" cy="78" r="1.8" fill="#fff"/><circle cx="13" cy="78" r="1.8" fill="#fff"/><circle cx="26" cy="78" r="1.8" fill="#fff"/><circle cx="-26" cy="92" r="1.8" fill="#fff"/><circle cx="-13" cy="92" r="1.8" fill="#fff"/><circle cx="0" cy="92" r="1.8" fill="#fff"/><circle cx="13" cy="92" r="1.8" fill="#fff"/><circle cx="26" cy="92" r="1.8" fill="#fff"/><circle cx="-26" cy="106" r="1.8" fill="#fff"/><circle cx="-13" cy="106" r="1.8" fill="#fff"/><circle cx="0" cy="106" r="1.8" fill="#fff"/><circle cx="13" cy="106" r="1.8" fill="#fff"/><circle cx="26" cy="106" r="1.8" fill="#fff"/><circle cx="-26" cy="120" r="1.8" fill="#fff"/><circle cx="-13" cy="120" r="1.8" fill="#fff"/><circle cx="0" cy="120" r="1.8" fill="#fff"/><circle cx="13" cy="120" r="1.8" fill="#fff"/><circle cx="26" cy="120" r="1.8" fill="#fff"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><path d="M70 28 a12 12 0 1 0 0 24 a15.6 15.6 0 0 1 0 -24z" fill="#fff8c0" stroke="#111" stroke-width="2"/><circle cx="150" cy="40" r="11" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/><g transform="translate(110 58) scale(0.35)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g><path d="M140 80 q20 -6 40 4 q-14 6 -30 2" fill="none" stroke="#9fd3f0" stroke-width="3"/><text x="190" y="98" text-anchor="middle" font-family="Bangers" fill="#fff" font-size="9">VĀYU</text></svg><div class="mean">The moon was born from His mind; from His eye the sun was born. From His mouth came Indra and Agni; from His breath Vāyu was born.</div></div>
+    <div class="plain">His mind became the moon, His eye the sun, His mouth Indra and fire, His breath the wind.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">candramāḥ · manasaḥ</td><td><b>the moon</b> · <b>from the mind</b></td></tr><tr><td class="w">sūryaḥ · cakṣoḥ</td><td><b>the sun</b> · <b>from the eye</b></td></tr><tr><td class="w">indraḥ · agniḥ</td><td><b>Indra</b>, king of gods · <b>Agni</b>, fire</td></tr><tr><td class="w">vāyuḥ · prāṇāt</td><td><b>the wind</b> · <b>from the breath</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>We and the cosmos are made alike.</b> Mind and moon, eye and sun, breath and wind: the inner world mirrors the outer. The Upaniṣads build on exactly this matching of body (<i>adhyātma</i>) and universe (<i>adhidaiva</i>).</div>
+  <div class="key">Your mind, eye and breath <b>are kin to moon, sun and wind</b>.</div>
+</section>
+<section class="page" id="v14">
+  <h2 class="page-title">VERSE 14</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE THREE WORLDS</span></div>
+    <div class="iast"><span class="cl">nābhyā āsīd antarikṣaṃ</span><span class="cl cl2">śīrṣṇo dyauḥ sam avartata |</span><span class="cl">padbhyāṃ bhūmir diśaḥ śrotrāt</span><span class="cl cl2">tathā lokāṃ akalpayan ‖14‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="The cosmic Person standing across three bands: sky at the head, mid-air at the navel, earth at the feet, with arrows to four directions from his ears"><rect width="220" height="160" fill="#e3f2fd"/><rect width="220" height="54" fill="#1d6fb8"/><rect y="54" width="220" height="54" fill="#9fd3f0"/><rect y="108" width="220" height="52" fill="#2a9d6f"/><g transform="translate(110 0) scale(0.95)" stroke="#111" stroke-width="2.2"><circle cx="-22" cy="30" r="7" fill="#5b8fe0"/><circle cx="22" cy="30" r="7" fill="#5b8fe0"/><circle cx="-12" cy="18" r="7" fill="#5b8fe0"/><circle cx="12" cy="18" r="7" fill="#5b8fe0"/><circle cy="36" r="15" fill="#3b6fd0"/><path d="M-38 150 q-6 -70 38 -100 q44 30 38 100z" fill="#1f4fa8"/><path d="M-36 80 q-24 10 -32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><path d="M36 80 q24 10 32 34" fill="none" stroke="#1f4fa8" stroke-width="9"/><circle cx="-5" cy="34" r="2" fill="#fff"/><circle cx="5" cy="34" r="2" fill="#fff"/></g><text x="28" y="30" text-anchor="middle" font-family="Bangers" font-size="10">SKY</text><text x="30" y="84" text-anchor="middle" font-family="Bangers" font-size="10">MID-AIR</text><text x="28" y="140" text-anchor="middle" font-family="Bangers" font-size="10">EARTH</text><text x="190" y="30" text-anchor="middle" font-family="Bangers" font-size="9">↔ DIRECTIONS</text></svg><div class="mean">From His navel came the mid-air; from His head the sky came forth; from His feet the earth, from His ear the directions. So they fashioned the worlds.</div></div>
+    <div class="plain">His navel became the space between, His head the heavens, His feet the earth, His ears the four quarters. That is how the worlds were shaped.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">nābhyāḥ · antarikṣam</td><td><b>from the navel</b> · <b>mid-air</b></td></tr><tr><td class="w">śīrṣṇaḥ · dyauḥ</td><td><b>from the head</b> · <b>the sky</b></td></tr><tr><td class="w">padbhyām · bhūmiḥ</td><td><b>from the feet</b> · <b>the earth</b></td></tr><tr><td class="w">śrotrāt · diśaḥ</td><td><b>from the ear</b> · <b>the directions</b></td></tr><tr><td class="w">lokān akalpayan</td><td><b>they fashioned the worlds</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>The universe is His body.</b> Sky, air and earth, the three Vedic worlds, are head, navel and feet. This is the root of the later <i>viśvarūpa</i>, the “universal form” that Kṛṣṇa shows Arjuna in the Gītā, and of Vaiṣṇava teaching that the world is the body of the Lord.</div>
+  <div class="key">Sky, air and earth <b>are the body of the Lord</b>.</div>
+</section>
+<section class="page" id="v15">
+  <h2 class="page-title">VERSE 15</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">SEVEN AND TWENTY-ONE</span></div>
+    <div class="iast"><span class="cl">saptāsyāsan paridhayas</span><span class="cl cl2">triḥ sapta samidhaḥ kṛtāḥ |</span><span class="cl">devā yad yajñaṃ tanvānā</span><span class="cl cl2">abadhnan puruṣaṃ paśum ‖15‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A fire altar enclosed by seven sticks, with twenty-one fuel sticks stacked beside it"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 100) scale(1.2)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g><path d="M108 60 l0 22" stroke="#7a5a3a" stroke-width="5"/><path d="M159 74 l0 22" stroke="#7a5a3a" stroke-width="5"/><path d="M173 108 l0 22" stroke="#7a5a3a" stroke-width="5"/><path d="M139 136 l0 22" stroke="#7a5a3a" stroke-width="5"/><path d="M83 136 l0 22" stroke="#7a5a3a" stroke-width="5"/><path d="M48 110 l0 22" stroke="#7a5a3a" stroke-width="5"/><path d="M59 76 l0 22" stroke="#7a5a3a" stroke-width="5"/><path d="M20 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M24 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M28 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M32 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M36 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M40 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M44 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M48 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M52 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M56 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M60 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M64 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M68 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M72 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M76 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M80 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M84 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M88 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M92 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M96 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><path d="M100 150 l0 -30" stroke="#c9a26b" stroke-width="3"/><text x="60" y="112" text-anchor="middle" font-family="Bangers" font-size="12">21</text><text x="190" y="30" text-anchor="middle" font-family="Bangers" font-size="16">7</text></svg><div class="mean">Seven were its enclosing sticks; thrice seven fuel sticks were made, when the gods, spreading out the sacrifice, bound the Puruṣa as the victim.</div></div>
+    <div class="plain">The altar had seven boundary sticks and twenty-one sticks of firewood, when the gods performed the sacrifice with the Cosmic Person as its offering.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">sapta paridhayaḥ</td><td><b>seven enclosing sticks</b></td></tr><tr><td class="w">triḥ sapta</td><td><b>three times seven</b></td></tr><tr><td class="w">samidhaḥ</td><td><b>fuel sticks</b></td></tr><tr><td class="w">tanvānāḥ</td><td><b>spreading out</b>, performing</td></tr><tr><td class="w">abadhnan</td><td><b>they bound</b></td></tr><tr><td class="w">paśum</td><td><b>as the victim</b>, the offering</td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>Numbers in ritual.</b> Seven and twenty-one are sacred Vedic numbers. Sāyaṇa reads the seven enclosures as the seven metres, and the twenty-one fuel sticks as the twelve months, five seasons, three worlds and the sun. The point: the whole cosmos is the altar.</div>
+  <div class="key">The whole cosmos <b>is the altar</b>.</div>
+  <div class="note">In the Taittirīya recitation this verse comes earlier, right after verse 6.</div>
+</section>
+<section class="page" id="v16">
+  <h2 class="page-title">VERSE 16</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE FIRST DHARMAS</span></div>
+    <div class="iast"><span class="cl">yajñena yajñam ayajanta devās</span><span class="cl cl2">tāni dharmāṇi prathamāny āsan |</span><span class="cl">te ha nākaṃ mahimānaḥ sacanta</span><span class="cl cl2">yatra pūrve sādhyāḥ santi devāḥ ‖16‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Gods rising up from the sacred fire toward a golden heaven where the ancient Sādhyas wait"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(110 126) scale(1)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g><path d="M0 0 H220 V40 Q110 60 0 40z" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/><g transform="translate(40 90) scale(0.5)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#fff"/></g><g transform="translate(74 90) scale(0.5)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ffd60a"/></g><g transform="translate(108 90) scale(0.5)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><g transform="translate(142 90) scale(0.5)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#fff"/></g><g transform="translate(176 90) scale(0.5)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#ffd60a"/></g><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="11">NĀKA · HEAVEN</text><path d="M110 108 L110 62" stroke="#111" stroke-width="2" marker-end="url(#ah)"/><defs><marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#111"/></marker></defs></svg><div class="mean">With the sacrifice the gods sacrificed to the sacrifice: these were the first dharmas. These mighty ones reached the vault of heaven, where the ancient Sādhyas, the gods, dwell.</div></div>
+    <div class="plain">The gods worshipped the Lord through the Lord Himself. That was the first law of the world. By it they reached heaven, where the first gods live.</div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">yajñena yajñam</td><td><b>by sacrifice, to sacrifice</b></td></tr><tr><td class="w">dharmāṇi prathamāni</td><td><b>the first dharmas</b>, the first laws</td></tr><tr><td class="w">nākam</td><td><b>the vault of heaven</b></td></tr><tr><td class="w">mahimānaḥ</td><td><b>the mighty ones</b></td></tr><tr><td class="w">sacanta</td><td><b>reached</b>, attained</td></tr><tr><td class="w">pūrve sādhyāḥ</td><td><b>the ancient Sādhyas</b></td></tr></table>
+  </div>
+  <div class="panel reading pt"><b>The circle closes.</b> The offering, the offerer and the one offered to are all the same Lord. And that first sacrifice became the pattern, the <i>dharma</i>, for every act of worship since. Note the change of metre: this last verse is in the longer <b>triṣṭubh</b>, a grand closing.</div>
+  <div class="key">Worship is the Lord, <b>offered to the Lord, by the Lord</b>.</div>
+</section>
+<section class="page" id="taitt">
+  <h2 class="page-title">THE TAITTIRĪYA VERSES</h2>
+  <div class="sub">The version chanted in South Indian temples and homes</div>
+  <p class="pt" style="margin:4px 0">The <b>Taittirīya Āraṇyaka</b> (3.12–13) version changes the order a little (verse 15 follows verse 6) and adds verses. Two of the best-loved come before the final verse:</p>
+  <div class="sloka" style="margin-top:4px">
+    <div class="iast"><span class="cl">vedāham etaṃ puruṣaṃ mahāntam</span><span class="cl cl2">ādityavarṇaṃ tamasas tu pāre |</span><span class="cl">sarvāṇi rūpāṇi vicitya dhīraḥ</span><span class="cl cl2">nāmāni kṛtvābhivadan yad āste ‖</span></div>
+    <div class="mean">I know this great Person, bright as the sun, beyond all darkness: the wise One who shaped every form, gave each its name, and abides, calling them.</div>
+    <div class="iast"><span class="cl">dhātā purastād yam udājahāra</span><span class="cl cl2">śakraḥ pravidvān pradiśaś catasraḥ |</span><span class="cl">tam evaṃ vidvān amṛta iha bhavati</span><span class="cl cl2">nānyaḥ panthā ayanāya vidyate ‖</span></div>
+    <div class="mean">Him whom the Creator proclaimed of old, and Indra, knowing, in all four directions: whoever knows Him thus becomes immortal here. There is no other path to go.</div>
+  </div>
+  <table class="ct">
+    <tr><th>Also added</th><th>What it says</th></tr>
+    <tr><td><b>Uttara-Nārāyaṇa</b></td><td>A second section beginning <i>adbhyaḥ sambhūtaḥ</i>, “born of the waters”, that praises the Person as the sun’s radiance</td></tr>
+    <tr><td><b>The closing</b></td><td><i>hrīś ca te lakṣmīś ca patnyau</i>: “Hrī and Lakṣmī are Your consorts; day and night Your two sides”</td></tr>
+    <tr><td><b>Śānti · echo</b></td><td>Framed by the peace prayer <i>tac chaṃ yor āvṛṇīmahe</i>; the vedāham verse returns in the Śvetāśvatara Upaniṣad (3.8)</td></tr>
+  </table>
+</section>
+
+<section class="page" id="end">
+  <h2 class="page-title">THE PURUṢA SŪKTAM ON ONE PAGE</h2>
+  <div class="sub">Sixteen verses in five lines</div>
+  <div class="steps">
+    <div><b>Verses 1–5.</b> The Person: countless heads, eyes, feet; all that was and will be; the world only a quarter of Him; from Him Virāj, and He within it.</div>
+    <div><b>Verses 6–7.</b> The gods perform the first sacrifice with the Person as offering; the seasons are its ghee, fuel and oblation.</div>
+    <div><b>Verses 8–10.</b> From it come the creatures, the Vedas and the animals of the home.</div>
+    <div><b>Verses 11–14.</b> His body divided: society, moon and sun, Indra, Agni and wind, sky, air and earth.</div>
+    <div><b>Verses 15–16.</b> The cosmos is the altar; the first sacrifice is the first dharma, the pattern of all worship.</div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What's the one thing to remember?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Everything you see is one Person, and still He is greater than all of it. Worship is how we join in His self-giving.</p></div></div>
+  <div class="key">“Puruṣa evedaṃ sarvam”: <b>all this is He, and He is more</b>. 🙏</div>
+  <div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+
+<footer style="text-align:center;font-size:13px;opacity:.75">Study notes on the Puruṣa Sūktam, Ṛg Veda 10.90 (seer Nārāyaṇa, deity Puruṣa). Ṛg Veda text checked word by word against wisdomlib.org (with Sāyaṇa’s commentary) and greenmesg.org; Taittirīya additions checked against prapatti.com. Views on verse 12 summarise published scholarship (Max Müller; Jamison and Brereton) and traditional readings; dates of the Ṛg Veda are approximate and debated. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</footer>
+</div>
+<script>
+  document.querySelectorAll('section.page[id$="b"], section.page#about').forEach(function (sec) {
+    var t = sec.querySelector('.page-title');
+    var bar = document.createElement('div');
+    bar.className = 'ch-end';
+    var next = sec.nextElementSibling && sec.nextElementSibling.id ? '#' + sec.nextElementSibling.id : '#contents';
+    bar.innerHTML = '<span class="lbl">END OF ' + (t ? t.textContent.split('·')[0].trim() : '') + '</span><a href="#contents">⬆ CONTENTS</a><a href="' + next + '">NEXT ➜</a>';
+    sec.appendChild(bar);
+  });
+</script>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
