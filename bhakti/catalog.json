@@ -259,6 +259,15 @@
    "group": "circuits"
   },
   {
+   "path": "/bhakti/temples-of-india/pancha-bhuta-sthalas/",
+   "door": "temples",
+   "deities": [
+    "shiva"
+   ],
+   "group": "circuits",
+   "tile": "<li><a href=\"/bhakti/temples-of-india/pancha-bhuta-sthalas/\"><div class=\"tile-art\" style=\"background:#0b2a4a\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"18\" r=\"11\" fill=\"#e0501a\"/><circle cx=\"82\" cy=\"42\" r=\"11\" fill=\"#7ab8a0\"/><circle cx=\"70\" cy=\"80\" r=\"11\" fill=\"#6a4aa0\"/><circle cx=\"30\" cy=\"80\" r=\"11\" fill=\"#3b8fd0\"/><circle cx=\"18\" cy=\"42\" r=\"11\" fill=\"#a0703a\"/><path d=\"M38 70 v-24 a12 12 0 0 1 24 0 v24z\" fill=\"#2b2f36\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">6 articles · overview + 5 guides</strong><h2>Pañcabhūta Sthalas</h2><p>Śiva’s five element temples: earth, water, fire, air and space, from Kāñcī to Cidambaram.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
    "path": "/bhakti/temples-of-india/18-shakti-peethas/",
    "door": "temples",
    "deities": [
