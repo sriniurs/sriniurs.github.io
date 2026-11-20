@@ -1,0 +1,321 @@
+{
+ "_readme": "Single source of truth for the Bhakti section. Every article or series under /bhakti/ needs one entry here. door: gods (who a deity is: form, stories, symbols, Mahāvidyās), hymns (anything you chant: stotra, mantra, sūkta), scriptures (a text or story read in parts), temples (anything you can visit). deities: any of shiva, vishnu, devi. group (temples only): circuits or regional. tile: the hub card HTML. Then run python3 .github/bhakti_hubs.py --strict. Order here is the order on the hubs.",
+ "entries": [
+  {
+   "path": "/bhakti/devi/dasha-mahavidya/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/dasha-mahavidya/\"><div class=\"tile-art\" style=\"background:#3a1414\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"82.0\" cy=\"50.0\" r=\"7\" fill=\"#1a1a2a\"/><circle cx=\"75.9\" cy=\"68.8\" r=\"7\" fill=\"#3b4fa0\"/><circle cx=\"59.9\" cy=\"80.4\" r=\"7\" fill=\"#c0392b\"/><circle cx=\"40.1\" cy=\"80.4\" r=\"7\" fill=\"#e0115f\"/><circle cx=\"24.1\" cy=\"68.8\" r=\"7\" fill=\"#a01a1a\"/><circle cx=\"18.0\" cy=\"50.0\" r=\"7\" fill=\"#e05a3a\"/><circle cx=\"24.1\" cy=\"31.2\" r=\"7\" fill=\"#9a9a9a\"/><circle cx=\"40.1\" cy=\"19.6\" r=\"7\" fill=\"#ffd60a\"/><circle cx=\"59.9\" cy=\"19.6\" r=\"7\" fill=\"#2a9d6f\"/><circle cx=\"75.9\" cy=\"31.2\" r=\"7\" fill=\"#f2c070\"/><circle cx=\"50\" cy=\"50\" r=\"14\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Series · overview + 10 Goddesses</strong><h2>Daśa Mahāvidyā</h2><p>The ten Great Wisdoms, Kālī to Kamalā: who each Goddess is, her stories, meaning and temples.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/shiva-family-and-symbols/",
+   "door": "gods",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/shiva-family-and-symbols/\"><div class=\"tile-art\" style=\"background:#dfe9f6\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"44\" r=\"22\" fill=\"#bcd4f0\"/><path d=\"M28 38 q22 -36 44 0\" fill=\"#3a2a1a\"/><path d=\"M46 30 l4 -8 l4 8 l-4 4z\" fill=\"#e63946\" stroke-width=\"1.5\"/><path d=\"M30 26 a8 8 0 1 0 6 -9 a6 6 0 1 1 -6 9z\" fill=\"#fff6b0\" stroke-width=\"1.5\"/><rect x=\"43\" y=\"64\" width=\"14\" height=\"10\" fill=\"#1d4f9a\"/><path d=\"M30 74 q20 18 40 0\" fill=\"none\" stroke=\"#2a9d6f\" stroke-width=\"5\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Explainer · symbols and family</strong><h2>Śiva's Family and Symbols</h2><p>The moon, the Gaṅgā, the snake, the blue throat and the ash; Pārvatī, Gaṇeśa, Kārttikeya, and four animals at peace.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/sri-rudram/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/sri-rudram/\"><div class=\"tile-art\" style=\"background:#0b2a4a\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 90 h72 l-6 -10 h-60z\" fill=\"#7a7f8a\"/><path d=\"M36 80 V48 a14 14 0 0 1 28 0 V80Z\" fill=\"#2b2f36\" stroke=\"#fff8d6\"/><path d=\"M42 52 h16 M42 58 h16\" stroke=\"#fff\" stroke-width=\"2.5\"/><path d=\"M40 8 h20 l-2 10 q-8 6 -16 0z\" fill=\"#c8743a\"/><path d=\"M50 22 v14\" stroke=\"#9fd3f0\" stroke-width=\"3\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Śrī Rudram · 3 parts</strong><h2>The Great Hymn of the Yajur Veda</h2><p>Namakam and Camakam, line by line: from Rudra's anger to Namaḥ Śivāya, the Mahāmṛtyuñjaya and \"ca me\".</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/shiva-mahimna-stotram/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/shiva-mahimna-stotram/\"><div class=\"tile-art\" style=\"background:#ece0fa\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 90 h72 l-6 -10 h-60z\" fill=\"#7a7f8a\"/><path d=\"M36 80 V48 a14 14 0 0 1 28 0 V80Z\" fill=\"#2b2f36\"/><path d=\"M42 54 h16 M42 60 h16\" stroke=\"#fff\" stroke-width=\"2.5\"/></g><path d=\"M10 40 q-4 -12 6 -18 q10 6 6 18z M24 34 q-4 -12 6 -18 q10 6 6 18z M76 34 q-4 -12 6 -18 q10 6 6 18z\" fill=\"#f08aa6\" stroke=\"#151515\" stroke-width=\"2\"/></svg></div><div class=\"tile-copy\"><strong class=\"label\">Śiva Mahimna Stotram · 4 parts</strong><h2>The Gandharva's Hymn</h2><p>Mahimnaḥ pāraṃ te: Puṣpadanta's 43 verses, from \"many rivers, one ocean\" to \"if the ocean were ink\".</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/mahamrityunjaya-mantra/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/mahamrityunjaya-mantra/\"><div class=\"tile-art\" style=\"background:#fff3c4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 20 q30 -10 60 4\" fill=\"none\" stroke=\"#2a7a2a\" stroke-width=\"4\"/><path d=\"M50 22 v10\" stroke=\"#2a7a2a\"/><path d=\"M40 34 q-6 30 12 46 q20 4 20 -18 q-4 -26 -20 -30 q-10 -2 -12 2z\" fill=\"#e8c43a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Mahāmṛtyuñjaya · 1 mantra</strong><h2>The Death-Conquering Mantra</h2><p>Oṃ tryambakaṃ yajāmahe: the ripe cucumber, Kaca and the Sañjīvanī, word by word.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/shiva-panchakshara-stotram/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/shiva-panchakshara-stotram/\"><div class=\"tile-art\" style=\"background:#dfe9f6\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"6\" y=\"36\" width=\"16\" height=\"22\" fill=\"#ffd23f\"/><rect x=\"24\" y=\"36\" width=\"16\" height=\"22\" fill=\"#fff\"/><rect x=\"42\" y=\"36\" width=\"16\" height=\"22\" fill=\"#ffd23f\"/><rect x=\"60\" y=\"36\" width=\"16\" height=\"22\" fill=\"#fff\"/><rect x=\"78\" y=\"36\" width=\"16\" height=\"22\" fill=\"#ffd23f\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Śiva Pañcākṣara · 5 + 1 verses</strong><h2>Na-Maḥ-Śi-Vā-Ya</h2><p>Śaṅkara's five verses on the five syllables, and the king and the crows.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/lingashtakam/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/lingashtakam/\"><div class=\"tile-art\" style=\"background:#ffe9c4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"40\" y=\"4\" width=\"20\" height=\"60\" fill=\"#ffd23f\" stroke=\"#ff8c1a\"/><path d=\"M14 92 h72 l-6 -10 h-60z\" fill=\"#7a7f8a\"/><path d=\"M36 82 V50 a14 14 0 0 1 28 0 V82Z\" fill=\"#2b2f36\"/><path d=\"M42 56 h16 M42 62 h16\" stroke=\"#fff\" stroke-width=\"2.5\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Liṅgāṣṭakam · 8 + 1 verses</strong><h2>The Pillar with No End</h2><p>Brahmamurāri surārcita liṅgam: Brahmā, Viṣṇu and the endless column of fire.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/shiva-tandava-stotram/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/shiva-tandava-stotram/\"><div class=\"tile-art\" style=\"background:#0b2a4a\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"52\" r=\"38\" fill=\"none\" stroke=\"#ff8c1a\" stroke-width=\"5\"/><circle cx=\"50\" cy=\"34\" r=\"9\" fill=\"#bcd4f0\"/><path d=\"M50 43 v26 M50 52 l-18 -12 M50 52 l18 -14 M50 69 l-12 16 M50 69 l16 8\" stroke=\"#bcd4f0\" stroke-width=\"5\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Śiva Tāṇḍava Stotram · 15 verses</strong><h2>Rāvaṇa's Thundering Hymn</h2><p>Ḍamaḍ-ḍamaḍ! The dance in sound, and Rāvaṇa pinned under Kailāsa.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/bilvashtakam/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/bilvashtakam/\"><div class=\"tile-art\" style=\"background:#e7f4ea\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M50 80 q-28 -10 -24 -44 q20 6 24 44z M50 80 q28 -10 24 -44 q-20 6 -24 44z M50 80 q-14 -30 0 -60 q14 30 0 60z\" fill=\"#4caf50\"/><path d=\"M50 80 v14\" stroke=\"#2a7a2a\" stroke-width=\"4\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Bilvāṣṭakam · 8 + 1 verses</strong><h2>One Leaf Is Enough</h2><p>Ekabilvaṃ śivārpaṇam: the three-part leaf and the hunter on Śivarātri night.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/nirvana-shatkam/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/nirvana-shatkam/\"><div class=\"tile-art\" style=\"background:#cfe3f5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 90 L36 42 L50 60 L66 30 L94 90Z\" fill=\"#cfe3f5\"/><path d=\"M58 44 L66 30 L74 44Z\" fill=\"#fff\" stroke-width=\"2\"/><path d=\"M78 10 a12 12 0 1 0 9 21 a10 10 0 1 1 -9 -21z\" fill=\"#fff8d6\" stroke-width=\"2\"/><circle cx=\"50\" cy=\"66\" r=\"7\" fill=\"#0b2a4a\" stroke=\"#fff8d6\" stroke-width=\"2\"/><path d=\"M38 90 q12 -26 24 0z\" fill=\"#0b2a4a\" stroke=\"#fff8d6\" stroke-width=\"2\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Nirvāṇa Ṣaṭkam · 6 verses</strong><h2>Śivo'ham: Who Are You?</h2><p>Śaṅkara's six-verse answer at the Narmadā: not the mind, not the body, but consciousness and bliss.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/rudrashtakam/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/rudrashtakam/\"><div class=\"tile-art\" style=\"background:#e8f0f8\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 92 L30 44 L50 70 L70 34 L96 92Z\" fill=\"#fff\"/><path d=\"M60 20 q-20 10 -22 40\" fill=\"none\" stroke=\"#9fd3f0\" stroke-width=\"5\"/><path d=\"M66 14 a8 8 0 1 0 6 12 a6 6 0 1 1 -6 -12z\" fill=\"#fff6b0\" stroke-width=\"2\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Śrī Rudrāṣṭakam · 8 + 1 verses</strong><h2>I Know No Yoga, I Just Bow</h2><p>Tulasīdāsa's namāmīśam īśāna, and the guru who sang it for his proud student.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/kala-bhairavashtakam/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/kala-bhairavashtakam/\"><div class=\"tile-art\" style=\"background:#dcd6f0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"44\" cy=\"34\" r=\"16\" fill=\"#3b4a7a\"/><path d=\"M28 92 q16 -50 32 0z\" fill=\"#3b4a7a\"/><path d=\"M78 92 v-60 M70 40 q0 -10 8 -10 q8 0 8 10 M78 30 v-10\" fill=\"none\" stroke=\"#555\" stroke-width=\"4\"/><path d=\"M6 92 h20 v-10 l6 -6 v16\" fill=\"#2b2b2b\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Kāla Bhairavāṣṭakam · 8 + 1 verses</strong><h2>The Guardian of Kāśī</h2><p>Śaṅkara's hymn to the fierce protector, and Brahmā's fifth head.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/kashi-vishwanathashtakam/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/kashi-vishwanathashtakam/\"><div class=\"tile-art\" style=\"background:#ffe3c4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"30\" y=\"56\" width=\"40\" height=\"22\" fill=\"#e8c27a\"/><path d=\"M36 56 q14 -50 28 0z\" fill=\"#ffd23f\"/><path d=\"M0 78 h100 v22 h-100z\" fill=\"#4aa3df\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Kāśī Viśvanāthāṣṭakam · 8 + 1 verses</strong><h2>The Lord of Vārāṇasī</h2><p>Gaṅgā-taraṅga: Kāśī's Lord, King Divodāsa, and finding Kāśī in the heart.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/shiva/pancha-brahma-mantras/",
+   "door": "hymns",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/shiva/pancha-brahma-mantras/\"><div class=\"tile-art\" style=\"background:#dfe9f6\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M34 92 V54 a16 16 0 0 1 32 0 V92Z\" fill=\"#3b4a63\"/><ellipse cx=\"50\" cy=\"92\" rx=\"34\" ry=\"6\" fill=\"#5b6f8a\"/><circle cx=\"50\" cy=\"24\" r=\"10\" fill=\"#e8f4ff\"/><circle cx=\"20\" cy=\"46\" r=\"8\" fill=\"#fdfdfd\"/><circle cx=\"80\" cy=\"46\" r=\"8\" fill=\"#f2d27a\"/><circle cx=\"30\" cy=\"20\" r=\"7\" fill=\"#f4c2b0\"/><circle cx=\"70\" cy=\"20\" r=\"7\" fill=\"#3b4a63\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Pañca-Brahma Mantras · 5 mantras</strong><h2>The Five Faces of Śiva</h2><p>Sadyojāta, Vāmadeva, Aghora, Tatpuruṣa, Īśāna: the Vedic mantras chanted at abhiṣeka, face by face.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/tiruppavai/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/tiruppavai/\"><div class=\"tile-art\" style=\"background:#dfe9f6\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"34\" r=\"12\" fill=\"#c98b5a\"/><path d=\"M38 26 q12 -16 24 0\" fill=\"#2b1a0e\"/><path d=\"M60 22 q10 -6 12 6\" fill=\"none\" stroke=\"#2b1a0e\" stroke-width=\"6\"/><path d=\"M30 92 q-2 -40 20 -46 q22 6 20 46z\" fill=\"#2e9a5a\"/><path d=\"M34 60 q16 10 32 0\" fill=\"none\" stroke=\"#ffd60a\" stroke-width=\"4\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Dhanurmāsa · Day 1 of 30</strong><h2>Tiruppāvai</h2><p>Āṇḍāḷ’s thirty Tamil songs for the dawns of Mārgaḻi, one illustrated article a day.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/purusha-suktam/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/purusha-suktam/\"><div class=\"tile-art\" style=\"background:#dfe9f6\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"26\" r=\"11\" fill=\"#3b6fd0\"/><circle cx=\"36\" cy=\"20\" r=\"6\" fill=\"#5b8fe0\"/><circle cx=\"64\" cy=\"20\" r=\"6\" fill=\"#5b8fe0\"/><path d=\"M26 92 q-4 -46 24 -58 q28 12 24 58z\" fill=\"#1f4fa8\"/><circle cx=\"42\" cy=\"60\" r=\"2\" fill=\"#fff\" stroke=\"none\"/><circle cx=\"58\" cy=\"70\" r=\"2\" fill=\"#fff\" stroke=\"none\"/><circle cx=\"50\" cy=\"80\" r=\"2\" fill=\"#fff\" stroke=\"none\"/><circle cx=\"16\" cy=\"18\" r=\"6\" fill=\"#ffd60a\"/><path d=\"M84 12 a7 7 0 1 0 0 14 a9 9 0 0 1 0 -14z\" fill=\"#fff8c0\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Ṛg Veda 10.90 · 16 verses</strong><h2>Puruṣa Sūktam</h2><p>The Vedic hymn of the Cosmic Person: a thousand heads, the first sacrifice, and the Taittirīya verses of Viṣṇu worship.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/vishnu-sahasranama/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/vishnu-sahasranama/\"><div class=\"tile-art\" style=\"background:#e3f2fd\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M30 58 q-8 -6 -10 -18\" fill=\"none\" stroke=\"#3b6fd0\" stroke-width=\"5\"/><path d=\"M70 58 q8 -6 10 -18\" fill=\"none\" stroke=\"#3b6fd0\" stroke-width=\"5\"/><circle cx=\"20\" cy=\"36\" r=\"6\" fill=\"#fff\"/><circle cx=\"80\" cy=\"36\" r=\"6\" fill=\"#ffd60a\"/><circle cx=\"50\" cy=\"36\" r=\"12\" fill=\"#3b6fd0\"/><path d=\"M40 26 h20 l-3 -12 h-14z\" fill=\"#ffd60a\"/><path d=\"M32 92 q-4 -40 18 -50 q22 10 18 50z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Viṣṇu Sahasranāma · 10 parts</strong><h2>The Thousand Names</h2><p>Bhīṣma's answer from the bed of arrows: all 1,000 names of Viṣṇu, every one explained.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/venkatesa-suprabhatam/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/venkatesa-suprabhatam/\"><div class=\"tile-art\" style=\"background:#fff3c4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"52\" r=\"24\" fill=\"#ffd60a\" stroke=\"#ff8c1a\"/><path d=\"M6 92 l18 -22 l14 10 l14 -22 l14 22 l14 -12 l14 24z\" fill=\"#2a7a4a\"/><path d=\"M40 52 h20 v-10 l-10 -14 l-10 14z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Veṅkaṭeśa Suprabhātam · 5 parts</strong><h2>The Dawn Hymn of Tirumala</h2><p>\"Kausalyā suprajā rāma\": Suprabhātam, Stotram, Prapatti and Maṅgalāśāsanam, all 70 verses.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/govinda-namalu/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/govinda-namalu/\"><div class=\"tile-art\" style=\"background:#fde4ec\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"30\" r=\"16\" fill=\"#ffd60a\" stroke=\"#ff8c1a\"/><path d=\"M4 92 l16 -26 l14 12 l16 -28 l16 28 l14 -12 l16 26z\" fill=\"#2a7a4a\"/><path d=\"M42 30 h16 v-8 l-8 -10 l-8 10z\" fill=\"#ffd60a\"/><path d=\"M20 92 q14 -14 28 -30\" fill=\"none\" stroke=\"#c9a26b\" stroke-dasharray=\"4 3\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Govinda Nāmālu · 38 stanzas</strong><h2>Śrī Śrīnivāsa Govindā</h2><p>The pilgrims' chant of the Seven Hills: about 150 names of the Lord, each answered with \"Govindā!\"</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/shantakaram/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/shantakaram/\"><div class=\"tile-art\" style=\"background:#ddf5ea\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 74 h84\" stroke=\"#4aa3df\" stroke-width=\"6\"/><ellipse cx=\"50\" cy=\"66\" rx=\"40\" ry=\"8\" fill=\"#e0e0e0\"/><path d=\"M18 60 q30 -14 58 -6\" fill=\"none\" stroke=\"#3b6fd0\" stroke-width=\"9\"/><circle cx=\"78\" cy=\"52\" r=\"7\" fill=\"#3b6fd0\"/><path d=\"M84 60 q6 -20 2 -30\" fill=\"none\" stroke=\"#2a7a4a\" stroke-width=\"6\"/><path d=\"M48 54 q2 -18 0 -30\" fill=\"none\" stroke=\"#2a9d6f\" stroke-width=\"2\"/><path d=\"M48 24 q-8 -8 0 -14 q8 6 0 14z\" fill=\"#f08aa6\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Dhyāna ślokam · 1 verse</strong><h2>Śāntākāraṃ Bhujagaśayanam</h2><p>The best-loved meditation verse: peace that holds up the universe, word by word.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/bhaja-govindam/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/bhaja-govindam/\"><div class=\"tile-art\" style=\"background:#e3f2fd\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"34\" r=\"14\" fill=\"#4a7fd0\"/><path d=\"M30 92 q-4 -40 20 -50 q24 10 20 50z\" fill=\"#ffd60a\"/><path d=\"M28 50 L74 40\" stroke=\"#7a5a3a\" stroke-width=\"4\"/><path d=\"M46 22 q6 -14 14 -10 q-4 6 -8 12z\" fill=\"#2a9d6f\" stroke-width=\"2\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Bhaja Govindam · 3 parts</strong><h2>Worship Govinda, O Mind</h2><p>Śaṅkara's \"hammer for delusion\": wealth, the body, time, desire, and the way across, in 33 verses.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/acyutashtakam/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/acyutashtakam/\"><div class=\"tile-art\" style=\"background:#fde4ec\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 92 q-4 -40 14 -50 q18 10 14 50z\" fill=\"#ffd60a\"/><circle cx=\"38\" cy=\"34\" r=\"10\" fill=\"#2a9d6f\"/><path d=\"M14 30 q-10 30 0 60\" fill=\"none\" stroke=\"#7a5a3a\"/><path d=\"M58 92 q-4 -40 14 -50 q18 10 14 50z\" fill=\"#ffd60a\"/><circle cx=\"72\" cy=\"34\" r=\"10\" fill=\"#3b6fd0\"/><path d=\"M78 44 l16 -6\" stroke=\"#7a5a3a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Acyutāṣṭakam · 9 verses</strong><h2>Acyutaṃ Keśavam</h2><p>A garland of the Lord's names: Rāma of the forest, little Gopāla, and a meditation on His form.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/vishnu/madhurashtakam/",
+   "door": "hymns",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/madhurashtakam/\"><div class=\"tile-art\" style=\"background:#efe6ff\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"32\" r=\"13\" fill=\"#3b6fd0\"/><path d=\"M54 18 q6 -12 2 -16\" fill=\"none\" stroke=\"#2a9d6f\"/><path d=\"M30 92 q-4 -40 20 -50 q24 10 20 50z\" fill=\"#ffd60a\"/><path d=\"M52 40 L84 32\" stroke=\"#7a5a3a\" stroke-width=\"4\"/><path d=\"M14 20 q4 -6 8 0 q4 -6 8 0 q-8 8 -8 8 q0 0 -8 -8z\" fill=\"#e05a8a\" stroke-width=\"1.5\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Madhurāṣṭakam · 8 verses</strong><h2>Adharaṃ Madhuram</h2><p>Vallabhācārya's song of Kṛṣṇa's sweetness: everything about Him is sweet.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/devi/kanakadhara-stotram/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/kanakadhara-stotram/\"><div class=\"tile-art\" style=\"background:#ffe49d\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M50 84 C30 74 26 52 34 40 C42 50 46 64 50 84Z\" fill=\"#f08aa6\"/><path d=\"M50 84 C70 74 74 52 66 40 C58 50 54 64 50 84Z\" fill=\"#f08aa6\"/><path d=\"M50 84 C40 66 42 44 50 30 C58 44 60 66 50 84Z\" fill=\"#ffc2dc\"/><path d=\"M28 86 H72\" fill=\"none\"/><circle cx=\"22\" cy=\"22\" r=\"7\" fill=\"#ffd23f\"/><circle cx=\"44\" cy=\"12\" r=\"6\" fill=\"#ffd23f\"/><circle cx=\"66\" cy=\"18\" r=\"7\" fill=\"#ffd23f\"/><circle cx=\"82\" cy=\"34\" r=\"6\" fill=\"#ffd23f\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Kanakadhārā Stotram · 18 verses</strong><h2>The Hymn That Rained Gold</h2><p>A poor woman gives her only gooseberry; a young Śaṅkara prays for her to Śrī Mahālakṣmī.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/devi/mahishasura-mardini/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/mahishasura-mardini/\"><div class=\"tile-art\" style=\"background:#f9d7c4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"40\" r=\"26\" fill=\"#ffd23f\"/><path d=\"M50 92 V22 M34 44 V22 M66 44 V22 M34 44 Q50 58 66 44\" fill=\"none\" stroke-width=\"5\"/><path d=\"M28 24 l6 -14 l6 14z M44 18 l6 -14 l6 14z M60 24 l6 -14 l6 14z\" fill=\"#e63946\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Mahishāsura Mardinī · 21 ślokas</strong><h2>Ayi Giri Nandini, Decoded</h2><p>The Goddess born from the light of all the gods, and the battle inside us.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/devi/ya-devi-sarvabhuteshu/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/ya-devi-sarvabhuteshu/\"><div class=\"tile-art\" style=\"background:#fde4e4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"44\" r=\"40\" fill=\"#ffd60a\" opacity=\".35\" stroke=\"none\"/><path d=\"M36 20 h28 l-4 -12 l-6 6 l-4 -8 l-4 8 l-6 -6z\" fill=\"#ffd60a\"/><circle cx=\"50\" cy=\"32\" r=\"11\" fill=\"#f2c79b\"/><path d=\"M30 92 q-4 -40 20 -50 q24 10 20 50z\" fill=\"#c0392b\"/><path d=\"M30 56 q-14 -4 -20 -16 M70 56 q14 -4 20 -16 M30 66 q-16 4 -22 14 M70 66 q16 4 22 14\" fill=\"none\" stroke=\"#f2c79b\" stroke-width=\"5\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Aparājitā Stuti · 28 verses</strong><h2>Yā Devī Sarvabhūteṣu</h2><p>The gods’ hymn from the Devī Māhātmya: the 21 forms in which the Goddess dwells in every being.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/devi/mahalakshmi-ashtakam/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/mahalakshmi-ashtakam/\"><div class=\"tile-art\" style=\"background:#ffd9e6\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 40 q10 -24 30 -8 q4 16 -12 22 q-14 2 -18 -14z\" fill=\"#fff\"/><circle cx=\"72\" cy=\"34\" r=\"16\" fill=\"#fff3b0\"/><circle cx=\"72\" cy=\"34\" r=\"6\" fill=\"#ffd23f\"/><path d=\"M50 92 C34 84 30 66 38 56 C44 64 48 74 50 92Z M50 92 C66 84 70 66 62 56 C56 64 52 74 50 92Z\" fill=\"#f08aa6\"/><path d=\"M50 92 C42 78 44 62 50 50 C56 62 58 78 50 92Z\" fill=\"#ffc2dc\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Mahālakṣmī Aṣṭakam · 8 + 3 verses</strong><h2>Namaste'stu Mahāmāye</h2><p>Indra's hymn: Lakṣmī as warrior, all-giver and the Supreme itself, and the Kolhapur story.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/devi/lalita-pancharatnam/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/lalita-pancharatnam/\"><div class=\"tile-art\" style=\"background:#ffd0c4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M30 12 Q62 50 30 88\" fill=\"none\" stroke=\"#5aa832\" stroke-width=\"7\"/><path d=\"M30 12 V88\" stroke-width=\"2\"/><path d=\"M30 50 H80\" stroke-width=\"3\"/><circle cx=\"82\" cy=\"46\" r=\"6\" fill=\"#ff6fa8\" stroke-width=\"2\"/><circle cx=\"86\" cy=\"54\" r=\"6\" fill=\"#ff6fa8\" stroke-width=\"2\"/><circle cx=\"78\" cy=\"56\" r=\"6\" fill=\"#ff6fa8\" stroke-width=\"2\"/><circle cx=\"74\" cy=\"20\" r=\"12\" fill=\"#ff8c1a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Lalitā Pañcaratnam · 5 + 1 verses</strong><h2>Five Gems for the Morning</h2><p>Śaṅkara's dawn hymn: remember, worship, bow, praise, speak.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/devi/annapurna-stotram/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/annapurna-stotram/\"><div class=\"tile-art\" style=\"background:#fff0a8\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 54 h72 q-6 32 -36 32 q-30 0 -36 -32z\" fill=\"#d9a21b\"/><path d=\"M18 54 q32 -28 64 0z\" fill=\"#fff\"/><path d=\"M38 34 q-6 -10 0 -18 M50 30 q-6 -10 0 -18 M62 34 q-6 -10 0 -18\" fill=\"none\" stroke=\"#999\" stroke-width=\"2.5\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Śrī Annapūrṇā Stotram · 12 verses</strong><h2>The Mother Who Feeds the World</h2><p>Śiva's begging bowl, Kāśī, Horanadu, and the real alms: knowledge.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/devi/gayatri-mantra/",
+   "door": "hymns",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/gayatri-mantra/\"><div class=\"tile-art\" style=\"background:#ffd9a8\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 58 a28 28 0 0 1 56 0z\" fill=\"#ffd23f\"/><path d=\"M50 24 V12 M28 34 l-8 -8 M72 34 l8 -8 M18 52 H8 M82 52 H92\" stroke=\"#ff8c1a\" stroke-width=\"4\"/><path d=\"M8 58 H92 V88 H8Z\" fill=\"#4aa3df\"/><path d=\"M18 72 q8 -4 16 0 M56 78 q8 -4 16 0\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2.5\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Gāyatrī Mantra · 4 parts</strong><h2>The Prayer for a Clear Mind</h2><p>Ṛg Veda 3.62.10: Viśvāmitra, Savitṛ, and 24 syllables word by word.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/devi/devi-mahatmya/",
+   "door": "scriptures",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/devi-mahatmya/\"><div class=\"tile-art\" style=\"background:#fde4e4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"30\" r=\"12\" fill=\"#f2c79b\"/><path d=\"M36 18 h28 l-4 -12 l-6 6 l-4 -8 l-4 8 l-6 -6z\" fill=\"#ffd60a\"/><path d=\"M28 92 q-4 -42 22 -50 q26 8 22 50z\" fill=\"#c0392b\"/><path d=\"M16 60 l18 -4 M84 60 l-18 -4\" stroke=\"#f2c79b\" stroke-width=\"5\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Series · 6 of 19 parts</strong><h2>Devī Māhātmya</h2><p>The Durgā Saptaśatī in 19 illustrated parts: Kavacam, Argalā, Kīlakam and all 13 chapters, verse by verse.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
+   "path": "/bhakti/temples-of-india/12-jyotirlingas/",
+   "door": "temples",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/temples-of-india/12-jyotirlingas/\"><div class=\"tile-art\" style=\"background:#0b2a4a\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"2\"><circle cx=\"84.0\" cy=\"52.0\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"79.4\" cy=\"69.0\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"67.0\" cy=\"81.4\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"50.0\" cy=\"86.0\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"33.0\" cy=\"81.4\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"20.6\" cy=\"69.0\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"16.0\" cy=\"52.0\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"20.6\" cy=\"35.0\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"33.0\" cy=\"22.6\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"50.0\" cy=\"18.0\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"67.0\" cy=\"22.6\" r=\"5\" fill=\"#ffd23f\"/><circle cx=\"79.4\" cy=\"35.0\" r=\"5\" fill=\"#ffd23f\"/><rect x=\"43\" y=\"14\" width=\"14\" height=\"76\" fill=\"#ffd23f\" stroke=\"#ff8c1a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">13 articles · the hymn + 12 guides</strong><h2>The 12 Jyotirliṅgas</h2><p>Somanātha to Ghṛṣṇeśvara: the Dvādaśa Jyotirliṅga Stotram and a full reference guide to each of Śiva's twelve liṅgas of light.</p><span class=\"read\">Open series ↗</span></div></a></li>",
+   "group": "circuits"
+  },
+  {
+   "path": "/bhakti/temples-of-india/18-shakti-peethas/",
+   "door": "temples",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/temples-of-india/18-shakti-peethas/\"><div class=\"tile-art\" style=\"background:#3a1414\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M24 80 h52 l-8 10 h-36z\" fill=\"#c9a26b\"/><path d=\"M50 78 q-16 -20 0 -44 q16 24 0 44z\" fill=\"#ff8c1a\"/><path d=\"M50 74 q-7 -10 0 -22 q7 12 0 22z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">20 articles · hymn + 18 + round-up</strong><h2>The 18 Śakti Pīṭhas</h2><p>Laṅkā to Kashmir: where Satī’s body fell, the eighteen great seats of the Goddess, and all fifty-one.</p><span class=\"read\">Open series ↗</span></div></a></li>",
+   "group": "circuits"
+  },
+  {
+   "path": "/bhakti/temples-of-india/char-dham/",
+   "door": "temples",
+   "deities": [
+    "vishnu",
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/temples-of-india/char-dham/\"><div class=\"tile-art\" style=\"background:#0b2a4a\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"50\" r=\"30\" fill=\"none\" stroke=\"#ffd23f\" stroke-width=\"4\" stroke-dasharray=\"6 5\"/><circle cx=\"50\" cy=\"20\" r=\"7\" fill=\"#ffd23f\"/><circle cx=\"80\" cy=\"50\" r=\"7\" fill=\"#ffd23f\"/><circle cx=\"50\" cy=\"80\" r=\"7\" fill=\"#ffd23f\"/><circle cx=\"20\" cy=\"50\" r=\"7\" fill=\"#ffd23f\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">6 articles · overview + 5 guides</strong><h2>Char Dham</h2><p>The four abodes of India and the four Himalayan shrines: Badrīnāth, Purī, Dvārakā, Yamunotrī, Gaṅgotrī.</p><span class=\"read\">Open series ↗</span></div></a></li>",
+   "group": "circuits"
+  },
+  {
+   "path": "/bhakti/temples-of-india/sapta-puri/",
+   "door": "temples",
+   "deities": [
+    "vishnu",
+    "shiva",
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/temples-of-india/sapta-puri/\"><div class=\"tile-art\" style=\"background:#0b2a4a\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"20\" cy=\"50\" r=\"6\" fill=\"#ffd23f\"/><circle cx=\"30\" cy=\"64\" r=\"6\" fill=\"#ffd23f\"/><circle cx=\"40\" cy=\"50\" r=\"6\" fill=\"#ffd23f\"/><circle cx=\"50\" cy=\"64\" r=\"6\" fill=\"#ffd23f\"/><circle cx=\"60\" cy=\"50\" r=\"6\" fill=\"#ffd23f\"/><circle cx=\"70\" cy=\"64\" r=\"6\" fill=\"#ffd23f\"/><circle cx=\"80\" cy=\"50\" r=\"6\" fill=\"#ffd23f\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Guide</strong><h2>The Saptapurī</h2><p>The seven cities of liberation: Ayodhyā, Mathurā, Haridvāra, Kāśī, Kāñcī, Ujjain and Dvārakā.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "circuits"
+  },
+  {
+   "path": "/bhakti/temples-of-india/triranga/",
+   "door": "temples",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/temples-of-india/triranga/\"><div class=\"tile-art\" style=\"background:#dcecff\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 70 q40 14 80 0 q-6 10 -40 12 q-34 -2 -40 -12z\" fill=\"#7aa86a\"/><circle cx=\"20\" cy=\"54\" r=\"5\" fill=\"#7aa86a\"/><circle cx=\"14\" cy=\"60\" r=\"5\" fill=\"#7aa86a\"/><circle cx=\"26\" cy=\"60\" r=\"5\" fill=\"#7aa86a\"/><path d=\"M26 66 q30 -14 56 -2\" fill=\"none\" stroke=\"#3b6fd0\" stroke-width=\"10\"/><circle cx=\"28\" cy=\"60\" r=\"8\" fill=\"#3b6fd0\"/><path d=\"M22 52 h12 l-2 -8 h-8z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">4 articles · overview + 3 guides</strong><h2>Triraṅga</h2><p>Three island temples of Raṅganātha on the Kāverī: Ādi Raṅga, Madhya Raṅga and Antya Raṅga (Śrīraṅgam).</p><span class=\"read\">Open series ↗</span></div></a></li>",
+   "group": "regional"
+  },
+  {
+   "path": "/bhakti/temples-of-india/ahobilam/",
+   "door": "temples",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/temples-of-india/ahobilam/\"><div class=\"tile-art\" style=\"background:#dcecff\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"44\" r=\"22\" fill=\"#e08a2a\"/><circle cx=\"50\" cy=\"48\" r=\"14\" fill=\"#ffb84d\"/><path d=\"M30 92 q-2 -30 20 -34 q22 4 20 34z\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Guide · Viṣṇu</strong><h2>Ahobilam</h2><p>The nine Narasiṃhas of the Nallamala hills, Cheñcu Lakṣmī and the Ugra Stambha.</p><span class=\"read\">Read ↗</span></div></a></li>",
+   "group": "regional"
+  },
+  {
+   "path": "/bhakti/temples-of-india/around-mysuru/",
+   "door": "temples",
+   "deities": [
+    "devi",
+    "shiva",
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/temples-of-india/around-mysuru/\"><div class=\"tile-art\" style=\"background:#f3e3c3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 90 h60 l-4 -12 h-52z M26 78 h48 l-4 -12 h-40z M32 66 h36 l-4 -12 h-28z M38 54 h24 l-4 -12 h-16z\" fill=\"#e2cfa8\"/><path d=\"M44 42 l6 -14 l6 14z\" fill=\"#e0a800\"/><rect x=\"44\" y=\"76\" width=\"12\" height=\"14\" fill=\"#5a3a1a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">15 guides + a Tipu special</strong><h2>Temples around Mysuru</h2><p>Reference guides to the great temples of the Kāverī country around Mysuru, Cāmuṇḍeśvarī, the Palace temples, Melukōṭe, Talakāḍu, Nañjanagūḍu and more.</p><span class=\"read\">Open series ↗</span></div></a></li>",
+   "group": "regional"
+  }
+ ]
+}

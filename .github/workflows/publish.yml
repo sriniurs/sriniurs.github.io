@@ -11,6 +11,8 @@ on:
       - '.github/workflows/publish.yml'
       - '.github/build_search.py'
       - '.github/site_nav.py'
+      - '.github/bhakti_hubs.py'
+      - 'bhakti/catalog.json'
       - '.github/seo_meta.py'
       - '**/*.html'
   workflow_dispatch:
@@ -56,6 +58,7 @@ jobs:
           "$RUNNER_TEMP/story-seo/bin/pip" install playwright
           "$RUNNER_TEMP/story-seo/bin/python" .github/seo_meta.py
           python3 .github/site_nav.py
+          python3 .github/bhakti_hubs.py
           python3 .github/build_search.py
       - name: Commit published pages and search index together
         if: steps.search.outcome == 'success'

@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dhūmāvatī · Daśa Mahāvidyā 7 · srini.presents</title>
+<meta name="description" content="Dhūmāvatī, the Smoky One, the seventh of the Daśa Mahāvidyā: the widow Goddess on the crow-bannered chariot, the story of Satī swallowing Śiva, Nirṛti, Jyeṣṭhā and Alakṣmī, the winnowing basket, and her temples at Kāśī and the Pītāmbarā Pīṭha, Datiā. An illustrated reference guide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#d9822b,#7a1d12 55%,#2a0805)}
+  .sloka-head{background:#7a1d12}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #7a1d12}
+  .sub{color:#c0392b}
+  .num{background:#7a1d12}
+  .steps div:before{background:#c0392b}
+  .full .vn,.full .end{color:#c0392b}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#c0392b}
+  .contlink{color:#c0392b}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#d9822b,#7a1d12 55%,#2a0805)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #c0392b;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#c0392b;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#7a1d12;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/devi/dasha-mahavidya/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">MAHĀVIDYĀ 7 OF 10</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(22px,7vw,70px)">DHŪMĀVATĪ</h1>
+  <div class="series">DAŚA MAHĀVIDYĀ · A REFERENCE GUIDE</div>
+  <div class="tag">The smoky widow Goddess</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="An old grey-haired widow goddess with a winnowing basket riding a horseless chariot with a crow banner, wrapped in smoke"><rect width="380" height="268" fill="#2a2a30" rx="8"/><g transform="translate(80 120) scale(1.4)" fill="#8a8a8a" opacity=".55"><circle r="30"/><circle cx="26" cy="-20" r="24"/><circle cx="-24" cy="-26" r="22"/><circle cx="6" cy="-46" r="20"/></g><g transform="translate(300 100) scale(1.6)" fill="#8a8a8a" opacity=".55"><circle r="30"/><circle cx="26" cy="-20" r="24"/><circle cx="-24" cy="-26" r="22"/><circle cx="6" cy="-46" r="20"/></g><g transform="translate(190 60) scale(1.2)" fill="#8a8a8a" opacity=".55"><circle r="30"/><circle cx="26" cy="-20" r="24"/><circle cx="-24" cy="-26" r="22"/><circle cx="6" cy="-46" r="20"/></g><g transform="translate(180 170) scale(1.25)" stroke="#111" stroke-width="2"><path d="M-70 40 h140 l-10 -20 h-120z" fill="#6a5a4a"/><circle cx="-40" cy="46" r="16" fill="#8a7a6a"/><circle cx="40" cy="46" r="16" fill="#8a7a6a"/><path d="M60 20 v-90" stroke-width="3"/><path d="M60 -70 h40 l-8 12 l8 12 h-40z" fill="#555"/><g transform="translate(80 -58) scale(0.7)" stroke="#111" stroke-width="1.5"><path d="M-16 0 q10 -14 26 -6 l10 -2 l-8 6 q-4 10 -20 8 l-10 8z" fill="#222"/><circle cx="6" cy="-6" r="1.6" fill="#fff"/></g><g transform="translate(0 -10) scale(0.8)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -54 30 -66 q34 12 30 66z" fill="#eeeeee"/><path d="M-22 -8 l-28 -10 M22 -8 l26 -18" stroke="#9a9a9a" stroke-width="7"/><path d="M-64 -24 q14 -12 28 0 q-14 14 -28 0z" fill="#c9a26b"/><path d="M-60 -24 h20 M-58 -20 h16" stroke="#8a6a3a"/><path d="M48 -26 l8 -10" stroke="#9a9a9a" stroke-width="6"/><path d="M-16 -44 q-14 30 -8 56 M16 -44 q14 30 8 56" stroke="#555" stroke-width="5" fill="none"/><circle cy="-36" r="15" fill="#9a9a9a"/><path d="M-15 -42 q15 -16 30 0" fill="#f2f2f2"/><circle cx="-5" cy="-36" r="2.4" fill="#111"/><circle cx="5" cy="-36" r="2.4" fill="#111"/><path d="M-8 -30 q2 -2 4 0 M4 -30 q2 -2 4 0" fill="none"/><path d="M-6 -26 q6 -3 12 0" fill="none"/></g></g><g transform="translate(60 40) scale(1.2)" stroke="#111" stroke-width="1.5"><path d="M-16 0 q10 -14 26 -6 l10 -2 l-8 6 q-4 10 -20 8 l-10 8z" fill="#222"/><circle cx="6" cy="-6" r="1.6" fill="#fff"/></g><g transform="translate(330 210) scale(1)" stroke="#111" stroke-width="1.5"><path d="M-16 0 q10 -14 26 -6 l10 -2 l-8 6 q-4 10 -20 8 l-10 8z" fill="#222"/><circle cx="6" cy="-6" r="1.6" fill="#fff"/></g></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-red halftone" style="font-size:17px;line-height:1.6">
+    <p>Every other Goddess in this series is young, beautiful or terrible in her power. The seventh Great Wisdom, <b>Dhūmāvatī</b>, is old. She is a grey, trembling widow on a horseless chariot, a crow on her banner, a winnowing basket in her hand, forever hungry.</p>
+    <p>The Tantra says she became a widow by swallowing Śiva himself. She is kin to the old goddesses of misfortune, and householders keep their distance. Yet in Kāśī she is a protecting grandmother, and at Datiā she shares a shrine with Bagalāmukhī.</p>
+    <p>This guide tells her stories, her meaning and her temples.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#c0392b">Jai Dhūmāvatī,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is she unlucky to read about?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> No. She is the Goddess who sits with you when things go wrong.</p></div></div>
+  <div class="panel reading small"><p>Part of <a href="/bhakti/devi/dasha-mahavidya/">Daśa Mahāvidyā</a>, the ten Great Wisdoms. Previous: <a href="/bhakti/devi/dasha-mahavidya/chinnamasta/">Chinnamastā</a>.</p></div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#names">Her Names</a></li><li><span class="num">3</span><a href="#form">Her Form</a></li><li><span class="num">4</span><a href="#swallow">The Goddess Who Ate Śiva</a></li><li><span class="num">5</span><a href="#smoke">Other Tellings</a></li><li><span class="num">6</span><a href="#elders">Her Older Sisters</a></li><li><span class="num">7</span><a href="#basket">The Basket and the Crow</a></li><li><span class="num">8</span><a href="#who">Who Worships Her</a></li><li><span class="num">9</span><a href="#kashi">Dhūmāvatī at Kāśī</a></li><li><span class="num">10</span><a href="#datia">The Pītāmbarā Pīṭha, Datiā</a></li><li><span class="num">11</span><a href="#festivals">Through the Year</a></li><li><span class="num">12</span><a href="#meaning">What She Teaches</a></li><li><span class="num">13</span><a href="#glossary">Glossary</a></li><li><span class="num">14</span><a href="#end">On One Page</a></li><li><span class="num">15</span><a href="#sources">Sources</a></li>
+  </ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">The essential facts on one page</div>
+<table class="ct fact"><tr><td>Name</td><td><b>Dhūmāvatī</b>: “the smoky one”</td></tr><tr><td>Place</td><td><b>Seventh</b> of the ten Mahāvidyās</td></tr><tr><td>She is</td><td>The Goddess as <b>loss, old age and emptiness</b>: what is left when everything else is gone</td></tr><tr><td>Look</td><td>An old, grey widow in white or soiled clothes; trembling hands; a winnowing basket; a boon-giving gesture</td></tr><tr><td>Vehicle</td><td>A horseless chariot with a <b>crow</b> on its banner, or the crow itself</td></tr><tr><td>Consort</td><td>None: she is the only widow among the Mahāvidyās</td></tr><tr><td>Kin</td><td>Linked with the older goddesses <b>Nirṛti, Jyeṣṭhā and Alakṣmī</b></td></tr><tr><td>Temples</td><td>Kāśī; the Pītāmbarā Pīṭha at Datiā; Kāmākhyā</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why would anyone worship misfortune?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> You cannot wish it away. Better to know her face, and ask for her blessing too.</p></div></div>
+</section>
+<section class="page" id="names"><h2 class="page-title">HER NAMES</h2><div class="sub">Smoke, widow, elder</div>
+<table class="ct fact"><tr><td>Dhūmāvatī</td><td>From <i>dhūma</i>, smoke: “she who is made of smoke”</td></tr><tr><td>Dhūmrā</td><td>“The smoke-coloured”</td></tr><tr><td>Vidhavā</td><td>The widow</td></tr><tr><td>Jyeṣṭhā</td><td>“The elder”: a commentator on the Śāradātilaka Tantra identifies her with Jyeṣṭhā</td></tr><tr><td>Dhūmāvatī Mā</td><td>Her name at Kāśī, as a protective mother</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A goddess made of smoke?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Smoke is what remains after the fire. She comes after everything has burned.</p></div></div>
+</section>
+<section class="page" id="form"><h2 class="page-title">HER FORM</h2><div class="sub">The old widow</div>
+<svg class="pg-fig" width="560" height="210" viewBox="0 0 560 210" role="img" aria-label="An old widow goddess in white on a horseless chariot with a crow banner, holding a winnowing basket"><rect width="560" height="210" fill="#fff"/><rect width="560" height="210" fill="#eeeef2"/><g transform="translate(120 100) scale(1)" fill="#8a8a8a" opacity=".55"><circle r="30"/><circle cx="26" cy="-20" r="24"/><circle cx="-24" cy="-26" r="22"/><circle cx="6" cy="-46" r="20"/></g><g transform="translate(450 90) scale(1)" fill="#8a8a8a" opacity=".55"><circle r="30"/><circle cx="26" cy="-20" r="24"/><circle cx="-24" cy="-26" r="22"/><circle cx="6" cy="-46" r="20"/></g><g transform="translate(280 120) scale(1.2)" stroke="#111" stroke-width="2"><path d="M-70 40 h140 l-10 -20 h-120z" fill="#6a5a4a"/><circle cx="-40" cy="46" r="16" fill="#8a7a6a"/><circle cx="40" cy="46" r="16" fill="#8a7a6a"/><path d="M60 20 v-90" stroke-width="3"/><path d="M60 -70 h40 l-8 12 l8 12 h-40z" fill="#555"/><g transform="translate(80 -58) scale(0.7)" stroke="#111" stroke-width="1.5"><path d="M-16 0 q10 -14 26 -6 l10 -2 l-8 6 q-4 10 -20 8 l-10 8z" fill="#222"/><circle cx="6" cy="-6" r="1.6" fill="#fff"/></g><g transform="translate(0 -10) scale(0.8)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -54 30 -66 q34 12 30 66z" fill="#eeeeee"/><path d="M-22 -8 l-28 -10 M22 -8 l26 -18" stroke="#9a9a9a" stroke-width="7"/><path d="M-64 -24 q14 -12 28 0 q-14 14 -28 0z" fill="#c9a26b"/><path d="M-60 -24 h20 M-58 -20 h16" stroke="#8a6a3a"/><path d="M48 -26 l8 -10" stroke="#9a9a9a" stroke-width="6"/><path d="M-16 -44 q-14 30 -8 56 M16 -44 q14 30 8 56" stroke="#555" stroke-width="5" fill="none"/><circle cy="-36" r="15" fill="#9a9a9a"/><path d="M-15 -42 q15 -16 30 0" fill="#f2f2f2"/><circle cx="-5" cy="-36" r="2.4" fill="#111"/><circle cx="5" cy="-36" r="2.4" fill="#111"/><path d="M-8 -30 q2 -2 4 0 M4 -30 q2 -2 4 0" fill="none"/><path d="M-6 -26 q6 -3 12 0" fill="none"/></g></g></svg><table class="ct fact"><tr><td>Age</td><td>Old, thin, wrinkled, with grey dishevelled hair</td></tr><tr><td>Colour</td><td>Smoky or dark, “like black clouds at the time of dissolution”</td></tr><tr><td>Hands</td><td>Trembling: one holds a <b>winnowing basket</b>, one gives boons</td></tr><tr><td>Dress</td><td>White or dirty clothes, the dress of a widow</td></tr><tr><td>Crow</td><td>On her banner, or as her mount: a carrion bird, a sign of death</td></tr><tr><td>Mood</td><td>Always hungry, always thirsty, never satisfied</td></tr></table>
+</section>
+<section class="page" id="swallow"><h2 class="page-title">THE GODDESS WHO ATE ŚIVA</h2><div class="sub">The Prāṇatoṣiṇī Tantra story</div>
+<svg class="pg-fig" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="A hungry goddess in the Himalaya facing Shiva seated in meditation"><rect width="560" height="160" fill="#fff"/><rect width="560" height="160" fill="#dfe8f4"/><path d="M0 160 L70 60 L130 110 L200 40 L300 120 L400 50 L480 100 L560 70 V160Z" fill="#c8d8e8" stroke="#111" stroke-width="2"/><path d="M190 52 l10 -12 l10 12 M390 62 l10 -12 l10 12" stroke="#fff" stroke-width="4" fill="none"/><g transform="translate(360 80) scale(0.9)" stroke="#111" stroke-width="2"><path d="M-22 70 q-4 -60 22 -70 q26 10 22 70z" fill="#5b8fe0"/><circle cy="-14" r="13" fill="#5b8fe0"/><path d="M-10 -26 q10 -24 20 0" fill="#3a2a1a"/><path d="M4 -34 a6 6 0 1 0 8 4" fill="none" stroke="#fff8c0" stroke-width="2.4"/><path d="M-6 -16 h3 M3 -16 h3"/><path d="M0 -22 v4" stroke="#c0392b"/><path d="M-26 70 h52" stroke="#d9a066" stroke-width="5"/><path d="M-18 12 q-16 6 -12 22" fill="none" stroke="#5b8fe0" stroke-width="7"/></g><g transform="translate(200 96) scale(0.8)" stroke="#111" stroke-width="2"><path d="M-24 60 q-2 -64 24 -72 q26 8 24 72z" fill="#eeeeee"/><path d="M-16 -36 q-10 30 -6 50 M16 -36 q10 30 6 50" stroke="#111" stroke-width="5" fill="none"/><path d="M-20 0 l-20 -18 M20 0 l20 -18" stroke="#9a9a9a" stroke-width="6"/><circle cy="-30" r="13" fill="#9a9a9a"/><path d="M-12 -40 h24 l-4 -14 l-6 6 l-2 -10 l-2 10 l-6 -6z" fill="#e0a800"/><circle cx="-5" cy="-32" r="2.2" fill="#fff"/><circle cx="5" cy="-32" r="2.2" fill="#fff"/><circle cy="-39" r="1.8" fill="#c0392b"/><path d="M-3 -24 q3 16 6 0z" fill="#e04040"/></g></svg><div class="steps">
+<div><b>Hunger.</b> Satī, living with Śiva in the Himālaya, grew terribly hungry and asked him for food. He did not give it.</div>
+<div><b>The swallow.</b> “Then I will eat you,” she said, and swallowed him. Smoke poured from her body.</div>
+<div><b>The curse.</b> Śiva asked to be let out, and she released him. He then rejected her and said she would take the form of a widow: Dhūmāvatī.</div>
+</div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> She made herself a widow?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> By her own act. Some read it as anger; others as a woman who needs no one.</p></div></div>
+</section>
+<section class="page" id="smoke"><h2 class="page-title">OTHER TELLINGS</h2><div class="sub">Sources differ</div>
+<table class="ct fact"><tr><td>Satī’s pyre</td><td>Some say she rose from the smoke of Satī’s body burning in Dakṣa’s fire</td></tr><tr><td>Durgā’s helper</td><td>An oral legend says Durgā created her in the battle with Śumbha and Niśumbha</td></tr><tr><td>Kālī’s version</td><td>Another telling has Kālī, not Satī, swallow Śiva</td></tr><tr><td>Ten forms</td><td>With the other Mahāvidyās, she appeared when Satī blocked Śiva’s path; she stands in the south-east</td></tr><tr><td>Late arrival</td><td>She has no known history before the Mahāvidyā lists, which Kinsley places no earlier than the 12th century</td></tr></table>
+</section>
+<section class="page" id="elders"><h2 class="page-title">HER OLDER SISTERS</h2><div class="sub">Nirṛti, Jyeṣṭhā, Alakṣmī</div>
+<table class="ct fact"><tr><td>Nirṛti</td><td>Vedic goddess of decay, need and bad luck; hymns ask her to stay away</td></tr><tr><td>Jyeṣṭhā</td><td>“The elder”, sister of Lakṣmī: dark, ugly, with a crow banner; once widely worshipped in South India</td></tr><tr><td>Alakṣmī</td><td>“Not-Lakṣmī”, the opposite of good fortune</td></tr><tr><td>The difference</td><td>Jyeṣṭhā is married; Dhūmāvatī is always a widow</td></tr><tr><td>Also</td><td>Linked with the four rainy months (Cāturmāsya), the inauspicious season</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So Lakṣmī has an ugly elder sister?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> In the old stories, yes. In Bengal, Alakṣmī is even sent out of the house before Lakṣmī is welcomed.</p></div></div>
+</section>
+<section class="page" id="basket"><h2 class="page-title">THE BASKET AND THE CROW</h2><div class="sub">Reading her symbols</div>
+<table class="ct fact"><tr><td>Winnowing basket</td><td>Separates grain from husk: the wisdom to tell the real from the passing</td></tr><tr><td>Crow</td><td>A bird that eats the dead: the end that comes to all</td></tr><tr><td>Horseless chariot</td><td>She goes nowhere, yet she is everywhere</td></tr><tr><td>Widowhood</td><td>No partner, no home: the state of the renouncer who has let go</td></tr><tr><td>Hunger</td><td>The emptiness that no worldly thing can fill</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A basket is wisdom?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Shake life hard enough and the husk blows away. What stays is the grain.</p></div></div>
+</section>
+<section class="page" id="who"><h2 class="page-title">WHO WORSHIPS HER</h2><div class="sub">For those outside the household</div>
+<table class="ct fact"><tr><td>Ideal devotees</td><td>Bachelors, widows, renouncers and Tantric practitioners</td></tr><tr><td>Householders</td><td>Traditionally keep their distance; her worship is quiet and private</td></tr><tr><td>Places</td><td>Cremation grounds, forests and deserts are her haunts</td></tr><tr><td>Seventh wisdom</td><td>After Chinnamastā gives herself away, Dhūmāvatī is what is left: emptiness</td></tr></table><div class="key">Previous: <a href="/bhakti/devi/dasha-mahavidya/chinnamasta/">Chinnamastā</a></div>
+</section>
+<section class="page" id="kashi"><h2 class="page-title">DHŪMĀVATĪ AT KĀŚĪ</h2><div class="sub">The protective grandmother</div>
+<table class="ct fact"><tr><td>Kāśī</td><td>Her temple in Vārāṇasī is among the very few dedicated to her alone</td></tr><tr><td>A change</td><td>Here she sheds her bad name and becomes a local protector</td></tr><tr><td>Who comes</td><td>Even married couples worship her here, unlike elsewhere</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> The scary widow becomes a grandmother?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> In Kāśī, yes. Nearness makes even the fierce ones family.</p></div></div><div class="key">More Kāśī: <a href="/bhakti/devi/dasha-mahavidya/bhairavi/">Tripurabhairavī</a></div>
+</section>
+<section class="page" id="datia"><h2 class="page-title">THE PĪTĀMBARĀ PĪṬHA, DATIĀ</h2><div class="sub">Two Mahāvidyās under one roof</div>
+<svg class="pg-fig" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="A temple complex on a low hill with a yellow banner and a smaller grey shrine beside it"><rect width="560" height="160" fill="#fff"/><rect width="560" height="160" fill="#fff8d8"/><path d="M0 160 q280 -80 560 0z" fill="#d8c8a8" stroke="#111"/><g transform="translate(220 100)" stroke="#111" stroke-width="2"><rect x="-60" y="-30" width="120" height="30" fill="#ffd60a"/><path d="M-40 -30 l40 -40 l40 40z" fill="#e0a800"/></g><g transform="translate(380 108)" stroke="#111" stroke-width="2"><rect x="-34" y="-24" width="68" height="24" fill="#d8d8d8"/><path d="M-24 -24 l24 -26 l24 26z" fill="#9a9a9a"/></g><g transform="translate(380 40) scale(1)" stroke="#111" stroke-width="1.5"><path d="M-16 0 q10 -14 26 -6 l10 -2 l-8 6 q-4 10 -20 8 l-10 8z" fill="#222"/><circle cx="6" cy="-6" r="1.6" fill="#fff"/></g></svg><table class="ct fact"><tr><td>Where</td><td>Datiā, Madhya Pradesh, on a low hill at the edge of the town</td></tr><tr><td>Founder</td><td>A Swāmījī who settled in Datiā in the 1920s and set up the Pītāmbarā Pīṭha of Bagalāmukhī</td></tr><tr><td>Dhūmāvatī</td><td>He also founded a temple of Dhūmāvatī inside the same āśrama</td></tr><tr><td>Rare pair</td><td>Two Mahāvidyās, Bagalāmukhī and Dhūmāvatī, worshipped in one complex</td></tr><tr><td>Also</td><td>The Vanakhaṇḍeśvara Śiva temple, said to date from the Mahābhārata age</td></tr></table>
+</section>
+<section class="page" id="festivals"><h2 class="page-title">THROUGH THE YEAR</h2><div class="sub">Her days</div>
+<table class="ct fact"><tr><td>Dhūmāvatī Jayantī</td><td>Jyeṣṭha Śukla Aṣṭamī (May–June)</td></tr><tr><td>Navarātri</td><td>Both seasons, with the other Mahāvidyās</td></tr><tr><td>Gupta Navarātri</td><td>Kept by Tantric worshippers</td></tr><tr><td>Saturdays</td><td>The big day at Datiā</td></tr></table>
+</section>
+<section class="page" id="meaning"><h2 class="page-title">WHAT SHE TEACHES</h2><div class="sub">The wisdom of emptiness</div>
+<table class="ct fact"><tr><td>Face loss</td><td>Old age, grief and want come to everyone; she teaches us to look at them</td></tr><tr><td>Let go</td><td>The widow and the renouncer have nothing left to lose</td></tr><tr><td>Discernment</td><td>Winnow: keep the grain, let the husk fly</td></tr><tr><td>Hidden grace</td><td>Her other hand still gives boons</td></tr></table>
+</section>
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used in this guide</div>
+<table class="ct fact"><tr><td>Dhūma</td><td>Smoke</td></tr><tr><td>Vidhavā</td><td>Widow</td></tr><tr><td>Śūrpa</td><td>Winnowing basket</td></tr><tr><td>Kāka</td><td>Crow</td></tr><tr><td>Nirṛti</td><td>Vedic goddess of decay</td></tr><tr><td>Jyeṣṭhā</td><td>The elder goddess</td></tr><tr><td>Alakṣmī</td><td>Misfortune</td></tr><tr><td>Cāturmāsya</td><td>The four rainy months</td></tr></table>
+</section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">The whole guide in five lines</div>
+<div class="steps">
+<div><b>Who.</b> Dhūmāvatī, the Smoky One, seventh Mahāvidyā: the widow Goddess.</div>
+<div><b>Form.</b> Old, grey, trembling; winnowing basket; crow-bannered chariot.</div>
+<div><b>Story.</b> Hungry Satī swallowed Śiva and was cursed to be a widow.</div>
+<div><b>Kin and temples.</b> Nirṛti, Jyeṣṭhā, Alakṣmī; Kāśī; Datiā.</div>
+<div><b>Lesson.</b> Look at loss; winnow; let go.</div>
+</div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> One line to remember?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> When the fire has burned out, the smoke still teaches.</p></div></div><div class="key">The seventh Great Wisdom: <b>Dhūmāvatī</b>. 🙏</div><div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small">
+<p><b>Goddess:</b> D. Kinsley, <i>Tantric Visions of the Divine Feminine</i> (1997), ch. on Dhūmāvatī (dhyāna: cloud-dark, wrinkled, crow-like; Nirṛti, Jyeṣṭhā, Alakṣmī; widowhood; Mahāvidyā concept not before 12th c.). Wikipedia, “Dhumavati” (winnowing basket, horseless chariot, crow; Prāṇatoṣiṇī Tantra story; oral legend of Durgā; Kālī variant; south-east direction; Śāradātilaka commentator on Jyeṣṭhā; Cāturmāsya; devotees; Vārāṇasī temple as protective deity worshipped by married couples). Metropolitan Museum (winnowing tray as her identifier).</p>
+<p><b>Datiā:</b> Wikipedia, “Pitambara Peeth”; Incredible India (Bagalāmukhī and Dhūmāvatī in one complex; 1920s); Wikipedia, “Datia” (Vanakhaṇḍeśvara).</p>
+<p><b>Sources differ / unverified:</b> the pyre-smoke origin and Durgā legend are oral or regional; Jayantī date follows common almanacs; Saturday crowds at Datiā are reported by visitors. Zappy and Prof. Bolt are fictional.</p>
+</div>
+</section>
+</div>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/bhakti/">Bhakti</a><span class="sep">›</span><a href="/bhakti/gods/">Gods and Goddesses</a><span class="sep">›</span><a href="/bhakti/devi/">Devi</a><span class="also">More for Devi: <a href="/bhakti/devi/#hymns">hymns</a> · <a href="/bhakti/devi/#scriptures">scriptures</a> · <a href="/bhakti/devi/#temples">temples</a></span></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

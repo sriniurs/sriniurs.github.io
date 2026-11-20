@@ -61,3 +61,32 @@ and summary report the selected story or why no change was needed.
 Local preview: `python3 .github/publish_due.py --dry-run`.
 Simulated dates are allowed only in dry-run mode. Unit tests cover early runs,
 repeat runs, delays, queue order, duplicate links, missing files and preservation.
+
+## Bhakti section
+
+Everything under `/bhakti/` is placed by `bhakti/catalog.json`; never hand-edit the
+hub tile lists (they sit between `<!-- hub:auto -->` markers and are regenerated).
+
+Four doors, decided by what the page is:
+
+| Door | Put it here if… | Examples |
+|---|---|---|
+| gods | it is about who a deity is: form, stories, symbols | Daśa Mahāvidyā, Śiva's family and symbols |
+| hymns | you can chant it: stotra, mantra, sūkta, aṣṭakam | Liṅgāṣṭakam, Viṣṇu Sahasranāma, Kanakadhārā |
+| scriptures | it is a text or story read in parts | Devī Māhātmya |
+| temples | you can visit it | 12 Jyotirliṅgas, 18 Śakti Pīṭhas, Around Mysuru |
+
+URLs stay where they are: hymns and gods live under `/bhakti/<deity>/<slug>/`
+(deity = shiva, vishnu or devi), scriptures under their deity too, and temples
+under `/bhakti/temples-of-india/<series>/`. A series needs one entry for its folder;
+its parts inherit it.
+
+To add an article or series: upload the page(s), add one entry to
+`bhakti/catalog.json` (`path`, `door`, `deities`, `group` for temples: `circuits` or
+`regional`, and the hub `tile` HTML, in the order it should appear), then run
+`python3 .github/bhakti_hubs.py --strict`. It rebuilds `/bhakti/`, the door pages
+(`/bhakti/gods/`, `/bhakti/hymns/`, `/bhakti/scriptures/`, `/bhakti/temples-of-india/`)
+and the deity pages (`/bhakti/shiva/`, `/bhakti/vishnu/`, `/bhakti/devi/`), and adds
+a "Bhakti › door › deity" trail to the foot of every Bhakti article. `--strict`
+fails if any Bhakti page is not covered by the catalogue. The publish and unpack
+workflows run it too.
