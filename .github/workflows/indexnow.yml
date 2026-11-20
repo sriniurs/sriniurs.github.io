@@ -23,6 +23,8 @@ jobs:
           fetch-depth: 50
       - name: Wait for GitHub Pages to deploy
         run: sleep 120
+      - name: Check the key file is live
+        run: curl -sS -i https://srinipresents.com/fcbb8aadcc140fcc6786d7f515d592f4.txt | head -20
       - name: Submit changed pages
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.all }}" = "true" ]; then

@@ -4,7 +4,7 @@
 Usage: indexnow.py <git-revision-range or --since=ISO-time> | --all
 Maps changed */index.html files to their srinipresents.com URLs and POSTs them.
 """
-import json, re, subprocess, sys, urllib.request
+import json, re, subprocess, sys, urllib.error, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -45,8 +45,12 @@ def main():
                        'urlList': urls[:10000]}).encode()
     req = urllib.request.Request('https://api.indexnow.org/indexnow', data=body,
                                  headers={'Content-Type': 'application/json; charset=utf-8'})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        print(f'IndexNow: HTTP {r.status} for {len(urls)} URL(s)')
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            print(f'IndexNow: HTTP {r.status} for {len(urls)} URL(s)')
+    except urllib.error.HTTPError as e:
+        print(f'IndexNow: HTTP {e.code} {e.read()[:500]!r}')
+        raise
     for u in urls: print('  ', u)
 
 if __name__ == '__main__':
