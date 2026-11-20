@@ -90,3 +90,7 @@ and the deity pages (`/bhakti/shiva/`, `/bhakti/vishnu/`, `/bhakti/devi/`), and 
 a "Bhakti › door › deity" trail to the foot of every Bhakti article. `--strict`
 fails if any Bhakti page is not covered by the catalogue. The publish and unpack
 workflows run it too.
+
+The Python builders for these articles are kept in `tools/bhakti-kit/` (see its README;
+install with `bash tools/bhakti-kit/setup.sh`).
+

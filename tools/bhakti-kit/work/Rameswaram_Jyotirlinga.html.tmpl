@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rāmeśvaram Jyotirliṅga: A Reference Guide · srini.presents</title>
+<meta name="description" content="Rāmeśvaram jyotirliṅga: Rāma's worship of Śiva, Sītā's sand liṅga and Hanumān's Viśvaliṅga, the Setupatis' great corridors, the 22 tīrthas, the crystal liṅga, Kāśī–Rāmeśvaram, the Cār Dhām and Rāma Setu, illustrated.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#2c5f9e,#0b2a4a 55%,#04101f)}
+  .sloka-head{background:#0b2a4a}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0b2a4a}
+  .sub{color:#1d4f9a}
+  .num{background:#0b2a4a}
+  .steps div:before{background:#1d4f9a}
+  .full .vn,.full .end{color:#1d4f9a}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d4f9a}
+  .contlink{color:#1d4f9a}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#2c5f9e,#0b2a4a 55%,#04101f)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #1d4f9a;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#1d4f9a;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#0b2a4a;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">JYOTIRLIṄGA 7 OF 12</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(24px,7.6vw,76px)">RĀMEŚVARAM</h1>
+  <div class="series">THE 12 JYOTIRLIṄGAS · A REFERENCE GUIDE</div>
+  <div class="tag">Legends, history, rituals, festivals and the island where Rāma worshipped Śiva · explained and illustrated</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A tall Dravidian gopuram on an island shore, a long pillared corridor, the sea with a line of shoals stretching away, and a bow and arrows in the sky"><rect x="174" y="0" width="32" height="160" fill="#ffd60a" opacity=".22"/><path d="M40 60 C 90 20, 150 20, 190 40" fill="none" stroke="#ffd60a" stroke-width="4" opacity=".6"/><path d="M40 60 L190 40" stroke="#ffd60a" stroke-width="1.5" opacity=".6"/><path d="M200 30 l40 -8 M200 38 l40 -8 M200 46 l40 -8" stroke="#ffd60a" stroke-width="2" opacity=".55"/><path d="M0 196 h380 v72 h-380z" fill="#1d6fb8" stroke="#111" stroke-width="2"/><g fill="#e8c27a" stroke="#111" stroke-width="1"><ellipse cx="260" cy="226" rx="14" ry="4"/><ellipse cx="292" cy="234" rx="12" ry="4"/><ellipse cx="320" cy="242" rx="12" ry="3.5"/><ellipse cx="346" cy="250" rx="11" ry="3"/><ellipse cx="370" cy="258" rx="10" ry="3"/></g><text x="300" y="214" font-family="Bangers" font-size="10" fill="#fff">SETU</text><path d="M10 222 q10 -6 20 0 t20 0 M90 246 q10 -6 20 0 t20 0 M180 230 q10 -6 20 0 t20 0" fill="none" stroke="#9fd3f0" stroke-width="2"/><path d="M0 186 h240 v10 h-240z" fill="#e8c27a" stroke="#111" stroke-width="1.5"/><rect x="20" y="150" width="200" height="36" fill="#f2e6d0" stroke="#111" stroke-width="2"/><g stroke="#111" stroke-width="2"><path d="M36 150 v36 M56 150 v36 M76 150 v36 M96 150 v36 M116 150 v36 M164 150 v36 M184 150 v36 M204 150 v36"/></g><path d="M150 186 L156 60 L224 60 L230 186Z" fill="#f2e6d0" stroke="#111" stroke-width="2.5"/><path d="M154 160 h72 M154 136 h72 M155 112 h70 M155 88 h70" stroke="#c97b2e" stroke-width="2"/><path d="M156 60 q34 -24 68 0z" fill="#e0a800" stroke="#111" stroke-width="2"/><g fill="#ffd60a" stroke="#111"><circle cx="172" cy="46" r="3"/><circle cx="190" cy="40" r="3"/><circle cx="208" cy="46" r="3"/></g><rect x="180" y="160" width="20" height="26" fill="#6b4423" stroke="#111" stroke-width="1.5"/><path d="M250 180 l8 -40 l8 40z" fill="#145c3e" stroke="#111" stroke-width="1.5"/><path d="M258 140 q-10 -8 -18 -4 M258 140 q10 -8 18 -4 M258 140 q-4 -12 -12 -14 M258 140 q4 -12 12 -14" stroke="#2a9d6f" stroke-width="4" fill="none"/></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  <div class="bubble" style="max-width:620px;margin:10px auto 4px;text-align:left">
+    <span class="who">HOW THIS WORKS:</span> A one-page summary first, then maps, the stotram line, the legends of Rāma and the two liṅgas, a full history, the great corridors, the day's rituals, the 22 sacred wells, festivals, the Kāśī–Rāmeśvaram pilgrimage, the island's shrines, and its people. Keep it as a reference.
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6">
+    <p>At the southern tip of India, on a low island between the Bay of Bengal and the Gulf of Mannar, Rāma himself is said to have worshipped Śiva. That is what makes Rāmeśvaram unique among the twelve: the jyotirliṅga installed by an avatāra of Viṣṇu. Śaivas and Vaiṣṇavas alike come here, and it is both a jyotirliṅga and one of the four <b>dhāms</b> of India.</p>
+    <p>Its temple is a world of its own: pillared corridors that run for hundreds of metres, built by the Setupati kings of Rāmanāthapuram; 22 sacred wells whose water is poured over every pilgrim; a liṅga of sand shaped by Sītā; and a liṅga from Kailāsa brought by Hanumān.</p>
+    <p>This eighth guide in our series follows the seventh name in the stotram: its legends, its long history, its rituals, and the old bond that ties Rāmeśvaram to Kāśī at the other end of India.</p>
+    <p>May every reader one day walk the great corridor at dawn, wet from the 22 wells, toward the Lord whom Rāma worshipped.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#1d4f9a">Rāmanātha śaraṇam,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#where">Where It Is: Maps</a></li><li><span class="num">3</span><a href="#stotram">In the Jyotirliṅga Stotram</a></li><li><span class="num">4</span><a href="#legends">The Legends I: Rāma Worships Śiva</a></li><li><span class="num">5</span><a href="#legends2">The Legends II: The Bridge and the Bow's Tip</a></li><li><span class="num">6</span><a href="#history1">History I: Pāṇḍyas to Setupatis</a></li><li><span class="num">7</span><a href="#history2">History II: Cyclone, Bridges, Today</a></li><li><span class="num">8</span><a href="#temple">The Temple Today: the Great Corridors</a></li><li><span class="num">9</span><a href="#day">A Day at the Temple</a></li><li><span class="num">10</span><a href="#tirthas">The 22 Tīrthas</a></li><li><span class="num">11</span><a href="#festivals">Festivals</a></li><li><span class="num">12</span><a href="#kashi">Kāśī to Rāmeśvaram, and the Four Dhāms</a></li><li><span class="num">13</span><a href="#around">Around the Island</a></li><li><span class="num">14</span><a href="#setu">Rāma Setu</a></li><li><span class="num">15</span><a href="#culture">Rāmeśvaram in Culture</a></li><li><span class="num">16</span><a href="#glossary">Glossary</a></li><li><span class="num">17</span><a href="#end">Rāmeśvaram on One Page</a></li><li><span class="num">18</span><a href="#sources">Sources</a></li>
+  </ul>
+</section>
+
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">The essential facts on one page</div>
+<table class="ct fact">
+<tr><td>Deity</td><td>Śiva as <b>Rāmanātha</b> / <b>Rāmeśvara</b> (Rāmanāthasvāmī), with the Goddess as <b>Parvatavardhinī</b></td></tr>
+<tr><td>Jyotirliṅga</td><td>One of the <b>twelve</b>; named <b>seventh</b> in the Dvādaśa Jyotirliṅga Stotram ("setubandhe tu rāmeśam")</td></tr>
+<tr><td>Also</td><td>One of the four <b>Cār Dhāms</b> (with Badrīnāth, Dwārakā and Purī); a Tevāram <b>Pāḍal Peṭra Sthalam</b></td></tr>
+<tr><td>Place</td><td>Rāmeśvaram, on <b>Pāmban island</b>, Rāmanāthapuram district, Tamil Nadu</td></tr>
+<tr><td>Two liṅgas</td><td><b>Rāmaliṅga</b>, of sand, shaped by Sītā; <b>Viśvaliṅga</b>, brought by Hanumān from Kailāsa, worshipped <b>first</b></td></tr>
+<tr><td>Sacred waters</td><td><b>Agni Tīrtham</b> (the sea) and <b>22 tīrthas</b> (wells and tanks) inside the temple</td></tr>
+<tr><td>Corridors</td><td>The outer (third) corridor: about <b>197 m × 133 m</b>, with about <b>1,212 pillars</b>; often called the longest temple corridor in the world</td></tr>
+<tr><td>Builders</td><td>Pāṇḍyas; <b>Parākramabāhu I</b> of Sri Lanka (sanctum, 12th c.); Jaffna kings; the <b>Setupatis</b> of Rāmanāthapuram (17th–18th c.)</td></tr>
+<tr><td>Rājagopuram</td><td>About <b>53 m</b> high</td></tr>
+<tr><td>Signature ritual</td><td>The dawn <b>Spaṭika liṅga</b> (crystal liṅga) darśan; bathing in the 22 tīrthas</td></tr>
+<tr><td>Big festivals</td><td>Mahāśivarātri, Tirukkalyāṇam, Rāmaliṅga Pratiṣṭhā, Āḍi and Tai Amāvāsai</td></tr>
+<tr><td>Managed by</td><td>Tamil Nadu's Hindu Religious and Charitable Endowments Department</td></tr>
+</table>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Viṣṇu, as Rāma, worshipping Śiva?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> That's the whole point of Rāmeśvaram. Here Hari bows to Hara, and pilgrims of both traditions bow together.</p></div></div>
+</section>
+
+<section class="page" id="where"><h2 class="page-title">WHERE IT IS</h2><div class="sub">An island at the tip of India</div>
+<div class="g2" style="align-items:start">
+<div><svg class="pg-fig" width="300" height="320" viewBox="0 0 300 320" role="img" aria-label="Simplified map of India with Rameswaram marked on the south-east coast of Tamil Nadu, facing Sri Lanka"><rect width="300" height="320" fill="#eef3fa"/><path d="M120 20 L150 14 L170 34 L160 60 L190 80 L230 84 L262 104 L280 100 L290 120 L260 130 L250 150 L226 160 L200 190 L176 240 L160 290 L150 300 L140 288 L120 230 L100 200 L72 180 L50 170 L40 150 L60 140 L54 120 L80 100 L96 80 L110 50Z" fill="#dfeccf" stroke="#111" stroke-width="2"/><ellipse cx="190" cy="300" rx="14" ry="18" fill="#dfeccf" stroke="#111" stroke-width="2"/><text x="214" y="312" font-family="Bangers" font-size="9" fill="#555">Sri Lanka</text><circle cx="170" cy="276" r="7" fill="#e63946" stroke="#111" stroke-width="2"/><path d="M178 272 L220 250" stroke="#c0392b" stroke-width="2"/><text x="244" y="246" text-anchor="middle" font-family="Bangers" font-size="12" fill="#c0392b">RĀMEŚVARAM</text><circle cx="196" cy="118" r="4" fill="#111"/><text x="196" y="110" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Kāśī</text><path d="M196 122 C 200 180, 190 230, 172 270" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4 4"/><text x="150" y="312" text-anchor="middle" font-family="Bangers" font-size="10" fill="#555">India (simplified outline)</text></svg></div>
+<div class="panel reading">
+<p>Rāmeśvaram stands on <b>Pāmban island</b>, off the south-east coast of Tamil Nadu, joined to the mainland at Maṇḍapam by the <b>Pāmban</b> road and rail bridges.</p>
+<p>The island points east toward Sri Lanka. At its tip, <b>Dhanuṣkoḍi</b>, a chain of sandbanks and shoals, <b>Rāma Setu</b> (Adam's Bridge), runs toward Mannar island across the shallow sea.</p>
+<p>To the north lies Palk Bay; to the south, the <b>Gulf of Mannar</b>, a marine national park of coral reefs.</p>
+</div>
+</div>
+<svg class="pg-fig" width="560" height="320" viewBox="0 0 560 320" role="img" aria-label="Simple map of Pamban island showing the Pamban bridges from Mandapam, Pamban town, the Ramanathaswamy temple and Agni Tirtham in Rameswaram town, Gandhamadana Parvatam, Kalam memorial, the road to Dhanushkodi and Arichal Munai, and Rama Setu toward Sri Lanka"><rect width="560" height="320" fill="#4aa3df"/><path d="M0 120 h40 v60 h-40z" fill="#dfeccf" stroke="#111" stroke-width="2"/><text x="20" y="200" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Maṇḍapam</text><path d="M40 146 h70" stroke="#111" stroke-width="5"/><path d="M40 156 h70" stroke="#888" stroke-width="4"/><text x="76" y="138" text-anchor="middle" font-family="Bangers" font-size="10" fill="#fff">PĀMBAN BRIDGES</text><path d="M110 120 C 160 100, 240 90, 300 100 C 340 108, 360 130, 380 160 C 400 190, 450 220, 500 250 L 510 262 C 470 250, 420 230, 380 214 C 340 200, 300 200, 250 196 C 190 192, 140 190, 110 180Z" fill="#dfeccf" stroke="#111" stroke-width="2.5"/><text x="140" y="172" font-family="Bangers" font-size="10" fill="#111">Pāmban</text><g transform="translate(300 150) scale(0.45)"><rect x="-30" y="-30" width="60" height="30" fill="#f2e6d0" stroke="#111" stroke-width="2"/><path d="M-20 -30 L-16 -100 L16 -100 L20 -30Z" fill="#f2e6d0" stroke="#111" stroke-width="2.5"/><path d="M-16 -100 q16 -12 32 0z" fill="#e0a800" stroke="#111" stroke-width="2"/></g><text x="300" y="170" text-anchor="middle" font-family="Bangers" font-size="12" fill="#c0392b">RĀMANĀTHASVĀMĪ</text><circle cx="330" cy="126" r="6" fill="#ffd60a" stroke="#111"/><text x="340" y="122" font-family="Bangers" font-size="10" fill="#111">Agni Tīrtham</text><circle cx="270" cy="112" r="5" fill="#7a3fa0" stroke="#111"/><text x="262" y="100" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">Gandhamādana</text><circle cx="200" cy="182" r="5" fill="#2a9d6f" stroke="#111"/><text x="200" y="200" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">Kalam memorial</text><circle cx="420" cy="212" r="5" fill="#7a3fa0" stroke="#111"/><text x="420" y="200" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">Kodaṇḍarāma</text><circle cx="470" cy="236" r="6" fill="#e63946" stroke="#111"/><text x="470" y="262" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Dhanuṣkoḍi</text><circle cx="505" cy="258" r="5" fill="#111"/><text x="505" y="278" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">Arichal Munai</text><g fill="#e8c27a" stroke="#111" stroke-width="1"><ellipse cx="525" cy="270" rx="7" ry="2.5"/><ellipse cx="540" cy="280" rx="7" ry="2.5"/><ellipse cx="552" cy="292" rx="6" ry="2.5"/></g><text x="490" y="304" font-family="Bangers" font-size="10" fill="#fff">RĀMA SETU →</text><text x="200" y="40" text-anchor="middle" font-family="Bangers" font-size="12" fill="#fff">PALK BAY</text><text x="240" y="290" text-anchor="middle" font-family="Bangers" font-size="12" fill="#fff">GULF OF MANNAR</text><path d="M530 30 v26 M522 40 l8 -12 l8 12" fill="none" stroke="#111" stroke-width="3"/><text x="530" y="70" text-anchor="middle" font-family="Bangers" font-size="12" fill="#111">N</text><text x="100" y="304" text-anchor="middle" font-family="Bangers" font-size="10" fill="#fff">Not to scale: positions approximate</text></svg>
+</section>
+
+<section class="page" id="stotram"><h2 class="page-title">IN THE JYOTIRLIṄGA STOTRAM</h2><div class="sub">"At the bridge, Rāmeśa"</div>
+<div class="iast"><span class="cl">paralyāṃ vaidyanāthaṃ ca</span><span class="cl">ḍākinyāṃ bhīmaśaṅkaram |</span><span class="cl">setubandhe tu rāmeśaṃ</span><span class="cl">nāgeśaṃ dārukāvane ‖</span></div>
+<div class="panel"><span class="caption">What it says</span><p style="margin:0;font-size:17px">"Vaidyanātha at Paralī, Bhīmaśaṅkara in Ḍākinī, <b>Rāmeśa at Setubandha</b>, and Nāgeśa in the Dāruka forest."</p></div>
+<table class="ct"><tr><th>Word</th><th>Means</th></tr>
+<tr><td class="w">setubandhe</td><td><b>at Setubandha</b>: "where the bridge was built"</td></tr>
+<tr><td class="w">rāmeśa</td><td><b>Rāma's Lord</b> (Rāma + īśa)</td></tr>
+<tr><td class="w">tu</td><td>"and indeed": a little emphasis</td></tr></table>
+<div class="panel reading">
+<p><b>Who is whose Lord?</b> A famous play on the name: Vaiṣṇavas read <i>Rāmeśvara</i> as "the Lord <b>of</b> Rāma" said by Rāma in humility, while Śaivas tell that Śiva read it back as "he <b>whose</b> Lord is Rāma". Sanskrit grammar allows both. Each god, the story says, called the other his master.</p>
+<p><b>The longer hymn.</b> Verse seven of the stotram traditionally ascribed to Ādi Śaṅkara: <i>sutāmraparṇī-jala-rāśi-yoge nibadhya setuṃ viśikhair asaṅkhyaiḥ | śrī-rāmacandreṇa samarpitaṃ taṃ rāmeśvarākhyaṃ niyataṃ namāmi</i>: "where the Tāmraparṇī meets the ocean, where Rāmacandra built a bridge with countless arrows, I bow always to the Lord he installed, named Rāmeśvara."</p>
+</div>
+<div class="key">Seventh in the stotram: <b>Rāmeśvara at the bridge</b>, the Lord whom Rāma worshipped, and who called Rāma his Lord.</div>
+</section>
+
+<section class="page" id="legends"><h2 class="page-title">THE LEGENDS · I</h2><div class="sub">Rāma worships Śiva: two liṅgas</div>
+<div class="panel reading">
+<p><b>After the war.</b> In later Rāmāyaṇa tellings and the <i>Setu Māhātmya</i> of the Skanda Purāṇa, Rāma returns from Laṅkā after defeating Rāvaṇa. Rāvaṇa, though a demon king, was a grandson of the sage Pulastya and a great scholar; the sages advise Rāma to worship Śiva to purify himself of the sin of his killing.</p>
+<p><b>Hanumān's errand.</b> Rāma sends <b>Hanumān</b> to Kailāsa to bring a liṅga from Śiva himself. The auspicious hour draws near, and Hanumān has not returned.</p>
+<p><b>Sītā's liṅga.</b> So <b>Sītā</b> shapes a liṅga from the sand of the shore, and Rāma worships it at the appointed time. This is the <b>Rāmaliṅga</b>, the main liṅga of the temple.</p>
+<p><b>Hanumān's sorrow.</b> Hanumān arrives with his liṅga and is hurt to find the worship over. Some tellings say he tried to pull the sand liṅga away with his tail and could not move it. To console him, Rāma installs Hanumān's liṅga beside it, the <b>Viśvaliṅga</b> (also called the Kāśī liṅga), and decrees that it must <b>always be worshipped first</b>. The temple keeps that order to this day.</p>
+</div>
+<div class="g2">
+<div class="card bg-yellow"><h4>🏖️ Rāmaliṅga</h4><p>A liṅga of sand, shaped by Sītā, installed by Rāma: the main deity, Rāmanātha.</p></div>
+<div class="card bg-blue"><h4>🏔️ Viśvaliṅga</h4><p>The liṅga from Kailāsa, brought by Hanumān: worshipped before Rāmaliṅga, every day.</p></div>
+</div>
+<div class="inner">Hanumān was late out of devotion, not carelessness. Rāma's answer honours both the timely offering and the loving delay: the last to arrive is served first.</div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A liṅga made of sand has lasted thousands of years?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> So devotees believe. It's kept covered and bathed only with water from the sacred wells. Faith keeps it; history can't measure it.</p></div></div>
+</section>
+
+<section class="page" id="legends2"><h2 class="page-title">THE LEGENDS · II</h2><div class="sub">The bridge, the bow's tip and the hill of fragrance</div>
+<div class="panel reading">
+<p><b>The bridge.</b> In the Rāmāyaṇa, Rāma's army of vānaras, led by the engineer <b>Nala</b>, builds a causeway of rocks and trees across the sea to Laṅkā. Stones with Rāma's name, the story says, floated. Rāmeśvaram is <b>Setubandha</b>, "where the bridge was bound".</p>
+<p><b>Dhanuṣkoḍi.</b> After the war, at the request of <b>Vibhīṣaṇa</b>, Rāvaṇa's brother and the new king of Laṅkā, Rāma broke the bridge with the tip (<i>koḍi</i>) of his bow (<i>dhanus</i>), so no army could cross again. The tip of the island bears that name.</p>
+<p><b>Vibhīṣaṇa's crowning.</b> Tradition holds that Rāma crowned Vibhīṣaṇa near the shore, where the <b>Kodaṇḍarāma</b> temple stands.</p>
+<p><b>Gandhamādana.</b> From the island's highest point, a small hill called <b>Gandhamādana Parvatam</b>, Rāma is said to have looked out toward Laṅkā; a shrine there keeps his footprints (<i>pādam</i>).</p>
+<p><b>Agni Tīrtham.</b> The sea before the temple is named for Agni, the fire god, who tradition says returned Sītā unharmed from her ordeal by fire; pilgrims bathe here first.</p>
+</div>
+<div class="g3">
+<div class="card bg-red"><h4>🌉 Setubandha</h4><p>The bridge of the vānaras.</p></div>
+<div class="card bg-green"><h4>🏹 Dhanuṣkoḍi</h4><p>Where the bow broke it.</p></div>
+<div class="card bg-yellow"><h4>👣 Rāma's feet</h4><p>On Gandhamādana hill.</p></div>
+</div>
+<div class="note">The worship of Śiva at Rāmeśvaram is not in Vālmīki's Rāmāyaṇa in this form; it grows in later Rāmāyaṇas and Purāṇas. Versions differ.</div>
+</section>
+
+<section class="page" id="history1"><h2 class="page-title">HISTORY · I</h2><div class="sub">Pāṇḍyas, a Lankan king and the Setupatis</div>
+<svg class="pg-fig" width="560" height="90" viewBox="0 0 560 90" role="img" aria-label="Timeline of Rameswaram: Tevaram hymns, 12th century Parakramabahu, Pandyas, 15th century west gopuram, 17th century Sethupathis, 1772 third corridor, 1964 cyclone, 2025 new Pamban bridge"><rect width="560" height="90" fill="#fff"/><path d="M20 50 h520" stroke="#111" stroke-width="3"/><circle cx="40" cy="50" r="8" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="40" y="30" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">7th c.</text><text x="40" y="76" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Tevāram</text><circle cx="110" cy="50" r="8" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="110" y="30" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">1153–86</text><text x="110" y="76" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Parākramabāhu</text><circle cx="180" cy="50" r="8" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="180" y="30" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">15th c.</text><text x="180" y="76" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">West gopura</text><circle cx="250" cy="50" r="8" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="250" y="30" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">17th c.</text><text x="250" y="76" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Setupatis</text><circle cx="320" cy="50" r="8" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="320" y="30" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">1772</text><text x="320" y="76" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">3rd corridor</text><circle cx="390" cy="50" r="8" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="390" y="30" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">1914</text><text x="390" y="76" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Pāmban bridge</text><circle cx="460" cy="50" r="8" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="460" y="30" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">1964</text><text x="460" y="76" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">Cyclone</text><circle cx="525" cy="50" r="8" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="525" y="30" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">2025</text><text x="525" y="76" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">New bridge</text></svg>
+<div class="tl">
+<div><b class="yr">7th c.</b> The Tamil Nāyanmār saints <b>Appar</b> and <b>Sambandar</b> sing of Rāmeśvaram in the <i>Tevāram</i>; it becomes one of the 275 Pāḍal Peṭra Sthalams. Tradition says the first shrine was a simple thatched shed.</div>
+<div><b class="yr">11th–12th c.</b> The oldest surviving fabric, small vimānas in the western part of the temple, dates from this time.</div>
+<div><b class="yr">1153–86</b> <b>Parākramabāhu I</b>, king of Polonnaruwa in Sri Lanka, is credited with building the sanctum around the liṅga.</div>
+<div><b class="yr">12th–14th c.</b> The <b>Pāṇḍya</b> kings of Madurai enlarge the temple; the <b>Ārya Cakravarti</b> kings of Jaffna, who called themselves "Setukāvalan" (guardians of the bridge), also give generously.</div>
+<div><b class="yr">15th c.</b> The western gopura and outer walls are completed, and work on the second corridor begins under Vijayanagara patronage.</div>
+<div><b class="yr">17th c.</b> The <b>Setupatis</b> of Rāmanāthapuram, hereditary "lords of the bridge", become the temple's great patrons; <b>Kiḻavan Setupati</b> (Raghunātha Kiḻavan) is credited with much of the present plan.</div>
+</div>
+<div class="note">Dates for individual parts vary between sources; the temple was built in stages over about 800 years.</div>
+</section>
+
+<section class="page" id="history2"><h2 class="page-title">HISTORY · II</h2><div class="sub">The great corridor, the cyclone and the bridges</div>
+<div class="tl">
+<div><b class="yr">1722–72</b> The vast <b>third corridor</b> is begun under Vijaya Raghunātha Setupati and completed under <b>Muttu Rāmaliṅga Setupati</b> (ruled 1763–95). His statue, with his two ministers, stands at the western entrance.</div>
+<div><b class="yr">1745–1837</b> Members of the Setupati family donate jewels and endowments to the temple.</div>
+<div><b class="yr">1914</b> The <b>Pāmban railway bridge</b>, India's first sea bridge, with a rolling-lift span for ships, links the island to the mainland.</div>
+<div><b class="yr">Dec 1964</b> A great cyclone strikes on the night of 22–23 December. A passenger train on the Pāmban–Dhanuṣkoḍi line is washed into the sea; <b>Dhanuṣkoḍi</b> town is destroyed and abandoned, and the ferry link to Sri Lanka ends. The bridge is restored within weeks.</div>
+<div><b class="yr">1988</b> A road bridge opens beside the railway bridge.</div>
+<div><b class="yr">6 Apr 2025</b> On Rāma Navamī, the <b>new Pāmban bridge</b>, India's first vertical-lift railway sea bridge, about 2 km long, is opened by the Prime Minister, who also worships at the temple.</div>
+</div>
+<div class="panel reading">
+<p><b>Setupati: lord of the bridge.</b> The title of the Rāmanāthapuram rulers meant "lord" (<i>pati</i>) of the "bridge" (<i>setu</i>). Their duty, as they saw it, was to protect pilgrims to Rāmeśvaram. The temple's corridors are their monument.</p>
+</div>
+</section>
+
+<section class="page" id="temple"><h2 class="page-title">THE TEMPLE TODAY</h2><div class="sub">Three corridors around two liṅgas</div>
+<svg class="pg-fig" width="560" height="320" viewBox="0 0 560 320" role="img" aria-label="Simplified plan of the Ramanathaswamy temple: three nested corridors, the inner sanctum with the Ramalingam, the Vishwalingam shrine, the Parvatavardhini shrine, the rajagopuram on the east facing Agni Tirtham, and the 22 tirthas inside the complex"><rect width="560" height="320" fill="#fff8ec"/><rect x="30" y="30" width="460" height="260" fill="#f2e6d0" stroke="#111" stroke-width="3"/><rect x="40" y="40" width="440" height="240" fill="none" stroke="#c97b2e" stroke-width="10" opacity=".7"/><text x="260" y="58" text-anchor="middle" font-family="Bangers" font-size="11" fill="#6b4423">THIRD CORRIDOR · ~1,212 PILLARS</text><rect x="100" y="80" width="320" height="160" fill="#fff" stroke="#111" stroke-width="2"/><text x="260" y="96" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">SECOND CORRIDOR</text><rect x="170" y="110" width="180" height="100" fill="#fffbe0" stroke="#111" stroke-width="2"/><text x="260" y="124" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">FIRST CORRIDOR</text><rect x="200" y="134" width="56" height="50" fill="#ffd60a" stroke="#111" stroke-width="2.5"/><text x="228" y="156" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">RĀMA-</text><text x="228" y="168" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">LIṄGA</text><rect x="264" y="140" width="40" height="38" fill="#bcd4f0" stroke="#111" stroke-width="2"/><text x="284" y="156" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">VIŚVA-</text><text x="284" y="167" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">LIṄGA</text><rect x="120" y="190" width="44" height="36" fill="#ffd0e0" stroke="#111" stroke-width="2"/><text x="142" y="206" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">PARVATA-</text><text x="142" y="217" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">VARDHINĪ</text><g fill="#4aa3df" stroke="#111" stroke-width="1"><circle cx="370" cy="110" r="5"/><circle cx="386" cy="122" r="5"/><circle cx="374" cy="136" r="5"/><circle cx="392" cy="150" r="5"/><circle cx="372" cy="164" r="5"/><circle cx="390" cy="180" r="5"/><circle cx="120" cy="110" r="5"/><circle cx="136" cy="124" r="5"/><circle cx="118" cy="140" r="5"/><circle cx="136" cy="156" r="5"/><circle cx="380" cy="200" r="5"/></g><text x="400" y="226" text-anchor="middle" font-family="Bangers" font-size="9" fill="#1d4f9a">tīrthas (wells)</text><rect x="490" y="140" width="40" height="40" fill="#e8c27a" stroke="#111" stroke-width="2"/><text x="510" y="132" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">EAST</text><text x="510" y="196" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">rājagopuram</text><path d="M530 160 h24" stroke="#4aa3df" stroke-width="10"/><text x="540" y="214" text-anchor="middle" font-family="Bangers" font-size="9" fill="#1d4f9a">→ Agni Tīrtham</text><text x="260" y="306" text-anchor="middle" font-family="Bangers" font-size="9" fill="#555">Simplified plan, not to scale</text></svg>
+<div class="g2">
+<div class="card bg-yellow"><h4>🏛️ The corridors</h4><p>Three prākāras one inside another. The outer one, about 197 m east–west and 133 m north–south, has about <b>1,212 pillars</b>, each about 30 ft to the roof centre, many carved individually.</p></div>
+<div class="card bg-blue"><h4>🎨 The ceilings</h4><p>The third corridor's ceiling is painted with the twelve signs of the zodiac and their deities, in long rows of medallions.</p></div>
+<div class="card bg-red"><h4>🗼 Rājagopuram</h4><p>The eastern tower rises about 53 m, facing the sea at Agni Tīrtham.</p></div>
+<div class="card bg-green"><h4>🪷 Shrines within</h4><p>Rāmanātha, the Viśvaliṅga, Parvatavardhinī, Viśālākṣī, Naṭarāja, Setu Mādhava (Viṣṇu) and many more; halls include the Sukravāra, Setupati and Kalyāṇa maṇḍapas.</p></div>
+</div>
+<div class="note">Viṣṇu has his own shrine here as <b>Setu Mādhava</b>, at the western end of the third corridor: another sign that Rāmeśvaram belongs to both traditions.</div>
+</section>
+
+<section class="page" id="day"><h2 class="page-title">A DAY AT THE TEMPLE</h2><div class="sub">From the crystal liṅga to Palli Arai</div>
+<table class="ct">
+<tr><th>Ritual</th><th>When</th><th>What happens</th></tr>
+<tr><td><b>Pallī eḻucci</b></td><td>Before dawn</td><td>Waking the Lord with music and hymns.</td></tr>
+<tr><td><b>Spaṭika liṅga darśan</b></td><td>At dawn, about an hour</td><td>A small <b>crystal liṅga</b> is bathed and shown to devotees: the most sought-after darśan of the day. The day's first dīpārādhana is for it.</td></tr>
+<tr><td><b>Abhiṣekas and kālapūjās</b></td><td>Through the day</td><td>Six or more daily pūjās in the Āgama manner; the Viśvaliṅga is always worshipped before the Rāmaliṅga.</td></tr>
+<tr><td><b>Tīrtha bathing</b></td><td>Morning to midday, and afternoon</td><td>Pilgrims bathe at Agni Tīrtham, then move in wet clothes from well to well inside the temple (see page 10).</td></tr>
+<tr><td><b>Sāyaraṭcai</b></td><td>Evening</td><td>The evening pūjā with lamps.</td></tr>
+<tr><td><b>Palli arai</b></td><td>Night</td><td>The bedtime ritual: the Lord is carried to the Goddess's bed-chamber; the temple closes.</td></tr>
+</table>
+<div class="panel reading">
+<p><b>The crystal liṅga.</b> Tradition holds that the <b>spaṭika liṅga</b> was given to the temple long ago; some say by Vibhīṣaṇa, others by a great ācārya. Crystal is believed to absorb and purify, and its dawn bath is the most solemn moment of the day.</p>
+<p><b>Ancestors.</b> Rāmeśvaram is one of India's most important places for <b>rites for ancestors</b> (pitṛ tarpaṇa and śrāddha), performed on the shore at Agni Tīrtham, especially on new-moon days.</p>
+</div>
+<div class="note">Hours change with festivals; exact times are not given here.</div>
+</section>
+
+<section class="page" id="tirthas"><h2 class="page-title">THE 22 TĪRTHAS</h2><div class="sub">A bath in every well</div>
+<svg class="pg-fig" width="560" height="160" viewBox="0 0 560 160" role="img" aria-label="Twenty-two small wells in a row with a pilgrim being doused by a bucket of water, representing the 22 tirthas inside the temple"><rect width="560" height="160" fill="#eef3fa"/><g fill="#4aa3df" stroke="#111" stroke-width="1.5"><circle cx="30" cy="110" r="9"/><circle cx="54" cy="110" r="9"/><circle cx="78" cy="110" r="9"/><circle cx="102" cy="110" r="9"/><circle cx="126" cy="110" r="9"/><circle cx="150" cy="110" r="9"/><circle cx="174" cy="110" r="9"/><circle cx="198" cy="110" r="9"/><circle cx="222" cy="110" r="9"/><circle cx="246" cy="110" r="9"/><circle cx="270" cy="110" r="9"/><circle cx="294" cy="110" r="9"/><circle cx="318" cy="110" r="9"/><circle cx="342" cy="110" r="9"/><circle cx="366" cy="110" r="9"/><circle cx="390" cy="110" r="9"/><circle cx="414" cy="110" r="9"/><circle cx="438" cy="110" r="9"/><circle cx="462" cy="110" r="9"/><circle cx="486" cy="110" r="9"/><circle cx="510" cy="110" r="9"/><circle cx="534" cy="110" r="9"/></g><text x="280" y="146" text-anchor="middle" font-family="Bangers" font-size="13" fill="#1d4f9a">22 TĪRTHAS · "RĀMA'S 22 ARROWS"</text><circle cx="280" cy="50" r="10" fill="#f2c79b" stroke="#111" stroke-width="1.5"/><rect x="272" y="60" width="16" height="28" rx="4" fill="#ff8c1a" stroke="#111" stroke-width="1.5"/><path d="M300 16 l18 10 l-10 16 l-18 -10z" fill="#888" stroke="#111" stroke-width="1.5"/><path d="M296 32 C 290 40, 286 44, 282 40 M300 34 C 296 44, 290 48, 286 46" fill="none" stroke="#4aa3df" stroke-width="3"/></svg>
+<div class="panel reading">
+<p>Inside the temple are <b>22 tīrthas</b>: wells and small tanks scattered through the corridors. Tradition says they stand for the <b>22 arrows</b> in Rāma's quiver; the Purāṇas name each one and say that each has its own power.</p>
+<p><b>The ritual.</b> Pilgrims first bathe in the sea at <b>Agni Tīrtham</b>. Then, still wet, they walk through the temple from well to well, and at each a temple attendant draws a bucket of water and pours it over their heads. Only then do they change into dry clothes for darśan. Many pilgrims say the wells taste and feel different from one another, some sweet, some salty, though the sea is only metres away.</p>
+</div>
+<div class="g3">
+<div class="card bg-yellow"><h4>🔥 Agni</h4><p>The sea: the first bath.</p></div>
+<div class="card bg-blue"><h4>⭐ Koṭi tīrtham</h4><p>Traditionally the last bath, after which pilgrims leave.</p></div>
+<div class="card bg-green"><h4>🌊 53 in all</h4><p>Tradition counts many more tīrthas on the whole island.</p></div>
+</div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Twenty-two buckets of water? I'd be shivering!</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Pilgrims laugh and gasp the whole way round. By the last well, every one of them says they feel lighter.</p></div></div>
+</section>
+
+<section class="page" id="festivals"><h2 class="page-title">FESTIVALS</h2><div class="sub">The Tamil year at Rāmeśvaram</div>
+<table class="ct">
+<tr><th>Festival</th><th>When</th><th>What happens</th></tr>
+<tr><td><b>Mahāśivarātri</b></td><td>Māsi (Feb–Mar)</td><td>A ten-day festival with processions and a chariot; worship through the night.</td></tr>
+<tr><td><b>Rāmaliṅga Pratiṣṭhā</b></td><td>Āni (Jun–Jul)</td><td>Re-enacts Rāma's installation of the liṅga, with Rāma, Sītā and Hanumān taking part in procession.</td></tr>
+<tr><td><b>Tirukkalyāṇam</b></td><td>Āḍi (Jul–Aug)</td><td>The divine wedding of Rāmanātha and Parvatavardhinī, the temple's grandest celebration.</td></tr>
+<tr><td><b>Āḍi and Tai Amāvāsai</b></td><td>Jul–Aug; Jan–Feb</td><td>New-moon days for ancestor rites: vast crowds at Agni Tīrtham.</td></tr>
+<tr><td><b>Navarātri</b></td><td>Purattāsi (Sep–Oct)</td><td>Nine nights for Parvatavardhinī.</td></tr>
+<tr><td><b>Mahālaya Amāvāsai</b></td><td>Purattāsi (Sep–Oct)</td><td>The great day for rites for all ancestors.</td></tr>
+</table>
+<div class="note">Dates follow the Tamil calendar and the moon, and change each year; check a pañcāṅgam.</div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why do so many come here for their ancestors?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Because Rāma himself performed rites here, so the tradition goes. Families from all over India come to remember their dead at the meeting of two seas.</p></div></div>
+</section>
+
+<section class="page" id="kashi"><h2 class="page-title">KĀŚĪ TO RĀMEŚVARAM</h2><div class="sub">The pilgrimage that spans India, and the four dhāms</div>
+<svg class="pg-fig" width="560" height="220" viewBox="0 0 560 220" role="img" aria-label="Diagram of India's four Char Dham shrines at the four corners: Badrinath north, Puri east, Rameswaram south, Dwarka west, with Kashi in the north connected to Rameswaram by a pilgrimage line"><rect width="560" height="220" fill="#eef3fa"/><circle cx="280" cy="110" r="80" fill="none" stroke="#c9a26b" stroke-width="5" stroke-dasharray="8 6"/><circle cx="280" cy="30" r="9" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="300" y="34" font-family="Bangers" font-size="12" fill="#111">N · BADRĪNĀTH</text><circle cx="360" cy="110" r="9" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="376" y="114" font-family="Bangers" font-size="12" fill="#111">E · PURĪ</text><circle cx="280" cy="190" r="9" fill="#e63946" stroke="#111" stroke-width="2"/><text x="300" y="194" font-family="Bangers" font-size="12" fill="#c0392b">S · RĀMEŚVARAM</text><circle cx="200" cy="110" r="9" fill="#ffd60a" stroke="#111" stroke-width="2"/><text x="186" y="114" text-anchor="end" font-family="Bangers" font-size="12" fill="#111">W · DWĀRAKĀ</text><circle cx="320" cy="62" r="6" fill="#7a3fa0" stroke="#111" stroke-width="2"/><text x="330" y="58" font-family="Bangers" font-size="11" fill="#111">Kāśī</text><path d="M320 68 C 330 110, 310 160, 286 184" fill="none" stroke="#7a3fa0" stroke-width="3"/><text x="470" y="190" text-anchor="middle" font-family="Bangers" font-size="10" fill="#555">Schematic</text></svg>
+<div class="panel reading">
+<p><b>Kāśī–Rāmeśvaram.</b> One of India's oldest pilgrim customs joins the two ends of the country. A pilgrim bathes at Rāmeśvaram and takes <b>sand</b> from the shore (in some families, from the Setu) to Kāśī, where it is offered to the Gaṅgā; then takes <b>Gaṅgā water</b> from Kāśī back to Rāmeśvaram to pour on Rāmanātha. Only then, tradition says, is the pilgrimage complete.</p>
+<p><b>The Cār Dhām.</b> Ādi Śaṅkara's tradition counts four abodes (<b>dhāms</b>) at the four corners of India: Badrīnāth in the north, Purī in the east, Dwārakā in the west and Rāmeśvaram in the south. Three are temples of Viṣṇu; Rāmeśvaram, the southern dhām, is Śiva's, worshipped by Rāma.</p>
+</div>
+<div class="g2">
+<div class="card bg-blue"><h4>🏺 Sand to Kāśī</h4><p>The south's earth offered to the north's river.</p></div>
+<div class="card bg-yellow"><h4>💧 Gaṅgā to Rāmanātha</h4><p>The north's water offered to the south's Lord.</p></div>
+</div>
+<div class="key">Kāśī and Rāmeśvaram: <b>two jyotirliṅgas that complete each other</b>, from the Himalayan river to the southern sea.</div>
+</section>
+
+<section class="page" id="around"><h2 class="page-title">AROUND THE ISLAND</h2><div class="sub">Shrines and sights of Pāmban island</div>
+<div class="g2">
+<div class="card bg-yellow"><h4>👣 Gandhamādana Parvatam</h4><p>The island's high point, with a shrine holding Rāma's footprints and a view over the island.</p></div>
+<div class="card bg-blue"><h4>🏹 Kodaṇḍarāma</h4><p>A temple near Dhanuṣkoḍi where, tradition says, Vibhīṣaṇa surrendered to Rāma and was crowned; it survived the 1964 cyclone.</p></div>
+<div class="card bg-red"><h4>🌊 Dhanuṣkoḍi</h4><p>The ruined town at the island's tip, left as it was after 1964: a church, a station and a temple in the sand. A road now runs to Arichal Munai, the very end of the land.</p></div>
+<div class="card bg-green"><h4>🐒 Pañcamukha Hanumān</h4><p>A five-faced Hanumān temple where devotees are shown "floating stones", said to be like those of the bridge.</p></div>
+<div class="card bg-yellow"><h4>🛕 Lakṣmaṇa and Sītā tīrthas</h4><p>Shrines and tanks around the island named for the heroes of the Rāmāyaṇa.</p></div>
+<div class="card bg-blue"><h4>🎓 Kalam memorial</h4><p>At Pei Karumbu: the memorial to <b>Dr A. P. J. Abdul Kalam</b>, scientist and President, born on this island.</p></div>
+<div class="card bg-red"><h4>🌉 The Pāmban bridges</h4><p>The old rolling-lift bridge of 1914 beside the new vertical-lift bridge of 2025: a century of engineering side by side.</p></div>
+<div class="card bg-green"><h4>🪸 Gulf of Mannar</h4><p>Coral reefs, sea grass and dugongs in a protected marine park south of the island.</p></div>
+</div>
+<div class="note">Further afield on the mainland: Rāmanāthapuram (the Setupati palace), Devipattinam's Navapāṣāṇam (nine stones in the sea, linked with Rāma), and Tiruppullāṇi.</div>
+</section>
+
+<section class="page" id="setu"><h2 class="page-title">RĀMA SETU</h2><div class="sub">Faith, geology and a line in the sea</div>
+<svg class="pg-fig" width="560" height="170" viewBox="0 0 560 170" role="img" aria-label="A chain of sandbanks and shoals stretching across a shallow sea from Dhanushkodi in India to Mannar island in Sri Lanka"><rect width="560" height="170" fill="#4aa3df"/><path d="M0 70 h80 v40 h-80z" fill="#dfeccf" stroke="#111" stroke-width="2"/><text x="40" y="130" text-anchor="middle" font-family="Bangers" font-size="11" fill="#111">DHANUṢKOḌI</text><path d="M480 60 h80 v50 h-80z" fill="#dfeccf" stroke="#111" stroke-width="2"/><text x="520" y="130" text-anchor="middle" font-family="Bangers" font-size="11" fill="#111">MANNAR</text><g fill="#e8c27a" stroke="#111" stroke-width="1"><ellipse cx="110" cy="90" rx="16" ry="5"/><ellipse cx="150" cy="86" rx="14" ry="5"/><ellipse cx="190" cy="92" rx="18" ry="5"/><ellipse cx="232" cy="88" rx="14" ry="5"/><ellipse cx="270" cy="90" rx="16" ry="5"/><ellipse cx="310" cy="86" rx="14" ry="5"/><ellipse cx="350" cy="92" rx="18" ry="5"/><ellipse cx="392" cy="88" rx="14" ry="5"/><ellipse cx="430" cy="90" rx="16" ry="5"/><ellipse cx="462" cy="86" rx="10" ry="4"/></g><text x="280" y="40" text-anchor="middle" font-family="Bangers" font-size="14" fill="#fff">RĀMA SETU · ADAM'S BRIDGE · ≈ 30 km</text><text x="280" y="150" text-anchor="middle" font-family="Bangers" font-size="10" fill="#fff">Schematic, not to scale</text></svg>
+<div class="panel reading">
+<p><b>What it is.</b> Between Dhanuṣkoḍi and Mannar island in Sri Lanka, a line of limestone shoals and sandbanks runs about 30 km through very shallow water. In India it is called <b>Rāma Setu</b>; old European maps called it <b>Adam's Bridge</b>.</p>
+<p><b>Two views.</b> For many devotees it is the remains of the bridge built by Rāma's army. Many geologists describe it as a natural formation of shoals and coral-derived limestone shaped by currents over a very long time. Both views are held sincerely, and the question has been debated in courts and in public.</p>
+<p><b>The canal plan.</b> In the 2000s a proposed shipping channel, the <b>Sethusamudram</b> project, would have cut through the shoals. It drew objections on religious and environmental grounds and was halted; the matter has been before the courts.</p>
+</div>
+<div class="note">This article reports these positions and takes no side.</div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So is it a bridge or not?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> For the pilgrim it's Setu; for the scientist, shoals. Both stand at the same shore and look at the same line in the sea.</p></div></div>
+</section>
+
+<section class="page" id="culture"><h2 class="page-title">RĀMEŚVARAM IN CULTURE</h2><div class="sub">Kings of the bridge, saints and a scientist</div>
+<div class="g2">
+<div class="card bg-blue"><h4>👑 The Setupatis</h4><p>Rulers of Rāmanāthapuram who styled themselves guardians of the bridge and the pilgrims; builders of the corridors.</p></div>
+<div class="card bg-yellow"><h4>🎶 The Tevāram</h4><p>Appar and Sambandar sang of Rāmeśvaram; their hymns are still chanted in the temple by the ōduvārs.</p></div>
+<div class="card bg-green"><h4>🇱🇰 Lanka's kings</h4><p>From Parākramabāhu of Polonnaruwa to the Jaffna kings, rulers across the strait gave to this temple: a shrine shared by two shores.</p></div>
+<div class="card bg-red"><h4>🎓 A. P. J. Abdul Kalam</h4><p>Born here in 1931, son of a boat owner; his childhood friendship with the temple priest's son, which he wrote about, is remembered as a picture of the island's harmony.</p></div>
+<div class="card bg-blue"><h4>⛵ The fishermen</h4><p>Rāmeśvaram is a fishing town; its fishing families live by the same sea the pilgrims bathe in.</p></div>
+<div class="card bg-yellow"><h4>📜 Swami Vivekananda</h4><p>He landed at Pāmban from Sri Lanka in January 1897 on his return from the West, and spoke at the temple; a memorial marks his landing at Kuṇḍukāl.</p></div>
+</div>
+<div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Kalam grew up next to the temple?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> In its streets. A rocket scientist from the island of Rāma's bridge: Rāmeśvaram is proud of both.</p></div></div>
+</section>
+
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words you'll hear on the island</div>
+<table class="ct">
+<tr><th>Word</th><th>Means</th></tr>
+<tr><td class="w">setu</td><td>bridge</td></tr>
+<tr><td class="w">setupati</td><td>lord of the bridge: title of the Rāmanāthapuram kings</td></tr>
+<tr><td class="w">tīrtha / tīrtham</td><td>sacred water; a holy bathing place</td></tr>
+<tr><td class="w">spaṭika</td><td>crystal</td></tr>
+<tr><td class="w">prākāram</td><td>temple corridor / enclosure</td></tr>
+<tr><td class="w">dhām</td><td>holy abode; one of the four Cār Dhāms</td></tr>
+<tr><td class="w">dhanuṣkoḍi</td><td>"the tip of the bow"</td></tr>
+<tr><td class="w">pitṛ tarpaṇa</td><td>water offering to ancestors</td></tr>
+<tr><td class="w">amāvāsai</td><td>new moon (Tamil)</td></tr>
+<tr><td class="w">tirukkalyāṇam</td><td>divine wedding festival</td></tr>
+<tr><td class="w">ōduvār</td><td>singer of Tamil Śaiva hymns</td></tr>
+<tr><td class="w">pāḍal peṭra sthalam</td><td>a temple sung of in the Tevāram</td></tr>
+</table>
+</section>
+
+<section class="page" id="end">
+  <h2 class="page-title">RĀMEŚVARAM ON ONE PAGE</h2>
+  <div class="sub">Rāma's Lord at the southern sea, in five lines</div>
+  <div class="steps">
+    <div><b>The jyotirliṅga.</b> Rāmanātha at Rāmeśvaram: seventh of the twelve, the southern Cār Dhām, the liṅga Rāma worshipped.</div>
+    <div><b>The legends.</b> Sītā's sand liṅga and Hanumān's Viśvaliṅga, worshipped first; the bridge, Dhanuṣkoḍi and Vibhīṣaṇa.</div>
+    <div><b>The history.</b> Tevāram hymns; Parākramabāhu's sanctum; Pāṇḍyas and Jaffna kings; the Setupatis' corridors (to 1772); the 1964 cyclone; the 2025 bridge.</div>
+    <div><b>The rituals.</b> Agni Tīrtham and the 22 wells; the dawn crystal liṅga; rites for ancestors on the shore.</div>
+    <div><b>The bond.</b> Kāśī to Rāmeśvaram: sand to the Gaṅgā, Gaṅgā to Rāmanātha.</div>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What's next in the series?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The eighth: Nāgeśvara "in the Dāruka forest", the Lord of serpents, and another question of where.</p></div></div>
+  <div class="key">Rāmeśvaram: <b>where Hari worshipped Hara, and the pilgrim's journey across India comes home</b>. 🙏</div>
+  <div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+
+<section class="page" id="sources">
+  <h2 class="page-title">SOURCES & NOTES</h2>
+  <div class="sub">Where the facts come from</div>
+  <div class="panel reading small">
+    <p><b>Temple:</b> Wikipedia's "Ramanathaswamy Temple" and sources it cites (Parākramabāhu I, 1153–86; 11th–12th-century vimānas; Kiḻavan Setupati; corridors totalling about 3,850 ft and about 1,212 pillars; 22 tīrthas as Rāma's arrows; Setupati gifts 1745–1837); Business Today (September 2026), citing the Rāmanāthapuram district website, for the outer corridor's 197 m × 133 m.</p>
+    <p><b>Corridors:</b> Tamil Nadu tourism sources on the third corridor (begun 1722, completed 1772 under Muttu Rāmaliṅga Setupati); the 53 m rājagopuram.</p>
+    <p><b>Bridges and cyclone:</b> Deccan Herald, The South First, Swarajya, Lokmat Times and All India Radio (new Pāmban bridge, 6 April 2025; 1914 bridge; 1964 cyclone; road bridge 1988).</p>
+    <p><b>Legends:</b> traditional accounts from later Rāmāyaṇas and the Setu Māhātmya of the Skanda Purāṇa, retold briefly; versions differ.</p>
+    <p><b>Not independently verified:</b> the origin of the crystal liṅga; the names and order of daily pūjās; festival months; the Jaffna kings' "Setukāvalan" title; Vivekananda's landing date; the wording of the long stotram's seventh verse; the length of Rāma Setu (given as approximate).</p>
+    <p>Maps and diagrams are simplified illustrations, not to scale. Zappy and Prof. Bolt are fictional.</p>
+  </div>
+</section>
+</div>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

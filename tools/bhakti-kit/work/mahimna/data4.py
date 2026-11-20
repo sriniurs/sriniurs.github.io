@@ -1,0 +1,108 @@
+from data import talk,svg,T,LINGA,bird
+D=dict
+# blocks: verse indexes into split4 (0 = verse 33)
+V=[
+D(vs=[0],theme='THE SINGER SIGNS HIS NAME',
+ svg=svg('A gandharva with a vina signing his name Pushpadanta at the end of a scroll of verses, under a crescent moon',
+  '<rect x="30" y="20" width="110" height="124" rx="6" fill="#fff3b0" stroke="#111" stroke-width="2.5"/>'+''.join(f'<path d="M42 {36+12*k} h86" stroke="#c9a26b" stroke-width="3"/>' for k in range(7))+'<text x="85" y="132" text-anchor="middle" font-family="Bangers" font-size="12" fill="#c0392b">— PUṢPADANTA</text>'
+  '<path d="M190 20 a12 12 0 1 0 8 18 a9 9 0 1 1 -8 -18z" fill="#fff6b0" stroke="#111"/><g stroke="#111" stroke-width="2.5"><path d="M160 150 l30 -90" stroke="#7a5a3a" stroke-width="4"/><circle cx="160" cy="140" r="12" fill="#c9a26b"/><circle cx="190" cy="66" r="8" fill="#c9a26b"/></g>'),
+ mean='For the moon-crowned Lord, worshipped by demons, gods and the great sages, whose glory of qualities is woven into this hymn, though He Himself is beyond all qualities: the best of all the gaṇas, named Puṣpadanta, made this hymn in beautiful, stately metres.',
+ plain='The poet names himself: Puṣpadanta, foremost of Śiva\'s attendants, composed this hymn in lovely metres for the moon-crowned Lord, who is beyond all qualities yet praised through them.',
+ words=[('indu-mauli','the <b>moon-crowned</b> Lord'),('grathita-guṇa-mahimnaḥ','<b>whose glorious qualities are woven</b> (into the hymn)'),('nirguṇa','<b>beyond qualities</b>'),('sakala-gaṇa-variṣṭhaḥ','<b>the best of all the gaṇas</b>'),('rucira','<b>beautiful</b>'),('alaghu-vṛttaiḥ','<b>in long, weighty metres</b>')],
+ deep='<p><b>The signature.</b> Indian poets often name themselves near the end of a work, a little like a painter\'s signature. Here the composer is called <b>Puṣpadanta</b>, foremost of Śiva\'s attendants, the <i>gaṇas</i>.</p><p><b>With and without qualities.</b> The verse holds both ideas from the start of the hymn: Śiva is <i>nirguṇa</i>, beyond qualities, yet His qualities are "woven" into every verse. That is the whole method of the Mahimna: praising the One beyond praise.</p><p><b>A change of metre.</b> From verse 31 the hymn has moved into longer, statelier metres (<i>alaghu-vṛtta</i>), and the poet points this out himself.</p>',
+ cards=('💡 Gaṇas','Śiva\'s host of attendants; their leader is Gaṇeśa, "Lord of the gaṇas".','💡 Gandharva and gaṇa','The story calls Puṣpadanta a gandharva; this verse counts him among Śiva\'s gaṇas.'),
+ inner='Every true praise is signed by a person and carried by a people. A name at the end is a promise: someone lived this.',
+ talk=('The poet writes his own name in the hymn?','Many Sanskrit and Indian poets did. It\'s how we know the tradition of Puṣpadanta isn\'t just a story: the hymn names him.'),
+ key='Puṣpadanta signs the hymn: <b>a praise of the Lord beyond all qualities</b>.'),
+D(vs=[1],theme='THE FRUIT OF DAILY CHANTING',
+ svg=svg('A lamp lit each day for many days in a row, with a calendar of suns, beside a linga',
+  ''.join(f'<g transform="translate({28+28*k} 40)"><circle r="9" fill="#ffd60a" stroke="#111" stroke-width="1.5"/></g>' for k in range(6))
+  +'<text x="98" y="22" text-anchor="middle" font-family="Bangers" font-size="11">DAY AFTER DAY</text>'
+  +'<g transform="translate(70 130)"><path d="M-16 0 h32 l-4 8 h-24z" fill="#e0a800" stroke="#111" stroke-width="2"/><path d="M0 0 q-8 -16 0 -26 q8 10 0 26z" fill="#ff8c1a" stroke="#111" stroke-width="1.5"/></g>'
+  +f'<g transform="translate(160 136)">{LINGA}</g>'),
+ mean='The pure-minded person who, day after day, reads this flawless hymn of Dhūrjaṭi with supreme devotion, becomes like Rudra in Śiva\'s world; and here in this world, he has abundant wealth, long life, children and fame.',
+ plain='Whoever recites this hymn every day with devotion and a pure mind will be close to Śiva hereafter, and blessed here with prosperity, long life, family and good name.',
+ words=[('ahar-ahar','<b>day after day</b>'),('anavadya','<b>flawless</b>'),('dhūrjaṭi','the one with <b>heavy matted locks</b>: Śiva'),('śuddha-cittaḥ','<b>pure in mind</b>'),('rudra-tulyaḥ','<b>like Rudra</b>'),('kīrtimān','<b>famous</b>, of good name')],
+ deep='<p><b>The phalaśruti.</b> From here on the hymn gives its <i>phalaśruti</i>, "the hearing of the fruit": the traditional verses at the end of a hymn that describe the blessings of reciting it. Almost every great stotra has one.</p><p><b>The conditions.</b> Notice what is asked first: <i>parama-bhaktyā</i>, with supreme devotion, and <i>śuddha-cittaḥ</i>, with a pure mind, <i>ahar-ahar</i>, every day. The promise rests on the practice.</p><p><b>Two worlds.</b> Blessings are promised for both: closeness to Śiva after this life, and wellbeing in this one.</p>',
+ cards=('💡 Phalaśruti','The closing verses that tell the fruit of reciting a text.','💡 Dhūrjaṭi','"Bearing a heavy load of matted hair": an old name of Śiva.'),
+ inner='The promise of a daily prayer is less in any single day than in the person you become by keeping it.',
+ talk=('Wealth and fame, just by chanting?','The verse asks for devotion and a pure mind, every day. That kind of daily practice changes a life. The rest is the hymn\'s promise.'),
+ key='Chanted daily with a pure heart: <b>blessings here and hereafter</b>.'),
+D(vs=[2,3],theme='NOTHING HIGHER',
+ svg=svg('Four tall pillars labelled God, Hymn, Mantra and Guru, each the highest, and a small bar showing all other rites as one sixteenth',
+  ''.join(f'<rect x="{14+50*k}" y="30" width="38" height="90" fill="{c}" stroke="#111" stroke-width="2.5"/><text x="{33+50*k}" y="138" text-anchor="middle" font-family="Bangers" font-size="9">{t}</text>' for k,(t,c) in enumerate([('MAHEŚA','#dcecff'),('MAHIMNA','#fff3b0'),('AGHORA','#ece0fa'),('GURU','#ffe0e0')]))
+  +'<text x="110" y="22" text-anchor="middle" font-family="Bangers" font-size="11">NONE HIGHER</text><rect x="14" y="146" width="12" height="8" fill="#999" stroke="#111"/><text x="30" y="154" font-family="Bangers" font-size="8">= 1/16 (ALL OTHER RITES)</text>'),
+ mean='There is no god higher than Maheśa, no hymn higher than the Mahimna, no mantra higher than Aghora, and no truth higher than the guru. Initiation, charity, austerity, pilgrimage, knowledge, sacrifices and other rites: none of these equals even a sixteenth part of reciting Your Mahimna.',
+ plain='Śiva is the highest god, this the highest hymn, Aghora the highest mantra, and the guru the highest truth. All other religious acts together are not worth a sixteenth of reciting the Mahimna.',
+ words=[('maheśa','the <b>Great Lord</b>'),('stutiḥ','<b>hymn of praise</b>'),('aghora','the <b>Aghora mantra</b>'),('tattvaṃ guroḥ param','<b>no truth beyond the guru</b>'),('dīkṣā · dānam · tapaḥ','<b>initiation</b> · <b>charity</b> · <b>austerity</b>'),('kalāṃ ṣoḍaśīm','<b>a sixteenth part</b>')],
+ deep='<p><b>Verse 35.</b> Often chanted on its own, it names four things as supreme: God (Maheśa), praise (the Mahimna), mantra (Aghora) and the teacher (guru). <b>Aghora</b> is one of the five Pañca-Brahma mantras, "aghorebhyo\'tha ghorebhyaḥ…" (see our Pañca-Brahma article).</p><p><b>Verse 36.</b> A typical phalaśruti flourish: initiation, charity, austerity, pilgrimage, learning and sacrifices are not worth a sixteenth of reciting the hymn. "A sixteenth" (<i>ṣoḍaśī kalā</i>) is a classic Indian way of saying "not even a fraction".</p><p><b>Reading it rightly.</b> Such verses praise the hymn by comparison; they are not telling us to stop pilgrimages or charity.</p>',
+ cards=('💡 Aghora','"Not terrible": the gracious-fierce face of Śiva and one of His five faces.','💡 Guru','The verse ends with the teacher, the one who shows the way to all the rest.'),
+ inner='High praise of one practice is not contempt for the others. It is a way of saying: this, done with love, contains them all.',
+ talk=('Is the hymn really better than a pilgrimage?','That\'s the phalaśruti\'s way of praising it. Every hymn says something like this about itself. Its point: never underestimate sincere praise.'),
+ key='Maheśa, the Mahimna, Aghora, the guru: <b>none higher</b>.'),
+D(vs=[4],theme='THE FALL OF KUSUMADAŚANA',
+ svg=svg('A gandharva falling from the sky, his crown slipping, toward the earth where he will sing',
+  '<rect width="220" height="160" fill="#dcecff"/><path d="M0 130 Q110 116 220 130 V160 H0Z" fill="#9fae78" stroke="#111" stroke-width="2"/>'
+  '<g transform="rotate(-30 110 70)" stroke="#111" stroke-width="2.5"><circle cx="110" cy="50" r="12" fill="#f2c79b"/><path d="M94 110 q16 -50 32 0z" fill="#7a3fa0"/></g><path d="M140 30 l10 -6 l4 10z" fill="#ffd60a" stroke="#111" stroke-width="1.5"/>'
+  '<path d="M150 90 q20 10 30 -10" fill="none" stroke="#111" stroke-dasharray="3 3"/><text x="60" y="24" font-family="Bangers" font-size="11" fill="#c0392b">FALLEN…</text><text x="160" y="150" font-family="Bangers" font-size="11" fill="#1d4f9a">…AND SINGING</text>'),
+ mean='Kusumadaśana by name, king of all the gandharvas, the servant of the God of gods who bears the moon upon His head, fell from his own greatness because of the Lord\'s anger. Then he composed this most divine hymn of His greatness.',
+ plain='The gandharva king, here called Kusumadaśana ("flower-toothed", the same as Puṣpadanta), lost his greatness when Śiva was angry with him, and then composed this divine hymn.',
+ words=[('kusuma-daśana','"<b>flower-toothed</b>": Puṣpadanta'),('sarva-gandharva-rājaḥ','<b>king of all the gandharvas</b>'),('śaśidhara','<b>bearer of the moon</b>'),('dāsaḥ','<b>servant</b>'),('nija-mahimnaḥ bhraṣṭaḥ','<b>fallen from his own greatness</b>'),('roṣāt','<b>because of anger</b>')],
+ deep='<p><b>The story confirmed.</b> This verse is the basis of the story in Part 1. It says the poet fell from his own <i>mahiman</i>, greatness, through Śiva\'s anger, and then praised Śiva\'s <i>mahiman</i>. The word that names the hymn appears on both sides of his fall.</p><p><b>Two names, one poet.</b> <i>Kusuma</i> and <i>puṣpa</i> both mean "flower"; <i>daśana</i> and <i>danta</i> both mean "tooth". The poet\'s name is said two ways.</p><p><b>The fall as a gift.</b> Without the fall, no hymn. Tradition treats Puṣpadanta\'s mistake as the reason the world has the Mahimna.</p>',
+ cards=('💡 Mahiman','"Greatness": the poet lost his own, and sang of Śiva\'s.','💡 Gandharvas','Celestial musicians of Indra\'s court, masters of song.'),
+ inner='Losing our own greatness can be the start of seeing a greater one. A fall is sometimes the first verse of a hymn.',
+ talk=('So the story is in the hymn itself?','This verse is where it comes from. He lost his greatness, and sang of Śiva\'s.'),
+ key='He fell from his own greatness, <b>and sang of Śiva\'s</b>.'),
+D(vs=[5],theme='WITH FOLDED HANDS',
+ svg=svg('A devotee with folded hands reciting before a linga while celestial kinnaras with instruments sing his praise',
+  f'<g transform="translate(150 136)">{LINGA}</g><g stroke="#111" stroke-width="2.5"><circle cx="70" cy="80" r="12" fill="#f2c79b"/><path d="M52 140 q18 -50 36 0z" fill="#ff8c1a"/><path d="M70 98 l-4 12 l4 4 l4 -4z" fill="#f2c79b"/></g>'
+  '<g stroke="#111" stroke-width="2"><circle cx="40" cy="30" r="8" fill="#f2c79b"/><path d="M48 34 l20 -10" stroke="#7a5a3a" stroke-width="3"/><circle cx="180" cy="30" r="8" fill="#f2c79b"/><path d="M172 34 l-20 -10" stroke="#7a5a3a" stroke-width="3"/></g><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10">KINNARAS SING</text>'),
+ mean='If a person, after worshipping the Lord, the guru of the gods, the one cause of heaven and of liberation, recites with folded hands and an undistracted mind this unfailing hymn composed by Puṣpadanta, he goes to Śiva\'s presence, praised by the kinnaras.',
+ plain='Worship Śiva, then recite this hymn with folded hands and a focused mind, and you will reach Śiva\'s presence, where heavenly singers praise you.',
+ words=[('suraguru','the <b>guru of the gods</b>'),('svarga-mokṣa-eka-hetu','<b>sole cause of heaven and liberation</b>'),('prāñjaliḥ','<b>with folded hands</b>'),('nānya-cetāḥ','<b>with no other thought</b>'),('kinnaraiḥ stūyamānaḥ','<b>praised by the kinnaras</b>'),('amogham','<b>unfailing</b>')],
+ deep='<p><b>The posture.</b> <i>Prāñjali</i>, hands joined in añjali, and <i>nānya-cetāḥ</i>, mind on nothing else: the verse describes how to recite, not just how often.</p><p><b>Suraguru.</b> "Guru of the gods" usually means Bṛhaspati; here many readers take it as Śiva Himself, the teacher of the gods, since He alone is called the cause of both heaven and liberation. Translations differ.</p><p><b>Kinnaras.</b> Celestial musicians, half human and half horse or bird in old art. The singer who praised Śiva will himself be praised in song.</p>',
+ cards=('💡 Añjali','Joined palms: the gesture of offering and respect, as in namaste.','💡 Amogha','"Unfailing", "never in vain": a word often used of divine weapons and boons.'),
+ inner='How we pray matters as much as what we say: hands joined, mind gathered.',
+ talk=('Who is the guru of the gods here?','Usually Bṛhaspati, but here many read it as Śiva Himself, the cause of heaven and freedom. Either way, worship first, then recite.'),
+ key='Folded hands, a gathered mind: <b>the hymn never fails</b>.'),
+D(vs=[6,7],theme='AN OFFERING OF WORDS',
+ svg=svg('A scroll of the hymn laid like a flower offering at the feet of the Lord, with the words worship of speech',
+  f'<g transform="translate(110 140)">{LINGA}</g><rect x="60" y="62" width="100" height="40" rx="6" fill="#fff3b0" stroke="#111" stroke-width="2.5"/><text x="110" y="87" text-anchor="middle" font-family="Bangers" font-size="11" fill="#c0392b">VĀṄMAYĪ PŪJĀ</text>'
+  +''.join(f'<circle cx="{x}" cy="{y}" r="5" fill="{c}" stroke="#111"/>' for x,y,c in [(56,112,'#f08aa6'),(166,112,'#ffd60a'),(70,52,'#4caf50'),(150,52,'#f08aa6')])
+  +'<text x="110" y="28" text-anchor="middle" font-family="Bangers" font-size="11">WORSHIP MADE OF WORDS</text>'),
+ mean='Here ends this holy hymn, spoken by the gandharva: beyond compare, captivating, a complete description of the Lord. Thus this worship made of words is offered at the feet of the glorious Śaṅkara. By it, may the Lord of gods, Sadāśiva, be pleased with me.',
+ plain='The hymn is complete: holy, matchless and beautiful. This worship made of words is laid at Śiva\'s feet. May He be pleased.',
+ words=[('āsamāptam','<b>completed</b>'),('gandharva-bhāṣitam','<b>spoken by the gandharva</b>'),('anaupamyam','<b>beyond compare</b>'),('manohāri','<b>captivating</b>'),('vāṅmayī pūjā','<b>worship made of words</b>'),('prīyatām','<b>may He be pleased</b>')],
+ deep='<p><b>Worship made of words.</b> <i>Vāṅmayī pūjā</i>: the hymn calls itself a pūjā. Flowers, water and lamps are offered in ritual worship; here the offering is speech.</p><p><b>Back to the flowers.</b> In verse 31 the poet offered "word-flowers". Verse 40 completes it: the whole hymn is laid at Śaṅkara\'s feet.</p><p><b>Sadāśiva.</b> "Ever-auspicious Śiva": the form of Śiva in whom all five faces and functions are united.</p>',
+ cards=('💡 Pūjā','Worship with offerings: flowers, water, light, food, and here, words.','💡 Sadāśiva','The "eternally auspicious" Śiva, often shown five-faced.'),
+ inner='Words can be flowers too. A sincere sentence is an offering.',
+ talk=('A pūjā without flowers?','A pūjā made of words. Puṣpadanta, who stole flowers, now offers only speech. That\'s his gift.'),
+ key='The whole hymn, <b>laid at Śiva\'s feet as a pūjā of words</b>.'),
+D(vs=[8,9],theme='WHATEVER YOU ARE',
+ svg=svg('A devotee bowing deeply before a soft glowing shape that is not drawn clearly, with question marks fading into light',
+  '<circle cx="140" cy="70" r="40" fill="#ffd60a" opacity=".35"/><circle cx="140" cy="70" r="24" fill="#ffd60a" opacity=".7"/>'
+  +''.join(f'<text x="{x}" y="{y}" font-family="Bangers" font-size="14" fill="#999">?</text>' for x,y in [(100,30),(180,40),(110,110),(186,104)])
+  +'<g stroke="#111" stroke-width="2.5"><circle cx="48" cy="104" r="10" fill="#f2c79b"/><path d="M20 140 q14 -30 50 -26 l4 26z" fill="#ff8c1a"/></g><text x="140" y="144" text-anchor="middle" font-family="Bangers" font-size="11">NAMO NAMAḤ</text>'),
+ mean='I do not know Your true nature, what You are like, O Maheśvara. Whatever You are, O Mahādeva, to That I bow again and again. Whoever recites this once, twice or three times a day is freed from all sins and is honoured in Śiva\'s world.',
+ plain='I don\'t know what You truly are, Lord. Whatever You are, I bow to You. Whoever recites this hymn once, twice or three times a day is freed of all sin.',
+ words=[('tattvam','<b>true nature</b>, reality'),('na jānāmi','<b>I do not know</b>'),('kīdṛśaḥ','<b>of what kind</b>'),('yādṛśaḥ · tādṛśāya','<b>whatever You are</b> · <b>to That</b>'),('eka-dvi-tri-kālam','<b>once, twice, three times</b> a day'),('mahīyate','<b>is honoured</b>')],
+ deep='<p><b>The humblest verse.</b> Verse 41 may be the most beautiful in the whole hymn. After forty verses of praise, arguments, stories and salutations, the poet says simply: I don\'t know what You are. Whatever You are, I bow to That.</p><p><b>Full circle.</b> Verse 1 began: no one knows the far shore of Your greatness. Verse 41 ends in the same place, but now the not-knowing has become a bow.</p><p><b>Times of day.</b> Verse 42 says reciting at one, two or three of the day\'s junctions, morning, noon, evening, frees one from sin.</p>',
+ cards=('💡 Tādṛśāya','"To such a one", "to That as It is": a bow without definitions.','💡 Trikāla','The three daily junctions for prayer: dawn, noon and dusk.'),
+ inner='The deepest prayer may be: I don\'t know who You are, and I bow anyway.',
+ talk=('After all that, he doesn\'t know?','That\'s the wisdom of it. Knowing is limited; bowing isn\'t. "Whatever You are, I bow to That."'),
+ key='"Whatever You are, <b>to That I bow</b>."'),
+D(vs=[10],theme='FROM PUṢPADANTA\'S LOTUS MOUTH',
+ svg=svg('A lotus opening with notes of music rising from it toward a linga, under a crescent moon',
+  '<path d="M190 20 a12 12 0 1 0 8 18 a9 9 0 1 1 -8 -18z" fill="#fff6b0" stroke="#111"/>'
+  '<g transform="translate(60 120)"><path d="M0 0 q-20 -30 0 -50 q20 20 0 50z M0 0 q-34 -14 -34 -36 q20 4 34 36z M0 0 q34 -14 34 -36 q-20 4 -34 36z" fill="#f08aa6" stroke="#111" stroke-width="2"/></g>'
+  '<text x="80" y="54" font-family="Bangers" font-size="18" fill="#1d4f9a">♪</text><text x="104" y="40" font-family="Bangers" font-size="22" fill="#1d4f9a">♫</text><text x="130" y="60" font-family="Bangers" font-size="16" fill="#1d4f9a">♪</text>'
+  f'<g transform="translate(160 140)">{LINGA}</g>'),
+ mean='Through this hymn that came forth from the lotus mouth of Śrī Puṣpadanta, which takes away sin and is dear to Hara, when it is learnt by heart, recited and meditated upon, the great Lord, master of all beings, becomes truly pleased.',
+ plain='This hymn, from Puṣpadanta\'s lotus mouth, removes sin and is dear to Śiva. Learn it by heart, recite it, reflect on it, and the Lord of all beings is pleased.',
+ words=[('mukha-paṅkaja','the <b>lotus mouth</b>'),('nirgata','<b>come forth</b>'),('kilbiṣa-hara','<b>remover of sin</b>'),('hara-priya','<b>dear to Hara</b>'),('kaṇṭha-sthita','<b>held in the throat</b>: learnt by heart'),('bhūtapati','<b>Lord of all beings</b>')],
+ deep='<p><b>Three ways to keep it.</b> The last verse names three: <i>kaṇṭha-sthita</i>, "standing in the throat", learnt by heart; <i>paṭhita</i>, recited; and <i>samāhita</i>, held in a concentrated mind. Memory, voice and meditation.</p><p><b>Kilbiṣa-hara, hara-priya.</b> A play on sounds: the hymn is <i>hara</i> (a remover) of sin, and <i>priya</i> (dear) to <i>Hara</i>, Śiva.</p><p><b>The colophon.</b> Manuscripts end: <i>iti śrī puṣpadanta-viracitaṃ śivamahimnaḥ stotraṃ samāptam</i>: "thus ends the Śiva Mahimna Stotram composed by Śrī Puṣpadanta".</p>',
+ cards=('💡 Kaṇṭhastha','"In the throat": the Indian phrase for knowing a text by heart.','💡 Bhūtapati','"Lord of beings": all living creatures, and also the spirits who attend Śiva.'),
+ inner='Learn it by heart, say it aloud, hold it in a quiet mind. A hymn kept this way keeps you in return.',
+ talk=('Is that the very end?','The last verse, and then the colophon naming Puṣpadanta. A flower-thief\'s apology became one of India\'s best-loved hymns.'),
+ key='Learnt, recited, reflected on: <b>the Lord of all beings is pleased</b>.'),
+]

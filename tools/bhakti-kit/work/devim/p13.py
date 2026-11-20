@@ -1,0 +1,165 @@
+exec(open('/home/claude/work/devim/dmc.py').read())
+C=8
+def KALIF(x,y,s=1):
+    return (f'<g transform="translate({x} {y}) scale({s})" stroke="#111" stroke-width="2.2">'
+     '<path d="M-24 76 q-30 -6 -42 -30 M24 76 q30 -6 42 -30" fill="none" stroke="#2b2b3a" stroke-width="7"/>'
+     '<path d="M-18 30 q-10 40 -4 70 M18 30 q10 40 4 70" stroke="#111" stroke-width="10" fill="none"/>'
+     '<circle cy="42" r="15" fill="#2b2b3a"/><circle cx="-5" cy="40" r="3" fill="#e33" stroke="none"/><circle cx="5" cy="40" r="3" fill="#e33" stroke="none"/>'
+     '<path d="M-2 50 q2 14 4 0" fill="#e33" stroke="none"/><path d="M-26 150 q-6 -70 26 -88 q32 18 26 88z" fill="#5a4a3a"/>'
+     +''.join(f'<circle cx="{-20+k*8}" cy="{70+abs(k-2.5)*3:.0f}" r="4" fill="#eee"/>' for k in range(6))+'</g>')
+MOTHERS=[('BRĀHMĪ','#ffd60a','swan'),('MĀHEŚVARĪ','#fff','bull'),('KAUMĀRĪ','#c0392b','peacock'),('VAIṢṆAVĪ','#3b6fd0','garuda'),('VĀRĀHĪ','#555','buffalo'),('NĀRASIṂHĪ','#e0a800','lion'),('AINDRĪ','#2a9d6f','elephant')]
+def MOTHER(i,x,y,s=1):
+    nm,c,m=MOTHERS[i]
+    mm=MOUNT(m,0,92,.7) if m!='buffalo' else ''
+    if nm=='VĀRĀHĪ': head='<g transform="translate(0 0)"><ellipse cx="0" cy="42" rx="14" ry="12" fill="#888" stroke="#111"/><ellipse cx="8" cy="46" rx="7" ry="5" fill="#bbb" stroke="#111"/></g>'
+    elif nm=='NĀRASIṂHĪ': head='<circle cy="42" r="16" fill="#c46a1a" stroke="#111"/><circle cy="42" r="10" fill="#e0a800" stroke="#111"/>'
+    else: head=''
+    return f'<g transform="translate({x} {y}) scale({s})">{mm}{DEVI(0,-10,.55,False,c)}{head}</g>'
+def DROP(x,y,r=5): return f'<path d="M{x} {y-r*1.6} q{r} {r*1.4} 0 {r*2.4} q{-r} {-r} 0 {-r*2.4}z" fill="#c0392b" stroke="#111" stroke-width="1"/>'
+SRC=['āyāntaṁ caṇḍikā dṛṣṭvā tatsainyamatibhīṣaṇam | / jyāsvanaiḥ pūrayāmāsa dharaṇīgaganāntaram || 8||',
+'tataḥ siṁho mahānādamatīva kṛtavānnṛpa | / ghaṇṭāsvanena tānnādānambikā copabṛṁhayat || 9||',
+'dhanurjyāsiṁhaghaṇṭānāṁ nādāpūritadiṅmukhā | / ninādairbhīṣaṇaiḥ kālī jigye vistāritānanā || 10||',
+'etasminnantare bhūpa vināśāya suradviṣām | / bhavāyāmarasiṁhānāmativīryabalānvitāḥ || 12|| / brahmeśaguhaviṣṇūnāṁ tathendrasya ca śaktayaḥ | / śarīrebhyo viniṣkramya tadrūpaiścaṇḍikāṁ yayuḥ || 13||',
+'yasya devasya yadrūpaṁ yathā bhūṣaṇavāhanam | / tadvadeva hi tacchaktirasurānyoddhumāyayau || 14||',
+'haṁsayuktavimānāgre sākṣasūtrakamaṇḍaluḥ | / āyātā brahmaṇaḥ śaktirbrahmāṇītyabhidhīyate || 15||',
+'māheśvarī vṛṣārūḍhā triśūlavaradhāriṇī | / mahāhivalayā prāptā candrarekhāvibhūṣaṇā || 16||',
+'kaumārī śaktihastā ca mayūravaravāhanā | / yoddhumabhyāyayau daityānambikā guharūpiṇī || 17||',
+'tathaiva vaiṣṇavī śaktirgaruḍopari saṁsthitā | / śaṅkhacakragadāśārṅgakhaḍgahastābhyupāyayau || 18||',
+'yajñavārāhamatulaṁ rūpaṁ yā bibhrato hareḥ | / śaktiḥ sāpyāyayau tatra vārāhīṁ bibhratī tanum || 19||',
+'nārasiṁhī nṛsiṁhasya bibhratī sadṛśaṁ vapuḥ | / prāptā tatra saṭākṣepakṣiptanakṣatrasaṁhatiḥ || 20||',
+'vajrahastā tathaivaindrī gajarājopari sthitā | / prāptā sahasranayanā yathā śakrastathaiva sā || 21||',
+'tataḥ parivṛtastābhirīśāno devaśaktibhiḥ | / hanyantāmasurāḥ śīghraṁ mama prītyāha caṇḍikām || 22||',
+'tato devīśarīrāttu viniṣkrāntātibhīṣaṇā | / caṇḍikā śaktiratyugrā śivāśataninādinī || 23||',
+'sā cāha dhūmrajaṭilamīśānamaparājitā | / dūta tvaṁ gaccha bhagavan pārśvaṁ śumbhaniśumbhayoḥ || 24||',
+'brūhi śumbhaṁ niśumbhaṁ ca dānavāvatigarvitau | / ye cānye dānavāstatra yuddhāya samupasthitāḥ || 25||',
+'trailokyamindro labhatāṁ devāḥ santu havirbhujaḥ | / yūyaṁ prayāta pātālaṁ yadi jīvitumicchatha || 26||',
+'balāvalepādatha cedbhavanto yuddhakāṅkṣiṇaḥ | / tadāgacchata tṛpyantu macchivāḥ piśitena vaḥ || 27||',
+'yato niyukto dautyena tayā devyā śivaḥ svayam | / śivadūtīti loke’smiṁstataḥ sā khyātimāgatā || 28||',
+'kamaṇḍalujalākṣepahatavīryān hataujasaḥ | / brahmāṇī cākarocchatrūnyena yena sma dhāvati || 33||',
+'māheśvarī triśūlena tathā cakreṇa vaiṣṇavī | / daityāñjaghāna kaumārī tathā śaktyātikopanā || 34||',
+'aindrī kuliśapātena śataśo daityadānavāḥ | / peturvidāritāḥ pṛthvyāṁ rudhiraughapravarṣiṇaḥ || 35||',
+'raktabinduryadā bhūmau patatyasya śarīrataḥ | / samutpatati medinyāṁ tatpramāṇo mahāsuraḥ || 41||',
+'kuliśenāhatasyāśu bahu susrāva śoṇitam | / samuttasthustato yodhāstadrūpāstatparākramāḥ || 43||',
+'yāvantaḥ patitāstasya śarīrādraktabindavaḥ | / tāvantaḥ puruṣā jātāstadvīryabalavikramāḥ || 44||',
+'taiścāsurāsṛksambhūtairasuraiḥ sakalaṁ jagat | / vyāptamāsīttato devā bhayamājagmuruttamam || 52||',
+'tān viṣaṇṇān surān dṛṣṭvā caṇḍikā prāhasatvarā | / uvāca kālīṁ cāmuṇḍe vistīrṇaṁ vadanaṁ kuru || 53||',
+'macchastrapātasambhūtān raktabindūn mahāsurān | / raktabindoḥ pratīccha tvaṁ vaktreṇānena veginā || 54||',
+'bhakṣayantī cara raṇe tadutpannānmahāsurān | / evameṣa kṣayaṁ daityaḥ kṣiṇarakto gamiṣyati || 55||',
+'tasyāhatasya dehāttu bahu susrāva śoṇitam | / yatastatastadvaktreṇa cāmuṇḍā sampratīcchati || 59||',
+'mukhe samudgatā ye’syā raktapātānmahāsurāḥ | / tāṁścakhādātha cāmuṇḍā papau tasya ca śoṇitam || 60||',
+'devī śūlena vajreṇa bāṇairasibhirṛṣṭibhiḥ | / jaghāna raktabījaṁ taṁ cāmuṇḍāpītaśoṇitam || 61||',
+'sa papāta mahīpṛṣṭhe śastrasaṅghasamāhataḥ| / nīraktaśca mahīpāla raktabījo mahāsuraḥ ||62||',
+'tataste harṣamatulamavāpustridaśā nṛpa | / teṣāṁ mātṛgaṇo jāto nanartāsṛṅmadoddhataḥ || 63||']
+def num(s): return re.findall(r'\|\|\s*(\d+)\s*\|\|',s)
+FV=[dict(n=('–'.join([num(s)[0],num(s)[-1]]) if len(num(s))>1 else num(s)[0]),lines=L(s)) for s in SRC]
+def S(*ns): return ' / '.join(s for s in SRC if any(x in num(s) for x in ns))
+V=[
+VP(C,'8–10',S('8','9','10'),'THREE SOUNDS AND A ROAR',
+ sc('The Goddess twanging her bow, the lion roaring, the bell ringing, and Kali with mouth wide open roaring louder than all',HIMA+DEVI(60,10,.5)+LION(60,120,.5)+KALIF(160,0,.6)+''.join(f'<path d="M{100+k*8} {40+k*4} q6 10 0 20" fill="none" stroke="#c0392b" stroke-width="2"/>' for k in range(3))+T(110,150,'TWANG · ROAR · DING',10)),
+ 'Seeing that most terrible army approaching, Caṇḍikā filled the space between earth and sky with the twang of her bowstring. Then the lion roared a mighty roar, O king, and Ambikā swelled those roars with the sound of her bell. Kālī, her mouth opened wide, filling the directions, overpowered the sounds of bowstring, lion and bell with her fearsome roars.',
+ [('jyā-svana','<b>twang of the bowstring</b>'),('upabṛṃhayat','<b>swelled, amplified</b>'),('ghaṇṭā','<b>bell</b>'),('vistārita-ānanā','<b>with mouth opened wide</b>'),('jigye','<b>overpowered</b>')],
+ '<b>A battle of sound.</b> Śumbha has called out every clan of asuras (8.2–7). The Goddess answers with three sounds: bow, lion, bell, the same three asked for in the Śakrādi stuti (“protect us with the sound of your bell and bowstring”). Kālī out-roars them all.',
+ 'Before a blow is struck, <b>her sound fills the world</b>.'),
+VP(C,'12–14',S('12','14'),'THE ŚAKTIS OF THE GODS COME',
+ sc('From the bodies of Brahma, Shiva, Skanda, Vishnu and Indra, female powers stepping out in matching forms and walking toward the Goddess',GLOW(190,60,30)+DEVI(190,20,.35,False)+''.join(GOD(24+k*34,150,.45,*c)+MOTHER(i,24+k*34,40,.45) for k,(i,c) in enumerate([(0,('#ff8c1a','#e0a800')),(1,('#fff','#9fd3f0')),(2,('#c0392b','#c98b5a')),(3,('#ffd60a','#3b6fd0')),(6,('#2a9d6f','#c98b5a'))]))),
+ 'Meanwhile, O king, for the destruction of the gods’ enemies and the welfare of those lions among the gods, the śaktis of Brahmā, Īśa (Śiva), Guha (Skanda), Viṣṇu and Indra, of exceeding valour and strength, came forth from their bodies and went to Caṇḍikā in their own forms. Whatever form each god had, with his ornaments and mount, in that very form his śakti came to fight the asuras.',
+ [('śaktayaḥ','<b>powers</b>, the female energies of the gods'),('guha','<b>Skanda</b>, Kumāra'),('viniṣkramya','<b>coming forth</b>'),('tat-rūpaiḥ','<b>in their (gods’) forms</b>'),('bhūṣaṇa-vāhana','<b>ornaments and mount</b>')],
+ '<b>The Mothers are born.</b> Each god’s power steps out as a woman who looks like him: same weapons, same mount. These are the <b>Mātṛkās</b>, the Mothers, worshipped in temples across India in rows of seven.',
+ 'Each god’s power <b>steps out as a Mother</b>.'),
+VP(C,'15–18',S('15','16','17','18'),'BRĀHMĪ, MĀHEŚVARĪ, KAUMĀRĪ, VAIṢṆAVĪ',
+ sc('Four Mothers in a row: Brahmani on a swan chariot with rosary and pot; Maheshvari on a bull with trident; Kaumari on a peacock with a spear; Vaishnavi on Garuda with conch and discus',''.join(MOTHER(i,30+i*54,10,.85)+T(30+i*54,154,MOTHERS[i][0],8) for i in range(4))),
+ 'In a chariot drawn by swans, with rosary and water pot, came Brahmā’s śakti; she is called Brahmāṇī. Māheśvarī came riding a bull, holding the best of tridents, with great serpents for bracelets, adorned with the crescent moon. Kaumārī, spear in hand, riding the best of peacocks, came to fight the daityas, Ambikā in the form of Guha. Likewise Vaiṣṇavī śakti came, seated on Garuḍa, with conch, discus, mace, bow and sword in her hands.',
+ [('haṃsa-yukta-vimāna','<b>a chariot drawn by swans</b>'),('vṛṣa-ārūḍhā','<b>riding a bull</b>'),('mahā-ahi-valayā','<b>with great serpents as bracelets</b>'),('mayūra','<b>peacock</b>'),('śārṅga','<b>Viṣṇu’s bow</b>')],
+ '<b>Mirror images.</b> Brahmāṇī has Brahmā’s swan, rosary and pot; Māheśvarī has Śiva’s bull, trident, snakes and moon; Kaumārī has Skanda’s peacock and spear; Vaiṣṇavī has Viṣṇu’s Garuḍa, conch and discus. Each is the god’s power, now acting on its own.',
+ 'Each Mother <b>carries her god’s signs</b>.'),
+VP(C,'19–21',S('19','20','21'),'VĀRĀHĪ, NĀRASIṂHĪ, AINDRĪ',
+ sc('Three Mothers: boar-faced Varahi, lion-faced Narasimhi tossing stars with her mane, and Aindri on a great elephant with the thunderbolt',NIGHTSKY+STARS(12,5)+''.join(MOTHER(i,40+(i-4)*70,10,.95)+T(40+(i-4)*70,154,MOTHERS[i][0],9,'#fff') for i in range(4,7))),
+ 'The śakti of Hari (Viṣṇu), who bears the matchless form of the sacrificial Boar, came there too, in a boar’s body: Vārāhī. Nārasiṃhī came, bearing a body like Nṛsiṃha’s, scattering the hosts of stars with tosses of her mane. Aindrī came, thunderbolt in hand, seated on the king of elephants, thousand-eyed, just like Śakra (Indra).',
+ [('yajña-vārāha','<b>the sacrificial Boar</b>: Viṣṇu’s avatāra'),('vārāhī tanu','<b>a boar’s body</b>'),('saṭā-ākṣepa','<b>tossing her mane</b>'),('nakṣatra-saṃhati','<b>clusters of stars</b>'),('gaja-rāja','<b>king of elephants</b>: Airāvata')],
+ '<b>Avatāras as Mothers.</b> Two Mothers come from Viṣṇu’s avatāras: Vārāhī from the Boar and Nārasiṃhī from the Man-Lion (see our Daśāvatāra series). Nārasiṃhī’s mane is so wild it knocks the stars around.',
+ 'Even the avatāras <b>send their power as Mothers</b>.'),
+VP(C,'22–23',S('22','23'),'CAṆḌIKĀ ŚAKTI, HOWLING LIKE JACKALS',
+ sc('Shiva surrounded by the Mothers telling the Goddess to kill the asuras; a fierce new power stepping out of the Goddess with a hundred jackals howling',GLOW(110,60,50)+DEVI(150,0,.55,False)+GOD(50,140,.7,'#fff','#9fd3f0')+'<path d="M40 102 q8 -12 16 0" stroke="#7a5a3a" stroke-width="3" fill="none"/>'+''.join(f'<path d="M{100+k*18} 150 l6 -14 l6 14" fill="#a0784a" stroke="#111"/>' for k in range(5))+T(150,140,'AOOO!',10)),
+ 'Then Īśāna (Śiva), surrounded by these powers of the gods, said to Caṇḍikā: “Let the asuras be slain at once, for my pleasure.” Then from the Devī’s body came forth the śakti of Caṇḍikā, most terrible, exceedingly fierce, howling like a hundred jackals.',
+ [('īśāna','<b>Śiva</b>'),('mama prītyā','<b>for my pleasure</b>'),('ati-ugrā','<b>exceedingly fierce</b>'),('śivā-śata-ninādinī','<b>howling like a hundred jackals</b>')],
+ '<b>The Devī’s own śakti.</b> The gods have sent their powers; now the Goddess sends out hers. Jackals (śivā) were thought to haunt battlefields. This fierce power will soon do something bold: send Śiva himself as a messenger.',
+ 'From the Devī comes <b>her own fiercest power</b>.'),
+VP(C,'24–28',S('24','25','26','27','28'),'ŚIVA AS MESSENGER',
+ sc('Shiva with smoky matted hair walking as a messenger to the asura brothers on their throne, the fierce Goddess pointing the way',BATTLE+DEVI(30,10,.45)+GOD(110,150,.8,'#fff','#9fd3f0')+'<path d="M98 102 q12 -14 24 0" fill="#555" stroke="#111"/>'+'<rect x="150" y="60" width="64" height="70" fill="#ffd60a" stroke="#111"/>'+ASURA(170,120,.5,'#3a5a6a')+ASURA(196,120,.5,'#5a2a6a')+'<path d="M50 60 L100 90" stroke="#111" stroke-width="2" stroke-dasharray="4 3"/>'),
+ 'And she, the Unconquered, said to Īśāna of the smoky matted locks: “Go, Lord, as my messenger to Śumbha and Niśumbha. Tell those two very arrogant dānavas, and the others gathered there for war: ‘Let Indra have the three worlds; let the gods enjoy their offerings; go down to Pātāla if you wish to live. But if, proud of your strength, you long for battle, then come: let my jackals feast on your flesh.’” Because Śiva himself was sent by her as messenger, she became famed in this world as Śivadūtī.',
+ [('dhūmra-jaṭila','<b>with smoky matted hair</b>'),('dūta','<b>messenger</b>'),('havir-bhujaḥ','<b>enjoyers of offerings</b>'),('pātāla','<b>the underworld</b>'),('śiva-dūtī','<b>she whose messenger is Śiva</b>')],
+ '<b>The last offer of peace.</b> Even now the terms are generous: give back heaven, go to Pātāla and live. And the messenger is Śiva himself. Hence the name <b>Śivadūtī</b>. The asuras, of course, refuse.',
+ 'Even now she offers peace; <b>Śiva carries the message</b>.'),
+VP(C,'33–35',S('33','34','35'),'THE MOTHERS FIGHT',
+ sc('The seven Mothers fighting in a line: Brahmani sprinkling water, Maheshvari with trident, Vaishnavi’s discus, Kaumari’s spear, Aindri’s thunderbolt',BATTLE+''.join(MOTHER(i,20+i*30,30,.55) for i in range(7))+''.join(ASURA(20+k*40,152,.45,'#3a2a6a') for k in range(5))+'<path d="M20 90 q4 20 10 30" stroke="#2a6ab0" stroke-width="2" stroke-dasharray="2 3" fill="none"/>'),
+ 'Brahmāṇī, wherever she ran, made the enemies powerless and lustreless by sprinkling water from her pot. Māheśvarī slew daityas with her trident, Vaiṣṇavī with her discus, and furious Kaumārī with her spear. Under the blows of Aindrī’s thunderbolt, daityas and dānavas fell in hundreds, torn open, streaming blood.',
+ [('kamaṇḍalu-jala','<b>water from her pot</b>'),('hata-ojasaḥ','<b>robbed of vigour</b>'),('triśūla','<b>trident</b>'),('cakra','<b>discus</b>'),('kuliśa','<b>thunderbolt</b>')],
+ '<b>Each fights her own way.</b> Gentle Brahmāṇī does not strike at all: a sprinkle of holy water drains the enemy’s strength. Vārāhī gores with her tusks, Nārasiṃhī tears with her claws (8.36–37). The asura army breaks and flees.',
+ 'Each Mother <b>fights in her own way</b>.'),
+VP(C,'41–44',S('41','43','44'),'RAKTABĪJA',
+ sc('A demon struck by Aindri’s thunderbolt, and from each drop of his blood that touches the ground a new identical demon rising',BATTLE+ASURA(60,150,1.2,'#8a1a1a')+MOTHER(6,170,10,.6)+'<path d="M150 50 L90 80" stroke="#e0a800" stroke-width="4"/>'+''.join(DROP(90+k*20,120,4)+ASURA(90+k*20,150,.4,'#8a1a1a') for k in range(5))),
+ 'When a drop of blood from his body fell to the ground, a great asura of the same size rose up from the earth. When Raktabīja was struck by the thunderbolt, much blood flowed from him at once, and from it rose warriors of his form and his valour. As many drops of blood as fell from his body, so many men were born, of his strength, valour and might.',
+ [('rakta-bīja','<b>“blood-seed”</b>'),('rakta-bindu','<b>a drop of blood</b>'),('tat-pramāṇaḥ','<b>of the same size</b>'),('yāvantaḥ … tāvantaḥ','<b>as many … so many</b>'),('vīrya-bala-vikrama','<b>strength, power, valour</b>')],
+ '<b>The hardest enemy yet.</b> Every wound multiplies him. Raktabīja is often read as desire or a bad habit: each time you strike at it carelessly, it spreads. The harder the Mothers fight, the worse it gets.',
+ 'Strike him, and <b>he multiplies</b>.'),
+VP(C,'52–55',S('52','53','54','55'),'“CĀMUṆḌĀ, OPEN YOUR MOUTH WIDE”',
+ sc('The whole battlefield crowded with copies of the blood-demon, the gods in despair, and the Goddess pointing to Kali, whose mouth opens wide',BATTLE+''.join(ASURA(14+(k%10)*21,150-(k//10)*36,.38,'#8a1a1a') for k in range(20))+DEVI(150,-6,.45,False)+KALIF(60,-14,.55)+'<ellipse cx="60" cy="40" rx="16" ry="10" fill="#c0392b" stroke="#111"/>'),
+ 'With those asuras born from the asura’s blood the whole world was filled, and the gods fell into the greatest fear. Seeing the gods dejected, Caṇḍikā laughed and quickly said to Kālī: “Cāmuṇḍā, open your mouth wide. With this swift mouth take in the drops of blood born of my weapons’ blows, and the great asuras born from Raktabīja’s blood. Roam the battle devouring the asuras born from it. So this daitya, drained of blood, will perish.”',
+ [('sakalaṃ jagat vyāptam','<b>the whole world was filled</b>'),('viṣaṇṇa','<b>dejected</b>'),('prāhasat','<b>laughed</b>'),('vistīrṇaṃ vadanaṃ kuru','<b>make your mouth wide</b>'),('kṣīṇa-raktaḥ','<b>drained of blood</b>')],
+ '<b>The answer is to catch the seed.</b> Fighting harder only makes more Raktabījas. The Goddess laughs (she is never worried) and changes the method: catch every drop before it reaches the ground. Kālī, who swallowed armies in chapter 7, is the one for the job.',
+ 'Don’t fight harder: <b>catch the seed before it lands</b>.'),
+VP(C,'59–62',S('59','60','61','62'),'DRAINED',
+ sc('Kali catching every drop of blood in her wide mouth while the Goddess strikes the demon with trident and arrows; the demon falls pale and bloodless',BATTLE+KALIF(60,-10,.7)+'<ellipse cx="60" cy="36" rx="18" ry="11" fill="#c0392b" stroke="#111"/>'+''.join(DROP(80+k*10,60-k*4,3) for k in range(4))+DEVI(170,0,.55)+TRIDENT(150,80,.7)+ASURA(120,150,1.0,'#cbb')),
+ 'Much blood flowed from his body as he was struck, and wherever it flowed, Cāmuṇḍā took it in with her mouth. The great asuras that sprang up in her mouth from the falling blood, Cāmuṇḍā devoured, and she drank his blood. The Devī struck Raktabīja, whose blood Cāmuṇḍā had drunk, with trident, thunderbolt, arrows, swords and spears. Struck by that mass of weapons, the great asura Raktabīja fell to the ground, bloodless, O king.',
+ [('sampratīcchati','<b>receives, catches</b>'),('cakhāda','<b>devoured</b>'),('papau śoṇitam','<b>drank the blood</b>'),('nīraktaḥ','<b>bloodless</b>'),('mahī-pṛṣṭhe','<b>on the face of the earth</b>')],
+ '<b>Teamwork.</b> The Devī strikes; Kālī catches. Neither alone could end Raktabīja. With nothing left to seed new demons, he falls “bloodless”. The Mothers dance in joy (8.63).',
+ 'Strike and catch together: <b>the seed is ended</b>.'),
+]
+cover=('<svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="The Seven Mothers in a row on their mounts, the Goddess above, and Kali with her mouth open catching the blood of the demon Raktabija, whose copies fill the field">'
+ '<rect width="380" height="268" fill="#3a1414" rx="8"/>'+GLOW(190,60,60)+DEVI(190,0,.6,False)+''.join(MOTHER(i,30+i*53,96,.6) for i in range(7))+KALIF(60,150,.55)+'<ellipse cx="60" cy="172" rx="14" ry="9" fill="#c0392b" stroke="#111"/>'+''.join(ASURA(110+k*30,262,.45,'#8a1a1a') for k in range(9))+'</svg>')
+st1=storypage('mothers','THE SEVEN MOTHERS','Ślokas 8.1–39',
+ panels('Three panels: Shumbha marching out with all his clans; the seven Mothers arriving; Shiva walking as a messenger',[
+  ('#ffe3c4','ALL THE CLANS',''.join(ASURA(20+k*22,170-(k%2)*10,.4,'#3a2a6a') for k in range(6))+ASURA(72,110,.8,'#3a5a6a')),
+  ('#fff3b0','SEVEN MOTHERS',''.join(MOTHER(i,16+(i%4)*36,(i//4)*80,.38) for i in range(7))),
+  ('#dfe9f6','ŚIVADŪTĪ',GOD(72,160,.9,'#fff','#9fd3f0')+'<path d="M60 116 q12 -14 24 0" fill="#555" stroke="#111"/>')]),
+ ['<b>Total war.</b> His generals dead, Śumbha calls up every asura clan: the Udāyudhas, Kambus, Koṭivīryas, Dhaumras, Kālakas, Daurhṛdas, Mauryas and Kālakeyas.',
+  '<b>Sound.</b> The Goddess fills the sky with her bowstring, lion and bell; Kālī out-roars them all.',
+  '<b>The Mothers.</b> The śaktis of Brahmā, Śiva, Skanda, Viṣṇu, Varāha, Narasiṃha and Indra come forth as Brahmāṇī, Māheśvarī, Kaumārī, Vaiṣṇavī, Vārāhī, Nārasiṃhī and Aindrī.',
+  '<b>Śivadūtī.</b> A fierce śakti leaps from the Devī and sends Śiva himself with terms of peace. The asuras refuse and attack.',
+  '<b>The rout.</b> The Mothers fight each in her own way; the asura army begins to flee.'],
+ ("Seven Mothers? Aren't they in the Kavacam too?","Yes! In Part 1 the Kavacam lists the Mothers on their mounts. This chapter is where they come from. Many lists add an eighth, Cāmuṇḍā herself."),
+ 'The powers of all the gods <b>fight as Mothers</b>.')
+st2=storypage('rakta','THE BLOOD-SEED','Ślokas 8.40–63',
+ panels('Three panels: Raktabija struck and multiplying; the whole field filled with copies; Kali catching the blood as the demon falls',[
+  ('#ffe3c4','ONE DROP, ONE DEMON',ASURA(50,150,.9,'#8a1a1a')+''.join(DROP(90+k*14,140,3) for k in range(3))+ASURA(110,180,.35,'#8a1a1a')),
+  ('#fde4e4','THE WORLD FILLS',''.join(ASURA(14+(k%5)*28,180-(k//5)*36,.32,'#8a1a1a') for k in range(15))),
+  ('#2b2140','CĀMUṆḌĀ DRINKS',KALIF(72,0,.55)+'<ellipse cx="72" cy="24" rx="14" ry="9" fill="#c0392b" stroke="#111"/>'+ASURA(72,180,.5,'#cbb'))]),
+ ['<b>Raktabīja.</b> As the asuras flee, the great asura Raktabīja comes forward, mace in hand. He has a terrible power: every drop of his blood that touches the ground becomes another Raktabīja.',
+  '<b>The more they strike…</b> Aindrī’s thunderbolt, Vaiṣṇavī’s discus, Kaumārī’s spear, Vārāhī’s sword, Māheśvarī’s trident: every wound makes thousands more.',
+  '<b>Despair.</b> The world fills with Raktabījas; the gods are terrified.',
+  '<b>The plan.</b> Caṇḍikā laughs: “Cāmuṇḍā, open your mouth wide and drink every drop and every demon born from it.”',
+  '<b>The end.</b> She strikes; Kālī drinks. Raktabīja falls bloodless. The Mothers dance, drunk with victory.'],
+ ("What if you can't stop something that keeps coming back?","Then change how you fight it. The Devī doesn't strike harder; she cuts off the seed. Many teachers read this as how to end a habit: catch it before it lands."),
+ 'Cut off the seed, <b>and the endless enemy ends</b>.')
+P=dict(n=13,ch=8,out='/home/claude/work/devim/Devi_Mahatmya_Part13.html',
+ title='Raktabīja and the Seven Mothers · Part 13 · Devī Māhātmya series · srini.presents',
+ desc='Devī Māhātmya, Part 13: chapter 8. The powers of the gods come forth as the Seven Mothers, Śiva is sent as messenger, and the demon Raktabīja multiplies from every drop of blood until Cāmuṇḍā drinks it all. Explained in plain English with illustrations.',
+ h1='RAKTABĪJA',series='DEVĪ MĀHĀTMYA · PART 13 · CHAPTER 8',tag='The Seven Mothers and the blood-seed demon · explained and illustrated',cover=cover,
+ how='The story in <b>comic panels</b>, and the key ślokas of chapter 8 on their own pages: the chant, a picture, what it says, the key words, one insight and the one thing to remember.',
+ where=[f'In {plink(12)}, Kālī leapt from the Goddess’s brow, devoured the army, and brought back the heads of Caṇḍa and Muṇḍa. She was named Cāmuṇḍā.',
+  'Chapter 8 is the great battle of the third carita. The powers of the gods come out as the <b>Seven Mothers</b> (Saptamātṛkās), and the Devī faces <b>Raktabīja</b>, the demon who multiplies from his own blood.'],
+ wtalk=("A demon who multiplies from his blood? How do you beat that?","Not by hitting harder. Watch how the Goddess changes the method. It's one of the cleverest moments in the whole text."),
+ fulls=[('THE KEY VERSES IN ONE GO','Chapter 8, ślokas 8–21',FV[:12]),('IN ONE GO · CONTINUED','Ślokas 22–44',FV[12:25]),('IN ONE GO · CONTINUED','Ślokas 52–63',FV[25:])],
+ fullnote='Text as given in the Devīmāhātmyam edition of devimahatmyam.aurobharati.in (63 ślokas in chapter 8); its numbering is followed.',
+ seq=[st1]+V[:7]+[st2]+V[7:],
+ toc=[('THE MOTHERS',[('mothers','The Seven Mothers')]+V[:7]),('RAKTABĪJA',[('rakta','The Blood-Seed')]+V[7:])],
+ end=['<b>Total war (8.1–11).</b> Śumbha calls up every asura clan; bow, lion and bell answer, and Kālī out-roars them.',
+  '<b>The Mothers (8.12–21).</b> The śaktis of Brahmā, Śiva, Skanda, Viṣṇu, Varāha, Narasiṃha and Indra come forth in their gods’ forms.',
+  '<b>Śivadūtī (8.22–28).</b> The Devī’s fierce śakti sends Śiva as messenger: give back heaven, or fight.',
+  '<b>Raktabīja (8.29–52).</b> The Mothers rout the army; Raktabīja multiplies from every drop of blood until the world is full of him.',
+  '<b>The end (8.53–63).</b> “Cāmuṇḍā, open your mouth wide.” The Devī strikes, Kālī drinks; Raktabīja falls bloodless.'],
+ endsub='Chapter 8 in five lines',
+ next=("What's next?",'Part 14: chapter 9. Niśumbha, Śumbha’s younger brother, rides out in fury. When she splits his heart, another man steps out of it shouting “Stop!”, and she laughs.'),
+ endkey='<b>to end an endless enemy, cut off the seed</b>.',
+ foot='Study notes on the Devī Māhātmya, chapter 8 (Mārkaṇḍeya Purāṇa). The story is retold in our words; ślokas are given as in the Devīmāhātmyam edition of devimahatmyam.aurobharati.in, whose numbering is followed. Reading Raktabīja as desire or habit is interpretive. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.')
+build(P)
