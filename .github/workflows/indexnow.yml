@@ -1,0 +1,34 @@
+name: Notify search engines (IndexNow)
+on:
+  push:
+    branches: [main]
+    paths: ['**/index.html', 'sitemap.xml']
+  schedule:
+    - cron: '0 1 * * *' # 06:30 IST, after the 05:00 IST publish
+  workflow_dispatch:
+    inputs:
+      all:
+        description: 'Submit every URL in sitemap.xml'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - name: Wait for GitHub Pages to deploy
+        run: sleep 120
+      - name: Submit changed pages
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.all }}" = "true" ]; then
+            python3 .github/indexnow.py --all
+          elif [ "${{ github.event_name }}" = "push" ] && [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ]; then
+            python3 .github/indexnow.py "${{ github.event.before }}..${{ github.sha }}"
+          else
+            python3 .github/indexnow.py "--since=26 hours ago"
+          fi
