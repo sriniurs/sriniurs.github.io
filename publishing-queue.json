@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-20",
+  "last_published_on": "2026-11-21",
   "entries": [
     {
       "number": 1,
@@ -271,8 +271,8 @@
       "path": "/lpg-cavern/",
       "title": "Why Is India Hiding Cooking Gas Deep Underground?",
       "not_before": "2026-11-21T05:00:00+05:30",
-      "status": "pending",
-      "published_at": null,
+      "status": "published",
+      "published_at": "2026-11-21T05:25:10+05:30",
       "card_html": "<li class=\"story-card\" data-queue-number=\"27\"><a href=\"/lpg-cavern/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linejoin=\"round\"><rect x=\"8\" y=\"30\" width=\"84\" height=\"62\" fill=\"#c5b9a0\"/><path d=\"M8 30H92\" stroke=\"#2a9d5c\" stroke-width=\"5\"/><path d=\"M14 40H86\" stroke=\"#1f7ad1\" stroke-width=\"4\"/><path d=\"M24 86Q24 56 50 56Q76 56 76 86Z\" fill=\"#e63946\"/><path d=\"M50 14V56\" stroke-width=\"4\"/><rect x=\"40\" y=\"10\" width=\"20\" height=\"14\" fill=\"#ffd23f\"/></g></svg></div><div class=\"card-copy\"><h3>Why Is India Hiding Cooking Gas Deep Underground?</h3><p>80,000 tonnes of LPG in a rock chamber under Mangaluru, held in place by water pressure.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">21 Nov 2026</span></li>"
     },
     {
