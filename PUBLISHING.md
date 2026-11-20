@@ -1,5 +1,8 @@
 # Daily article queue
 
+Helpers for starting an article, phone QA and rendering the share images are in
+`tools/article-kit/` (see its README).
+
 GitHub Actions owns daily publishing. The workflow is `.github/workflows/publish.yml`,
 and `.github/publish_due.py` reads `publishing-queue.json`. The former local Codex
 publisher is paused. No computer, open app, API key or local files are required.
