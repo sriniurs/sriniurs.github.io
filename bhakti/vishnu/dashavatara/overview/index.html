@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daśāvatāra · The Ten Avatāras of Viṣṇu · srini.presents</title>
+<meta name="description" content="Daśāvatāra, the ten avatāras of Viṣṇu: Matsya, Kūrma, Varāha, Narasiṃha, Vāmana, Paraśurāma, Rāma, Balarāma or Buddha, Kṛṣṇa and Kalki. What an avatāra is, the Gītā’s promise, the different lists, the Vedic roots, the yugas, the evolution reading, the avatāras in art and temples, and Jayadeva’s Gītagovinda. An illustrated reference guide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#3b82c4,#0d3f73 55%,#06203b)}
+  .sloka-head{background:#0d3f73}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0d3f73}
+  .sub{color:#1d6fb8}
+  .num{background:#0d3f73}
+  .steps div:before{background:#1d6fb8}
+  .full .vn,.full .end{color:#1d6fb8}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d6fb8}
+  .contlink{color:#1d6fb8}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#3b82c4,#0d3f73 55%,#06203b)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #1d6fb8;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#1d6fb8;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#0d3f73;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/vishnu/dashavatara/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">TEN DESCENTS OF VIṢṆU</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(15px,4.5vw,45px)">DAŚĀVATĀRA</h1>
+  <div class="series">DAŚĀVATĀRA · A REFERENCE GUIDE</div>
+  <div class="tag">Fish to horseman: the ten avatāras</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Vishnu at the centre with ten small medallions around him for his ten avatars"><rect width="380" height="268" fill="#0d3f73" rx="8"/><circle cx="40" cy="20" r="1.6" fill="#fff"/><circle cx="120" cy="40" r="1.6" fill="#fff"/><circle cx="500" cy="30" r="1.6" fill="#fff"/><circle cx="460" cy="60" r="1.6" fill="#fff"/><circle cx="300" cy="14" r="1.6" fill="#fff"/><circle cx="220" cy="30" r="1.6" fill="#fff"/><circle cx="380" cy="22" r="1.6" fill="#fff"/><circle cx="80" cy="60" r="1.6" fill="#fff"/><g transform="translate(190 170) scale(1.15)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -54 30 -66 q34 12 30 66z" fill="#ffd60a"/><path d="M-22 -8 l-26 -20 M22 -8 l26 -20 M-22 6 l-24 10 M22 6 l24 10" stroke="#3b6fd0" stroke-width="7"/><circle cx="-52" cy="-30" r="9" fill="#fff8e7"/><circle cx="52" cy="-30" r="9" fill="none" stroke="#e0a800" stroke-width="4"/><path d="M-48 16 v18" stroke="#7a4a1a" stroke-width="5"/><circle cx="48" cy="18" r="6" fill="#f08aa6"/><circle cy="-36" r="15" fill="#3b6fd0"/><path d="M-14 -48 h28 l-4 -18 l-6 6 l-4 -10 l-4 10 l-6 -6z" fill="#e0a800"/><path d="M-3 -46 v-6 M3 -46 v-6" stroke="#fff" stroke-width="2"/><circle cx="-5" cy="-38" r="2.4" fill="#fff"/><circle cx="5" cy="-38" r="2.4" fill="#fff"/><path d="M-6 -29 q6 5 12 0" fill="none"/></g><circle cx="44" cy="125" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(44 125) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-40 0 q30 -26 60 0 q-30 26 -60 0z" fill="#3b8fd0"/><path d="M20 0 l18 -14 v28z" fill="#3b8fd0"/><circle cx="-26" cy="-4" r="3" fill="#fff"/><path d="M-10 -14 q4 14 0 28 M2 -14 q4 14 0 28" fill="none" stroke="#9fd0ea"/></g><circle cx="95" cy="69" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(95 69) scale(0.42)" stroke="#111" stroke-width="2"><ellipse cy="0" rx="38" ry="22" fill="#5a8a3a"/><path d="M-20 -14 l12 10 l14 -10 l12 10" fill="none" stroke="#3a5a2a"/><circle cx="44" cy="2" r="9" fill="#8ab070"/><path d="M-30 18 l-6 8 M30 18 l6 8 M-20 20 v8 M20 20 v8" stroke="#8ab070" stroke-width="5"/></g><circle cx="184" cy="45" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(184 45) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-34 14 q-4 -34 26 -36 q30 0 34 22 l12 4 l-12 6 q-6 6 -30 6z" fill="#5a4a4a"/><path d="M28 -6 q8 -8 2 -16" fill="none" stroke="#fff" stroke-width="3"/><path d="M-26 14 v10 M14 14 v10" stroke-width="5"/><circle cx="16" cy="-10" r="2.4" fill="#fff"/><circle cx="-6" cy="-36" r="12" fill="#5ab0f0"/></g><circle cx="275" cy="64" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(275 64) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-24 34 q-4 -40 24 -48 q28 8 24 48z" fill="#e0a800"/><circle cy="-24" r="20" fill="#e0a800"/><path d="M-20 -30 q-10 -16 6 -24 q14 -6 28 4 q14 10 6 26" fill="#c06a1a"/><circle cx="-7" cy="-26" r="2.6" fill="#111"/><circle cx="7" cy="-26" r="2.6" fill="#111"/><path d="M-8 -14 q8 6 16 0" fill="none"/></g><circle cx="332" cy="117" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(332 117) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-14 30 q-2 -26 14 -30 q16 4 14 30z" fill="#ffd60a"/><circle cy="-14" r="11" fill="#f2c79b"/><path d="M-26 -30 q26 -20 52 0z" fill="#e8d8b0"/><path d="M0 -30 v26" stroke-width="2"/><path d="M14 10 h10 v14 h-10z" fill="#c9a26b"/></g><circle cx="332" cy="184" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(332 184) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#e05a3a"/><circle cy="-16" r="11" fill="#c98b5a"/><path d="M-8 -26 q8 -10 16 0" fill="#3a2a1a"/><path d="M20 -36 v60" stroke="#7a4a1a" stroke-width="5"/><path d="M20 -36 q22 4 20 22 q-12 -4 -20 -4z" fill="#ccc"/></g><circle cx="275" cy="237" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(275 237) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#3b8fd0"/><circle cy="-16" r="11" fill="#5b8fe0"/><path d="M-10 -26 h20 l-3 -10 h-14z" fill="#e0a800"/><path d="M-30 -30 q-14 30 0 60" fill="none" stroke="#7a4a1a" stroke-width="4"/><path d="M-30 -30 v60" stroke="#bbb" stroke-width="1"/></g><circle cx="183" cy="255" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(183 255) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#f4f4f4"/><circle cy="-16" r="11" fill="#f2e6d0"/><path d="M20 -30 v52 M14 22 h14 l-4 8z" stroke="#7a4a1a" stroke-width="4"/><path d="M-36 30 q-4 -20 -24 -26 M-60 6 q10 -14 22 -10" fill="none" stroke="#e08a2a" stroke-width="2"/></g><circle cx="95" cy="231" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(95 231) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#ffd60a"/><circle cy="-16" r="11" fill="#3b6fd0"/><path d="M2 -30 q10 -16 18 -6 q-8 2 -18 6z" fill="#2a9d6f"/><circle cx="16" cy="-30" r="3" fill="#3b8fd0"/><path d="M-30 -6 l44 -10" stroke="#7a4a1a" stroke-width="4"/></g><circle cx="44" cy="175" r="22" fill="#fff8e7" stroke="#111" stroke-width="2"/><g transform="translate(44 175) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-34 10 q-2 -24 26 -26 q22 0 30 -14 l6 8 l-4 6 q2 18 -16 26z" fill="#f4f4f4"/><path d="M-28 10 v18 M-8 12 v16 M10 10 v18" stroke="#f4f4f4" stroke-width="6"/><circle cx="-4" cy="-30" r="9" fill="#c98b5a"/><path d="M4 -34 l30 -26" stroke="#ccc" stroke-width="4"/></g></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6"><p>Whenever the world loses its balance, says the Bhagavad Gītā, the Lord comes down to set it right. Those “descents” are the <b>avatāras</b>, and ten of them have been sung, painted and carved for over fifteen centuries: the <b>Daśāvatāra</b>.</p><p>A fish that saves the seeds of life from the flood. A tortoise that carries a mountain. A boar who lifts the Earth. A man-lion who keeps a promise to a child. A dwarf who spans the universe in three steps. Then three Rāmas, the dark cowherd Kṛṣṇa, and a rider still to come.</p><p>This guide explains what an avatāra is, why the lists differ, where the stories come from and how they are worshipped. Ten detailed guides follow, one for each avatāra.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#0d3f73">Jaya Jagadīśa Hare,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why does God need to come down?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The Gītā’s answer: to protect the good, end the wicked and restore dharma. Again and again.</p></div></div>
+  <div class="panel reading small"><p>Part of <a href="/bhakti/vishnu/dashavatara/">Daśāvatāra</a>, the ten avatāras of Viṣṇu. Next: <a href="/bhakti/vishnu/dashavatara/matsya/">Matsya</a>.</p></div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#avatara">What Is an Avatāra?</a></li><li><span class="num">3</span><a href="#lists">Which Ten?</a></li><li><span class="num">4</span><a href="#bhagavata">More Than Ten</a></li><li><span class="num">5</span><a href="#vedic">Vedic Roots</a></li><li><span class="num">6</span><a href="#yugas">Through the Four Ages</a></li><li><span class="num">7</span><a href="#evolution">An Evolution Story?</a></li><li><span class="num">8</span><a href="#gitagovinda">Jayadeva’s Daśāvatāra</a></li><li><span class="num">9</span><a href="#art">In Stone and Paint</a></li><li><span class="num">10</span><a href="#temples">Temples of the Ten</a></li><li><span class="num">11</span><a href="#thrikkakara">All Ten in One Temple</a></li><li><span class="num">12</span><a href="#mahavidya">Avatāras and Mahāvidyās</a></li><li><span class="num">13</span><a href="#festivals">Through the Year</a></li><li><span class="num">14</span><a href="#meaning">What They Teach</a></li><li><span class="num">15</span><a href="#series">The Ten Guides</a></li><li><span class="num">16</span><a href="#glossary">Glossary</a></li><li><span class="num">17</span><a href="#end">On One Page</a></li><li><span class="num">18</span><a href="#sources">Sources</a></li>
+  </ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">The ten on one page</div>
+<table class="ct fact"><tr><td><b>#</b></td><td><b>Avatāra · form · deed</b></td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-40 0 q30 -26 60 0 q-30 26 -60 0z" fill="#3b8fd0"/><path d="M20 0 l18 -14 v28z" fill="#3b8fd0"/><circle cx="-26" cy="-4" r="3" fill="#fff"/><path d="M-10 -14 q4 14 0 28 M2 -14 q4 14 0 28" fill="none" stroke="#9fd0ea"/></g></svg></td><td><b>1. <a href="/bhakti/vishnu/dashavatara/matsya/">Matsya</a></b>, the fish: saves Manu, the seeds of life and the Vedas from the flood</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><ellipse cy="0" rx="38" ry="22" fill="#5a8a3a"/><path d="M-20 -14 l12 10 l14 -10 l12 10" fill="none" stroke="#3a5a2a"/><circle cx="44" cy="2" r="9" fill="#8ab070"/><path d="M-30 18 l-6 8 M30 18 l6 8 M-20 20 v8 M20 20 v8" stroke="#8ab070" stroke-width="5"/></g></svg></td><td><b>2. <a href="/bhakti/vishnu/dashavatara/kurma/">Kūrma</a></b>, the tortoise: bears Mount Mandara as the ocean of milk is churned</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-34 14 q-4 -34 26 -36 q30 0 34 22 l12 4 l-12 6 q-6 6 -30 6z" fill="#5a4a4a"/><path d="M28 -6 q8 -8 2 -16" fill="none" stroke="#fff" stroke-width="3"/><path d="M-26 14 v10 M14 14 v10" stroke-width="5"/><circle cx="16" cy="-10" r="2.4" fill="#fff"/><circle cx="-6" cy="-36" r="12" fill="#5ab0f0"/></g></svg></td><td><b>3. <a href="/bhakti/vishnu/dashavatara/varaha/">Varāha</a></b>, the boar: lifts the Earth from the cosmic ocean and slays Hiraṇyākṣa</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-24 34 q-4 -40 24 -48 q28 8 24 48z" fill="#e0a800"/><circle cy="-24" r="20" fill="#e0a800"/><path d="M-20 -30 q-10 -16 6 -24 q14 -6 28 4 q14 10 6 26" fill="#c06a1a"/><circle cx="-7" cy="-26" r="2.6" fill="#111"/><circle cx="7" cy="-26" r="2.6" fill="#111"/><path d="M-8 -14 q8 6 16 0" fill="none"/></g></svg></td><td><b>4. <a href="/bhakti/vishnu/dashavatara/narasimha/">Narasiṃha</a></b>, the man-lion: bursts from a pillar to save Prahlāda from Hiraṇyakaśipu</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-14 30 q-2 -26 14 -30 q16 4 14 30z" fill="#ffd60a"/><circle cy="-14" r="11" fill="#f2c79b"/><path d="M-26 -30 q26 -20 52 0z" fill="#e8d8b0"/><path d="M0 -30 v26" stroke-width="2"/><path d="M14 10 h10 v14 h-10z" fill="#c9a26b"/></g></svg></td><td><b>5. <a href="/bhakti/vishnu/dashavatara/vamana/">Vāmana</a></b>, the dwarf: asks Bali for three steps and spans the worlds</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#e05a3a"/><circle cy="-16" r="11" fill="#c98b5a"/><path d="M-8 -26 q8 -10 16 0" fill="#3a2a1a"/><path d="M20 -36 v60" stroke="#7a4a1a" stroke-width="5"/><path d="M20 -36 q22 4 20 22 q-12 -4 -20 -4z" fill="#ccc"/></g></svg></td><td><b>6. <a href="/bhakti/vishnu/dashavatara/parashurama/">Paraśurāma</a></b>, Rāma with the axe: the Brahmin warrior who humbles proud kings</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#3b8fd0"/><circle cy="-16" r="11" fill="#5b8fe0"/><path d="M-10 -26 h20 l-3 -10 h-14z" fill="#e0a800"/><path d="M-30 -30 q-14 30 0 60" fill="none" stroke="#7a4a1a" stroke-width="4"/><path d="M-30 -30 v60" stroke="#bbb" stroke-width="1"/></g></svg></td><td><b>7. <a href="/bhakti/vishnu/dashavatara/rama/">Rāma</a></b>, the prince of Ayodhyā: the ideal king who defeats Rāvaṇa</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#f4f4f4"/><circle cy="-16" r="11" fill="#f2e6d0"/><path d="M20 -30 v52 M14 22 h14 l-4 8z" stroke="#7a4a1a" stroke-width="4"/><path d="M-36 30 q-4 -20 -24 -26 M-60 6 q10 -14 22 -10" fill="none" stroke="#e08a2a" stroke-width="2"/></g></svg></td><td><b>8. <a href="/bhakti/vishnu/dashavatara/balarama-buddha/">Balarāma · Buddha</a></b>, the plough-bearer / the awakened one: the disputed eighth place: Kṛṣṇa’s elder brother, or the Buddha</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#ffd60a"/><circle cy="-16" r="11" fill="#3b6fd0"/><path d="M2 -30 q10 -16 18 -6 q-8 2 -18 6z" fill="#2a9d6f"/><circle cx="16" cy="-30" r="3" fill="#3b8fd0"/><path d="M-30 -6 l44 -10" stroke="#7a4a1a" stroke-width="4"/></g></svg></td><td><b>9. <a href="/bhakti/vishnu/dashavatara/krishna/">Kṛṣṇa</a></b>, the dark one: the cowherd, the charioteer, the teacher of the Gītā</td></tr><tr><td><svg width="50" height="50" viewBox="-28 -30 56 60"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M-34 10 q-2 -24 26 -26 q22 0 30 -14 l6 8 l-4 6 q2 18 -16 26z" fill="#f4f4f4"/><path d="M-28 10 v18 M-8 12 v16 M10 10 v18" stroke="#f4f4f4" stroke-width="6"/><circle cx="-4" cy="-30" r="9" fill="#c98b5a"/><path d="M4 -34 l30 -26" stroke="#ccc" stroke-width="4"/></g></svg></td><td><b>10. <a href="/bhakti/vishnu/dashavatara/kalki/">Kalki</a></b>, the rider on the white horse: will end the dark age and begin a new one</td></tr></table>
+</section>
+<section class="page" id="avatara"><h2 class="page-title">WHAT IS AN AVATĀRA?</h2><div class="sub">The one who comes down</div>
+<table class="ct fact"><tr><td>Word</td><td><i>ava</i> “down” + <i>tṛ</i> “to cross”: a descent, a crossing over</td></tr><tr><td>Who</td><td>Above all Viṣṇu, the preserver, who keeps the world in order</td></tr><tr><td>Why</td><td>To protect the good, remove evil and re-establish dharma</td></tr><tr><td>How</td><td>By taking a form suited to the danger: fish for a flood, boar for the sunken Earth, man-lion for a riddle</td></tr><tr><td>Not lesser</td><td>In the tradition each avatāra is fully God, not a part</td></tr></table><div class="panel reading"><p><i>paritrāṇāya sādhūnāṃ vināśāya ca duṣkṛtām, dharma-saṃsthāpanārthāya sambhavāmi yuge yuge</i></p><p class="small">“To protect the good, to destroy the wicked, to establish dharma, I come into being age after age.” Bhagavad Gītā 4.8</p></div>
+</section>
+<section class="page" id="lists"><h2 class="page-title">WHICH TEN?</h2><div class="sub">The lists differ</div>
+<table class="ct fact"><tr><td>Shared core</td><td>Almost all lists agree on the first seven: Matsya, Kūrma, Varāha, Narasiṃha, Vāmana, Paraśurāma, Rāma, and on Kalki last</td></tr><tr><td>Common list</td><td>Eighth Kṛṣṇa, ninth Buddha: found in several Purāṇas and in North Indian tradition</td></tr><tr><td>South Indian</td><td>Śrī Vaiṣṇava and Smārta lists give Balarāma eighth and Kṛṣṇa ninth, without the Buddha</td></tr><tr><td>Jayadeva</td><td>The Gītagovinda (12th c.) names Balarāma and Buddha, for Kṛṣṇa is the source of all</td></tr><tr><td>Regional</td><td>Some lists place Jagannātha or Viṭhobā in the ninth place</td></tr><tr><td>This series</td><td>Article 8 covers Balarāma and the Buddha together; Kṛṣṇa is article 9</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So which list is right?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Each tradition is right for itself. We show all of them and let you see why they differ.</p></div></div>
+</section>
+<section class="page" id="bhagavata"><h2 class="page-title">MORE THAN TEN</h2><div class="sub">The Bhāgavata’s longer lists</div>
+<table class="ct fact"><tr><td>22 or more</td><td>The Bhāgavata Purāṇa (1.3) lists over twenty avatāras, including the Kumāras, Nārada, Kapila, Dattātreya, Ṛṣabha, Pṛthu, Dhanvantari, Mohinī and Vyāsa</td></tr><tr><td>Innumerable</td><td>It adds that the avatāras are as countless as streams from an endless lake: <i>avatārā hy asaṅkhyeyāḥ</i></td></tr><tr><td>Kṛṣṇa</td><td>It ends with the famous line that Kṛṣṇa is the Lord himself: <i>kṛṣṇas tu bhagavān svayam</i></td></tr><tr><td>Pāñcarātra</td><td>Some Pāñcarātra texts count 39</td></tr><tr><td>Why ten?</td><td>Ten became the classic set in poetry, temple art and festivals</td></tr></table>
+</section>
+<section class="page" id="vedic"><h2 class="page-title">OLDER THAN THE PURĀṆAS</h2><div class="sub">Vedic roots</div>
+<table class="ct fact"><tr><td>Fish</td><td>The Śatapatha Brāhmaṇa (1.8.1) tells of Manu, a fish and the flood</td></tr><tr><td>Tortoise</td><td>Prajāpati takes the form of a tortoise (kūrma) in the Śatapatha Brāhmaṇa</td></tr><tr><td>Boar</td><td>In the Taittirīya texts Prajāpati as a boar raises the earth from the waters</td></tr><tr><td>Three steps</td><td>The Ṛgveda (1.154) praises Viṣṇu for measuring the worlds in three strides, the seed of the Vāmana story</td></tr><tr><td>Later</td><td>In the Purāṇas these deeds are given to Viṣṇu and arranged in order</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> The fish story is older than Viṣṇu's role in it?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The Brāhmaṇa tells the flood without naming Viṣṇu. The Purāṇas made it his.</p></div></div>
+</section>
+<section class="page" id="yugas"><h2 class="page-title">THROUGH THE FOUR AGES</h2><div class="sub">The avatāras in time</div>
+<svg class="pg-fig" width="560" height="170" viewBox="0 0 560 170" role="img" aria-label="Four bands for the four ages with avatar icons placed in each"><rect width="560" height="170" fill="#fff"/><rect width="560" height="170" fill="#eef3fa"/><rect x="10" y="20" width="130" height="130" fill="#fff3c0" stroke="#111" stroke-width="2"/><text x="75" y="40" text-anchor="middle" font-family="Bangers" font-size="13" fill="#111">Satya</text><rect x="147" y="20" width="130" height="130" fill="#dff0d8" stroke="#111" stroke-width="2"/><text x="212" y="40" text-anchor="middle" font-family="Bangers" font-size="13" fill="#111">Tretā</text><rect x="284" y="20" width="130" height="130" fill="#dcecff" stroke="#111" stroke-width="2"/><text x="349" y="40" text-anchor="middle" font-family="Bangers" font-size="13" fill="#111">Dvāpara</text><rect x="421" y="20" width="130" height="130" fill="#e8e0f0" stroke="#111" stroke-width="2"/><text x="486" y="40" text-anchor="middle" font-family="Bangers" font-size="13" fill="#111">Kali</text><g transform="translate(45 80) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-40 0 q30 -26 60 0 q-30 26 -60 0z" fill="#3b8fd0"/><path d="M20 0 l18 -14 v28z" fill="#3b8fd0"/><circle cx="-26" cy="-4" r="3" fill="#fff"/><path d="M-10 -14 q4 14 0 28 M2 -14 q4 14 0 28" fill="none" stroke="#9fd0ea"/></g><g transform="translate(105 80) scale(0.42)" stroke="#111" stroke-width="2"><ellipse cy="0" rx="38" ry="22" fill="#5a8a3a"/><path d="M-20 -14 l12 10 l14 -10 l12 10" fill="none" stroke="#3a5a2a"/><circle cx="44" cy="2" r="9" fill="#8ab070"/><path d="M-30 18 l-6 8 M30 18 l6 8 M-20 20 v8 M20 20 v8" stroke="#8ab070" stroke-width="5"/></g><g transform="translate(45 125) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-34 14 q-4 -34 26 -36 q30 0 34 22 l12 4 l-12 6 q-6 6 -30 6z" fill="#5a4a4a"/><path d="M28 -6 q8 -8 2 -16" fill="none" stroke="#fff" stroke-width="3"/><path d="M-26 14 v10 M14 14 v10" stroke-width="5"/><circle cx="16" cy="-10" r="2.4" fill="#fff"/><circle cx="-6" cy="-36" r="12" fill="#5ab0f0"/></g><g transform="translate(105 125) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-24 34 q-4 -40 24 -48 q28 8 24 48z" fill="#e0a800"/><circle cy="-24" r="20" fill="#e0a800"/><path d="M-20 -30 q-10 -16 6 -24 q14 -6 28 4 q14 10 6 26" fill="#c06a1a"/><circle cx="-7" cy="-26" r="2.6" fill="#111"/><circle cx="7" cy="-26" r="2.6" fill="#111"/><path d="M-8 -14 q8 6 16 0" fill="none"/></g><g transform="translate(180 80) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-14 30 q-2 -26 14 -30 q16 4 14 30z" fill="#ffd60a"/><circle cy="-14" r="11" fill="#f2c79b"/><path d="M-26 -30 q26 -20 52 0z" fill="#e8d8b0"/><path d="M0 -30 v26" stroke-width="2"/><path d="M14 10 h10 v14 h-10z" fill="#c9a26b"/></g><g transform="translate(240 80) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#e05a3a"/><circle cy="-16" r="11" fill="#c98b5a"/><path d="M-8 -26 q8 -10 16 0" fill="#3a2a1a"/><path d="M20 -36 v60" stroke="#7a4a1a" stroke-width="5"/><path d="M20 -36 q22 4 20 22 q-12 -4 -20 -4z" fill="#ccc"/></g><g transform="translate(210 125) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#3b8fd0"/><circle cy="-16" r="11" fill="#5b8fe0"/><path d="M-10 -26 h20 l-3 -10 h-14z" fill="#e0a800"/><path d="M-30 -30 q-14 30 0 60" fill="none" stroke="#7a4a1a" stroke-width="4"/><path d="M-30 -30 v60" stroke="#bbb" stroke-width="1"/></g><g transform="translate(320 95) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#f4f4f4"/><circle cy="-16" r="11" fill="#f2e6d0"/><path d="M20 -30 v52 M14 22 h14 l-4 8z" stroke="#7a4a1a" stroke-width="4"/><path d="M-36 30 q-4 -20 -24 -26 M-60 6 q10 -14 22 -10" fill="none" stroke="#e08a2a" stroke-width="2"/></g><g transform="translate(380 95) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-16 34 q-2 -36 16 -40 q18 4 16 40z" fill="#ffd60a"/><circle cy="-16" r="11" fill="#3b6fd0"/><path d="M2 -30 q10 -16 18 -6 q-8 2 -18 6z" fill="#2a9d6f"/><circle cx="16" cy="-30" r="3" fill="#3b8fd0"/><path d="M-30 -6 l44 -10" stroke="#7a4a1a" stroke-width="4"/></g><g transform="translate(490 95) scale(0.42)" stroke="#111" stroke-width="2"><path d="M-34 10 q-2 -24 26 -26 q22 0 30 -14 l6 8 l-4 6 q2 18 -16 26z" fill="#f4f4f4"/><path d="M-28 10 v18 M-8 12 v16 M10 10 v18" stroke="#f4f4f4" stroke-width="6"/><circle cx="-4" cy="-30" r="9" fill="#c98b5a"/><path d="M4 -34 l30 -26" stroke="#ccc" stroke-width="4"/></g></svg><table class="ct fact"><tr><td>Satya Yuga</td><td>Matsya, Kūrma, Varāha, Narasiṃha</td></tr><tr><td>Tretā Yuga</td><td>Vāmana, Paraśurāma, Rāma</td></tr><tr><td>Dvāpara Yuga</td><td>Balarāma, Kṛṣṇa</td></tr><tr><td>Kali Yuga</td><td>The Buddha (in lists that include him), and Kalki at its end</td></tr><tr><td>Our age</td><td>Tradition says the Kali Yuga began when Kṛṣṇa left the world</td></tr></table>
+</section>
+<section class="page" id="evolution"><h2 class="page-title">AN EVOLUTION STORY?</h2><div class="sub">A modern reading</div>
+<table class="ct fact"><tr><td>The idea</td><td>Fish (water), tortoise (water and land), boar (land), man-lion (half animal), dwarf (small man), then full humans with axe, bow and plough</td></tr><tr><td>Who says it</td><td>A 19th–20th-century reading, popularised by writers comparing the list with Darwin</td></tr><tr><td>Not scriptural</td><td>No Purāṇa presents the avatāras as evolution; the order follows the yugas and the stories</td></tr><tr><td>Our view</td><td>An interesting pattern people notice, not a claim of the texts</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So did the sages know about evolution?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The pattern is striking, but the texts don't say so. Enjoy it as a reading, not a proof.</p></div></div>
+</section>
+<section class="page" id="gitagovinda"><h2 class="page-title">JAYADEVA’S DAŚĀVATĀRA</h2><div class="sub">Gītagovinda, 12th century</div>
+<table class="ct fact"><tr><td>Poet</td><td>Jayadeva of Odisha and Bengal, 12th century</td></tr><tr><td>Hymn</td><td>The opening song of the Gītagovinda praises all ten, each verse ending <i>keśava dhṛta … śarīra, jaya jagadīśa hare</i></td></tr><tr><td>Example</td><td><i>pralaya-payodhi-jale dhṛtavān asi vedam</i>: “in the waters of dissolution you held the Veda” (Matsya)</td></tr><tr><td>His list</td><td>Balarāma eighth and Buddha ninth; Kṛṣṇa is the Lord who takes all ten</td></tr><tr><td>Sung</td><td>In Odissi dance, at Purī, and across India today</td></tr></table><div class="key">See also: <a href="/bhakti/vishnu/">More hymns to Viṣṇu</a></div>
+</section>
+<section class="page" id="art"><h2 class="page-title">IN STONE AND PAINT</h2><div class="sub">The avatāras in art</div>
+<table class="ct fact"><tr><td>Udayagiri</td><td>Cave 5 near Vidiśā, Madhya Pradesh: a colossal Varāha relief of the Gupta age, early 5th century</td></tr><tr><td>Deogarh</td><td>The Daśāvatāra temple at Deogarh, Uttar Pradesh, about 500 CE, one of the oldest stone temples of north India</td></tr><tr><td>Bādāmi</td><td>Cave 3 in Karnataka (578 CE): Varāha, Narasiṃha and Trivikrama</td></tr><tr><td>Gopurams</td><td>Rows of the ten crown many South Indian temple towers, as at Uḍupi</td></tr><tr><td>Paintings</td><td>Ten-panel sets in Rajasthani, Pahāṛī and Kerala mural styles; the Gañjifā cards of Odisha and Sawantwadi</td></tr></table>
+</section>
+<section class="page" id="temples"><h2 class="page-title">WHERE THEY ARE WORSHIPPED</h2><div class="sub">Temples of the ten</div>
+<table class="ct fact"><tr><td>Matsya</td><td>Vedanārāyaṇa, Nāgalāpuram (Andhra)</td></tr><tr><td>Kūrma</td><td>Kūrmanātha, Śrīkūrmam (Andhra)</td></tr><tr><td>Varāha</td><td>Bhū Varāha, Śrīmuṣṇam (Tamil Nadu); Tirumala</td></tr><tr><td>Narasiṃha</td><td>Ahobilam, Siṃhācalam, Yādagiri</td></tr><tr><td>Vāmana</td><td>Tṛkkākara (Kerala), heart of Onam</td></tr><tr><td>Paraśurāma</td><td>Kerala and Konkan traditions</td></tr><tr><td>Rāma</td><td>Ayodhyā, Bhadrācalam, Rāmeśvaram</td></tr><tr><td>Balarāma</td><td>Purī, as Balabhadra</td></tr><tr><td>Kṛṣṇa</td><td>Mathurā, Vṛndāvana, Dvārakā, Guruvāyūr, Uḍupi, Purī</td></tr><tr><td>Kalki</td><td>Shrines in Jaipur and elsewhere; Sambhal (UP) is his foretold birthplace</td></tr></table><div class="key">See: <a href="/bhakti/temples-of-india/ahobilam/">Ahobilam</a> · <a href="/bhakti/temples-of-india/char-dham/">Char Dham</a></div>
+</section>
+<section class="page" id="thrikkakara"><h2 class="page-title">ALL TEN IN ONE TEMPLE</h2><div class="sub">Onam at Tṛkkākara</div>
+<table class="ct fact"><tr><td>Where</td><td>The Vāmanamūrti temple at Tṛkkākara, near Kochi, Kerala</td></tr><tr><td>Ten days</td><td>During the Onam festival the deity is dressed each day as one of the avatāras</td></tr><tr><td>The set</td><td>Matsya, Kūrma, Varāha, Narasiṃha, Vāmana, Paraśurāma, Rāma, Balarāma, Kṛṣṇa and Kalki, with Trivikrama</td></tr><tr><td>Why here</td><td>Tradition says this was Mahābali’s capital, where Vāmana came</td></tr></table><div class="key">Read: <a href="/bhakti/vishnu/dashavatara/vamana/">Vāmana</a></div>
+</section>
+<section class="page" id="mahavidya"><h2 class="page-title">THE TEN AND THE TEN</h2><div class="sub">Avatāras and Mahāvidyās</div>
+<table class="ct fact"><tr><td>The idea</td><td>Some Tantras pair each avatāra with one of the ten Mahāvidyās, the Goddess’s ten forms</td></tr><tr><td>Examples</td><td>Kṛṣṇa with Kālī, Rāma with Tārā, Narasiṃha with Chinnamastā in one list</td></tr><tr><td>Lists vary</td><td>The Guhyātiguhya and Muṇḍamālā Tantras do not agree on every pair</td></tr><tr><td>Meaning</td><td>The Goddess is the power behind each of Viṣṇu’s descents</td></tr></table><div class="key">Read: <a href="/bhakti/devi/dasha-mahavidya/">Daśa Mahāvidyā</a></div>
+</section>
+<section class="page" id="festivals"><h2 class="page-title">THROUGH THE YEAR</h2><div class="sub">Their birthdays</div>
+<table class="ct fact"><tr><td>Matsya Jayantī</td><td>Caitra (Mar–Apr)</td></tr><tr><td>Kūrma Jayantī</td><td>Vaiśākha full moon</td></tr><tr><td>Varāha Jayantī</td><td>Bhādrapada</td></tr><tr><td>Narasiṃha Jayantī</td><td>Vaiśākha (Apr–May)</td></tr><tr><td>Vāmana Jayantī</td><td>Bhādrapada; Onam in Kerala</td></tr><tr><td>Paraśurāma Jayantī</td><td>Akṣaya Tṛtīyā</td></tr><tr><td>Rāma Navamī</td><td>Caitra</td></tr><tr><td>Balarāma Jayantī</td><td>Śrāvaṇa</td></tr><tr><td>Kṛṣṇa Janmāṣṭamī</td><td>Śrāvaṇa or Bhādrapada</td></tr><tr><td>Kalki Jayantī</td><td>Śrāvaṇa, by some calendars</td></tr></table>
+</section>
+<section class="page" id="meaning"><h2 class="page-title">WHAT THEY TEACH</h2><div class="sub">The wisdom of the ten</div>
+<table class="ct fact"><tr><td>God takes our side</td><td>Whatever the danger, a form comes to meet it</td></tr><tr><td>Every shape is holy</td><td>Fish, tortoise, boar: God is not ashamed of any body</td></tr><tr><td>Promises kept</td><td>To Manu, Prahlāda and Bali, he keeps his word</td></tr><tr><td>Hope</td><td>The tenth is still to come: no age is forever dark</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why should I care about a fish and a tortoise?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Because they say God will become whatever is needed to save what matters. That includes you.</p></div></div>
+</section>
+<section class="page" id="series"><h2 class="page-title">THE TEN GUIDES</h2><div class="sub">Read on</div>
+<div class="steps"><div><b>1. <a href="/bhakti/vishnu/dashavatara/matsya/">Matsya</a></b>, the fish: saves Manu, the seeds of life and the Vedas from the flood.</div><div><b>2. <a href="/bhakti/vishnu/dashavatara/kurma/">Kūrma</a></b>, the tortoise: bears Mount Mandara as the ocean of milk is churned.</div><div><b>3. <a href="/bhakti/vishnu/dashavatara/varaha/">Varāha</a></b>, the boar: lifts the Earth from the cosmic ocean and slays Hiraṇyākṣa.</div><div><b>4. <a href="/bhakti/vishnu/dashavatara/narasimha/">Narasiṃha</a></b>, the man-lion: bursts from a pillar to save Prahlāda from Hiraṇyakaśipu.</div><div><b>5. <a href="/bhakti/vishnu/dashavatara/vamana/">Vāmana</a></b>, the dwarf: asks Bali for three steps and spans the worlds.</div><div><b>6. <a href="/bhakti/vishnu/dashavatara/parashurama/">Paraśurāma</a></b>, Rāma with the axe: the Brahmin warrior who humbles proud kings.</div><div><b>7. <a href="/bhakti/vishnu/dashavatara/rama/">Rāma</a></b>, the prince of Ayodhyā: the ideal king who defeats Rāvaṇa.</div><div><b>8. <a href="/bhakti/vishnu/dashavatara/balarama-buddha/">Balarāma · Buddha</a></b>, the plough-bearer / the awakened one: the disputed eighth place: Kṛṣṇa’s elder brother, or the Buddha.</div><div><b>9. <a href="/bhakti/vishnu/dashavatara/krishna/">Kṛṣṇa</a></b>, the dark one: the cowherd, the charioteer, the teacher of the Gītā.</div><div><b>10. <a href="/bhakti/vishnu/dashavatara/kalki/">Kalki</a></b>, the rider on the white horse: will end the dark age and begin a new one.</div></div>
+</section>
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used in this guide</div>
+<table class="ct fact"><tr><td>Avatāra</td><td>Descent</td></tr><tr><td>Daśa</td><td>Ten</td></tr><tr><td>Dharma</td><td>Right order</td></tr><tr><td>Yuga</td><td>Age of the world</td></tr><tr><td>Brāhmaṇa</td><td>Vedic ritual commentary</td></tr><tr><td>Purāṇa</td><td>Ancient story-text</td></tr><tr><td>Trivikrama</td><td>“Of the three steps”</td></tr><tr><td>Jayantī</td><td>Birthday festival</td></tr></table>
+</section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">The whole guide in five lines</div>
+<div class="steps">
+<div><b>Idea.</b> Viṣṇu comes down whenever dharma fails: Gītā 4.7–8.</div>
+<div><b>The ten.</b> Matsya, Kūrma, Varāha, Narasiṃha, Vāmana, Paraśurāma, Rāma, Balarāma or Buddha, Kṛṣṇa, Kalki.</div>
+<div><b>Lists.</b> The eighth and ninth places differ by region and sect.</div>
+<div><b>Roots.</b> Vedic fish, tortoise, boar and three steps; Purāṇic order; Jayadeva’s hymn.</div>
+<div><b>Lesson.</b> God takes whatever form the moment needs.</div>
+</div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> One line to remember?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Fish to horseman, he keeps coming back. Yuge yuge.</p></div></div><div class="key">Start with the first: <a href="/bhakti/vishnu/dashavatara/matsya/">Matsya, the fish</a></div><div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small">
+<p><b>Texts:</b> Bhagavad Gītā 4.7–8; Bhāgavata Purāṇa 1.3 (lists; <i>avatārā hy asaṅkhyeyāḥ</i>; <i>kṛṣṇas tu bhagavān svayam</i>); Śatapatha Brāhmaṇa 1.8.1 (flood); Ṛgveda 1.154 (three strides); Jayadeva, Gītagovinda 1.</p>
+<p><b>Lists:</b> Wikipedia, “Dashavatara” (common list with Kṛṣṇa and Buddha in several Purāṇas; Śrī Vaiṣṇava list with Balarāma and Kṛṣṇa; Gauḍīya list with Balarāma and Buddha; Jagannātha and Viṭhobā variants); Encyclopaedia Britannica, “Dashavatara”.</p>
+<p><b>Art and temples:</b> Wikipedia, “Udayagiri Caves” (Cave 5 Varāha; 401 CE inscription of Chandragupta II); “Kurmanathaswamy temple, Srikurmam”; “Vedanarayana Temple, Nagalapuram”; “Thrikkakara Temple” (avatāra decorations at Onam). Deogarh and Bādāmi from standard art histories.</p>
+<p><b>Sources differ / unverified:</b> Jayantī months vary by calendar; Mahāvidyā pairings vary between Tantras; the evolution reading is modern. Zappy and Prof. Bolt are fictional.</p>
+</div>
+</section>
+</div>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/bhakti/">Bhakti</a><span class="sep">›</span><a href="/bhakti/gods/">Gods and Goddesses</a><span class="sep">›</span><a href="/bhakti/vishnu/">Viṣṇu</a><span class="also">More for Viṣṇu: <a href="/bhakti/vishnu/#hymns">hymns</a> · <a href="/bhakti/vishnu/#temples">temples</a></span></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
