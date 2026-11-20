@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mudukutore · Mallikārjuna · Temples around Mysuru · srini.presents</title>
+<meta name="description" content="Mudukutore Mallikārjuna on Somagiri hill by the Kāverī: Abhinava Śrīśaila, the fifth of Talakāḍu’s Pañcaliṅgas. Arjuna’s jasmine, the cow’s footprint, Bhramarāmbā and the bee, and the great cattle fair. An illustrated reference guide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#2c5f9e,#0b2a4a 55%,#04101f)}
+  .sloka-head{background:#0b2a4a}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0b2a4a}
+  .sub{color:#1d4f9a}
+  .num{background:#0b2a4a}
+  .steps div:before{background:#1d4f9a}
+  .full .vn,.full .end{color:#1d4f9a}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d4f9a}
+  .contlink{color:#1d4f9a}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#2c5f9e,#0b2a4a 55%,#04101f)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #1d4f9a;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#1d4f9a;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#0b2a4a;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/temples-of-india/around-mysuru/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">TEMPLES AROUND MYSURU</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(26px,7.2vw,78px)">MUDUKUTORE</h1>
+  <div class="series">MALLIKĀRJUNA · ABHINAVA ŚRĪŚAILA · A REFERENCE GUIDE</div>
+  <div class="tag">Where the river turns, and Arjuna brought jasmine</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A small hill on a bend of the Kaveri with a temple on top; jasmine flowers and a linga in front"><rect width="380" height="268" fill="#0b2a4a" rx="8"/><circle cx="300" cy="60" r="30" fill="#ffd166" opacity=".35"/><path d="M0 220 C 120 200, 160 268, 260 240 S 360 210, 380 220 V268 H0z" fill="#4aa3df"/><path d="M50.0 236 Q110.0 158.0 146.0 106 Q170 98.19999999999999 194.0 106 Q230.0 158.0 290.0 236z" fill="#8a9a6a" stroke="#111" stroke-width="2"/><g transform="translate(170 110) scale(1.3)" stroke="#111" stroke-width="1.6"><rect x="-26" y="-16" width="52" height="16" fill="#f2e6c8"/><path d="M-14 -16 h28 l-4 -10 h-20z M-10 -26 h20 l-4 -10 h-12z" fill="#e2cfa8"/><circle cy="-40" r="3" fill="#e0a800"/><rect x="-5" y="-10" width="10" height="10" fill="#5a3a1a"/></g><path d="M150 236 h14" stroke="#e2cfa8" stroke-width="3"/><path d="M156 218 h14" stroke="#e2cfa8" stroke-width="3"/><path d="M162 200 h14" stroke="#e2cfa8" stroke-width="3"/><path d="M168 182 h14" stroke="#e2cfa8" stroke-width="3"/><path d="M174 164 h14" stroke="#e2cfa8" stroke-width="3"/><path d="M180 146 h14" stroke="#e2cfa8" stroke-width="3"/><g transform="translate(310 170) scale(1.2)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-8 -30 h16 M-8 -26 h16 M-8 -22 h16" stroke="#fff" stroke-width="2"/></g><g transform="translate(290 120) scale(1.3)"><circle cx="0" cy="0" r="5" fill="#fff" stroke="#999"/><circle cx="8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="-8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle cx="-4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle r="2.4" fill="#ffd60a"/></g><g transform="translate(330 110) scale(1.1)"><circle cx="0" cy="0" r="5" fill="#fff" stroke="#999"/><circle cx="8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="-8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle cx="-4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle r="2.4" fill="#ffd60a"/></g></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6">
+    <p>Just upstream of Talakāḍu, the Kāverī makes a sharp turn around a small hill. On top sits a temple of Śiva as <b>Mallikārjuna</b>, with his Goddess <b>Bhramarāmbā</b>: the same pair as at the great Śrīśaila.</p>
+    <p>Devotees call it <b>Abhinava Śrīśaila</b>, and it is the last of the five liṅgas of the Pañcaliṅga Darśana.</p>
+    <p>This guide tells its legends, its temple and its fair.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#1d4f9a">Oṃ Namaḥ Śivāya,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A small hill with a big name?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Small hill, three legends, one famous fair, and a starring role in the Pañcaliṅga. Not bad!</p></div></div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li><span class="num">1</span><a href="#glance">At a Glance</a></li><li><span class="num">2</span><a href="#where">Where It Is</a></li><li><span class="num">3</span><a href="#legends1">Legends · Arjuna’s Jasmine</a></li><li><span class="num">4</span><a href="#legends2">Legends · The Cow</a></li><li><span class="num">5</span><a href="#legends3">Legends · Kapila and the Bee</a></li><li><span class="num">6</span><a href="#temple">The Temple</a></li><li><span class="num">7</span><a href="#pancalinga">The Fifth Liṅga</a></li><li><span class="num">8</span><a href="#history">History</a></li><li><span class="num">9</span><a href="#fair">The Great Fair</a></li><li><span class="num">10</span><a href="#around">Around Mudukutore</a></li><li><span class="num">11</span><a href="#glossary">Glossary</a></li><li><span class="num">12</span><a href="#end">On One Page</a></li><li><span class="num">13</span><a href="#sources">Sources</a></li>
+  </ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">The essential facts on one page</div>
+<table class="ct fact"><tr><td>Deity</td><td>Śiva as <b>Mallikārjuna</b> (Mallikārjuneśvara), a <b>liṅga</b> facing east, said to bear a <b>cow’s footprint</b></td></tr><tr><td>Goddess</td><td><b>Bhramarāmbā</b> (Bhramarāmbikā), in her own shrine beside him</td></tr><tr><td>Place</td><td>Somagiri hill above the <b>Kāverī</b> at <b>Mudukutore</b> (T. Beṭṭahaḷḷi), T. Narasipura taluk, Mysuru district</td></tr><tr><td>Title</td><td><b>Abhinava Śrīśaila</b>, “the new Śrīśaila”</td></tr><tr><td>Pañcaliṅga</td><td>The <b>fifth</b> of the five liṅgas of the Talakāḍu Pañcaliṅga Darśana</td></tr><tr><td>Legends</td><td>Arjuna’s jasmine worship; the cow and the hidden liṅga; Bhramarāmbā the bee</td></tr><tr><td>Builders</td><td>Begun by the <b>Gaṅgas</b>, over 800 years ago by tradition; enlarged under Vijayanagara and the Woḍeyars</td></tr><tr><td>Fair</td><td>A week-long <b>fair</b> in January–February, with a big trade in cattle and farm produce</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Another Mallikārjuna? Isn't that at Śrīśaila?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Same Lord, same Goddess! That's why this hill is called the new Śrīśaila.</p></div></div>
+</section>
+<section class="page" id="where"><h2 class="page-title">WHERE IT IS</h2><div class="sub">Where the river turns</div>
+<svg class="pg-fig" width="560" height="220" viewBox="0 0 560 220" role="img" aria-label="Schematic map: the Kaveri making a sharp turn at Mudukutore, with Somagiri hill and the temple on top, and Talakadu with its sand dunes a little downstream. Not to scale."><rect width="560" height="220" fill="#fff"/><rect width="560" height="220" fill="#eef6e4"/><path d="M0 60 C 160 50, 230 70, 260 120 C 290 170, 380 180, 560 150" fill="none" stroke="#4aa3df" stroke-width="20"/><path d="M130.0 170 Q165.0 116.0 186.0 80 Q200 74.6 214.0 80 Q235.0 116.0 270.0 170z" fill="#8a9a6a" stroke="#111" stroke-width="2"/><g transform="translate(200 86) scale(0.7)" stroke="#111" stroke-width="1.6"><rect x="-26" y="-16" width="52" height="16" fill="#f2e6c8"/><path d="M-14 -16 h28 l-4 -10 h-20z M-10 -26 h20 l-4 -10 h-12z" fill="#e2cfa8"/><circle cy="-40" r="3" fill="#e0a800"/><rect x="-5" y="-10" width="10" height="10" fill="#5a3a1a"/></g><text x="200" y="190" text-anchor="middle" font-family="Bangers" font-size="11" fill="#0b2a4a">SOMAGIRI · MUDUKUTORE</text><path d="M380 110 Q440 80 500 100 Q520 120 480 130 Q420 140 380 110z" fill="#e8d29a" stroke="#b89a5a"/><text x="450" y="74" text-anchor="middle" font-family="Bangers" font-size="11" fill="#7a5a2a">TALAKĀḌU</text><path d="M250 120 a16 16 0 1 1 10 20" stroke="#111" stroke-width="2" fill="none"/><path d="M262 140 l-2 -10 l8 4z" fill="#111"/><text x="310" y="214" text-anchor="middle" font-family="Bangers" font-size="10" fill="#1d6fb8">the river turns</text><text x="80" y="214" text-anchor="middle" font-family="Bangers" font-size="9" fill="#555">simplified, not to scale</text></svg><div class="panel reading">
+<p><b>The hill.</b> The temple crowns <b>Somagiri</b>, a small hill about 200 ft high on the bank of the Kāverī, near Talakāḍu. Steps and a road lead up to it.</p>
+<p><b>The name.</b> Here the river makes a turn and flows on: <i>muduku</i>, a turning aside, and <i>tore</i>, flowing on. <b>Mudukutore</b> is the river’s own signature.</p>
+<p><b>The village.</b> In government records the village is <b>T. Beṭṭahaḷḷi</b> (Tirumalakūḍu Beṭṭahaḷḷi); Mudukutore is the older, sacred name.</p>
+</div>
+</section>
+<section class="page" id="legends1"><h2 class="page-title">THE LEGENDS · I</h2><div class="sub">Arjuna’s jasmine</div>
+<svg class="pg-fig" width="560" height="180" viewBox="0 0 560 180" role="img" aria-label="Arjuna with his bow, seated before a linga on the hilltop, offering heaps of white jasmine flowers"><rect width="560" height="180" fill="#fff"/><rect width="560" height="180" fill="#fff4dc"/><path d="M20.0 180 Q150.0 132.0 228.0 100 Q280 95.19999999999999 332.0 100 Q410.0 132.0 540.0 180z" fill="#8a9a6a" stroke="#111" stroke-width="2"/><g transform="translate(320 124) scale(1.4)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-8 -30 h16 M-8 -26 h16 M-8 -22 h16" stroke="#fff" stroke-width="2"/></g><g transform="translate(290 124) scale(1)"><circle cx="0" cy="0" r="5" fill="#fff" stroke="#999"/><circle cx="8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="-8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle cx="-4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle r="2.4" fill="#ffd60a"/></g><g transform="translate(352 124) scale(1)"><circle cx="0" cy="0" r="5" fill="#fff" stroke="#999"/><circle cx="8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="-8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle cx="-4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle r="2.4" fill="#ffd60a"/></g><g transform="translate(320 80) scale(1)"><circle cx="0" cy="0" r="5" fill="#fff" stroke="#999"/><circle cx="8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="-8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle cx="-4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle r="2.4" fill="#ffd60a"/></g><g transform="translate(300 96) scale(1)"><circle cx="0" cy="0" r="5" fill="#fff" stroke="#999"/><circle cx="8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="-8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle cx="-4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle r="2.4" fill="#ffd60a"/></g><g transform="translate(340 96) scale(1)"><circle cx="0" cy="0" r="5" fill="#fff" stroke="#999"/><circle cx="8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="-8" cy="4" r="5" fill="#fff" stroke="#999"/><circle cx="4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle cx="-4" cy="-7" r="5" fill="#fff" stroke="#999"/><circle r="2.4" fill="#ffd60a"/></g><g transform="translate(200 140) scale(1)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#c98b5a"/><path d="M-18 20 q18 -50 36 0z" fill="#3b6fd0"/></g><path d="M176 60 q-20 40 0 80" stroke="#7a5a2a" stroke-width="4" fill="none"/><path d="M176 60 v80" stroke="#555"/><text x="200" y="172" text-anchor="middle" font-family="Bangers" font-size="11" fill="#0b2a4a">ARJUNA</text></svg><div class="steps">
+<div><b>An exile’s halt.</b> During the Pāṇḍavas’ exile in the Mahābhārata, tradition says <b>Arjuna</b> stayed for a time on this hill.</div>
+<div><b>Jasmine for Śiva.</b> He installed (some tellings say carved) a liṅga of Śiva on the summit and worshipped it with <b>mallikā</b>, jasmine flowers.</div>
+<div><b>The name.</b> <i>Mallikā</i> plus <i>Arjuna</i>: the Lord became <b>Mallikārjuna</b>, “Arjuna’s jasmine Lord”.</div>
+</div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is that also why Śrīśaila's Lord is Mallikārjuna?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Śrīśaila has its own stories of the name. Here, the jasmine and Arjuna make it local!</p></div></div>
+</section>
+<section class="page" id="legends2"><h2 class="page-title">THE LEGENDS · II</h2><div class="sub">The cow and the hidden liṅga</div>
+<svg class="pg-fig" width="560" height="180" viewBox="0 0 560 180" role="img" aria-label="A cow standing on a mound on the hilltop letting her milk flow onto it; the angry cowherd with a stick; then the linga revealed with a hoof mark on top"><rect width="560" height="180" fill="#fff"/><rect width="560" height="180" fill="#e8f5e2"/><path d="M120 150 q40 -30 80 0z" fill="#b89a5a" stroke="#111"/><g transform="translate(160 130) scale(1)" stroke="#111" stroke-width="2"><ellipse cy="-20" rx="26" ry="14" fill="#fff"/><circle cx="-26" cy="-28" r="9" fill="#fff"/><path d="M-30 -36 l-4 -6 M-22 -36 l4 -6"/><rect x="-18" y="-8" width="5" height="10" fill="#fff"/><rect x="12" y="-8" width="5" height="10" fill="#fff"/><circle cx="6" cy="-24" r="5" fill="#8a5a3a" stroke="none"/><path d="M-4 -8 q4 6 8 0" fill="#f4b8c8"/></g><circle cx="160" cy="132" r="2" fill="#fff"/><circle cx="164" cy="136" r="2" fill="#fff"/><circle cx="168" cy="140" r="2" fill="#fff"/><g transform="translate(260 160) scale(0.9)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#8a5a3a"/><path d="M-18 20 q18 -50 36 0z" fill="#ffd60a"/></g><path d="M278 100 l30 -30" stroke="#7a5a2a" stroke-width="3"/><path d="M330 90 h40" stroke="#111" stroke-width="2"/><path d="M370 84 l10 6 l-10 6z" fill="#111"/><g transform="translate(450 150) scale(1.8)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-5 -40 q-3 6 0 10 q3 -2 3 -5z M5 -40 q3 6 0 10 q-3 -2 -3 -5z" fill="#c9a26b"/></g><text x="450" y="172" text-anchor="middle" font-family="Bangers" font-size="10" fill="#0b2a4a">THE COW’S HOOF MARK</text></svg><div class="steps">
+<div><b>A dry cow.</b> A cowherd of Mudukutore found his cow gave no milk at home. He followed her up Somagiri, and saw her emptying her udder every day onto a mound on the hilltop.</div>
+<div><b>The whip.</b> Angry, he struck her. The cow leapt, and one hoof landed on the mound, breaking it open.</div>
+<div><b>The liṅga.</b> Beneath lay a <b>liṅga</b>, self-born. The mark of the cow’s hoof, devotees say, can still be seen on it.</div>
+</div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Cows keep finding liṅgas in these stories!</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Many temples tell it! A cow pours her milk on the hidden Lord and shows the people where He is.</p></div></div>
+</section>
+<section class="page" id="legends3"><h2 class="page-title">THE LEGENDS · III</h2><div class="sub">Kapila, and Bhramarāmbā the bee</div>
+<svg class="pg-fig" width="560" height="180" viewBox="0 0 560 180" role="img" aria-label="Sage Kapila travelling south with a linga; the Goddess as a great golden bee confronting a many-eyed demon"><rect width="560" height="180" fill="#fff"/><rect width="560" height="180" fill="#fdf3e8"/><g transform="translate(110 170) scale(1)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#c98b5a"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><g transform="translate(110 96) scale(0.6)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-8 -30 h16 M-8 -26 h16 M-8 -22 h16" stroke="#fff" stroke-width="2"/></g><text x="110" y="176" text-anchor="middle" font-family="Bangers" font-size="10" fill="#0b2a4a">KAPILA</text><g transform="translate(330 90)" stroke="#111" stroke-width="2"><ellipse rx="30" ry="18" fill="#e0a800"/><path d="M-20 -6 v12 M-6 -10 v20 M8 -10 v20" stroke="#111" stroke-width="4"/><ellipse cx="-6" cy="-28" rx="18" ry="10" fill="#dff" opacity=".8"/><ellipse cx="10" cy="-28" rx="18" ry="10" fill="#dff" opacity=".8"/><circle cx="34" cy="-4" r="9" fill="#2b2b2b"/></g><g transform="translate(480 160)" stroke="#111" stroke-width="2"><circle cy="-50" r="20" fill="#3a5a2a"/><circle cx="-8" cy="-56" r="3" fill="#ffd60a"/><circle cx="8" cy="-56" r="3" fill="#ffd60a"/><circle cx="0" cy="-46" r="3" fill="#ffd60a"/><circle cx="-12" cy="-44" r="3" fill="#ffd60a"/><circle cx="12" cy="-44" r="3" fill="#ffd60a"/><circle cx="0" cy="-60" r="3" fill="#ffd60a"/><path d="M-26 20 q26 -70 52 0z" fill="#2b2b2b"/></g><text x="480" y="176" text-anchor="middle" font-family="Bangers" font-size="10" fill="#2b2b2b">SAHASRĀKṢA</text></svg><div class="steps">
+<div><b>Kapila’s liṅga.</b> The temple priests tell another story: that the sage <b>Kapila</b>, travelling south in ancient times, installed the liṅga here.</div>
+<div><b>The Goddess.</b> Beside Mallikārjuna stands the shrine of his consort, <b>Bhramarāmbā</b>.</div>
+<div><b>The bee.</b> She is believed to have taken the form of a <b>bhramara</b>, a great bee, to destroy a demon named <b>Sahasrākṣa</b>, “the thousand-eyed”. So she is Bhramarāmbā, the Bee-Mother.</div>
+<div><b>Abhinava Śrīśaila.</b> Mallikārjuna and Bhramarāmbā are the same divine pair worshipped at <a href="/bhakti/temples-of-india/12-jyotirlingas/mallikarjuna/">Śrīśaila</a>, the jyotirliṅga. So this hill is called the new Śrīśaila.</div>
+</div>
+</section>
+<section class="page" id="temple"><h2 class="page-title">THE TEMPLE</h2><div class="sub">Up the steps of Somagiri</div>
+<svg class="pg-fig" width="560" height="200" viewBox="0 0 560 200" role="img" aria-label="Simplified plan: steps rising up the hill to a three-tiered gateway, then flag-pillar, Nandi and altar, the sanctum with its halls, and the Goddess shrine behind"><rect width="560" height="200" fill="#fff"/><rect width="560" height="200" fill="#f6f1e2"/><rect x="40" y="170" width="14" height="30" fill="#e2cfa8" stroke="#7a5a2a"/><rect x="54" y="158" width="14" height="42" fill="#e2cfa8" stroke="#7a5a2a"/><rect x="68" y="146" width="14" height="54" fill="#e2cfa8" stroke="#7a5a2a"/><rect x="82" y="134" width="14" height="66" fill="#e2cfa8" stroke="#7a5a2a"/><rect x="96" y="122" width="14" height="78" fill="#e2cfa8" stroke="#7a5a2a"/><rect x="110" y="110" width="14" height="90" fill="#e2cfa8" stroke="#7a5a2a"/><rect x="124" y="98" width="14" height="102" fill="#e2cfa8" stroke="#7a5a2a"/><rect x="138" y="86" width="14" height="114" fill="#e2cfa8" stroke="#7a5a2a"/><text x="90" y="196" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">STEPS</text><rect x="170" y="70" width="40" height="80" fill="#e2cfa8" stroke="#111" stroke-width="2"/><path d="M174 70 h32 l-4 -14 h-24z M178 56 h24 l-3 -12 h-18z M182 44 h16 l-3 -10 h-10z" fill="#d9c9a0" stroke="#111"/><text x="190" y="164" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">GOPURA</text><rect x="234" y="100" width="8" height="40" fill="#e0a800" stroke="#111"/><ellipse cx="270" cy="128" rx="14" ry="8" fill="#bbb" stroke="#111"/><text x="256" y="164" text-anchor="middle" font-family="Bangers" font-size="9" fill="#111">FLAG · NANDI</text><rect x="300" y="80" width="140" height="70" fill="#fff" stroke="#111"/><rect x="400" y="94" width="36" height="42" fill="#0b2a4a" stroke="#111"/><text x="350" y="120" text-anchor="middle" font-family="Bangers" font-size="8" fill="#111">MAHĀ · ARDHA MAṆḌAPA</text><text x="418" y="164" text-anchor="middle" font-family="Bangers" font-size="9" fill="#0b2a4a">SANCTUM</text><rect x="460" y="94" width="60" height="42" fill="#fdecea" stroke="#111"/><text x="490" y="120" text-anchor="middle" font-family="Bangers" font-size="8" fill="#c0392b">BHRAMARĀMBĀ</text><text x="500" y="24" text-anchor="end" font-family="Bangers" font-size="9" fill="#555">simplified, not to scale</text></svg><div class="g2">
+<div class="card bg-blue"><h4>🛕 The shrine</h4><p>East-facing, with a <b>three-tiered rājagopura</b>, then the flag-pillar, Nandi and altar facing the sanctum, which has an ardha- and mahā-maṇḍapa.</p></div>
+<div class="card bg-yellow"><h4>🪜 The climb</h4><p>An arch at the foot of the hill shows Śiva on Nandi between Gaṇeśa and Subrahmaṇya. Accounts count from about 40 to 100 steps to the top.</p></div>
+</div>
+<div class="panel reading"><p><b>Other shrines:</b> the festival images, Gaṇeśa, Subrahmaṇya and Bhairava; and, down a small path, the village Goddess <b>Beṭṭaḷi Māramma</b>.</p></div>
+</section>
+<section class="page" id="pancalinga"><h2 class="page-title">THE FIFTH LIṄGA</h2><div class="sub">Mudukutore and the Pañcaliṅga Darśana</div>
+<svg class="pg-fig" width="560" height="110" viewBox="0 0 560 110" role="img" aria-label="Five lingas in a row, the last one highlighted on its hill"><rect width="560" height="110" fill="#fff"/><rect width="560" height="110" fill="#eef3fa"/><g transform="translate(70 92) scale(1)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-8 -30 h16 M-8 -26 h16 M-8 -22 h16" stroke="#fff" stroke-width="2"/></g><text x="70" y="108" text-anchor="middle" font-family="Bangers" font-size="9" fill="#0b2a4a">VAIDYEŚVARA</text><g transform="translate(175 92) scale(1)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-8 -30 h16 M-8 -26 h16 M-8 -22 h16" stroke="#fff" stroke-width="2"/></g><text x="175" y="108" text-anchor="middle" font-family="Bangers" font-size="9" fill="#0b2a4a">PĀTĀLEŚVARA</text><g transform="translate(280 92) scale(1)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-8 -30 h16 M-8 -26 h16 M-8 -22 h16" stroke="#fff" stroke-width="2"/></g><text x="280" y="108" text-anchor="middle" font-family="Bangers" font-size="9" fill="#0b2a4a">MARAḶEŚVARA</text><g transform="translate(385 92) scale(1)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-8 -30 h16 M-8 -26 h16 M-8 -22 h16" stroke="#fff" stroke-width="2"/></g><text x="385" y="108" text-anchor="middle" font-family="Bangers" font-size="9" fill="#0b2a4a">ARKEŚVARA</text><g transform="translate(490 92) scale(1)" stroke="#111" stroke-width="2"><path d="M-30 0 h60 l-6 -10 h-48z" fill="#8a8a8a"/><path d="M20 -6 h18 l-3 5 h-15z" fill="#8a8a8a"/><path d="M-12 -10 v-26 a12 12 0 0 1 24 0 v26z" fill="#3a3a3a"/><path d="M-8 -30 h16 M-8 -26 h16 M-8 -22 h16" stroke="#fff" stroke-width="2"/></g><text x="490" y="108" text-anchor="middle" font-family="Bangers" font-size="9" fill="#0b2a4a">MALLIKĀRJUNA</text><rect x="440" y="20" width="110" height="88" fill="none" stroke="#e0a800" stroke-width="4" rx="8"/></svg><div class="panel reading">
+<p><b>One of five.</b> Mudukutore’s Mallikārjuna is the fifth of the <b>Pañcaliṅgas</b> of Talakāḍu, held to be the five faces of Śiva. One account names him as the <b>Vāmadeva</b> face.</p>
+<p><b>The Darśana.</b> On the rare day of the <b>Pañcaliṅga Darśana</b> in Kārtika, pilgrims visit all five in one auspicious window: the three in the Talakāḍu dunes, Arkeśvara at Vijayapura, and finally this hill.</p>
+<p>Full story: <a href="/bhakti/temples-of-india/around-mysuru/talakadu/">Talakāḍu ➜</a></p>
+</div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> So you can't finish the Pañcaliṅga without climbing this hill?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Exactly. Four in the sand, one on the hill. The last climb is the sweetest.</p></div></div>
+</section>
+<section class="page" id="history"><h2 class="page-title">HISTORY</h2><div class="sub">From the Gaṅgas to a rebuilding</div>
+<div class="tl"><div><b class="yr">Legend</b> Arjuna’s jasmine; Kapila’s liṅga; the cow on the hill.</div><div><b class="yr">Gaṅga period</b> The temple is said to have been built by the <b>Gaṅgas</b> of Talakāḍu, over 800 years ago.</div><div><b class="yr">Vijayanagara</b> The temple is developed further by the Vijayanagara kings.</div><div><b class="yr">Woḍeyars</b> <b>Mummaḍi Kṛṣṇarāja Woḍeyar</b> is credited with the main entrance and the mukha-maṇḍapa.</div><div><b class="yr">2020</b> Called dilapidated, the temple and its Goddess shrine are taken up for rebuilding: the Chief Minister lays the foundation stone in November, with ₹16 crore for a first phase.</div></div><div class="panel reading small"><p><b>Note.</b> The history comes mainly from tradition and from remarks at the 2020 ceremony; we found no dated inscription. Excavations nearby are reported to have found remains about 800 years old.</p></div>
+</section>
+<section class="page" id="fair"><h2 class="page-title">THE GREAT FAIR</h2><div class="sub">Bullocks, grain and the Lord</div>
+<svg class="pg-fig" width="560" height="170" viewBox="0 0 560 170" role="img" aria-label="A busy village fair at the foot of the hill: decorated bullocks with painted horns, stalls of grain and vegetables, and a temple chariot"><rect width="560" height="170" fill="#fff"/><rect width="560" height="170" fill="#ffe9c4"/><path d="M360.0 170 Q410.0 104.0 440.0 60 Q460 53.39999999999999 480.0 60 Q510.0 104.0 560.0 170z" fill="#8a9a6a" stroke="#111" stroke-width="2"/><g transform="translate(460 64) scale(0.6)" stroke="#111" stroke-width="1.6"><rect x="-26" y="-16" width="52" height="16" fill="#f2e6c8"/><path d="M-14 -16 h28 l-4 -10 h-20z M-10 -26 h20 l-4 -10 h-12z" fill="#e2cfa8"/><circle cy="-40" r="3" fill="#e0a800"/><rect x="-5" y="-10" width="10" height="10" fill="#5a3a1a"/></g><g transform="translate(70 150)" stroke="#111" stroke-width="2"><ellipse cy="-20" rx="26" ry="14" fill="#e8e0d0"/><circle cx="-26" cy="-28" r="9" fill="#e8e0d0"/><path d="M-32 -36 q-4 -10 2 -12 M-20 -36 q4 -10 -2 -12" stroke="#c0392b" stroke-width="4" fill="none"/></g><g transform="translate(150 150)" stroke="#111" stroke-width="2"><ellipse cy="-20" rx="26" ry="14" fill="#e8e0d0"/><circle cx="-26" cy="-28" r="9" fill="#e8e0d0"/><path d="M-32 -36 q-4 -10 2 -12 M-20 -36 q4 -10 -2 -12" stroke="#3b6fd0" stroke-width="4" fill="none"/></g><g transform="translate(230 150)" stroke="#111" stroke-width="2"><ellipse cy="-20" rx="26" ry="14" fill="#e8e0d0"/><circle cx="-26" cy="-28" r="9" fill="#e8e0d0"/><path d="M-32 -36 q-4 -10 2 -12 M-20 -36 q4 -10 -2 -12" stroke="#2e9a5a" stroke-width="4" fill="none"/></g><rect x="280" y="120" width="40" height="30" fill="#f2e6c8" stroke="#111"/><path d="M276 120 l24 -14 l24 14z" fill="#e05a8a" stroke="#111"/><rect x="330" y="120" width="40" height="30" fill="#f2e6c8" stroke="#111"/><path d="M326 120 l24 -14 l24 14z" fill="#ffd60a" stroke="#111"/></svg><div class="panel reading">
+<p><b>When.</b> Every year in <b>January–February</b>, a big fair is held at Mudukutore for about a week.</p>
+<p><b>What.</b> Farmers bring <b>cattle</b> and <b>farm produce</b> to trade, and thousands of visitors come for the Lord, the fair and the river.</p>
+<p><b>Old Karnataka.</b> Temple fairs like this have long been the great markets of the Kāverī villages: a festival for the god, and the year’s biggest bazaar for the farmer.</p>
+<p><b>Sources differ.</b> Most describe it as annual; one source calls the great Mudukutore jātre a 12-yearly event.</p>
+</div>
+</section>
+<section class="page" id="around"><h2 class="page-title">AROUND MUDUKUTORE</h2><div class="sub">The Kāverī temple trail</div>
+<table class="ct fact"><tr><td>Talakāḍu</td><td>The buried city of the other four Pañcaliṅgas, Vaidyeśvara and Kīrtinārāyaṇa</td></tr><tr><td>Somanāthapura</td><td>The Hoysaḷa Keśava temple of 1268</td></tr><tr><td>T. Narasipura</td><td>The saṅgama of the Kāverī and Kapilā, Tirumakūḍalu</td></tr></table><div class="panel reading"><p>More temples around Mysuru: <a href="/bhakti/temples-of-india/around-mysuru/talakadu/">Talakāḍu</a> · <a href="/bhakti/temples-of-india/around-mysuru/nanjangud/">Nañjanagūḍu</a> · <a href="/bhakti/temples-of-india/around-mysuru/">the full series</a>.</p></div>
+</section>
+<section class="page" id="glossary"><h2 class="page-title">GLOSSARY</h2><div class="sub">Words used in this guide</div>
+<table class="ct"><tr><td class="w">Mudukutore</td><td>“where the river turns and flows on”</td></tr><tr><td class="w">Somagiri</td><td>the hill of the temple</td></tr><tr><td class="w">Mallikā</td><td>jasmine</td></tr><tr><td class="w">Mallikārjuna</td><td>“Arjuna’s jasmine Lord”</td></tr><tr><td class="w">Bhramara</td><td>a large bee</td></tr><tr><td class="w">Bhramarāmbā</td><td>the Bee-Mother, Śiva’s consort here</td></tr><tr><td class="w">Sahasrākṣa</td><td>“thousand-eyed”, the demon</td></tr><tr><td class="w">Abhinava Śrīśaila</td><td>“the new Śrīśaila”</td></tr><tr><td class="w">Svayambhū</td><td>self-born</td></tr><tr><td class="w">Pañcaliṅga</td><td>the five liṅgas of Talakāḍu</td></tr><tr><td class="w">Rājagopura</td><td>main gateway tower</td></tr><tr><td class="w">Jātre</td><td>temple fair</td></tr></table>
+</section>
+<section class="page" id="end"><h2 class="page-title">MUDUKUTORE ON ONE PAGE</h2><div class="sub">Everything in five lines</div>
+<div class="steps">
+<div><b>The Lord.</b> Mallikārjuna, with Bhramarāmbā: Abhinava Śrīśaila on Somagiri hill.</div>
+<div><b>The place.</b> Where the Kāverī turns and flows on, near Talakāḍu.</div>
+<div><b>The legends.</b> Arjuna’s jasmine; the cow’s hoof on the hidden liṅga; Kapila; the bee and the thousand-eyed demon.</div>
+<div><b>The Pañcaliṅga.</b> The fifth and last liṅga of the Talakāḍu Darśana.</div>
+<div><b>The fair.</b> A week of cattle, grain and devotion every January–February.</div>
+</div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> One line to remember?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Climb the steps where the river turns, and meet Śrīśaila's Lord, wearing Arjuna's jasmine.</p></div></div><div class="key">The new Śrīśaila: <b>jasmine, a cow’s hoof, and a river’s turn</b>. 🙏</div><div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small">
+<p><b>Place and legend:</b> Wikipedia, “Mudukuthore”: T. Beṭṭahaḷḷi; Somagiri; the meaning of the name; Arjuna and the mallikā flowers; the January–February fair; one of the five Pañcaliṅgas. Hindu Temples of India (blog): the cow and the hoof-marked liṅga; the temple layout, 200-ft hill, about 100 steps, three-tiered gopura, shrines, Bhramarāmbikā. Deccan Herald, “Destinations along Cauvery”: 35–40 steps; Kapila; Bhramarāmbā, the bee and Sahasrākṣa; “a stream with a twist”.</p>
+<p><b>History:</b> The Hans India, November 2020: Gaṅga builders, over 800 years; Vijayanagara; Mummaḍi Kṛṣṇarāja Woḍeyar’s entrance and mukha-maṇḍapa; Abhinava Śrīśaila; the rebuilding (₹16 crore first phase); finds about 800 years old. The Hans India, December 2020: Vāmadeva face.</p>
+<p><b>Sources differ:</b> the number of steps; annual or 12-yearly great fair; who installed the liṅga (Arjuna, Kapila, or self-born). <b>Not verified:</b> no dated inscription found; the status of the 2020 rebuilding today. Maps are simplified. Zappy and Prof. Bolt are fictional.</p>
+</div>
+</section>
+</div>
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
