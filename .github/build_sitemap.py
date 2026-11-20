@@ -12,6 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://srinipresents.com'
+REDIRECT = re.compile(r'(?i)<meta[^>]+http-equiv=["\']?refresh')
 LINK = re.compile(r'href="(/[a-z0-9-]+/)"')
 
 
@@ -33,8 +34,14 @@ def main():
     paths.update('/' + f.parent.relative_to(ROOT).as_posix() + '/'
                  for f in (ROOT / 'bhakti').rglob('index.html'))
 
-    live = sorted(p for p in paths
-                  if p not in pending and (ROOT / p.strip('/') / 'index.html').exists())
+    def is_live(p):
+        f = ROOT / p.strip('/') / 'index.html'
+        if p in pending or not f.exists():
+            return False
+        head = f.read_text(encoding='utf-8', errors='ignore')[:3000]
+        return not REDIRECT.search(head)          # moved-page stubs stay out
+
+    live = sorted(p for p in paths if is_live(p))
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
