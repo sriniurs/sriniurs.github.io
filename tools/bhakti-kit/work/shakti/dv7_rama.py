@@ -9,7 +9,7 @@ art=('<svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label=
  '<rect width="380" height="268" fill="#0d3f73" rx="8"/>'+STAR+RAMA(150,190,1.3)+GENTLE(230,200,.8)+person(300,240,'#e0a800','#f2c79b',.9)+MONKEY(80,236,.8)+'</svg>')
 cov=cover_dv('DAŚĀVATĀRA 7 OF 10','RĀMA',18,'Prince of Ayodhyā, the ideal man',art)
 fw=foreword_dv('Śrī Rāma Jaya Rāma,',[
- 'The seventh avatāra is the most loved hero of India. <b>Rāma</b>, eldest son of King Daśaratha of Ayodhyā, gave up his throne to keep his father’s word, went into the forest for fourteen years with his wife <b>Sītā</b> and brother <b>Lakṣmaṇa</b>, lost Sītā to the demon king <b>Rāvaṇa</b>, and won her back with an army of monkeys and bears led by <b>Hanumān</b>.',
+ 'The seventh avatāra is the most loved hero of India. <b>Rāma</b>, eldest son of King Daśaratha of Ayodhyā, gave up his throne to keep his father’s word, went into the forest for fourteen years with his wife <b>Sītā</b> and brother <b>Lakṣmaṇa</b>, lost Sītā to the demon king <b>Rāvaṇa</b>, and won her back with an army of vānaras and bears led by <b>Hanumān</b>.',
  'The story is the <b>Rāmāyaṇa</b>, first told by the poet Vālmīki and retold in every Indian language and across Asia. Rāma is <i>maryādā puruṣottama</i>, the best of men who kept every bound of duty. Kiṣkindhā, where he met Hanumān, is the boulder country of Hampi in Karnataka.',
  'This guide tells the epic in its seven books, and follows Rāma through poems, places and festivals.'],
  'Can a whole epic fit in one guide?','The outline can. And every chapter is a door into a thousand retellings.',
@@ -44,9 +44,9 @@ pages.append(page('aranya','3. ARAṆYA KĀṆḌA','The forest and the golden d
  ('The abduction','Rāvaṇa, disguised as a holy man, carried Sītā off to Laṅkā'),
  ('Jaṭāyu','The old vulture fought Rāvaṇa and fell; he lived only to tell Rāma'),
  ('Śabarī','A tribal woman devotee fed Rāma berries she had tasted first, and he ate them gladly')])))
-pages.append(page('kishkindha','4. KIṢKINDHĀ KĀṆḌA','Hanumān and the monkey kingdom',fig(560,170,'A boulder-strewn landscape with a river, a monkey warrior bowing to Rama',
+pages.append(page('kishkindha','4. KIṢKINDHĀ KĀṆḌA','Hanumān and the monkey kingdom',fig(560,170,'A boulder-strewn landscape with a river, a vānara warrior bowing to Rama',
  '<rect width="560" height="170" fill="#f2e6c8"/>'+''.join(f'<ellipse cx="{x}" cy="{y}" rx="{r}" ry="{r*0.7}" fill="#c9a26b" stroke="#111" stroke-width="2"/>' for x,y,r in ((60,130,40),(130,110,30),(470,120,44),(520,90,26),(420,80,24)))+'<rect y="150" width="560" height="20" fill="#5ab0f0"/>'+RAMA(320,120,.7)+MONKEY(220,134,.8))+facts([
- ('Hanumān','At Ṛṣyamūka, Rāma met Hanumān, minister of the exiled monkey prince Sugrīva'),
+ ('Hanumān','At Ṛṣyamūka, Rāma met Hanumān, minister of the exiled vānara prince Sugrīva'),
  ('The pact','Rāma killed Sugrīva’s brother Vālī and made Sugrīva king; Sugrīva promised to find Sītā'),
  ('Hampi','Tradition places Kiṣkindhā around Hampi on the Tuṅgabhadrā; Añjanādri hill nearby is called Hanumān’s birthplace'),
  ('Places at Hampi','Ṛṣyamūka, Mālyavanta hill (where Rāma waited out the rains), Paṃpā Sarovar (Śabarī’s lake)')])
@@ -62,7 +62,7 @@ pages.append(page('yuddha','6. YUDDHA KĀṆḌA','The bridge and the war',fig(5
  '<rect width="560" height="170" fill="#cfe8f6"/>'+OCEAN(560,80,90,'#3b8fd0')+'<path d="M0 120 h80 V170 H0Z" fill="#5a9a4a"/><path d="M460 120 h100 V170 H460Z" fill="#5a9a4a"/>'+''.join(f'<ellipse cx="{90+i*24}" cy="118" rx="12" ry="6" fill="#c9a26b" stroke="#111"/>' for i in range(16))+''.join(f'<rect x="{480+i*14}" y="{80-i*6}" width="12" height="{40+i*6}" fill="#e0a800" stroke="#111"/>' for i in range(5)))+facts([
  ('Vibhīṣaṇa','Rāvaṇa’s good brother came over to Rāma'),
  ('Rāmeśvaram','Rāma worshipped Śiva on the shore before the crossing'),
- ('Rāma Setu','The monkeys built a bridge of floating stones across the sea'),
+ ('Rāma Setu','The vānaras built a bridge of floating stones across the sea'),
  ('The war','Kumbhakarṇa and Indrajit fell; Lakṣmaṇa was revived by the herb Hanumān fetched on a whole mountain'),
  ('Rāvaṇa','Rāma killed him with the brahmāstra'),
  ('Sītā','Her purity was proved by fire (agni parīkṣā)')])
@@ -100,10 +100,10 @@ pages.append(page('festivals','THROUGH THE YEAR','His days',facts([
  ('Dīpāvalī','In the north, his return to Ayodhyā'),
  ('Vivāha Pañcamī','Mārgaśīrṣa: Sītā and Rāma’s wedding')])))
 pages.append(page('meaning','WHAT RĀMA TEACHES','The wisdom of the bow',facts([
- ('Keep your word','A promise is worth a kingdom'),('Bear hardship calmly','Exile without bitterness'),('Friendship across lines','Monkeys, a boatman, a tribal woman, a demon’s brother'),('Hard questions','Even the ideal king faces choices we still debate')])
+ ('Keep your word','A promise is worth a kingdom'),('Bear hardship calmly','Exile without bitterness'),('Friendship across lines','Vānaras, a boatman, a tribal woman, a demon’s brother'),('Hard questions','Even the ideal king faces choices we still debate')])
  +talk("What should I take from Rāma?","Do your duty even when it hurts. And ask hard questions about it, as readers always have.")))
 pages.append(page('glossary','GLOSSARY','Words used in this guide',facts([
- ('Kāṇḍa','Book of the epic'),('Maryādā','Bound, propriety'),('Setu','Bridge'),('Vānara','Monkey people'),('Agni parīkṣā','Trial by fire'),('Rāma-rājya','Rule of Rāma'),('Ādi Kāvya','First poem'),('Kodaṇḍa','Rāma’s bow')])))
+ ('Kāṇḍa','Book of the epic'),('Maryādā','Bound, propriety'),('Setu','Bridge'),('Vānara','The forest people who served Rāma'),('Agni parīkṣā','Trial by fire'),('Rāma-rājya','Rule of Rāma'),('Ādi Kāvya','First poem'),('Kodaṇḍa','Rāma’s bow')])))
 pages.append(page('end','ON ONE PAGE','The whole guide in five lines','''<div class="steps">
 <div><b>Who.</b> Rāma, prince of Ayodhyā, seventh avatāra of Viṣṇu.</div>
 <div><b>Story.</b> Exile, Sītā’s abduction, Hanumān, the bridge, Rāvaṇa’s fall, Rāma-rājya.</div>

@@ -1,6 +1,6 @@
 exec(open('/home/claude/work/shakti/hn_common.py').read())
 I=1
-art=('<svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A baby monkey leaping towards a huge rising sun over mountains">'
+art=('<svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A baby vānara leaping towards a huge rising sun over mountains">'
  '<rect width="380" height="268" fill="#0d3f73" rx="8"/>'+STAR+SUN(270,90,40)+'<path d="M0 268 l70 -80 l50 50 l60 -70 l90 100z" fill="#2a5a3a" stroke="#111" stroke-width="2"/>'+HANUMAN(150,150,.9,mace=False)+'</svg>')
 pages=[
 P('glance','AT A GLANCE','The boyhood on one page',[
@@ -34,11 +34,11 @@ P('sun','THE LEAP AT THE SUN','The first great leap',[
  ('Speed','He flew as fast as his father the Wind; the Sun, knowing whose son he was, did not burn him'),
  ('Tulasīdāsa','The Cālīsā: “He swallowed the sun, thousands of leagues away, thinking it a sweet fruit”')],
  ("Didn't he get burned?","The Sun knew he was a baby. Vālmīki says the Sun spared him."),
- figure=fig(560,140,'A baby monkey flying towards a large sun',
+ figure=fig(560,140,'A baby vānara flying towards a large sun',
  '<rect width="560" height="140" fill="#cfe8f6"/>'+SUN(440,70,40)+HANUMAN(160,96,.6,mace=False)+'<path d="M60 110 q60 -30 100 -40" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="8 8"/>')),
 P('rahu','RĀHU COMPLAINS','An eclipse interrupted',[
  ('That day','Rāhu, the shadow planet who swallows the sun at eclipses, was coming to seize it'),
- ('The rival','He found a baby monkey already there'),
+ ('The rival','He found a baby vānara already there'),
  ('To Indra','Rāhu complained: “You gave me the Sun and Moon to eat; who is this other Rāhu?”'),
  ('Indra comes','Indra rode out on his white elephant Airāvata'),
  ('Another fruit','The baby saw Airāvata and thought it a bigger fruit')]),
@@ -97,7 +97,7 @@ P('meaning','WHAT THE BOYHOOD TEACHES','Power, pride and patience',[
  ('Learning','He studied with the Sun, at the Sun’s pace'),
  ('Waiting','He waited years in exile with Sugrīva, not knowing what he could do')]),
 P('glossary','GLOSSARY','Words used in this part',[
- ('Apsaras','Celestial dancer'),('Vānara','Monkey people'),('Vajra','Indra’s thunderbolt'),('Hanu','Jaw'),('Airāvata','Indra’s white elephant'),('Rāhu','Shadow planet of eclipses'),('Tapas','Austerity'),('Vyākaraṇa','Grammar')]),
+ ('Apsaras','Celestial dancer'),('Vānara','The vānaras, the forest people of the Rāmāyaṇa'),('Vajra','Indra’s thunderbolt'),('Hanu','Jaw'),('Airāvata','Indra’s white elephant'),('Rāhu','Shadow planet of eclipses'),('Tapas','Austerity'),('Vyākaraṇa','Grammar')]),
 endpage(I,[('Mother','Añjanā, cursed apsaras; father Kesarī; the Wind’s blessing'),('Leap','The baby leapt for the sun as a fruit'),('Name','Indra’s vajra struck his jaw: Hanumān'),('Boons','The gods made him nearly invincible'),('Curse','He forgot his power until reminded'),('Waiting','He served Sugrīva in exile on Ṛṣyamūka')],"One line to remember?","He had all the strength in the world and didn't know it. Yet."),
 srcpage('Vālmīki Rāmāyaṇa, Kiṣkindhā Kāṇḍa 66 (Jāmbavān tells Hanumān his birth) and Uttara Kāṇḍa 35–36 (Agastya tells Rāma of the sun leap, the vajra, the boons and the curse); Tulasīdāsa, Hanumān Cālīsā and Saṅkaṭmocan Aṣṭak.',
  'Añjanā’s former name and the reason for her curse vary by telling; the Śiva tapas and the pāyasa story are later; the birthplace is claimed by Añjanādri (Hampi), Añjaneri (Nashik), Tirumala and Gumla; the list of boons differs between manuscripts; the guru-fee story is later tradition.')]
@@ -105,7 +105,7 @@ EX={
 'glance':['This part follows Vālmīki, who tells Hanumān’s boyhood twice. On the shore before the leap to Laṅkā, the old bear-king Jāmbavān recounts it to wake Hanumān’s memory. After the war, the sage Agastya tells it again to Rāma in Ayodhyā, with more detail about the boons and the curse.',
  'The two tellings agree on the core: an apsaras mother, the Wind as father, the sun leap, Indra’s blow, the gods’ gifts. Everything else, from the birthplace to the reason for the curse, grows richer in later Purāṇas and folk Rāmāyaṇas.',
  'The boyhood explains the adult Hanumān. His speed comes from the Wind, his learning from the Sun, his near-invincibility from the gods, and his famous modesty partly from a curse.'],
-'anjana':['In many tellings Puñjikasthalā was an apsaras in Indra’s heaven whose beauty made her careless; she mocked or disturbed a sage at his meditation, and was cursed to take the form of a she-monkey. The release clause, a son of great power, is typical of Indian curses: the punishment carries its own way out.',
+'anjana':['In many tellings Puñjikasthalā was an apsaras in Indra’s heaven whose beauty made her careless; she mocked or disturbed a sage at his meditation, and was cursed to take the form of a vānarī. The release clause, a son of great power, is typical of Indian curses: the punishment carries its own way out.',
  'Añjanā is worshipped in her own right at Añjaneri near Nashik, at Gumla and at Añjanādri near Hampi, where the hilltop shrine has a small image of her beside her son. In folk songs she is a fierce, devoted mother who tells her son to serve Rāma faithfully.',
  'Kesarī, her husband, is a brave vānara chief in his own right. Some tellings make him the slayer of a demon elephant called Śambasādana, and he fights in Rāma’s army in the war.'],
 'vayu':['Vāyu, the Wind, is one of the oldest Vedic gods, and also prāṇa, the life-breath in every creature. To be his son is to share in the force that keeps all beings alive; that is why Mādhvas call Hanumān Mukhyaprāṇa, “the chief breath”.',

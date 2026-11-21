@@ -32,7 +32,7 @@ P('carry','ON HIS SHOULDERS','To Ṛṣyamūka',[
  ('The carry','He lifted both princes on his shoulders and leapt up to Ṛṣyamūka'),
  ('Image','This is the scene of many paintings and temple panels: Hanumān with Rāma and Lakṣmaṇa on his shoulders'),
  ('A first service','The first thing he did for Rāma was carry him')],
- figure=fig(560,140,'A monkey carrying two princes on his shoulders up a hill',
+ figure=fig(560,140,'A vānara carrying two princes on his shoulders up a hill',
  '<rect width="560" height="140" fill="#f2e6c8"/>'+''.join(f'<ellipse cx="{x}" cy="{y}" rx="{r}" ry="{r*0.7}" fill="#c9a26b" stroke="#111" stroke-width="2"/>' for x,y,r in ((420,110,50),(500,90,40),(360,124,30)))+HANUMAN(250,100,.7,mace=False)+RAMA(222,30,.35)+GENTLE(280,36,.25))),
 P('alliance','FRIENDS BEFORE FIRE','Rāma and Sugrīva',[
  ('The vow','Hanumān lit a fire and Rāma and Sugrīva walked around it, swearing friendship'),
@@ -159,7 +159,7 @@ EX={
 }
 hbuild(I,'HN3_Kishkindha','Hanumān in the Kiṣkindhā Kāṇḍa: the disguised meeting with Rāma, Rāma’s praise of his perfect speech, the fire-vow with Sugrīva, Sītā’s jewels, the death of Vālī, the rains on Prasravaṇa, Rāma’s ring, Svayamprabhā’s cave, Sampāti’s news and Jāmbavān’s awakening.',
  'HANUMĀN · PART 3 OF 6','KIṢKINDHĀ',18,'The meeting with Rāma',art,
- ['Two princes in bark clothes walk up to a hill by a lake. On the hill a frightened monkey prince sends his minister down to see who they are. The minister is Hanumān, and when he speaks, Rāma knows he has found a friend.',
+ ['Two princes in bark clothes walk up to a hill by a lake. On the hill a frightened vānara prince sends his minister down to see who they are. The minister is Hanumān, and when he speaks, Rāma knows he has found a friend.',
   'This part follows Hanumān through the fourth book of the Rāmāyaṇa: the meeting, the alliance, the death of Vālī, the long monsoon, the search, the ring, and the moment on the southern shore when an old bear reminds him who he is.',
   'In Karnataka this book is close to home: tradition sets it among the boulders of Hampi.'],
  'Is Kiṣkindhā really Hampi?','By a tradition centuries old, yes. The places have names from the story.',pages,EX)

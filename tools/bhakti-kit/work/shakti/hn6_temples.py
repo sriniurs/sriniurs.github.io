@@ -39,7 +39,7 @@ T('jakhu','Jakhu, Shimla','On the highest hill',[
  ('Where','Jakhu hill above Shimla, about 2,450 m'),
  ('Legend','Hanumān rested here on his way to the herb mountain; his footprint is shown'),
  ('Statue','A 108-foot orange Hanumān statue, unveiled in 2010, visible across Shimla'),
- ('Monkeys','The hill is famous for its bold monkeys')]),
+ ('Wildlife','The hill is famous for its bold monkeys')]),
 T('salasar','Sālāsar Bālājī, Rajasthan','Hanumān with a beard',[
  ('Where','Sālāsar, Churu district'),
  ('Origin','By tradition a farmer at Asota ploughed up the image in 1754; it was brought here'),
@@ -62,10 +62,10 @@ T('anjanadri','Añjanādri, Hampi','The hill across the river',[
  ('Climb','About 575 whitewashed steps to the hilltop temple'),
  ('Image','Hanumān carved on a rock, with a small shrine to Añjanā'),
  ('View','A famous sunset over the boulders and paddy fields')],
- ("575 steps!","And monkeys watching every one of them.")),
+ ("575 steps!","And pilgrims chanting on every one of them.")),
 T('yantroddharaka','Yantroddhāraka, Hampi','Hanumān in a yantra',[
  ('Where','On a rock by the river near the Vijaya Viṭhṭhala temple'),
- ('Image','Hanumān seated in meditation inside a six-pointed yantra, ringed by monkeys'),
+ ('Image','Hanumān seated in meditation inside a six-pointed yantra, ringed by vānaras'),
  ('Vyāsatīrtha','Installed, by tradition, by Vyāsatīrtha, rājaguru of Kṛṣṇadevarāya'),
  ('Story','Hanumān appeared to him only after he drew the yantra to hold him')]),
 T('bengaluru','Bengaluru','Gāli Āñjaneya and Ragigudda',[
@@ -130,7 +130,7 @@ EX={
  'Its birthplace claim rests on the name and the local temple traditions.'],
 'anjanadri':['Añjanādri is a short drive from Hampi via Ānegundi. The hilltop temple is simple: a carved image of Hanumān on the rock, with Rāma and Sītā shrines beside it. Pilgrims recite the Cālīsā on the climb.',
  'Karnataka has been developing the hill as a major pilgrimage site, and Hanumān Jayantī brings large crowds. The view over the Tuṅgabhadrā, the boulders and the paddy fields at sunset is famous.'],
-'yantroddharaka':['The image is unusual: Hanumān sits cross-legged in meditation, inside a hexagram, surrounded by a ring of small monkeys holding each other’s tails. Inscriptions on the rock carry the bīja syllables of the yantra.',
+'yantroddharaka':['The image is unusual: Hanumān sits cross-legged in meditation, inside a hexagram, surrounded by a ring of small vānaras holding each other’s tails. Inscriptions on the rock carry the bīja syllables of the yantra.',
  'The story is that Vyāsatīrtha drew Hanumān’s image on a rock each day, and each day it vanished, until he bound it within the yantra.'],
 'bengaluru':['Gāli Āñjaneya is one of Bengaluru’s oldest and busiest Hanumān temples, on the Mysore Road at the river crossing. It is linked by tradition to Vyāsatīrtha’s 732 images.',
  'Ragigudda (“millet hill”) temple sits on a granite outcrop in Jayanagar; its name comes from a local story about a heap of millet that turned into a rock. Its Hanumān Jayantī celebrations are among the largest in the city.'],

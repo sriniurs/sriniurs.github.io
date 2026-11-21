@@ -54,7 +54,7 @@ pages.append(page('deity','THE LORD OF THE HILL','Śrīnivāsa, Karigirivāsa, B
 <div class="card bg-yellow"><h4>🌸 Bairāgi</h4><p>He is called <b>Bairāgi Veṅkaṭaramaṇa</b> because when he is decorated with flowers, he looks like a <i>bairāgi</i>, a wandering ascetic.</p></div>
 </div>
 <div class="panel reading"><p><b>The Goddess.</b> <b>Padmāvatī</b>, consort of Śrīnivāsa, has her own shrine on the western side. A Garuḍa statue and pillar face the main shrine, and behind the temple are the Lord’s footprints, the <b>Viṣṇu-pāda</b>.</p></div>'''))
-leg1=fig(560,200,'A monkey hero flying through the sky carrying a blue hill; below, sages at a river confluence raise their hands asking him to set it down',
+leg1=fig(560,200,'Hanumān flying through the sky carrying a blue hill; below, sages at a river confluence raise their hands asking him to set it down',
  '<rect width="560" height="200" fill="#ffe9c4"/><path d="M0 170 q140 -16 280 0 t280 0 V200 H0z" fill="#4aa3df"/>'
  +'<g transform="translate(300 70)">'+HILL(0,30,150,70,'#3b5a8a')+'</g>'
  +'<g transform="translate(300 110)" stroke="#111" stroke-width="2"><circle cy="-6" r="13" fill="#c98b5a"/><path d="M-14 10 q14 30 28 0z" fill="#c0392b"/><path d="M-14 -2 l-30 -40 M14 -2 l30 -40" stroke="#c98b5a" stroke-width="7"/><path d="M14 20 q30 10 20 -20" fill="none" stroke="#c98b5a" stroke-width="4"/></g>'
@@ -181,7 +181,7 @@ b=f'''<div class="book">
     <p>This guide tells the stories of the hill, its sages and its Lord.</p>
     <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#1d6fb8">Govinda Govinda,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
   </div>
-  {talk("A hill that flew in from Tirupati?","That's the legend! Monkeys, sages, an elephant and an angry rishi: this little hill has more stories than steps.")}
+  {talk("A hill that flew in from Tirupati?","That's the legend! Hanumān, sages, an elephant and an angry rishi: this little hill has more stories than steps.")}
 </section>
 
 <section class="page" id="contents">

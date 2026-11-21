@@ -16,7 +16,7 @@ P('leap','THE LEAP','From Mahendra into the sky',[
  ('Like an arrow','He flew “like an arrow shot by Rāma”, the Wind cooling him'),
  ('Size','He grew vast; his shadow lay on the sea like a ship'),
  ('The ring','The Cālīsā: he carried the Lord’s ring in his mouth')],
- figure=fig(560,130,'A giant monkey flying over the sea, his shadow on the water',
+ figure=fig(560,130,'A giant vānara flying over the sea, his shadow on the water',
  '<rect width="560" height="130" fill="#cfe8f6"/>'+OCEAN(560,50,80,'#3b8fd0')+'<ellipse cx="300" cy="104" rx="70" ry="8" fill="#1f5f90"/>'+HANUMAN(300,50,.6))),
 P('mainaka','MAINĀKA','The mountain that offered rest',[
  ('Rising','The golden mountain Maināka rose from the sea, sent by the Ocean'),
@@ -41,8 +41,8 @@ P('lankini','LAṄKINĪ','The city’s guardian',[
  ('Small','He made himself the size of a cat to slip in'),
  ('The guard','Laṅkā’s guardian spirit, Laṅkinī, stopped him'),
  ('One blow','He struck her with his left fist and she fell'),
- ('Prophecy','She said Brahmā had told her: when a monkey defeats you, Laṅkā’s end is near')],
- ("A cat-sized monkey beat the city?","With his left fist. And held back.")),
+ ('Prophecy','She said Brahmā had told her: when a vānara defeats you, Laṅkā’s end is near')],
+ ("A cat-sized vānara beat the city?","With his left fist. And held back.")),
 P('search','THE NIGHT SEARCH','Through Rāvaṇa’s palaces',[
  ('Laṅkā','Vālmīki describes golden palaces, gardens, the Puṣpaka chariot, feasting and music'),
  ('Rāvaṇa asleep','He saw Rāvaṇa among his queens'),
@@ -61,7 +61,7 @@ P('asoka','THE AŚOKA GROVE','Sītā found',[
  ('Sītā','A woman in a single soiled garment, thin, weeping, surrounded by fierce rākṣasīs'),
  ('Recognition','He matched her to Rāma’s descriptions and the jewels; he knew her'),
  ('Joy','He wept and thanked Rāma')],
- figure=fig(560,140,'A woman seated under a tree, a small monkey hidden in its branches',
+ figure=fig(560,140,'A woman seated under a tree, a small vānara hidden in its branches',
  '<rect width="560" height="140" fill="#e6f2df"/>'+TREE(280,136,1.4)+SITA(250,136,.7)+HANUMAN(300,30,.25,mace=False))),
 P('ravana','RĀVAṆA AND SĪTĀ','A blade of grass between them',[
  ('Rāvaṇa comes','At dawn Rāvaṇa came with his queens, begging and threatening'),
@@ -76,10 +76,10 @@ P('trijata','TRIJAṬĀ’S DREAM','A rākṣasī on Sītā’s side',[
  ('Respite','The rākṣasīs fell back')]),
 P('song','THE SONG FROM THE TREE','How to speak to Sītā',[
  ('Danger','Sītā, in despair, was thinking of ending her life'),
- ('A dilemma','How could a monkey speak to her without frightening her or alerting the guards?'),
+ ('A dilemma','How could a vānara speak to her without frightening her or alerting the guards?'),
  ('Language','He chose the speech of ordinary people, not a priest’s Sanskrit, so she would not take him for Rāvaṇa in disguise'),
  ('Rāma’s story','He softly recited Rāma’s story from the tree'),
- ('Sītā looks up','She saw a small monkey and thought she was dreaming')],
+ ('Sītā looks up','She saw a small vānara and thought she was dreaming')],
  ("He sang to her first?","He told her Rāma's story. Only then did he show himself.")),
 P('mudrika','THE RING','Proof from Rāma',[
  ('Doubt','Sītā feared he was a trick of Rāvaṇa’s'),

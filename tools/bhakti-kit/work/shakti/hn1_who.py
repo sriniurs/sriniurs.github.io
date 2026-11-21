@@ -5,9 +5,9 @@ art=('<svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label=
 cov=cover_hn('HANUMĀN · PART 1 OF 6','WHO IS HANUMĀN?',16,'Son of the Wind, servant of Rāma',art)
 fw=foreword_dv('Jai Hanumān,',[
  'Walk into almost any village in India and you will find him at the edge of it: a small orange figure with a mace, smeared with sindūr, guarding the road. <b>Hanumān</b> is everywhere. He is the strongest being in the Rāmāyaṇa and also its humblest. He leapt an ocean, carried a mountain and burned a city, and asked for nothing except to serve <b>Rāma</b>.',
- 'In Vālmīki’s Rāmāyaṇa he is a minister of the monkey king Sugrīva and the son of the Wind. Later tradition makes him a portion of Śiva, a model brahmacārī, a scholar of grammar, the healer of Lakṣmaṇa and one of the seven who never die. In Karnataka he is also <b>Prāṇadevaru</b>, the life-breath itself.',
+ 'In Vālmīki’s Rāmāyaṇa he is a minister of the vānara king Sugrīva and the son of the Wind. Later tradition makes him a portion of Śiva, a model brahmacārī, a scholar of grammar, the healer of Lakṣmaṇa and one of the seven who never die. In Karnataka he is also <b>Prāṇadevaru</b>, the life-breath itself.',
  'This first part is the reference page for Hanumān himself: who he is, what he is called, how he is shown and worshipped. The next four tell his story from birth to the end of the war, and the last visits his temples.'],
- 'Is he a monkey or a god?','In Vālmīki he is a vānara, a forest people of great powers. Devotion made him a god who still listens.',
+ 'Is he a vānara or a god?','In Vālmīki he is a vānara, a forest people of great powers. Devotion made him a god who still listens.',
  series_note_hn(0))
 pages=[]
 pages.append(page('glance','AT A GLANCE','The essential facts on one page',facts([
@@ -15,7 +15,7 @@ pages.append(page('glance','AT A GLANCE','The essential facts on one page',facts
  ('Parents','Mother <b>Añjanā</b>; father the vānara chief <b>Kesarī</b>; divine father <b>Vāyu</b>, the Wind'),
  ('Other traditions','A portion (aṃśa) of <b>Śiva</b> in the Purāṇas; the first avatāra of <b>Vāyu</b> for the Mādhvas'),
  ('Great deeds','Leap to Laṅkā, finding Sītā, burning Laṅkā, carrying the mountain of herbs'),
- ('Form','Monkey-faced warrior with a mace (gadā), often orange with sindūr'),
+ ('Form','Vānara-faced warrior with a mace (gadā), often orange with sindūr'),
  ('Virtues','Strength, wisdom, speech, self-control, humility, total devotion'),
  ('Days','Tuesday and Saturday'),
  ('Hymns','Hanumān Cālīsā, Saṅkaṭmocan Aṣṭak, Bajrang Bāṇ, Āñjaneya Daṇḍakam')])
@@ -72,16 +72,16 @@ pages.append(page('chiranjivi','THE ONE WHO STAYS','Cirañjīvī: living on',fac
  ('Where Rāma is told','A common belief: wherever the Rāmāyaṇa is recited, Hanumān is present, so a seat is left empty for him'),
  ('Gandhamādana · Kimpuruṣa','The Purāṇas place him on the Gandhamādana mountain or in Kimpuruṣa-varṣa, chanting Rāma’s name')])
  +'<div class="verse"><p><i>aśvatthāmā balir vyāso hanūmāṃś ca vibhīṣaṇaḥ<br>kṛpaḥ paraśurāmaś ca saptaite cirajīvinaḥ</i></p><p class="small">Aśvatthāmā, Bali, Vyāsa, Hanumān and Vibhīṣaṇa, Kṛpa and Paraśurāma: these seven live on.</p></div>'))
-pages.append(page('mahabharata','IN THE MAHĀBHĀRATA','The old monkey on the path',fig(560,140,'A large warrior unable to lift the tail of an old monkey lying across a forest path',
+pages.append(page('mahabharata','IN THE MAHĀBHĀRATA','The old vānara on the path',fig(560,140,'A large warrior unable to lift the tail of an old vānara lying across a forest path',
  '<rect width="560" height="140" fill="#e6f2df"/>'+''.join(f'<path d="M{20+i*60} 120 l14 -60 l14 60z" fill="#2a7a3a" stroke="#111"/>' for i in range(9))+'<path d="M150 112 q120 -10 230 4" fill="none" stroke="#e08a2a" stroke-width="8"/>'+HANUMAN(110,90,.5,mace=False)+person(400,128,'#5a3a8a','#c98b5a',.9))+facts([
- ('Bhīma meets him','In the Vana Parva, Bhīma, looking for the Saugandhika flower, finds an old monkey lying across the path. Told to move his tail aside, Bhīma cannot lift it'),
- ('Brothers','The monkey is Hanumān, his elder brother: both are sons of Vāyu. He shows Bhīma a glimpse of the form that crossed the sea'),
+ ('Bhīma meets him','In the Vana Parva, Bhīma, looking for the Saugandhika flower, finds an old vānara lying across the path. Told to move his tail aside, Bhīma cannot lift it'),
+ ('Brothers','The vānara is Hanumān, his elder brother: both are sons of Vāyu. He shows Bhīma a glimpse of the form that crossed the sea'),
  ('The promise','He promises to sit on Arjuna’s flag and roar with Bhīma in battle'),
- ('Kapidhvaja','So Arjuna’s chariot, driven by Kṛṣṇa, flies the monkey banner')])
+ ('Kapidhvaja','So Arjuna’s chariot, driven by Kṛṣṇa, flies the Hanumān banner')])
  +talk("Bhīma couldn't lift a tail?","Pride met humility. That was the lesson.")))
 pages.append(page('beyond','OTHER HANUMĀNS','Jain, Southeast Asian and folk tellings',facts([
- ('Jain','In Vimalasūri’s Prakrit Paumacariya, Hanumān is a vidyādhara prince, not a monkey; he marries and finally becomes a Jain ascetic'),
- ('Thailand','Hanuman of the Ramakien is a dashing white monkey hero with wives and children'),
+ ('Jain','In Vimalasūri’s Prakrit Paumacariya, Hanumān is a vidyādhara prince of a royal clan whose banner bore a vānara; he marries and finally becomes a Jain ascetic'),
+ ('Thailand','Hanuman of the Ramakien is a dashing white vānara hero with wives and children'),
  ('Indonesia · Cambodia','A favourite of shadow-puppet (wayang) and masked dance; in Cambodia’s Reamker he loves the mermaid Suvannamaccha'),
  ('Makaradhvaja','Later tellings give him a son born of a drop of his sweat swallowed by a great fish'),
  ('Ahirāvaṇa','The underworld rescue story, loved in Bengal, Odisha and the north, is from later Rāmāyaṇas, not Vālmīki')])))
@@ -102,7 +102,7 @@ pages.append(page('jayanti','HANUMĀN JAYANTĪ','One birthday, many dates',facts
  +talk("Why so many birthdays?","No one agrees on the day. So everyone celebrates on theirs.")))
 pages.append(page('karnataka','HANUMĀN IN KARNATAKA','Añjanādri, Prāṇadevaru and 732 idols',facts([
  ('Añjanādri','The hill near Hampi across the Tuṅgabhadrā is held by tradition to be his birthplace; 575 steps lead to the white temple on top. Other places also claim the birth'),
- ('Kiṣkindhā','The boulder country of Hampi is the monkey kingdom of the Rāmāyaṇa by tradition'),
+ ('Kiṣkindhā','The boulder country of Hampi is the vānara kingdom of the Rāmāyaṇa by tradition'),
  ('Yantroddhāraka','At Hampi, Vyāsatīrtha’s Hanumān seated in a hexagonal yantra'),
  ('732 Prāṇadevarus','Tradition credits the 16th-century saint Vyāsatīrtha with installing 732 Hanumān images across the Vijayanagara lands'),
  ('Village guardian','Āñjaneya stands at the edge of many villages and forts')])
@@ -129,7 +129,7 @@ pages.append(page('meaning','WHAT HANUMĀN TEACHES','Strength in service',facts(
  ('Devotion is a path','Bhakti, not birth or form, made him great')])
  +talk("What should I take from Hanumān?","Be strong, and use it for something bigger than yourself.")))
 pages.append(page('glossary','GLOSSARY','Words used in this guide',facts([
- ('Vānara','The monkey people of the Rāmāyaṇa'),('Aṃśa','Portion, part of a god'),('Gadā','Mace'),('Sindūr','Vermilion'),('Cirañjīvī','One who lives on'),('Dhvaja','Banner, flag'),('Brahmacārī','Celibate student'),('Prāṇa','Life-breath'),('Ākhāḍā','Wrestling ground')])))
+ ('Vānara','The vānara people of the Rāmāyaṇa'),('Aṃśa','Portion, part of a god'),('Gadā','Mace'),('Sindūr','Vermilion'),('Cirañjīvī','One who lives on'),('Dhvaja','Banner, flag'),('Brahmacārī','Celibate student'),('Prāṇa','Life-breath'),('Ākhāḍā','Wrestling ground')])))
 pages.append(page('end','ON ONE PAGE','Hanumān in six lines','''<div class="steps">
 <div><b>Who.</b> Son of Añjanā, Kesarī and the Wind; minister of Sugrīva; Rāma’s messenger.</div>
 <div><b>Traditions.</b> A portion of Śiva; for Mādhvas the first avatāra of Vāyu.</div>

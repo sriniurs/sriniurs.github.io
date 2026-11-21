@@ -155,12 +155,12 @@ X(19,'THE SOUND THAT TORE HEARTS',
  'Sañjaya says plainly to the blind king: your sons were shaken. Many readers see conscience at work: the side that knows it is in the wrong hears the other side’s call louder. Some editions read <i>tumulo’bhyanunādayan</i>; the meaning is the same.',
  'A clear conscience is a kind of strength. Doubt about one’s own cause weakens from within, however large the army.',
  'A clear conscience <b>sounds louder</b>.'),
-X(20,'THE MONKEY BANNER',
+X(20,'THE HANUMĀN BANNER',
  FS('Arjuna lifting his bow on the chariot under a banner, looking at the Kaurava ranks',ARMY(140,130,4,KUR,18,.55)+RATHA(70,146,.8)),
- 'Then, seeing the sons of Dhṛtarāṣṭra drawn up, as the weapons were about to fly, Arjuna, whose banner bears the monkey, lifted his bow and, O king, spoke these words to Hṛṣīkeśa.',
- [('atha','<b>then</b>'),('vyavasthitān','<b>drawn up in position</b>'),('kapi-dhvajaḥ','<b>monkey-bannered</b>: Arjuna'),('pravṛtte śastra-sampāte','<b>as weapons were about to clash</b>'),('dhanuḥ udyamya','<b>raising his bow</b>')],
+ 'Then, seeing the sons of Dhṛtarāṣṭra drawn up, as the weapons were about to fly, Arjuna, whose banner bears Hanumān, lifted his bow and, O king, spoke these words to Hṛṣīkeśa.',
+ [('atha','<b>then</b>'),('vyavasthitān','<b>drawn up in position</b>'),('kapi-dhvajaḥ','<b>Hanumān-bannered</b>: Arjuna'),('pravṛtte śastra-sampāte','<b>as weapons were about to clash</b>'),('dhanuḥ udyamya','<b>raising his bow</b>')],
  'The armies stand ready; the first arrows are about to fly. Arjuna raises his great bow Gāṇḍīva. His banner bears Hanumān, who, in the epic, promised Bhīma to sit on Arjuna’s flag in the war.',
- 'The monkey on the banner links the Mahābhārata to the Rāmāyaṇa: Hanumān, Rāma’s great devotee, now guards the chariot where Kṛṣṇa sits. At this moment Arjuna is fully a warrior, bow raised. In ten verses the bow will slip from his hand.',
+ 'Hanumān on the banner links the Mahābhārata to the Rāmāyaṇa: Hanumān, Rāma’s great devotee, now guards the chariot where Kṛṣṇa sits. At this moment Arjuna is fully a warrior, bow raised. In ten verses the bow will slip from his hand.',
  'Our certainties can change in a moment. Arjuna lifts the bow with confidence, then sees something that turns him upside down.',
  'Bow raised, <b>ready to begin</b>.'),
 X(21,'“TO THE MIDDLE”',
@@ -381,7 +381,7 @@ X(47,'HE SANK DOWN ON THE SEAT',
  'The teaching begins <b>where Arjuna breaks</b>.',
  ("Despair is a yoga?","When the old certainties fail, a person is finally ready to learn. Arjuna's breakdown is the doorway to the Gītā.")),
 ]
-cover=('<svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A white chariot with four white horses and a monkey banner stands between two great armies; Krishna holds the reins while Arjuna slumps with his bow lowered">'
+cover=('<svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="A white chariot with four white horses and a Hanumān banner stands between two great armies; Krishna holds the reins while Arjuna slumps with his bow lowered">'
  '<rect width="380" height="268" fill="#0b2a4a" rx="8"/>'+GLOW(190,120,110,'#ffd60a',.18)+'<path d="M0 220 h380 V268 H0z" fill="#c9a26b" stroke="#111"/>'
  +ARMY(6,226,5,KUR,22,.75)+ARMY(268,226,5,PAN,22,.75)+RATHA(170,234,1.35,armood='sad',arbow=False)+'</svg>')
 st0=textpage('setting','HOW DID IT COME TO THIS?','The story before the Gītā',

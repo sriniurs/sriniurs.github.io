@@ -22,7 +22,7 @@ P('setu','THE BRIDGE','Across the sea',[
  ('Materials','Rocks, trees and mountains carried by the vānaras; the bridge was built in five days'),
  ('Rāma’s name','A later tradition: stones with Rāma’s name written on them floated'),
  ('The squirrel','A loved folk story: a squirrel helped, and Rāma stroked its back, leaving three stripes')],
- figure=fig(560,120,'A bridge of stones across the sea, monkeys carrying rocks',
+ figure=fig(560,120,'A bridge of stones across the sea, vānaras carrying rocks',
  '<rect width="560" height="120" fill="#cfe8f6"/>'+OCEAN(560,50,70,'#3b8fd0')+''.join(f'<ellipse cx="{30+i*28}" cy="70" rx="14" ry="7" fill="#c9a26b" stroke="#111"/>' for i in range(19))+MONKEY(200,52,.4)+MONKEY(360,52,.4))),
 P('battle','HANUMĀN IN BATTLE','The demons he killed',[
  ('Dhūmrākṣa','“Smoke-eyed”, killed with a mountain peak'),
@@ -48,7 +48,7 @@ P('herbs2','THE SECOND MOUNTAIN','Saving Lakṣmaṇa',[
  ('Suṣeṇa','The vānara physician sent Hanumān to the herb mountain Mahodaya'),
  ('Again','Again he brought the mountain'),
  ('Lakṣmaṇa rises','Suṣeṇa crushed the herb and held it to his nose; Lakṣmaṇa got up')],
- figure=fig(560,130,'A monkey hero flying with a mountain on his palm, a wounded prince below',
+ figure=fig(560,130,'A vānara hero flying with a mountain on his palm, a wounded prince below',
  '<rect width="560" height="130" fill="#1b2f5a"/>'+STAR+HANUMAN(300,70,.55,mace=False)+MOUNTAIN(350,30,.9)+GENTLE(120,120,.4))),
 P('later','THE MOUNTAIN IN LATER TELLINGS','Kālanemi, Bharata and Droṇagiri',[
  ('Kālanemi','Tulasīdāsa: Rāvaṇa sent the demon Kālanemi, disguised as a sage, to delay Hanumān; he saw through it'),
@@ -91,7 +91,7 @@ P('necklace','THE PEARL NECKLACE','Sītā’s gift',[
  ("Not to Sugrīva or Vibhīṣaṇa?","To the one who found her. Rāma agreed.")),
 P('heart','RĀMA IN HIS HEART','A loved later story',[
  ('The pearls','Later tellings: Hanumān bit into each pearl, looking for Rāma inside'),
- ('Mocked','Courtiers laughed at the monkey breaking a priceless necklace'),
+ ('Mocked','Courtiers laughed at the vānara breaking a priceless necklace'),
  ('The chest','He tore open his chest, and Rāma and Sītā were seen in his heart'),
  ('Image','The form with the open chest is one of the most popular Hanumān images'),
  ('Source','Folk and later devotional tradition, not Vālmīki')]),

@@ -145,7 +145,7 @@ X(40,'A HUNDRED RECITATIONS',HS('A devotee reciting with a rosary, a broken chai
  'Whoever recites this a hundred times is freed from bondage and gains great happiness.',
  [('jo sata bāra','<b>whoever a hundred times</b>'),('pāṭha kara koī','<b>recites</b>'),('chūṭahi bandi','<b>is freed from bonds</b>'),('mahā sukha hoī','<b>great joy comes</b>')],
  'A hundred recitations is a traditional vow. Some do it in a single day, some as 108 for the rosary’s count, and some read “sata” as “sat”, truly, meaning “whoever recites it truly”.',
- 'Bandi means bondage: literally prison, and some traditions say a prisoner chanting it was freed. Spiritually it is the bondage of karma and saṃsāra. A popular story tells that Tulasīdāsa, jailed by a ruler, composed or recited the Cālīsā and that monkeys besieged the jail until he was freed; this is legend, but it shows how the verse was understood. Both readings of “sata”, a hundred or truly, point to commitment.',
+ 'Bandi means bondage: literally prison, and some traditions say a prisoner chanting it was freed. Spiritually it is the bondage of karma and saṃsāra. A popular story tells that Tulasīdāsa, jailed by a ruler, composed or recited the Cālīsā and that an army of vānaras besieged the jail until he was freed; this is legend, but it shows how the verse was understood. Both readings of “sata”, a hundred or truly, point to commitment.',
  'Repeat what matters until it changes you. Habit is a kind of prayer.',
  'Recite it, and <b>bonds</b> loosen.'),
 X(41,'ŚIVA IS WITNESS',HS('Shiva with crescent moon nodding over a devotee reading','SĀKHĪ GAURĪSĀ','moon'),
