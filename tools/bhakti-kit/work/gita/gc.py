@@ -122,6 +122,11 @@ def textpage(id_,title,sub,body,tk=None,key=None):
 def grid(items): return '<div class="grid2">'+''.join(f'<div><h4>{h}</h4>{t}</div>' for h,t in items)+'</div>'
 
 # ---------- figures ----------
+def GOD(x,y,s=1,body='#ffd60a',skin='#c98b5a',crown=True):
+    c='<path d="M-10 -44 h20 l-3 -10 l-4 4 l-3 -7 l-3 7 l-4 -4z" fill="#ffd60a"/>' if crown else ''
+    return (f'<g transform="translate({x} {y}) scale({s})" stroke="#111" stroke-width="2.2">{c}'
+     f'<circle cy="-30" r="12" fill="{skin}"/><path d="M-18 22 q18 -54 36 0z" fill="{body}"/></g>')
+
 def KR(x,y,s=1,flute=False,arms4=False):
     a=('<path d="M-26 0 l-26 -22 M26 0 l26 -22" stroke="#3b6fd0" stroke-width="7"/><circle cx="-54" cy="-26" r="9" fill="#ffd60a" stroke="#111"/><path d="M48 -34 q8 -6 14 2 q-6 8 -14 4z" fill="#fff"/>') if arms4 else ''
     fl='<path d="M-40 -14 l70 -12" stroke="#7a4a1a" stroke-width="5"/>' if flute else '<path d="M-22 -4 l-14 10 M22 -4 l14 10" stroke="#3b6fd0" stroke-width="7"/>'
@@ -286,7 +291,9 @@ def S(label,left='K',right=None,cap=None,bg=B,extra=''):
     fig={'K':KR(58,118,.95),'A':AR(58,120,.95),'As':AR(58,120,.95,'sad',False),'Af':AR(58,120,.95,'folded',False),'S':SANJ(58,132,1.4),'D':KINGB(58,132,1.4),'KA':KR(40,118,.8)+AR(86,124,.7,'folded',False),'Y':YOGI(58,132,1.2),'P':person(58,132,'#ff8c1a','#c98b5a',1.2),'':''}[left]
     r=ICON(right) if right else ''
     c=BUBBLE(110,22,cap,max(80,len(cap)*7.2),10) if cap else ''
-    return sc(label,fig+r+c+extra,bg)
+    pre=''
+    if bg.startswith('<'): pre,bg=bg,B
+    return sc(label,pre+extra+fig+r+c,bg)
 def ICON(k,x=158,y=100,s=1):
     g=lambda inner: f'<g transform="translate({x} {y}) scale({s})">{inner}</g>'
     D={'fire':FIRE(0,30,1.1),'sun':SUN(0,-10,26),'moon':MOON(0,-10,18),'lamp':LAMP(0,20,1.8),'yogi':YOGI(0,40,1.1),'tort':TORT(0,10,1.1),'tree':TREE(0,56,1),'invtree':TREE_INV(0,10,.9),

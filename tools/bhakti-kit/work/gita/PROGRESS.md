@@ -14,4 +14,4 @@ verse "prakṛtiṃ puruṣaṃ caiva" (not counted in the 700).
 Build: `cd work/gita && bash ../gchk.sh cNN.py Gita_ChapterNN.html` (library gc.py,
 builder build2, verse helper X(...)). Draft view links are claude.ai artifacts.
 
-Done (v2 format): ch 1
+Done (v2 format): ch 1, 2. Next: ch 3 (write cNN.py; long chapters split cNNa.py/cNNb.py).
