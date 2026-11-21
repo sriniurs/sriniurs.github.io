@@ -324,6 +324,14 @@
    "group": "circuits"
   },
   {
+   "path": "/bhakti/temples-of-india/pancha-kedar/",
+   "door": "temples",
+   "deities": [
+    "shiva"
+   ],
+   "tile": "<li><a href=\"/bhakti/temples-of-india/pancha-kedar/\"><div class=\"tile-art\" style=\"background:#dceefa\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 86 L32 40 L46 60 L62 30 L94 86z\" fill=\"#9fb3c8\"/><path d=\"M54 44 L62 30 L70 44 l-4 4 l-4 -3 l-4 3z\" fill=\"#fff\"/><rect x=\"10\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M10 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"27\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M27 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"44\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M44 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"61\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M61 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/><rect x=\"78\" y=\"74\" width=\"12\" height=\"10\" fill=\"#9a9a90\"/><path d=\"M78 74 l6 -8 l6 8z\" fill=\"#8a8a80\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Series · overview + 5 shrines</strong><h2>Pañca Kedār</h2><p>Śiva’s five Himalayan shrines: Kedārnāth, Tuṅganāth, Rudranāth, Madhyamaheśvar and Kalpeśvar, and the bull legend.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
    "path": "/bhakti/temples-of-india/pancha-bhuta-sthalas/",
    "door": "temples",
    "deities": [
