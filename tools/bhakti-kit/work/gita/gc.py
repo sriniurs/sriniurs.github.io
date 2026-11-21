@@ -329,8 +329,13 @@ def vpageA(ch,v):
   <div class="key">{v['key']}</div>{note}
 </section>
 '''
+DEEP={}
+def _dd(v,k,i):
+    d=DEEP.get(int(v['n']))
+    return v[k]+(' '+d[i] if d and len(d)>i and d[i] else '')
 def vpageB(ch,v):
     vid=f'{ch}.{v["n"]}'
+    v=dict(v,ctx=_dd(v,'ctx',0),read=_dd(v,'read',1),life=_dd(v,'life',2))
     tk=f"\n  {talk(*v['talk'])}" if v.get('talk') else ''
     return f'''<section class="page" id="d{v['n']}">
   <h2 class="page-title">ŚLOKA {vid} · DEEP DIVE</h2>
@@ -344,10 +349,15 @@ def vpageB(ch,v):
 DDCSS='''  .dd{border:3px solid var(--ink);background:#fff;padding:9px 12px;margin:10px 0;box-shadow:4px 4px 0 var(--ink)}
   .dd h4{margin:0 0 4px;font-family:Bangers,Impact,sans-serif;letter-spacing:1px;font-size:19px;color:var(--blue)}
   .dd p{margin:0;font-size:15px;line-height:1.5}
+  @media print{.dd p{font-size:15.5px;line-height:1.55}.dd{margin:12px 0;padding:10px 13px}}
   .toc.vt{grid-template-columns:repeat(4,1fr);gap:3px}.toc.vt li{padding:2px 6px;font-size:11.5px}
   @media(max-width:720px){.toc.vt{grid-template-columns:repeat(2,1fr)}}
 </style>'''
 def build2(P):
+    import os
+    import glob
+    DEEP.clear()
+    for _f in sorted(glob.glob(f'/home/claude/work/gita/d{P["ch"]:02d}*.py')): exec(open(_f).read(),{'DEEP':DEEP})
     ch=P['ch']; head=make_head(P['title'],P['desc']).replace('</style>',DDCSS,1)
     vs=P['V']; assert [v['n'] for v in vs]==[str(k) for k in range(1,P['nv']+1)], 'verse list incomplete'
     fulls=''
