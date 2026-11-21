@@ -11,6 +11,7 @@ in bhakti/catalog.json; this script then places its card on the right hubs.
 import json
 import re
 import sys
+from html import escape, unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -70,11 +71,6 @@ def load():
     return entries
 
 
-def pages_under(path):
-    base = ROOT / path.strip('/')
-    return sum(1 for f in base.rglob('index.html') if not is_redirect(f))
-
-
 def is_redirect(f):
     return bool(re.search(r'(?i)<meta[^>]+http-equiv=["\']?refresh', f.read_text(encoding='utf-8', errors='ignore')[:3000]))
 
@@ -121,13 +117,55 @@ DEITY_ART = {
 }
 
 
-def build(entries):
-    count = {e['path']: pages_under(e['path']) for e in entries}
+def catalogue_pages(entries, strict):
+    pages = {e['path']: [] for e in entries}
+    prefixes = sorted(pages, key=len, reverse=True)
+    missing = []
+    for file in (ROOT / 'bhakti').rglob('index.html'):
+        url = '/' + file.parent.relative_to(ROOT).as_posix() + '/'
+        if url in HUBS or is_redirect(file):
+            continue
+        prefix = next((p for p in prefixes if url.startswith(p)), None)
+        if prefix is None:
+            missing.append(url)
+            continue
+        match = re.search(r'<title>(.*?)</title>', file.read_text(encoding='utf-8'), re.I | re.S)
+        title = ' '.join(unescape(match[1]).split()) if match else ''
+        title = re.sub(r'\s*[·|—]\s*srini\.presents$', '', title, flags=re.I).strip()
+        if not title:
+            sys.exit(f'Bhakti article has no title: {url}')
+        pages[prefix].append((url, title))
+    if missing and strict:
+        sys.exit('Uncatalogued Bhakti pages:\n  ' + '\n  '.join(sorted(missing)))
+    for articles in pages.values():
+        articles.sort(key=lambda article: [
+            int(part) if part.isdigit() else part
+            for part in re.split(r'(\d+)', article[0])
+        ])
+    return pages
+
+
+def article_index(entries, pages):
+    sections = []
+    for door, (title, _) in DOORS.items():
+        articles = [article for e in entries if e['door'] == door for article in pages[e['path']]]
+        if not articles:
+            continue
+        links = '\n'.join(f'      <li><a href="{escape(url)}">{escape(name)}</a></li>'
+                          for url, name in articles)
+        sections.append(f'  <details><summary>{title} · {plural(len(articles), "article")}</summary>\n'
+                        f'    <ul>\n{links}\n    </ul>\n  </details>')
+    return ('<section class="article-index" aria-labelledby="all-articles">\n'
+            '  <h2 class="shelf" id="all-articles">All Bhakti articles</h2>\n'
+            + '\n'.join(sections) + '\n</section>\n')
+
+
+def build(entries, pages):
     by = lambda door, deity=None, group=None: [e for e in entries if e['door'] == door
                                                 and (deity is None or deity in e['deities'])
                                                 and (group is None or e.get('group') == group)]
     tiles = lambda es: [e['tile'] for e in es]
-    n_art = lambda es: sum(count[e['path']] for e in es)
+    n_art = lambda es: sum(len(pages[e['path']]) for e in es)
 
     # Bhakti home: four doors, then the deity views
     doors = []
@@ -143,7 +181,8 @@ def build(entries):
         deities.append(card(f'/bhakti/{d}/', bg, art, ' · '.join(parts), name,
                             f'Everything for {name} in one place, from all four doors.'))
     write_hub('/bhakti/', shelf('Four doors', 'Pick what you are looking for.', doors)
-              + shelf('Or start with a deity', 'Each deity page gathers all four doors.', deities))
+              + shelf('Or start with a deity', 'Each deity page gathers all four doors.', deities)
+              + article_index(entries, pages))
 
     # door pages
     for k in ('gods', 'hymns', 'scriptures'):
@@ -215,6 +254,7 @@ def trails(entries, strict):
 
 if __name__ == '__main__':
     entries = load()
-    build(entries)
-    trails(entries, '--strict' in sys.argv)
+    strict = '--strict' in sys.argv
+    build(entries, catalogue_pages(entries, strict))
+    trails(entries, strict)
     print(f'bhakti hubs: {len(entries)} catalog entries')
