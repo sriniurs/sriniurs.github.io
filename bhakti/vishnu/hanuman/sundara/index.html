@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Leap to Laṅkā · Hanumān 4 · srini.presents</title>
+<meta name="description" content="The Sundara Kāṇḍa, Hanumān’s own book: the leap from Mahendra, Maināka, Surasā, Siṃhikā and Laṅkinī, the night search, the Aśoka grove, the song from the tree, Rāma’s ring, Sītā’s refusal and crest-jewel, the burning of Laṅkā, “Seen Sītā” and Rāma’s embrace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#3b82c4,#0d3f73 55%,#06203b)}
+  .sloka-head{background:#0d3f73}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0d3f73}
+  .sub{color:#1d6fb8}
+  .num{background:#0d3f73}
+  .steps div:before{background:#1d6fb8}
+  .full .vn,.full .end{color:#1d6fb8}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d6fb8}
+  .contlink{color:#1d6fb8}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#3b82c4,#0d3f73 55%,#06203b)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #1d6fb8;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#1d6fb8;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#0d3f73;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/vishnu/hanuman/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">HANUMĀN · PART 4 OF 6</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(15px,4.5vw,45px)">THE LEAP TO LAṄKĀ</h1>
+  <div class="series">HANUMĀN · A REFERENCE GUIDE</div>
+  <div class="tag">The Sundara Kāṇḍa</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Hanuman leaping over the sea towards a golden city"><rect width="380" height="268" fill="#0d3f73" rx="8"/><circle cx="40" cy="20" r="1.6" fill="#fff"/><circle cx="120" cy="40" r="1.6" fill="#fff"/><circle cx="500" cy="30" r="1.6" fill="#fff"/><circle cx="460" cy="60" r="1.6" fill="#fff"/><circle cx="300" cy="14" r="1.6" fill="#fff"/><circle cx="220" cy="30" r="1.6" fill="#fff"/><circle cx="380" cy="22" r="1.6" fill="#fff"/><circle cx="80" cy="60" r="1.6" fill="#fff"/><rect y="198" width="380" height="70" fill="#1f6fb0"/><path d="M0 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M40 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M80 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M120 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M160 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M200 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M240 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M280 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M320 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M360 208 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><rect x="300" y="150" width="12" height="50" fill="#e0a800" stroke="#111"/><rect x="314" y="142" width="12" height="58" fill="#e0a800" stroke="#111"/><rect x="328" y="134" width="12" height="66" fill="#e0a800" stroke="#111"/><rect x="342" y="126" width="12" height="74" fill="#e0a800" stroke="#111"/><rect x="356" y="118" width="12" height="82" fill="#e0a800" stroke="#111"/><g transform="translate(150 110) scale(1.0)" stroke="#111" stroke-width="2"><path d="M24 40 q40 -6 34 -50 q-2 -14 8 -20" fill="none" stroke="#e08a2a" stroke-width="7"/><path d="M24 40 q40 -6 34 -50 q-2 -14 8 -20" fill="none" stroke="#111" stroke-width="1"/><path d="M-26 52 q-4 -56 26 -64 q30 8 26 64z" fill="#e0701a"/><path d="M-14 52 v-20 h28 v20" fill="#c0392b"/><circle cy="-28" r="17" fill="#e08a2a"/><ellipse cy="-20" rx="11" ry="9" fill="#f2c79b"/><path d="M-6 -14 q6 4 12 0" fill="none"/><circle cx="-5" cy="-30" r="2.4" fill="#111"/><circle cx="5" cy="-30" r="2.4" fill="#111"/><path d="M-12 -46 h24 l-3 -12 l-5 5 l-4 -9 l-4 9 l-5 -5z" fill="#e0a800"/><path d="M0 -42 v6" stroke="#c0392b" stroke-width="3"/><path d="M34 34 l14 -54" stroke="#7a4a1a" stroke-width="5"/><circle cx="50" cy="-28" r="12" fill="#e0a800"/><path d="M40 -28 h20 M50 -38 v20" stroke="#b07a00"/></g></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-blue halftone" style="font-size:17px;line-height:1.6"><p>There is one book of the Rāmāyaṇa that belongs to Hanumān. It begins with him standing on a mountain by the sea and ends with him in Rāma’s arms. In between he crosses an ocean, beats a city’s guardian, searches a sleeping palace, despairs, finds Sītā, burns Laṅkā and comes home.</p><p>It is called the Sundara Kāṇḍa, the beautiful book, and many families read it on its own when they need hope.</p><p>This part follows it scene by scene.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#0d3f73">Jai Hanumān,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why read it on its own?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Because it is a whole story: from despair to hope in 68 chapters.</p></div></div>
+  <div class="panel reading small"><p>Part 4 of 6 in <a href="/bhakti/vishnu/hanuman/">Hanumān</a>, the illustrated guide to Rāma’s great devotee. Previous: <a href="/bhakti/vishnu/hanuman/kishkindha/">Kiṣkindhā</a>. Next: <a href="/bhakti/vishnu/hanuman/yuddha/">The War and After</a>.</p></div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc">
+    <li><span class="num">1</span><a href="#glance">At A Glance</a></li><li><span class="num">2</span><a href="#leap">The Leap</a></li><li><span class="num">3</span><a href="#mainaka">Maināka</a></li><li><span class="num">4</span><a href="#surasa">Surasā</a></li><li><span class="num">5</span><a href="#simhika">Siṃhikā</a></li><li><span class="num">6</span><a href="#lankini">Laṅkinī</a></li><li><span class="num">7</span><a href="#search">The Night Search</a></li><li><span class="num">8</span><a href="#despair">Hanumān’S Despair</a></li><li><span class="num">9</span><a href="#asoka">The Aśoka Grove</a></li><li><span class="num">10</span><a href="#ravana">Rāvaṇa And Sītā</a></li><li><span class="num">11</span><a href="#trijata">Trijaṭā’S Dream</a></li><li><span class="num">12</span><a href="#song">The Song From The Tree</a></li><li><span class="num">13</span><a href="#mudrika">The Ring</a></li><li><span class="num">14</span><a href="#offer">“Climb On My Back”</a></li><li><span class="num">15</span><a href="#chudamani">The Crest-Jewel</a></li><li><span class="num">16</span><a href="#grove">The Grove Destroyed</a></li><li><span class="num">17</span><a href="#court">In Rāvaṇa’S Court</a></li><li><span class="num">18</span><a href="#fire">Laṅkā Burns</a></li><li><span class="num">19</span><a href="#return">“Seen Sītā!”</a></li><li><span class="num">20</span><a href="#embrace">Rāma’S Embrace</a></li><li><span class="num">21</span><a href="#parayana">Reading The Sundara Kāṇḍa</a></li><li><span class="num">22</span><a href="#end">On One Page</a></li><li><span class="num">23</span><a href="#sources">Sources &Amp; Notes</a></li>
+  </ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">The Sundara Kāṇḍa on one page</div>
+<table class="ct fact"><tr><td>Book</td><td>Sundara Kāṇḍa, fifth book of Vālmīki, 68 sargas</td></tr><tr><td>Hero</td><td>Hanumān: this is his book</td></tr><tr><td>The leap</td><td>From Mount Mahendra across the sea to Laṅkā</td></tr><tr><td>Tests</td><td>Maināka, Surasā, Siṃhikā, Laṅkinī</td></tr><tr><td>Found</td><td>Sītā in the Aśoka grove, under a śiṃśapā tree</td></tr><tr><td>Tokens</td><td>Rāma’s ring to Sītā; her crest-jewel (cūḍāmaṇi) to Rāma</td></tr><tr><td>Laṅkā burns</td><td>His tail set alight, he sets the city ablaze</td></tr><tr><td>Return</td><td>“Seen Sītā!”: the news that saves Rāma</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why is it called Sundara, beautiful?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Many reasons are given. The simplest: it's the book where hope comes back.</p></div></div>
+<div class="panel reading"><p>The Sundara Kāṇḍa is the only book of the Rāmāyaṇa in which Rāma does not appear in person until its last pages. Its hero is Hanumān from the first verse to the last, and many readers treat it as a complete work on its own.</p><p>Commentators give many reasons for the name. Some say Hanumān was called Sundara by his mother; some that Sītā, Rāma and Laṅkā are all beautiful here; most simply that the turn from despair to hope is the most beautiful thing in the epic.</p><p>The book has a clear shape: a journey out with trials, a search in darkness, a meeting, a test of the enemy, a fire and a joyful return. It is one of the earliest great adventure stories in world literature.</p></div></section>
+<section class="page" id="leap"><h2 class="page-title">THE LEAP</h2><div class="sub">From Mahendra into the sky</div>
+<svg class="pg-fig" width="560" height="130" viewBox="0 0 560 130" role="img" aria-label="A giant monkey flying over the sea, his shadow on the water"><rect width="560" height="130" fill="#fff"/><rect width="560" height="130" fill="#cfe8f6"/><rect y="80" width="560" height="50" fill="#3b8fd0"/><path d="M0 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M40 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M80 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M120 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M160 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M200 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M240 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M280 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M320 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M360 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M400 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M440 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M480 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M520 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><path d="M560 90 q20 -10 40 0" stroke="#9fd0ea" stroke-width="2" fill="none"/><ellipse cx="300" cy="104" rx="70" ry="8" fill="#1f5f90"/><g transform="translate(300 50) scale(0.6)" stroke="#111" stroke-width="2"><path d="M24 40 q40 -6 34 -50 q-2 -14 8 -20" fill="none" stroke="#e08a2a" stroke-width="7"/><path d="M24 40 q40 -6 34 -50 q-2 -14 8 -20" fill="none" stroke="#111" stroke-width="1"/><path d="M-26 52 q-4 -56 26 -64 q30 8 26 64z" fill="#e0701a"/><path d="M-14 52 v-20 h28 v20" fill="#c0392b"/><circle cy="-28" r="17" fill="#e08a2a"/><ellipse cy="-20" rx="11" ry="9" fill="#f2c79b"/><path d="M-6 -14 q6 4 12 0" fill="none"/><circle cx="-5" cy="-30" r="2.4" fill="#111"/><circle cx="5" cy="-30" r="2.4" fill="#111"/><path d="M-12 -46 h24 l-3 -12 l-5 5 l-4 -9 l-4 9 l-5 -5z" fill="#e0a800"/><path d="M0 -42 v6" stroke="#c0392b" stroke-width="3"/><path d="M34 34 l14 -54" stroke="#7a4a1a" stroke-width="5"/><circle cx="50" cy="-28" r="12" fill="#e0a800"/><path d="M40 -28 h20 M50 -38 v20" stroke="#b07a00"/></g></svg><table class="ct fact"><tr><td>Mahendra</td><td>He pressed the mountain so hard that springs gushed and creatures fled</td></tr><tr><td>Like an arrow</td><td>He flew “like an arrow shot by Rāma”, the Wind cooling him</td></tr><tr><td>Size</td><td>He grew vast; his shadow lay on the sea like a ship</td></tr><tr><td>The ring</td><td>The Cālīsā: he carried the Lord’s ring in his mouth</td></tr></table>
+<div class="panel reading"><p>Vālmīki spends dozens of verses on the take-off alone: the mountain cracking, snakes spitting fire, sages and vidyādharas rising into the sky to watch, trees uprooted and flying after Hanumān for a distance before falling into the sea.</p><p>The simile of Rāma’s arrow is pointed: Hanumān goes as Rāma’s own weapon, sure to hit its mark. He calls on his father the Wind before he leaps.</p><p>The Cālīsā line about the ring in his mouth is not in Vālmīki, where he simply carries it, but it became the popular picture.</p></div></section>
+<section class="page" id="mainaka"><h2 class="page-title">MAINĀKA</h2><div class="sub">The mountain that offered rest</div>
+<table class="ct fact"><tr><td>Rising</td><td>The golden mountain Maināka rose from the sea, sent by the Ocean</td></tr><tr><td>Gratitude</td><td>The Ocean owed the Ikṣvāku kings, Rāma’s ancestors; and Maināka owed the Wind, who had hidden him from Indra</td></tr><tr><td>The offer</td><td>“Rest on me”</td></tr><tr><td>Hanumān</td><td>He touched it with his hand in thanks and flew on: “I have promised not to stop”</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why didn't he rest?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> He had work to do. He thanked the mountain and kept going.</p></div></div>
+<div class="panel reading"><p>Maināka’s story: once mountains had wings and flew about, crushing cities, until Indra cut off their wings with his vajra. The Wind carried Maināka away and hid him in the sea, saving his wings. So Maināka owes Hanumān’s father a debt.</p><p>The Ocean owes Rāma’s line too: the sea was dug by the sons of King Sagara, Rāma’s ancestor, which is why it is called sāgara. By hosting Hanumān it would repay both.</p><p>Hanumān’s courteous refusal sets the pattern for the journey: no rest until the work is done.</p></div></section>
+<section class="page" id="surasa"><h2 class="page-title">SURASĀ</h2><div class="sub">The mother of serpents</div>
+<table class="ct fact"><tr><td>The test</td><td>The gods sent Surasā, mother of nāgas, to test him</td></tr><tr><td>“Enter my mouth”</td><td>She said no one could pass without entering her mouth</td></tr><tr><td>Growing</td><td>He grew; she widened her mouth; they grew against each other</td></tr><tr><td>The trick</td><td>Suddenly he shrank to the size of a thumb, darted in and out, and kept the rule</td></tr><tr><td>Blessing</td><td>Surasā, pleased, blessed his mission</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> He didn't fight her?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> He used his head. Kept her rule and passed.</p></div></div>
+<div class="panel reading"><p>Surasā is not an enemy but an examiner sent by the gods and sages, who want to see if Hanumān has wisdom as well as strength. Her rule is absolute; he cannot simply refuse it.</p><p>The duel of growing sizes is comic and tense at once: Hanumān grows ten yojanas, she opens her mouth twenty; he grows thirty, she forty; and so on. Then the sudden shrink.</p><p>Devotees read the scene as the right use of power: neither fighting nor fleeing, but finding the way that keeps the rule and still gets through.</p></div></section>
+<section class="page" id="simhika"><h2 class="page-title">SIṂHIKĀ</h2><div class="sub">The shadow-catcher</div>
+<table class="ct fact"><tr><td>The demoness</td><td>Siṃhikā lived in the sea and caught creatures by seizing their shadows</td></tr><tr><td>Caught</td><td>She grabbed Hanumān’s shadow and pulled him down</td></tr><tr><td>Inside</td><td>He shrank, entered her mouth and tore her vitals, then burst out</td></tr><tr><td>Difference</td><td>Surasā was a test to be passed; Siṃhikā an enemy to be killed</td></tr></table>
+<div class="panel reading"><p>Siṃhikā is the mother of Rāhu in some genealogies, and her method is shadow-seizing: she grips the reflection or shadow on the water and drags the creature down. Hanumān feels his speed suddenly checked and understands.</p><p>Unlike Surasā she is not a test but a killer, and Hanumān treats her so. Sugrīva had warned the search party about her.</p><p>The three trials are often read in sequence: Maināka tests resolve against comfort, Surasā tests wisdom, Siṃhikā tests courage.</p></div></section>
+<section class="page" id="lankini"><h2 class="page-title">LAṄKINĪ</h2><div class="sub">The city’s guardian</div>
+<table class="ct fact"><tr><td>Landing</td><td>He landed on Trikūṭa mountain, saw golden Laṅkā, and waited for dark</td></tr><tr><td>Small</td><td>He made himself the size of a cat to slip in</td></tr><tr><td>The guard</td><td>Laṅkā’s guardian spirit, Laṅkinī, stopped him</td></tr><tr><td>One blow</td><td>He struck her with his left fist and she fell</td></tr><tr><td>Prophecy</td><td>She said Brahmā had told her: when a monkey defeats you, Laṅkā’s end is near</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> A cat-sized monkey beat the city?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> With his left fist. And held back.</p></div></div>
+<div class="panel reading"><p>Laṅkā’s guardian is the city itself personified, a fierce woman who keeps watch at the gate. Hanumān strikes her with his left hand, holding back his full force because she is a woman.</p><p>Her words are a turning point: Brahmā had told her that when a vānara defeated her, the rākṣasas’ time would be up. She lets him in and blesses his search.</p><p>Laṅkā itself is described in long cantos: golden walls, gateways set with jewels, palaces like clouds, the flying chariot Puṣpaka. Vālmīki makes the enemy city magnificent.</p></div></section>
+<section class="page" id="search"><h2 class="page-title">THE NIGHT SEARCH</h2><div class="sub">Through Rāvaṇa’s palaces</div>
+<table class="ct fact"><tr><td>Laṅkā</td><td>Vālmīki describes golden palaces, gardens, the Puṣpaka chariot, feasting and music</td></tr><tr><td>Rāvaṇa asleep</td><td>He saw Rāvaṇa among his queens</td></tr><tr><td>Mandodarī</td><td>For a moment he thought the chief queen was Sītā, and danced with joy</td></tr><tr><td>Second thought</td><td>Sītā, parted from Rāma, would not sleep, eat or dress like this. It was not her</td></tr><tr><td>Scruple</td><td>He worried about looking at sleeping women; he decided his mind was untouched</td></tr></table>
+<div class="panel reading"><p>The night search is a long, detailed tour of Rāvaṇa’s palace, its sleeping queens and drunken revelries. Vālmīki uses it to show the wealth and sensuality of Laṅkā, in contrast to Sītā’s grief.</p><p>The Mandodarī moment shows Hanumān’s reasoning: he rejoices, then corrects himself by thinking about Sītā’s character. Judgement over first impressions.</p><p>His scruple about looking at sleeping women, and his conclusion that his intention was pure, is often cited as an example of moral self-examination.</p></div></section>
+<section class="page" id="despair"><h2 class="page-title">HANUMĀN’S DESPAIR</h2><div class="sub">When the search failed</div>
+<table class="ct fact"><tr><td>Nothing</td><td>He searched every house and did not find her</td></tr><tr><td>Dark thoughts</td><td>He feared Sītā was dead and thought of the grief this would bring Rāma, Sugrīva and all</td></tr><tr><td>Resolve</td><td>He resolved not to return without news</td></tr><tr><td>Prayer</td><td>He bowed to Rāma, Sītā, Lakṣmaṇa and the gods, and looked again</td></tr><tr><td>Aśoka grove</td><td>He saw one garden he had not searched</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Even Hanumān despaired?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Vālmīki lets him. Then he got up and looked one more time.</p></div></div>
+<div class="panel reading"><p>Hanumān’s despair is one of the most human passages of the epic. He imagines returning empty-handed: Rāma dying of grief, Lakṣmaṇa following, Bharata and the mothers, Sugrīva, the whole vānara race. He thinks of staying in Laṅkā as an ascetic, or dying there.</p><p>Then he stops himself: despair is the root of failure, effort the root of success. That line, anirvedaḥ śriyo mūlam, “not losing heart is the root of fortune”, is still quoted as a motto.</p><p>He prays, gathers himself, and sees the Aśoka grove.</p></div></section>
+<section class="page" id="asoka"><h2 class="page-title">THE AŚOKA GROVE</h2><div class="sub">Sītā found</div>
+<svg class="pg-fig" width="560" height="140" viewBox="0 0 560 140" role="img" aria-label="A woman seated under a tree, a small monkey hidden in its branches"><rect width="560" height="140" fill="#fff"/><rect width="560" height="140" fill="#e6f2df"/><g transform="translate(280 136) scale(1.4)" stroke="#111" stroke-width="2"><path d="M0 0 v-60" stroke="#7a4a1a" stroke-width="8"/><circle cy="-70" r="32" fill="#2a7a3a"/><circle cx="-14" cy="-76" r="4" fill="#ff6b6b"/><circle cx="12" cy="-62" r="4" fill="#ff6b6b"/></g><g transform="translate(250 136) scale(0.7)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#f2c79b"/><path d="M-18 20 q18 -50 36 0z" fill="#e0a800"/></g><g transform="translate(300 30) scale(0.25)" stroke="#111" stroke-width="2"><path d="M24 40 q40 -6 34 -50 q-2 -14 8 -20" fill="none" stroke="#e08a2a" stroke-width="7"/><path d="M24 40 q40 -6 34 -50 q-2 -14 8 -20" fill="none" stroke="#111" stroke-width="1"/><path d="M-26 52 q-4 -56 26 -64 q30 8 26 64z" fill="#e0701a"/><path d="M-14 52 v-20 h28 v20" fill="#c0392b"/><circle cy="-28" r="17" fill="#e08a2a"/><ellipse cy="-20" rx="11" ry="9" fill="#f2c79b"/><path d="M-6 -14 q6 4 12 0" fill="none"/><circle cx="-5" cy="-30" r="2.4" fill="#111"/><circle cx="5" cy="-30" r="2.4" fill="#111"/><path d="M-12 -46 h24 l-3 -12 l-5 5 l-4 -9 l-4 9 l-5 -5z" fill="#e0a800"/><path d="M0 -42 v6" stroke="#c0392b" stroke-width="3"/></g></svg><table class="ct fact"><tr><td>The tree</td><td>He hid in a śiṃśapā tree</td></tr><tr><td>Sītā</td><td>A woman in a single soiled garment, thin, weeping, surrounded by fierce rākṣasīs</td></tr><tr><td>Recognition</td><td>He matched her to Rāma’s descriptions and the jewels; he knew her</td></tr><tr><td>Joy</td><td>He wept and thanked Rāma</td></tr></table>
+<div class="panel reading"><p>Sītā sits under the śiṃśapā tree, wearing the same yellow garment she had on when abducted, now soiled. Vālmīki compares her to a moon hidden by clouds, a flame covered by smoke.</p><p>Hanumān recognises her by reasoning, checking her against the jewels he had seen on Ṛṣyamūka: the ones she still wears match the gaps.</p><p>He weeps for her. Vālmīki makes clear that this is the emotional heart of the book.</p></div></section>
+<section class="page" id="ravana"><h2 class="page-title">RĀVAṆA AND SĪTĀ</h2><div class="sub">A blade of grass between them</div>
+<table class="ct fact"><tr><td>Rāvaṇa comes</td><td>At dawn Rāvaṇa came with his queens, begging and threatening</td></tr><tr><td>The grass</td><td>Sītā placed a blade of grass between them and spoke to it, not to him</td></tr><tr><td>Her answer</td><td>She told him to return her to Rāma and save himself</td></tr><tr><td>Deadline</td><td>Rāvaṇa gave her two months, then left in rage</td></tr><tr><td>Threats</td><td>The rākṣasīs tormented her</td></tr></table>
+<div class="panel reading"><p>Rāvaṇa’s visit is both pleading and menace. He offers her his kingdom and all his queens as servants; then, refused, he threatens to have her cut up for his breakfast after two months.</p><p>Sītā’s blade of grass (tṛṇa) is a famous gesture. Speaking to a grass blade rather than to him shows her contempt and her refusal to acknowledge him directly.</p><p>Some of Rāvaṇa’s wives, including Dhānyamālinī, coax him away. The rākṣasī guards then press Sītā with threats.</p></div></section>
+<section class="page" id="trijata"><h2 class="page-title">TRIJAṬĀ’S DREAM</h2><div class="sub">A rākṣasī on Sītā’s side</div>
+<table class="ct fact"><tr><td>Trijaṭā</td><td>An old rākṣasī woke and told the others to stop</td></tr><tr><td>The dream</td><td>She had dreamt of Rāma in white on an ivory chariot, and Rāvaṇa shaven, in red, riding south on a donkey</td></tr><tr><td>Meaning</td><td>Rāvaṇa’s fall and Rāma’s victory</td></tr><tr><td>Respite</td><td>The rākṣasīs fell back</td></tr></table>
+<div class="panel reading"><p>Trijaṭā is often said to be Vibhīṣaṇa’s daughter in later tellings. In Vālmīki she is an old rākṣasī whose dream foretells the war: Rāma on a white chariot, Laṅkā sinking into the sea, Rāvaṇa riding south, the direction of death.</p><p>Her dream turns the guards from torment to caution. In later Rāmāyaṇas she becomes Sītā’s friend and comforter in captivity.</p></div></section>
+<section class="page" id="song"><h2 class="page-title">THE SONG FROM THE TREE</h2><div class="sub">How to speak to Sītā</div>
+<table class="ct fact"><tr><td>Danger</td><td>Sītā, in despair, was thinking of ending her life</td></tr><tr><td>A dilemma</td><td>How could a monkey speak to her without frightening her or alerting the guards?</td></tr><tr><td>Language</td><td>He chose the speech of ordinary people, not a priest’s Sanskrit, so she would not take him for Rāvaṇa in disguise</td></tr><tr><td>Rāma’s story</td><td>He softly recited Rāma’s story from the tree</td></tr><tr><td>Sītā looks up</td><td>She saw a small monkey and thought she was dreaming</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> He sang to her first?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> He told her Rāma's story. Only then did he show himself.</p></div></div>
+<div class="panel reading"><p>Hanumān’s dilemma is a fine example of his intelligence. If he spoke Sanskrit like a brahmin, Sītā might think it was Rāvaṇa in disguise, as he had been when he abducted her. If he showed himself suddenly, she might scream and bring the guards.</p><p>So he decides on mānuṣī vāk, ordinary human speech, and begins with Rāma’s story, told softly from the tree. The first thing Sītā hears in Laṅkā that is not a threat is her husband’s name.</p><p>This scene is why the Sundara Kāṇḍa is so loved: the strongest being in the story chooses gentleness.</p></div></section>
+<section class="page" id="mudrika"><h2 class="page-title">THE RING</h2><div class="sub">Proof from Rāma</div>
+<table class="ct fact"><tr><td>Doubt</td><td>Sītā feared he was a trick of Rāvaṇa’s</td></tr><tr><td>Questions</td><td>She tested him on Rāma and Lakṣmaṇa; he described them exactly</td></tr><tr><td>The ring</td><td>He gave her Rāma’s ring; she held it as if she held Rāma</td></tr><tr><td>Hope</td><td>For the first time since her abduction, she was happy</td></tr></table>
+<div class="panel reading"><p>Sītā’s questioning is careful. Hanumān describes Rāma’s body in detail, from his eyes to the marks on his feet, and tells her how Rāma and Sugrīva met. Only then does he show the ring.</p><p>Her joy at the ring is described as if Rāma himself had come. In many paintings this is the chosen scene: Sītā under the tree, Hanumān small before her, the ring between them.</p></div></section>
+<section class="page" id="offer"><h2 class="page-title">“CLIMB ON MY BACK”</h2><div class="sub">The offer Sītā refused</div>
+<table class="ct fact"><tr><td>The offer</td><td>Hanumān offered to carry her back across the sea at once</td></tr><tr><td>Her reasons</td><td>She feared falling in the fight; she would not willingly touch another man; and Rāma himself should come and win her back</td></tr><tr><td>Respect</td><td>Hanumān accepted her reasons</td></tr><tr><td>Her message</td><td>Tell Rāma to come within the month</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> He could have saved her right there!</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> She said no. It had to be Rāma, and she chose.</p></div></div>
+<div class="panel reading"><p>Sītā’s refusal is one of the most discussed passages. She gives practical reasons, fearing the fall or a fight in the air, and principled ones: she would not willingly touch a man other than Rāma, and Rāma’s honour required him to come himself.</p><p>Hanumān grows to his vast size to show he could do it, and she is impressed, but holds firm. He accepts. Readers see in this both Sītā’s agency and the epic’s ideal of Rāma’s duty.</p></div></section>
+<section class="page" id="chudamani"><h2 class="page-title">THE CREST-JEWEL</h2><div class="sub">Sītā’s sign for Rāma</div>
+<table class="ct fact"><tr><td>The crow</td><td>She told a story only Rāma knew: a crow pecked her at Citrakūṭa, and Rāma loosed a grass-blade weapon that chased it through the worlds</td></tr><tr><td>The jewel</td><td>She gave Hanumān her cūḍāmaṇi, the jewel from her hair</td></tr><tr><td>Her plea</td><td>Tell Rāma: if he loosed a weapon for a crow, why not for me?</td></tr><tr><td>Parting</td><td>Hanumān bowed and left</td></tr></table>
+<div class="panel reading"><p>The crow story (kākāsura) happened at Citrakūṭa: a crow, said to be Indra’s son Jayanta, pecked Sītā; Rāma loosed a blade of grass charged as the brahmāstra, and it chased the crow through all the worlds until it fell at Rāma’s feet. Rāma spared its life but took one of its eyes.</p><p>Only Sītā and Rāma knew this story, so it would prove the message came from her. The cūḍāmaṇi, a jewel from her hair given at her wedding, is the physical token.</p></div></section>
+<section class="page" id="grove"><h2 class="page-title">THE GROVE DESTROYED</h2><div class="sub">Testing Laṅkā’s strength</div>
+<table class="ct fact"><tr><td>Why</td><td>He decided to measure Rāvaṇa’s forces before leaving</td></tr><tr><td>Destruction</td><td>He tore up the Aśoka grove, except Sītā’s tree</td></tr><tr><td>Battles</td><td>He killed the guards, Jambumālī, the ministers’ sons, five generals and Rāvaṇa’s son Akṣa</td></tr><tr><td>Indrajit</td><td>Rāvaṇa’s son Indrajit bound him with the brahmāstra</td></tr><tr><td>Let himself be caught</td><td>The boon protected him, but he stayed bound to meet Rāvaṇa</td></tr></table>
+<div class="panel reading"><p>Hanumān’s reasoning is a soldier’s: a messenger who sees the enemy’s capital should also test its army. The destruction of the grove brings out guard after guard, then senior commanders, then Rāvaṇa’s young son Akṣa, whom Hanumān kills in a fierce fight.</p><p>Indrajit, Rāvaṇa’s greatest son, binds him with the brahmāstra. Hanumān knows Brahmā’s boon makes him immune within moments, but stays bound to be taken before Rāvaṇa. The rākṣasas then bind him with ropes, which breaks the astra’s power.</p></div></section>
+<section class="page" id="court"><h2 class="page-title">IN RĀVAṆA’S COURT</h2><div class="sub">The messenger speaks</div>
+<table class="ct fact"><tr><td>Rāvaṇa</td><td>Hanumān admired his splendour and was struck by it</td></tr><tr><td>The message</td><td>He told Rāvaṇa to return Sītā, or Rāma would destroy Laṅkā</td></tr><tr><td>Death sentence</td><td>Rāvaṇa ordered him killed</td></tr><tr><td>Vibhīṣaṇa</td><td>Rāvaṇa’s brother said an envoy must not be killed; punish him another way</td></tr><tr><td>The tail</td><td>Rāvaṇa ordered his tail wrapped in cloth and set alight</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Vibhīṣaṇa saved him?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The first sign Vibhīṣaṇa would side with dharma.</p></div></div>
+<div class="panel reading"><p>Hanumān’s view of Rāvaṇa is generous: he admires the king’s majesty and thinks that if he were not so unrighteous he could rule even heaven. Vālmīki never makes Rāvaṇa a cartoon.</p><p>His speech is a model of diplomacy: he introduces himself as Rāma’s envoy, recounts Rāma’s deeds, and urges Rāvaṇa to return Sītā for his own good.</p><p>Vibhīṣaṇa’s defence of the envoy is the first time he openly opposes his brother. He will soon leave Laṅkā for Rāma.</p></div></section>
+<section class="page" id="fire"><h2 class="page-title">LAṄKĀ BURNS</h2><div class="sub">The tail that set a city alight</div>
+<table class="ct fact"><tr><td>Paraded</td><td>They paraded him through the streets with his burning tail</td></tr><tr><td>Cool fire</td><td>Sītā, hearing of it, prayed to Agni; the fire did not burn him</td></tr><tr><td>The burning</td><td>He broke free and leapt from roof to roof, setting Laṅkā ablaze</td></tr><tr><td>Fear for Sītā</td><td>Then he panicked: had he burned Sītā too?</td></tr><tr><td>Safe</td><td>He heard she was unharmed and went to see her once more</td></tr></table>
+<div class="panel reading"><p>Sītā prays to Agni that if she has been faithful, the fire should be cool for Hanumān. It is: the tail burns, but he feels no heat. He understands this as Sītā’s power.</p><p>The burning of Laṅkā is told in vivid detail: golden palaces melting, rākṣasas fleeing, the fire leaping from house to house. Vibhīṣaṇa’s house alone is spared.</p><p>His panic for Sītā, and the relief when he hears from passing sages that she is safe, show again that even Hanumān can fear.</p></div></section>
+<section class="page" id="return"><h2 class="page-title">“SEEN SĪTĀ!”</h2><div class="sub">The return and the news</div>
+<table class="ct fact"><tr><td>Leap back</td><td>He leapt from Ariṣṭa mountain back across the sea, roaring</td></tr><tr><td>Joy</td><td>The waiting vānaras danced</td></tr><tr><td>Madhuvana</td><td>On the way they raided Sugrīva’s honey grove, beating its guard Dadhimukha</td></tr><tr><td>Sugrīva</td><td>He knew at once: they would not dare unless they had succeeded</td></tr><tr><td>First words</td><td>To Rāma, Hanumān said first “dṛṣṭā sītā”: “Sītā is seen”</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why say 'seen' first?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> So Rāma wouldn't suffer even a moment of doubt.</p></div></div>
+<div class="panel reading"><p>The Madhuvana episode is comic relief. The exhausted, triumphant vānaras raid Sugrīva’s royal honey grove, drink themselves silly, and beat up its keeper Dadhimukha, Sugrīva’s uncle. When he complains, Sugrīva laughs: they would never dare unless they had found Sītā.</p><p>Hanumān’s first words to Rāma, dṛṣṭā sītā, are famous for their order: “Seen, Sītā” puts the good news first. Commentators say he did not want Rāma to hear the name alone and fear the worst for even a moment.</p></div></section>
+<section class="page" id="embrace"><h2 class="page-title">RĀMA’S EMBRACE</h2><div class="sub">The reward</div>
+<table class="ct fact"><tr><td>The jewel</td><td>Rāma held Sītā’s cūḍāmaṇi and wept</td></tr><tr><td>Praise</td><td>He said Hanumān had done what no one else could</td></tr><tr><td>His gift</td><td>“All I have to give is this embrace”, and he embraced him</td></tr><tr><td>Meaning</td><td>For devotees, the highest reward: Rāma’s own arms</td></tr></table>
+<div class="panel reading"><p>Rāma’s words are among the most quoted in Hanumān devotion: he has done what no one could, and Rāma has nothing worthy to give him except an embrace. Many temples show this scene.</p><p>The book ends here, with the army preparing to march south. The next book, the Yuddha Kāṇḍa, is the war.</p></div></section>
+<section class="page" id="parayana"><h2 class="page-title">READING THE SUNDARA KĀṆḌA</h2><div class="sub">The book people recite</div>
+<table class="ct fact"><tr><td>Pārāyaṇa</td><td>Recited whole, often over days, for help in hard times</td></tr><tr><td>Why</td><td>It moves from despair to hope; devotees say it removes obstacles</td></tr><tr><td>In homes</td><td>Read in Telugu, Kannada, Tamil, Hindi and Sanskrit households</td></tr><tr><td>Tulasīdāsa</td><td>His Sundara Kāṇḍa, from the Rāmacaritamānas, is chanted in temples of the north, especially on Tuesdays</td></tr></table>
+<div class="panel reading"><p>Sundara Kāṇḍa pārāyaṇa is a widespread practice, often over seven, nine or more days, sometimes one sarga a day for 68 days. Families do it for illness, exams, weddings or jobs.</p><p>In the north, Tulasīdāsa’s Sundara Kāṇḍa from the Rāmacaritamānas is sung by groups on Tuesday evenings, sometimes with harmonium and drums.</p></div></section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">The part in a few lines</div>
+<div class="steps"><div><b>Leap.</b> From Mahendra over the sea; Maināka, Surasā, Siṃhikā</div><div><b>Laṅkā.</b> Laṅkinī falls; the night search; despair, then the Aśoka grove</div><div><b>Sītā.</b> Rāma’s story, the ring, her refusal, the crest-jewel</div><div><b>Fire.</b> Grove destroyed, Akṣa killed, court, the burning tail</div><div><b>News.</b> “Seen Sītā”, and Rāma’s embrace</div></div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> One line to remember?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> He found her because he looked one more time.</p></div></div><div class="key">Next: <a href="/bhakti/vishnu/hanuman/yuddha/">The War and After</a></div><div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small"><p><b>Texts:</b> Vālmīki Rāmāyaṇa, Sundara Kāṇḍa (68 sargas): 1 (leap, Maināka, Surasā, Siṃhikā), 3 (Laṅkinī), 4–13 (search, Mandodarī, despair), 14–20 (Aśoka grove, Rāvaṇa), 27 (Trijaṭā), 30–40 (Hanumān and Sītā, ring, crow story, cūḍāmaṇi), 41–48 (grove, Akṣa, Indrajit), 49–52 (court, Vibhīṣaṇa), 53–55 (burning), 56–68 (return, Madhuvana, Rāma); Tulasīdāsa, Rāmacaritamānas, Sundara Kāṇḍa.</p><p><b>Sources differ / unverified:</b> Sarga numbers vary by edition; the many explanations for the name “Sundara” are traditional; in some later tellings Hanumān refuses only because of Rāma’s glory, not touch. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p></div>
+</section>
+</div>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/bhakti/">Bhakti</a><span class="sep">›</span><a href="/bhakti/gods/">Gods and Goddesses</a></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
