@@ -51,6 +51,14 @@
    "tile": "<li><a href=\"/bhakti/vishnu/hanuman/\"><div class=\"tile-art\" style=\"background:#dcecff\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><g transform=\"translate(50 56) scale(1.15)\"><path d=\"M14 22 q22 -2 18 -26\" fill=\"none\" stroke=\"#e08a2a\" stroke-width=\"5\"/><path d=\"M-14 30 q-2 -30 14 -34 q16 4 14 34z\" fill=\"#e0701a\"/><circle cy=\"-14\" r=\"10\" fill=\"#e08a2a\"/><ellipse cy=\"-9\" rx=\"6.5\" ry=\"5\" fill=\"#f2c79b\"/><path d=\"M-7 -24 h14 l-2 -7 l-3 3 l-2 -5 l-2 5 l-3 -3z\" fill=\"#ffd60a\"/><path d=\"M20 22 l8 -30\" stroke=\"#7a4a1a\" stroke-width=\"3\"/><circle cx=\"29\" cy=\"-12\" r=\"7\" fill=\"#e0a800\"/></g></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Series · 6 parts + 3 hymns</strong><h2>Hanumān</h2><p>Rāma’s messenger: who he is, his story from the sun leap to Rāma’s farewell, and his great temples.</p><span class=\"read\">Open series ↗</span></div></a></li>"
   },
   {
+   "path": "/bhakti/vishnu/vaikuntha-ekadashi/",
+   "door": "gods",
+   "deities": [
+    "vishnu"
+   ],
+   "tile": "<li><a href=\"/bhakti/vishnu/vaikuntha-ekadashi/\"><div class=\"tile-art\" style=\"background:#1b2f5a\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 90 v-44 q28 -34 56 0 v44z\" fill=\"#e0a800\"/><path d=\"M32 90 v-38 q18 -22 36 0 v38z\" fill=\"#fff8d0\"/><circle cx=\"50\" cy=\"62\" r=\"9\" fill=\"#4a7fd0\"/><path d=\"M42 54 h16 l-3 -10 h-10z\" fill=\"#e0a800\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Festival · Sun 20 Dec 2026</strong><h2>Vaikuṇṭha Ekādaśī</h2><p>The day the northern gate opens, also Gītā Jayantī: Srirangam, Tirumala, the fast, the vigil, pāraṇa and Ambarīṣa.</p><span class=\"read\">Read ↗</span></div></a></li>"
+  },
+  {
    "path": "/bhakti/shiva/sri-rudram/",
    "door": "hymns",
    "deities": [
