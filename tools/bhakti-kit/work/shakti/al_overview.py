@@ -1,0 +1,115 @@
+exec(open('/home/claude/work/shakti/al_common.py').read())
+ring=''.join(LAK(k,190+120*__import__('math').cos(i*0.785-1.57),134+86*__import__('math').sin(i*0.785-1.57),.42) for i,(k,a,b) in enumerate(AL))
+cover=('<svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Eight forms of Lakshmi in a ring around a golden lotus">'
+ '<rect width="380" height="268" fill="#0e3a4a" rx="8"/>'+LOTUS(190,150,1.6)+ring+'</svg>')
+pages=[
+P('glance','AT A GLANCE','The eight on one page',[(f'<a href="{ALS}{k}/">{n}</a>',d.capitalize()) for k,n,d in AL]
+ +[('Who','Lakṣmī, also Śrī: the Goddess of fortune, beauty and abundance, Viṣṇu’s consort')],
+ ("Eight Lakṣmīs? Isn't there just one?","One Goddess, eight gifts. Each form is one kind of wealth.")),
+P('lakshmi','WHO IS LAKṢMĪ?','Śrī, the Goddess of fortune',[
+ ('Names','Lakṣmī, Śrī, Kamalā, Padmā, Ramā, Mahālakṣmī, Indirā, Bhārgavī'),
+ ('Consort','Of Viṣṇu in every avatāra: Sītā with Rāma, Rukmiṇī with Kṛṣṇa, Padmāvatī with Veṅkaṭeśvara'),
+ ('Form','Golden, on a lotus, holding lotuses, pouring coins, often with elephants'),
+ ('Gifts','Prosperity, beauty, auspiciousness, royal power and grace'),
+ ('Opposite','Alakṣmī or Jyeṣṭhā: misfortune, poverty and quarrel')]),
+P('vedic','IN THE VEDAS','Śrī before Lakṣmī',[
+ ('Early','In the Ṛgveda “śrī” and “lakṣmī” are qualities: splendour and a good sign'),
+ ('Śrī Sūkta','A hymn attached to the Ṛgveda (a khila) praising Śrī as a golden goddess: the oldest hymn to her'),
+ ('Śatapatha Brāhmaṇa','A story of Śrī born from Prajāpati’s tapas, from whom the gods took her gifts'),
+ ('Merging','By the epics, Śrī and Lakṣmī are one goddess, wife of Viṣṇu')]),
+P('churning','FROM THE OCEAN OF MILK','How she came back to the world',[
+ ('The curse','The sage Durvāsā gave Indra a garland; Indra let his elephant trample it, and Durvāsā cursed the gods to lose their fortune'),
+ ('Śrī leaves','Lakṣmī withdrew; the three worlds grew poor and weak'),
+ ('The churning','Gods and asuras churned the ocean of milk with Mount Mandara, Vāsuki as the rope, Viṣṇu as the tortoise beneath'),
+ ('She rises','Lakṣmī emerged on a lotus; the elephants of the quarters bathed her; she chose Viṣṇu'),
+ ('Source','Viṣṇu Purāṇa 1.9 and many other Purāṇas')],
+ ("So she left, and had to be churned back?","Fortune leaves the careless. It took gods and demons together to bring her back.")),
+P('eight','WHY EIGHT?','A modern grouping of old ideas',[
+ ('Old gifts','Each of the eight gifts is praised in older texts, especially the Śrī Sūkta and the Purāṇas'),
+ ('New set','The set of exactly eight, with names and images, is recent: it spread in the 20th century'),
+ ('The Stotram','The Aṣṭalakṣmī Stotram, one verse per form, made the eight popular'),
+ ('Temples','Aṣṭalakṣmī temples appeared from the 1970s: Chennai, Hyderabad and elsewhere'),
+ ('Variants','Some lists swap in Aiśvarya, Saubhāgya, Rājya or Vara Lakṣmī')],
+ ("So it's new?","The gifts are ancient. The neat set of eight is modern. Both are true.")),
+P('lists','THE LISTS DIFFER','Which eight?',[
+ ('Common list','Ādi, Dhānya, Dhairya (Vīra), Gaja, Santāna, Vijaya, Vidyā, Dhana'),
+ ('Hyderabad','Its temple includes Aiśvarya Lakṣmī among the eight'),
+ ('Other forms','Saubhāgya (good fortune), Rājya (kingship), Vara (boons), Mahālakṣmī herself'),
+ ('This series','Follows the common list, as in the Stotram and the Chennai temple')]),
+P('stotram','THE AṢṬALAKṢMĪ STOTRAM','The hymn behind the eight',[
+ ('Form','Eight verses in Sanskrit, one for each form, each ending with a refrain asking her to protect “me, always”'),
+ ('Opening','The first verse addresses Ādi Lakṣmī as worshipped by sages and sweet as Mādhava’s beloved'),
+ ('Use','Sung in homes on Fridays, at Varalakṣmī Vratam and at Dīpāvalī'),
+ ('Age','A modern composition; its author is not firmly known'),
+ ('Our approach','We describe each verse in its own article; for older hymns to Lakṣmī see the Kanakadhārā Stotram and Mahālakṣmī Aṣṭakam')],
+ extra=f'<div class="key">Older hymns: <a href="/bhakti/devi/kanakadhara-stotram/">Kanakadhārā Stotram</a> · <a href="/bhakti/devi/mahalakshmi-ashtakam/">Mahālakṣmī Aṣṭakam</a></div>'),
+P('srisukta','THE ŚRĪ SŪKTA','The oldest hymn to her',[
+ ('Where','An appendix (khila) to the Ṛgveda, 15 verses plus later additions'),
+ ('Golden','It opens: hiraṇyavarṇāṃ hariṇīṃ, “golden-hued, the doe”'),
+ ('Elephants','It praises her as delighting in the trumpeting of elephants: the root of Gaja Lakṣmī'),
+ ('Harvest','It calls her rich in cattle and ever-nourished: the root of Dhānya Lakṣmī'),
+ ('Alakṣmī','It asks her to drive away hunger, thirst and misfortune')],
+ extra='<div class="verse"><p><i>hiraṇyavarṇāṃ hariṇīṃ suvarṇarajatasrajām<br>candrāṃ hiraṇmayīṃ lakṣmīṃ jātavedo ma āvaha</i></p><p class="small">Bring to me, O Fire, Lakṣmī: golden, the doe, wearing gold and silver garlands, moon-bright, made of gold.</p></div>'),
+P('symbols','HER SYMBOLS','Lotus, elephants, gold and owl',[
+ ('Lotus','Grows from mud yet stays clean: wealth without stain'),
+ ('Elephants','Rain-clouds and royal power; they bathe her'),
+ ('Gold coins','Pouring from her hand: generosity'),
+ ('Owl','Her vehicle in Bengal and the north (ulūka): watchful in darkness'),
+ ('Kalaśa','The full pot: abundance; worshipped as her form at Varalakṣmī Vratam')]),
+P('festivals','HER DAYS','Through the year',[
+ ('Fridays','Her weekly day'),
+ ('Varalakṣmī Vratam','The Friday before the Śrāvaṇa full moon (July–August); great in Karnataka, Andhra, Telangana and Tamil Nadu'),
+ ('Dhanteras','Two days before Dīpāvalī: new gold and vessels are bought'),
+ ('Dīpāvalī','Lakṣmī Pūjā on the new moon of Kārttika (Āśvina in some calendars)'),
+ ('Kojāgarī Pūrṇimā','Bengal and Odisha: the full moon when she asks “who is awake?”')]),
+P('temples','WHERE THE EIGHT ARE WORSHIPPED','Aṣṭalakṣmī temples',[
+ ('Chennai','The Aṣṭalakṣmī Kovil at Besant Nagar, by the sea: foundation 1974, completed 1976, conceived by the Kanchi Paramācārya'),
+ ('Layout','Shrines on several levels; Dhana Lakṣmī at the top under the śikhara'),
+ ('Hyderabad','The Aṣṭalakṣmī temple at Vāsavī Colony, consecrated in April 1996 under the Kanchi Kāmakoṭi Pīṭha'),
+ ('Older Lakṣmī shrines','Mahālakṣmī at Kolhāpur, Mumbai’s Mahālakṣmī, Padmāvatī at Tiruchānūr, and the Hoysaḷa Lakṣmīdevī at Doḍḍagaddavalli'),
+ ('Homes','The eight are most often worshipped in a framed picture at home')],
+ extra=f'<div class="key">See also: <a href="/bhakti/temples-of-india/18-shakti-peethas/mahalakshmi-kolhapur/">Mahālakṣmī, Kolhāpur</a> · <a href="/bhakti/devi/dasha-mahavidya/kamala/">Kamalā</a></div>'),
+P('meaning','WHAT THE EIGHT TEACH','Wealth is more than money',[
+ ('Wealth is plural','Food, courage, children, success, learning and money are all Lakṣmī'),
+ ('Balance','A rich person without courage or knowledge is still poor'),
+ ('She stays where','Tradition: Lakṣmī stays with the clean, hard-working, truthful and generous'),
+ ('She leaves','Where there is laziness, quarrel and dirt, Alakṣmī enters')]),
+P('glossary','GLOSSARY','Words used in this series',[
+ ('Śrī','Splendour; the Goddess of fortune'),('Aṣṭa','Eight'),('Sūkta','Vedic hymn'),('Khila','Appendix hymn'),('Kalaśa','Water pot'),('Vratam','A vow, a fast'),('Alakṣmī','Misfortune, Lakṣmī’s opposite'),('Padma · Kamala','Lotus')]),
+endpage(None,[('Who','Lakṣmī, Śrī: Goddess of fortune, Viṣṇu’s consort'),('Roots','Śrī Sūkta; the churning of the ocean'),('Eight','Ādi, Dhānya, Dhairya, Gaja, Santāna, Vijaya, Vidyā, Dhana'),('New and old','A modern set of ancient gifts'),('Lesson','Wealth is many things; keep all eight')],"Where do I start?","With Ādi Lakṣmī, the first. She holds all the others."),
+srcpage('Śrī Sūkta (Ṛgveda khila); Viṣṇu Purāṇa 1.8–1.9 (Bhṛgu’s daughter, churning, Indra’s hymn); D. Kinsley, <i>Hindu Goddesses</i> (1986), on Śrī-Lakṣmī; Wikipedia, “Ashta Lakshmi” (the grouping and its rise with the Stotram); Aṣṭalakṣmī Temple, Chennai (foundation 1974, completed 1976, Kanchi Paramācārya) and Hyderabad (consecrated April 1996, Kanchi Kāmakoṭi Pīṭha) from temple and Wikipedia pages.',
+ 'The membership and order of the eight differ by list; dates of Dīpāvalī Lakṣmī Pūjā differ between amānta and pūrṇimānta calendars; the Stotram’s author is not firmly known.')]
+EX={
+'glance':['The Aṣṭa Lakṣmī are not eight separate goddesses but eight faces of one, each named for a kind of blessing. A family that prays to them is asking not just for money but for food, courage, children, success, learning and the dignity of a good life.',
+ 'This series takes each in turn: her name, her form and what she holds, where her idea comes from in older texts, her stories, how she is worshipped and what she teaches. Each article stands alone, but together they make one picture of Lakṣmī.'],
+'lakshmi':['Lakṣmī is one of the most widely worshipped deities in India: in shops, homes and banks, on wedding invitations and account books. Śrīvaiṣṇava theology gives her a central place as the mediator, puruṣakāra, who pleads with Viṣṇu on behalf of the devotee.',
+ 'The Viṣṇu Purāṇa says she is as inseparable from Viṣṇu as speech from meaning or light from the sun: wherever he goes, she goes. In each of his avatāras she takes a matching form.'],
+'vedic':['In the earliest Vedic verses, lakṣmī means a mark or sign, good or bad, and śrī means radiance, beauty or prosperity. A king was said to have śrī; a field could have it. Only gradually did these become a single goddess.',
+ 'The Śatapatha Brāhmaṇa story is striking: Śrī emerges from Prajāpati, so beautiful that the gods want to kill her and seize her gifts. Prajāpati tells them to take the gifts without harming her, and each god takes one: food, kingship, fame and more. This list of separate gifts is a distant ancestor of the idea of many Lakṣmīs.'],
+'churning':['The churning of the ocean (samudra manthana) is told in the Mahābhārata and many Purāṇas. Fourteen treasures rose from it, including the moon, the wish-cow Kāmadhenu, the horse Uccaiḥśravas, the elephant Airāvata, the poison Hālāhala that Śiva drank, and the nectar of immortality.',
+ 'Lakṣmī’s emergence is the climax. Seated on a lotus, holding a lotus, she is bathed by the elephants of the directions with water from golden pots: the Gaja Lakṣmī scene. Then she garlands Viṣṇu and takes her place on his chest. The Viṣṇu Purāṇa follows with Indra’s long hymn to Śrī, asking her never to leave again.'],
+'eight':['Scholars note that while each of the eight gifts can be found in old texts, the exact set of eight with these names appears to be modern. Its spread is closely linked with the Aṣṭalakṣmī Stotram, now printed in countless prayer books and played in shops each morning.',
+ 'Silverware, pooja items and decorative kalaśas carrying images of all eight became popular wedding gifts in South India. The grouping thus spread through homes as much as through temples.'],
+'lists':['Variant lists show how flexible the idea is. Aiśvarya Lakṣmī, lordship and luxury; Saubhāgya Lakṣmī, marital good fortune; Rājya Lakṣmī, kingship; and Vara Lakṣmī, the giver of boons, all appear in some sets.',
+ 'The flexibility is old: Indian religion often groups a deity’s forms into neat numbers, the eight Bhairavas, nine Durgās, ten Mahāvidyās, while the members vary by region and school.'],
+'stotram':['Each verse of the Stotram addresses one form, lists her attributes, and asks for protection with a refrain. Its rhythm and easy Sanskrit made it a favourite for children and family singing.',
+ 'Because it is a recent composition whose rights are unclear, we describe its verses rather than printing them. The far older Kanakadhārā Stotram by Ādi Śaṅkara and the Mahālakṣmī Aṣṭakam from the Padma Purāṇa tradition are both on this site, verse by verse.'],
+'srisukta':['The Śrī Sūkta is among the most recited Vedic hymns, used in temple worship of Lakṣmī and at the start of many pūjās. Its imagery, gold, lotuses, elephants, cows, fragrance and the lamp, became the standard picture of the Goddess.',
+ 'Its second half asks for children, cattle, horses and servants, and for Alakṣmī, “hunger, thirst and stain”, to be driven away. In that sense the Śrī Sūkta already contains several of the eight Lakṣmīs, five centuries or more before anyone counted them.'],
+'symbols':['The lotus is Lakṣmī’s chief emblem: she is Padmā and Kamalā, “of the lotus”, and is usually seated or standing on one, holding two more. Lotuses grow in muddy water, but their petals stay clean: the ideal of wealth used without corruption.',
+ 'Her owl vehicle is a northern and eastern idea; in the south she rarely has one. A popular saying makes a moral of it: the owl, who sees in the dark, is also proverbially foolish, a warning that wealth can blind.'],
+'festivals':['Varalakṣmī Vratam, the great Lakṣmī festival of the South, is kept mainly by married women for the welfare of the family. A kalaśa is decorated as the Goddess with a face, sari and jewels, and the story of Cārumatī, a devoted wife blessed by Lakṣmī in a dream, is read.',
+ 'In Bengal and Odisha, Lakṣmī Pūjā falls on Kojāgarī Pūrṇimā, the full moon after Durgā Pūjā, when she is said to roam asking “ko jāgarti?”, “who is awake?”, and to bless those who keep vigil.'],
+'temples':['The Besant Nagar temple, on the beach, is laid out on ascending levels so devotees climb past the eight forms, with a shrine of Mahālakṣmī and Viṣṇu together. Its sea setting fits a goddess born from the ocean.',
+ 'Karnataka has some of the oldest Lakṣmī temples: the Lakṣmīdevī temple at Doḍḍagaddavalli near Hassan, built in 1113 CE in the early Hoysaḷa style, and the much-visited Mahālakṣmī temple at Goravanahalli near Tumakuru.'],
+'meaning':['The Aṣṭa Lakṣmī idea is a quiet correction to a narrow view of wealth. Money alone, Dhana Lakṣmī, is one form in eight. The others are harvests, courage, dignity, family, success, learning and the original grace behind them all.',
+ 'A traditional teaching lists where Lakṣmī lives: in a clean home, among people who work hard, speak truthfully, honour elders and give freely. That is a list anyone can practise.'],
+'glossary':['Two more words: puruṣakāra, the mediator, Lakṣmī’s role in Śrīvaiṣṇava theology; and śrīvatsa, the mark on Viṣṇu’s chest where Lakṣmī dwells.'],
+}
+albuild('AL0_Overview','Aṣṭa Lakṣmī · The Eight Forms of Lakṣmī · srini.presents',
+ 'Aṣṭa Lakṣmī, the eight forms of Lakṣmī: who Śrī-Lakṣmī is, the Śrī Sūkta, the churning of the ocean, why there are eight and how the lists differ, the Aṣṭalakṣmī Stotram, her symbols and days, and the Aṣṭalakṣmī temples of Chennai and Hyderabad.',
+ 'AṢṬA LAKṢMĪ · OVERVIEW','AṢṬA LAKṢMĪ','Eight forms of the Goddess of fortune',cover,
+ ['Lakṣmī is the Goddess of fortune, and almost every Indian home has her picture. But fortune has many faces. Grain in the granary, courage in hard times, children in the house, success in work, knowledge in the mind and money in the purse: tradition calls each of these a Lakṣmī.',
+  'The <b>Aṣṭa Lakṣmī</b>, “eight Lakṣmīs”, gather them into one set of eight forms. This overview explains who Lakṣmī is, where the eight come from and how they are worshipped. Then eight short guides take each form in turn.'],
+ 'Jai Mahālakṣmī,',("Do I pray to all eight?","Many families do, in one prayer. Others pray to the one they need most."),
+ f'<div class="panel reading small"><p>Start of <a href="{ALS}">Aṣṭa Lakṣmī</a>, the eight forms of Lakṣmī. Next: <a href="{ALS}adi/">Ādi Lakṣmī</a>.</p></div>',pages,EX,size=72)

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vijaya Lakṣmī · Aṣṭa Lakṣmī 6 · srini.presents</title>
+<meta name="description" content="Vijaya Lakṣmī (Jaya Lakṣmī), Lakṣmī of victory: her eight-armed red form with discus, conch, sword and shield; Vijayadaśamī and Mysuru Dasara, Arjuna called Vijaya, Rāja Lakṣmī on Gupta coins, and the city of Vijayanagara.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#d9822b,#7a1d12 55%,#2a0805)}
+  .sloka-head{background:#7a1d12}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #7a1d12}
+  .sub{color:#c0392b}
+  .num{background:#7a1d12}
+  .steps div:before{background:#c0392b}
+  .full .vn,.full .end{color:#c0392b}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#c0392b}
+  .contlink{color:#c0392b}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#d9822b,#7a1d12 55%,#2a0805)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .fact td:first-child{font-weight:700;width:34%;background:#dfe9f6}
+  .tl{border-left:5px solid #c0392b;margin:6px 0 6px 10px;padding-left:16px}
+  .tl div{position:relative;margin:0 0 9px;font-size:15px;line-height:1.45}
+  .tl div b.yr{display:inline-block;min-width:74px;font-family:Bangers;font-weight:400;letter-spacing:1px;color:#c0392b;font-size:18px}
+  .tl div:before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:#ffd60a;border:2px solid #111}
+  .pg-fig{display:block;margin:6px auto 10px;max-width:100%;height:auto;border:3px solid var(--ink);background:#fff}
+  .chip{display:inline-block;background:#7a1d12;color:#ffd60a;font-family:Bangers;letter-spacing:1px;padding:2px 10px;margin:0 6px 6px 0;font-size:15px}
+  .small{font-size:13px;opacity:.85}
+  @media print{
+    .tl div{font-size:12.5px;margin-bottom:5px}
+    .reading p{font-size:12.8px}
+    .pg-fig{max-height:300px;width:auto}
+    .card p{font-size:12.5px}
+    table.ct td,table.ct th{padding:3px 7px;font-size:12px}
+  }
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/devi/ashta-lakshmi/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+
+<div class="book">
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">AṢṬA LAKṢMĪ 6 OF 8</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(24px,7vw,70px)">VIJAYA LAKṢMĪ</h1>
+  <div class="series">AṢṬA LAKṢMĪ · A REFERENCE GUIDE</div>
+  <div class="tag">Lakṣmī of victory</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Vijaya Lakṣmī seated on a lotus"><rect width="380" height="268" fill="#0e3a4a" rx="8"/><rect y="220" width="380" height="48" fill="#1d6f8a"/><g transform="translate(30 236) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(94 236) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(158 236) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(222 236) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(286 236) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(350 236) scale(0.6)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(190 140) scale(1.25)"><g transform="translate(0 0) scale(1)" stroke="#111" stroke-width="2"><path d="M0 54 q-34 -30 -68 0z" fill="#f2a6c0"/><path d="M0 54 q-20 -30 -40 0z" fill="#f2a6c0"/><path d="M0 54 q20 -30 40 0z" fill="#f2a6c0"/><path d="M0 54 q34 -30 68 0z" fill="#f2a6c0"/><ellipse cy="54" rx="56" ry="8" fill="#2a9d6f"/><path d="M-30 50 q-4 -54 30 -66 q34 12 30 66z" fill="#c0392b"/><path d="M-26 20 q26 10 52 0" stroke="#e0a800" stroke-width="4" fill="none"/><path d="M-22 -8 l-26 -20 M22 -8 l26 -20 M-22 6 l-24 6 M22 6 l24 6" stroke="#f2c070" stroke-width="7"/><g transform="translate(-50 -28) scale(0.7)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><g transform="translate(50 -28) scale(0.7)" stroke="#111" stroke-width="1.5"><path d="M0 0 q-10 -26 -20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q10 -26 20 0z" fill="#f2a6c0" transform="rotate(0)"/><path d="M0 0 q-8 -26 -16 0z" fill="#f2a6c0" transform="rotate(-30)"/><path d="M0 0 q8 -26 16 0z" fill="#f2a6c0" transform="rotate(30)"/><path d="M-10 0 q10 -34 20 0z" fill="#e0115f"/></g><circle cx="46" cy="14" r="4" fill="#e0a800"/><circle cx="52" cy="18" r="4" fill="#e0a800"/><circle cy="-36" r="15" fill="#f2c070"/><path d="M-14 -48 h28 l-4 -16 l-6 6 l-4 -10 l-4 10 l-6 -6z" fill="#e0a800"/><circle cx="-5" cy="-38" r="2.4" fill="#111"/><circle cx="5" cy="-38" r="2.4" fill="#111"/><path d="M-3 -46 h6" stroke="#c0392b" stroke-width="2"/><path d="M-6 -29 q6 5 12 0" fill="none"/></g><g stroke="#111" stroke-width="2"><circle cx="-50" cy="-30" r="9" fill="none" stroke="#e0a800" stroke-width="4"/><path d="M48 -38 q-6 10 4 14" fill="#fff8e7"/><path d="M40 0 l18 -40" stroke="#bbb" stroke-width="4"/></g></g></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+</section>
+<section class="page" id="foreword">
+  <h2 class="page-title">FOREWORD</h2>
+  <div class="panel bg-red halftone" style="font-size:17px;line-height:1.6"><p><b>Vijaya</b> means victory. Vijaya Lakṣmī, also called Jaya Lakṣmī, is the Goddess of success: winning a battle, a case, an exam or a hard inner struggle.</p><p>This guide follows victory through Indian tradition: Vijayadaśamī, Mysuru’s great Dasara, Arjuna whose name was Vijaya, the royal Lakṣmī on Gupta coins, and Karnataka’s own “city of victory”, Vijayanagara.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#c0392b">Jai Vijaya Lakṣmī,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Victory over what?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Over enemies, over obstacles, and over yourself.</p></div></div>
+  <div class="panel reading small"><p>Part of <a href="/bhakti/devi/ashta-lakshmi/">Aṣṭa Lakṣmī</a>, the eight forms of Lakṣmī. Previous: <a href="/bhakti/devi/ashta-lakshmi/santana/">Santāna Lakṣmī</a>. Next: <a href="/bhakti/devi/ashta-lakshmi/vidya/">Vidyā Lakṣmī</a>.</p></div>
+</section>
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc"><li><span class="num">1</span><a href="#glance">At A Glance</a></li><li><span class="num">2</span><a href="#vijayadashami">Vijayadaśamī</a></li><li><span class="num">3</span><a href="#dasara">Mysuru Dasara</a></li><li><span class="num">4</span><a href="#arjuna">Arjuna, “Vijaya”</a></li><li><span class="num">5</span><a href="#rajya">Rāja Lakṣmī</a></li><li><span class="num">6</span><a href="#vijayanagara">Vijayanagara</a></li><li><span class="num">7</span><a href="#stotram">Her Verse</a></li><li><span class="num">8</span><a href="#inner">The Inner Victory</a></li><li><span class="num">9</span><a href="#meaning">What She Teaches</a></li><li><span class="num">10</span><a href="#end">On One Page</a></li><li><span class="num">11</span><a href="#sources">Sources &Amp; Notes</a></li></ul>
+</section>
+<section class="page" id="glance"><h2 class="page-title">AT A GLANCE</h2><div class="sub">Vijaya Lakṣmī on one page</div>
+<table class="ct fact"><tr><td>Name</td><td>Vijaya Lakṣmī, also Jaya Lakṣmī: “Lakṣmī of victory”</td></tr><tr><td>Gift</td><td>Success, victory and overcoming obstacles</td></tr><tr><td>Form</td><td>Red sari; eight arms with discus, conch, sword, shield, lotus and noose; boon and fear-not gestures</td></tr><tr><td>Seated</td><td>Often on a lotus, sometimes shown with an elephant</td></tr><tr><td>Prayed to</td><td>Before contests, exams, interviews and court cases</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is it OK to pray to win?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> For a fair fight, yes. Victory over wrong is her gift.</p></div></div>
+<div class="panel reading"><p>Vijaya Lakṣmī is close to Dhairya Lakṣmī, courage, and to Gaja Lakṣmī, royal power. Where courage is the means, victory is the result. Her weapons are those of the warrior Goddess.</p><p>She is prayed to before any contest, from a cricket match to a court hearing. Tradition adds a condition: she blesses fair fights.</p></div></section>
+<section class="page" id="vijayadashami"><h2 class="page-title">VIJAYADAŚAMĪ</h2><div class="sub">The day of victory</div>
+<table class="ct fact"><tr><td>When</td><td>The tenth day of Āśvina’s bright fortnight, after Navarātri</td></tr><tr><td>Stories</td><td>Rāma’s victory over Rāvaṇa; Durgā’s over Mahiṣa; the Pāṇḍavas taking back their weapons from the śamī tree</td></tr><tr><td>Śamī</td><td>Leaves of the śamī tree are exchanged as “gold”</td></tr><tr><td>New beginnings</td><td>Children start school (vidyārambha); work and journeys begin</td></tr></table>
+<div class="panel reading"><p>Vijayadaśamī gathers several victory stories into one day. In the Mahābhārata tradition, the Pāṇḍavas hid their weapons in a śamī tree during their year in disguise and recovered them on this day before the battle against the Kauravas’ cattle raid.</p><p>In Karnataka and Maharashtra, śamī (bannī) leaves are exchanged as “gold” with greetings. The day is also auspicious for beginning studies and new ventures.</p></div></section>
+<section class="page" id="dasara"><h2 class="page-title">MYSURU DASARA</h2><div class="sub">Karnataka’s great victory festival</div>
+<table class="ct fact"><tr><td>Nāḍa Habba</td><td>Karnataka’s state festival</td></tr><tr><td>Cāmuṇḍeśvarī</td><td>The Goddess of Mysuru, slayer of Mahiṣa, is taken in a golden howdah on an elephant</td></tr><tr><td>Jambū Savārī</td><td>The great procession on Vijayadaśamī</td></tr><tr><td>Since</td><td>Kept with royal splendour since the Vijayanagara and Wodeyar kings</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Why Mysuru?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Mahiṣa's town, by tradition: Mahiṣūru. Victory over him is the city's story.</p></div></div>
+<div class="panel reading"><p>Mysuru Dasara is Karnataka’s Nāḍa Habba, state festival. Its climax, the Jambū Savārī, carries Goddess Cāmuṇḍeśvarī in a golden howdah on an elephant through the city on Vijayadaśamī, followed by the torchlight parade.</p><p>The festival’s royal style continues the Mahānavamī celebrations of the Vijayanagara kings, which foreign visitors to Hampi described in wonder in the 16th century.</p></div></section>
+<section class="page" id="arjuna"><h2 class="page-title">ARJUNA, “VIJAYA”</h2><div class="sub">The victorious one</div>
+<table class="ct fact"><tr><td>Name</td><td>One of Arjuna’s ten names is Vijaya, because he always won</td></tr><tr><td>Gītā</td><td>Arjuna says: I want no victory, Kṛṣṇa (na kāṅkṣe vijayaṃ, 1.32)</td></tr><tr><td>Last verse</td><td>The Gītā ends: where Kṛṣṇa and Arjuna are, there are Śrī, victory (vijaya), prosperity and justice (18.78)</td></tr><tr><td>Meaning</td><td>Victory follows dharma and skill together</td></tr></table><div class="key">See: <a href="/bhakti/vishnu/bhagavad-gita/chapter-18/#v78">Gītā 18.78</a></div>
+<div class="panel reading"><p>In the Virāṭa Parva, Arjuna explains his ten names to Prince Uttara. He is Vijaya because he never returned from battle without winning.</p><p>The Gītā’s last verse, spoken by Sañjaya, names victory with Śrī: where Kṛṣṇa, the master of yoga, and Arjuna, the archer, are together, there are fortune, victory, prosperity and justice. It is often taken as the Gītā’s own blessing.</p></div></section>
+<section class="page" id="rajya"><h2 class="page-title">RĀJA LAKṢMĪ</h2><div class="sub">Fortune of kings</div>
+<table class="ct fact"><tr><td>Kingship</td><td>Lakṣmī was the king’s fortune: if she left, the kingdom fell</td></tr><tr><td>Gupta coins</td><td>Gold coins show the king with Lakṣmī on the reverse</td></tr><tr><td>Coronation</td><td>The abhiṣeka bath, like Gaja Lakṣmī’s</td></tr><tr><td>Vijaya and Rājya</td><td>Some lists name Rājya Lakṣmī; others fold her into Vijaya</td></tr></table>
+<div class="panel reading"><p>In classical Indian political thought, the king’s fortune, rājalakṣmī or rājyaśrī, was a goddess who chose a king and could abandon him. Poets wrote of her as a fickle beloved who must be kept by righteous rule.</p><p>Gupta gold coins, among the finest of ancient India, often show Lakṣmī on the reverse, sometimes holding a cornucopia or lotus, as the king’s fortune.</p></div></section>
+<section class="page" id="vijayanagara"><h2 class="page-title">VIJAYANAGARA</h2><div class="sub">Karnataka’s city of victory</div>
+<table class="ct fact"><tr><td>Name</td><td>“City of Victory”, capital at Hampi from the 14th to 16th century</td></tr><tr><td>Founded</td><td>By Harihara and Bukka, traditionally with the blessing of the sage Vidyāraṇya</td></tr><tr><td>Gods</td><td>Virūpākṣa its guardian; Lakṣmī Narasiṃha, Viṭhṭhala and Rāma among its great shrines</td></tr><tr><td>Legacy</td><td>The Mysuru Dasara continues its Mahānavamī tradition</td></tr></table>
+<div class="panel reading"><p>Vijayanagara, founded in the 14th century, became one of the great cities of the world. Its name announced its purpose. Its temples at Hampi, Virūpākṣa, Viṭhṭhala, Hazāra Rāma and the giant monolithic Lakṣmī Narasiṃha, are now a UNESCO World Heritage Site.</p><p>The Wodeyars of Mysuru, once Vijayanagara’s feudatories, carried on its Dasara, which is why Mysuru’s celebration has imperial roots.</p></div></section>
+<section class="page" id="stotram"><h2 class="page-title">HER VERSE</h2><div class="sub">In the Aṣṭalakṣmī Stotram</div>
+<table class="ct fact"><tr><td>Theme</td><td>Her verse calls her victorious, worshipped by all, giver of knowledge and liberation</td></tr><tr><td>Tone</td><td>Triumphant, like a victory song</td></tr><tr><td>Refrain</td><td>It asks her to protect the singer always</td></tr><tr><td>Use</td><td>Before exams, contests and new ventures</td></tr></table>
+<div class="panel reading"><p>Her verse in the Stotram is triumphant, with drums and conches in its sounds. Students often recite it on exam mornings.</p><p>We describe rather than reproduce it.</p></div></section>
+<section class="page" id="inner"><h2 class="page-title">THE INNER VICTORY</h2><div class="sub">Over oneself</div>
+<table class="ct fact"><tr><td>Gītā 6.6</td><td>The self is friend to one who has conquered himself</td></tr><tr><td>Anger and greed</td><td>The six inner enemies are the hardest foes</td></tr><tr><td>Jaya</td><td>The epic itself was first called Jaya, “Victory”</td></tr><tr><td>Quiet wins</td><td>Keeping a promise, breaking a bad habit</td></tr></table><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is that also Vijaya Lakṣmī?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> The biggest victory of all, the teachers say.</p></div></div>
+<div class="panel reading"><p>The Gītā says that for one who has conquered the self, the self is a friend; for one who has not, it acts like an enemy (6.6). The traditional six inner enemies, lust, anger, greed, delusion, pride and envy, are the hardest to defeat.</p><p>The Mahābhārata itself, scholars note, was once known as Jaya, “Victory”, and its invocation verse still ends with that word.</p></div></section>
+<section class="page" id="meaning"><h2 class="page-title">WHAT SHE TEACHES</h2><div class="sub">Win rightly</div>
+<table class="ct fact"><tr><td>Effort and grace</td><td>Victory needs both</td></tr><tr><td>Fair means</td><td>Victory by wrong means is not her gift</td></tr><tr><td>Humility in winning</td><td>Rāma honoured Rāvaṇa in death</td></tr><tr><td>Beginnings</td><td>Every new start is a small victory</td></tr></table>
+<div class="panel reading"><p>Vijaya Lakṣmī teaches that victory is a gift and a responsibility: won through effort and grace, by fair means, and carried with humility. Rāma ordered full funeral honours for Rāvaṇa: enmity ends with death.</p><p>Every beginning, a new school year, a new job, is a small victory, which is why Vijayadaśamī is a day for starting things.</p></div></section>
+<section class="page" id="end"><h2 class="page-title">ON ONE PAGE</h2><div class="sub">In a few lines</div>
+<div class="steps"><div><b>Who.</b> Lakṣmī of victory, also Jaya Lakṣmī</div><div><b>Days.</b> Vijayadaśamī; Mysuru Dasara</div><div><b>Figures.</b> Arjuna “Vijaya”; Rāja Lakṣmī; Vijayanagara</div><div><b>Inner.</b> Victory over oneself is the greatest</div><div><b>Lesson.</b> Win rightly, and win with grace</div></div><div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> One line?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> Where dharma and skill meet, there victory lives.</p></div></div><div class="key">Next: <a href="/bhakti/devi/ashta-lakshmi/vidya/">Vidyā Lakṣmī</a></div><div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+<section class="page" id="sources"><h2 class="page-title">SOURCES &amp; NOTES</h2><div class="sub">Where the facts come from</div>
+<div class="panel reading small"><p><b>Sources:</b> Bhagavad Gītā 1.32, 6.6, 18.78; Mahābhārata, Virāṭa Parva (Arjuna’s ten names); Gupta numismatics; Karnataka Tourism and Mysuru Palace Board on Dasara; histories of Vijayanagara.</p><p><b>Sources differ / unverified:</b> Her weapons vary by image; Vidyāraṇya’s role in the founding of Vijayanagara is traditional and debated by historians; the identification of Mysuru with Mahiṣa’s town is traditional. The Aṣṭalakṣmī Stotram is a modern composition; we describe it but do not reproduce it. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</p></div>
+</section>
+</div>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/bhakti/">Bhakti</a><span class="sep">›</span><a href="/bhakti/gods/">Gods and Goddesses</a><span class="sep">›</span><a href="/bhakti/devi/">Devi</a><span class="also">More for Devi: <a href="/bhakti/devi/#hymns">hymns</a> · <a href="/bhakti/devi/#scriptures">scriptures</a> · <a href="/bhakti/devi/#temples">temples</a></span></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

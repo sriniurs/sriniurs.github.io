@@ -10,6 +10,14 @@
    "tile": "<li><a href=\"/bhakti/devi/dasha-mahavidya/\"><div class=\"tile-art\" style=\"background:#3a1414\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"82.0\" cy=\"50.0\" r=\"7\" fill=\"#1a1a2a\"/><circle cx=\"75.9\" cy=\"68.8\" r=\"7\" fill=\"#3b4fa0\"/><circle cx=\"59.9\" cy=\"80.4\" r=\"7\" fill=\"#c0392b\"/><circle cx=\"40.1\" cy=\"80.4\" r=\"7\" fill=\"#e0115f\"/><circle cx=\"24.1\" cy=\"68.8\" r=\"7\" fill=\"#a01a1a\"/><circle cx=\"18.0\" cy=\"50.0\" r=\"7\" fill=\"#e05a3a\"/><circle cx=\"24.1\" cy=\"31.2\" r=\"7\" fill=\"#9a9a9a\"/><circle cx=\"40.1\" cy=\"19.6\" r=\"7\" fill=\"#ffd60a\"/><circle cx=\"59.9\" cy=\"19.6\" r=\"7\" fill=\"#2a9d6f\"/><circle cx=\"75.9\" cy=\"31.2\" r=\"7\" fill=\"#f2c070\"/><circle cx=\"50\" cy=\"50\" r=\"14\" fill=\"#ffd60a\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Series · overview + 10 Goddesses</strong><h2>Daśa Mahāvidyā</h2><p>The ten Great Wisdoms, Kālī to Kamalā: who each Goddess is, her stories, meaning and temples.</p><span class=\"read\">Open series ↗</span></div></a></li>"
   },
   {
+   "path": "/bhakti/devi/ashta-lakshmi/",
+   "door": "gods",
+   "deities": [
+    "devi"
+   ],
+   "tile": "<li><a href=\"/bhakti/devi/ashta-lakshmi/\"><div class=\"tile-art\" style=\"background:#ffe3ec\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50.0\" cy=\"18.0\" r=\"8\" fill=\"#e0115f\"/><circle cx=\"72.6\" cy=\"27.4\" r=\"8\" fill=\"#2a9d6f\"/><circle cx=\"82.0\" cy=\"50.0\" r=\"8\" fill=\"#c0392b\"/><circle cx=\"72.6\" cy=\"72.6\" r=\"8\" fill=\"#d8d8e0\"/><circle cx=\"50.0\" cy=\"82.0\" r=\"8\" fill=\"#ffd60a\"/><circle cx=\"27.4\" cy=\"72.7\" r=\"8\" fill=\"#e05a3a\"/><circle cx=\"18.0\" cy=\"50.1\" r=\"8\" fill=\"#ffffff\"/><circle cx=\"27.3\" cy=\"27.4\" r=\"8\" fill=\"#e0a800\"/><circle cx=\"50\" cy=\"50\" r=\"12\" fill=\"#f2a6c0\"/></g></svg></div><div class=\"tile-copy\"><strong class=\"label\">Series · overview + 8 forms</strong><h2>Aṣṭa Lakṣmī</h2><p>The eight forms of Lakṣmī, from Ādi to Dhana: grain, courage, elephants, family, victory, knowledge and wealth.</p><span class=\"read\">Open series ↗</span></div></a></li>"
+  },
+  {
    "path": "/bhakti/shiva/shiva-family-and-symbols/",
    "door": "gods",
    "deities": [
