@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Imperishable · Bhagavad Gītā Chapter 8 · srini.presents</title>
+<meta name="description" content="Bhagavad Gītā chapter 8, Akṣara Brahma Yoga, every śloka explained: Arjuna’s seven questions, remembering the Lord at death, “remember me and fight”, Oṃ, the days and nights of Brahmā, and the bright and dark paths. All 28 ślokas in IAST, each on two pages.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#111;
+    --paper:#fffaf0;
+    --page:#fbe9d7;
+    --yellow:#ffd60a;
+    --red:#c0392b;
+    --saffron:#ff8c1a;
+    --blue:#1d6fb8;
+    --green:#2a9d6f;
+    --purple:#7a3fa0;
+    --dot:rgba(0,0,0,.10);
+    --c-yellow:#fff3b0;--c-blue:#dcecff;--c-red:#ffe0e0;--c-green:#ddf5ea;--c-purple:#ece0fa;--c-saffron:#ffe3c4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  }
+  :root[data-theme="dark"]{--page:#2a1d16;--dot:rgba(255,255,255,.08)}
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    margin:0;background:var(--page);color:var(--ink);
+    font-family:"Comic Neue","Noto Sans","Comic Sans MS",cursive;font-size:16.5px;line-height:1.5;
+    background-image:radial-gradient(var(--dot) 1px,transparent 1.4px);background-size:10px 10px;
+  }
+  .book{max-width:1000px;margin:0 auto;padding:24px 16px 60px}
+  h1,h2,h3,h4,.bang{font-family:"Bangers",Impact,sans-serif;letter-spacing:1.2px;font-weight:400;margin:0}
+  p{margin:6px 0}
+  ul{margin:6px 0;padding-left:20px} li{margin:3px 0}
+  i,em{font-family:"Noto Sans",sans-serif;font-style:italic;font-size:.95em}
+
+  .page{background:var(--paper);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:18px;margin:46px 0 30px;position:relative}
+  .page-title{display:inline-block;background:var(--yellow);border:4px solid var(--ink);padding:6px 18px;font-size:32px;transform:rotate(-1.2deg);box-shadow:5px 5px 0 var(--ink);margin:-44px 0 14px -6px}
+  .sub{font-family:Bangers;font-size:20px;color:var(--red);margin:-4px 0 10px;letter-spacing:1px}
+
+  .panel{border:4px solid var(--ink);background:#fff;padding:12px 14px;position:relative;margin:0 0 12px}
+  .halftone{background-image:radial-gradient(rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:8px 8px}
+  .bg-yellow{background-color:var(--c-yellow)}.bg-blue{background-color:var(--c-blue)}.bg-red{background-color:var(--c-red)}
+  .bg-green{background-color:var(--c-green)}.bg-purple{background-color:var(--c-purple)}.bg-saffron{background-color:var(--c-saffron)}
+  .panel > h3{font-size:24px;margin-bottom:6px}
+  .panel:has(> .burst) > h3{padding-right:130px}
+
+  .g2,.g3,.g4{display:grid;gap:10px;margin:0 0 12px}
+  .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{border:3px solid var(--ink);background:#fff;padding:9px 11px;box-shadow:4px 4px 0 var(--ink)}
+  .card h4{font-size:19px;margin-bottom:3px}
+  .card p{margin:2px 0}
+
+  .caption{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:2px 10px;font-weight:700;font-size:13.5px;text-transform:uppercase;margin-bottom:8px}
+  .num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 4px;border-radius:17px;background:var(--red);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:18px;margin-right:8px;flex:none}
+
+  .bubble{position:relative;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:8px 13px;margin:8px 0 20px}
+  .bubble:after{content:"";position:absolute;bottom:-18px;left:30px;border:9px solid transparent;border-top:12px solid var(--ink)}
+  .bubble:before{content:"";position:absolute;bottom:-12px;left:33px;border:6px solid transparent;border-top:9px solid #fff;z-index:1}
+  .bubble.right:after{left:auto;right:30px}.bubble.right:before{left:auto;right:33px}
+  .bubble.lion{background:#ffe3c4}.bubble.lion:before{border-top-color:#ffe3c4}
+  .bubble.me{background:#fff3b0}.bubble.me:before{border-top-color:#fff3b0}
+  .who{font-family:Bangers;font-size:17px;letter-spacing:1px}
+
+  .burst{position:absolute;font-family:Bangers;color:#fff;background:var(--red);border:3px solid var(--ink);padding:5px 11px;transform:rotate(7deg);top:8px;right:10px;font-size:19px;box-shadow:3px 3px 0 var(--ink);z-index:2;
+    clip-path:polygon(0 15%,12% 0,30% 10%,50% 0,70% 10%,88% 0,100% 15%,94% 50%,100% 85%,88% 100%,70% 90%,50% 100%,30% 90%,12% 100%,0 85%,6% 50%)}
+  .burst.yel{background:var(--yellow);color:var(--ink)}
+
+  .plain{border:3px dashed var(--ink);background:#fff;padding:8px 12px;margin:0 0 12px;border-radius:10px}
+  .plain:before{content:"🧠 IN PLAIN WORDS: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .key{background:var(--ink);color:#fff;padding:9px 14px;margin:0 0 12px;border:3px solid var(--ink)}
+  .key b{color:var(--yellow)}
+.key a{color:#8fd3ff;text-decoration:underline}
+  .key:before{content:"⚡ TAKEAWAY: ";font-family:Bangers;letter-spacing:1px;color:var(--yellow);font-size:17px}
+  .inner{background:var(--c-purple);border-left:6px solid var(--purple);padding:7px 11px;margin:6px 0 10px}
+  .inner:before{content:"🪔 INNER TEACHING: ";font-family:Bangers;letter-spacing:1px;color:var(--purple);font-size:17px}
+  .note{background:var(--c-blue);border-left:6px solid var(--blue);padding:6px 10px;margin:6px 0 10px;font-size:15px}
+  .note:before{content:"📌 NOTE: ";font-weight:700}
+
+  table.ct{border-collapse:collapse;width:100%;background:#fff;margin:0 0 12px;font-size:15px}
+  table.ct th,table.ct td{border:3px solid var(--ink);padding:6px 9px;text-align:left;vertical-align:top}
+  table.ct th{background:var(--yellow);font-family:Bangers;letter-spacing:1px;font-size:17px;font-weight:400}
+  table.ct tr:nth-child(even) td{background:#fff7ef}
+  table.ct td.w{font-family:"Noto Sans",sans-serif;font-style:italic;font-weight:700;white-space:nowrap}
+
+  .quiz{border:4px solid var(--ink);background:#4a1f14;color:#fff;padding:12px 14px;margin:0 0 12px}
+  .quiz .q{font-weight:700;margin-bottom:6px}
+  .quiz .q:before{content:"QUICK CHECK ❓ ";font-family:Bangers;color:var(--yellow);font-size:18px;letter-spacing:1px}
+  .quiz ol{list-style:upper-alpha;margin:4px 0;padding-left:24px}
+  .quiz li.ok{color:#7dffb5;font-weight:700}
+  .quiz li.ok:after{content:"  ✔ CORRECT"}
+  .quiz .why{background:#fff;color:var(--ink);padding:5px 9px;margin-top:6px;border-radius:6px}
+  .quiz .why b{color:var(--red)}
+
+  .steps{counter-reset:s;display:grid;gap:8px;margin:0 0 12px}
+  .steps div{border:3px solid var(--ink);background:#fff;padding:8px 10px 8px 52px;position:relative;min-height:46px}
+  .steps div:before{counter-increment:s;content:counter(s);position:absolute;left:8px;top:7px;width:32px;height:32px;border-radius:50%;background:var(--saffron);color:#fff;border:3px solid var(--ink);font-family:Bangers;font-size:19px;display:flex;align-items:center;justify-content:center}
+
+  /* Verse block */
+  .sloka{border:5px solid var(--ink);background:var(--c-saffron);margin:22px 0 16px;padding:0 14px 12px;box-shadow:7px 7px 0 var(--red);position:relative}
+  .sloka-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 -14px 10px;padding:8px 14px;background:var(--red);color:#fff;border-bottom:4px solid var(--ink)}
+  .sloka-head h3{font-size:28px;color:#fff;text-shadow:2px 2px 0 var(--ink)}
+  .sloka-head .theme{font-family:Bangers;font-size:19px;letter-spacing:1px;color:var(--yellow);flex:1}
+  .date{font-family:Bangers;letter-spacing:1px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:1px 10px;font-size:16px}
+  .iast{font-family:"Noto Sans",sans-serif;font-style:italic;background:#fff;border:3px solid var(--ink);padding:9px 12px;line-height:1.65;font-size:15.5px;margin:0 0 10px}
+  .iast:before{content:"🔤 CHANT (TRANSLITERATION)";display:block;font-family:Bangers;font-style:normal;letter-spacing:1px;color:var(--red);font-size:16px;margin-bottom:2px}
+  .mean{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:9px 12px;margin:0 0 10px}
+  .mean:before{content:"💬 WHAT IT SAYS";display:block;font-family:Bangers;letter-spacing:1px;color:var(--blue);font-size:16px;margin-bottom:2px}
+  .vfig{display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}
+  .vfig svg{flex:none;background:#fff;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+  .vfig .mean{flex:1;margin:0}
+  @media (max-width:720px){.vfig{flex-direction:column}.vfig svg{align-self:center;max-width:100%;height:auto}}
+
+  .fig{display:block;margin:6px auto;max-width:100%;height:auto}
+  .center{text-align:center}
+
+  .cover{text-align:center;background:linear-gradient(135deg,#ffb04d,#c0392b);padding:30px 18px;overflow:hidden}
+  .cover h1{font-size:clamp(38px,7vw,76px);color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);line-height:.95}
+  .cover .tag{font-family:Bangers;font-size:clamp(18px,3.5vw,26px);color:#fff;text-shadow:2px 2px 0 var(--ink);margin-top:10px}
+  .rays{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 45%,rgba(255,255,255,.18) 0 8deg,transparent 8deg 16deg);pointer-events:none}
+  .cover > *:not(.burst):not(.rays){position:relative}
+
+  .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;list-style:none;padding:0;margin:0}
+  @media (max-width:600px){.toc{grid-template-columns:1fr}}
+  .toc li{border:3px solid var(--ink);background:#fff;padding:6px 10px;display:flex;align-items:center;font-weight:700;margin:0}
+  .toc a{color:inherit;text-decoration:none}
+  .toc .part{grid-column:1/-1;background:var(--ink);color:var(--yellow);font-family:Bangers;letter-spacing:1.5px;font-size:20px}
+  .gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 14px}
+  @media (max-width:720px){.gloss{grid-template-columns:1fr}}
+  .gloss div{border-bottom:2px dotted #999;padding:3px 0}
+  .gloss b{font-family:"Noto Sans",sans-serif;font-style:italic;color:var(--red)}
+
+  .ch-end{display:flex;align-items:center;gap:10px;margin:18px -18px -18px;padding:10px 16px;background:var(--ink);color:#fff;flex-wrap:wrap}
+  .ch-end .lbl{font-family:Bangers;letter-spacing:1.5px;font-size:20px;color:var(--yellow);flex:1}
+  .ch-end .lbl:before{content:"■ "}
+  .ch-end a{font-family:Bangers;letter-spacing:1px;font-size:18px;color:var(--ink);background:var(--yellow);border:3px solid #fff;padding:4px 14px;text-decoration:none;box-shadow:3px 3px 0 var(--red)}
+  .ch-end a:hover{background:#fff}
+
+  @media (max-width:600px){
+    .book{padding:16px 16px 40px}
+    .page{padding:12px;box-shadow:6px 6px 0 var(--ink)}
+    .page-title{font-size:23px}
+    .sloka{padding:0 10px 10px}
+    .sloka-head{margin:0 -10px 10px;padding:8px 10px}
+    table.ct{font-size:13px}
+    table.ct th,table.ct td{padding:4px 5px;word-break:break-word}
+    table.ct td.w{white-space:normal}
+    .panel:has(> .burst) > h3{padding-right:0;margin-top:30px}
+    .burst{font-size:15px}
+    .ch-end{margin:14px -12px -12px}
+  }
+
+  @page{size:A4;margin:10mm 9mm}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{font-size:12.5px}
+    .book{max-width:none;padding:0}
+    .page{box-shadow:none;margin:14px 0 10px;padding:12px;break-inside:auto}
+    .page-title{display:block;width:fit-content;margin:0 0 10px;transform:none;font-size:25px;break-after:avoid}
+    .panel,.card,.bubble,.quiz,.plain,.key,.inner,.steps div,.toc li,table.ct tr,.cover,.fig,.iast,.mean,.vfig,.ch-end,.sloka-head{break-inside:avoid}
+    .sloka{box-shadow:none}
+    .ch-end{margin:12px -12px -12px}
+  }
+
+  :root{--skin:#f2c79b;--hair:#151515;--grey:#d9d9d9;--gold:#e0a800}
+  .cover{background:linear-gradient(135deg,#ffd166,#e0a800 45%,#c0392b)}
+  .byline{font-family:Bangers;letter-spacing:2px;font-size:22px;color:#fff;text-shadow:2px 2px 0 var(--ink);margin:0 0 6px}
+  .cast{display:flex;justify-content:center;gap:26px;margin:12px 0 4px}
+  .cast figure{margin:0;font-weight:700;color:#fff;text-shadow:1px 1px 0 #000;font-size:15px}
+  .cast svg{width:74px;height:74px;display:block;margin:0 auto 4px;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .cast small{font-weight:400}
+  .talk{display:grid;gap:6px;margin:0 0 12px}
+  .say{display:flex;gap:9px;align-items:flex-start}
+  .say.b{flex-direction:row-reverse}
+  .say svg.av{width:46px;height:46px;flex:none;background:#fff;border:3px solid var(--ink);border-radius:50%}
+  .say .bubble{margin:2px 0;flex:1}
+  .say .bubble:after,.say .bubble:before{display:none}
+  .say.z .bubble{background:#dcecff}
+  .say.b .bubble{background:#ffe0e0}
+  .vno{font-family:Bangers;font-size:26px;color:#fff;background:var(--ink);border:3px solid var(--ink);padding:0 10px;margin-right:4px}
+  .reading p{margin:0 0 9px;font-size:17px;line-height:1.6}
+  .reading p:last-child{margin-bottom:0}
+  .contlink{font-family:Bangers;letter-spacing:1px;font-size:19px;color:var(--red)}
+  .full{columns:2;column-gap:28px;column-rule:2px dotted #c9a26b;font-family:"Noto Sans",sans-serif;font-style:italic;font-size:16px;line-height:1.6;background:#fff;border:3px solid var(--ink);padding:14px 18px}
+  .full .ln{display:block;padding-left:1.4em;text-indent:-1.4em}
+  .full .end{white-space:nowrap;font-style:normal;font-weight:700;color:var(--red);font-size:.85em;margin-left:.4em}
+  .full .ref{color:#7a5a2a}
+  .full p{break-inside:avoid;margin:0 0 14px;padding-bottom:10px;border-bottom:1px dashed #e2cfa8}
+  .full p:last-child{border-bottom:0}
+  .full .vn{font-family:Bangers;font-style:normal;color:var(--red);letter-spacing:1px;font-size:17px;display:block}
+  @media(max-width:720px){.full{columns:1;font-size:16.5px}}
+  .follow{border:4px dashed var(--ink);background:#fff;padding:18px;text-align:center;font-size:18px;margin:30px 0 12px}
+  .follow b{font-family:Bangers;font-weight:400;font-size:28px;letter-spacing:1.5px;display:block}
+  .follow a{font-weight:700;color:var(--blue)}
+  .card h4,.ch-end .lbl{font-family:"Comic Neue","Noto Sans",sans-serif;font-weight:700;letter-spacing:0}
+  /* v2 fixes: phone chant layout, cover contrast, responsive cover art */
+  .iast .cl{display:block;padding-left:1.2em;text-indent:-1.2em}
+  .iast.two{column-gap:26px;column-rule:1px dotted #c9a26b}
+  @media(min-width:721px){.iast.two{columns:2}}
+  .cover h1{color:#ffd60a;-webkit-text-stroke:3px var(--ink);paint-order:stroke fill}
+  .cover svg{max-width:100%;height:auto}
+  @media(max-width:720px){
+    .iast{font-size:15px;line-height:1.55;padding:8px 10px}
+    .full{font-size:15px;padding:12px 12px}
+    .full .ln{padding-left:1em;text-indent:-1em}
+    .cover .burst{position:relative;display:inline-block;top:0;right:0;margin:0 0 10px}
+  }
+  @media print{
+    .iast.two{columns:2;font-size:12px;line-height:1.45}
+    section.page{break-before:page}
+    section.page.cover{break-before:auto}
+    .ch-end{display:none}
+    #story svg.fig{width:330px;height:auto}
+    .steps{gap:5px}
+    .steps div{padding-top:5px;padding-bottom:5px;min-height:0}
+    .follow{margin:10px 0 0;padding:8px;font-size:15px}
+    .follow b{font-size:22px}
+    footer{display:none}
+    #end .g4{display:none}
+    .reading p{font-size:13.5px;line-height:1.5}
+    .full{font-size:11.5px;line-height:1.42;padding:8px 12px}
+    .full p{margin:0 0 5px;padding-bottom:4px}
+    .full .vn{font-size:13px}
+    .contlink{display:none}
+    .vfig svg{width:300px;height:auto}
+    .mean{font-size:14px}
+  }
+
+  /* Śiva theme: navy */
+  .cover{background:linear-gradient(135deg,#2c5f9e,#0b2a4a 55%,#04101f)}
+  .sloka-head{background:#0b2a4a}
+  .sloka{background:#dfe9f6;box-shadow:7px 7px 0 #0b2a4a}
+  .sub{color:#1d4f9a}
+  .num{background:#0b2a4a}
+  .steps div:before{background:#1d4f9a}
+  .full .vn,.full .end{color:#1d4f9a}
+  .full .ref{color:#5b6f8a}
+  .iast:before{color:#1d4f9a}
+  .contlink{color:#1d4f9a}
+
+  .cover{background:radial-gradient(circle at 50% 38%,#2c5f9e,#0b2a4a 55%,#04101f)}
+  @media print{
+    .sloka table.ct td,.sloka table.ct th{padding:2px 8px;font-size:12px}
+    .sloka .mean{font-size:12.5px;line-height:1.4}
+    .sloka .plain{font-size:12.5px;padding:5px 8px}
+    .sloka .vfig svg{width:250px}
+    .sloka .iast{margin-bottom:6px}
+    #full .f2{break-before:page;margin-top:0}
+  }
+  .series{display:inline-block;font-family:Bangers;letter-spacing:1.5px;background:#ffd60a;color:#111;border:3px solid #111;padding:2px 12px;font-size:18px;margin:6px 0 2px;box-shadow:3px 3px 0 #111}
+
+  .jl td:first-child{font-family:Bangers;letter-spacing:1px;color:#1d4f9a;font-size:17px;text-align:center}
+  @media print{.jl td,.jl th{padding:3px 6px;font-size:11.5px}}
+  /* Viṣṇu theme: light blue */
+  .cover{background:radial-gradient(circle at 50% 38%,#8fd0f5,#1d6fb8 55%,#0b3d6e)}
+  .sloka-head{background:#1d6fb8}
+  .sloka{background:#e3f2fd;box-shadow:7px 7px 0 #1d6fb8}
+  .sub{color:#1d6fb8}
+  .num{background:#1d6fb8}
+  .steps div:before{background:#1d6fb8}
+  .full .vn,.full .end{color:#1d6fb8}
+  .iast:before{color:#1d6fb8}
+  .contlink{color:#1d6fb8}
+  .iast .cl2{padding-left:2.2em}
+  .full .ln2{padding-left:2.2em}
+  .full p{margin:0 0 6px}
+  .iast .spk,.full .spk{display:block;font-style:normal;font-family:Bangers,Impact,sans-serif;letter-spacing:1px;color:var(--blue);font-size:13px;margin-top:2px}
+  .full .col{display:block;margin-top:10px;font-size:13px;color:#5b6f8a}
+  .pt{font-size:14.5px;line-height:1.45;margin:8px 0}
+  .toc.tight{gap:5px;grid-template-columns:repeat(3,1fr)}.toc.tight li{padding:3px 8px;font-size:13px}.toc.tight .part{font-size:16px}
+  .vfig svg{max-height:150px;width:auto}
+  .key a{color:#8fd3ff;text-decoration:underline}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+  .grid2>div{border:3px solid var(--ink);background:#fff;padding:7px 9px;box-shadow:3px 3px 0 var(--ink);font-size:13.5px;line-height:1.4}
+  .grid2 h4{margin:0 0 2px;font-family:Bangers,Impact,sans-serif;letter-spacing:1px;font-size:17px;color:var(--blue)}
+  @media(max-width:720px){.iast .cl2{padding-left:1.4em}.full .ln2{padding-left:1.4em}.grid2{grid-template-columns:1fr}}
+  .dd{border:3px solid var(--ink);background:#fff;padding:9px 12px;margin:10px 0;box-shadow:4px 4px 0 var(--ink)}
+  .dd h4{margin:0 0 4px;font-family:Bangers,Impact,sans-serif;letter-spacing:1px;font-size:19px;color:var(--blue)}
+  .dd p{margin:0;font-size:15px;line-height:1.5}
+  @media print{.dd p{font-size:15.5px;line-height:1.55}.dd{margin:12px 0;padding:10px 13px}}
+  .toc.vt{grid-template-columns:repeat(4,1fr);gap:3px}.toc.vt li{padding:2px 6px;font-size:11.5px}
+  @media(max-width:720px){.toc.vt{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<!-- sitenav:auto --><style>
+.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
+padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
+backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
+border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
+.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
+.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
+.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
+.sp-bar .sp-brand img{display:block;height:36px;width:auto}
+.sp-bar .sp-brand:hover{background:none}
+@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
+@media print{.sp-bar{display:none}}
+</style>
+<nav class="sp-bar" aria-label="Site">
+<a href="/bhakti/vishnu/bhagavad-gita/" id="sp-back" aria-label="Go back">&larr; Back</a>
+<a href="/" aria-label="Home page">&#8962; Home</a>
+<a href="/search/" aria-label="Search articles">Search</a>
+<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</nav>
+<script>
+(function(){var b=document.getElementById('sp-back');if(!b)return;
+b.addEventListener('click',function(e){var r=document.referrer;
+if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
+</script>
+<!-- /sitenav:auto -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kiran" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#1d6fb8" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 26 L20 14 L25 21 L29 11 L33 20 L38 11 L41 21 L46 15 L47 27 Q32 19 17 26Z" fill="#151515" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26.5" cy="31" r="2" fill="#151515"/><circle cx="37.5" cy="31" r="2" fill="#151515"/>
+    <path d="M26 37 Q32 42 38 37" stroke="#151515" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol><symbol id="guru" viewBox="0 0 64 64">
+    <rect x="12" y="46" width="40" height="22" rx="10" fill="#c0392b" stroke="#151515" stroke-width="2"/>
+    <circle cx="32" cy="30" r="15" fill="#f2c79b" stroke="#151515" stroke-width="2"/>
+    <path d="M17 30 Q16 16 32 15 Q48 16 47 30 Q44 21 32 21 Q20 21 17 30Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+    <circle cx="26" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/><circle cx="38" cy="30" r="4.5" fill="#fff" stroke="#151515" stroke-width="2"/>
+    <line x1="30.5" y1="30" x2="33.5" y2="30" stroke="#151515" stroke-width="2"/>
+    <circle cx="26" cy="30" r="1.5" fill="#151515"/><circle cx="38" cy="30" r="1.5" fill="#151515"/>
+    <path d="M25 39 Q32 35 39 39 Q32 41 25 39Z" fill="#d9d9d9" stroke="#151515" stroke-width="1.5"/>
+  </symbol></svg>
+<div class="book">
+
+<section class="page cover">
+  <div class="rays"></div>
+  <div class="burst yel">CHAPTER 8 OF 18</div>
+  <p class="byline">Srini presents</p>
+  <h1 style="font-size:clamp(24px,7vw,72px)">THE IMPERISHABLE</h1>
+  <div class="series">BHAGAVAD GĪTĀ · CHAPTER 8 · AKṢARA BRAHMA YOGA</div>
+  <div class="tag">What you remember at the end · every śloka explained</div>
+  <svg width="380" height="268" viewBox="0 0 380 268" role="img" aria-label="Two paths leaving a lamp at life’s end: a bright path of fire and sun rising upward, and a smoky path to the moon curving back"><rect width="380" height="268" fill="#0b2a4a" rx="8"/><circle cx="300" cy="60" r="34" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/><path d="M80 38 a22 22 0 1 0 0 44 a28.6 28.6 0 0 1 0 -44z" fill="#fff8c0" stroke="#111" stroke-width="2"/><path d="M190 240 Q240 160 300 90" fill="none" stroke="#ffd60a" stroke-width="12"/><path d="M190 240 Q140 160 80 90" fill="none" stroke="#888" stroke-width="12" stroke-dasharray="10 6"/><g transform="translate(190 244) scale(2.2)" stroke="#111" stroke-width="2"><path d="M-18 0 q18 14 36 0z" fill="#e0a800"/><path d="M0 -2 q-8 -14 0 -30 q8 16 0 30z" fill="#ffd60a"/><path d="M0 -6 q-3 -8 0 -16 q3 8 0 16z" fill="#ff8c1a" stroke="none"/></g><text x="190" y="30" text-anchor="middle" font-family="Bangers" font-size="30" fill="#ffd60a">OṂ</text></svg>
+  <div class="cast">
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>asks the questions</small></figure>
+    <figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>has the answers</small></figure>
+  </div>
+  <div class="bubble" style="max-width:620px;margin:10px auto 4px;text-align:left">
+    <span class="who">HOW THIS WORKS:</span> The whole chapter <b>in one go</b> for chanting, then <b>every śloka on two pages</b>: first the chant, a picture, what it says and the key words; then a deep dive into its context, how the great teachers read it, and what it means for us today.
+  </div>
+</section>
+
+<section class="page" id="foreword">
+  <h2 class="page-title">WHERE WE ARE</h2>
+  <div class="panel bg-saffron halftone" style="font-size:17px;line-height:1.6">
+    <p>In <a href="/bhakti/vishnu/bhagavad-gita/chapter-7/">Chapter 7</a> Kṛṣṇa revealed his two natures and ended with words like adhyātma and adhiyajña, and a hint about the moment of death.</p><p>Chapter 8 answers Arjuna’s seven questions. Its heart is simple: what you remember at death, you become; so remember me at all times, and fight. Then Kṛṣṇa opens a vast view of cosmic time and the two paths of departure.</p>
+    <p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:var(--blue)">With the blessings of the Lord,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p>
+  </div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> Is this a chapter about death?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> About death, and so about life: what we practise remembering every day is what we will remember at the end.</p></div></div>
+</section>
+
+<section class="page" id="full">
+  <h2 class="page-title">THE CHAPTER IN ONE GO</h2>
+  <div class="sub">Chapter 8, ślokas 1–14 (of 28)</div>
+  <div class="full"><p><span class="vn">8.1</span><span class="spk">arjuna uvāca</span><span class="ln">kiṃ tadbrahma kimadhyātmaṃ kiṃ karma puruṣottama</span><span class="ln ln2">adhibhūtaṃ ca kiṃ proktamadhidaivaṃ kimucyate<span class="end">‖ 1 ‖</span></span></p><p><span class="vn">8.2</span><span class="ln">adhiyajñaḥ kathaṃ ko’tra dehe’sminmadhusūdana</span><span class="ln ln2">prayāṇakāle ca kathaṃ jñeyo’si niyatātmabhiḥ<span class="end">‖ 2 ‖</span></span></p><p><span class="vn">8.3</span><span class="spk">śrībhagavān uvāca</span><span class="ln">akṣaraṃ brahma paramaṃ svabhāvo’dhyātmamucyate</span><span class="ln ln2">bhūtabhāvodbhavakaro visargaḥ karmasaṃjñitaḥ<span class="end">‖ 3 ‖</span></span></p><p><span class="vn">8.4</span><span class="ln">adhibhūtaṃ kṣaro bhāvaḥ puruṣaścādhidaivatam</span><span class="ln ln2">adhiyajño’hamevātra dehe dehabhṛtāṃ vara<span class="end">‖ 4 ‖</span></span></p><p><span class="vn">8.5</span><span class="ln">antakāle ca māmeva smaranmuktvā kalevaram</span><span class="ln ln2">yaḥ prayāti sa madbhāvaṃ yāti nāstyatra saṃśayaḥ<span class="end">‖ 5 ‖</span></span></p><p><span class="vn">8.6</span><span class="ln">yaṃ yaṃ vāpi smaranbhāvaṃ tyajatyante kalevaram</span><span class="ln ln2">taṃ tamevaiti kaunteya sadā tadbhāvabhāvitaḥ<span class="end">‖ 6 ‖</span></span></p><p><span class="vn">8.7</span><span class="ln">tasmātsarveṣu kāleṣu māmanusmara yudhya ca</span><span class="ln ln2">mayyarpitamanobuddhirmāmevaiṣyasyasaṃśayam<span class="end">‖ 7 ‖</span></span></p><p><span class="vn">8.8</span><span class="ln">abhyāsayogayuktena cetasā nānyagāminā</span><span class="ln ln2">paramaṃ puruṣaṃ divyaṃ yāti pārthānucintayan<span class="end">‖ 8 ‖</span></span></p><p><span class="vn">8.9</span><span class="ln">kaviṃ purāṇamanuśāsitāra</span><span class="ln ln2">maṇoraṇīyāṃsamanusmaredyaḥ</span><span class="ln">sarvasya dhātāramacintyarūpa</span><span class="ln ln2">mādityavarṇaṃ tamasaḥ parastāt<span class="end">‖ 9 ‖</span></span></p><p><span class="vn">8.10</span><span class="ln">prayāṇakāle manasā’calena</span><span class="ln ln2">bhaktyā yukto yogabalena caiva</span><span class="ln">bhruvormadhye prāṇamāveśya samyak</span><span class="ln ln2">sa taṃ paraṃ puruṣamupaiti divyam<span class="end">‖ 10 ‖</span></span></p><p><span class="vn">8.11</span><span class="ln">yadakṣaraṃ vedavido vadanti</span><span class="ln ln2">viśanti yadyatayo vītarāgāḥ</span><span class="ln">yadicchanto brahmacaryaṃ caranti</span><span class="ln ln2">tatte padaṃ saṃgraheṇa pravakṣye<span class="end">‖ 11 ‖</span></span></p><p><span class="vn">8.12</span><span class="ln">sarvadvārāṇi saṃyamya mano hṛdi nirudhya ca</span><span class="ln ln2">mūrdhnyādhāyātmanaḥ prāṇamāsthito yogadhāraṇām<span class="end">‖ 12 ‖</span></span></p><p><span class="vn">8.13</span><span class="ln">omityekākṣaraṃ brahma vyāharanmāmanusmaran</span><span class="ln ln2">yaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim<span class="end">‖ 13 ‖</span></span></p><p><span class="vn">8.14</span><span class="ln">ananyacetāḥ satataṃ yo māṃ smarati nityaśaḥ</span><span class="ln ln2">tasyāhaṃ sulabhaḥ pārtha nityayuktasya yoginaḥ<span class="end">‖ 14 ‖</span></span></p></div>
+</section>
+
+<section class="page" id="full1">
+  <h2 class="page-title">IN ONE GO · CONTINUED</h2>
+  <div class="sub">Chapter 8, ślokas 15–28</div>
+  <div class="full"><p><span class="vn">8.15</span><span class="ln">māmupetya punarjanma duḥkhālayamaśāśvatam</span><span class="ln ln2">nāpnuvanti mahātmānaḥ saṃsiddhiṃ paramāṃ gatāḥ<span class="end">‖ 15 ‖</span></span></p><p><span class="vn">8.16</span><span class="ln">ābrahmabhuvanāllokāḥ punarāvartino’rjuna</span><span class="ln ln2">māmupetya tu kaunteya punarjanma na vidyate<span class="end">‖ 16 ‖</span></span></p><p><span class="vn">8.17</span><span class="ln">sahasrayugaparyantamaharyadbrahmaṇo viduḥ</span><span class="ln ln2">rātriṃ yugasahasrāntāṃ te’horātravido janāḥ<span class="end">‖ 17 ‖</span></span></p><p><span class="vn">8.18</span><span class="ln">avyaktādvyaktayaḥ sarvāḥ prabhavantyaharāgame</span><span class="ln ln2">rātryāgame pralīyante tatraivāvyaktasaṃjñake<span class="end">‖ 18 ‖</span></span></p><p><span class="vn">8.19</span><span class="ln">bhūtagrāmaḥ sa evāyaṃ bhūtvā bhūtvā pralīyate</span><span class="ln ln2">rātryāgame’vaśaḥ pārtha prabhavatyaharāgame<span class="end">‖ 19 ‖</span></span></p><p><span class="vn">8.20</span><span class="ln">parastasmāttu bhāvo’nyo’vyakto’vyaktātsanātanaḥ</span><span class="ln ln2">yaḥ sa sarveṣu bhūteṣu naśyatsu na vinaśyati<span class="end">‖ 20 ‖</span></span></p><p><span class="vn">8.21</span><span class="ln">avyakto’kṣara ityuktastamāhuḥ paramāṃ gatim</span><span class="ln ln2">yaṃ prāpya na nivartante taddhāma paramaṃ mama<span class="end">‖ 21 ‖</span></span></p><p><span class="vn">8.22</span><span class="ln">puruṣaḥ sa paraḥ pārtha bhaktyā labhyastvananyayā</span><span class="ln ln2">yasyāntaḥsthāni bhūtāni yena sarvamidaṃ tatam<span class="end">‖ 22 ‖</span></span></p><p><span class="vn">8.23</span><span class="ln">yatra kāle tvanāvṛttimāvṛttiṃ caiva yoginaḥ</span><span class="ln ln2">prayātā yānti taṃ kālaṃ vakṣyāmi bharatarṣabha<span class="end">‖ 23 ‖</span></span></p><p><span class="vn">8.24</span><span class="ln">agnirjyotirahaḥ śuklaḥ ṣaṇmāsā uttarāyaṇam</span><span class="ln ln2">tatra prayātā gacchanti brahma brahmavido janāḥ<span class="end">‖ 24 ‖</span></span></p><p><span class="vn">8.25</span><span class="ln">dhūmo rātristathā kṛṣṇaḥ ṣaṇmāsā dakṣiṇāyanam</span><span class="ln ln2">tatra cāndramasaṃ jyotiryogī prāpya nivartate<span class="end">‖ 25 ‖</span></span></p><p><span class="vn">8.26</span><span class="ln">śuklakṛṣṇe gatī hyete jagataḥ śāśvate mate</span><span class="ln ln2">ekayā yātyanāvṛttimanyayā’vartate punaḥ<span class="end">‖ 26 ‖</span></span></p><p><span class="vn">8.27</span><span class="ln">naite sṛtī pārtha jānanyogī muhyati kaścana</span><span class="ln ln2">tasmātsarveṣu kāleṣu yogayukto bhavārjuna<span class="end">‖ 27 ‖</span></span></p><p><span class="vn">8.28</span><span class="ln">vedeṣu yajñeṣu tapaḥsu caiva</span><span class="ln ln2">dāneṣu yatpuṇyaphalaṃ pradiṣṭam</span><span class="ln">atyeti tatsarvamidaṃ viditvā</span><span class="ln ln2">yogī paraṃ sthānamupaiti cādyam<span class="end">‖ 28 ‖</span></span></p><p><span class="col">oṃ tatsaditi śrīmadbhagavadgītāsūpaniṣatsu brahmavidyāyāṃ yogaśāstre śrīkṛṣṇārjunasaṃvāde akṣarabrahmayogo nāmāṣṭamo’dhyāyaḥ</span></p></div><div class="note">Text: the standard 700-verse Gītā as printed by Gītā Press, Gorakhpur, taken from the public-domain bhagavadgita.io edition and checked line by line against the IIT Kanpur Gita Supersite; transliterated into IAST. Words are run together as in the printed text (saṃhitā).</div>
+</section>
+
+<section class="page" id="contents">
+  <h2 class="page-title">CONTENTS</h2>
+  <ul class="toc tight vt"><li class="part">START HERE</li><li><span class="num">←</span><a href="#foreword">Where We Are</a></li><li><span class="num">🔤</span><a href="#full">In One Go</a></li><li><span class="num">∑</span><a href="#end">On One Page</a></li><li class="part">SEVEN QUESTIONS</li><li><span class="num">1</span><a href="#v1">Seven Questions · I</a></li><li><span class="num">2</span><a href="#v2">Seven Questions · Ii</a></li><li><span class="num">3</span><a href="#v3">The Definitions · I</a></li><li><span class="num">4</span><a href="#v4">The Definitions · Ii</a></li><li class="part">THE MOMENT OF DEATH</li><li><span class="num">5</span><a href="#v5">Remember Me At The End</a></li><li><span class="num">6</span><a href="#v6">What You Think Of, You Become</a></li><li><span class="num">7</span><a href="#v7">Remember Me And Fight</a></li><li><span class="num">8</span><a href="#v8">Practice Makes It Steady</a></li><li class="part">THE YOGI’S DEPARTURE</li><li><span class="num">9</span><a href="#v9">The Ancient Seer</a></li><li><span class="num">10</span><a href="#v10">Breath Between The Brows</a></li><li><span class="num">11</span><a href="#v11">The State They Seek</a></li><li><span class="num">12</span><a href="#v12">Closing The Gates</a></li><li><span class="num">13</span><a href="#v13">Oṃ At The End</a></li><li><span class="num">14</span><a href="#v14">Easy For The Constant Devotee</a></li><li><span class="num">15</span><a href="#v15">No More Sorrow</a></li><li class="part">COSMIC TIME</li><li><span class="num">16</span><a href="#v16">Even Brahmā’s World Returns</a></li><li><span class="num">17</span><a href="#v17">A Day Of Brahmā</a></li><li><span class="num">18</span><a href="#v18">Dawn And Night Of The Cosmos</a></li><li><span class="num">19</span><a href="#v19">Again And Again</a></li><li><span class="num">20</span><a href="#v20">Beyond The Unmanifest</a></li><li><span class="num">21</span><a href="#v21">The Supreme Abode</a></li><li><span class="num">22</span><a href="#v22">Reached By Devotion</a></li><li class="part">TWO PATHS</li><li><span class="num">23</span><a href="#v23">Two Paths At Death</a></li><li><span class="num">24</span><a href="#v24">The Bright Path</a></li><li><span class="num">25</span><a href="#v25">The Dark Path</a></li><li><span class="num">26</span><a href="#v26">Eternal Paths</a></li><li><span class="num">27</span><a href="#v27">The Yogi Is Not Confused</a></li><li><span class="num">28</span><a href="#v28">Beyond All Merits</a></li></ul>
+</section>
+<section class="page" id="v1">
+  <h2 class="page-title">ŚLOKA 8.1</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">SEVEN QUESTIONS · I</span></div>
+    <div class="iast"><span class="spk">arjuna uvāca</span><span class="cl">kiṃ tadbrahma kimadhyātmaṃ kiṃ karma puruṣottama</span><span class="cl cl2">adhibhūtaṃ ca kiṃ proktamadhidaivaṃ kimucyate ‖1‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Arjuna asking a list of questions"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 120) scale(0.95)" stroke="#111" stroke-width="2"><path d="M30 -60 q-22 50 0 100" fill="none" stroke="#7a4a1a" stroke-width="5"/><path d="M30 -60 v100" stroke="#ccc" stroke-width="1.5"/><path d="M-28 50 q-4 -58 28 -66 q32 8 28 66z" fill="#f4f4f4"/><path d="M-26 20 h52" stroke="#c0392b" stroke-width="6"/><circle cy="-34" r="14" fill="#c98b5a"/><path d="M-14 -42 h28 l-3 -14 l-6 6 l-5 -9 l-5 9 l-6 -6z" fill="#ffd60a"/><circle cx="-5" cy="-36" r="2" fill="#111"/><circle cx="5" cy="-36" r="2" fill="#111"/><path d="M-6 -27 q6 5 12 0" fill="none"/></g><g transform="translate(158 100) scale(1)"><rect x="-34" y="-24" width="68" height="48" fill="#fff3b0" stroke="#111" stroke-width="2.5"/><path d="M0 -24 v48" stroke="#111" stroke-width="2"/></g><rect x="52.4" y="8" width="115.2" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">WHAT IS BRAHMAN?</text></svg><div class="mean">Arjuna said: What is that Brahman? What is the inner Self (adhyātma)? What is action, best of persons? What is said to be the ground of beings (adhibhūta), and what the ground of the gods (adhidaiva)?</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">kim tat brahma</td><td><b>what is that Brahman?</b></td></tr><tr><td class="w">kim adhyātmam</td><td><b>what is the inner Self?</b></td></tr><tr><td class="w">kim karma puruṣottama</td><td><b>what is action, best of persons?</b></td></tr><tr><td class="w">adhibhūtam ca kim proktam</td><td><b>what is called adhibhūta?</b></td></tr><tr><td class="w">adhidaivam kim ucyate</td><td><b>what is called adhidaiva?</b></td></tr></table>
+  </div>
+  <div class="key">Arjuna asks: <b>what do these words mean?</b></div>
+</section>
+<section class="page" id="d1">
+  <h2 class="page-title">ŚLOKA 8.1 · DEEP DIVE</h2>
+  <div class="sub">SEVEN QUESTIONS · I</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Chapter 7 ended with technical terms (7.29–30). Arjuna asks what they mean. Chapter 8 is named Akṣara-Brahma Yoga, the yoga of the imperishable Brahman. It is the Gītā’s chapter on death and what lies beyond.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Arjuna asks seven questions in two verses: six about terms and one about death. Commentators praise his alertness: a good student asks about every unclear word. Commentators note that Arjuna calls Kṛṣṇa <i>Puruṣottama</i>, “Supreme Person”, a title explained in 15.18. He has been listening closely; every term from 7.29–30 is picked up. Śaṅkara says Arjuna wants to know the meaning of each, so that he can meditate rightly. Rāmānuja says each term names something to be known by those who seek different goals. The terms come from Upaniṣadic and Brāhmaṇa vocabulary of the time. Madhusūdana says Arjuna’s seven questions show careful listening. Students in traditional schools were trained to repeat and question each word their teacher used.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Never pass over a word you don’t understand. Ask. When a teacher uses words you don’t understand, ask about each one. Clear words lead to clear thinking.</p></div>
+  <div class="key"><a href="#v1" style="color:#8fd3ff">↑ 8.1</a> · Arjuna asks: <b>what do these words mean?</b></div>
+</section>
+<section class="page" id="v2">
+  <h2 class="page-title">ŚLOKA 8.2</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">SEVEN QUESTIONS · II</span></div>
+    <div class="iast"><span class="cl">adhiyajñaḥ kathaṃ ko’tra dehe’sminmadhusūdana</span><span class="cl cl2">prayāṇakāle ca kathaṃ jñeyo’si niyatātmabhiḥ ‖2‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Arjuna asking about the moment of death"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 120) scale(0.95)" stroke="#111" stroke-width="2"><path d="M30 -60 q-22 50 0 100" fill="none" stroke="#7a4a1a" stroke-width="5"/><path d="M30 -60 v100" stroke="#ccc" stroke-width="1.5"/><path d="M-28 50 q-4 -58 28 -66 q32 8 28 66z" fill="#f4f4f4"/><path d="M-26 20 h52" stroke="#c0392b" stroke-width="6"/><circle cy="-34" r="14" fill="#c98b5a"/><path d="M-14 -42 h28 l-3 -14 l-6 6 l-5 -9 l-5 9 l-6 -6z" fill="#ffd60a"/><circle cx="-5" cy="-36" r="2" fill="#111"/><circle cx="5" cy="-36" r="2" fill="#111"/><path d="M-6 -27 q6 5 12 0" fill="none"/></g><g transform="translate(158 100) scale(1)"><path d="M-30 40 h60 v-50 q-30 -26 -60 0z" fill="#999" stroke="#111" stroke-width="2"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">AT DEATH?</text></svg><div class="mean">“Who is the Lord of sacrifice (adhiyajña), and how is he here in this body, Madhusūdana? And how are you to be known at the time of death by the self-controlled?”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">adhiyajñaḥ katham kaḥ atra</td><td><b>who and how is adhiyajña here</b></td></tr><tr><td class="w">dehe asmin madhusūdana</td><td><b>in this body</b></td></tr><tr><td class="w">prayāṇa-kāle ca katham</td><td><b>and at the time of departure, how</b></td></tr><tr><td class="w">jñeyaḥ asi niyata-ātmabhiḥ</td><td><b>are you known by the self-controlled?</b></td></tr></table>
+  </div>
+  <div class="key">How to know you <b>at the end?</b></div>
+</section>
+<section class="page" id="d2">
+  <h2 class="page-title">ŚLOKA 8.2 · DEEP DIVE</h2>
+  <div class="sub">SEVEN QUESTIONS · II</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The last question is the most personal: how to know God at the moment of death.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators note the progression from abstract terms to the most practical question of all: how to die well. The seventh question is the most personal: how is the Lord known at the moment of death? Commentators note that the dying mind is weak and confused, so the question is practical. Śaṅkara says the question is how the self-controlled can fix their minds on the Lord when the senses fail. Rāmānuja says Arjuna asks how each type of seeker should meditate at the end. The Kaṭha Upaniṣad is built around a similar question, Naciketas asking Death what happens after death. The Gītā’s answer, in 8.5–14, is remembrance practised through life. Commentators note niyatātmabhiḥ, “by the self-controlled”: the question is how the disciplined can remember the Lord when the body fails. Many traditions prepare for death through daily practice; the Tibetan Book of the Dead and the Christian ars moriendi are well-known examples outside India.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>How we want to die says a lot about how we should live. Thinking about the end clarifies the present. What would you want to have in mind at your last moment?</p></div>
+  <div class="key"><a href="#v2" style="color:#8fd3ff">↑ 8.2</a> · How to know you <b>at the end?</b></div>
+</section>
+<section class="page" id="v3">
+  <h2 class="page-title">ŚLOKA 8.3</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE DEFINITIONS · I</span></div>
+    <div class="iast"><span class="spk">śrībhagavān uvāca</span><span class="cl">akṣaraṃ brahma paramaṃ svabhāvo’dhyātmamucyate</span><span class="cl cl2">bhūtabhāvodbhavakaro visargaḥ karmasaṃjñitaḥ ‖3‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Krishna explaining: Brahman, svabhāva, karma"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 118) scale(0.95)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -60 30 -70 q34 10 30 70z" fill="#ffd60a"/><path d="M-22 -4 l-14 10 M22 -4 l14 10" stroke="#3b6fd0" stroke-width="7"/><circle cy="-36" r="15" fill="#3b6fd0"/><path d="M-14 -46 h28 l-4 -12 h-20z" fill="#e0a800"/><path d="M4 -58 q12 -22 22 -8 q-10 2 -22 8z" fill="#2a9d6f"/><circle cx="18" cy="-60" r="3.5" fill="#3b8fd0"/><circle cx="-5" cy="-38" r="2.4" fill="#fff"/><circle cx="5" cy="-38" r="2.4" fill="#fff"/><path d="M-6 -29 q6 5 12 0" fill="none"/><path d="M-18 -10 q18 14 36 0" fill="none" stroke="#f08aa6" stroke-width="3"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="36" fill="#ffd60a" opacity="0.45" stroke="none"/><text x="0" y="14" text-anchor="middle" font-family="Bangers" font-size="40">OṂ</text></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">DEFINITIONS</text></svg><div class="mean">The Lord said: Brahman is the Imperishable, the Supreme. Its own nature (svabhāva) is called adhyātma. The creative offering that brings beings into existence is called karma.</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">akṣaram brahma paramam</td><td><b>Brahman is the supreme Imperishable</b></td></tr><tr><td class="w">svabhāvaḥ adhyātmam ucyate</td><td><b>its own nature is called adhyātma</b></td></tr><tr><td class="w">bhūta-bhāva-udbhava-karaḥ</td><td><b>that which brings beings into being</b></td></tr><tr><td class="w">visargaḥ karma-saṃjñitaḥ</td><td><b>the offering is called karma</b></td></tr></table>
+  </div>
+  <div class="key">Brahman, Self, <b>karma defined</b>.</div>
+</section>
+<section class="page" id="d3">
+  <h2 class="page-title">ŚLOKA 8.3 · DEEP DIVE</h2>
+  <div class="sub">THE DEFINITIONS · I</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Kṛṣṇa defines the first three terms.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators differ on adhyātma: Śaṅkara takes it as Brahman present in each body as the inner Self; Rāmānuja as the nature of the individual soul. Karma here means the cosmic creative act. <i>Akṣara</i> means both “imperishable” and “syllable”; the word links Brahman to Oṃ (8.13). The Bṛhadāraṇyaka Upaniṣad (3.8.8–9) describes the Akṣara: not coarse, not fine, not short, not long; by its command the sun and moon stand apart. Commentators differ on <i>adhyātma</i>. Śaṅkara: Brahman dwelling in each body as the inner Self. Rāmānuja: the nature of the individual self, or the subtle body. <i>Visarga</i>, the creative “pouring forth”, is read as the cosmic act of creation, or as the offering in sacrifice that sustains beings (3.14). Brief definitions, but each opens a field. Commentators note paramam, “supreme”: Brahman is the highest imperishable. Madhusūdana says the definitions are brief because they were well known to the Gītā’s first hearers. For later readers, the commentaries fill them out.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Big words become simple when defined. Keep asking until they are. Big ideas become usable when defined simply. Write down in one line what you mean by your own key words.</p></div>
+  <div class="key"><a href="#v3" style="color:#8fd3ff">↑ 8.3</a> · Brahman, Self, <b>karma defined</b>.</div>
+</section>
+<section class="page" id="v4">
+  <h2 class="page-title">ŚLOKA 8.4</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE DEFINITIONS · II</span></div>
+    <div class="iast"><span class="cl">adhibhūtaṃ kṣaro bhāvaḥ puruṣaścādhidaivatam</span><span class="cl cl2">adhiyajño’hamevātra dehe dehabhṛtāṃ vara ‖4‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Krishna pointing to matter, the cosmic person and himself in the body"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 118) scale(0.95)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -60 30 -70 q34 10 30 70z" fill="#ffd60a"/><path d="M-22 -4 l-14 10 M22 -4 l14 10" stroke="#3b6fd0" stroke-width="7"/><circle cy="-36" r="15" fill="#3b6fd0"/><path d="M-14 -46 h28 l-4 -12 h-20z" fill="#e0a800"/><path d="M4 -58 q12 -22 22 -8 q-10 2 -22 8z" fill="#2a9d6f"/><circle cx="18" cy="-60" r="3.5" fill="#3b8fd0"/><circle cx="-5" cy="-38" r="2.4" fill="#fff"/><circle cx="5" cy="-38" r="2.4" fill="#fff"/><path d="M-6 -29 q6 5 12 0" fill="none"/><path d="M-18 -10 q18 14 36 0" fill="none" stroke="#f08aa6" stroke-width="3"/></g><g transform="translate(158 100) scale(1)"><g transform="translate(0 0) scale(0.55)" stroke="#111" stroke-width="2"><path d="M0 0 l-70 -0" stroke="#5b8fe0" stroke-width="6"/><path d="M0 0 l-63 -22" stroke="#5b8fe0" stroke-width="6"/><path d="M0 0 l-44 -39" stroke="#5b8fe0" stroke-width="6"/><path d="M0 0 l-16 -49" stroke="#5b8fe0" stroke-width="6"/><path d="M0 0 l16 -49" stroke="#5b8fe0" stroke-width="6"/><path d="M0 0 l44 -39" stroke="#5b8fe0" stroke-width="6"/><path d="M0 0 l63 -22" stroke="#5b8fe0" stroke-width="6"/><path d="M0 0 l70 0" stroke="#5b8fe0" stroke-width="6"/><circle cx="-36" cy="-46" r="11" fill="#5b8fe0"/><circle cx="-18" cy="-46" r="11" fill="#5b8fe0"/><circle cx="18" cy="-46" r="11" fill="#5b8fe0"/><circle cx="36" cy="-46" r="11" fill="#5b8fe0"/><path d="M-36 70 q-6 -80 36 -86 q42 6 36 86z" fill="#1d3f8a"/><circle cx="-30" cy="-10" r="1.8" fill="#fff" stroke="none"/><circle cx="-15" cy="-10" r="1.8" fill="#fff" stroke="none"/><circle cx="0" cy="-10" r="1.8" fill="#fff" stroke="none"/><circle cx="15" cy="-10" r="1.8" fill="#fff" stroke="none"/><circle cx="30" cy="-10" r="1.8" fill="#fff" stroke="none"/><circle cx="-30" cy="4" r="1.8" fill="#fff" stroke="none"/><circle cx="-15" cy="4" r="1.8" fill="#fff" stroke="none"/><circle cx="0" cy="4" r="1.8" fill="#fff" stroke="none"/><circle cx="15" cy="4" r="1.8" fill="#fff" stroke="none"/><circle cx="30" cy="4" r="1.8" fill="#fff" stroke="none"/><circle cx="-30" cy="18" r="1.8" fill="#fff" stroke="none"/><circle cx="-15" cy="18" r="1.8" fill="#fff" stroke="none"/><circle cx="0" cy="18" r="1.8" fill="#fff" stroke="none"/><circle cx="15" cy="18" r="1.8" fill="#fff" stroke="none"/><circle cx="30" cy="18" r="1.8" fill="#fff" stroke="none"/><circle cx="-30" cy="32" r="1.8" fill="#fff" stroke="none"/><circle cx="-15" cy="32" r="1.8" fill="#fff" stroke="none"/><circle cx="0" cy="32" r="1.8" fill="#fff" stroke="none"/><circle cx="15" cy="32" r="1.8" fill="#fff" stroke="none"/><circle cx="30" cy="32" r="1.8" fill="#fff" stroke="none"/><circle cy="-48" r="15" fill="#3b6fd0"/><path d="M-14 -58 h28 l-4 -12 h-20z" fill="#e0a800"/><circle cx="-5" cy="-50" r="3" fill="#ffd60a"/><circle cx="5" cy="-50" r="3" fill="#ffd60a"/></g></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">ADHI-…</text></svg><div class="mean">“Adhibhūta is perishable existence; adhidaiva is the cosmic Person (puruṣa); and I myself, here in the body, am adhiyajña, best of embodied beings.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">adhibhūtam kṣaraḥ bhāvaḥ</td><td><b>adhibhūta is perishable existence</b></td></tr><tr><td class="w">puruṣaḥ ca adhidaivatam</td><td><b>adhidaiva is the Puruṣa</b></td></tr><tr><td class="w">adhiyajñaḥ aham eva atra</td><td><b>adhiyajña is I myself here</b></td></tr><tr><td class="w">dehe deha-bhṛtām vara</td><td><b>in the body, best of the embodied</b></td></tr></table>
+  </div>
+  <div class="key">The Lord <b>dwells in the body</b>.</div>
+</section>
+<section class="page" id="d4">
+  <h2 class="page-title">ŚLOKA 8.4 · DEEP DIVE</h2>
+  <div class="sub">THE DEFINITIONS · II</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Kṛṣṇa defines the rest: matter, the cosmic Person, and himself as Lord of sacrifice within the body.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>The Lord is present in each body as the receiver of all offerings. Commentators see this as God dwelling within, witnessing every act. Commentators explain the three terms. <i>Adhibhūta</i>: all that changes and perishes, the material world. <i>Adhidaiva</i>: the cosmic Person, <i>Puruṣa</i>, often identified with Hiraṇyagarbha, the cosmic mind from which the gods arise. <i>Adhiyajña</i>: the Lord himself, who receives all sacrifices and dwells in the body as inner witness. Śaṅkara says the Lord as adhiyajña is Viṣṇu, the deity of sacrifice. Rāmānuja says the Lord is the inner controller who receives every offering. The phrase <i>atra dehe</i>, “here in the body”, brings the Divine very close. Commentators note deha-bhṛtāṃ vara, “best of the embodied”: Kṛṣṇa honours Arjuna as he reveals that the Lord dwells within the body. Madhusūdana says the Lord as adhiyajña receives every offering made in the body’s fire of digestion and breath.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>God is not far away; he dwells in this very body. The Divine, in this view, is not far off. It dwells within this very body, receiving every sincere offering.</p></div>
+  <div class="key"><a href="#v4" style="color:#8fd3ff">↑ 8.4</a> · The Lord <b>dwells in the body</b>.</div>
+</section>
+<section class="page" id="v5">
+  <h2 class="page-title">ŚLOKA 8.5</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">REMEMBER ME AT THE END</span></div>
+    <div class="iast"><span class="cl">antakāle ca māmeva smaranmuktvā kalevaram</span><span class="cl cl2">yaḥ prayāti sa madbhāvaṃ yāti nāstyatra saṃśayaḥ ‖5‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A dying person peacefully remembering Krishna"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(40 118) scale(0.8)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -60 30 -70 q34 10 30 70z" fill="#ffd60a"/><path d="M-22 -4 l-14 10 M22 -4 l14 10" stroke="#3b6fd0" stroke-width="7"/><circle cy="-36" r="15" fill="#3b6fd0"/><path d="M-14 -46 h28 l-4 -12 h-20z" fill="#e0a800"/><path d="M4 -58 q12 -22 22 -8 q-10 2 -22 8z" fill="#2a9d6f"/><circle cx="18" cy="-60" r="3.5" fill="#3b8fd0"/><circle cx="-5" cy="-38" r="2.4" fill="#fff"/><circle cx="5" cy="-38" r="2.4" fill="#fff"/><path d="M-6 -29 q6 5 12 0" fill="none"/><path d="M-18 -10 q18 14 36 0" fill="none" stroke="#f08aa6" stroke-width="3"/></g><g transform="translate(86 124) scale(0.7)" stroke="#111" stroke-width="2"><path d="M-4 -6 l4 -16 l4 16z" fill="#c98b5a"/><path d="M-28 50 q-4 -58 28 -66 q32 8 28 66z" fill="#f4f4f4"/><path d="M-26 20 h52" stroke="#c0392b" stroke-width="6"/><circle cy="-34" r="14" fill="#c98b5a"/><path d="M-14 -42 h28 l-3 -14 l-6 6 l-5 -9 l-5 9 l-6 -6z" fill="#ffd60a"/><circle cx="-5" cy="-36" r="2" fill="#111"/><circle cx="5" cy="-36" r="2" fill="#111"/><path d="M-6 -27 q6 5 12 0" fill="none"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="36" fill="#ffd60a" opacity="0.45" stroke="none"/><text x="0" y="14" text-anchor="middle" font-family="Bangers" font-size="40">OṂ</text></g><rect x="59.6" y="8" width="100.8" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">MĀM EVA SMARAN</text></svg><div class="mean">“Whoever, at the time of death, leaves the body remembering me alone, reaches my being; there is no doubt of this.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">anta-kāle ca mām eva</td><td><b>and at the end, me alone</b></td></tr><tr><td class="w">smaran muktvā kalevaram</td><td><b>remembering, leaving the body</b></td></tr><tr><td class="w">yaḥ prayāti saḥ mat-bhāvam</td><td><b>who departs, reaches my being</b></td></tr><tr><td class="w">yāti na asti atra saṃśayaḥ</td><td><b>there is no doubt here</b></td></tr></table>
+  </div>
+  <div class="key">Remember me <b>at the end</b>.</div>
+</section>
+<section class="page" id="d5">
+  <h2 class="page-title">ŚLOKA 8.5 · DEEP DIVE</h2>
+  <div class="sub">REMEMBER ME AT THE END</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The answer to the last question: remember me at the end.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>This verse is why many Hindus chant God’s name at a deathbed. Commentators add that remembrance at the end is the fruit of a whole life of remembrance. This verse lies behind a widespread Hindu custom: chanting God’s name, or reading the Gītā, at the bedside of the dying. Tulasī leaves and Gaṅgā water are often given. Commentators stress that remembrance at the end cannot usually be forced; it grows from a life of remembrance. Śaṅkara says such a person reaches the Lord’s nature. Rāmānuja says he reaches the Lord himself. The story of Ajāmila in the Bhāgavata Purāṇa tells of a sinner who, dying, called his son Nārāyaṇa and was saved by the very name. Devotees love the story; teachers note it as grace, not a technique. Commentators note asaṃśayaḥ, “without doubt”: the promise is firm. Madhusūdana says remembrance at the end is the fruit of daily remembrance. Hospice workers in India often describe families gathering to chant the Lord’s names as a loved one dies.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Practise remembering the Divine every day; it will be there at the end. Practise remembering what you love most, every day. That is the best preparation for any ending.</p></div>
+  <div class="key"><a href="#v5" style="color:#8fd3ff">↑ 8.5</a> · Remember me <b>at the end</b>.</div>
+</section>
+<section class="page" id="v6">
+  <h2 class="page-title">ŚLOKA 8.6</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">WHAT YOU THINK OF, YOU BECOME</span></div>
+    <div class="iast"><span class="cl">yaṃ yaṃ vāpi smaranbhāvaṃ tyajatyante kalevaram</span><span class="cl cl2">taṃ tamevaiti kaunteya sadā tadbhāvabhāvitaḥ ‖6‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A person’s last thought shaping the next life"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 132) scale(1.2)" stroke="#111" stroke-width="2.5"><circle cy="-30" r="12" fill="#c98b5a"/><path d="M-18 20 q18 -50 36 0z" fill="#ff8c1a"/></g><g transform="translate(158 100) scale(1)"><ellipse rx="44" ry="30" fill="#fff" stroke="#111" stroke-width="2"/><path d="M-30 -6 q6 -8 12 0" fill="none" stroke="#c0392b" stroke-width="2"/><path d="M-15 4 q6 -8 12 0" fill="none" stroke="#c0392b" stroke-width="2"/><path d="M0 -6 q6 -8 12 0" fill="none" stroke="#c0392b" stroke-width="2"/><path d="M15 4 q6 -8 12 0" fill="none" stroke="#c0392b" stroke-width="2"/><path d="M30 -6 q6 -8 12 0" fill="none" stroke="#c0392b" stroke-width="2"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">TAD-BHĀVA</text></svg><div class="mean">“Whatever state one remembers when leaving the body at the end, son of Kuntī, to that state one goes, always absorbed in it.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">yam yam vā api smaran bhāvam</td><td><b>whatever state remembering</b></td></tr><tr><td class="w">tyajati ante kalevaram</td><td><b>one leaves the body at the end</b></td></tr><tr><td class="w">tam tam eva eti kaunteya</td><td><b>to that one goes</b></td></tr><tr><td class="w">sadā tat-bhāva-bhāvitaḥ</td><td><b>always absorbed in that state</b></td></tr></table>
+  </div>
+  <div class="key">What you think of, <b>you become</b>.</div>
+</section>
+<section class="page" id="d6">
+  <h2 class="page-title">ŚLOKA 8.6 · DEEP DIVE</h2>
+  <div class="sub">WHAT YOU THINK OF, YOU BECOME</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The last thought shapes the next destination.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators tell the story of King Bharata, who in the Bhāgavata Purāṇa thought of a deer at death and was reborn as one. The point: the habits of a lifetime decide the last thought. The story of Bharata (Jaḍa Bharata) is told in the Bhāgavata Purāṇa (Book 5). A king turned hermit, he became attached to an orphaned deer, thought of it at death, and was reborn as a deer. In his next life, wise from that lesson, he lived as a silent sage. Commentators use the story to explain <i>sadā tad-bhāva-bhāvita</i>, “always coloured by that thought”. The last thought is not random; it is the summary of a lifetime’s habits. Śaṅkara and Rāmānuja agree that the dying mind follows its strongest impressions. The verse is a strong argument for daily practice. Commentators note sadā, “always”: the state at the end is formed by what we dwell on always. Madhusūdana says the last thought cannot be chosen at the last moment by one who has not practised. The verse turns attention from death to daily life.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>What you dwell on daily is what you will dwell on at the end. Choose well. What you think about most is quietly shaping you. Choose your daily thoughts as carefully as your food.</p></div>
+  <div class="key"><a href="#v6" style="color:#8fd3ff">↑ 8.6</a> · What you think of, <b>you become</b>.</div>
+</section>
+<section class="page" id="v7">
+  <h2 class="page-title">ŚLOKA 8.7</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">REMEMBER ME AND FIGHT</span></div>
+    <div class="iast"><span class="cl">tasmātsarveṣu kāleṣu māmanusmara yudhya ca</span><span class="cl cl2">mayyarpitamanobuddhirmāmevaiṣyasyasaṃśayam ‖7‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Arjuna fighting with Krishna in his heart"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 120) scale(0.95)" stroke="#111" stroke-width="2"><path d="M30 -60 q-22 50 0 100" fill="none" stroke="#7a4a1a" stroke-width="5"/><path d="M30 -60 v100" stroke="#ccc" stroke-width="1.5"/><path d="M-28 50 q-4 -58 28 -66 q32 8 28 66z" fill="#f4f4f4"/><path d="M-26 20 h52" stroke="#c0392b" stroke-width="6"/><circle cy="-34" r="14" fill="#c98b5a"/><path d="M-14 -42 h28 l-3 -14 l-6 6 l-5 -9 l-5 9 l-6 -6z" fill="#ffd60a"/><circle cx="-5" cy="-36" r="2" fill="#111"/><circle cx="5" cy="-36" r="2" fill="#111"/><path d="M-6 -27 q6 5 12 0" fill="none"/></g><g transform="translate(158 100) scale(1)"><path d="M0 30 q-50 -30 -30 -54 q18 -16 30 6 q12 -22 30 -6 q20 24 -30 54z" fill="#e05a8a" stroke="#111" stroke-width="2"/></g><rect x="59.6" y="8" width="100.8" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">SMARA · YUDHYA</text></svg><div class="mean">“Therefore, at all times remember me, and fight. With mind and intellect offered to me, you will surely come to me.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">tasmāt sarveṣu kāleṣu</td><td><b>therefore at all times</b></td></tr><tr><td class="w">mām anusmara yudhya ca</td><td><b>remember me and fight</b></td></tr><tr><td class="w">mayi arpita-manaḥ-buddhiḥ</td><td><b>mind and intellect offered to me</b></td></tr><tr><td class="w">mām eva eṣyasi asaṃśayam</td><td><b>you will come to me, without doubt</b></td></tr></table>
+  </div>
+  <div class="key"><b>Remember me, and fight</b>.</div>
+</section>
+<section class="page" id="d7">
+  <h2 class="page-title">ŚLOKA 8.7 · DEEP DIVE</h2>
+  <div class="sub">REMEMBER ME AND FIGHT</div>
+  <div class="dd"><h4>🔎 In context</h4><p>A balanced instruction: remember God and do your duty.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>“Remember me and fight”: not one or the other but both together. Commentators say this sums up the Gītā: devotion in action. <i>Mām anusmara yudhya ca</i>, “remember me and fight”, is one of the Gītā’s shortest summaries. Commentators note the two verbs side by side: remembrance and action, not one instead of the other. Śaṅkara says constant remembrance purifies the mind, and the duty of fighting is done in that spirit. Rāmānuja says remembrance of the Lord while doing one’s duty is the essence of bhakti yoga. Gandhi often quoted this verse. For Arjuna it answers chapter 1: he can act and still be devoted, still be good. Commentators note arpita-mano-buddhiḥ, “mind and intellect offered”: both feeling and thinking are given to the Lord. Madhusūdana says this is how remembrance becomes constant. Many find it practical to link remembrance to daily acts: waking, eating, beginning work.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Work with God in your heart. That is the whole method in four words. Do your work with the sacred in your heart. Remembrance and action belong together.</p></div>
+  <div class="key"><a href="#v7" style="color:#8fd3ff">↑ 8.7</a> · <b>Remember me, and fight</b>.</div>
+</section>
+<section class="page" id="v8">
+  <h2 class="page-title">ŚLOKA 8.8</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">PRACTICE MAKES IT STEADY</span></div>
+    <div class="iast"><span class="cl">abhyāsayogayuktena cetasā nānyagāminā</span><span class="cl cl2">paramaṃ puruṣaṃ divyaṃ yāti pārthānucintayan ‖8‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A meditator with a mind not wandering, eyes on a light"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 132) scale(1.2)" stroke="#111" stroke-width="2.2"><circle cy="-34" r="22" fill="#ffd60a" opacity=".35" stroke="none"/><path d="M-34 14 q34 -22 68 0 q-34 12 -68 0z" fill="#ff8c1a"/><path d="M-16 6 q-2 -30 16 -34 q18 4 16 34z" fill="#ff8c1a"/><circle cy="-36" r="11" fill="#c98b5a"/><path d="M-6 -36 h4 M2 -36 h4" stroke-width="2"/><path d="M-14 4 q-10 -4 -14 6 M14 4 q10 -4 14 6" fill="none"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="40" fill="#ffd60a" opacity="0.5" stroke="none"/><circle cx="0" cy="0" r="18" fill="#ffd60a" opacity="0.95" stroke="none"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">ABHYĀSA</text></svg><div class="mean">“With a mind trained by the practice of yoga, not straying elsewhere, meditating on the supreme divine Person, Pārtha, one goes to him.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">abhyāsa-yoga-yuktena</td><td><b>trained by practice of yoga</b></td></tr><tr><td class="w">cetasā na anya-gāminā</td><td><b>with a mind not going elsewhere</b></td></tr><tr><td class="w">paramam puruṣam divyam</td><td><b>the supreme divine Person</b></td></tr><tr><td class="w">yāti pārtha anucintayan</td><td><b>one goes, meditating</b></td></tr></table>
+  </div>
+  <div class="key">Practice <b>steadies remembrance</b>.</div>
+</section>
+<section class="page" id="d8">
+  <h2 class="page-title">ŚLOKA 8.8 · DEEP DIVE</h2>
+  <div class="sub">PRACTICE MAKES IT STEADY</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Practice makes remembrance steady.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators link this to 6.35: practice tames the mind. Here it is directed at the Supreme Person. <i>Abhyāsa</i>, practice, links back to 6.35. Commentators note the method: repeated practice makes the mind <i>ananya-gāmin</i>, “not going to another”. Śaṅkara says practice means repeatedly bringing the mind to one object. Rāmānuja says it means constant meditation on the Lord. The goal, <i>paramaṃ puruṣaṃ divyam</i>, the supreme divine Person, is described in the next verse. The Gītā’s meditation is not empty; it has an object, the Lord, and a means, practice. Commentators note nānya-gāminā, “not going elsewhere”: the trained mind stays on its object. Madhusūdana says practice makes it so. Modern research on attention shows that the ability to focus improves with regular training.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>A little daily practice makes remembering natural. A few minutes of daily practice, kept up for years, builds a mind that remembers on its own.</p></div>
+  <div class="key"><a href="#v8" style="color:#8fd3ff">↑ 8.8</a> · Practice <b>steadies remembrance</b>.</div>
+</section>
+<section class="page" id="v9">
+  <h2 class="page-title">ŚLOKA 8.9</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE ANCIENT SEER</span></div>
+    <div class="iast"><span class="cl">kaviṃ purāṇamanuśāsitāra</span><span class="cl cl2">maṇoraṇīyāṃsamanusmaredyaḥ</span><span class="cl">sarvasya dhātāramacintyarūpa</span><span class="cl cl2">mādityavarṇaṃ tamasaḥ parastāt ‖9‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A golden Person beyond darkness, like the sun"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><circle cx="0" cy="-10" r="26" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/></g><rect x="66.8" y="8" width="86.4" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">ĀDITYA-VARṆA</text></svg><div class="mean">“One who meditates on the Seer, the Ancient, the Ruler, subtler than the subtle, the upholder of all, of form unthinkable, sun-coloured, beyond darkness,”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">kavim purāṇam anuśāsitāram</td><td><b>the Seer, Ancient, Ruler</b></td></tr><tr><td class="w">aṇoḥ aṇīyāṃsam</td><td><b>subtler than the subtle</b></td></tr><tr><td class="w">sarvasya dhātāram</td><td><b>upholder of all</b></td></tr><tr><td class="w">acintya-rūpam</td><td><b>of unthinkable form</b></td></tr><tr><td class="w">āditya-varṇam tamasaḥ parastāt</td><td><b>sun-coloured, beyond darkness</b></td></tr></table>
+  </div>
+  <div class="key">Sun-coloured, <b>beyond darkness</b>.</div>
+</section>
+<section class="page" id="d9">
+  <h2 class="page-title">ŚLOKA 8.9 · DEEP DIVE</h2>
+  <div class="sub">THE ANCIENT SEER</div>
+  <div class="dd"><h4>🔎 In context</h4><p>A description of the Supreme to meditate on.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>These phrases echo the Upaniṣads (Śvetāśvatara 3.8: “sun-coloured, beyond darkness”). Commentators say each word is a meditation in itself. The sentence continues into 8.10. Eight descriptions in one verse, each a meditation. <i>Kavi</i>, seer or poet, the all-knowing. <i>Purāṇa</i>, ancient, without beginning. <i>Anuśāsitṛ</i>, ruler, governor of all. <i>Aṇor aṇīyān</i>, subtler than an atom; the Kaṭha Upaniṣad (1.2.20) adds “greater than the great”. <i>Dhātṛ</i>, upholder. <i>Acintya-rūpa</i>, of unthinkable form. <i>Āditya-varṇa</i>, sun-coloured, and <i>tamasaḥ parastāt</i>, beyond darkness, come from the Śvetāśvatara Upaniṣad (3.8): “I know that great Person, sun-coloured, beyond darkness”. The verse is in triṣṭubh metre. Commentators note acintya-rūpa, “of unthinkable form”: the Lord’s form is beyond imagination, yet meditated on. Madhusūdana says the descriptions guide the mind toward what is beyond them. A finger pointing at the moon is not the moon, but it helps one find it.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Choose one phrase, like “beyond darkness”, and hold it in mind for a few breaths. Pick one phrase, like “beyond darkness”, and hold it quietly for a few breaths. Let it light the mind.</p></div>
+  <div class="key"><a href="#v9" style="color:#8fd3ff">↑ 8.9</a> · Sun-coloured, <b>beyond darkness</b>.</div>
+</section>
+<section class="page" id="v10">
+  <h2 class="page-title">ŚLOKA 8.10</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">BREATH BETWEEN THE BROWS</span></div>
+    <div class="iast"><span class="cl">prayāṇakāle manasā’calena</span><span class="cl cl2">bhaktyā yukto yogabalena caiva</span><span class="cl">bhruvormadhye prāṇamāveśya samyak</span><span class="cl cl2">sa taṃ paraṃ puruṣamupaiti divyam ‖10‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A yogi at the moment of death with breath gathered between the eyebrows"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 132) scale(1.2)" stroke="#111" stroke-width="2.2"><circle cy="-34" r="22" fill="#ffd60a" opacity=".35" stroke="none"/><path d="M-34 14 q34 -22 68 0 q-34 12 -68 0z" fill="#ff8c1a"/><path d="M-16 6 q-2 -30 16 -34 q18 4 16 34z" fill="#ff8c1a"/><circle cy="-36" r="11" fill="#c98b5a"/><path d="M-6 -36 h4 M2 -36 h4" stroke-width="2"/><path d="M-14 4 q-10 -4 -14 6 M14 4 q10 -4 14 6" fill="none"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="40" fill="#ffd60a" opacity="0.5" stroke="none"/><circle cx="0" cy="0" r="18" fill="#ffd60a" opacity="0.95" stroke="none"/></g><rect x="59.6" y="8" width="100.8" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">BHRUVOḤ MADHYE</text></svg><div class="mean">“…at the time of death, with a steady mind, joined in devotion and the strength of yoga, placing the life-breath between the eyebrows, he reaches that supreme divine Person.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">prayāṇa-kāle manasā acalena</td><td><b>at death, with an unmoving mind</b></td></tr><tr><td class="w">bhaktyā yuktaḥ yoga-balena ca</td><td><b>joined with devotion and the strength of yoga</b></td></tr><tr><td class="w">bhruvoḥ madhye prāṇam āveśya</td><td><b>placing breath between the brows</b></td></tr><tr><td class="w">tam param puruṣam upaiti divyam</td><td><b>reaches that supreme divine Person</b></td></tr></table>
+  </div>
+  <div class="key">A steady mind <b>at the last breath</b>.</div>
+</section>
+<section class="page" id="d10">
+  <h2 class="page-title">ŚLOKA 8.10 · DEEP DIVE</h2>
+  <div class="sub">BREATH BETWEEN THE BROWS</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The yogi’s way of dying: steady mind, devotion, breath gathered upward.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>This is a traditional yogic practice for the moment of death. Commentators note that devotion is mentioned alongside yoga: technique alone is not enough. The point between the eyebrows, <i>bhrū-madhya</i>, is the <i>ājñā cakra</i> in later yoga traditions, a centre of concentration. Commentators describe a yogic practice: gathering the life-breath upward through the subtle channel to the brow and then out through the crown. Śaṅkara explains it as a method for advanced yogis. Rāmānuja notes that devotion, <i>bhakti</i>, is named alongside yoga; technique without love is incomplete. Many teachers say ordinary people need not learn the technique. A steady, loving mind is its essence. Commentators note yoga-bala, “the strength of yoga”: the dying yogi uses practised strength. Madhusūdana says the yogi’s breath and mind obey him even at death. The Mahābhārata describes Bhīṣma dying in this way, with full control, after teaching from his bed of arrows.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Even if we never practise such techniques, a steady, devoted mind is the essence. You may never practise special techniques. A steady, loving mind is the heart of all of them.</p></div>
+  <div class="key"><a href="#v10" style="color:#8fd3ff">↑ 8.10</a> · A steady mind <b>at the last breath</b>.</div>
+</section>
+<section class="page" id="v11">
+  <h2 class="page-title">ŚLOKA 8.11</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE STATE THEY SEEK</span></div>
+    <div class="iast"><span class="cl">yadakṣaraṃ vedavido vadanti</span><span class="cl cl2">viśanti yadyatayo vītarāgāḥ</span><span class="cl">yadicchanto brahmacaryaṃ caranti</span><span class="cl cl2">tatte padaṃ saṃgraheṇa pravakṣye ‖11‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Sages walking toward an imperishable light"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 132) scale(1.2)" stroke="#111" stroke-width="2.2"><circle cy="-34" r="22" fill="#ffd60a" opacity=".35" stroke="none"/><path d="M-34 14 q34 -22 68 0 q-34 12 -68 0z" fill="#ff8c1a"/><path d="M-16 6 q-2 -30 16 -34 q18 4 16 34z" fill="#ff8c1a"/><circle cy="-36" r="11" fill="#c98b5a"/><path d="M-6 -36 h4 M2 -36 h4" stroke-width="2"/><path d="M-14 4 q-10 -4 -14 6 M14 4 q10 -4 14 6" fill="none"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="36" fill="#ffd60a" opacity="0.45" stroke="none"/><text x="0" y="14" text-anchor="middle" font-family="Bangers" font-size="40">OṂ</text></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">AKṢARA</text></svg><div class="mean">“I will tell you briefly of that state which knowers of the Veda call the Imperishable, which ascetics free from passion enter, and desiring which people live in brahmacarya.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">yat akṣaram veda-vidaḥ vadanti</td><td><b>what knowers of the Veda call imperishable</b></td></tr><tr><td class="w">viśanti yat yatayaḥ vīta-rāgāḥ</td><td><b>which ascetics free of passion enter</b></td></tr><tr><td class="w">yat icchantaḥ brahmacaryam caranti</td><td><b>desiring which they live in brahmacarya</b></td></tr><tr><td class="w">tat te padam saṅgraheṇa pravakṣye</td><td><b>that state I will tell you briefly</b></td></tr></table>
+  </div>
+  <div class="key">The goal <b>all sages seek</b>.</div>
+</section>
+<section class="page" id="d11">
+  <h2 class="page-title">ŚLOKA 8.11 · DEEP DIVE</h2>
+  <div class="sub">THE STATE THEY SEEK</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Kṛṣṇa introduces the Imperishable goal, sought by sages.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>This verse closely echoes the Kaṭha Upaniṣad (1.2.15). Commentators note the three paths named: study, renunciation, celibate discipline. This verse closely echoes the Kaṭha Upaniṣad (1.2.15): <i>sarve vedā yat padam āmananti… yad icchanto brahmacaryaṃ caranti, tat te padaṃ saṅgraheṇa bravīmy oṃ ity etat</i>, “the word which all the Vedas declare… desiring which people live as students, that word I tell you briefly: it is Oṃ”. Commentators note that the Gītā is following the Upaniṣad closely, and 8.13 completes the parallel with Oṃ. Three kinds of seeker are named: scholars, renunciants, and celibate students. All seek the same Imperishable. Commentators note vīta-rāgāḥ, “free from passion”: only the dispassionate enter the Imperishable. Madhusūdana says study, renunciation and discipline all aim at the same goal. Many traditions honour those who give their lives to study and practice.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Different disciplines aim at the same imperishable goal. Different disciplines point to the same goal. Your practice may look different from another’s and still aim at the same light.</p></div>
+  <div class="key"><a href="#v11" style="color:#8fd3ff">↑ 8.11</a> · The goal <b>all sages seek</b>.</div>
+</section>
+<section class="page" id="v12">
+  <h2 class="page-title">ŚLOKA 8.12</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">CLOSING THE GATES</span></div>
+    <div class="iast"><span class="cl">sarvadvārāṇi saṃyamya mano hṛdi nirudhya ca</span><span class="cl cl2">mūrdhnyādhāyātmanaḥ prāṇamāsthito yogadhāraṇām ‖12‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A yogi closing the gates of the body, mind gathered in the heart"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 132) scale(1.2)" stroke="#111" stroke-width="2.2"><circle cy="-34" r="22" fill="#ffd60a" opacity=".35" stroke="none"/><path d="M-34 14 q34 -22 68 0 q-34 12 -68 0z" fill="#ff8c1a"/><path d="M-16 6 q-2 -30 16 -34 q18 4 16 34z" fill="#ff8c1a"/><circle cy="-36" r="11" fill="#c98b5a"/><path d="M-6 -36 h4 M2 -36 h4" stroke-width="2"/><path d="M-14 4 q-10 -4 -14 6 M14 4 q10 -4 14 6" fill="none"/></g><g transform="translate(158 100) scale(1)"><path d="M0 30 q-50 -30 -30 -54 q18 -16 30 6 q12 -22 30 -6 q20 24 -30 54z" fill="#e05a8a" stroke="#111" stroke-width="2"/></g><rect x="56.0" y="8" width="108.0" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">CLOSE THE GATES</text></svg><div class="mean">“Closing all the gates of the body, confining the mind in the heart, placing the life-breath in the head, established in yogic concentration,”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">sarva-dvārāṇi saṃyamya</td><td><b>controlling all the gates</b></td></tr><tr><td class="w">manaḥ hṛdi nirudhya ca</td><td><b>confining the mind in the heart</b></td></tr><tr><td class="w">mūrdhni ādhāya ātmanaḥ prāṇam</td><td><b>placing the life-breath in the head</b></td></tr><tr><td class="w">āsthitaḥ yoga-dhāraṇām</td><td><b>established in yogic concentration</b></td></tr></table>
+  </div>
+  <div class="key">Close the gates, <b>gather within</b>.</div>
+</section>
+<section class="page" id="d12">
+  <h2 class="page-title">ŚLOKA 8.12 · DEEP DIVE</h2>
+  <div class="sub">CLOSING THE GATES</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The yogi’s method: close the senses, gather mind and breath.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>The “gates” are the senses (see 5.13’s city of nine gates). The sentence continues into 8.13. The “gates” are the senses, as in 5.13’s city of nine gates. Commentators describe three steps: close the gates (withdraw the senses); confine the mind in the heart (gather attention inward); raise the breath to the head (the yogic exit). Śaṅkara says the mind is fixed in the heart-lotus, the seat of the Self in Upaniṣadic thought. Rāmānuja agrees that the heart is the place of meditation on the Lord. The Chāndogya Upaniṣad (8.1.1) speaks of the small lotus in the heart, the city of Brahman, in which the whole universe is contained. Commentators note mūrdhni, “in the head”: the breath is raised to the crown. Madhusūdana says this is a yogic practice for the time of death. Later yoga texts describe the crown of the head, the brahmarandhra, as the door through which the yogi departs.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Closing the eyes and gathering the mind in the heart is a simple, powerful practice. Close your eyes and rest attention in the centre of the chest. Simple practices like this calm the whole being.</p></div>
+  <div class="key"><a href="#v12" style="color:#8fd3ff">↑ 8.12</a> · Close the gates, <b>gather within</b>.</div>
+</section>
+<section class="page" id="v13">
+  <h2 class="page-title">ŚLOKA 8.13</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">OṂ AT THE END</span></div>
+    <div class="iast"><span class="cl">omityekākṣaraṃ brahma vyāharanmāmanusmaran</span><span class="cl cl2">yaḥ prayāti tyajandehaṃ sa yāti paramāṃ gatim ‖13‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A dying yogi chanting Om, rising to light"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 132) scale(1.2)" stroke="#111" stroke-width="2.2"><circle cy="-34" r="22" fill="#ffd60a" opacity=".35" stroke="none"/><path d="M-34 14 q34 -22 68 0 q-34 12 -68 0z" fill="#ff8c1a"/><path d="M-16 6 q-2 -30 16 -34 q18 4 16 34z" fill="#ff8c1a"/><circle cy="-36" r="11" fill="#c98b5a"/><path d="M-6 -36 h4 M2 -36 h4" stroke-width="2"/><path d="M-14 4 q-10 -4 -14 6 M14 4 q10 -4 14 6" fill="none"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="36" fill="#ffd60a" opacity="0.45" stroke="none"/><text x="0" y="14" text-anchor="middle" font-family="Bangers" font-size="40">OṂ</text></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">OṂ</text></svg><div class="mean">“…uttering Oṃ, the one-syllabled Brahman, and remembering me, whoever departs leaving the body reaches the supreme goal.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">om iti eka-akṣaram brahma</td><td><b>Oṃ, the one-syllabled Brahman</b></td></tr><tr><td class="w">vyāharan mām anusmaran</td><td><b>uttering, remembering me</b></td></tr><tr><td class="w">yaḥ prayāti tyajan deham</td><td><b>who departs leaving the body</b></td></tr><tr><td class="w">saḥ yāti paramām gatim</td><td><b>reaches the supreme goal</b></td></tr></table>
+  </div>
+  <div class="key"><b>Oṃ</b> and remembrance at the end.</div>
+</section>
+<section class="page" id="d13">
+  <h2 class="page-title">ŚLOKA 8.13 · DEEP DIVE</h2>
+  <div class="sub">OṂ AT THE END</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Oṃ and remembrance at death lead to the highest.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Oṃ is called Brahman in sound (Māṇḍūkya Upaniṣad). Commentators say chanting it with remembrance unites word and meaning. The Māṇḍūkya Upaniṣad explains Oṃ as A-U-M plus the silence after: waking, dream, deep sleep and the fourth, pure consciousness. The Kaṭha Upaniṣad (1.2.16) calls Oṃ the imperishable Brahman itself. Patañjali (Yoga Sūtra 1.27–28) says the word expressing the Lord is <i>praṇava</i>, Oṃ, and its repetition with meaning leads to concentration. Commentators note that the Gītā joins sound and devotion: <i>vyāharan</i>, uttering, and <i>anusmaran</i>, remembering. Śaṅkara stresses Oṃ as a symbol of Brahman. Rāmānuja stresses remembrance of the Lord. The Gītā itself calls Kṛṣṇa “Oṃ in all the Vedas” (7.8). Commentators note ekākṣaram, “one syllable”: Oṃ is the shortest and fullest sacred word. Madhusūdana says chanting it while remembering the Lord unites sound and meaning. Many people chant Oṃ at the start and end of each day.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Oṃ can be a daily companion, not only a final word. Try chanting Oṃ slowly three times, letting the sound fade into silence. Notice the calm that remains.</p></div>
+  <div class="key"><a href="#v13" style="color:#8fd3ff">↑ 8.13</a> · <b>Oṃ</b> and remembrance at the end.</div>
+</section>
+<section class="page" id="v14">
+  <h2 class="page-title">ŚLOKA 8.14</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">EASY FOR THE CONSTANT DEVOTEE</span></div>
+    <div class="iast"><span class="cl">ananyacetāḥ satataṃ yo māṃ smarati nityaśaḥ</span><span class="cl cl2">tasyāhaṃ sulabhaḥ pārtha nityayuktasya yoginaḥ ‖14‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A devotee always thinking of Krishna, Krishna easily near"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(40 118) scale(0.8)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -60 30 -70 q34 10 30 70z" fill="#ffd60a"/><path d="M-22 -4 l-14 10 M22 -4 l14 10" stroke="#3b6fd0" stroke-width="7"/><circle cy="-36" r="15" fill="#3b6fd0"/><path d="M-14 -46 h28 l-4 -12 h-20z" fill="#e0a800"/><path d="M4 -58 q12 -22 22 -8 q-10 2 -22 8z" fill="#2a9d6f"/><circle cx="18" cy="-60" r="3.5" fill="#3b8fd0"/><circle cx="-5" cy="-38" r="2.4" fill="#fff"/><circle cx="5" cy="-38" r="2.4" fill="#fff"/><path d="M-6 -29 q6 5 12 0" fill="none"/><path d="M-18 -10 q18 14 36 0" fill="none" stroke="#f08aa6" stroke-width="3"/></g><g transform="translate(86 124) scale(0.7)" stroke="#111" stroke-width="2"><path d="M-4 -6 l4 -16 l4 16z" fill="#c98b5a"/><path d="M-28 50 q-4 -58 28 -66 q32 8 28 66z" fill="#f4f4f4"/><path d="M-26 20 h52" stroke="#c0392b" stroke-width="6"/><circle cy="-34" r="14" fill="#c98b5a"/><path d="M-14 -42 h28 l-3 -14 l-6 6 l-5 -9 l-5 9 l-6 -6z" fill="#ffd60a"/><circle cx="-5" cy="-36" r="2" fill="#111"/><circle cx="5" cy="-36" r="2" fill="#111"/><path d="M-6 -27 q6 5 12 0" fill="none"/></g><g transform="translate(158 100) scale(1)"><path d="M0 30 q-50 -30 -30 -54 q18 -16 30 6 q12 -22 30 -6 q20 24 -30 54z" fill="#e05a8a" stroke="#111" stroke-width="2"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">SULABHAḤ</text></svg><div class="mean">“For the yogi who constantly remembers me, every day, with a mind that goes nowhere else, I am easy to reach, Pārtha.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">ananya-cetāḥ satatam</td><td><b>with mind on nothing else, constantly</b></td></tr><tr><td class="w">yaḥ mām smarati nityaśaḥ</td><td><b>who remembers me daily</b></td></tr><tr><td class="w">tasya aham su-labhaḥ</td><td><b>for him I am easy to reach</b></td></tr><tr><td class="w">nitya-yuktasya yoginaḥ</td><td><b>for the ever-united yogi</b></td></tr></table>
+  </div>
+  <div class="key">For the devoted, <b>I am easy to reach</b>.</div>
+</section>
+<section class="page" id="d14">
+  <h2 class="page-title">ŚLOKA 8.14 · DEEP DIVE</h2>
+  <div class="sub">EASY FOR THE CONSTANT DEVOTEE</div>
+  <div class="dd"><h4>🔎 In context</h4><p>After the hard yogic techniques, an easy promise: for the constant devotee, God is easy to reach.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p><i>Sulabha</i>, easily reached, is a key word in Rāmānuja’s tradition. Commentators contrast the difficult yogic death with the simple way of constant love. After the demanding yogic methods of 8.10–13, this verse gives an easier way. <i>Sulabha</i>, easily attained, is a treasured word in Śrī Vaiṣṇava tradition; Rāmānuja’s school lists <i>saulabhya</i>, accessibility, among the Lord’s chief qualities. Commentators note the conditions: <i>ananya-cetas</i>, undivided mind; <i>satatam</i>, always; <i>nityaśaḥ</i>, daily. Śaṅkara says for such a person the Lord is attained without the special techniques. Many devotees find this the most important verse of chapter 8: love, kept up daily, is enough. Commentators note nityaśaḥ, “daily”: constant remembrance is built day by day. Madhusūdana says for such a devotee, special techniques at death are not needed. Many find great comfort in this verse: love, not technique, is the key.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>You don’t need complicated techniques. Constant loving remembrance is enough. You don’t need complicated methods. Steady, loving remembrance every day is enough to keep the door open.</p></div>
+  <div class="key"><a href="#v14" style="color:#8fd3ff">↑ 8.14</a> · For the devoted, <b>I am easy to reach</b>.</div>
+</section>
+<section class="page" id="v15">
+  <h2 class="page-title">ŚLOKA 8.15</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">NO MORE SORROW</span></div>
+    <div class="iast"><span class="cl">māmupetya punarjanma duḥkhālayamaśāśvatam</span><span class="cl cl2">nāpnuvanti mahātmānaḥ saṃsiddhiṃ paramāṃ gatāḥ ‖15‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Great souls reaching Krishna, leaving behind a world of sorrow"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(40 118) scale(0.8)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -60 30 -70 q34 10 30 70z" fill="#ffd60a"/><path d="M-22 -4 l-14 10 M22 -4 l14 10" stroke="#3b6fd0" stroke-width="7"/><circle cy="-36" r="15" fill="#3b6fd0"/><path d="M-14 -46 h28 l-4 -12 h-20z" fill="#e0a800"/><path d="M4 -58 q12 -22 22 -8 q-10 2 -22 8z" fill="#2a9d6f"/><circle cx="18" cy="-60" r="3.5" fill="#3b8fd0"/><circle cx="-5" cy="-38" r="2.4" fill="#fff"/><circle cx="5" cy="-38" r="2.4" fill="#fff"/><path d="M-6 -29 q6 5 12 0" fill="none"/><path d="M-18 -10 q18 14 36 0" fill="none" stroke="#f08aa6" stroke-width="3"/></g><g transform="translate(86 124) scale(0.7)" stroke="#111" stroke-width="2"><path d="M-4 -6 l4 -16 l4 16z" fill="#c98b5a"/><path d="M-28 50 q-4 -58 28 -66 q32 8 28 66z" fill="#f4f4f4"/><path d="M-26 20 h52" stroke="#c0392b" stroke-width="6"/><circle cy="-34" r="14" fill="#c98b5a"/><path d="M-14 -42 h28 l-3 -14 l-6 6 l-5 -9 l-5 9 l-6 -6z" fill="#ffd60a"/><circle cx="-5" cy="-36" r="2" fill="#111"/><circle cx="5" cy="-36" r="2" fill="#111"/><path d="M-6 -27 q6 5 12 0" fill="none"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="40" fill="#ffd60a" opacity="0.5" stroke="none"/><circle cx="0" cy="0" r="18" fill="#ffd60a" opacity="0.95" stroke="none"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">MAHĀTMĀNAḤ</text></svg><div class="mean">“Having reached me, the great souls, who have attained the highest perfection, do not return to birth, the impermanent home of sorrow.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">mām upetya punar-janma</td><td><b>reaching me, rebirth</b></td></tr><tr><td class="w">duḥkha-ālayam aśāśvatam</td><td><b>the impermanent home of sorrow</b></td></tr><tr><td class="w">na āpnuvanti mahā-ātmānaḥ</td><td><b>the great souls do not get</b></td></tr><tr><td class="w">saṃsiddhim paramām gatāḥ</td><td><b>having reached supreme perfection</b></td></tr></table>
+  </div>
+  <div class="key">Reaching me, <b>no return to sorrow</b>.</div>
+</section>
+<section class="page" id="d15">
+  <h2 class="page-title">ŚLOKA 8.15 · DEEP DIVE</h2>
+  <div class="sub">NO MORE SORROW</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Reaching God ends rebirth.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p><i>Duḥkhālaya</i>, house of sorrow: the Gītā’s frank description of the world of rebirth. Commentators note the contrast: impermanent world, eternal goal. <i>Duḥkhālaya</i>, “abode of sorrow”, and <i>aśāśvata</i>, “impermanent”: the Gītā’s frank view of the world of rebirth. Commentators note it is not pessimism but realism: every birth brings ageing, illness, loss and death. Śaṅkara says the world is a place of sorrow because it is impermanent. Rāmānuja contrasts it with the Lord’s eternal abode. The Buddha’s teaching of <i>dukkha</i> is similar in spirit. The Gītā does not ask us to hate the world but to see it clearly, and to seek what lies beyond. Commentators note mahātmānaḥ, “great souls”: those who reach the Lord. Madhusūdana says they do not return to the world of sorrow. The verse is often read at funerals and memorial services.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>This world has much beauty, and also much sorrow. The Gītā points beyond both. See the world clearly, with its joys and sorrows. Clear seeing is the beginning of true freedom.</p></div>
+  <div class="key"><a href="#v15" style="color:#8fd3ff">↑ 8.15</a> · Reaching me, <b>no return to sorrow</b>.</div>
+</section>
+<section class="page" id="v16">
+  <h2 class="page-title">ŚLOKA 8.16</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">EVEN BRAHMĀ’S WORLD RETURNS</span></div>
+    <div class="iast"><span class="cl">ābrahmabhuvanāllokāḥ punarāvartino’rjuna</span><span class="cl cl2">māmupetya tu kaunteya punarjanma na vidyate ‖16‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Many heavenly worlds turning on a wheel, Krishna beyond them"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><circle r="36" fill="none" stroke="#e0a800" stroke-width="6"/><path d="M0 0 l36 0" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l25 25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l0 36" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-25 25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-36 0" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-26 -25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-0 -36" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l25 -26" stroke="#e0a800" stroke-width="3"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">ALL RETURN</text></svg><div class="mean">“All worlds, up to the world of Brahmā, return again, Arjuna. But on reaching me, son of Kuntī, there is no rebirth.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">ā-brahma-bhuvanāt lokāḥ</td><td><b>worlds up to Brahmā’s</b></td></tr><tr><td class="w">punar-āvartinaḥ arjuna</td><td><b>are subject to return</b></td></tr><tr><td class="w">mām upetya tu kaunteya</td><td><b>but reaching me</b></td></tr><tr><td class="w">punar-janma na vidyate</td><td><b>there is no rebirth</b></td></tr></table>
+  </div>
+  <div class="key">Every heaven returns; <b>I do not</b>.</div>
+</section>
+<section class="page" id="d16">
+  <h2 class="page-title">ŚLOKA 8.16 · DEEP DIVE</h2>
+  <div class="sub">EVEN BRAHMĀ’S WORLD RETURNS</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Even the highest heavens are temporary.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators: heavens are rewards within the cycle; only reaching the Supreme ends the cycle. This puts all lesser goals in perspective. Puranic cosmology lists seven upper worlds, from Bhū (earth) through Bhuvar, Svar, Mahar, Janas and Tapas to Satya (Brahmaloka), Brahmā’s world. Commentators explain that even the highest of these is within time; at the end of Brahmā’s life, it too dissolves. Śaṅkara notes that those who reach Brahmaloka through meditation may gain liberation with Brahmā at the end of the cycle (<i>krama-mukti</i>, gradual liberation). Rāmānuja says only reaching the Lord himself ends rebirth. The verse puts every reward in perspective. Commentators note punar-āvartinaḥ, “returning again”: even the highest heavens are temporary. Madhusūdana says only the Lord’s abode is beyond return. The verse puts every reward, however great, in perspective.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Even the best reward is temporary. Aim beyond rewards. Every reward within time ends. Let your deepest aim be something that does not.</p></div>
+  <div class="key"><a href="#v16" style="color:#8fd3ff">↑ 8.16</a> · Every heaven returns; <b>I do not</b>.</div>
+</section>
+<section class="page" id="v17">
+  <h2 class="page-title">ŚLOKA 8.17</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">A DAY OF BRAHMĀ</span></div>
+    <div class="iast"><span class="cl">sahasrayugaparyantamaharyadbrahmaṇo viduḥ</span><span class="cl cl2">rātriṃ yugasahasrāntāṃ te’horātravido janāḥ ‖17‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A giant clock with a thousand ages in a single day"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><circle cx="0" cy="-10" r="26" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">1000 YUGAS</text></svg><div class="mean">“Those who know that a day of Brahmā lasts a thousand ages, and his night a thousand ages, know day and night.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">sahasra-yuga-paryantam</td><td><b>lasting a thousand yugas</b></td></tr><tr><td class="w">ahaḥ yat brahmaṇaḥ viduḥ</td><td><b>who know the day of Brahmā</b></td></tr><tr><td class="w">rātrim yuga-sahasra-antām</td><td><b>the night ending after a thousand yugas</b></td></tr><tr><td class="w">te ahaḥ-rātra-vidaḥ janāḥ</td><td><b>they truly know day and night</b></td></tr></table>
+  </div>
+  <div class="key">A day of Brahmā: <b>a thousand ages</b>.</div>
+</section>
+<section class="page" id="d17">
+  <h2 class="page-title">ŚLOKA 8.17 · DEEP DIVE</h2>
+  <div class="sub">A DAY OF BRAHMĀ</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Cosmic time: Brahmā’s day and night last a thousand ages each.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>In Purāṇic reckoning a day of Brahmā (a kalpa) is about 4.32 billion human years. Commentators note the point: even the creator’s life has an end. In Purāṇic reckoning, the four yugas (Satya, Tretā, Dvāpara, Kali) together make a <i>mahā-yuga</i> of 4,320,000 human years. A thousand mahā-yugas make one day of Brahmā, a <i>kalpa</i>: 4.32 billion years. His night is as long. Brahmā lives a hundred such years. Commentators note the scale is meant to humble. Śaṅkara says knowing this cosmic time removes attachment to even the highest worlds. Some modern readers note that 4.32 billion years is close to the age of the Earth, a coincidence that intrigues many. Commentators note aho-rātra-vidaḥ, “knowers of day and night”: those who understand cosmic time. Madhusūdana says this knowledge produces detachment from even the highest worlds. Some find a strange comfort in cosmic time: our troubles are very small against it.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Seen against cosmic time, our worries shrink. That can be freeing. Against cosmic time, most of our worries are very small. Let that perspective lighten today.</p></div>
+  <div class="key"><a href="#v17" style="color:#8fd3ff">↑ 8.17</a> · A day of Brahmā: <b>a thousand ages</b>.</div>
+</section>
+<section class="page" id="v18">
+  <h2 class="page-title">ŚLOKA 8.18</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">DAWN AND NIGHT OF THE COSMOS</span></div>
+    <div class="iast"><span class="cl">avyaktādvyaktayaḥ sarvāḥ prabhavantyaharāgame</span><span class="cl cl2">rātryāgame pralīyante tatraivāvyaktasaṃjñake ‖18‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="The universe appearing at Brahmā’s dawn"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><text x="-45" y="-40" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text><text x="-16" y="-3" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text><text x="13" y="34" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text><text x="42" y="-9" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text><text x="-19" y="28" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text><text x="10" y="-15" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text><text x="39" y="22" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text><text x="-22" y="-21" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text><text x="7" y="16" font-family="Bangers" font-size="12" fill="#ffd60a">✦</text></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">DAWN</text></svg><div class="mean">“At the coming of that day, all manifest things arise from the unmanifest; at the coming of night, they dissolve into that same unmanifest.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">avyaktāt vyaktayaḥ sarvāḥ</td><td><b>from the unmanifest all manifest things</b></td></tr><tr><td class="w">prabhavanti ahar-āgame</td><td><b>arise at the coming of day</b></td></tr><tr><td class="w">rātri-āgame pralīyante</td><td><b>dissolve at the coming of night</b></td></tr><tr><td class="w">tatra eva avyakta-saṃjñake</td><td><b>into that called the unmanifest</b></td></tr></table>
+  </div>
+  <div class="key">Worlds rise and dissolve <b>in cycles</b>.</div>
+</section>
+<section class="page" id="d18">
+  <h2 class="page-title">ŚLOKA 8.18 · DEEP DIVE</h2>
+  <div class="sub">DAWN AND NIGHT OF THE COSMOS</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The universe arises and dissolves in cycles.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators: creation is cyclic, not once and for all. The unmanifest is like a seed holding the tree. This is the Gītā’s picture of cosmic cycles: creation at Brahmā’s dawn, dissolution at his dusk. Commentators note the image of sleep and waking. As we wake each morning and the world reappears, and at night it vanishes, so the cosmos wakes and sleeps. Śaṅkara says the unmanifest is the seed-state of the world, held in the Lord’s power. Rāmānuja says it is subtle matter (<i>prakṛti</i>), which becomes gross at creation. The idea of cyclic time contrasts with linear creation stories in other traditions. Commentators note ahar-āgame, “at the coming of day”: creation is pictured as dawn. Madhusūdana says the unmanifest is the seed state from which the world grows. Some modern readers compare the cycles to theories of an expanding and contracting universe, though the Gītā’s view is spiritual.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Endings are part of a cycle. Something always remains to begin again. Endings are part of a cycle. What dissolves will, in some form, begin again.</p></div>
+  <div class="key"><a href="#v18" style="color:#8fd3ff">↑ 8.18</a> · Worlds rise and dissolve <b>in cycles</b>.</div>
+</section>
+<section class="page" id="v19">
+  <h2 class="page-title">ŚLOKA 8.19</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">AGAIN AND AGAIN</span></div>
+    <div class="iast"><span class="cl">bhūtagrāmaḥ sa evāyaṃ bhūtvā bhūtvā pralīyate</span><span class="cl cl2">rātryāgame’vaśaḥ pārtha prabhavatyaharāgame ‖19‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Beings appearing and disappearing in waves"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><circle r="36" fill="none" stroke="#e0a800" stroke-width="6"/><path d="M0 0 l36 0" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l25 25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l0 36" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-25 25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-36 0" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-26 -25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-0 -36" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l25 -26" stroke="#e0a800" stroke-width="3"/></g><rect x="56.0" y="8" width="108.0" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">AGAIN AND AGAIN</text></svg><div class="mean">“This same host of beings, coming into being again and again, dissolves helplessly at the coming of night, Pārtha, and arises at the coming of day.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">bhūta-grāmaḥ saḥ eva ayam</td><td><b>this same multitude of beings</b></td></tr><tr><td class="w">bhūtvā bhūtvā pralīyate</td><td><b>having arisen again and again, dissolves</b></td></tr><tr><td class="w">rātri-āgame avaśaḥ</td><td><b>at night’s coming, helplessly</b></td></tr><tr><td class="w">prabhavati ahar-āgame</td><td><b>arises at the day’s coming</b></td></tr></table>
+  </div>
+  <div class="key">Carried <b>helplessly in the cycle</b>.</div>
+</section>
+<section class="page" id="d19">
+  <h2 class="page-title">ŚLOKA 8.19 · DEEP DIVE</h2>
+  <div class="sub">AGAIN AND AGAIN</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Beings are carried helplessly through the cycles.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p><i>Avaśa</i>, helpless: bound beings have no say in the cycle. Commentators contrast this with the freedom of reaching the Supreme. <i>Bhūtvā bhūtvā</i>, “having been, having been”: the repetition mirrors the endless cycle. <i>Avaśa</i>, helplessly, without control. Commentators note that the same beings return, carrying their karma, as a seed carries the plant. Śaṅkara says this helplessness is due to ignorance and karma. Rāmānuja says beings bound by karma are carried along until they reach the Lord. The verse contrasts sharply with the freedom of 8.21, where those who reach the supreme abode do not return. Commentators note bhūta-grāmaḥ, “host of beings”: the same beings return in each cycle. Madhusūdana says this shows the power of karma. Only knowledge or devotion breaks the cycle.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Much of life carries us along. Freedom means finding what is beyond the current. Much of life carries us along like a current. Freedom begins when we find what is not carried.</p></div>
+  <div class="key"><a href="#v19" style="color:#8fd3ff">↑ 8.19</a> · Carried <b>helplessly in the cycle</b>.</div>
+</section>
+<section class="page" id="v20">
+  <h2 class="page-title">ŚLOKA 8.20</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">BEYOND THE UNMANIFEST</span></div>
+    <div class="iast"><span class="cl">parastasmāttu bhāvo’nyo’vyakto’vyaktātsanātanaḥ</span><span class="cl cl2">yaḥ sa sarveṣu bhūteṣu naśyatsu na vinaśyati ‖20‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A higher light beyond the cosmic seed, untouched by dissolution"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="40" fill="#ffd60a" opacity="0.5" stroke="none"/><circle cx="0" cy="0" r="18" fill="#ffd60a" opacity="0.95" stroke="none"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">SANĀTANA</text></svg><div class="mean">“But beyond that unmanifest there is another unmanifest, eternal, which does not perish when all beings perish.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">paraḥ tasmāt tu bhāvaḥ anyaḥ</td><td><b>but beyond that, another state</b></td></tr><tr><td class="w">avyaktaḥ avyaktāt sanātanaḥ</td><td><b>unmanifest, beyond the unmanifest, eternal</b></td></tr><tr><td class="w">yaḥ saḥ sarveṣu bhūteṣu</td><td><b>which, when all beings</b></td></tr><tr><td class="w">naśyatsu na vinaśyati</td><td><b>perish, does not perish</b></td></tr></table>
+  </div>
+  <div class="key">An eternal reality <b>beyond all cycles</b>.</div>
+</section>
+<section class="page" id="d20">
+  <h2 class="page-title">ŚLOKA 8.20 · DEEP DIVE</h2>
+  <div class="sub">BEYOND THE UNMANIFEST</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Beyond the cosmic seed there is an eternal reality.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Two unmanifests: the seed of the universe, which dissolves and returns; and the Supreme, which never perishes. Commentators say this is the goal. Two unmanifests are distinguished. The first is the cosmic seed (8.18) that holds the world between cycles. The second is beyond it, eternal, never dissolving. Commentators of every school agree this second is the Supreme. Śaṅkara calls it Brahman, the Self. Rāmānuja says it is the pure self, or the Lord. The Kaṭha Upaniṣad (1.3.11) has a similar ladder: beyond the great is the unmanifest, beyond the unmanifest is the Person, beyond the Person there is nothing. Commentators note sanātana, “eternal”: the higher unmanifest is beyond all cycles. Madhusūdana says it does not perish when all beings perish. This is the goal of the seeker.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Behind all that comes and goes is what never goes. Behind everything that comes and goes, there is something that never goes. Look for it in quiet moments.</p></div>
+  <div class="key"><a href="#v20" style="color:#8fd3ff">↑ 8.20</a> · An eternal reality <b>beyond all cycles</b>.</div>
+</section>
+<section class="page" id="v21">
+  <h2 class="page-title">ŚLOKA 8.21</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE SUPREME ABODE</span></div>
+    <div class="iast"><span class="cl">avyakto’kṣara ityuktastamāhuḥ paramāṃ gatim</span><span class="cl cl2">yaṃ prāpya na nivartante taddhāma paramaṃ mama ‖21‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A shining abode at the summit, a door with no return"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="36" fill="#ffd60a" opacity="0.45" stroke="none"/><text x="0" y="14" text-anchor="middle" font-family="Bangers" font-size="40">OṂ</text></g><rect x="63.199999999999996" y="8" width="93.60000000000001" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">PARAMAM DHĀMA</text></svg><div class="mean">“That unmanifest is called the Imperishable; they call it the supreme goal. Reaching it, they do not return. That is my supreme abode.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">avyaktaḥ akṣaraḥ iti uktaḥ</td><td><b>unmanifest, called the Imperishable</b></td></tr><tr><td class="w">tam āhuḥ paramām gatim</td><td><b>they call it the supreme goal</b></td></tr><tr><td class="w">yam prāpya na nivartante</td><td><b>reaching which they do not return</b></td></tr><tr><td class="w">tat dhāma paramam mama</td><td><b>that is my supreme abode</b></td></tr></table>
+  </div>
+  <div class="key">My supreme abode: <b>no return</b>.</div>
+</section>
+<section class="page" id="d21">
+  <h2 class="page-title">ŚLOKA 8.21 · DEEP DIVE</h2>
+  <div class="sub">THE SUPREME ABODE</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The goal named: the supreme abode.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p><i>Paramam dhāma</i>, the supreme abode, recurs in 15.6. Rāmānuja’s tradition understands it as Vaikuṇṭha; Śaṅkara as the state of Brahman. <i>Paramaṃ dhāma</i>, supreme abode, returns in 15.6. Commentators differ on what it is. Śaṅkara: the state of Brahman, not a place. Rāmānuja and the Vaiṣṇava schools: Vaikuṇṭha, the Lord’s eternal realm, where freed souls serve and enjoy him. Madhva: the Lord’s abode, where souls retain their individuality. All agree that it is beyond return. The verse completes the cosmology of 8.16–20 by naming the goal. Commentators note paramāṃ gatim, “supreme goal”: the unmanifest Imperishable. Madhusūdana says reaching it, none return. Gauḍīya Vaiṣṇavas speak of Goloka, Kṛṣṇa’s own realm, and Śaivas of Kailāsa; each tradition pictures the highest home in its own way.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>There is a home beyond all journeys. There is a home beyond all our journeys. Knowing that can make the journey itself less anxious.</p></div>
+  <div class="key"><a href="#v21" style="color:#8fd3ff">↑ 8.21</a> · My supreme abode: <b>no return</b>.</div>
+</section>
+<section class="page" id="v22">
+  <h2 class="page-title">ŚLOKA 8.22</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">REACHED BY DEVOTION</span></div>
+    <div class="iast"><span class="cl">puruṣaḥ sa paraḥ pārtha bhaktyā labhyastvananyayā</span><span class="cl cl2">yasyāntaḥsthāni bhūtāni yena sarvamidaṃ tatam ‖22‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A devotee whose love reaches Krishna who pervades all"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(40 118) scale(0.8)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -60 30 -70 q34 10 30 70z" fill="#ffd60a"/><path d="M-22 -4 l-14 10 M22 -4 l14 10" stroke="#3b6fd0" stroke-width="7"/><circle cy="-36" r="15" fill="#3b6fd0"/><path d="M-14 -46 h28 l-4 -12 h-20z" fill="#e0a800"/><path d="M4 -58 q12 -22 22 -8 q-10 2 -22 8z" fill="#2a9d6f"/><circle cx="18" cy="-60" r="3.5" fill="#3b8fd0"/><circle cx="-5" cy="-38" r="2.4" fill="#fff"/><circle cx="5" cy="-38" r="2.4" fill="#fff"/><path d="M-6 -29 q6 5 12 0" fill="none"/><path d="M-18 -10 q18 14 36 0" fill="none" stroke="#f08aa6" stroke-width="3"/></g><g transform="translate(86 124) scale(0.7)" stroke="#111" stroke-width="2"><path d="M-4 -6 l4 -16 l4 16z" fill="#c98b5a"/><path d="M-28 50 q-4 -58 28 -66 q32 8 28 66z" fill="#f4f4f4"/><path d="M-26 20 h52" stroke="#c0392b" stroke-width="6"/><circle cy="-34" r="14" fill="#c98b5a"/><path d="M-14 -42 h28 l-3 -14 l-6 6 l-5 -9 l-5 9 l-6 -6z" fill="#ffd60a"/><circle cx="-5" cy="-36" r="2" fill="#111"/><circle cx="5" cy="-36" r="2" fill="#111"/><path d="M-6 -27 q6 5 12 0" fill="none"/></g><g transform="translate(158 100) scale(1)"><path d="M0 30 q-50 -30 -30 -54 q18 -16 30 6 q12 -22 30 -6 q20 24 -30 54z" fill="#e05a8a" stroke="#111" stroke-width="2"/></g><rect x="63.199999999999996" y="8" width="93.60000000000001" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">ANANYA BHAKTI</text></svg><div class="mean">“That supreme Person, Pārtha, in whom all beings dwell and by whom all this is pervaded, is reached by undivided devotion.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">puruṣaḥ saḥ paraḥ pārtha</td><td><b>that supreme Person</b></td></tr><tr><td class="w">bhaktyā labhyaḥ tu ananyayā</td><td><b>is reached by undivided devotion</b></td></tr><tr><td class="w">yasya antaḥ-sthāni bhūtāni</td><td><b>in whom beings dwell</b></td></tr><tr><td class="w">yena sarvam idam tatam</td><td><b>by whom all this is pervaded</b></td></tr></table>
+  </div>
+  <div class="key">Reached by <b>undivided devotion</b>.</div>
+</section>
+<section class="page" id="d22">
+  <h2 class="page-title">ŚLOKA 8.22 · DEEP DIVE</h2>
+  <div class="sub">REACHED BY DEVOTION</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The way: undivided devotion.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p><i>Ananya bhakti</i>, devotion with no other object, is central to chapters 9–12. Commentators say this verse sums up the means after all the cosmology. <i>Ananya bhakti</i>, undivided devotion, becomes central in chapters 9 and 11 (9.22, 11.54). Commentators note the shift: after cosmology, the means is simple. Śaṅkara says devotion here is knowledge in the form of love. Rāmānuja says it is loving meditation with no other object. The phrase “in whom all beings dwell, by whom all is pervaded” recalls 7.7 (pearls on a thread) and 9.4. The Lord is both container and pervader of all. Yet he is reached by something as simple as love. Commentators note pārtha, “son of Pṛthā”: Kṛṣṇa uses Arjuna’s mother’s name as he speaks of devotion. Madhusūdana says undivided devotion is the means to the Supreme Person. The bhakti saints often said that no learning is needed for this, only longing.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Love with your whole heart. That is the way. After all the big ideas, the way is simple: love with your whole heart.</p></div>
+  <div class="key"><a href="#v22" style="color:#8fd3ff">↑ 8.22</a> · Reached by <b>undivided devotion</b>.</div>
+</section>
+<section class="page" id="v23">
+  <h2 class="page-title">ŚLOKA 8.23</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">TWO PATHS AT DEATH</span></div>
+    <div class="iast"><span class="cl">yatra kāle tvanāvṛttimāvṛttiṃ caiva yoginaḥ</span><span class="cl cl2">prayātā yānti taṃ kālaṃ vakṣyāmi bharatarṣabha ‖23‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Two roads: one bright, one dark"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 118) scale(0.95)" stroke="#111" stroke-width="2"><path d="M-30 50 q-4 -60 30 -70 q34 10 30 70z" fill="#ffd60a"/><path d="M-22 -4 l-14 10 M22 -4 l14 10" stroke="#3b6fd0" stroke-width="7"/><circle cy="-36" r="15" fill="#3b6fd0"/><path d="M-14 -46 h28 l-4 -12 h-20z" fill="#e0a800"/><path d="M4 -58 q12 -22 22 -8 q-10 2 -22 8z" fill="#2a9d6f"/><circle cx="18" cy="-60" r="3.5" fill="#3b8fd0"/><circle cx="-5" cy="-38" r="2.4" fill="#fff"/><circle cx="5" cy="-38" r="2.4" fill="#fff"/><path d="M-6 -29 q6 5 12 0" fill="none"/><path d="M-18 -10 q18 14 36 0" fill="none" stroke="#f08aa6" stroke-width="3"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="-10" r="26" fill="#ffd60a" stroke="#ff8c1a" stroke-width="3"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">2 PATHS</text></svg><div class="mean">“Now I will tell you, best of the Bharatas, the times in which yogis depart and do not return, and those in which they depart and return.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">yatra kāle tu anāvṛttim</td><td><b>the time in which non-return</b></td></tr><tr><td class="w">āvṛttim ca eva yoginaḥ</td><td><b>and return, yogis</b></td></tr><tr><td class="w">prayātāḥ yānti</td><td><b>departing, go</b></td></tr><tr><td class="w">tam kālam vakṣyāmi</td><td><b>that time I will tell</b></td></tr></table>
+  </div>
+  <div class="key">Two paths <b>after death</b>.</div>
+</section>
+<section class="page" id="d23">
+  <h2 class="page-title">ŚLOKA 8.23 · DEEP DIVE</h2>
+  <div class="sub">TWO PATHS AT DEATH</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Kṛṣṇa introduces the two paths of departure.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>This teaching comes from the Upaniṣads (Chāndogya 5.10, Bṛhadāraṇyaka 6.2). Commentators read the “times” as presiding deities of the path, not literal clock times. Verses 23–26 describe two paths after death, drawn from the Upaniṣads. The Chāndogya (5.10) and Bṛhadāraṇyaka (6.2.15–16) describe the <i>deva-yāna</i>, the path of the gods, and the <i>pitṛ-yāna</i>, the path of the ancestors. Commentators note that “time” (<i>kāla</i>) here is read by Śaṅkara and Rāmānuja not as clock time but as presiding deities who guide the soul along each path. The teaching was well known in the Gītā’s day; Kṛṣṇa mentions it, then in 8.27 tells Arjuna not to worry about it. Commentators note anāvṛtti and āvṛtti, non-return and return. Madhusūdana says the yogi here means one who practises meditation or ritual. Many readers find the two paths easier to understand as two directions of life: toward light or toward smoke.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Old traditions describe journeys after death. The Gītā will soon say: the yogi need not worry. Old traditions map journeys after death in great detail. The Gītā’s practical advice comes in 8.27: live well, and don’t worry.</p></div>
+  <div class="key"><a href="#v23" style="color:#8fd3ff">↑ 8.23</a> · Two paths <b>after death</b>.</div>
+</section>
+<section class="page" id="v24">
+  <h2 class="page-title">ŚLOKA 8.24</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE BRIGHT PATH</span></div>
+    <div class="iast"><span class="cl">agnirjyotirahaḥ śuklaḥ ṣaṇmāsā uttarāyaṇam</span><span class="cl cl2">tatra prayātā gacchanti brahma brahmavido janāḥ ‖24‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Fire, light, day, bright fortnight and the northern sun leading upward"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><g transform="translate(0 30) scale(1.1)" stroke="#111" stroke-width="2"><rect x="-26" y="0" width="52" height="16" fill="#c9a26b"/><path d="M-18 0 q-4 -26 10 -40 q0 18 8 22 q6 -16 2 -30 q18 16 16 48z" fill="#ff8c1a"/><path d="M-8 0 q0 -14 8 -20 q6 10 6 20z" fill="#ffd60a"/></g></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">ŚUKLA</text></svg><div class="mean">“Fire, light, day, the bright fortnight, the six months of the northern course: departing then, knowers of Brahman go to Brahman.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">agniḥ jyotiḥ ahaḥ śuklaḥ</td><td><b>fire, light, day, the bright half</b></td></tr><tr><td class="w">ṣaṇmāsāḥ uttarāyaṇam</td><td><b>six months of the northern course</b></td></tr><tr><td class="w">tatra prayātāḥ gacchanti</td><td><b>departing there, they go</b></td></tr><tr><td class="w">brahma brahma-vidaḥ janāḥ</td><td><b>knowers of Brahman to Brahman</b></td></tr></table>
+  </div>
+  <div class="key">The bright path <b>leads to Brahman</b>.</div>
+</section>
+<section class="page" id="d24">
+  <h2 class="page-title">ŚLOKA 8.24 · DEEP DIVE</h2>
+  <div class="sub">THE BRIGHT PATH</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The path of light leads to Brahman.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>This is the <i>devayāna</i>, path of the gods. Bhīṣma waited for <i>uttarāyaṇa</i> before dying in the Mahābhārata. Commentators read these as stages guarded by deities of light. <i>Uttarāyaṇa</i> is the six months when the sun moves north, from the winter solstice to the summer solstice; it is celebrated at Makara Saṅkrānti. In the Mahābhārata, Bhīṣma, with the boon of choosing his death, lay on a bed of arrows for many days and waited for uttarāyaṇa to die. Commentators of the Vedānta schools read the stages as deities guiding the soul through realms of light. Śaṅkara says this path leads to Brahmaloka and gradual liberation. Rāmānuja says it leads to the Lord’s abode. Many Hindus still consider uttarāyaṇa an auspicious time to die. Commentators note brahma-vidaḥ, “knowers of Brahman”: the bright path is for those who know. Madhusūdana says the stages are guarded by deities of light. The image has inspired many to see life itself as a journey toward light.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Live toward light, and the path will be bright. Live toward light: knowledge, kindness, truth. Then whatever path lies ahead will be bright.</p></div>
+  <div class="key"><a href="#v24" style="color:#8fd3ff">↑ 8.24</a> · The bright path <b>leads to Brahman</b>.</div>
+</section>
+<section class="page" id="v25">
+  <h2 class="page-title">ŚLOKA 8.25</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE DARK PATH</span></div>
+    <div class="iast"><span class="cl">dhūmo rātristathā kṛṣṇaḥ ṣaṇmāsā dakṣiṇāyanam</span><span class="cl cl2">tatra cāndramasaṃ jyotiryogī prāpya nivartate ‖25‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Smoke, night, dark fortnight and the southern sun leading to the moon"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><path d="M0 -28 a18 18 0 1 0 0 36 a23.4 23.4 0 0 1 0 -36z" fill="#fff8c0" stroke="#111" stroke-width="2"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">KṚṢṆA</text></svg><div class="mean">“Smoke, night, the dark fortnight, the six months of the southern course: departing then, the yogi reaches the light of the moon and returns.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">dhūmaḥ rātriḥ tathā kṛṣṇaḥ</td><td><b>smoke, night, the dark half</b></td></tr><tr><td class="w">ṣaṇmāsāḥ dakṣiṇāyanam</td><td><b>six months of the southern course</b></td></tr><tr><td class="w">tatra cāndramasam jyotiḥ</td><td><b>there the light of the moon</b></td></tr><tr><td class="w">yogī prāpya nivartate</td><td><b>the yogi reaching, returns</b></td></tr></table>
+  </div>
+  <div class="key">The dark path <b>returns</b>.</div>
+</section>
+<section class="page" id="d25">
+  <h2 class="page-title">ŚLOKA 8.25 · DEEP DIVE</h2>
+  <div class="sub">THE DARK PATH</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The path of smoke leads to the lunar heaven and back to birth.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>This is the <i>pitṛyāna</i>, path of the ancestors, for those who did good works with desire. Commentators: a good path, but it returns. <i>Dakṣiṇāyana</i> is the sun’s southward course, from summer to winter solstice. The <i>pitṛ-yāna</i>, the path of the ancestors, leads to the lunar realm, a heaven for those who did good works with desire for rewards. When their merit is used up, they return to earth (9.21). Commentators note that this is not a bad path; it is a path of reward within the cycle. Śaṅkara says “yogi” here means one who performed rites. Rāmānuja agrees. The smoke stands for unclarity, the moon for reflected light. Commentators note cāndramasaṃ jyotiḥ, “the light of the moon”: the lunar heaven is a reflected light, as the moon reflects the sun. Madhusūdana says this path is for those who did good works for reward. The moon’s borrowed light suits a borrowed, temporary reward.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Good works done for reward bring rewards, and then return. Good done for reward brings reward, then returns. Good done for its own sake leads further.</p></div>
+  <div class="key"><a href="#v25" style="color:#8fd3ff">↑ 8.25</a> · The dark path <b>returns</b>.</div>
+</section>
+<section class="page" id="v26">
+  <h2 class="page-title">ŚLOKA 8.26</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">ETERNAL PATHS</span></div>
+    <div class="iast"><span class="cl">śuklakṛṣṇe gatī hyete jagataḥ śāśvate mate</span><span class="cl cl2">ekayā yātyanāvṛttimanyayā’vartate punaḥ ‖26‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Two paths, one going on, one curving back"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(158 100) scale(1)"><circle r="36" fill="none" stroke="#e0a800" stroke-width="6"/><path d="M0 0 l36 0" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l25 25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l0 36" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-25 25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-36 0" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-26 -25" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l-0 -36" stroke="#e0a800" stroke-width="3"/><path d="M0 0 l25 -26" stroke="#e0a800" stroke-width="3"/></g><rect x="63.199999999999996" y="8" width="93.60000000000001" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">ŚUKLA · KṚṢṆA</text></svg><div class="mean">“These two paths of the world, the bright and the dark, are considered eternal. By one, one goes not to return; by the other, one returns again.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">śukla-kṛṣṇe gatī hi ete</td><td><b>these two paths, bright and dark</b></td></tr><tr><td class="w">jagataḥ śāśvate mate</td><td><b>of the world, considered eternal</b></td></tr><tr><td class="w">ekayā yāti anāvṛttim</td><td><b>by one, one goes to non-return</b></td></tr><tr><td class="w">anyayā āvartate punaḥ</td><td><b>by the other, returns again</b></td></tr></table>
+  </div>
+  <div class="key">Two paths: <b>freedom or return</b>.</div>
+</section>
+<section class="page" id="d26">
+  <h2 class="page-title">ŚLOKA 8.26 · DEEP DIVE</h2>
+  <div class="sub">ETERNAL PATHS</div>
+  <div class="dd"><h4>🔎 In context</h4><p>Two eternal paths: one to freedom, one back to birth.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators simplify: the bright path of knowledge and devotion, and the dark path of desire-bound works. Commentators simplify the two paths. The bright one is knowledge, devotion and selfless action, leading to freedom. The dark one is action done for reward, leading back to birth. Śaṅkara says the paths are eternal because the cycle of saṃsāra has no beginning. Rāmānuja says they correspond to the two kinds of practitioners. Many modern teachers read the verse ethically: every choice leans toward light or toward smoke. The two paths are not only after death; they are present in how we live now. Commentators note śāśvate, “eternal”: the two paths always exist. Madhusūdana says every being travels one or the other. The verse sums up the cosmology of the passage.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Every choice leans toward one path or the other. Each choice today leans toward one path or the other. Choose light where you can.</p></div>
+  <div class="key"><a href="#v26" style="color:#8fd3ff">↑ 8.26</a> · Two paths: <b>freedom or return</b>.</div>
+</section>
+<section class="page" id="v27">
+  <h2 class="page-title">ŚLOKA 8.27</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">THE YOGI IS NOT CONFUSED</span></div>
+    <div class="iast"><span class="cl">naite sṛtī pārtha jānanyogī muhyati kaścana</span><span class="cl cl2">tasmātsarveṣu kāleṣu yogayukto bhavārjuna ‖27‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A calm yogi unconcerned about the path, knowing the way"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 132) scale(1.2)" stroke="#111" stroke-width="2.2"><circle cy="-34" r="22" fill="#ffd60a" opacity=".35" stroke="none"/><path d="M-34 14 q34 -22 68 0 q-34 12 -68 0z" fill="#ff8c1a"/><path d="M-16 6 q-2 -30 16 -34 q18 4 16 34z" fill="#ff8c1a"/><circle cy="-36" r="11" fill="#c98b5a"/><path d="M-6 -36 h4 M2 -36 h4" stroke-width="2"/><path d="M-14 4 q-10 -4 -14 6 M14 4 q10 -4 14 6" fill="none"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="40" fill="#ffd60a" opacity="0.5" stroke="none"/><circle cx="0" cy="0" r="18" fill="#ffd60a" opacity="0.95" stroke="none"/></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">NA MUHYATI</text></svg><div class="mean">“Knowing these two paths, Pārtha, no yogi is deluded. Therefore at all times be steadfast in yoga, Arjuna.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">na ete sṛtī pārtha jānan</td><td><b>knowing these two paths</b></td></tr><tr><td class="w">yogī muhyati kaścana</td><td><b>no yogi is deluded</b></td></tr><tr><td class="w">tasmāt sarveṣu kāleṣu</td><td><b>therefore at all times</b></td></tr><tr><td class="w">yoga-yuktaḥ bhava arjuna</td><td><b>be steadfast in yoga</b></td></tr></table>
+  </div>
+  <div class="key">Be steady <b>at all times</b>.</div>
+</section>
+<section class="page" id="d27">
+  <h2 class="page-title">ŚLOKA 8.27 · DEEP DIVE</h2>
+  <div class="sub">THE YOGI IS NOT CONFUSED</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The practical conclusion: don’t worry about times; be steady in yoga always.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators say the yogi need not wait for an auspicious moment; constant yoga makes every moment right. This verse lightens the whole passage. Commentators say: having explained the two paths, Kṛṣṇa tells Arjuna not to worry about auspicious times. The yogi who lives in constant yoga is not confused about where to go. Śaṅkara says knowing the paths, the yogi chooses the bright one by living rightly. Rāmānuja says the devotee, remembering the Lord, is not anxious about the time of death. <i>Sarveṣu kāleṣu</i>, “at all times”, echoes 8.7: remember me at all times. The practical advice is simple: live well now. Commentators note naite sṛtī jānan, “knowing these two paths”: knowledge removes anxiety. Madhusūdana says the yogi chooses light by living rightly. Many teachers say: do not worry about auspicious times; make every time auspicious by right living.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Don’t wait for the perfect time. Live well now. Don’t wait for an auspicious moment to start living well. Every moment is the right time.</p></div>
+  <div class="key"><a href="#v27" style="color:#8fd3ff">↑ 8.27</a> · Be steady <b>at all times</b>.</div>
+</section>
+<section class="page" id="v28">
+  <h2 class="page-title">ŚLOKA 8.28</h2>
+  <div class="sloka" style="margin-top:4px">
+    <div class="sloka-head"><span class="theme" style="font-size:22px">BEYOND ALL MERITS</span></div>
+    <div class="iast"><span class="cl">vedeṣu yajñeṣu tapaḥsu caiva</span><span class="cl cl2">dāneṣu yatpuṇyaphalaṃ pradiṣṭam</span><span class="cl">atyeti tatsarvamidaṃ viditvā</span><span class="cl cl2">yogī paraṃ sthānamupaiti cādyam ‖28‖</span></div>
+    <div class="vfig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="A yogi passing beyond Vedas, sacrifices, austerities and gifts to the supreme abode"><rect width="220" height="160" fill="#e3f2fd"/><g transform="translate(58 132) scale(1.2)" stroke="#111" stroke-width="2.2"><circle cy="-34" r="22" fill="#ffd60a" opacity=".35" stroke="none"/><path d="M-34 14 q34 -22 68 0 q-34 12 -68 0z" fill="#ff8c1a"/><path d="M-16 6 q-2 -30 16 -34 q18 4 16 34z" fill="#ff8c1a"/><circle cy="-36" r="11" fill="#c98b5a"/><path d="M-6 -36 h4 M2 -36 h4" stroke-width="2"/><path d="M-14 4 q-10 -4 -14 6 M14 4 q10 -4 14 6" fill="none"/></g><g transform="translate(158 100) scale(1)"><circle cx="0" cy="0" r="36" fill="#ffd60a" opacity="0.45" stroke="none"/><text x="0" y="14" text-anchor="middle" font-family="Bangers" font-size="40">OṂ</text></g><rect x="70.0" y="8" width="80" height="22" rx="10" fill="#fff" stroke="#111" stroke-width="2"/><text x="110" y="24" text-anchor="middle" font-family="Bangers" font-size="10" fill="#111">BEYOND ALL</text></svg><div class="mean">“Whatever fruit of merit is declared for the Vedas, sacrifices, austerities and gifts, the yogi who knows this goes beyond it all and reaches the supreme, primal abode.”</div></div>
+    <table class="ct"><tr><th>Word</th><th>Means</th></tr><tr><td class="w">vedeṣu yajñeṣu tapaḥsu</td><td><b>in Vedas, sacrifices, austerities</b></td></tr><tr><td class="w">dāneṣu yat puṇya-phalam</td><td><b>in gifts, whatever fruit of merit</b></td></tr><tr><td class="w">atyeti tat sarvam idam viditvā</td><td><b>goes beyond all that, knowing this</b></td></tr><tr><td class="w">yogī param sthānam upaiti ādyam</td><td><b>the yogi reaches the supreme, primal abode</b></td></tr></table>
+  </div>
+  <div class="key">The yogi goes <b>beyond all merit</b>.</div>
+</section>
+<section class="page" id="d28">
+  <h2 class="page-title">ŚLOKA 8.28 · DEEP DIVE</h2>
+  <div class="sub">BEYOND ALL MERITS</div>
+  <div class="dd"><h4>🔎 In context</h4><p>The yogi transcends all merits.</p></div>
+  <div class="dd"><h4>📜 Looking deeper</h4><p>Commentators: the merit of good works is good but limited; the yogi aims beyond merit, at the source itself. Four sources of merit are named: study, sacrifice, austerity, charity. Commentators note that each is good and brings reward; the yogi goes beyond all of them. Śaṅkara says knowledge of the Self surpasses all merit. Rāmānuja says knowledge of the Lord’s nature, as taught in chapters 7 and 8, surpasses them. The verse is in triṣṭubh metre, giving the chapter a strong close. The colophon names chapter 8 Akṣara-Brahma Yoga. Chapter 9 will reveal the “royal secret” of devotion. Commentators note ādyam, “primal”: the yogi reaches the original abode. Madhusūdana says the yogi surpasses all merit. The verse closes chapter 8 and prepares chapter 9, the royal secret of devotion.</p></div>
+  <div class="dd"><h4>🌱 For today</h4><p>Good works are good. Love and knowledge of the source are better still. Good works are good. Knowing and loving their Source is better still.</p></div>
+  <div class="key"><a href="#v28" style="color:#8fd3ff">↑ 8.28</a> · The yogi goes <b>beyond all merit</b>.</div>
+</section>
+<section class="page" id="end">
+  <h2 class="page-title">CHAPTER 8 ON ONE PAGE</h2>
+  <div class="sub">Chapter 8 in five lines</div>
+  <div class="steps"><div><b>Seven questions (8.1–4).</b> Brahman, adhyātma, karma, adhibhūta, adhidaiva, adhiyajña, and death, answered in brief.</div><div><b>Death (8.5–8).</b> What you remember at the end, you become; so remember me always, and fight.</div><div><b>The departure (8.9–15).</b> Meditate on the sun-coloured Person; Oṃ at the end; for the constant devotee I am easy to reach.</div><div><b>Cosmic time (8.16–22).</b> Even Brahmā’s world returns; beyond the unmanifest is my supreme abode, reached by undivided devotion.</div><div><b>Two paths (8.23–28).</b> The bright path does not return, the dark one does; the yogi who knows is never deluded.</div></div>
+  <div class="talk"><div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> What's next?</p></div><div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> <a href="/bhakti/vishnu/bhagavad-gita/chapter-9/">Chapter 9</a>: The royal secret. Kṛṣṇa speaks of devotion most intimately: “offer me a leaf, a flower, a fruit, a little water, with love, and I accept it.”</p></div></div>
+  <div class="key">Chapter 8: <b>remember me always, and act</b>. 🙏</div>
+  <div class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></div>
+</section>
+
+<footer style="text-align:center;font-size:13px;opacity:.75">Study notes on the Bhagavad Gītā, chapter 8 (Mahābhārata, Bhīṣma Parva). Ślokas follow the Gītā Press text and numbering, checked against the IIT Kanpur Gita Supersite, in IAST. Where the great commentators (Śaṅkara, Rāmānuja, Madhva and others) read a verse differently, we say so; such readings are interpretation. Figures for a day of Brahmā follow later Purāṇic reckoning; the story of King Bharata is from the Bhāgavata Purāṇa. Meanings are our own plain-English renderings. Zappy and Prof. Bolt are fictional.</footer>
+</div>
+<script>
+  document.querySelectorAll('section.page[id$="b"], section.page#about').forEach(function (sec) {
+    var t = sec.querySelector('.page-title');
+    var bar = document.createElement('div');
+    bar.className = 'ch-end';
+    var next = sec.nextElementSibling && sec.nextElementSibling.id ? '#' + sec.nextElementSibling.id : '#contents';
+    bar.innerHTML = '<span class="lbl">END OF ' + (t ? t.textContent.split('·')[0].trim() : '') + '</span><a href="#contents">⬆ CONTENTS</a><a href="' + next + '">NEXT ➜</a>';
+    sec.appendChild(bar);
+  });
+</script>
+<!-- bhaktitrail:auto --><style>.bk-trail{max-width:820px;margin:28px auto 18px;padding:12px 16px;border:2px solid #09283f;border-radius:14px;background:#fffdf4;box-shadow:3px 3px 0 #09283f;font:600 15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#09283f}.bk-trail a{color:#09283f;text-decoration:underline;text-underline-offset:3px}.bk-trail .sep{opacity:.55;margin:0 6px}.bk-trail .also{display:block;font-weight:500}@media print{.bk-trail{display:none}}</style><nav class="bk-trail" aria-label="Bhakti section"><a href="/bhakti/">Bhakti</a><span class="sep">›</span><a href="/bhakti/scriptures/">Scriptures and Stories</a><span class="sep">›</span><a href="/bhakti/vishnu/">Viṣṇu</a><span class="also">More for Viṣṇu: <a href="/bhakti/vishnu/#who">who he is</a> · <a href="/bhakti/vishnu/#hymns">hymns</a> · <a href="/bhakti/vishnu/#temples">temples</a></span></nav><!-- /bhaktitrail:auto -->
+<script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
