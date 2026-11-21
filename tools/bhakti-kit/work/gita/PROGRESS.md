@@ -14,7 +14,7 @@ verse "prakṛtiṃ puruṣaṃ caiva" (not counted in the 700).
 Build: `cd work/gita && bash ../gchk.sh cNN.py Gita_ChapterNN.html` (library gc.py,
 builder build2, verse helper X(...)). Draft view links are claude.ai artifacts.
 
-Done (v2 format): ch 1–7. Next: ch 8.
+Done (v2 format): ch 1–8. Next: ch 9.
 
 Draft links (claude.ai artifacts, republish with the same slug):
 - ch1 de0966e1-6ae8-4f96-a9f2-a78b3411b961 https://claude.ai/artifact/URFHvJYRPifW7VJ9wbSEKr
@@ -23,3 +23,4 @@ Draft links (claude.ai artifacts, republish with the same slug):
 - ch4 f8186089-e434-4035-a555-c0236da05398 https://claude.ai/artifact/Xdt26xpSYJKEdw9nqCmTAP
 - ch5 8a52c1d2-e2bf-4120-bcef-4ae391cc7024 https://claude.ai/artifact/J5gdj4xXiyqccFRyBfFhjq
 - ch6 d82403d9-3faa-4ef4-91f8-caaae11c85b9 https://claude.ai/artifact/Th252eAZHs2rPTTF1PZfGU
+- ch7 52ae91f7-bcd0-4280-bda1-da0c5823c6e7 https://claude.ai/artifact/BDB9zzjo3AxmHa7fY4r5Rp
