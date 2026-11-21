@@ -14,7 +14,7 @@ verse "prakṛtiṃ puruṣaṃ caiva" (not counted in the 700).
 Build: `cd work/gita && bash ../gchk.sh cNN.py Gita_ChapterNN.html` (library gc.py,
 builder build2, verse helper X(...)). Draft view links are claude.ai artifacts.
 
-Done (v2 format): ch 1–18. Overview built (gov.py). Deepening pass: extra text lives in dNNa.py/dNNb.py as DEEP[n]=(ctx_add, read_add, life_add), auto-loaded by build2 (glob dNN*.py). Aim +150–200 words per verse; check prints OVERFLOW if a page spills (trim then). `python3 dump.py CH A Z` prints current text. Deepened: ch1–5. Next: ch6. PLAN (Srini, 21 Nov): finish all 18 at current depth, then a deepening pass so every deep-dive page fills an A4 sheet (~300 words: context, commentators, cross-refs, today).
+Done (v2 format): ch 1–18. Overview built (gov.py). Deepening pass: extra text lives in dNNa.py/dNNb.py as DEEP[n]=(ctx_add, read_add, life_add), auto-loaded by build2 (glob dNN*.py). Aim +150–200 words per verse; check prints OVERFLOW if a page spills (trim then). `python3 dump.py CH A Z` prints current text. Deepened: ch1–6. Next: ch7. PLAN (Srini, 21 Nov): finish all 18 at current depth, then a deepening pass so every deep-dive page fills an A4 sheet (~300 words: context, commentators, cross-refs, today).
 
 Draft links (claude.ai artifacts, republish with the same slug):
 - ch1 de0966e1-6ae8-4f96-a9f2-a78b3411b961 https://claude.ai/artifact/URFHvJYRPifW7VJ9wbSEKr
