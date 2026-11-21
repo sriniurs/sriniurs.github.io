@@ -14,7 +14,7 @@ verse "prakṛtiṃ puruṣaṃ caiva" (not counted in the 700).
 Build: `cd work/gita && bash ../gchk.sh cNN.py Gita_ChapterNN.html` (library gc.py,
 builder build2, verse helper X(...)). Draft view links are claude.ai artifacts.
 
-Done (v2 format): ch 1–12. Next: ch 13. PLAN (Srini, 21 Nov): finish all 18 at current depth, then a deepening pass so every deep-dive page fills an A4 sheet (~300 words: context, commentators, cross-refs, today).
+Done (v2 format): ch 1–13. Next: ch 14. PLAN (Srini, 21 Nov): finish all 18 at current depth, then a deepening pass so every deep-dive page fills an A4 sheet (~300 words: context, commentators, cross-refs, today).
 
 Draft links (claude.ai artifacts, republish with the same slug):
 - ch1 de0966e1-6ae8-4f96-a9f2-a78b3411b961 https://claude.ai/artifact/URFHvJYRPifW7VJ9wbSEKr
@@ -28,3 +28,4 @@ Draft links (claude.ai artifacts, republish with the same slug):
 - ch9 72b8baaa-389b-4331-b966-02770bd17ec5 https://claude.ai/artifact/FAeUUY99WMWWPo55jYoYmJ
 - ch10 e4beb8cd-bb3d-4c29-9e62-01c0b29cab36 https://claude.ai/artifact/VFHvJ7H6rkMsnr2pRmMuHf
 - ch11 8adc7f04-8742-41ae-90a9-45700ef5f136 https://claude.ai/artifact/J9Y8wTbYPQDY7Qx4zmDVN5
+- ch12 6e6f84ef-b386-4e17-b358-0695e4d6f1b2 https://claude.ai/artifact/Edx5LFcTPmmBKZAcKrMwVK
