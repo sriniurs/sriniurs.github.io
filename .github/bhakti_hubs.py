@@ -253,6 +253,9 @@ def trails(entries, strict):
 
 
 if __name__ == '__main__':
+    if is_redirect(ROOT / 'bhakti' / 'index.html'):
+        print('Bhakti is published in the dedicated repository.')
+        sys.exit(0)
     entries = load()
     strict = '--strict' in sys.argv
     build(entries, catalogue_pages(entries, strict))
