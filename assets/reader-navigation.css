@@ -1,0 +1,71 @@
+.sr-reader-slot {
+  display: block !important;
+  height: 52px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.sr-reader-bar {
+  position: fixed !important;
+  inset: 0 0 auto !important;
+  z-index: 10000 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+  height: 52px;
+  margin: 0 !important;
+  padding: 4px 12px !important;
+  background: #fffdf5;
+  border: 0;
+  border-bottom: 1px solid #d9dfd6;
+  box-shadow: 0 2px 9px #17352e16;
+  color: #18352f;
+  font: 650 14px/1 system-ui, sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.sr-reader-bar a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px !important;
+  min-height: 44px;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 8px;
+  background: transparent;
+  color: #18352f !important;
+  font: inherit;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.sr-reader-bar a:hover { background: #edf2e9; }
+.sr-reader-bar a:focus-visible { outline: 2px solid #2a6757; outline-offset: -2px; }
+.sr-reader-bar [aria-hidden="true"] { font-size: 17px; }
+html:has(.sr-reader-slot) { scroll-padding-top: 58px; }
+@media print {
+  .sr-reader-slot, .sr-reader-bar { display: none !important; }
+}
+
+.sr-search-icon {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1.6px solid currentColor;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.sr-search-icon::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 1.6px;
+  top: 8px;
+  left: 7px;
+  background: currentColor;
+  transform: rotate(45deg);
+  transform-origin: left center;
+}

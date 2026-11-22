@@ -4,36 +4,17 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKIP = {'assets', 'queue', 'preview', 's', 'stats', 'nifty'}
+SKIP = {'assets', 'queue', 'preview', 's', 'stats', 'nifty', 'tools', 'pagefind'}
 START, END = '<!-- sitenav:auto -->', '<!-- /sitenav:auto -->'
 BLOCK = re.compile(re.escape(START) + r'.*?' + re.escape(END) + r'\n?', re.S)
 
-BAR = START + """<style>
-.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
-padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
-backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
-font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
-border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
-.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
-.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
-.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
-.sp-bar .sp-brand img{display:block;height:36px;width:auto}
-.sp-bar .sp-brand:hover{background:none}
-@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
-@media print{.sp-bar{display:none}}
-</style>
-<nav class="sp-bar" aria-label="Site">
-<a href="__BACK_PATH__" id="sp-back" aria-label="Go back">&larr; Back</a>
-<a href="/" aria-label="Home page">&#8962; Home</a>
-<a href="/search/" aria-label="Search articles">Search</a>
-<a class="sp-brand" href="/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
-</nav>
-<script>
-(function(){var b=document.getElementById('sp-back');if(!b)return;
-b.addEventListener('click',function(e){var r=document.referrer;
-if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
-</script>
+BAR = START + """<link rel="stylesheet" href="/assets/reader-navigation.css">
+<div class="sr-reader-slot"><nav class="sr-reader-bar" aria-label="Reader navigation">
+<a class="sr-reader-back" href="__BACK_PATH__"><span aria-hidden="true">&larr;</span> Back</a>
+<a href="/"><span aria-hidden="true">&#8962;</span> Home</a>
+<a href="/search/"><span aria-hidden="true"><span class="sr-search-icon"></span></span> Search</a>
+</nav></div>
+<script defer src="/assets/reader-navigation.js"></script>
 """ + END + '\n'
 
 
