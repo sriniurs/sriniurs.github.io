@@ -69,3 +69,15 @@ html:has(.sr-reader-slot) { scroll-padding-top: 58px; }
   transform: rotate(45deg);
   transform-origin: left center;
 }
+
+@media (max-width: 600px) {
+  .sr-reader-bar {
+    justify-content: space-between;
+    padding-inline: 14px !important;
+  }
+  .sr-reader-bar a {
+    box-sizing: border-box;
+    width: clamp(76px, 25vw, 104px);
+    padding-inline: 6px !important;
+  }
+}
