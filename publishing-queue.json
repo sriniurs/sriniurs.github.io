@@ -312,6 +312,16 @@
       "not_before": "2026-11-25T05:00:00+05:30",
       "status": "pending",
       "card_html": "<li class=\"story-card\" data-queue-number=\"31\"><a href=\"/plastic-notes/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"12\" y=\"29\" width=\"76\" height=\"43\" rx=\"5\" fill=\"#bfead1\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"50\" cy=\"50\" r=\"14\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M19 36h13m36 29h13\" stroke=\"#151515\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>India&#39;s New Plastic Money: Can You Wash a ₹20 Note?</h3><p>India’s polymer note experiments, what plastic currency changes, and the surprising Mysuru connection.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">25 Nov 2026</span></li>"
+    },
+    {
+      "number": 32,
+      "url": "https://srinipresents.com/half-helmet/",
+      "path": "/half-helmet/",
+      "title": "Why a Half Helmet Is Almost No Helmet",
+      "not_before": "2026-11-26T05:00:00+05:30",
+      "status": "pending",
+      "published_at": null,
+      "card_html": "<li class=\"story-card\" data-queue-number=\"32\"><a href=\"/half-helmet/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><path d=\"M16 64Q16 28 50 28Q84 28 84 64Z\" fill=\"#e63946\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M16 64H84\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M30 66Q28 80 40 88M70 66Q72 80 60 88\" fill=\"none\" stroke=\"#151515\" stroke-width=\"3\" stroke-dasharray=\"4 4\"/></svg></div><div class=\"card-copy\"><h3>Why a Half Helmet Is Almost No Helmet</h3><p>Karnataka plans to ban the cap-style helmet. What a helmet does in a fall, and how to spot a real one.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">26 Nov 2026</span></li>"
     }
   ]
 }
