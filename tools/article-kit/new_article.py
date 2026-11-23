@@ -27,6 +27,14 @@ if o.day:
     bg, tc, xc, bc = DAYS[o.day]
     head += (f'<style id="day-cover">header.cover{{background:{bg}!important;color:{xc}!important}}header.cover h1{{color:{tc}!important;-webkit-text-stroke:0!important;text-shadow:none!important}}'
              f'header.cover .byline{{color:{bc}!important}}header.cover .sub,header.cover .readtime,header.cover .cast,header.cover .cast small,header.cover .tagline{{color:{xc}!important}}</style>\n')
+# Logo on the cover in every new article (Srini's rule, 24 Nov 2026): absolute URL so samples and
+# previews outside the site show it too; data-brand-logo keeps .github/brand_logo.py from redoing it.
+sys.path.insert(0, os.path.join(REPO, '.github'))
+from brand_logo import CSS as BRAND_CSS
+BRAND = ('<div class="brand"><img data-brand-logo src="https://srinipresents.com/assets/brand/logo.png" '
+         'alt="srini.presents" width="420" height="192"><span class="tagline">for curious grown-ups</span></div>')
+if '<style id="brand-logo">' not in head:
+    head += BRAND_CSS + '\n'
 body = src[src.find('<body>'):src.find('<main')]
 body = re.sub(r'<!-- sitenav:auto -->.*?<!-- /sitenav:auto -->\n?', '', body, flags=re.S)
 eps = ''
@@ -38,7 +46,7 @@ for n in range(1, 9):
             + ('<div class="banter"><div class="say"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">Zappy</span>TODO</p></div>'
                '<div class="say g"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">Prof. Bolt</span>TODO</p></div></div>' if n % 2 else '')
             + '</section>\n\n')
-main = f'''<main class="wrap"><header class="cover"><p class="byline">srini.presents<span class="tagline">for curious grown-ups</span></p><h1>{o.title}</h1><p class="sub">TODO subtitle</p><div class="fs"><span>TODO</span><span>TODO</span><span>TODO</span></div><div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>TODO</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>TODO</small></figure></div><p class="readtime">ABOUT N MINUTES</p></header>
+main = f'''<main class="wrap"><header class="cover">{BRAND}<h1>{o.title}</h1><p class="sub">TODO subtitle</p><div class="fs"><span>TODO</span><span>TODO</span><span>TODO</span></div><div class="cast"><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg>Zappy<br><small>TODO</small></figure><figure><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg>Prof. Bolt<br><small>TODO</small></figure></div><p class="readtime">ABOUT N MINUTES</p></header>
 
 {eps}<section class="evidence" id="sources"><h2>The evidence file</h2><p>Checked TODO date. Source types are labelled. Dialogue is fictional; legends are described, not endorsed.</p><ol class="source-list">
 <li id="s1"><a href="TODO">TODO title</a> — TODO type, date; what it supports.</li>
