@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-23",
+  "last_published_on": "2026-11-24",
   "entries": [
     {
       "number": 1,
@@ -301,8 +301,9 @@
       "path": "/operate-on-a-baby-before-birth/",
       "title": "Can Doctors Operate on a Baby Before It Is Born?",
       "not_before": "2026-11-24T05:00:00+05:30",
-      "status": "pending",
-      "card_html": "<li class=\"story-card\" data-queue-number=\"30\"><a href=\"/operate-on-a-baby-before-birth/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"43\" r=\"19\" fill=\"#ffd4ba\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M23 89Q24 61 50 61Q76 61 77 89Z\" fill=\"#9ac8f5\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M41 41h3m12 0h3M44 52q6 7 12 0\" stroke=\"#151515\" stroke-width=\"3\" fill=\"none\"/></svg></div><div class=\"card-copy\"><h3>Can Doctors Operate on a Baby Before It Is Born?</h3><p>How fetal surgery works, what it can help, and why operating before birth is not a cure.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">24 Nov 2026</span></li>"
+      "status": "published",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"30\"><a href=\"/operate-on-a-baby-before-birth/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><circle cx=\"50\" cy=\"43\" r=\"19\" fill=\"#ffd4ba\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M23 89Q24 61 50 61Q76 61 77 89Z\" fill=\"#9ac8f5\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M41 41h3m12 0h3M44 52q6 7 12 0\" stroke=\"#151515\" stroke-width=\"3\" fill=\"none\"/></svg></div><div class=\"card-copy\"><h3>Can Doctors Operate on a Baby Before It Is Born?</h3><p>How fetal surgery works, what it can help, and why operating before birth is not a cure.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">24 Nov 2026</span></li>",
+      "published_at": "2026-11-24T05:27:55+05:30"
     },
     {
       "number": 31,
