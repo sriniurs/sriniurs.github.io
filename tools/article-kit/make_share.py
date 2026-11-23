@@ -59,7 +59,7 @@ def page_og(s):
 <div class="title">{html.escape(s['title'])}</div>
 <div class="badge"><b>{html.escape(s['badge_big'])}</b><span>{html.escape(s['badge_small'])}</span></div>
 <svg class="art" viewBox="0 0 300 300">{s['art']}</svg>
-<div class="strip"><div>READ THE FULL STORY · <em>srinipresents.com</em></div><div class="h">@srini.presents</div></div>
+<div class="strip"><div>READ THE FULL STORY · <em>srinipresents.com</em></div><div class="h">srini.present@gmail.com</div></div>
 </body></html>"""
 
 def page_insta(s):
@@ -76,7 +76,7 @@ def page_insta(s):
 <div class="title">{html.escape(s['title'])}</div>
 <svg class="art" viewBox="0 0 300 300">{s['art']}</svg>
 <div class="badge"><b>{html.escape(s['badge_big'])}</b><span>{html.escape(s['badge_small'])}</span></div>
-<div class="strip"><div>READ THE FULL STORY · <em>srinipresents.com</em></div><div class="h">@srini.presents</div></div>
+<div class="strip"><div>READ THE FULL STORY · <em>srinipresents.com</em></div><div class="h">srini.present@gmail.com</div></div>
 </body></html>"""
 
 async def render(spec):
