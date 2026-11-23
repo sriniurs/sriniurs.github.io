@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-22",
+  "last_published_on": "2026-11-23",
   "entries": [
     {
       "number": 1,
@@ -291,8 +291,9 @@
       "path": "/who-pays-your-hospital-bill/",
       "title": "Who Really Pays Your Hospital Bill?",
       "not_before": "2026-11-23T05:00:00+05:30",
-      "status": "pending",
-      "card_html": "<li class=\"story-card\" data-queue-number=\"29\"><a href=\"/who-pays-your-hospital-bill/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"20\" y=\"15\" width=\"60\" height=\"72\" rx=\"5\" fill=\"#fff\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M30 34h40M30 46h40M30 58h20\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"62\" cy=\"70\" r=\"11\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>Who Really Pays Your Hospital Bill?</h3><p>Follow the money behind a hospital bill: patients, insurers, government schemes and the hidden costs of care.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">23 Nov 2026</span></li>"
+      "status": "published",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"29\"><a href=\"/who-pays-your-hospital-bill/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"20\" y=\"15\" width=\"60\" height=\"72\" rx=\"5\" fill=\"#fff\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M30 34h40M30 46h40M30 58h20\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"62\" cy=\"70\" r=\"11\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>Who Really Pays Your Hospital Bill?</h3><p>Follow the money behind a hospital bill: patients, insurers, government schemes and the hidden costs of care.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">23 Nov 2026</span></li>",
+      "published_at": "2026-11-23T06:35:00+05:30"
     },
     {
       "number": 30,
