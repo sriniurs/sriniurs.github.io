@@ -232,6 +232,10 @@ def process(path, cards, published, thumbnails, renderer):
     page = read_page(path)
     end = HEAD_END.search(page)
     if not end:
+        # Redirect stubs (e.g. health pages moved to health.srinipresents.com) may have no
+        # <head> tag at all; they are not articles, so leave them alone instead of failing.
+        if re.search(r'(?i)http-equiv=["\']?refresh|<link[^>]+rel=["\']?canonical[^>]+https://health\.', page):
+            return None, False
         raise ValueError(f'No HTML head in {path.relative_to(ROOT)}')
     head, body = page[:end.start()], page[end.end():]
     clean = BLOCK.sub('', head)
