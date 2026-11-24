@@ -4,3 +4,5 @@ Red Devī theme; head/CSS read from the published Guruvāyūr page in srini-bhak
 Festival series (Nov 2026): ek.py (+ek_data.py) Ekādaśī, kartika.py (+dam.txt), pitru.py, misc.py (Guru Pūrṇimā, Akṣaya Tṛtīyā, Śrāvaṇa Pūrṇimā, Dhanurmāsa), hubx.py hubs. pages.configure() sets base/parts/theme (red|navy|blue); output to outx/.
 
 Pradoṣa (pradosha.py, pradosha2.py, prad.txt). Depth add-on pages: extras1.py / extras2.py fill pages.EXTRA[url] (inserted before On One Page) then re-run the series builder.
+
+- ek2.py + ek_more.py: Ekādaśī 28-part build (one article per Ekādaśī) → outx/ekadashi/. Supersedes ek.py.
