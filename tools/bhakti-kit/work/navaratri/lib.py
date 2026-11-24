@@ -20,7 +20,7 @@ def head(title,desc,canon,red=True,theme=None):
         h=h.replace(a,b)
     h=h.replace('</head>','<style>.panel.bg-red-soft{background-color:#fde4e4}.cover2 .coverart{background:#f6e3e1}</style>\n</head>')
     return h
-LOGO='<img class="pglogo" src="/assets/brand/logo-clear.png" alt="srini.presents" width="420" height="192">'
+LOGO=''  # logo only on the cover
 def say(who,text):
     if who=='z': return f'<div class="say z"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#kiran"/></svg><p class="bubble"><span class="who">ZAPPY:</span> {text}</p></div>'
     return f'<div class="say b"><svg class="av" viewBox="0 0 64 64" aria-hidden="true"><use href="#guru"/></svg><p class="bubble"><span class="who">PROF. BOLT:</span> {text}</p></div>'
