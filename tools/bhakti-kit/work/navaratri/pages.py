@@ -1,8 +1,10 @@
 import re, os, json
 from lib import head as _head, LOGO, talk, cover
 import fig as F
+CFG=dict(theme='red',series='Navarātri and Dasarā',sign='Devī',art='#f6e3e1',fwbg='bg-red',signc='#8e1f17',short='Navarātri')
 BASE='/festivals/navaratri/'
 SITE='https://bhakti.srinipresents.com'
+OUT='out/'
 PARTS=[('overview','Navarātri: An Overview','Nine Nights and the Victorious Tenth'),
  ('the-story','The Story Behind It','The Devī and Mahiṣāsura'),
  ('starting-the-nine-nights','Starting the Nine Nights','Ghaṭasthāpana, the Kalaśa and the Lamp'),
@@ -20,7 +22,7 @@ PARTS=[('overview','Navarātri: An Overview','Nine Nights and the Victorious Ten
  ('mahanavami-vijayadashami','Mahānavamī and Vijayadaśamī','Āyudha Pūjā, the Śamī Tree and the Day of Victory'),
  ('mysuru-dasara','The Mysuru Dasarā','Four Centuries of the Nāḍa Habba')]
 N=len(PARTS)
-def url(i): return BASE+PARTS[i][0]+'/'
+def url(i): return BASE+(PARTS[i][0]+'/' if PARTS[i][0] else '')
 def link(i,txt=None): return f'<a href="{url(i)}">{txt or "Part "+str(i+1)+", "+PARTS[i][1]}</a>'
 SHARE='''<!-- reader-feedback:start -->
 <div class="bhakti-reader-feedback" style="box-sizing:border-box;max-width:820px;margin:26px auto 32px;padding:22px 24px;border:1px solid #dec8aa;border-radius:12px;background:#fff8ed;color:#321f2a;font:16px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif">
@@ -54,7 +56,7 @@ def end(i,lines,nexta,k):
     nq='What’s next?'
     body='<div class="steps">'+''.join(f'<div>{l}</div>' for l in lines)+'</div>'+T(('z',nq),('b',nexta))
     nxt=(' Next: '+link(i+1,'Part '+str(i+2)+': '+PARTS[i+1][1])) if i+1<N else ' Back to '+f'<a href="{BASE}">the series</a>'
-    body+=key(f'Part {i+1}: {k}.{nxt}')
+    body+=key(f'Part {i+1}: {k}.{nxt}' if N>1 else f'{k}. Back to <a href="/festivals/">all festivals</a>.')
     return P('end','ON ONE PAGE','The whole article in five lines',body)
 def sources(ps,unver,study):
     body=paras([f'<b>{a}</b> {b}' for a,b in ps]+[f'<b>Sources differ / unverified:</b> {unver}'],'panel reading small')
@@ -63,9 +65,9 @@ def sources(ps,unver,study):
 def foreword(i,ps,tk):
     prev=(f'Previous: {link(i-1)}. ' if i>0 else '')
     nxt=(f'Next: {link(i+1)}.' if i+1<N else f'This is the last part.')
-    body=f'<div class="panel bg-red halftone" style="font-size:17px;line-height:1.6">'+''.join(f'<p>{p}</p>' for p in ps)
-    body+='<p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:#8e1f17">With the blessings of the Devī,</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p></div>'
-    body+=T(*tk)+f'<div class="panel reading small"><p>Part {i+1} of <a href="{BASE}">Navarātri and Dasarā</a>, a {N}-part illustrated series. {prev}{nxt}</p></div>'
+    body=f'<div class="panel {CFG["fwbg"]} halftone" style="font-size:17px;line-height:1.6">'+''.join(f'<p>{p}</p>' for p in ps)
+    body+='<p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:'+CFG['signc']+'">With the blessings of the '+CFG['sign']+',</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p></div>'
+    body+=T(*tk)+(f'<div class="panel reading small"><p>Part {i+1} of <a href="{BASE}">{CFG["series"]}</a>, a {N}-part illustrated series. {prev}{nxt}</p></div>' if N>1 else '<div class="panel reading small"><p>One of our illustrated <a href="/festivals/">festival guides</a>.</p></div>')
     return P('foreword','WHERE WE ARE','',body)
 def contents(items):
     li=''.join(f'<li><span class="num">{n+1}</span><a href="#{a}">{b}</a></li>' for n,(a,b) in enumerate(items))
@@ -80,16 +82,24 @@ def build(i,kicker,cov_svg,cap,how,desc,pages):
             t=m.group(2)
             if t in ('IN THE VERSE',): t='The Verse: '+re.search(r'<h3>(.*?)</h3>',p).group(1)
             items.append((m.group(1),t.title().replace('’S','’s').replace("'S","'s").replace('&Amp;','&amp;')))
-    hd=_head(f'{title}: {tag} · Navarātri, Part {i+1} · srini.presents',desc,SITE+url(i))
+    hd=_head(f'{title}: {tag} · {CFG["short"]}, Part {i+1} · srini.presents' if N>1 else f'{title}: {tag} · srini.presents',desc,SITE+url(i),red=CFG['theme']=='red',theme=CFG['theme'])
     hd=hd.replace('<link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">','')
     cv=cover(kicker,title,f'{tag} · explained and illustrated',cov_svg,cap,how)
     fw,rest=pages[0],pages[1:]
     html=hd+'<div class="book">\n'+'\n\n'.join([cv,fw,contents(items)]+rest)+'\n</div>\n'+SHARE+'\n</body>\n</html>\n'
-    os.makedirs('out/'+slug,exist_ok=True)
-    open(f'out/{slug}/index.html','w').write(html)
+    d=OUT+slug if slug else OUT.rstrip('/')
+    os.makedirs(d,exist_ok=True)
+    open(d+'/index.html','w').write(html)
     # tile cover.svg
     inner=re.search(r'<svg class="coverart"[^>]*>(.*)</svg>',cov_svg,re.S).group(1)
-    open(f'out/{slug}/cover.svg','w').write(f'<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268"><rect width="380" height="268" fill="#f6e3e1"/><g transform="translate(0 24) scale(.8636)">{inner}</g></svg>')
-    json.dump({'title':title,'tag':tag,'desc':desc},open(f'out/{slug}/meta.json','w'),ensure_ascii=False)
+    open(d+'/cover.svg','w').write(f'<svg xmlns="http://www.w3.org/2000/svg" width="380" height="268" viewBox="0 0 380 268"><rect width="380" height="268" fill="{CFG["art"]}"/><g transform="translate(0 24) scale(.8636)">{inner}</g></svg>')
     return html
-def covart(label,inner): return f'<svg class="coverart" width="440" height="220" viewBox="0 0 440 220" role="img" aria-label="{label}"><rect width="440" height="220" rx="10" fill="#f6e3e1"/><rect y="196" width="440" height="24" fill="#e9c9c3"/>{inner}</svg>'
+def covart(label,inner): return f'<svg class="coverart" width="440" height="220" viewBox="0 0 440 220" role="img" aria-label="{label}"><rect width="440" height="220" rx="10" fill="{CFG["art"]}"/><rect y="196" width="440" height="24" fill="{"#e9c9c3" if CFG["theme"]=="red" else "#c9d6e6"}"/>{inner}</svg>'
+
+def configure(base,parts,theme,series,sign,short):
+    global BASE,PARTS,N
+    BASE=base; PARTS[:]=parts; N=len(parts)
+    CFG.update(theme=theme,series=series,sign=sign,short=short,
+      art={'red':'#f6e3e1','navy':'#e3eaf3','blue':'#e3eaf3'}[theme],
+      fwbg={'red':'bg-red','navy':'bg-blue','blue':'bg-blue'}[theme],
+      signc={'red':'#8e1f17','navy':'#0b2a4a','blue':'#1d4f8a'}[theme])

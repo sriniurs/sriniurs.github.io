@@ -1,7 +1,7 @@
 # Navarātri series library: head/CSS from the published Guruvāyūr page, recoloured to the Devī red theme.
 import re
 SRC='/home/claude/srini-bhakti/temples-of-india/kerala/guruvayur/index.html'
-def head(title,desc,canon,red=True):
+def head(title,desc,canon,red=True,theme=None):
     s=open(SRC).read()
     h=s[:s.find('<div class="book">')]
     for a,b in [(r'<!-- seo:auto -->.*?<!-- /seo:auto -->',''),(r'<!-- sitenav:auto -->.*?<!-- /sitenav:auto -->','')]:
@@ -9,6 +9,9 @@ def head(title,desc,canon,red=True):
     h=re.sub(r'<title>.*?</title>',f'<title>{title}</title>',h,flags=re.S)
     h=re.sub(r'<link rel="canonical" href="[^"]*">',f'<link rel="canonical" href="{canon}">',h)
     h=re.sub(r'<meta name="description" content="[^"]*">',f'<meta name="description" content="{desc}">',h)
+    if theme=='blue':
+        h=h.replace('data-bhakti-article="navy"','data-bhakti-article="light-blue"').replace('#15365a','#1d4f8a')
+        return h
     if not red: return h
     h=h.replace('data-bhakti-article="navy"','data-bhakti-article="maroon"')
     h=h.replace('/* Śiva theme: navy */','/* Devī theme: red */')
