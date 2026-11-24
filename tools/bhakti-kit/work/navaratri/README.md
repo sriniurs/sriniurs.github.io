@@ -6,3 +6,4 @@ Festival series (Nov 2026): ek.py (+ek_data.py) Ekādaśī, kartika.py (+dam.txt
 Pradoṣa (pradosha.py, pradosha2.py, prad.txt). Depth add-on pages: extras1.py / extras2.py fill pages.EXTRA[url] (inserted before On One Page) then re-run the series builder.
 
 - ek2.py + ek_more.py: Ekādaśī 28-part build (one article per Ekādaśī) → outx/ekadashi/. Supersedes ek.py.
+- sank.py + sank_data.py + fig3.py (Gaṇeśa figures) + sank_hub.py: Saṅkaṣṭī Caturthī 17-part build → outs/sankashti-chaturthi/ (published at /ganesha/festivals/sankashti-chaturthi/).

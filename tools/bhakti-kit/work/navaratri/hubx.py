@@ -8,7 +8,7 @@ def hub(base,out,T,D,parts,labels,bg):
     s=s.replace('content="Temples of Kerala"',f'content="{T}"').replace('<h1>Temples of Kerala</h1>',f'<h1>{T}</h1>')
     s=s.replace('/temples-of-india/kerala/banner.svg',base+'banner.svg').replace('alt="Kerala-style temple roofs, palms and a ceremonial boat"',f'alt="{T}"')
     s=s.replace('<a class="sr-reader-back" href="/temples-of-india/">','<a class="sr-reader-back" href="/festivals/">')
-    s=s.replace('<p class="bhakti-breadcrumb"><a href="/temples-of-india/">Temples and Tīrthas</a></p>','<p class="bhakti-breadcrumb"><a href="/festivals/">Festivals</a></p>')
+    s=re.sub(r'<p class="bhakti-breadcrumb">.*?</p>',lambda m:'<p class="bhakti-breadcrumb"><a href="/festivals/">Festivals</a></p>',s,count=1,flags=re.S)
     s=s.replace('aria-label="Temples of Kerala articles"',f'aria-label="{T} articles"')
     tiles=''.join(f'<li><a href="{base}{slug}/"><div class="tile-art"><img src="{base}{slug}/cover.svg" width="380" height="268" alt="" loading="lazy"></div><div class="tile-copy"><strong class="label">{labels[n]}</strong><h2>{title}</h2><p>{tag}</p></div></a></li>\n' for n,(slug,title,tag) in enumerate(parts))
     s=re.sub(r'(<ol class="tiles"[^>]*>).*?(</ol>)',lambda m:m.group(1)+tiles+m.group(2),s,flags=re.S)
