@@ -57,7 +57,7 @@ def end(i,lines,nexta,k):
     nq='What’s next?'
     body='<div class="steps">'+''.join(f'<div>{l}</div>' for l in lines)+'</div>'+T(('z',nq),('b',nexta))
     nxt=(' Next: '+link(i+1,'Part '+str(i+2)+': '+PARTS[i+1][1])) if i+1<N else ' Back to '+f'<a href="{BASE}">the series</a>'
-    body+=key(f'Part {i+1}: {k}.{nxt}' if N>1 else f'{k}. Back to <a href="/festivals/">all festivals</a>.')
+    body+=key(f'Part {i+1}: {k}.{nxt}' if N>1 else f'{k}. Back to <a href="{CFG.get("backurl","/festivals/")}">{CFG.get("backname","all festivals")}</a>.')
     return P('end','ON ONE PAGE','The whole article in five lines',body)
 def sources(ps,unver,study):
     body=paras([f'<b>{a}</b> {b}' for a,b in ps]+[f'<b>Sources differ / unverified:</b> {unver}'],'panel reading small')
@@ -68,7 +68,7 @@ def foreword(i,ps,tk):
     nxt=(f'Next: {link(i+1)}.' if i+1<N else f'This is the last part.')
     body=f'<div class="panel {CFG["fwbg"]} halftone" style="font-size:17px;line-height:1.6">'+''.join(f'<p>{p}</p>' for p in ps)
     body+='<p style="text-align:right;margin-top:14px"><span class="bang" style="font-size:22px;color:'+CFG['signc']+'">With the blessings of the '+CFG['sign']+',</span><br><span class="bang" style="font-size:26px">srini.presents</span> 🙏</p></div>'
-    body+=T(*tk)+(f'<div class="panel reading small"><p>Part {i+1} of <a href="{BASE}">{CFG["series"]}</a>, a {N}-part illustrated series. {prev}{nxt}</p></div>' if N>1 else '<div class="panel reading small"><p>One of our illustrated <a href="/festivals/">festival guides</a>.</p></div>')
+    body+=T(*tk)+(f'<div class="panel reading small"><p>Part {i+1} of <a href="{BASE}">{CFG["series"]}</a>, a {N}-part illustrated series. {prev}{nxt}</p></div>' if N>1 else f'<div class="panel reading small"><p>One of our illustrated <a href="{CFG.get("backurl","/festivals/")}">{CFG.get("backname","festival guides")}</a>.</p></div>')
     return P('foreword','WHERE WE ARE','',body)
 def contents(items):
     li=''.join(f'<li><span class="num">{n+1}</span><a href="#{a}">{b}</a></li>' for n,(a,b) in enumerate(items))

@@ -36,3 +36,24 @@ def hanuman(c='#c0582a'):  # Hanumān: vānara hero with mace, respectful figure
             f'<path d="M-12 0 l3 -32 h18 l3 32z" fill="#ff8c1a"/><circle cy="-42" r="10" fill="{c}"/><ellipse cy="-38" rx="6" ry="4" fill="#f2c79b"/>'
             '<path d="M-7 -51 l7 -9 l7 9z" fill="#e0a800"/><g transform="translate(-20 -8)"><path d="M0 0 V-26" stroke="#7a4a1a" stroke-width="3"/><circle cy="-30" r="7" fill="#e0a800"/></g>')
 def leaf(c='#2f7a3a'): return ''.join(f'<path transform="rotate({r})" d="M0 0 q-8 -12 0 -24 q8 12 0 24z" fill="{c}"/>' for r in (-40,0,40))
+def incense(): return '<path d="M-10 0 h20 l-3 -6 h-14z" fill="#7a4a1a"/><path d="M0 -6 V-40" stroke="#5a3a1a" stroke-width="2"/><circle cy="-41" r="2" fill="#e0501a" stroke="none"/><path d="M0 -44 q-8 -8 0 -16 q8 -8 0 -16" fill="none" stroke="#9a9aa8" stroke-width="2"/>'
+def face(mark='vaishnava',skin='#c98a5a'):
+    m={'vaishnava':'<path d="M-6 -42 v-12 M6 -42 v-12" stroke="#fff" stroke-width="3"/><path d="M0 -40 v-12" stroke="#c0392b" stroke-width="3"/>',
+       'shaiva':'<path d="M-10 -50 h20 M-10 -46 h20 M-10 -42 h20" stroke="#fff" stroke-width="2.5"/><circle cy="-46" r="2.5" fill="#c0392b" stroke="none"/>',
+       'bindi':'<circle cy="-46" r="4" fill="#c0392b"/>',
+       'kumkum':'<path d="M0 -50 v10" stroke="#c0392b" stroke-width="4"/>'}[mark]
+    return f'<path d="M-22 0 q0 -20 22 -22 q22 2 22 22z" fill="#1d6fb8"/><circle cy="-40" r="20" fill="{skin}"/><path d="M-20 -46 q20 -24 40 0 q-20 -12 -40 0z" fill="#2a1a10"/>'+m+'<circle cx="-7" cy="-36" r="2" fill="#111" stroke="none"/><circle cx="7" cy="-36" r="2" fill="#111" stroke="none"/><path d="M-5 -28 q5 4 10 0" fill="none"/>'
+def arati(): return '<ellipse cy="-4" rx="24" ry="7" fill="#e0a800"/><path d="M-4 -8 h8 v-4 h-8z" fill="#fff"/><path d="M0 -12 q-8 -12 0 -26 q8 14 0 26z" fill="#ffb703" stroke="#e0501a" stroke-width="1.5"/><path d="M0 -4 V14" stroke="#7a4a1a" stroke-width="4"/>'
+def coconut(): return '<ellipse cy="-14" rx="14" ry="13" fill="#7a4a1a"/><circle cx="-4" cy="-20" r="2" fill="#3a2a1a" stroke="none"/><circle cx="4" cy="-20" r="2" fill="#3a2a1a" stroke="none"/><circle cy="-14" r="2" fill="#3a2a1a" stroke="none"/>'
+def banana(): return '<path d="M-16 -4 q16 12 32 -14 q-14 8 -32 6z" fill="#ffd60a"/>'
+def namaste(c='#1d6fb8'): return f'<path d="M-14 0 l3 -34 h22 l3 34z" fill="{c}"/><circle cy="-44" r="10" fill="#c98a5a"/><path d="M0 -30 l-6 10 h12z" fill="#c98a5a"/>'
+def shrine(): return '<path d="M-50 0 v-60 q50 -40 100 0 v60z" fill="#fff3cf"/><path d="M-50 -60 q50 -40 100 0" fill="none" stroke="#c0392b" stroke-width="4"/>'
+def baby(): return '<ellipse cy="-10" rx="16" ry="10" fill="#fff8e7"/><circle cx="14" cy="-14" r="8" fill="#f2c79b"/><path d="M-12 -10 h18" stroke="#e0a800" stroke-width="2"/>'
+def cradle(): return '<path d="M-36 -40 V0 M36 -40 V0" stroke="#7a4a1a" stroke-width="4"/><path d="M-36 -40 h72" stroke="#7a4a1a" stroke-width="3"/><path d="M-20 -40 v12 M20 -40 v12" stroke="#7a4a1a" stroke-width="2"/><path d="M-26 -28 q26 16 52 0z" fill="#e0a800"/>'+'<g transform="translate(0 -24) scale(.8)"><ellipse cy="-6" rx="14" ry="7" fill="#fff8e7"/><circle cx="12" cy="-8" r="6" fill="#f2c79b"/></g>'
+def slate(t='a ā i'): return f'<rect x="-30" y="-40" width="60" height="40" rx="3" fill="#2a3a2a"/><text x="0" y="-15" font-size="13" text-anchor="middle" fill="#fff" stroke="none" font-family="serif">{t}</text>'
+def agni(): return '<path d="M-26 0 h52 l-6 -12 h-40z" fill="#c0392b"/>'+'<g transform="translate(0 -12) scale(.6)"><path d="M-20 0 q-6 -30 10 -46 q-2 18 10 10 q4 -20 14 -30 q8 24 -2 66z" fill="#ff8c1a"/><path d="M-8 0 q-2 -16 8 -26 q6 14 4 26z" fill="#ffd60a"/></g>'
+def steps7(): return ''.join(f'<ellipse cx="{-60+j*20}" cy="{-4-(j%2)*8}" rx="5" ry="8" fill="#c0392b" stroke-width="1"/>' for j in range(7))
+def mother(c='#c0392b'): return f'<path d="M-14 0 l2 -30 q12 6 16 -2 l8 32z" fill="{c}"/><ellipse cx="6" cy="-16" rx="9" ry="10" fill="{c}"/><circle cy="-40" r="9" fill="#c98a5a"/><path d="M-8 -46 q8 -8 16 0" fill="#2a1a10"/>'
+def ear(): return '<path d="M0 -30 q20 0 20 18 q0 14 -14 12 q-6 0 -6 6" fill="#c98a5a"/><circle cx="6" cy="-4" r="4" fill="#e0a800"/>'
+def scissors(): return '<circle cx="-8" cy="-6" r="6" fill="none"/><circle cx="8" cy="-6" r="6" fill="none"/><path d="M-4 -10 L10 -36 M4 -10 L-10 -36" stroke-width="2.5"/>'
+def thread(): return '<path d="M-14 -40 q20 22 26 40" fill="none" stroke="#fff8e7" stroke-width="5"/><path d="M-14 -40 q20 22 26 40" fill="none" stroke="#e0c060" stroke-width="2"/>'

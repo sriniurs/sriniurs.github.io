@@ -7,3 +7,4 @@ Pradoṣa (pradosha.py, pradosha2.py, prad.txt). Depth add-on pages: extras1.py 
 
 - ek2.py + ek_more.py: Ekādaśī 28-part build (one article per Ekādaśī) → outx/ekadashi/. Supersedes ek.py.
 - sank.py + sank_data.py + fig3.py (Gaṇeśa figures) + sank_hub.py: Saṅkaṣṭī Caturthī 17-part build → outs/sankashti-chaturthi/ (published at /ganesha/festivals/sankashti-chaturthi/).
+- puja.py, samskara.py: single-article practice guides → outp/ (published at /home-puja/, /sixteen-samskaras/). pages.py: CFG backurl/backname for single articles.
