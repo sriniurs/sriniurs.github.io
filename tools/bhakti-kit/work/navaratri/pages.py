@@ -5,6 +5,7 @@ CFG=dict(theme='red',series='Navarātri and Dasarā',sign='Devī',art='#f6e3e1',
 BASE='/festivals/navaratri/'
 SITE='https://bhakti.srinipresents.com'
 OUT='out/'
+EXTRA={}
 PARTS=[('overview','Navarātri: An Overview','Nine Nights and the Victorious Tenth'),
  ('the-story','The Story Behind It','The Devī and Mahiṣāsura'),
  ('starting-the-nine-nights','Starting the Nine Nights','Ghaṭasthāpana, the Kalaśa and the Lamp'),
@@ -85,6 +86,8 @@ def build(i,kicker,cov_svg,cap,how,desc,pages):
     hd=_head(f'{title}: {tag} · {CFG["short"]}, Part {i+1} · srini.presents' if N>1 else f'{title}: {tag} · srini.presents',desc,SITE+url(i),red=CFG['theme']=='red',theme=CFG['theme'])
     hd=hd.replace('<link rel="stylesheet" href="/assets/editorial/article-cover.css?v=2">','')
     cv=cover(kicker,title,f'{tag} · explained and illustrated',cov_svg,cap,how)
+    ex=EXTRA.get(url(i),[])
+    if ex: pages=pages[:-2]+ex+pages[-2:]
     fw,rest=pages[0],pages[1:]
     html=hd+'<div class="book">\n'+'\n\n'.join([cv,fw,contents(items)]+rest)+'\n</div>\n'+SHARE+'\n</body>\n</html>\n'
     d=OUT+slug if slug else OUT.rstrip('/')
