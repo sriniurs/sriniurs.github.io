@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-24",
+  "last_published_on": "2026-11-25",
   "entries": [
     {
       "number": 1,
@@ -311,8 +311,9 @@
       "path": "/plastic-notes/",
       "title": "India's New Plastic Money: Can You Wash a ₹20 Note?",
       "not_before": "2026-11-25T05:00:00+05:30",
-      "status": "pending",
-      "card_html": "<li class=\"story-card\" data-queue-number=\"31\"><a href=\"/plastic-notes/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"12\" y=\"29\" width=\"76\" height=\"43\" rx=\"5\" fill=\"#bfead1\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"50\" cy=\"50\" r=\"14\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M19 36h13m36 29h13\" stroke=\"#151515\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>India&#39;s New Plastic Money: Can You Wash a ₹20 Note?</h3><p>India’s polymer note experiments, what plastic currency changes, and the surprising Mysuru connection.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">25 Nov 2026</span></li>"
+      "status": "published",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"31\"><a href=\"/plastic-notes/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><rect x=\"12\" y=\"29\" width=\"76\" height=\"43\" rx=\"5\" fill=\"#bfead1\" stroke=\"#151515\" stroke-width=\"3\"/><circle cx=\"50\" cy=\"50\" r=\"14\" fill=\"#ffd23f\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M19 36h13m36 29h13\" stroke=\"#151515\" stroke-width=\"3\"/></svg></div><div class=\"card-copy\"><h3>India&#39;s New Plastic Money: Can You Wash a ₹20 Note?</h3><p>India’s polymer note experiments, what plastic currency changes, and the surprising Mysuru connection.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">25 Nov 2026</span></li>",
+      "published_at": "2026-11-25T05:26:38+05:30"
     },
     {
       "number": 32,
