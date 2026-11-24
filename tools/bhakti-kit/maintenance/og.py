@@ -44,7 +44,8 @@ h1{{overflow-wrap:normal;word-break:keep-all;font-family:Georgia,"Times New Roma
 {f'<div class="k">{kicker}</div>' if kicker else ''}<h1>{t}</h1><div class="t">{tag}</div></div><div class="r">{art}</div></div><script>const h=document.querySelector('h1');let f=parseFloat(getComputedStyle(h).fontSize);const L=document.querySelector('.l');while((h.scrollWidth>h.clientWidth+1||L.scrollHeight>L.clientHeight+1)&&f>26){{f-=2;h.style.fontSize=f+'px';}}</script></body></html>'''
 
 import json
-PAINT = json.load(open('/tmp/painted.json'))
+import os
+PAINT = json.load(open('/tmp/painted.json' if os.path.exists('/tmp/painted.json') else os.path.join(os.path.dirname(os.path.abspath(__file__)),'painted.json')))
 def pcard(img, mast, kicker, title):
     t = re.sub(r'<br\s*/?>', ' ', title)
     return f'''<html><head><meta charset="utf-8"><style>
