@@ -52,7 +52,7 @@ main = f'''<main class="wrap"><header class="cover">{BRAND}<h1>{o.title}</h1><p 
 <li id="s1"><a href="TODO">TODO title</a> — TODO type, date; what it supports.</li>
 </ol></section>
 
-<section class="follow"><b>Follow @srini.presents</b><a href="https://www.youtube.com/@srini.presents">YouTube</a> · <a href="https://www.instagram.com/srini.presents/">Instagram</a> · <a href="https://www.facebook.com/srini.presents">Facebook</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></section>
+<section class="follow"><b>Write to us</b><a href="mailto:srini.presents@gmail.com">srini.presents@gmail.com</a><br><b style="font-size:22px;margin-top:8px">Read more: <a href="https://srinipresents.com/">srinipresents.com</a></b></section>
 <footer class="foot">THE END · srini.presents · for curious grown-ups</footer></main>
 
 <script data-goatcounter="https://sriniurs.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
