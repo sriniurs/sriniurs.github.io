@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-25",
+  "last_published_on": "2026-11-26",
   "entries": [
     {
       "number": 1,
@@ -321,8 +321,9 @@
       "path": "/white-roads/",
       "title": "Why Are Mysuru's Roads Turning White?",
       "not_before": "2026-11-26T05:00:00+05:30",
-      "status": "pending",
-      "card_html": "<li class=\"story-card\" data-queue-number=\"32\"><a href=\"/white-roads/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 86 39 14h22l26 72Z\" fill=\"#fff\"/><path d=\"M50 22v10m0 10v12m0 11v12\" stroke-dasharray=\"5 4\"/><path d=\"M13 86h74\"/></g></svg></div><div class=\"card-copy\"><h3>Why Are Mysuru&#39;s Roads Turning White?</h3><p>Mysuru is laying concrete over 12 roads. What does it cost, and why do the pipes underneath matter?</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">26 Nov 2026</span></li>"
+      "status": "published",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"32\"><a href=\"/white-roads/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 86 39 14h22l26 72Z\" fill=\"#fff\"/><path d=\"M50 22v10m0 10v12m0 11v12\" stroke-dasharray=\"5 4\"/><path d=\"M13 86h74\"/></g></svg></div><div class=\"card-copy\"><h3>Why Are Mysuru&#39;s Roads Turning White?</h3><p>Mysuru is laying concrete over 12 roads. What does it cost, and why do the pipes underneath matter?</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">26 Nov 2026</span></li>",
+      "published_at": "2026-11-26T05:26:57+05:30"
     },
     {
       "number": 33,
