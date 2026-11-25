@@ -484,3 +484,5 @@ Build and upload all 10, each a short but **full-depth** article (14+ pages, pic
 - Suggested base `/why-do-we/<slug>/` with a hand-made hub `/why-do-we/index.html` (clone `mkhub.py` approach), theme navy, sign "Lord". New `wd_common.py` modelled on `kd_common.py`; series of 10 with Part n of 10.
 - Each article: origin and name; scriptural basis (fetch verses from an edition, IAST only); how it is done step by step at home and in temple, with Karnataka/Mysuru practice; regional variants (Vaiṣṇava/Śaiva/Śākta, Mādhva/Smārta); symbolism and teachers' readings (marked as interpretation); common myths vs what texts say; related stories; links (Home Pūjā, festivals, relevant deity guides).
 - Add to the home page under the Practice/Festivals collection or a new collection only after asking Srini.
+
+- PROGRESS: `wd_common.py` (PG.OUT=outw/why-do-we/) and `wd1.py` (ārati, 19 pp, check OK) built 25 Nov, NOT uploaded. Next: wd2 tilaka … wd10. Then hub /why-do-we/ + upload.
