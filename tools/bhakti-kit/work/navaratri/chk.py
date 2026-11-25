@@ -2,7 +2,7 @@ import sys,asyncio,re,glob
 from playwright.async_api import async_playwright
 import pypdf
 from PIL import Image
-async def one(b,slug,root='festivals/navaratri'):
+async def one(b,slug,root="festivals/navaratri"):
     url=f'http://localhost:8765/{root}/{slug}/'
     pg=await b.new_page(viewport={'width':390,'height':844}); await pg.goto(url); await pg.wait_for_timeout(600)
     sw=await pg.evaluate("document.documentElement.scrollWidth"); await pg.close()

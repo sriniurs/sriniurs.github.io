@@ -37,7 +37,10 @@ Owner: **Dr. Srinivas Deep Urs ("Srini")**, Mysuru. Brand: **srini.presents**. R
    - sanskritdocuments.org often fails to fetch; use the others.
    - Name the edition and its numbering in a note and in the footer.
 9. **Never print secret or initiatory mantras** (bīja japa formulas, Mahāvidyā mantras). Describe them, don't give them.
-10. **Timeless.** No publication dates, no "(2026)", no timings, tickets, routes or visiting tips. Historical dates are fine.
+10. **Timeless.** No timings, tickets, routes or visiting tips.
+    - **No relative time** anchored to the day of writing: never "today is Puttari", "tomorrow is…", "this year's date", "upcoming", "recently". Describe recurring festivals by month, tithi, nakṣatra or season; a fixed date only if it never changes (Paryāya on 18 January, Bisu 14–15 April).
+    - **Dated past events are fine** when true and sourced ("on 10 September 2025 the chariot…", "consecrated 26 March 1820").
+    - **No visitor-guide content at all:** no "Visiting" page, no distances ("about 35 km from X" → "near X"), dress codes, best seasons, weather, crowds-planning, lunch timings, nearby treks, "check timings". The site is for knowledge seekers, not tourists; every page is history, legend, ritual, meaning, culture.
 11. **Neutral.** On disputes (rival lists, sectarian claims, contested history) write "traditions differ" and give both sides.
 12. **Mark interpretation** as interpretation ("Many read this as… (Interpretation.)").
 13. **Meanings are our own plain-English renderings.** Never copy a translation.
@@ -65,7 +68,7 @@ Owner: **Dr. Srinivas Deep Urs ("Srini")**, Mysuru. Brand: **srini.presents**. R
 ### Commits
 22. Commit as **`Srinivas Deep Urs <sriniurs@yahoo.com>`** with these trailers (use the new chat's own session URL):
     ```
-    Co-Authored-By: Claude <noreply@anthropic.com>
+    Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>   (use the model name the new chat's attribution reminder gives)
     Claude-Session: <this chat's session URL>
     ```
     Run `git pull --rebase` before every push. If a push is rejected, pull with rebase and push again.
@@ -368,10 +371,7 @@ Builder: `godlib.py`. Śiva, Viṣṇu and Kṛṣṇa use navy or blue; Devī g
 ### Karnataka
 - Purandara Dāsa and the Haridāsas
 - Basavaṇṇa and the vacanas
-- Hampi Virūpākṣa
-- Belūr and Haḷebīḍu
-- Banaśaṅkarī
-- Saundatti Yellamma
+- (Hampi, Belūr–Haḷebīḍu, Banaśaṅkarī, Sāvadatti, Gāṇagāpura: DONE 25 Nov 2026, see §13)
 
 ### Other India
 - Paṇḍharpur and the Vārī
@@ -414,6 +414,51 @@ Builder: `godlib.py`. Śiva, Viṣṇu and Kṛṣṇa use navy or blue; Devī g
   - **"upload"**: publish what was reviewed;
   - **"create and upload"** / **"finish and upload all"**: build, check and publish without waiting.
 - When asked what's pending, check the site properly (titles and body text) before listing, and order the list by importance.
+
+---
+
+## 13. Latest session (25 Nov 2026): what was added and how
+
+### Live now
+- **Durgā Namaskāra** `/tulunadu/culture/durga-namaskara/` (26 pp). Builders `dnp.py`, `dnp2.py`, figures `dnfig.py`.
+- **Tulu Nadu Festivals, 9 parts** `/tulunadu/festivals/{tulu-year, mangaluru-dasara, udupi-festivals, laksha-deepotsava, polali-jatre, katil-festivals, kodi-habba, bappanadu-jatre, siri-jatre}/`. Builders `tn_common.py` (`PG.OUT='outt/tulunadu/festivals/'`), `tn1.py…tn9.py`. The hub `tulunadu/festivals/index.html` is hand-made; tiles point to the 9.
+- **Temples of Karnataka, 5 new** `/temples-of-india/karnataka/{hampi-virupaksha, belur-halebidu, savadatti-yellamma, ganagapura-dattatreya, banashankari}/`. Builders `kt_common.py` (`outk/…`), `kt1.py…kt5.py`. Śṛṅgeri, Kollūr, Kukke, Dharmasthaḷa, Melukōṭe already existed and are linked, not rewritten. `.github/bhakti_hubs.py` has `KARNATAKA_ENTRIES` + an "Also in Karnataka" block.
+- **Kodagu: Culture and Festivals, 12 parts** `/kodagu/{kodavas, puttari, kailpodh, kaveri-sankramana, igguthappa, mand-and-dances, ainmane, life-rites, village-deities, temples, kodava-year, communities}/` (14–18 pp each). Builders `kd_common.py` (`PG.OUT='outd2/kodagu/'`, theme navy, sign "Kāverī Amma", Kodava figures: `kodava_man`, `kodava_woman`, `gun`, `kutti`, `nere`, `paddy`, `hills`, `coffee`, `kola_dancer`, `dudi`, `ainmane`, `hanging_lamp`), `kd1.py…kd12.py`.
+- Shared figure library for these series: `tfig.py` (+ `tfig_base.py`): `flame, lamps_row, tulu_temple, vimana, crowd, float_cart, flagpole, fireworks, tank, raft, map_frame, pin, tl_strip, RATHA, LINGA` etc. `fig.strip`, `fig2.fig_row/panel`, `pages.story(id,T,sub,strip,lead,[3 lines],talk,key)` (3 frames in these series).
+
+### Home-page restructure: "Karnataka Cultures"
+- The home collection tile that was "Tulu Nadu" is now **Karnataka Cultures → `/karnataka-cultures/`**, a hand-made hub with two tiles: Tulu Nadu and Kodagu. `/kodagu/` is a hand-made hub with the 12 parts. Both made by `navaratri/mkhub.py` (clones the head of `tulunadu/festivals/index.html`; sets og:image per hub; re-run it if Kodagu tiles change).
+- `index.html`: tile `li.library-theme-tulu` → href `/karnataka-cultures/`, label "Karnataka Cultures", `data-library-count="Karnataka Cultures"`; the article-index `<details>` is "Karnataka Cultures · N articles" listing Kodagu hub + 12 parts + Tulu Nadu items.
+- `scripts/library_registry.py`: COLLECTIONS maps the 7th group to `/karnataka-cultures/`. `scripts/sync_collection_counts.py`: GROUPS label "Karnataka Cultures" (that script already fails on HEAD with "Gods and Goddesses 1/0" — pre-existing, CI does not run it; ignore).
+- Breadcrumbs are now auto: Home › Karnataka Cultures › Tulu Nadu/Kodagu › page.
+
+### Upload procedure that worked this session (simpler than §6b)
+```bash
+cd /home/claude/srini-bhakti && git pull -q --rebase
+cp /home/claude/work/navaratri/<out>/<path>/<slug>/* <path>/<slug>/
+cd /home/claude/work && python3 og.py /home/claude/srini-bhakti --all <path>/<slug>   # per article
+cd /home/claude/srini-bhakti
+python3 scripts/library_registry.py      # paints crumbs, cards, search, registry json
+python3 scripts/seo_sync.py              # run until it says "sitemap current"
+python3 scripts/library_registry.py --check; python3 scripts/seo_sync.py --check   # what CI runs
+rm -rf scripts/__pycache__ .github/__pycache__
+# linked-works svgs: keep only those referenced by pages, else delete before pull
+git add -A && git commit … && git pull -q --rebase && python3 scripts/seo_sync.py --check && git push
+gh api repos/sriniurs/srini-bhakti/actions/runs?per_page=4 --jq '.workflow_runs[]|[.name,.head_sha[0:7],.conclusion]|@tsv'
+```
+- CI workflow `bhakti-seo.yml` runs only `library_registry.py --check` and `seo_sync.py --check`. If it fails right after a push it is usually a race with CI's own sitemap commit: pull, re-run seo_sync, push.
+- For catalog.json / `.github/bhakti_hubs.py` work see §6a/6b (needed for temples hubs, not for hand-made hubs).
+- The shell cannot reach bhakti.srinipresents.com (proxy 403); verify locally with `python3 -m http.server` + playwright screenshots.
+
+### Checks
+- `navaratri/tchk.sh <outdir> <root> <slug…>` copies to `/home/claude/srv/<root>/` and runs `chk.py` (prints `slug 390 pdfPages sections OK`). Its "spill?" lines are **false positives** when a page title has diacritic caps (Ō, Ē, Ṅ…).
+- **tchk.sh hang gotcha:** if the 8765 server is not running, tchk starts it inside a subshell that keeps the output pipe open, and the command never returns. Start the server first: `cd /home/claude/srv && (nohup python3 -m http.server 8765 >/dev/null 2>&1 &)` then run tchk with `timeout 250`.
+- `sheet.sh <slug> <cols>` makes a contact sheet but can hang; instead `pdftoppm -r 28 -png /tmp/<slug>.pdf /tmp/pv_<slug>` + `montage … -tile 6x` and Read the PNG.
+- Logo in downloaded HTML: `finish()` in the commons swaps the logo src to the absolute `https://bhakti.srinipresents.com/assets/brand/logo-clear.png`.
+
+### Ideas offered but not yet built
+- More Karnataka Cultures: Malenāḍu / Havyaka traditions; Nāḍahabba Mysuru Dasarā link-up; Uttara Kannaḍa (Gokarṇa culture, Yakṣagāna Baḍagutiṭṭu); North Karnataka jātres (Sāvadatti done; Mailāra, Yallamma, Siddhārūḍha).
+- Gods door, hymns, scriptures, practice lists in §10 are still open.
 
 ---
 

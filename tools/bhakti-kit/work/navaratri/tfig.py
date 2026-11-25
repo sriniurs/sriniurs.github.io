@@ -2,7 +2,7 @@
 import math
 from fig import g, lab, txt, svg, lamp, lotus, devi, sage, god, demon, mountain, tree, kalasha, bell, conch, sword, trident, elephant, sun, moon, flag, person
 from fig2 import river
-from fig3 import namaste, arati, plate, coconut, banana, incense, shrine, ganesha, lion
+from fig3 import namaste, arati, plate, coconut, banana, incense, shrine, ganesha, lion, leaf
 from tfig_base import LINGA, SHIVA, GOP, RATHA
 NS='Noto Sans,sans-serif'
 def T(x,y,t,size=11,anchor='middle',fill='#111'): return txt(x,y,t,size,anchor,fill=fill,font=NS,weight='700')
