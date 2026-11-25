@@ -485,4 +485,4 @@ Build and upload all 10, each a short but **full-depth** article (14+ pages, pic
 - Each article: origin and name; scriptural basis (fetch verses from an edition, IAST only); how it is done step by step at home and in temple, with Karnataka/Mysuru practice; regional variants (Vaiṣṇava/Śaiva/Śākta, Mādhva/Smārta); symbolism and teachers' readings (marked as interpretation); common myths vs what texts say; related stories; links (Home Pūjā, festivals, relevant deity guides).
 - Add to the home page under the Practice/Festivals collection or a new collection only after asking Srini.
 
-- PROGRESS: `wd_common.py` (PG.OUT=outw/why-do-we/) and `wd1.py` (ārati, 19 pp, check OK) built 25 Nov, NOT uploaded. Next: wd2 tilaka … wd10. Then hub /why-do-we/ + upload.
+- PROGRESS: `wd_common.py` (PG.OUT=outw/why-do-we/) , `wd1.py` (ārati, 19 pp) and `wd2.py` (tilaka, 17 pp) built and checked 25 Nov, NOT uploaded. Next: wd3 prasāda … wd10. Then hub /why-do-we/ + upload.
