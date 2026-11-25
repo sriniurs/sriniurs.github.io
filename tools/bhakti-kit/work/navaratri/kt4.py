@@ -10,7 +10,7 @@ def paduka(): return '<path d="M-22 0 q-8 -30 4 -50 q12 -8 14 10 q2 24 -6 40z" f
 def gmap():
     o='<rect width="560" height="230" fill="#eadcc0"/><path d="M0 60 q200 40 300 110" fill="none" stroke="#8fb8de" stroke-width="16"/><path d="M560 40 q-160 60 -260 130" fill="none" stroke="#8fb8de" stroke-width="10"/><path d="M300 170 q60 40 100 60" fill="none" stroke="#8fb8de" stroke-width="18"/>'
     o+=T(90,60,'Bhīmā',11,fill='#1d4f8a')+T(480,52,'Amarjā',11,fill='#1d4f8a')+pin(300,170,'Saṅgama · Audumbara tree',.35)+pin(220,100,'Gāṇagāpura · Nirguṇa Maṭha')+pin(400,120,'Kalleśvara',.3)
-    return o+pin(470,200,'Kalaburagi (about 40 km)',.3)+T(480,226,'simplified, not to scale',9)
+    return o+pin(470,200,'Kalaburagi',.3)+T(480,226,'simplified, not to scale',9)
 fw=foreword(i,['In a village of the Kalaburagi plain, where the little Amarjā joins the Bhīmā, pilgrims from Maharashtra, Karnataka and the Telugu lands come to bow before a pair of wooden sandals. They are the <b>nirguṇa pādukās</b>, “the sandals without attributes”, of <b>Narasiṃha Sarasvatī</b>, held to be Dattātreya himself in human form, who lived here for twenty-four years and promised never to leave.',
  'This guide covers Dattātreya, the three gods in one; his first two human forms; the life of Narasiṃha Sarasvatī as the <b>Guru Caritra</b> tells it; the Nirguṇa Maṭha and its sandals; the saṅgama and its trees; the eight tīrthas; the custom of <b>madhukarī</b> alms; the reading of the Guru Caritra; and the Guru’s festivals.',
  'Part 4 of '+L('/temples-of-india/karnataka/','Temples of Karnataka')+'. Previous: '+L('/temples-of-india/karnataka/savadatti-yellamma/','Savadatti Yellamma')+'. On the Guru’s day, see '+L('/festivals/guru-purnima/','Guru Pūrṇimā')+'.'],
