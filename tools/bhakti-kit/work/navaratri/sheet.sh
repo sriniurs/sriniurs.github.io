@@ -1,7 +1,9 @@
-# usage: sheet.sh slug
-rm -f /tmp/c-*.png; pdftoppm -r 32 -png /tmp/$1.pdf /tmp/c; python3 -c "
+#!/bin/bash
+# sheet.sh slug cols -> /tmp/sheet_<slug>.png
+s=$1; c=${2:-6}; rm -f /tmp/cs_$s-*; pdftoppm -r 30 -png /tmp/$s.pdf /tmp/cs_$s
+python3 -c "
 from PIL import Image;import glob
-f=sorted(glob.glob('/tmp/c-*.png'));ims=[Image.open(x) for x in f];w,h=ims[0].size;n=6
-s=Image.new('RGB',(w*n,h*((len(ims)+n-1)//n)),'white')
-for i,im in enumerate(ims):s.paste(im,((i%n)*w,(i//n)*h))
-s.save('/home/claude/work/navaratri/sheet_$1.png')"
+fs=sorted(glob.glob('/tmp/cs_$s-*.png'));ims=[Image.open(f) for f in fs];w,h=ims[0].size;c=$c
+S=Image.new('RGB',(w*c,h*((len(ims)+c-1)//c)),'white')
+for k,im in enumerate(ims): S.paste(im,((k%c)*w,(k//c)*h))
+S.save('/tmp/sheet_$s.png')"
