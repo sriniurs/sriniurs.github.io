@@ -473,3 +473,14 @@ gh api repos/sriniurs/srini-bhakti/actions/runs?per_page=4 --jq '.workflow_runs[
 7. Upload with section 6: catalog `indent=1`, hub tiles with painted cards restored, `og.py`, commit only the intended files, push.
 8. Copy the builders to the kit and push.
 9. Reply to Srini in 3–6 lines with the URLs and anything flagged.
+
+---
+
+## 14. NEXT JOB (Srini's request, 25 Nov 2026): "Why do we…" series, 10 parts
+
+Build and upload all 10, each a short but **full-depth** article (14+ pages, picture on every page, Zappy/Bolt, Sources page with unverified list, no visitor info, no "today/tomorrow" dates):
+1. Why do we do ārati?  2. Why do we wear tilaka?  3. Why do we take prasāda?  4. Why do we break a coconut?  5. Why do we ring the bell?  6. Why do we do pradakṣiṇā?  7. Why do we do namaskāra?  8. Why do we worship tulasī?  9. Why 108?  10. Why do we fast (upavāsa)?
+- Checked 25 Nov: no existing article titles on these topics (only `/home-puja/`, which they should link to and from). Re-check titles + body text before building (see §7).
+- Suggested base `/why-do-we/<slug>/` with a hand-made hub `/why-do-we/index.html` (clone `mkhub.py` approach), theme navy, sign "Lord". New `wd_common.py` modelled on `kd_common.py`; series of 10 with Part n of 10.
+- Each article: origin and name; scriptural basis (fetch verses from an edition, IAST only); how it is done step by step at home and in temple, with Karnataka/Mysuru practice; regional variants (Vaiṣṇava/Śaiva/Śākta, Mādhva/Smārta); symbolism and teachers' readings (marked as interpretation); common myths vs what texts say; related stories; links (Home Pūjā, festivals, relevant deity guides).
+- Add to the home page under the Practice/Festivals collection or a new collection only after asking Srini.
