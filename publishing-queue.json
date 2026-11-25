@@ -334,6 +334,51 @@
       "status": "pending",
       "published_at": null,
       "card_html": "<li class=\"story-card\" data-queue-number=\"33\"><a href=\"/parliament-session/\"><div class=\"card-art art-5\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><ellipse cx=\"50\" cy=\"70\" rx=\"40\" ry=\"11\" fill=\"#f4e2c4\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M12 70V54Q50 40 88 54V70\" fill=\"#fff\" stroke=\"#151515\" stroke-width=\"3\"/><path d=\"M26 52V68M40 48V70M50 47V70M60 48V70M74 52V68\" stroke=\"#151515\" stroke-width=\"2.5\"/><path d=\"M12 54Q50 40 88 54\" fill=\"none\" stroke=\"#9d174d\" stroke-width=\"4\"/></svg></div><div class=\"card-copy\"><h3>What Actually Happens When Parliament Meets?</h3><p>Question Hour, Zero Hour, the journey of a bill, and why the last session ran just 17 hours.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">27 Nov 2026</span></li>"
+    },
+    {
+      "number": 34,
+      "url": "https://srinipresents.com/mysuru-second-ring/",
+      "path": "/mysuru-second-ring/",
+      "title": "Why Is Mysuru Building a Second Ring Around Itself?",
+      "not_before": "2026-11-28T05:00:00+05:30",
+      "status": "pending",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"34\"><a href=\"/mysuru-second-ring/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"50\" r=\"35\" fill=\"#ffd23f\"/><circle cx=\"50\" cy=\"50\" r=\"22\" fill=\"#fff\"/><path d=\"M50 15v13m0 44v13M15 50h13m44 0h13\"/><circle cx=\"50\" cy=\"50\" r=\"6\" fill=\"#0f766e\"/></g></svg></div><div class=\"card-copy\"><h3>Why Is Mysuru Building a Second Ring Around Itself?</h3><p>A 105-km Peripheral Ring Road is planned. What will it change for the city and the land around it?</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">28 Nov 2026</span></li>"
+    },
+    {
+      "number": 35,
+      "url": "https://srinipresents.com/white-roads/",
+      "path": "/white-roads/",
+      "title": "Why Are Mysuru's Roads Turning White?",
+      "not_before": "2026-11-29T05:00:00+05:30",
+      "status": "pending",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"35\"><a href=\"/white-roads/\"><div class=\"card-art art-1\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 86 39 14h22l26 72Z\" fill=\"#fff\"/><path d=\"M50 22v10m0 10v12m0 11v12\" stroke-dasharray=\"5 4\"/><path d=\"M13 86h74\"/></g></svg></div><div class=\"card-copy\"><h3>Why Are Mysuru&#39;s Roads Turning White?</h3><p>Mysuru is laying concrete over 12 roads. What does it cost, and why do the pipes underneath matter?</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">29 Nov 2026</span></li>"
+    },
+    {
+      "number": 36,
+      "url": "https://srinipresents.com/zoo-kitchen/",
+      "path": "/zoo-kitchen/",
+      "title": "How Does Mysuru's Zoo Feed Its Animals?",
+      "not_before": "2026-11-30T05:00:00+05:30",
+      "status": "pending",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"36\"><a href=\"/zoo-kitchen/\"><div class=\"card-art art-2\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 55h62a31 29 0 0 1-62 0Z\" fill=\"#ffd23f\"/><path d=\"M31 49c0-14 10-23 19-23s19 9 19 23\" fill=\"#0f766e\"/><path d=\"M25 55h50\"/></g></svg></div><div class=\"card-copy\"><h3>How Does Mysuru&#39;s Zoo Feed Its Animals?</h3><p>Follow the zoo’s food from the kitchen to the animals, and find out why the lions fast on Tuesdays.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">30 Nov 2026</span></li>"
+    },
+    {
+      "number": 37,
+      "url": "https://srinipresents.com/dasara-exhibition/",
+      "path": "/dasara-exhibition/",
+      "title": "The Dasara Exhibition: How Does a 10-Day Festival Run for Three Months?",
+      "not_before": "2026-12-01T05:00:00+05:30",
+      "status": "pending",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"37\"><a href=\"/dasara-exhibition/\"><div class=\"card-art art-3\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 46 50 17l35 29Z\" fill=\"#ffd23f\"/><path d=\"M23 46v36h54V46\" fill=\"#fff\"/><path d=\"M41 82V57h18v25\" fill=\"#0f766e\"/><path d=\"M50 17V9h17l-5 5 5 5H53\"/></g></svg></div><div class=\"card-copy\"><h3>The Dasara Exhibition: How Does a 10-Day Festival Run for Three Months?</h3><p>How a fair on a dried-up lake became a 90-day business, and where your ticket money goes.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">1 Dec 2026</span></li>"
+    },
+    {
+      "number": 38,
+      "url": "https://srinipresents.com/kukkarahalli-lake/",
+      "path": "/kukkarahalli-lake/",
+      "title": "Why Is There a Lake in the Middle of Mysuru?",
+      "not_before": "2026-12-02T05:00:00+05:30",
+      "status": "pending",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"38\"><a href=\"/kukkarahalli-lake/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"72\" cy=\"25\" r=\"10\" fill=\"#ffd23f\"/><path d=\"M14 54 38 29l14 16 9-10 25 19Z\" fill=\"#b7dbc9\"/><path d=\"M14 55h72v27H14Z\" fill=\"#80c7dd\"/><path d=\"M22 65h29m6 0h15M35 74h44\"/></g></svg></div><div class=\"card-copy\"><h3>Why Is There a Lake in the Middle of Mysuru?</h3><p>Kukkarahalli Lake once watered farmland. Eight numbers trace how its role changed and what’s at stake today.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">2 Dec 2026</span></li>"
     }
   ]
 }
