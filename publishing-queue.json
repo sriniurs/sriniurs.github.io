@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-27",
+  "last_published_on": "2026-11-28",
   "entries": [
     {
       "number": 1,
@@ -341,8 +341,9 @@
       "path": "/mysuru-second-ring/",
       "title": "Why Is Mysuru Building a Second Ring Around Itself?",
       "not_before": "2026-11-28T05:00:00+05:30",
-      "status": "pending",
-      "card_html": "<li class=\"story-card\" data-queue-number=\"34\"><a href=\"/mysuru-second-ring/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"50\" r=\"35\" fill=\"#ffd23f\"/><circle cx=\"50\" cy=\"50\" r=\"22\" fill=\"#fff\"/><path d=\"M50 15v13m0 44v13M15 50h13m44 0h13\"/><circle cx=\"50\" cy=\"50\" r=\"6\" fill=\"#0f766e\"/></g></svg></div><div class=\"card-copy\"><h3>Why Is Mysuru Building a Second Ring Around Itself?</h3><p>A 105-km Peripheral Ring Road is planned. What will it change for the city and the land around it?</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">28 Nov 2026</span></li>"
+      "status": "published",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"34\"><a href=\"/mysuru-second-ring/\"><div class=\"card-art art-0\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"50\" r=\"35\" fill=\"#ffd23f\"/><circle cx=\"50\" cy=\"50\" r=\"22\" fill=\"#fff\"/><path d=\"M50 15v13m0 44v13M15 50h13m44 0h13\"/><circle cx=\"50\" cy=\"50\" r=\"6\" fill=\"#0f766e\"/></g></svg></div><div class=\"card-copy\"><h3>Why Is Mysuru Building a Second Ring Around Itself?</h3><p>A 105-km Peripheral Ring Road is planned. What will it change for the city and the land around it?</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">28 Nov 2026</span></li>",
+      "published_at": "2026-11-28T05:28:55+05:30"
     },
     {
       "number": 35,
