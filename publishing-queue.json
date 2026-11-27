@@ -3,7 +3,7 @@
   "time_zone": "Asia/Kolkata",
   "publish_time": "05:00",
   "start_date": "2026-11-08",
-  "last_published_on": "2026-11-26",
+  "last_published_on": "2026-11-27",
   "entries": [
     {
       "number": 1,
@@ -331,8 +331,9 @@
       "path": "/kukkarahalli-lake/",
       "title": "Why Is There a Lake in the Middle of Mysuru?",
       "not_before": "2026-11-27T05:00:00+05:30",
-      "status": "pending",
-      "card_html": "<li class=\"story-card\" data-queue-number=\"33\"><a href=\"/kukkarahalli-lake/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"72\" cy=\"25\" r=\"10\" fill=\"#ffd23f\"/><path d=\"M14 54 38 29l14 16 9-10 25 19Z\" fill=\"#b7dbc9\"/><path d=\"M14 55h72v27H14Z\" fill=\"#80c7dd\"/><path d=\"M22 65h29m6 0h15M35 74h44\"/></g></svg></div><div class=\"card-copy\"><h3>Why Is There a Lake in the Middle of Mysuru?</h3><p>Kukkarahalli Lake once watered farmland. Eight numbers trace how its role changed and what’s at stake today.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">27 Nov 2026</span></li>"
+      "status": "published",
+      "card_html": "<li class=\"story-card\" data-queue-number=\"33\"><a href=\"/kukkarahalli-lake/\"><div class=\"card-art art-4\"><svg class=\"ill\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><g stroke=\"#151515\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"72\" cy=\"25\" r=\"10\" fill=\"#ffd23f\"/><path d=\"M14 54 38 29l14 16 9-10 25 19Z\" fill=\"#b7dbc9\"/><path d=\"M14 55h72v27H14Z\" fill=\"#80c7dd\"/><path d=\"M22 65h29m6 0h15M35 74h44\"/></g></svg></div><div class=\"card-copy\"><h3>Why Is There a Lake in the Middle of Mysuru?</h3><p>Kukkarahalli Lake once watered farmland. Eight numbers trace how its role changed and what’s at stake today.</p><small class=\"read-link\">Read the story <b aria-hidden=\"true\">↗</b></small></div></a><span class=\"story-date\">27 Nov 2026</span></li>",
+      "published_at": "2026-11-27T05:34:11+05:30"
     },
     {
       "number": 34,
