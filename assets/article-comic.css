@@ -1,0 +1,121 @@
+/* Contemporary comic edition — loaded only by article pages. */
+body:has(header.cover) {
+  --comic-font: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --comic-paper: color-mix(in srgb, var(--paper, #eef3f8) 68%, #fff8ec);
+  --comic-zappy: #e8f3ff;
+  --comic-zappy-edge: #155e99;
+  --comic-bolt: #fff0e3;
+  --comic-bolt-edge: #943e22;
+  background-color: var(--comic-paper);
+  background-image: radial-gradient(color-mix(in srgb, var(--dot, #cfdbe8) 60%, transparent) 1px, transparent 1.25px);
+  background-size: 18px 18px;
+}
+:root[data-theme="dark"] body:has(header.cover) {
+  --comic-paper: var(--paper, #10151d);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body:has(header.cover) {
+    --comic-paper: var(--paper, #10151d);
+  }
+}
+body .wrap:has(> header.cover) {
+  width: 100%;
+  max-width: 1050px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 44px);
+}
+body header.cover {
+  grid-template-columns: minmax(0, 1fr) auto;
+  min-width: 0;
+  gap: clamp(16px, 3vw, 32px);
+  padding: clamp(18px, 4vw, 44px);
+  border-width: 3px;
+  border-radius: 20px;
+  box-shadow: 5px 6px 0 var(--line);
+}
+body header.cover > * { min-width: 0; }
+body header.cover h1 {
+  font-family: var(--comic-font);
+  font-size: clamp(2.2rem, 6vw, 4.4rem);
+  font-weight: 900;
+  line-height: 1.06;
+  letter-spacing: -.047em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+}
+body header.cover .sub {
+  font-family: var(--comic-font);
+  font-size: clamp(1.06rem, 1.9vw, 1.26rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+body header.cover .cast { flex-wrap: wrap; }
+body header.cover .fs span { transform: none; border-radius: 6px; }
+body section.ep, body .evidence {
+  min-width: 0;
+  padding: clamp(14px, 3vw, 32px);
+  gap: clamp(14px, 2.5vw, 26px);
+  border-width: 2px;
+  border-radius: 15px;
+  box-shadow: 4px 5px 0 var(--line);
+}
+body .ep .ep-head {
+  align-items: center;
+  gap: 10px 14px;
+  padding-block-end: 12px;
+  border-bottom: 2px solid var(--line);
+}
+body .ep .ep-head .no { border-radius: 5px; transform: none; }
+body .ep .ep-head h2, body .evidence > h2 {
+  font-family: var(--comic-font);
+  font-size: clamp(1.45rem, 3.2vw, 2.3rem);
+  font-weight: 850;
+  letter-spacing: -.035em;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+body .ep .panel { border-width: 2px; border-radius: 10px; }
+body .ep .reading p:not(.small), body .ep .panel p:not(.small),
+body .ep .panel li, body .ep .say .bubble {
+  font-family: var(--comic-font);
+  font-size: clamp(1.0625rem, 1.8vw, 1.1875rem) !important;
+  line-height: 1.62 !important;
+  overflow-wrap: break-word;
+}
+body .ep .reading { max-width: 68ch; }
+body .ep .say:not(.g) { --comic-bubble: var(--comic-zappy); --comic-edge: var(--comic-zappy-edge); }
+body .ep .say.g { --comic-bubble: var(--comic-bolt); --comic-edge: var(--comic-bolt-edge); }
+body .ep .say .bubble {
+  background: var(--comic-bubble);
+  color: #19212a;
+  border-color: var(--comic-edge);
+  border-radius: 14px;
+  padding: 11px 14px;
+}
+body .ep .say:not(.g) .bubble::before { border-right-color: var(--comic-edge); }
+body .ep .say:not(.g) .bubble::after { border-right-color: var(--comic-bubble); }
+body .ep .say.g .bubble::before { border-left-color: var(--comic-edge); }
+body .ep .say.g .bubble::after { border-left-color: var(--comic-bubble); }
+body .ep .say .bubble .who, body .ep .say .bubble a { color: var(--comic-edge); }
+@media (max-width: 640px) {
+  body header.cover { grid-template-columns: minmax(0, 1fr); }
+  body:has(header.cover) .topnav { flex-wrap: wrap; }
+  body header.cover[class*="t-"] .daytag { position: static; justify-self: start; }
+  body header.cover[class*="t-"] .byline { white-space: normal; }
+  body .ep .banter { grid-template-columns: minmax(0, 1fr); padding-inline: 0; }
+  body .ep .grid { grid-template-columns: minmax(0, 1fr); }
+  body header.cover .cast:has(> figure + figure) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 380px;
+  }
+  body header.cover .cast > figure { min-width: 0; }
+  body .ep .say .bubble { padding-inline: 10px; }
+}
+@media print {
+  body:has(header.cover) { background: white; }
+  body header.cover, body section.ep, body .evidence { box-shadow: none; }
+}
